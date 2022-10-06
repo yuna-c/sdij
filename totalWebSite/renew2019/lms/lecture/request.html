@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <meta property="og:url" content="http://www.sdij.com/" />
+    <meta property="og:image" content="http://img.sdij.com/sd2019/pc/logo.png" />
+    <meta property="og:title" content="시대인재" />
+    <meta property="og:description" content="올해 마지막 서바이벌 모의고사 선물, 시대인재대치, 시대인재분당, 시대인재재수종합N, 시대인재북스, 대입전문컨설팅" />
+    <meta property="og:site_name" content="시대인재" />
+    <meta name="description" content="올해 마지막 서바이벌 모의고사 선물, 시대인재대치, 시대인재분당, 시대인재재수종합N, 시대인재북스, 대입전문컨설팅" />
+    <meta name="title" content="시대인재" />
+    <meta name="keywords" content="9월 모평,수능 대비, 시대인재, 시대인재 서바이벌, 서바이벌 모의고사" />
+
+    <title> 시대인재 </title>
+    <link rel="shortcut icon" href="http://img.sdij.com/sd2019/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="http://img.sdij.com/sd2019/favicon_32.png" />
+    <link rel="icon" href="http://img.sdij.com/sd2019/favicon_32.ico" sizes="32x32" />
+
+    <!-- S : css -->
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/reset.css?ver=<%=now()%>" />
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/lib/swiper.min.css?ver=<%=now()%>" />
+	<link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/layout.css?ver=<%=now()%>" />
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/board.css?ver=<%=now()%>" />
+    <!--// E : css -->
+    
+	<!-- S : page css -->
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/lecture.css?ver=<%=now()%>" />
+    <!--// E : page css -->
+
+    <!-- S : js -->
+    <script type="text/javascript" src="/totalWebSite/renew2019/lms/common/js/lib/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/totalWebSite/renew2019/lms/common/js/lib/swiper.min.js"></script>
+	<script type="text/javascript" src="/totalWebSite/renew2019/lms/common/js/common.js"></script>
+	<!--// E : js -->
+</head>
+<body>
+
+<div id="wrap">
+    <!-- S : header -->
+    <header id="header">
+        <h1 class="logo"><a href="/totalWebSite/renew2019/main/main.html"><img src="http://img.sdij.com/sd2019/app/common/logo_w.png" alt="시대인재"></a></h1>
+        <a href="/totalWebSite/renew2019/lms/setup/index.html" class="btn-setup">설정 바로가기</a>
+    </header>
+    <!--// E : header -->
+
+    <!-- S : container -->
+    <section id="container" class="lecture-container">
+        <!-- S : 유저 정보 -->
+        <article class="container-user content-layout">
+            <div class="box-shadow">
+                <div class="user-name">시대인재N 신관 S반 홍길동 (123번)</div>
+            </div>
+        </article>
+        <!--// E : 유저 정보 -->
+
+        <!-- S : 선택수업신청 -->
+        <article class="container-request content-layout">
+            <h2 class="tit-dep1"><span>선택수업 신청</span></h2>
+
+            <div class="box-gray mb1">
+                <h4 class="tit-dep4">신청 시 숙지 사항</h4>
+
+                <ul class="list-dotted">
+                    <li>선택수업 신청 후 취소할 경우 재수강이 불가 합니다.</li>
+                    <li>선택 수업 변경사항이 있을 경우 매주 금요일까지 변경 사항을 신청 /취소 해야 합니다.<br>(다음주 월요일 일괄 반영)</li>
+                </ul>
+            </div>
+
+            <!-- S : 리스트 없을 경우 -->
+            <div class="list-no-data">
+                <i class="ico-note">!</i>
+                신청가능한 선택수업이 없습니다.
+            </div>
+            <!--// E : 리스트 없을 경우 -->
+
+            <!-- S : 선택수업신청 리스트 -->
+            <div class="tit-area mb1 txt-right">
+                <div class="select select-type2">
+                    <select>
+                        <option hidden disabled selected>과목</option>
+                        <option value="">국어</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="list-type1 list-col2">                   
+                <ul class="float-area">
+
+					<!-- S : 마감 임박 -->
+                    <!-- S : 신청 전 -->
+					 <li>
+                        <div class="tit-area">
+                            <span class="sticker">생명과학 Ⅰ</span>
+
+							<div class="tit-side">
+								<span class="color-purple">마감임박</span>
+								<span>홍길동</span>
+							</div>
+
+                        </div>
+                        <div class="content-area">
+                            <ul class="list-dash">
+                                <li>미적분 특강 (정규반만 신청)</li>
+                                <li>금요일 6교시 (20:20~22:00)</li>
+                                <li>303호</li>
+                            </ul>
+
+                            <div class="flex-area">
+                                <a href="javascript:void(0);" class="btn btn-black" onclick="fnOpenLayer('.modal-finish');">신청하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--// E : 신청 전 -->
+
+                    <!-- S : 신청 후 -->
+                    <li>
+                        <div class="tit-area">
+                            <span class="sticker">생명과학 Ⅰ</span>
+							<div class="tit-side">
+								<span class="color-purple">마감임박</span>
+								<span>홍길동</span>
+							</div>
+                        </div>
+                        <div class="content-area">
+                            <ul class="list-dash">
+                                <li>미적분 특강 (정규반만 신청)</li>
+                                <li>금요일 6교시 (20:20~22:00)</li>
+                                <li>303호</li>
+                            </ul>
+
+                            <div class="flex-area">
+                                <a href="javascript:void(0);" class="btn" onclick="fnOpenLayer('.modal-imminent');">취소하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--// E : 신청 후 -->
+					<!--// E : 마감 임박 -->
+
+					<!-- S : 마감 -->
+					<!-- S : 신청 전 -->
+					<li>
+                        <div class="tit-area">
+                            <span class="sticker">생명과학 Ⅰ</span>
+
+                            <div class="tit-side">
+								<span>홍길동</span>
+							</div>
+                        </div>
+                        <div class="content-area">
+                            <ul class="list-dash">
+                                <li>미적분 특강 (정규반만 신청)</li>
+                                <li>금요일 6교시 (20:20~22:00)</li>
+                                <li>303호</li>
+                            </ul>
+
+                            <div class="flex-area">
+                                <a href="javascript:void(0);" class="btn btn-disabled">신청불가</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--// E : 신청 전 -->
+
+                    <!-- S : 신청 후 -->
+                    <li>
+                        <div class="tit-area">
+                            <span class="sticker">생명과학 Ⅰ</span>
+                            <div class="tit-side">
+								<span class="color-red">마감</span>
+								<span>홍길동</span>
+							</div>
+                        </div>
+                        <div class="content-area">
+                            <ul class="list-dash">
+                                <li>미적분 특강 (정규반만 신청)</li>
+                                <li>금요일 6교시 (20:20~22:00)</li>
+                                <li>303호</li>
+                            </ul>
+							
+                            <div class="flex-area">
+                                <a href="javascript:void(0);" class="btn" onclick="fnOpenLayer('.modal-deadline');">취소하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--// E : 신청 후 -->
+					<!--// E :마감 -->
+
+                    <li><!-- 최대 리스트 6개 노출 이후 더보기 버튼 클릭 시 노출 -->
+                        <div class="tit-area">
+                            <span class="sticker">생명과학 Ⅰ</span>
+							<div class="tit-side">
+								<span>홍길동</span>
+							</div>
+                        </div>
+                        <div class="content-area">
+                            <ul class="list-dash">
+                                <li>미적분 특강 (정규반만 신청)</li>
+                                <li>금요일 6교시 (20:20~22:00)</li>
+                                <li>303호</li>
+                            </ul>
+
+                            <div class="flex-area">
+                                <a href="javascript:void(0);" class="btn btn-black" onclick="fnOpenLayer('.modal-cancle');">신청하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--// E : 신청 전 -->
+
+                    <!-- S : 신청 후 -->
+                    <li>
+                        <div class="tit-area">
+                            <span class="sticker">생명과학 Ⅰ</span>
+                            <div class="tit-side">
+								<span>홍길동</span>
+							</div>
+                        </div>
+                        <div class="content-area">
+                            <ul class="list-dash">
+                                <li>미적분 특강 (정규반만 신청)</li>
+                                <li>금요일 6교시 (20:20~22:00)</li>
+                                <li>303호</li>
+                            </ul>
+						
+                            <div class="flex-area">
+                                <a href="javascript:void(0);" class="btn" onclick="fnOpenLayer('.modal-cancle');">취소하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--// E : 신청 후 -->
+                </ul>
+            </div>
+
+            <div class="list-btn mt1">
+                <a href="javascript:void(0);" class="btn btn-more">더 보기</a>
+            </div>
+            <!--// E : 선택수업신청 리스트 -->
+        </article>
+        <!--// E : 선택수업신청 -->
+    </section>
+    <!--// E : container -->
+
+    <!-- S : nav -->
+    <nav id="nav">
+        <div class="nav-link">
+            <a href="/totalWebSite/renew2019/lms/main/main.html">
+                <i class="ico-home-g"></i>
+                홈
+            </a>
+            <a href="/totalWebSite/renew2019/lms/schedule/view.html">
+                <i class="ico-calendar-g"></i>
+                시간표
+            </a>
+            <a href="/totalWebSite/renew2019/lms/setup/push.html">
+                <i class="ico-bell-g"></i>
+                알림
+            </a>
+            <a href="/totalWebSite/renew2019/lms/mentoring/list.html" class="selected">
+                <i class="ico-write-g"></i>
+                TA신청
+            </a>
+        </div>
+    </nav>
+    <!--/ / E : nav -->
+
+    <!-- S : modal-wrap -->
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/modal.css">
+
+    <div class="modal-wrap">
+        <div class="modal-bg"></div>
+
+        <!-- S : 선택수업신청완료 -->
+        <div class="modal-container modal-M modal-finish">
+            <div class="modal-header">
+                <h3 class="modal-tit">신청완료</h3>
+                <a href="javascript:void(0);" class="btn-close">팝업창 닫기</a>
+            </div>
+        
+            <div class="modal-content">
+                <p class="txt-center">선택수업 신청이 완료되었습니다.</p>
+
+                <div class="table-btn mt1">
+                    <input type="submit" class="btn" value="확인" onclick="fnCloseLayer('.modal-finish')">
+                </div>
+            </div>
+        </div>
+        <!--// E : 선택수업신청완료 -->
+
+        <!-- S : 선택수업취소완료 -->
+        <div class="modal-container modal-M modal-cancle">
+            <div class="modal-header">
+                <h3 class="modal-tit">취소완료</h3>
+                <a href="javascript:void(0);" class="btn-close">팝업창 닫기</a>
+            </div>
+        
+            <div class="modal-content">
+                <p class="txt-center">선택수업 취소가 완료되었습니다.</p>
+
+                <div class="table-btn mt1">
+                    <input type="submit" class="btn" value="확인" onclick="fnCloseLayer('.modal-cancle')">
+                </div>
+            </div>
+        </div>
+        <!--// E : 선택수업취소완료 -->
+
+		<!-- S : 선택특강 마감 신청취소 -->
+        <div class="modal-container modal-M modal-deadline">
+            <div class="modal-header">
+                <h3 class="modal-tit">선택특강 신청취소</h3>
+                <a href="javascript:void(0);" class="btn-close">팝업창 닫기</a>
+            </div>
+        
+            <div class="modal-content">
+                <p class="txt-center">
+					본 강좌는 마감된 강좌 입니다.<br>
+					신청 취소 후 재 신청이 어려울 수 있습니다.<br>
+					신청을 취소 하시겠 습니까 ?<br>  
+				</p>
+
+               <div class="table-btn flex-area mt1">
+					<input type="submit" class="btn" value="아니오" onclick="fnCloseLayer('.modal-imminent')">
+					<input type="submit" class="btn btn-black" value="예" onclick="fnCloseLayer('.modal-imminent')">
+                </div>
+            </div>
+        </div>
+        <!--// E : 선택특강 마감 신청취소 -->
+
+		<!-- S : 선택특강 마감임박 신청취소 -->
+        <div class="modal-container modal-M modal-imminent">
+            <div class="modal-header">
+                <h3 class="modal-tit">선택특강 신청취소</h3>
+                <a href="javascript:void(0);" class="btn-close">팝업창 닫기</a>
+            </div>
+        
+            <div class="modal-content">
+                <p class="txt-center">
+					본 강좌는 마감임박인 강좌 입니다.<br>
+					신청 취소 후 재 신청이 어려울 수 있습니다.<br>
+					신청을 취소 하시겠 습니까 ?<br>  
+				</p>
+
+                <div class="table-btn flex-area mt1">
+					<input type="submit" class="btn" value="아니오" onclick="fnCloseLayer('.modal-imminent')">
+					<input type="submit" class="btn btn-black" value="예" onclick="fnCloseLayer('.modal-imminent')">
+                </div>
+            </div>
+        </div>
+        <!--// E : 선택특강 마감임박 신청취소 -->
+    </div>
+    <!--// E : modal-wrap -->
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>

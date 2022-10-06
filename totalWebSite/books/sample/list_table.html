@@ -1,0 +1,2311 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>시대인재</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var m = window.location;
+			
+			$("a").attr("target", "mainFrame");
+			$("a").each(function(){
+				var adir = $(this).attr("href");
+				var file_num = adir.split("/");
+				var file_name = adir.split("/")[file_num.length - 1];
+				$(this).html(file_name);
+				if($(this).parents().hasClass('mobile')){
+					$(this).parent().append('(M)');
+				}
+				var new_win = $(this).clone().attr('target', 'blank').attr('tabIndex', '-1').text('새창');
+				$(this).parent().append(new_win);
+				$(this).parent().find('a').attr('title',adir);
+			}).bind('click focus', function(event){
+				$("a").removeClass('on');
+				$(this).addClass('on');
+			});
+
+			$("tr").each(function(i){
+				var mom = $(this).parents('tbody').index() - 1;
+				var my = $(this).index() + 1;
+				var tit = $(this).parents('tbody').attr('data-value');
+				$(this).find("td:first-child").html(mom + '-' + my);
+				$(this).find("td:first-child + td").html(tit);
+
+				if($(this).find("td:last-child").find('.info').length){
+					$(this).addClass('new');
+				}
+			});
+
+			$("tbody").each(function(i){
+				var mom = $(this).attr('data-value');
+				$('.tab_view').append('<li><button type="button">' + mom + '</button></li>');
+			});
+
+			$(".info p").each(function(i){
+				var my = $(this).index() - 1;
+				var num = -(my - $(".info").find("p").length);
+				$(this).siblings("div").prepend("<button type='button'>"+ num + "</button>");
+			});
+
+			$(".info button").mouseover(function(){
+				var my = $(this).index() + 1;
+				$(this).parents(".info").find("p:nth-of-type("+ my +")").show();
+			});
+
+			$(".info button").mouseout(function(){
+				var my = $(this).index();
+				$(this).parents(".info").find("p").hide();
+			});
+
+			function viewType(){
+				var target = $(this).html();
+				if(target == '최근작업물'){
+					$(".table_list tbody").show();
+					$(".table_list tr").hide();
+					$(".table_list tr.new").show();
+				} else {
+					$(".table_list tbody").hide();
+					$(".table_list tr").show();
+					$('*[data-value="'+ target +'"]').show();
+				}
+			};
+			$(".tab_view > li > button").on("click", viewType);
+
+		});
+	</script>
+	<style type="text/css">
+		/* font */
+		@font-face {
+		  font-family:'Nanum Barun Gothic';
+		  font-style:normal;
+		  font-weight:400;
+		  src:local(※);
+		  src:url(../../font/NanumBarunGothic.eot);
+		  src:url(../../font/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+		       url(../../font/NanumBarunGothic.woff) format('woff'),
+		       url(../../font/NanumBarunGothic.ttf) format('truetype');
+		}
+		/* reset */
+		html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, em, img, small, strike, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, th, th, td, article, aside, canvas, embed, footer, header, hgroup, menu, nav, output, section, summary{margin:0;padding:0;border:0;vertical-align:baseline;}
+		h1, h2, h3, h4, h5, h6{font-weight:normal;}
+		article, aside, details, footer, header, hgroup, menu, nav, section{display:block;}
+		body{padding-top:70px;font-size:12px;line-height:1;font-family:'나눔바른고딕', 'Nanum Barun Gothic', AppleGothic, sans-serif;}
+		ol, ul{list-style:none;}
+		table{border-collapse:collapse;border-spacing:0;box-sizing:border-box;}
+		img{width:100%;}
+		a{color:inherit;text-decoration:none;}
+		em, i, dfn{font-style:normal;}
+		button{margin:0;cursor:pointer;}
+		button, textarea, select, input{margin:0;font-family:'나눔바른고딕', 'Nanum Barun Gothic', AppleGothic, sans-serif;}
+		caption{width:100%;height:0;overflow:hidden;opacity:0;font-size:medium;line-height:normal;word-break:break-all;}
+		input, select, textarea{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;}
+		
+		.sh_header{position:fixed;top:0;width:100%;padding:13px 10px;color:#fff;line-height:14px;font-size:12px;letter-spacing:1px;background-color:#000;z-index:1;box-sizing:border-box;}
+		
+		.sh_header h1{float:left;font-size:17px;line-height:40px;}
+		.sh_header table{border:none;}
+		.sh_header th{padding:5px 0;}
+		.sh_header .tab_view{float:right;}
+		.sh_header .tab_view li{float:left;}
+		.sh_header .tab_view button{display:block;width:100%;color:#fff;line-height:40px;border:0 none;background:none;overflow:hidden;text-align:center;}
+		
+		a, a:hover, a:visited{color:#999;text-decoration:none;}
+		a span{margin-right:1px;display:inline-block;color:#999;font-size:11px;}
+		a.on{font-weight:bold;letter-spacing:0px;color:#000;}
+		a + a{float:right;margin:-5px 5px -5px 0;padding:0 5px;line-height:20px;color:#fff;background:#69c;}	
+		a + a:hover, a + a:visited{color:#fff;}	
+		.table_list{width:100%;border-bottom:1px solid #e1e1e1;}
+		.table_list tbody tr:hover{background:#d9ebf7 !important;}
+		.table_list tbody td{padding:10px 0 10px 5px;border-top:1px solid #e1e1e1;border-left:1px solid #e1e1e1;}
+		.table_list td:nth-of-type(1){text-align:center;}
+		.table_list td:nth-of-type(1),
+		.table_list td:nth-of-type(2),
+		.table_list td:nth-of-type(3),
+		.table_list td:nth-of-type(4),
+		.table_list td:nth-of-type(5),
+		.table_list td:last-child{white-space:nowrap;padding:0 5px 0 0;}
+		tbody tr:first-child td,
+		.line_t td{border-top:1px solid #000 !important;}
+
+		.table_list .info{position:relative;min-height:20px;display:inline-block;}
+		.table_list .info p{display:none;position:absolute;right:0px;top:120%;padding:10px;min-width:250px;text-align:center;border:solid 1px #000;background:#fff;z-index:2;}
+		.table_list .info p span{display:block;margin-top:5px;white-space:initial;}
+		.table_list .info div{font-size:0px;}
+		.table_list .info button{display:inline-block;margin-left:5px;width:15px;height:15px;line-height:15px;text-indent:-999999px;border:none;border-radius:50%;background:#147;opacity:0.3;}
+		.table_list .info button:hover{opacity:0.7;}
+		.table_list .info button:first-child{opacity:0.5;}
+		.table_list .info button:first-child:hover{opacity:1;}
+		.del,
+		.table_list tbody tr.del:hover{text-decoration:line-through;color:#ccc;background:#eee !important;}
+		.del a,
+		.table_list .del .info button{opacity:0.2;}
+		
+		
+		@media all and (max-width:750px){
+				.sh_header{padding:0 10px;min-height:70px}
+				.sh_header .tab_view button{line-height:30px;}
+				.table_list tr{display:block;width:100%;overflow:hidden;border-bottom:solid 1px #ddd;border-sizing:border-box;}
+				.table_list tbody td{float:left;border:none;}
+				
+				.line_t{border-top:1px solid #000;}
+				.line_t td{border:none !important;}
+				.sh_header h1,
+				.table_list td:nth-of-type(2),
+				.table_list td:nth-of-type(3),
+				.table_list td:nth-of-type(4),
+				.table_list td:nth-of-type(5),
+				.table_list td:nth-of-type(7) a:first-child,
+				.table_list td:nth-of-type(8){display:none;}
+				.table_list tbody td:nth-of-type(1){padding-right:20px;}
+				.table_list tbody td:nth-of-type(6){max-width:70%;}
+				.table_list tbody td:nth-of-type(7){float:right;}
+			}
+	</style>
+</head>
+<body>
+	
+	<div class="sh_header">
+		<h1>시대인재 북스 Website 구축 PageList</h1>
+		<ul class="tab_view">
+			<li><button type="button">최근작업물</button></li>
+		</ul>
+	</div>
+	<table class="table_list">
+		<caption>화면 List</caption>
+		<colgroup>
+			<col style="width: 4%;">
+			<col style="width: 10%;">
+			<col style="width: 9%;">
+			<col style="width: 9%;">
+			<col style="width: 9%;">
+			<col style="width: 31%;">
+			<col style="width: 22%;">
+			<col style="width: 7%;">
+		</colgroup>
+
+		<tbody data-value="공통">
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">메일</td>
+				<td name="3Depth"></td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_이메일양식.psd</td>
+				<td><a href="../html/common_email.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">메일</td>
+				<td name="3Depth"></td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_이메일양식.psd</td>
+				<td><a href="../html/common_email_2.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">메일</td>
+				<td name="3Depth"></td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_이메일양식.psd</td>
+				<td><a href="../html/common_email_3.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">01GNB</td>
+				<td name="3Depth">학원</td>
+				<td name="4Depth"></td>
+				<td name="화면명">학원</td>
+				<td><a href="../html/header_aca.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-26</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">01GNB</td>
+				<td name="3Depth">북스</td>
+				<td name="4Depth"></td>
+				<td name="화면명">북스</td>
+				<td><a href="../html/header_book.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-26</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">01GNB</td>
+				<td name="3Depth">온라인</td>
+				<td name="4Depth"></td>
+				<td name="화면명">온라인</td>
+				<td><a href="../html/header_on.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-26</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">01GNB</td>
+				<td name="3Depth">N</td>
+				<td name="4Depth"></td>
+				<td name="화면명">N</td>
+				<td><a href="../html/header_N.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-09-04</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">공통</td>
+				<td name="3Depth">팝업</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_팝업</td>
+				<td><a href="../html/common_popup.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">공통</td>
+				<td name="3Depth">배너</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_배너</td>
+				<td><a href="../html/common_banner.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">레이어팝업</td>
+				<td name="3Depth"></td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_02layerpopup.psd</td>
+				<td><a href="../html/01_layerpopup.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-07</strong>배송지선택팝업</p>
+						<p style="display: none;"><strong>2017-04-28</strong>공통레이어팝업 | 확인/취소팝업 | 지도보기 | 강사이력보기 추가</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">레이어팝업</td>
+				<td name="3Depth"></td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_02layerpopup.psd</td>
+				<td><a href="../html/01_layerpopup.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-07</strong>배송지선택팝업</p>
+						<p style="display: none;"><strong>2017-04-28</strong>공통레이어팝업 | 확인/취소팝업 | 지도보기 | 강사이력보기 추가</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">팝업</td>
+				<td name="3Depth">지도보기</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_03layerpopup_지도보기.psd</td>
+				<td><a href="../html/common_map_pop.html"> </a></td>
+				<td class="ing">작업중</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">팝업</td>
+				<td name="3Depth">서류등록</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_04layerpopup_서류등록.psd</td>
+				<td><a href="../html/common_Registration_pop.html"> </a></td>
+				<td class="ing">작업중</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">팝업</td>
+				<td name="3Depth">강사이력보기</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_05layerpopup_강사이력보기.psd</td>
+				<td><a href="../html/common_Record_pop.html"> </a></td>
+				<td class="ing">작업중</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">팝업</td>
+				<td name="3Depth">버튼룰</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_06button_rule.psd</td>
+				<td><a href="../html/common_button_rule.html"> </a></td>
+				<td class="ing">작업중</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">팝업</td>
+				<td name="3Depth">체크,라디오,테이블룰</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_07check,radio,table,tab_rule.psd</td>
+				<td><a href="../html/common_button_rule2.html"> </a></td>
+				<td class="ing">작업중</td>
+			</tr> -->
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">팝업</td>
+				<td name="3Depth">파일찾기</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_08lpopup_파일찾기.psd</td>
+				<td><a href="../html/common_fileup_pop.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-07</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">팝업</td>
+				<td name="3Depth">파일찾기</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_08lpopup_파일찾기.psd</td>
+				<td><a href="../html/common_fileup_pop.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-07</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth"></td>
+				<td name="3Depth">페이지오류</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_16페이지오류.psd</td>
+				<td><a href="../html/common_error_page.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">팝업</td>
+				<td name="3Depth">파일찾기</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]01공통_09lpopup_확인,취소.psd</td>
+				<td><a href="../html/common_confirmation&Cancel_pop.html"> </a></td>
+				<td class="ing">작업중</td>
+			</tr> -->
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">로그인</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_01로그인.psd</td>
+				<td><a href="../html/common_login_login.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-04-06</strong>로그인 정보입력영역 수정</p>
+						<p style="display: none;"><strong>2017-05-25</strong>회원가입 안내문구 수정</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">로그인</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_01로그인.psd</td>
+				<td><a href="../html/common_login_login.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-04-06</strong>로그인 정보입력영역 수정</p>
+						<p style="display: none;"><strong>2017-05-25</strong>회원가입 안내문구 수정</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">본인인증</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_02본인인증.psd</td>
+				<td><a href="../html/common_login_registstep1.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">본인인증</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_02본인인증.psd</td>
+				<td><a href="../html/common_login_registstep1.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">정보입력</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_03정보입력.psd</td>
+				<td><a href="../html/common_login_registstep2.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-05-25</strong>학교정보입력 추가</p>
+						<p style="display: none;"><strong>2017-05-30</strong>재원 여부 추가</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">정보입력</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_03정보입력.psd</td>
+				<td><a href="../html/common_login_registstep2.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-05-25</strong>학교정보입력 추가</p>
+						<p style="display: none;"><strong>2017-05-30</strong>재원 여부 추가</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">정보입력</td>
+				<td name="4Depth">학교검색_팝업</td>
+				<td name="화면명">[공통]02로그인,회원가입_03정보입력_02학교검색_팝업.psd</td>
+				<td><a href="../html/common_login_registstep2_schoolpopup.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-05-25</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">정보입력</td>
+				<td name="4Depth">학교검색_팝업</td>
+				<td name="화면명">[공통]02로그인,회원가입_03정보입력_02학교검색_팝업.psd</td>
+				<td><a href="../html/common_login_registstep2_schoolpopup.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-05-25</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">가입완료</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_04가입완료.psd</td>
+				<td><a href="../html/common_login_registstep3.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-04-25</strong>이미지 아이콘 추가</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">가입완료</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_04가입완료.psd</td>
+				<td><a href="../html/common_login_registstep3.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-04-25</strong>이미지 아이콘 추가</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">아이디,비번찾기</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_05아이디,비밀번호찾기.psd</td>
+				<td><a href="../html/common_login_findaccount.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">아이디,비번찾기</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_05아이디,비밀번호찾기.psd</td>
+				<td><a href="../html/common_login_findaccount.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">아이디확인</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_06아이디확인.psd</td>
+				<td><a href="../html/common_login_findid.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">아이디확인</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_06아이디확인.psd</td>
+				<td><a href="../html/common_login_findid.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">아이디전체확인</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_07아이디전체확인.psd</td>
+				<td><a href="../html/common_login_findallid.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">아이디전체확인</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_07아이디전체확인.psd</td>
+				<td><a href="../html/common_login_findallid.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">비밀번호변경</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_08비밀번호변경.psd</td>
+				<td><a href="../html/common_login_pwchange.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">비밀번호변경</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_08비밀번호변경.psd</td>
+				<td><a href="../html/common_login_pwchange.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">비밀번호변경완료</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_09비밀번호변경완료.psd</td>
+				<td><a href="../html/common_login_pwend.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-04-25</strong>이미지 아이콘 추가</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">비밀번호변경완료</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_09비밀번호변경완료.psd</td>
+				<td><a href="../html/common_login_pwend.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-04-25</strong>이미지 아이콘 추가</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">아이디불일치</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_10아이디불일치.psd</td>
+				<td><a href="../html/common_login_errorid.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">로그인,회원가입</td>
+				<td name="3Depth">아이디불일치</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]02로그인,회원가입_10아이디불일치.psd</td>
+				<td><a href="../html/common_login_errorid.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">장바구니</td>
+				<td name="화면명">[공통]03마이페이지_02장바구니_01장바구니.psd</td>
+				<td><a href="../html/common_mypage_cart_cart.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-14</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">장바구니</td>
+				<td name="화면명">[공통]03마이페이지_01장바구니_01장바구니.psd</td>
+				<td><a href="../html/common_mypage_cart_cart.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-14</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">장바구니</td>
+				<td name="화면명">[공통]03마이페이지_01장바구니_01장바구니_02비회원일경우.psd</td>
+				<td><a href="../html/common_mypage_cart_cart_nomember.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-10-18</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">주문&결제</td>
+				<td name="화면명">[공통]03마이페이지_01장바구니_02주문&결제.psd</td>
+				<td><a href="../html/common_mypage_cart_checkout.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-14</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">주문&결제</td>
+				<td name="화면명">[공통]03마이페이지_01장바구니_02주문&결제_02배송지선택_팝업.psd</td>
+				<td><a href="../html/common_mypage_cart_select_destination.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-14</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">주문&결제</td>
+				<td name="화면명">[공통]03마이페이지_01장바구니_02주문&결제_03비회원일경우.psd</td>
+				<td><a href="../html/common_mypage_cart_checkout_nomember.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-10-18</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">주문&결제</td>
+				<td name="화면명">[공통]03마이페이지_01장바구니_02주문&결제_04내배송지목록_팝업.psd</td>
+				<td><a href="../html/common_mypage_cart_mydestination.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-14</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">주문&결제</td>
+				<td name="화면명">[공통]03마이페이지_01장바구니_02주문&결제_05내배송지추가_팝업.psd</td>
+				<td><a href="../html/common_mypage_cart_add_destination.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-14</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">주문&결제_배송지선택팝업</td>
+				<td name="화면명">[공통]03마이페이지_02장바구니_02주문&결제_02배송지선택_팝업.psd</td>
+				<td><a href="../html/common_mypage_cart_checkout_addresspopup.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-14</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">주문&결제_배송지선택팝업</td>
+				<td name="화면명">[공통]03마이페이지_02장바구니_02주문&결제_02배송지선택_팝업.psd</td>
+				<td><a href="../html/common_mypage_cart_checkout_addresspopup.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-14</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr> -->
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">결제완료</td>
+				<td name="화면명">[공통]03마이페이지_02장바구니_03결제완료.psd</td>
+				<td><a href="../html/common_mypage_cart_payend.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-14</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-17</strong>주문현황 목록 수정</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">결제완료</td>
+				<td name="화면명">[공통]03마이페이지_01장바구니_03결제완료.psd</td>
+				<td><a href="../html/common_mypage_cart_payend.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-14</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-17</strong>주문현황 목록 수정</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">결제오류</td>
+				<td name="화면명">[공통]03마이페이지_02장바구니_04결제오류.psd</td>
+				<td><a href="../html/common_mypage_cart_payerror.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-14</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">결제오류</td>
+				<td name="화면명">[공통]03마이페이지_01장바구니_04결제오류.psd</td>
+				<td><a href="../html/common_mypage_cart_payerror.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-14</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">주문&배송조회</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]03마이페이지_02주문&배송조회_01.psd</td>
+				<td><a href="../html/common_mypage_ordercheck.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">주문&배송조회</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]03마이페이지_02주문&배송조회_01.psd</td>
+				<td><a href="../html/common_mypage_ordercheck.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">주문&배송조회</td>
+				<td name="4Depth">환불&취소_팝업</td>
+				<td name="화면명">[공통]03마이페이지_02주문&배송조회_02환불&결제취소신청_팝업.psd</td>
+				<td><a href="../html/common_mypage_order_cancel_pop.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">주문&배송조회</td>
+				<td name="4Depth">주문상세</td>
+				<td name="화면명">[공통]03마이페이지_02주문&배송조회_03주문상세.psd</td>
+				<td><a href="../html/common_mypage_order_detail.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">주문&배송조회</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]03마이페이지_02주문&배송조회_03주문상세_02이벤트경우.psd</td>
+				<td><a href="../html/common_mypage_order_detail_event.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">주문&배송조회</td>
+				<td name="4Depth">비회원</td>
+				<td name="화면명">[공통]03마이페이지_02주문&배송조회_04비회원일경우.psd</td>
+				<td><a href="../html/common_mypage_ordercheck_nomember.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">장바구니</td>
+				<td name="4Depth">주문&결제</td>
+				<td name="화면명">[공통]03마이페이지_02주문&배송조회_05배송지변경_팝업.psd</td>
+				<td><a href="../html/common_mypage_cart_change_destination.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-14</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">주문&배송조회</td>
+				<td name="4Depth">비회원</td>
+				<td name="화면명">[공통]03마이페이지_02주문&배송조회_06비회원일경우_팝업.psd</td>
+				<td><a href="../html/common_mypage_ordercheck_nomember_pop.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">주문&배송조회</td>
+				<td name="4Depth">비회원</td>
+				<td name="화면명">[공통]03마이페이지_02주문&배송조회_07비회원일경우_주문비밀번호찾기_팝업.psd</td>
+				<td><a href="../html/common_mypage_ordercheck_nomember_checkout_pop.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">주문&배송조회</td>
+				<td name="4Depth">환불&취소_팝업</td>
+				<td name="화면명">[공통]03마이페이지_02주문&배송조회_02환불&결제취소신청_팝업.psd</td>
+				<td><a href="../html/common_mypage_order_cancel_pop.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">주문&배송조회</td>
+				<td name="4Depth">주문상세</td>
+				<td name="화면명">[공통]03마이페이지_02주문&배송조회_03주문상세.psd</td>
+				<td><a href="../html/common_mypage_order_detail.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">해설강좌</td>
+				<td name="4Depth">비구매자</td>
+				<td name="화면명">[공통]03마이페이지_03해설강좌수강_01비구매자.psd</td>
+				<td><a href="../html/common_mypage_commentary_notbuy.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">해설강좌</td>
+				<td name="4Depth">비구매자</td>
+				<td name="화면명">[공통]03마이페이지_03해설강좌수강_01비구매자.psd</td>
+				<td><a href="../html/common_mypage_commentary_notbuy.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">해설강좌</td>
+				<td name="4Depth">구매자</td>
+				<td name="화면명">[공통]03마이페이지_03해설강좌수강_02구매자.psd</td>
+				<td><a href="../html/common_mypage_commentary_buy.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">해설강좌</td>
+				<td name="4Depth">구매자</td>
+				<td name="화면명">[공통]03마이페이지_03해설강좌수강_02구매자.psd</td>
+				<td><a href="../html/common_mypage_commentary_buy.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-19</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">이용중인서비스</td>
+				<td name="4Depth">시대인재</td>
+				<td name="화면명">[공통]03마이페이지_03이용중인서비스_01시대인재.psd</td>
+				<td><a href="../html/common_mypage_service_aca.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-21</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-15</strong>디자인변경됨</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">이용중인서비스</td>
+				<td name="4Depth">시대인재_이용서비스없음</td>
+				<td name="화면명">[공통]03마이페이지_03이용중인서비스_01시대인재_02이용서비스없음.psd</td>
+				<td><a href="../html/common_mypage_service_aca_empty.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-21</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-25</strong>이미지 아이콘 추가</p>
+						<p style="display: none;"><strong>2017-06-15</strong>디자인변경됨</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">이용중인서비스</td>
+				<td name="4Depth">시대인재on_배송조회</td>
+				<td name="화면명">[공통]03마이페이지_03이용중인서비스_02시대인재on_01배송조회.psd</td>
+				<td><a href="../html/common_mypage_service_on_shipping.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-21</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-15</strong>디자인변경됨</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">이용중인서비스</td>
+				<td name="4Depth">시대인재on_해설강의</td>
+				<td name="화면명">[공통]03마이페이지_03이용중인서비스_02시대인재on_02해설강의.psd</td>
+				<td><a href="../html/common_mypage_service_on_lecture.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-21</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-27</strong>테이블 구분선 추가</p>
+						<p style="display: none;"><strong>2017-06-15</strong>디자인변경됨</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">이용중인서비스</td>
+				<td name="4Depth">시대인재on_학습후기</td>
+				<td name="화면명">[공통]03마이페이지_03이용중인서비스_02시대인재on_03학습후기.psd</td>
+				<td><a href="../html/common_mypage_service_on_review.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-21</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-15</strong>디자인변경됨장</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">이용중인서비스</td>
+				<td name="4Depth">시대인재on_학습후기_후기남기기팝업</td>
+				<td name="화면명">[공통]03마이페이지_03이용중인서비스_02시대인재on_03학습후기_02후기남기기_팝업.psd</td>
+				<td><a href="../html/common_mypage_service_on_review_writepopup.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-21</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">이용중인서비스</td>
+				<td name="4Depth">시대인재on_학습후기_후기보기팝업</td>
+				<td name="화면명">.psd</td>
+				<td><a href="../html/common_mypage_service_on_review_viewpopup.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-21</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">컨설팅내역</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]03마이페이지_04컨설팅내역조회.psd</td>
+				<td><a href="../html/common_mypage_Lookup.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">컨설팅내역</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]03마이페이지_04컨설팅내역조회.psd</td>
+				<td><a href="../html/common_mypage_Lookup.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">내게시물보기</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]03마이페이지_05내게시물보기.psd</td>
+				<td><a href="../html/common_mypage_listlook.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">내게시물보기</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[공통]03마이페이지_05내게시물보기.psd</td>
+				<td><a href="../html/common_mypage_listlook.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">회원정보수정</td>
+				<td name="4Depth">로그인</td>
+				<td name="화면명">[공통]03마이페이지_06회원정보수정_01로그인.psd</td>
+				<td><a href="../html/common_mypage_modify_login.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-21</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">회원정보수정</td>
+				<td name="4Depth">로그인</td>
+				<td name="화면명">[공통]03마이페이지_06회원정보수정_01로그인.psd</td>
+				<td><a href="../html/common_mypage_modify_login.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-21</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">회원정보수정</td>
+				<td name="4Depth">정보수정</td>
+				<td name="화면명">[공통]03마이페이지_06회원정보수정_02정보수정.psd</td>
+				<td><a href="../html/common_mypage_modify_modify.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-21</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr>
+			<tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">회원정보수정</td>
+				<td name="4Depth">정보수정</td>
+				<td name="화면명">[공통]03마이페이지_06회원정보수정_02정보수정.psd</td>
+				<td><a href="../html/common_mypage_modify_modify.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-21</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">회원정보수정</td>
+				<td name="4Depth">회원탈퇴</td>
+				<td name="화면명">[공통]03마이페이지_06회원정보수정_03회원탈퇴.psd</td>
+				<td><a href="../html/common_mypage_modify_quit.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-21</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr> -->
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">마이페이지</td>
+				<td name="3Depth">회원정보수정</td>
+				<td name="4Depth">회원탈퇴</td>
+				<td name="화면명">[공통]03마이페이지_06회원정보수정_03회원탈퇴.psd</td>
+				<td><a href="../html/common_mypage_modify_quit.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-21</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+
+		<tbody data-value="온">
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">서브메인</td>
+				<td name="3Depth"></td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재on]01main.psd</td>
+				<td><a href="../html/on_main2.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">서바이벌</td>
+				<td name="3Depth">서바이벌시놉시스</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재on]02서바이벌_01서바이벌시놉시스.psd</td>
+				<td><a href="../html/on_survival_synopsis.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-28</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">서바이벌</td>
+				<td name="3Depth">수학</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재on]02서바이벌_02수학</td>
+				<td><a href="../html/on_survival_math.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-28</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">서바이벌</td>
+				<td name="3Depth">생명과학I</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재on]02서바이벌_03생명과학1</td>
+				<td><a href="../html/on_survival_lifescience1.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-28</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">서바이벌</td>
+				<td name="3Depth">생명과학II</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재on]02서바이벌_04생명과학2</td>
+				<td><a href="../html/on_survival_lifescience2.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-28</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">서바이벌</td>
+				<td name="3Depth">지구과학I</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재on]02서바이벌_05지구과학1.psd</td>
+				<td><a href="../html/on_survival_earthscience1.html"> </a></td>
+				<td class="ing"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">서바이벌</td>
+				<td name="3Depth">지구과학II</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재on]02서바이벌_05지구과학2.psd</td>
+				<td><a href="../html/on_survival_earthscience2.html"> </a></td>
+				<td class="ing"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">서바이벌</td>
+				<td name="3Depth">물리</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재on]02서바이벌_07물리.psd</td>
+				<td><a href="../html/on_survival_physics.html"> </a></td>
+				<td class="ing"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">서바이벌</td>
+				<td name="3Depth">화학</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재on]02서바이벌_08화학.psd</td>
+				<td><a href="../html/on_survival_chemistry.html"> </a></td>
+				<td class="ing"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">서바이벌</td>
+				<td name="3Depth">상세안내/유의사항</td>
+				<td name="4Depth">팝업</td>
+				<td name="화면명">[시대인재on]02서바이벌_09상품안내유의사항.psd</td>
+				<td><a href="../html/on_survival_guide.html"></a></td>
+				<td class="ing"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">스터딥</td>
+				<td name="3Depth">studeep</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재on]03스터딥_01studeep.psd</td>
+				<td><a href="../html/on_studeep_studeep.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">스터딥</td>
+				<td name="3Depth">채점하기</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재on]03스터딥_02채점하기_01</td>
+				<td><a href="../html/on_studeep_Scoring.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">스터딥</td>
+				<td name="3Depth">채점하기</td>
+				<td name="4Depth">팝업_선택</td>
+				<td name="화면명">
+					[시대인재on]03스터딥_02채점하기_팝업_01omr선택.psd<br>
+					[시대인재on]03스터딥_02채점하기_팝업_02직접입력.psd
+				</td>
+				<td><a href="../html/on_studeep_Scoring_pop.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">스터딥</td>
+				<td name="3Depth">성적분석</td>
+				<td name="4Depth">deeptail_비구매</td>
+				<td name="화면명">[시대인재on]03스터딥_03성적분석표_deeptail_01비구매자.psd</td>
+				<td><a href="../html/on_studeep_analysis_deeptail_notbuy.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">스터딥</td>
+				<td name="3Depth">성적분석</td>
+				<td name="4Depth">deeptail_구매</td>
+				<td name="화면명">[시대인재on]03스터딥_03성적분석표_deeptail_02구매자(채점0회).psd</td>
+				<td><a href="../html/on_studeep_analysis_deeptail_buy.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">스터딥</td>
+				<td name="3Depth">성적분석</td>
+				<td name="4Depth">deeptail_온라인구매</td>
+				<td name="화면명">[시대인재on]03스터딥_03성적분석표_deeptail_03온라인구매자.psd</td>
+				<td><a href="../html/on_studeep_analysis_deeptail_onlinebuy.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>디자인변경됨</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">스터딥</td>
+				<td name="3Depth">성적분석</td>
+				<td name="4Depth">deeptail_온오프_온라인</td>
+				<td name="화면명">[시대인재on]03스터딥_03성적분석표_deeptail_04온오프구매자_01온라인.psd
+				<td><a href="../html/on_studeep_analysis_deeptail_onoff_online.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">스터딥</td>
+				<td name="3Depth">성적분석</td>
+				<td name="4Depth">deeptail_온오프_오프</td>
+				<td name="화면명">[시대인재on]03스터딥_03성적분석표_deeptail_04온오프구매자_02오프.psd</td>
+				<td><a href="../html/on_studeep_analysis_deeptail_onoff_offline.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">스터딥</td>
+				<td name="3Depth">해설강의</td>
+				<td name="4Depth">deepfine_비구매</td>
+				<td name="화면명">[시대인재on]03스터딥_04해설강의_deepfine_01비구매자.psd</td>
+				<td><a href="../html/on_studeep_lecture_deepfine_notbuy.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">스터딥</td>
+				<td name="3Depth">해설강의</td>
+				<td name="4Depth">deepfine_구매자</td>
+				<td name="화면명">[시대인재on]03스터딥_04해설강의_deepfine_02구매자.psd</td>
+				<td><a href="../html/on_studeep_lecture_deepfine_buy.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">스터딥</td>
+				<td name="3Depth">게시판</td>
+				<td name="4Depth">deepinside</td>
+				<td name="화면명">[시대인재on]03스터딥_05게시판_deepinside.psd</td>
+				<td><a href="../html/on_studeep_posting_deepinside.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">스터딥</td>
+				<td name="3Depth">프린트</td>
+				<td name="4Depth">팝업</td>
+				<td name="화면명">[시대인재on]03스터딥_06프린트_팝업.psd</td>
+				<td><a href="../html/on_studeep_print_popup.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">입시정보</td>
+				<td name="3Depth">입시분석</td>
+				<td name="4Depth">리스트</td>
+				<td name="화면명">[시대인재on]04입시정보_01입시분석_01리스트.psd</td>
+				<td><a href="../html/on_univ_univ_list.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-05</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-05</strong>디자인 변경</p>
+						<p style="display: none;"><strong>2017-06-09</strong>작업완료</p>
+						<p style="display: none;"><strong>2017-06-15</strong>디자인 변경</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">입시정보</td>
+				<td name="3Depth">입시분석</td>
+				<td name="4Depth">상세</td>
+				<td name="화면명">[시대인재on]04입시정보_01입시분석_02상세.psd</td>
+				<td><a href="../html/on_univ_univ_detail.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-04-05</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-05</strong>디자인 변경</p>
+						<p style="display: none;"><strong>2017-06-09</strong>작업완료</p>
+						<p style="display: none;"><strong>2017-06-15</strong>디자인변경</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">입시정보</td>
+				<td name="3Depth">대학별분석</td>
+				<td name="4Depth">리스트</td>
+				<td name="화면명">[시대인재on]04입시정보_02대학별분석_01리스트.psd</td>
+				<td><a href="../html/on_univ_college_list.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-09</strong>작업완료</p>
+						<p style="display: none;"><strong>2017-06-15</strong>디자인변경</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">입시정보</td>
+				<td name="3Depth">대학별분석</td>
+				<td name="4Depth">상세</td>
+				<td name="화면명">[시대인재on]04입시정보_02대학별분석_02상세.psd</td>
+				<td><a href="../html/on_univ_college_detail.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-09</strong>작업완료</p>
+						<p style="display: none;"><strong>2017-06-15</strong>디자인변경</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">입시정보R&D</td>
+				<td name="3Depth">재원생성적표</td>
+				<td name="4Depth">첫화면</td>
+				<td name="화면명">[시대인재on]05입시정보R&d_07재원생성적표_01첫화면.psd</td>
+				<td><a href="../html/on_univr&d_grade_main.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-16</strong>작업완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">입시정보R&D</td>
+				<td name="3Depth">재원생성적표</td>
+				<td name="4Depth">인증</td>
+				<td name="화면명">[시대인재on]05입시정보R&d_07재원생성적표_02재원생인증.psd</td>
+				<td><a href="../html/on_univr&d_grade_certification.html"></a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-16</strong>작업완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">입시정보R&D</td>
+				<td name="3Depth">재원생성적표</td>
+				<td name="4Depth">분석</td>
+				<td name="화면명">[시대인재on]05입시정보R&d_07재원생성적표_03성적분석.psd</td>
+				<td><a href="../html/on_univr&d_grade_analysis.html"></a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-16</strong>작업완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">학습정보</td>
+				<td name="3Depth">리스트</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재on]05학습정보_01리스트.psd</td>
+				<td><a href="../html/on_study_list.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-09</strong>작업완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">학습정보</td>
+				<td name="3Depth">상세</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재on]05학습정보_02상세.psd</td>
+				<td><a href="../html/on_study_detail.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-09</strong>작업완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">고객센터</td>
+				<td name="3Depth">공지사항</td>
+				<td name="4Depth">리스트</td>
+				<td name="화면명">[시대인재on]05고객센터_01공지사항_01리스트.psd</td>
+				<td><a href="../html/on_center_notice_list.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>고객센터 상담전화번호 수정</p>
+						<p style="display: none;"><strong>2017-06-15</strong>디자인변경</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">고객센터</td>
+				<td name="3Depth">공지사항</td>
+				<td name="4Depth">상세</td>
+				<td name="화면명">[시대인재on]05고객센터_01공지사항_02상세.psd</td>
+				<td><a href="../html/on_center_notice_detail.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-04</strong>첨부파일영역 수정</p>
+						<p style="display: none;"><strong>2017-04-05</strong>고객센터 상담전화번호 수정</p>
+						<p style="display: none;"><strong>2017-04-05</strong>디자인변경</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">고객센터</td>
+				<td name="3Depth">자주묻는질문</td>
+				<td name="4Depth">리스트</td>
+				<td name="화면명">[시대인재on]05고객센터_02자주묻는질문_01리스트.psd</td>
+				<td><a href="../html/on_center_faq_list.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정 / 고객센터 상담전화번호 수정</p>
+						<p style="display: none;"><strong>2017-04-05</strong>디자인변경</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">고객센터</td>
+				<td name="3Depth">자주묻는질문</td>
+				<td name="4Depth">상세</td>
+				<td name="화면명">[시대인재on]05고객센터_02자주묻는질문_02상세.psd</td>
+				<td><a href="../html/on_center_faq_detail.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-04</strong>첨부파일영역 수정</p>
+						<p style="display: none;"><strong>2017-04-05</strong>버튼 컬러 수정 / 고객센터 상담전화번호 수정</p>
+						<p style="display: none;"><strong>2017-04-05</strong>디자인변경</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">고객센터</td>
+				<td name="3Depth">일대일상담</td>
+				<td name="4Depth">리스트</td>
+				<td name="화면명">[시대인재on]05고객센터_03일대일상담_01리스트.psd</td>
+				<td><a href="../html/on_center_qna_list.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>고객센터 상담전화번호 수정 / 상담신청하기 버튼 수정</p>
+						<p style="display: none;"><strong>2017-04-07</strong>일대일상담 목록 수정</p>
+						<p style="display: none;"><strong>2017-04-11</strong>리스트 열림 영역 수정</p>
+						<p style="display: none;"><strong>2017-04-11</strong>디자인변경</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">고객센터</td>
+				<td name="3Depth">일대일상담</td>
+				<td name="4Depth">상세</td>
+				<td name="화면명">[시대인재on]05고객센터_03일대일상담_02상세.psd</td>
+				<td><a href="../html/on_center_qna_detail.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-03-31</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-04-05</strong>고객센터 상담전화번호 수정</p>
+						<p style="display: none;"><strong>2017-04-06</strong>팝업추가, 파일삭제 버튼 변경</p>
+						<p style="display: none;"><strong>2017-04-06</strong>디자인변경</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">고객센터</td>
+				<td name="3Depth">동영상가이드</td>
+				<td name="4Depth">리스트</td>
+				<td name="화면명">[시대인재on]05고객센터_04동영상장애가이드_01리스트.psd</td>
+				<td><a href="../html/on_center_video_list.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">고객센터</td>
+				<td name="3Depth">동영상가이드</td>
+				<td name="4Depth">상세</td>
+				<td name="화면명">[시대인재on]05고객센터_04동영상장애가이드_02상세.psd</td>
+				<td><a href="../html/on_center_video_detail.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">고객센터</td>
+				<td name="3Depth">동영상가이드</td>
+				<td name="4Depth">카톡상담_팝업</td>
+				<td name="화면명">[시대인재on]05고객센터_04동영상장애가이드_03카카오톡상담_팝업.psd</td>
+				<td><a href="../html/on_center_video_kakao_pop.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">고객센터</td>
+				<td name="3Depth">동영상가이드</td>
+				<td name="4Depth">재생사양_팝업</td>
+				<td name="화면명">[시대인재on]05고객센터_04동영상장애가이드_04동영상재생사양_팝업.psd</td>
+				<td><a href="../html/on_center_video_play_pop.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-19</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">플레이어</td>
+				<td name="3Depth">새창팝업</td>
+				<td name="4Depth">bookmark</td>
+				<td name="화면명">[시대인재on]06플레이어_02새창팝업_02bookmark.psd</td>
+				<td><a href="../html/on_player_popup_bookmark.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-05-12</strong>작업 완료</p>
+						<p style="display: none;"><strong>2017-06-22</strong>디자인 변경</p>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+
+		<tbody data-value="서점">
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">런칭</td>
+				<td name="3Depth"></td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재books]01main_00런칭.psd</td>
+				<td><a href="../html/books_launching.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-23</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">메인</td>
+				<td name="3Depth">기본</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재books]01main_01기본.psd</td>
+				<td><a href="../html/book_main.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-23</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">서브</td>
+				<td name="3Depth">기본</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재books]02sub_01기본.psd</td>
+				<td><a href="../html/book_sub_basic.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-23</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">서브</td>
+				<td name="3Depth">패키지</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재books]02sub_02패키지.psd</td>
+				<td><a href="../html/book_sub_package.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-23</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td name="1Depth"></td>
+				<td name="2Depth">서브</td>
+				<td name="3Depth">패키지</td>
+				<td name="4Depth"></td>
+				<td name="화면명">[시대인재books]03학습자료실</td>
+				<td><a href="../html/book_mediabank.html"> </a></td>
+				<td class="ing">
+					<div class="info">
+						<div></div>
+						<p style="display: none;"><strong>2017-06-23</strong>작업 완료</p>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+
+			
+	</table>
+</body>
+</html>

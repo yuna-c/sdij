@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* score */
+.score-container{  }
+
+/* 상/벌점 합계 */
+.score-container .container-preview .preview-area{ display:flex; border-radius:1rem; font-size:0; overflow:hidden; }/* position:relative;  */
+.score-container .container-preview .preview-area > span{ height:2rem; line-height:1.933333333rem; position:relative; background-color:#003fab; font-size:0.666666667rem; font-weight:700; color:#fff; text-align:center; flex:1; }
+.score-container .container-preview .preview-area > span:after{ content:''; width:1rem; position:absolute; top:0; right:-1rem; bottom:0; background-color:#003fab; }
+.score-container .container-preview .preview-area > span.bg-gray{ background-color:#eee; border-radius:1rem; color:#f33737; }/* position:absolute; top:0; left:50%; bottom:0;  */
+.score-container .container-preview .preview-area > span > [class^='ico']{ margin-right:0.4rem; top:-2px; }
+
+/* 상/벌점 리스트 */
+.score-container .container-list{  }
+.score-container .container-list .tit-cir{ width:5rem; height:1.533333333rem; line-height:1.466666667rem; margin:0 auto; border:1px solid #ddd; border-radius:1rem; font-size:0.533333333rem; color:#000; text-align:center; }
+.score-container .container-list .list-point{ margin:1rem -0.666666667rem; position:relative; }
+.score-container .container-list .list-point:after{ content:''; width:1px; position:absolute; top:0; left:50%; bottom:0; background-color:#ddd; }
+.score-container .container-list .list-point li{ width:50%; height:3.333333333rem; margin-bottom:1rem; padding:0.266666667rem 0.666666667rem 0 4.666666667rem; float:left; position:relative; }
+.score-container .container-list .list-point li .sticker-point{ width:3.333333333rem; height:3.333333333rem; padding:0; display:flex; position:absolute; top:0; left:0.666666667rem; bottom:0; background:none; background-position:50% 50%; background-size:100% 100%; background-repeat:no-repeat; border:none; text-align:center; align-items:center; justify-content:center; }
+.score-container .container-list .list-point li .sticker-red{ background-image:url(http://img.sdij.com/sd2019/app/common/ico_point_r.png); color:#f33737; }
+.score-container .container-list .list-point li .sticker-blue{ background-image:url(http://img.sdij.com/sd2019/app/common/ico_point_b.png); color:#003fab; }
+.score-container .container-list .list-point li .color-gray{ margin-bottom:0.2rem; font-size:0.466666667rem; }
+.score-container .container-list .list-point li .strong{ margin-top:0.333333333rem; overflow:hidden; text-overflow:ellipsis; word-wrap:normal; white-space:nowrap; }
+
+/* mobile */
+@media all and (max-width:539px) and (orientation:portrait){
+    .score-container .container-list .list-point{ margin-bottom:0; }
+    .score-container .container-list .list-point:after{ display:none; }
+    .score-container .container-list .list-point li{ width:100%; }
+
+    .table-mobile table, .table-mobile table tbody, .table-mobile table thead, .table-mobile table tr, .table-mobile table tr th, .table-mobile table tr td{ width:100%; display:block; }
+}
+@media all and (max-width:959px) and (orientation:landscape){
+    .score-container .container-list .list-point{ margin-bottom:0; }
+    .score-container .container-list .list-point:after{ display:none; }
+    .score-container .container-list .list-point li{ width:100%; }
+
+    .table-mobile table, .table-mobile table tbody, .table-mobile table thead, .table-mobile table tr, .table-mobile table tr th, .table-mobile table tr td{ width:100%; display:block; }
+}

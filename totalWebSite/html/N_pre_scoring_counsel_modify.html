@@ -1,0 +1,414 @@
+ <!--
+/*************************************************************************
+* @ 서비스명    : sidaeInjae Total Web Site
+* @ 파일명     : /html/common_login_registstep2.html
+* @ 페이지설명 : N > 가채점 상담신청 > 정보수정
+* @ 작성자     : 김은옥
+* @ 작성일     : 2017-03-29
+************************** 수정이력 ****************************************
+* 번호    작업자       변경내용
+*_________________________________________________________________________
+* 김은옥   최초작성
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>가채점 상담신청 > 정보수정</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<!--셀렉트박스 플러그인 20180919 추가 -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../common/js/jquery.selectric.min.js"></script>
+<!--셀렉트박스 플러그인 20180919 추가 끝-->
+<link rel="stylesheet" href="../common/css/aca.css">
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectric.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>  <!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    function popupOpen(urltype){
+      var url= "/html/"+urltype+".html";
+      var winWidth = 620;
+      var winHeight = 320;
+      var popupOption= "width="+winWidth+", height="+winHeight;
+      window.open(url,"",popupOption);
+    };
+   $(function() {
+        $('input.datepicker').datepicker({
+        });
+    });
+</script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="N" data-depth2="pre_scoring" data-depth3="modify">
+<div id="wrap"> <!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+  <!-- // Snb Include Area -->
+ <div class="location">
+    <span>시대인재 N &gt;</span>
+    <span>가채점 상담신청</span>
+  </div>
+  <div id="content">
+    <h2 data-title="type1" class="line">
+      <span>2019 학년도 시대인재 N </span>
+      가채점 상담신청
+    </h2>
+    <div data-layout="type1" class="recruit_form">
+        <div data-step="type2" class="m_b45">
+          <div class="pass"><em>1</em>재원여부확인<br />(핸드폰인증)</div>
+          <div class="on"><em>2</em>가채점 정보입력</div>
+          <div><em>3</em>상담신청완료</div>
+        </div>
+
+        <form>
+          <fieldset>
+            <table class="apply_t">
+              <tbody>
+                  <td>
+                    <table>
+                      <colgroup>
+                        <col width="150px">
+                        <col width="">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <label for="input3" class="field_name">
+                              이름<strong>*<em>필수항목</em></strong>
+                            </label>
+                          </th>
+                          <td>
+                            <span data-form="input">
+                              <input type="text" id="input1">
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <span class="field_name">
+                              휴대폰번호<strong>*<em>필수항목</em></strong>
+                            </span>
+                          </th>
+                          <td>
+                            <p class="field_name">010-1997-0214</p>
+                            <br />
+                            <span data-form="checkbox">
+                              <input type="checkbox" id="alert">
+                              <label for="alert">답변 완료 시 문자 메세지 알림을 받겠습니다. </label>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <span class="field_name">
+                              학원<strong>*<em>필수항목</em></strong>
+                            </span>
+                          </th>
+                          <td>
+                            <span data-form="radio" class="m_l0">
+                              <input type="radio" id="academy1" name="academytype" checked="checked">
+                              <label for="academy1">정규반 (신관)</label>
+                            </span>
+                            <span data-form="radio" class="m_l10">
+                              <input type="radio" id="academy2" name="academytype">
+                              <label for="academy2">신설시작반 (N관)</label>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>
+                             <span class="field_name line">
+                              가채점 점수입력<strong>*<em>필수항목</em></strong>
+                            </span>
+                          </th>
+                          <td>
+                            <table class="center mid">
+                              <tbody>
+                                <colgroup>
+                                  <col width="22%" />
+                                  <col width="22%" />
+                                  <col width="38%" />
+                                  <col width="18%" />
+                                </colgroup>
+                                <tr>
+                                  <th>한국사</th>
+                                  <th>국어</th>
+                                  <th>
+                                    수학<br />
+                                     <span data-form="radio" class=m_l0>
+                                      <input type="radio" id="mathtype1" name="mathtype">
+                                      <label for="mathtype1">가형</label>
+                                    </span>
+                                    <span data-form="radio" class="m_l10">
+                                      <input type="radio" id="mathtype2" name="mathtype">
+                                      <label for="mathtype2">나형</label>
+                                    </span>
+                                  </th>
+                                  <th>영어</th>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <span data-form="input" class="size80">
+                                      <input type="text" id="input2">
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <span data-form="input" class="size80">
+                                      <input type="text" id="input3">
+                                    </span>
+                                  </td>
+                                  <td class="t_center">
+                                    <span data-form="input" class="size130">
+                                      <input type="text" id="input4">
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <span data-form="input" class="size130">
+                                      <input type="text" id="input5">
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th colspan="3" class="v_middle">
+                                    <span data-form="radio" class=m_l0>
+                                      <input type="radio" id="subject1" name="subject">
+                                      <label for="subject1">과학</label>
+                                    </span>
+                                    <span data-form="radio" class="m_l10">
+                                      <input type="radio" id="subject2" name="subject">
+                                      <label for="subject2">사회</label>
+                                    </span>
+                                  </th>
+                                  <th>
+                                    제2외국어
+                                  </th>
+                                </tr>
+                                <tr>
+                                  <td colspan="3">
+                                    <select title="과학과목" class="type13">
+                                      <option value="미선택">미선택</option>
+                                      <option value="물리Ⅰ">물리Ⅰ</option>
+                                      <option value="물리Ⅱ">물리Ⅱ</option>
+                                      <option value="화학Ⅰ">화학Ⅰ</option>
+                                      <option value="화학Ⅱ">화학Ⅱ</option>
+                                      <option value="생명과학Ⅰ">생명과학Ⅰ</option>
+                                      <option value="생명과학Ⅱ">생명과학Ⅱ</option>
+                                      <option value="지구과학Ⅰ">지구과학Ⅰ</option>
+                                      <option value="지구과학Ⅱ">지구과학Ⅱ</option>
+                                    </select>
+                                    <select title="사회과목" class="type13 m_l10">
+                                      <option value="미선택">미선택</option>
+                                      <option value="한국지리">한국지리</option>
+                                      <option value="세계지리">세계지리</option>
+                                      <option value="동아시아사">동아시아사</option>
+                                      <option value="세계사">세계사</option>
+                                      <option value="생활과 윤리">생활과 윤리</option>
+                                      <option value="사회문화">사회문화</option>
+                                      <option value="법과 정치">법과 정치</option>
+                                      <option value="경제">경제</option>
+                                    </select>
+                                  </td>
+                                  <td class="t_center">
+                                    <select title="제2외국어 과목" class="type1">
+                                      <option value="미선택">미선택</option>
+                                      <option value="아랍어">아랍어</option>
+                                      <option value="일본어">일본어</option>
+                                      <option value="중국어">중국어</option>
+                                      <option value="독일어">독일어</option>
+                                      <option value="프랑스어">프랑스어</option>
+                                      <option value="스페인어">스페인어</option>
+                                      <option value="한문">한문</option>
+                                      <option value="베트남어">베트남어</option>
+                                      <option value="러시아어">러시아어</option>
+                                    </select>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="3">
+                                    <span data-form="input" class="size170">
+                                      <input type="text" id="input6">
+                                    </span>
+                                    <span data-form="input" class="size170 m_l10">
+                                      <input type="text" id="input7">
+                                    </span>
+                                  </td>
+                                  <td class="t_center">
+                                    <span data-form="input" class="size130">
+                                      <input type="text" id="input8">
+                                    </span>
+                                  </td>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <span class="field_name">
+                              수시원서 접수내역<strong>*<em>필수항목</em></strong>
+                            </span>
+                          </th>
+                          <td>
+                            <p class="m_b10">
+                            <span data-form="radio">
+                              <input type="radio" id="radio50" name="radio_test50" checked="checked">
+                              <label for="radio50">미접수</label>
+                            </span>
+                            <span data-form="radio">
+                              <input type="radio" id="radio51" name="radio_test50">
+                              <label for="radio51">접수</label>
+                            </span>
+                            </p>
+                            <p>
+                              <span data-form="input" class="size390" >
+                                <input type="text" id="input9" placeholder="대학, 전형, 학부(학과)를 정확하게 입력하세요.">
+                              </span>
+                              <button type="button" data-btn="gray" class="m_l10 size80">추가</button>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                           <th>
+                            <label for="input3" class="field_name">
+                              가채점 상담 문의
+                            </label>
+                          </th>
+                          <td>
+
+
+                            <button type="button" data-btn="gray" class="small size80 m_b10">추가질문</button>
+
+                                     <table class="dep_t">
+                                      <colgroup>
+                                        <col width="70px" />
+                                        <col width="" />
+                                      </colgroup>
+                                      <tbody>
+                                        <tr>
+                                          <th>
+                                            질문
+                                          </th>
+                                          <td>
+                                            <span class="d_block">
+                                              논술 어디로 보러가야 하나욤 ㅠㅠ
+                                            </span>
+                                           <p class="f_color3 t_right">답변완료</p>
+                                          </td>
+                                          <tr>
+                                            <th class="reply">
+                                              답변
+                                            </th>
+                                            <td>
+                                                 <div data-detail="type3" class="m_b20">
+                                                  <div data-box="reply">
+                                                    <p class="reply_title">
+                                                      <span class="user_name">시대인재 R&D팀 답변</span>
+                                                      <span class="write_date">2018-10-31 12:00:00</span>
+                                                    </p>
+                                                    <p class="reply_text">
+                                                      답변답변답변답변
+                                                    </p>
+                                                  </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <th>
+                                              추가<br/>
+                                              질문
+                                            </th>
+                                            <td>
+                                                <p>
+                                                  <span data-form="textarea" class="type1 full m_b10">
+                                                    <textarea name="" id="" cols="30" rows="10" placeholder="답변 완료된 상담글에 대해 1회 추가 질문을 하실 수 있습니다. 추가 질문이 있는 경우 300자 이내로 작성하세요."></textarea>
+                                                  </span>
+                                                  <button type="button" data-btn="navy" class="small size80 m_b20">등록</button>
+                                                </p>
+                                               <p class="f_color3 t_right">추가질문<br/>답변대기중</p>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <th class="reply">
+                                              답변
+                                            </th>
+                                            <td>
+                                               <span data-form="textarea" class="type1 full">
+                                        <textarea name="" id="" cols="30" rows="10">
+가채점 상담내용을 300자 이내로 작성하세요.
+                                        </textarea>
+                                      </span>
+                                            </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="btn_wrap t_right">
+              <button type="button" data-btn="gray">목록</button>
+            </div>
+          </fieldset>
+        </form>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>  <!-- // Wrap E -->
+
+<!-- 20180919 추가 -->
+<script src="../common/js/jquery.min.js"></script>
+<script src="../common/js/jquery.selectric.js"></script>
+<script>
+  $(function(){
+    $('select, .select').selectric();
+
+    $('select').selectric({
+      maxHeight: 200
+    });
+
+    $('.customOptions').selectric({
+      optionsItemBuilder: function(itemData, element, index){
+        return element.val().length ? '<span class="ico ico-' + element.val() +  '"></span>' + itemData.text : itemData.text;
+      }
+    });
+
+    $('select').on('selectric-before-init');
+    $('.selectricWrapper').each(function(){
+      var selectClass = $(this).find('select').attr('class');
+      $(this).addClass(selectClass);
+    });
+
+
+  });
+</script>
+<!-- 20180919 추가 끝-->
+</body>

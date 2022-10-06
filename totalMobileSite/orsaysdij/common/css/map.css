@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* map area */
+.map-container .img-box{ border:1px solid #dee0e1; }
+.map-container .img-box > img{ width:100%; line-height:230px; background:#2b435e; font-size:16px; color:#fff; text-align:center; }
+.map-container .list-dotted li span:nth-child(1){ font-weight:bold; color:#FFD500; }
+.map-container .list-dotted li span:nth-child(2){ font-weight:bold; color:#E46912; }

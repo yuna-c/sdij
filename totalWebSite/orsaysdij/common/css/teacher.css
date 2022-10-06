@@ -1,0 +1,10 @@
+@charset "utf-8";
+.teacher-container .board-layout{ margin:0 auto; }
+.teacher-container .board-layout .float-area{ padding:10px 50px; }
+.teacher-container .board-layout .img-area{ width:350px; }
+.teacher-container .board-layout .txt-area{ width:340px; margin-left:45px; }
+
+.teacher-container .board-layout .dep2-tit{ line-height:1; margin:0 auto 16px; font-size:32px; font-weight:700; }
+.teacher-container .board-layout .dep3-tit{ line-height:23px; margin-bottom:45px; font-size:20px; font-weight:700; }
+.teacher-container .board-layout .list-tit{ font-size:14px; }
+.teacher-container .board-layout .list-tit dl dt{ margin-bottom:0; }

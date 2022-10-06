@@ -1,0 +1,1 @@
+<% response.redirect "/totalWebSite/renew2019/reclass/member/login.asp" %>

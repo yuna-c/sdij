@@ -1,0 +1,213 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_mypage_ordercheck_none.html
+* @ 페이지설명	: 모바일 > 공통 > 마이페이지 > 주문&배송조회 > 내역없음 
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-22
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>마이페이지 > 주문&배송조회 > 내역없음</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="common" data-depth2="mypage" data-depth3="ordercheck" data-depth4="none">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+		<h2 data-title="type1">구매내역</h2>
+		<div data-layout="type1">
+			<!-- 2017-09-19 마크업 수정 S -->
+			<h3 data-title="type2">기간설정
+				<a href="#" class="d_check"><span>Be the <b>시대인재</b></span> 배송조회 ></a>
+			</h3>
+			<!-- 2017-09-19 마크업 수정 E -->
+			<div data-tab="type1" class="num4 m_b40">
+				<button data-btn="type1" class="on">1주일</button>
+				<button data-btn="type1" class="m_l5">1개월</button>
+				<button data-btn="type1" class="m_l5">3개월</button>
+				<button data-btn="type1" class="m_l5">6개월</button>
+			</div>
+			<div data-wrap="type1" class="m_b40">
+				<span data-form="date">
+					<input type="date">
+				</span>
+				<em class="form_space">~</em>
+				<span data-form="date" class="f_right">
+					<input type="date">
+				</span>
+			</div>
+			<button data-btn="whitegray" class="full m_b60">검색</button>
+
+			<ul data-list="type4" class="checkout order m_b60">
+				<li class="cart_empty">
+					해당기간에 주문/배송 내역이 없습니다.
+				</li>
+			</ul>
+
+			<p class="field_info m_b30 f_color3">* 주문번호 클릭 시 배송지와 결제정보를 확인하실 수 있습니다.</p><!-- 20180302 소스 수정 -->
+
+			<ul data-list="type4" class="checkout order m_b40">
+				<li class="cart_info">
+					2017-01-01 11:11:11 
+					<a href="#" data-btn="link" class="f_small" target="_blank">12341243124</a>
+				</li>
+				<li>
+					<span class="cate on">시대인재 ON</span>
+					<p class="title">[서바이벌] <strong><a data-btn="link">사회문화 6월 평가원 모의고사 대비 고난도 실전 모의 + 킬러문항 심화특강(3회)</a></strong></p>
+					<p class="price">결제수단 : 무통장입금</p>
+					<p class="summary">
+						<span class="amount">수량 1개</span>
+						<span class="total">360,000 원</span>
+					</p>
+				</li>
+				<li>
+					<span class="cate">시대인재</span>
+					<p class="title">[서바이벌] <strong><a data-btn="link">사회문화 6월 평가원 모의고사 대비 고난도 실전 모의 + 킬러문항 심화특강(3회)</a></strong></p>
+					<p class="price">판매가 : 360,000원</p>
+					<p class="summary">
+						<span class="amount">수량 1개</span>
+						<span class="total">360,000 원</span>
+					</p>
+				</li>
+				<li>
+					<span class="cate books">시대인재 Books</span>
+					<p class="title">[서바이벌] <strong><a data-btn="link">사회문화 6월 평가원 모의고사 대비 고난도 실전 모의 + 킬러문항 심화특강(3회)</a></strong></p>
+					<p class="price">판매가 : 360,000원</p>
+					<p class="summary">
+						<span class="amount">수량 1개</span>
+						<span class="total">360,000 원</span>
+					</p>
+				</li>
+				<li>
+					<span class="cate on">시대인재 ON</span>
+					<p class="title">[서바이벌] <strong><a data-btn="link">사회문화 6월 평가원 모의고사 대비 고난도 실전 모의 + 킬러문항 심화특강(3회)</a></strong></p>
+					<p class="price">판매가 : 360,000원</p>
+					<p class="summary">
+						<span class="amount">수량 1개</span>
+						<span class="total">360,000 원</span>
+					</p>
+				</li>
+				<li class="cart_summary">
+					<span>입금대기</span>
+					<button type="button" data-btn="whitegray" class="small6">결제취소</button>
+				</li>
+			</ul>
+
+			<ul data-list="type4" class="checkout order m_b40">
+				<li class="cart_info">
+					2017-01-01 11:11:11 
+					<a href="#" data-btn="link" class="f_small" target="_blank">12341243124</a>
+				</li>
+				<li>
+					<span class="cate on">시대인재 ON</span>
+					<p class="title">[서바이벌] <strong><a data-btn="link">사회문화 6월 평가원 모의고사 대비 고난도 실전 모의 + 킬러문항 심화특강(3회)</a></strong></p>
+					<p class="price">결제수단 : 무통장입금</p>
+					<p class="summary">
+						<span class="amount">수량 1개</span>
+						<span class="total">360,000 원</span>
+					</p>
+				</li>
+				<li class="cart_summary">
+					<span>결제완료</span>
+					<em>발송예정</em>
+					<button type="button" data-btn="whitegray" class="small6">배송조회</button>
+				</li>
+			</ul>
+			<ul data-list="type4" class="checkout order m_b40"><!--20180508 클래스수정-->
+				<li class="cart_info">
+					2017-01-01 11:11:11 
+					<a href="#" data-btn="link" class="f_small" target="_blank">12341243124</a>
+				</li>
+				<li>
+					<span class="cate on">시대인재 ON</span>
+					<p class="title">[서바이벌] <strong><a data-btn="link">사회문화 6월 평가원 모의고사 대비 고난도 실전 모의 + 킬러문항 심화특강(3회)</a></strong></p>
+					<p class="price">결제수단 : 무통장입금</p>
+					<p class="summary">
+						<span class="amount">수량 1개</span>
+						<span class="total">360,000 원</span>
+					</p>
+				</li>
+				<li class="cart_summary">
+					<span class="red">환불완료</span>
+					<button type="button" data-btn="whitegray" class="small6">배송조회</button>
+				</li>
+			</ul>
+			<!--20180508 소스추가S-->
+			<ul data-list="type4" class="checkout order m_b60">
+				<li class="cart_info">
+					2017-01-01 11:11:11 
+					<a href="#" data-btn="link" class="f_small" target="_blank">12341243124</a>
+				</li>
+				<li>
+					<span class="cate on">시대인재 ON</span>
+					<p class="title">[이벤트] <strong><a data-btn="link">수+지2+화1</a></strong></p>
+					<p class="price">결제수단 : 이벤트</p>
+					<p class="summary">
+						<span class="amount">수량 1개</span>
+					</p>
+				</li>
+			</ul>
+			<!--20180508 소스추가E-->
+			<h3 data-title="type2" class="m_b30">주문/배송 안내</h3>
+			<div data-box="type6">
+				<ul data-list="type2">
+					<li><span>-</span><p>무통장입금의 경우 입금승인 완료 후 서비스 이용 가능 및 교재 발송대기 상태가 됩니다.</p></li>
+					<li><span>-</span><p>배송조회는 교재가 실제 발송된 이후 택배사 배송조회 팝업을 통해 확인 가능합니다.</p></li>
+					<li><span>-</span><p>해당 주문건의 상세 내용 및 전자 영수증은 주문번호 클릭 후 상세 페이지에서 확인 바랍니다.</p></li>
+					<li><span>-</span><p>컨설팅 상품의 경우 주문 이후 24시간 내에 입금승인이 안되는 경우 자동으로 취소됩니다.</p></li>
+					<li>
+						<span>-</span>
+						<p>주문상태별 환불 절차는 다음과 같습니다.
+							<ul>
+								<!--20180221 코드수정 S-->
+								<li>
+									<span>-</span>
+									<p>
+										<b>무통장입금</b><br> 입금대기 – 가상 계좌로 입금 전 상태를 말하며 입금 전 결제취소 가능<br>
+										입금승인 – 부여된 가상 계좌로 입금 내역이 확인 완료된 상태를 말하며 환불신청이 가능하지만 취소 수수료 및 일정 기간 소요</span>
+									</p>
+								</li>
+								<li><span>-</span><p><b>신용카드 / 실시간 계좌이체</b><br> 결제완료 – 승인 처리가 완료된 상태로 취소 수수료 부과 및 영업일 기준 5일 이후 취소 내역 확인 가능</p></li>
+								<!--20180221 코드추가 S-->
+								<li><span>-</span><p><b>휴대폰 결제</b><br>취소 및 환불은 결제 당월 말일까지만 가능합니다. <br /> (1월 결제 내역은 1월 31일까지만 취소 가능, 2월 1일 부터는 취소 불가)</p></li>
+								<!--20180221 코드추가 E-->
+								<li><span>-</span><p><b>교재/도서</b><br /> 포장을 제거하지 않은 낙서, 훼손이 없는 새 상품만 환불 가능하며 사용감이 있는 경우 환불 불가. 단, 파본은 교환 가능</p></li>
+								<!--20180221 코드수정 E-->
+							</ul>
+						</p>
+					</li>
+					<!--span>-</span><p>1개월 이상 상품을 동시 결제한 경우 전체 취소 후 일부 재결제 방식으로 처리됩니다.</p-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

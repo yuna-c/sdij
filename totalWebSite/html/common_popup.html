@@ -1,0 +1,117 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/header.html
+* @ 페이지설명 		: header.html
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-03-29
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>페이지레이아웃</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<link rel="stylesheet" href="../common/css/swiper.min.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/aca_dev.js"></script><!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/common_dev.js"></script>
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/typed.js"></script>
+
+<style type="text/css">
+	#content_wrap{background:#ccc;}
+</style>
+
+</head>
+<body>
+<div id="wrap">	<!-- // Wrap S -->
+
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+		
+	</div>
+</div>
+<!-- // content_wrap End -->
+
+ 	<!-- 스와이프 팝업 -->
+    <div data-pop="pop">
+        <div class="pop_wrap">
+            <div data-swipe="pop" class="pop swiper-container">
+                <div class="main-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="../common/img/pop_bg.png"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="../common/img/pop_bg2.png"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="../common/img/pop_bg3.png"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="../common/img/pop_bg4.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <div class="pop_prev">back</div>
+                <div class="pop_next">go</div>
+            </div>
+            <div class="today">
+                <span data-form="checkbox" class="type6">
+                    <input type="checkbox" id="pop">
+                    <label for="pop">오늘 하루 열지 않기</label>
+                </span>
+                <button type="button" class="close">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 일반팝업 -> class="type1" 세로정렬 -->
+    <div data-pop="pop" class="type1">
+        <div class="pop_wrap">
+            <div class="content">
+                <a href="#"><img src="../common/img/pop_bg2.png"></a>
+            </div>
+            <div class="today">
+                <span data-form="checkbox" class="type6">
+                    <input type="checkbox" id="pop2">
+                    <label for="pop2">오늘 하루 열지 않기</label>
+                </span>
+                <button type="button" class="close">닫기</button>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    var swiper11 = new Swiper('.pop.swiper-container', {
+        pagination: '.main-pagination',
+        paginationClickable: true,
+        spaceBetween: 0,
+        slidesPerView:1,
+        /*autoplay: 4000,*/
+        loop:true,
+        simulateTouch:false,
+        nextButton: '.pop_next',
+        prevButton: '.pop_prev',
+    });
+</script>
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

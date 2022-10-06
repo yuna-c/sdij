@@ -1,0 +1,92 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_mypage_ordercheck_none.html
+* @ 페이지설명	: 모바일 > 공통 > 마이페이지 > 주문&배송조회 > 내역없음 
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-22
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>메인</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<link rel="stylesheet" href="../common/css/swiper.min.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="common" data-depth2="main">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+<div data-box="main">
+	<div class="swiper-container">
+		<div class="main-pagination"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide bg1">
+            	<div class="main1">
+            		<p>기본이 결국 깊이를 만든다는 믿음.</p>
+            		<strong>근 본 을</strong>
+            		<strong>배 우 다</strong>
+            	</div>
+            </div>
+            <div class="swiper-slide bg2">
+            	<div class="main2">
+            		<p>인생의 꿈과 가치를 높이는 교육.</p>
+            		<strong>꿈 을</strong>
+            		<strong>키 우 다</strong>
+            	</div>
+            </div>
+            <!-- 2017-08-02 마크업 수정 S -->
+            <div class="swiper-slide bg3">
+            	<div class="main3">
+		        	<strong>시 대 의</strong>
+		        	<strong class="f_color1">인 재 가</strong>
+            		<strong>되 다</strong>
+            	</div>
+                <div class="main_footer">
+                    주소 : 서울특별시 강남구 삼성로 434 5층 (대치동, 쥬비스타워) (주)하이컨시온 우) 06279 │ 대표이사 : 오우석 │ 사업자등록번호 : 429-88-00534 │ 대표전화 : 02-2051-2378<em>Copyright (주)하이컨시온. All Right Reserved.</em>
+                </div>
+            </div>
+            <!-- 2017-08-02 마크업 수정 E -->
+        </div> 
+    </div>
+</div>
+<script>
+    var swiper = new Swiper('*[data-box="main"] .swiper-container', {
+        effect:'fade',
+        pagination: '.main-pagination',
+        spaceBetween: 0,
+        speed:1000,
+        slidesPerView:1,
+        centeredSlides: false,
+        autoplayDisableOnInteraction: true,
+        freemode: true,
+        autoplay:4000,
+        loop:false,
+        touchratio:0,
+        followFinger: false,
+        onTouchMove: function (swiper, e){
+            $('*[data-box="main"]').addClass('stop');
+        },
+    });
+</script>
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

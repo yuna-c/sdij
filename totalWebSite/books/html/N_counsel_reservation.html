@@ -1,0 +1,186 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/aca_acainfo_notice_list.html
+* @ 페이지설명	: 학원 > 학원소개 > 공지사항 > 리스트
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-03
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>시대인재N > 상담접수 > 예약하기</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/N.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js, N : N_dev.js -->
+<script src="../common/js/N_dev.js"></script>
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	.style{}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="N" data-depth2="counsel" data-depth3="reservation">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재N &gt;</span>
+		<span>상담/접수 &gt;</span>
+		<span>상담예약</span>
+	</div>
+	<div id="content">
+		
+		<h2 data-title="type1">상담예약</h2>
+
+		<div data-layout="type1">
+			<form>
+				<fieldset>
+					<p class="field_info m_b20">방문 상담예약을 신청하시면 원하시는 시간에 시대인재N만의 차별화된 시설, 커리큘럼 및 학습 시스템에 대한 자세한 설명을 <br>들으실 수 있습니다.</p>
+					<div data-tab="type1" class="double">
+						<a href="#" class="on">예약하기</a>
+						<a href="#">예약내역조회</a>
+					</div>
+					<dl data-form="wrap" class="m_b50">
+						<dt class="radio_only"><span class="field_name">신청자구분<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="radio" class="m_0">
+								<input type="radio" id="radio60" name="radio_test60" checked="checked">
+								<label for="radio60">학생</label>
+							</span>
+							<span data-form="radio">
+								<input type="radio" id="radio61" name="radio_test60">
+								<label for="radio61">학부모</label>
+							</span>
+						</dd>
+						<dt><label for="input3" class="field_name">학생 이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input3"></span></dd>
+						<dt><span class="field_name">학생 휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>간
+							<p>
+								<span data-form="select">
+									<select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 가운데 네자리">
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 뒤 네자리">
+								</span>
+							</p>
+						</dd>
+						<dt><label for="input5" class="field_name">보호자 이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="password" id="input5"></span></dd>
+						<dt><span class="field_name">보호자 휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p>
+								<span data-form="select">
+									<select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 가운데 네자리">
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 뒤 네자리">
+								</span>
+							</p>
+						</dd>
+						<dt><label for="input1" class="field_name">학교/학년<strong>*<em>필수항목</em></strong></label></dt>
+						<dd>
+							<span data-form="input"><input type="text" id="input1" value="시대고등학교"></span>
+							<span data-form="select" class="type5 m_l10">
+								<select title="학년선택">
+									<option>학년</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+							</span>
+						</dd>
+						<dt><label for="input1" class="field_name">예약일시<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="date" class="type1"><input type="text" class="datepicker" value="2017-01-01"></span>
+							<span data-form="select" class="type4 m_l10">
+								<select title="시간선택">
+									<option>시간선택</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+								</select>
+							</span>
+						</dd>
+						<dt><label for="input1" class="field_name">문의사항</label></dt>
+						<dd>
+							<textarea data-form="textarea" class="type7"></textarea>
+						</dd>
+					</dl>
+					<h3 data-title="type2">개인정보 수집 및 이용 동의</h3>
+					<div data-form="textarea" class="type8">
+						시대인재N학원은 재원생 확인을 위하여 아래와 같이 개인정보를 수집·이용하고자 합니다.내용을 자세히 읽으신 후<br>
+						동의 여부를 결정하여 주십시오.<br>
+						[수집항목] 이름, 성별, 생년월일, 핸드폰번호, 재원정보<br>
+						[수집목적] 학원 재원 정보 조회, 학원 수강 관련 정보제공 등에 사용<br>
+						[개인정보의 보유 및 이용기간] 재원 정보 조회 후 즉시 파기<br>
+						단, 재원생 인증 결과 조회된 재원정보(학원, 수강반, 정보)는 회원 탈퇴시 파기<br>
+						<em>* 개인정보 수집 및 이용 동의를 하지 않을 경우 관련 서비스의 제한이 있을 수 있습니다.</em>
+					</div>
+					<div class="radio_wrap">
+						<span data-form="radio" class="m_0">
+							<input type="radio" id="radio62" name="radio_test62" checked="checked">
+							<label for="radio62">동의합니다</label>
+						</span>
+						<span data-form="radio">
+							<input type="radio" id="radio63" name="radio_test62">
+							<label for="radio63">동의하지 않습니다</label>
+						</span>
+					</div>
+					<div class="btn_wrap5">
+						<button type="button" data-btn="navy">상담신청</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

@@ -1,0 +1,166 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/on_studeep_print_popup.html
+* @ 페이지설명	: 온 > 스터딥 > 프린트 > 팝업  
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-12
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>스터딥 > 응시원서접수 > 팝업  </title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/N.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/selectordie.min.js"></script>
+<style type="text/css">
+</style>
+</head>
+<body data-depth1="N" data-depth2="counsel" data-depth3="application" data-depth4="pop">
+<div data-popup="pop" class="print">
+	<div class="pop_wrap">
+		<form>
+			<fieldset>
+				<h3 data-title="type2">시대인재 N 응시원서 온라인 접수</h3>
+				<dl data-form="wrap" class="m_b20">
+					<dt><span class="field_name">전형 구분</span></dt>
+					<dd><span class="field_name">무시험 전형</span></dd>
+					<dt><label for="input3" class="field_name">이름</label></dt>
+					<dd><span data-form="input"><input type="text" id="input3"></span></dd>
+					<dt><label for="input1" class="field_name">생년월일</label></dt>
+					<dd><span data-form="date" class="type1"><input type="text" class="datepicker" value="2017-01-01"></span></dd>
+					<dt class="radio_only"><span class="field_name">재학구분</span></dt>
+						<dd>
+							<span data-form="radio" class="m_0">
+								<input type="radio" id="radio60" name="radio_test60" checked="checked">
+								<label for="radio60">고교졸업</label>
+							</span>
+							<span data-form="radio">
+								<input type="radio" id="radio61" name="radio_test60">
+								<label for="radio61">검정고시</label>
+							</span>
+						</dd>
+					<dt><label for="input4" class="field_name">출신학교</label></dt>
+					<dd><span data-form="input"><input type="text" id="input4"></span></dd>
+					<dt><label for="input1" class="field_name">졸업년도</label></dt>
+					<dd><span data-form="select" class="type4">
+							<select title="년도선택">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+							</select>
+						</span>
+					</dd>
+					<dt><span class="field_name">본인 연락처</span></dt>
+					<dd>
+						<p>
+							<span data-form="select">
+								<select title="휴대폰번호 앞 세자리">
+									<option>010</option>
+									<option>011</option>
+									<option>017</option>
+									<option>018</option>
+									<option>019</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="휴대폰번호 가운데 네자리">
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="휴대폰번호 뒤 네자리">
+							</span>
+						</p>
+					</dd>
+					<dt><span class="field_name">학부모 연락처</span></dt>
+					<dd>
+						<p>
+							<span data-form="select">
+								<select title="휴대폰번호 앞 세자리">
+									<option>010</option>
+									<option>011</option>
+									<option>017</option>
+									<option>018</option>
+									<option>019</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="휴대폰번호 가운데 네자리">
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="휴대폰번호 뒤 네자리">
+							</span>
+						</p>
+					</dd>
+					<dt><span class="field_name">성적표 업로드</span></dt>
+					<dd>
+						<p>
+							<button type="button" data-btn="whitegray" class="m_0" onclick="openNewWindow('common_fileup_pop.html')">파일찾기</button>
+						</p>
+						<ul data-list="type1">
+							<li><span>파일파일파일.pdf</span> <button type="button" class="delete"><span class="hidden">삭제</span></button></li>
+							<li><span>파일파일파일파일파일파일.pdf</span> <button type="button" class="delete"><span class="hidden">삭제</span></button></li>
+						</ul>
+						<p class="field_info m_b20">※ jpg, bmp, png 이미지 파일만 업로드 가능합니다.</p>
+						<div>
+							<span data-form="checkbox" class="m_b20">
+								<input type="checkbox" id="c_1">
+								<label for="c_1"><strong>성적표 추후 보완</strong></label>
+							</span>
+							<ul data-list="type2">
+								<li>- 원서 접수 후 추후 성적표를 등록할 경우 체크하세요.</li>
+								<li>- 접수내역조회 메뉴에서 1회에 한 해 성적표를 업로드 할 수 있습니다.</li>
+							</ul>
+						</div>
+					</dd>
+				
+				</dl>
+				<p class="field_info f_color3">※ 최초 등록 후 수정이 불가하므로 정확한 내용을 기입하시기 바랍니다.</p>
+				<p class="field_info f_color3 m_b50">※ 추후 성적표 원본을 대조하므로 반드시 본인의 성적표를 업로드 하세요.</p>
+				<h3 data-title="type2">개인정보 수집 및 이용 동의</h3>
+				<div data-form="textarea" class="type8">
+					시대인재N학원은 재원생 확인을 위하여 아래와 같이 개인정보를 수집·이용하고자 합니다.내용을 자세히 읽으신 후 동의
+					여부를 결정하여 주십시오.<br><br>
+					[수집항목] 이름, 생년월일, 연락처, 학교, 서적 [수집목적] 학생관리, 상담, 학습 및 입시정보제공 등에 사용[개인정보의<br>
+					보유 및 이용기간] 퇴원 후 1년<br>
+					<em>* 개인정보 수집 및 이용 동의를 하지 않을 경우 관련 서비스의 제한이 있을 수 있습니다.</em>
+				</div>
+				<div class="radio_wrap">
+					<span data-form="radio" class="m_0">
+						<input type="radio" id="radio62" name="radio_test62" checked="checked">
+						<label for="radio62">동의합니다</label>
+					</span>
+					<span data-form="radio">
+						<input type="radio" id="radio63" name="radio_test62">
+						<label for="radio63">동의하지 않습니다</label>
+					</span>
+				</div>
+				<div class="btn_wrap5">
+					<button type="button" data-btn="navy">확인</button>
+				</div>
+			</fieldset>
+		</form>
+
+	</div>
+</div>
+</body>

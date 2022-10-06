@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+#container.mentoring-container{ padding-bottom:3.7rem; }
+.mentoring-container .container-tab .tab-content > .tit-area{ line-height:1.266666667rem; padding-left:0.666666667rem; }
+.mentoring-container .container-tab .tab-content > .tit-area > .tit-side{ width:5.833333333rem; right:0.666666667rem; }
+.mentoring-container .container-tab .list-col2 > ul > li:first-child{ margin-top:1rem; }
+.mentoring-container .container-tab .list-col2 > ul > li .tit-area .tit-side{ right:0.666666667rem; }
+.mentoring-container .container-tab .list-col2 > ul > li .content-area .preview{ margin-bottom:0.666666667rem; font-size:0; }
+.mentoring-container .container-tab .list-col2 > ul > li .content-area .preview > span{ width:50%; line-height:0.8rem; display:inline-block; }
+.mentoring-container .container-tab .list-col2 > ul > li .content-area .preview .name{ font-size:0.533333333rem; }
+.mentoring-container .container-tab .list-col2 > ul > li .content-area .preview .txt{ font-size:0.466666667rem; text-align:right; }
+.mentoring-container .container-tab .list-type1 > ul > li .tit-area .tit-side.btn{ width:5.833333333rem; }
+
+/* Tablets */
+@media all and (min-width:600px) and (orientation:portrait){
+    .mentoring-container .container-tab .list-col2 > ul{ margin-top:-1rem; margin-left:-1.333333333rem;}
+    .mentoring-container .container-tab .list-col2 > ul > li{ width:calc(50% - 1.333333333rem); float:left; margin-left:1.333333333rem; }
+}
+@media all and (min-width:1024px) and (orientation:landscape){
+    .mentoring-container .container-tab .list-col2 > ul{ margin-top:-1rem; margin-left:-1.333333333rem;}
+    .mentoring-container .container-tab .list-col2 > ul > li{ width:calc(50% - 1.333333333rem); float:left; margin-left:1.333333333rem; }
+}
+/* mobile */
+@media all and (max-width:539px) and (orientation:portrait){
+    .mentoring-container .tab-dep1 > a{ margin:0 0.366666667rem; }
+}
+@media all and (max-width:959px) and (orientation:landscape){
+    .mentoring-container .tab-dep1 > a{ margin:0 0.366666667rem; }
+}

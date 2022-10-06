@@ -1,0 +1,187 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/aca_consulting_info.html
+* @ 페이지설명	: 학원 > 컨설팅 > 컨설팅신청안내
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-10
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>컨설팅 > 컨설팅신청안내</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/aca_dev.js"></script>
+<script src="../common/js/typed.js"></script>
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="aca" data-depth2="consulting" data-depth3="wait" data-depth4="input">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재 &gt;</span>
+		<span>입시R&D &gt;</span>
+		<span>컨설팅</span>
+	</div>
+	<div id="content">
+
+		<h2 data-title="type1">상시컨설팅 대기자 예약 접수</h2><!-- 20180305 텍스트 수정 -->
+		<div data-layout="type1">
+			<form>
+				<fieldset>
+					<!-- 20180305 소스수정 S -->
+					<h3 data-title="type2">1. 컨설턴트 선택</h3>
+					<div data-list="type14">
+						<button type="button">이민하</button>
+						<button type="button">정이규 (문과)</button>
+						<button type="button">정이규 (이과)</button>
+						<button type="button" disabled>강동우 (로미오)</button>
+						<button type="button">김용욱 (물량공급)</button>
+					</div>
+
+					<h3 data-title="type2">2. 본인확인</h3>
+					<dl data-form="wrap" class="m_b20">
+						<dt><label for="input1" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input1" value="김시대"></span></dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p>
+								<span data-form="select">
+									<select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 가운데 네자리" value="1234">
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 뒤 네자리" value="5678">
+								</span>
+								<button type="button" data-btn="whitegray" class="size100">변경</button>
+								<!-- <button type="button" data-btn="whitegray" class="size140">인증번호전송</button> --><!-- 비회원일경우 -->
+							</p>
+						</dd>
+						<dt><label for="input2" class="field_name">인증번호</label></dt>
+						<dd>
+							<span data-form="input"><input type="text" id="input2"></span>
+							<button type="button" data-btn="whitegray" class="size100">확인</button>
+							<span class="timer"><em>인증번호 입력 남은시간</em>3:00</span>
+						</dd>
+					</dl>
+					<ul data-text="ul1" class="m_b50">
+						<li><span>-</span>입력한 휴대폰번호로 인증번호가 발송됩니다.</li>
+						<li><span>-</span>중복신청은 불가능합니다.</li>
+					</ul>					
+
+					<!-- 20180305 소스수정 E -->
+
+					<h3 data-title="type2">3. 기타사항</h3>
+					<dl data-form="wrap" class="m_b50">
+						<dt><span class="field_name">비상연락처</span></dt>
+						<dd>
+							<p>
+								<span data-form="select">
+									<select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 가운데 네자리">
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 뒤 네자리">
+								</span>
+							</p>
+						</dd>
+						<dt><span class="field_name">기타사항</span></dt>
+						<dd>
+							<textarea data-form="textarea" class="type10"></textarea>
+						</dd>
+					</dl>
+
+					<!-- 2017-12-20 마크업 수정 S -->
+					<div data-table="type4">
+						<table>
+							<caption>유의사항 내용</caption>
+							<colgroup>
+								<col style="width:130px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row" class="v_middle">유의사항</th>
+									<td><p class="f_color3">- 공석 발생 시, 시대인재 학원에서 다음 대기자에게 연락 드릴 예정입니다. (대기순번 기준) </p>
+									<!-- 20180305 소스수정 S -->
+									<!--p class="f_color3">- 컨설팅 일정 5일 전까지 결제 필수</p>
+									<p class="f_color3">- 시대인재 본관 (크리스피 2층) 현장 결제만 가능</p--> 
+									<!-- 20180305 소스수정 E -->
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="v_middle">문의</th>
+									<td><p>- 컨설팅 예약자의 세부 절차 관련 문의 : 010-5810-2323 (문자전용)</p>
+									<p>- 신청오류 : 1522-0568 (시대인재 ON)</p></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- 2017-12-20 마크업 수정 E -->
+
+					<div class="btn_wrap3">
+						<a href="#" data-btn="navy" class="size180">대기예약 접수</a>
+					</div>
+
+				</fieldset>
+			</form>
+		</div>
+
+	</div>
+</div>
+
+<script>
+	$('*[data-list="type14"] button').click(function(){
+		$(this).siblings('button').removeClass('select');
+		$(this).addClass('select');
+	});
+</script>
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

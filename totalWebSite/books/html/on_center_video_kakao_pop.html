@@ -1,0 +1,93 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/on_center_vedio_kakao_pop.html
+* @ 페이지설명	: 온 > 고객센터 > 동영상가이드 > 카톡상담_팝업
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-15
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>고객센터 > 동영상가이드 > 카톡상담_팝업</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/on.css">
+<script src="../common/js/jquery-2.1.1.js"></script>
+<script type="text/javascript">
+$(function(){
+	var fileTarget = $('*[data-form="file"] .file_hidden'); 
+	fileTarget.on('change', function(){ // 값이 변경되면 
+	if(window.FileReader){ // modern browser 
+		var filename = $(this)[0].files[0].name; 
+	} else { // old IE 
+		var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출 
+	} // 추출한 파일명 삽입 
+	$(this).siblings('.file_name').val(filename); });
+});
+</script>
+<style type="text/css">
+
+*[data-popbox="type"]{padding:40px 60px;background:#fbe300;}
+
+.box_wrap{padding:0 60px;margin-bottom:40px;}
+.box_wrap:after{clear:both;content:"";display:block;}
+.box_wrap>dl{width:140px;}
+.box_wrap>dl>*{text-align:center;}
+.box_wrap>dl>dt{margin-bottom:10px;font-size:16px;}
+.box_wrap>dl>dd{width:140px;height:140px;border:1px solid #323232;}
+.bg_hidden{border:0;background:none;padding-top:0;padding-bottom:0;}
+
+</style>
+</head>
+<!-- 20170419 data-depth 추가 -->
+<body data-depth1="on" data-depth2="center" data-depth3="video" data-depth4="kakao" data-depth5="pop">
+<!-- 20170419 class="type1" 추가 -->
+<div data-popup="pop" class="type4">
+	<div class="pop_wrap2">
+		<h2 data-title="type5" class="popup">시대인재ON 카카오톡 상담안내</h2>
+		<p data-title="type4" class="m_b35">상담시간 평일 <strong>10:00 ~ 19:00</strong></p>
+		<ul data-box="qrbox">
+			<li>
+				<p>ID 검색</p>
+				<span>
+					<em>시대인재ON<br>고객센터</em>
+				</span>
+			</li>
+			<li>
+				<p>QR코드 검색</p>
+				<span>
+					<img src="../common/img/qrcode.png" alt="qrcode">
+				</span>
+			</li>
+		</ul>
+		<ul data-list="type2">
+			<li>
+				<span>-</span>
+				<p>카카오톡 어플에 시대인재 on 고객센터를 친구추가 합니다.</p>
+			</li>
+			<li>
+				<span>-</span>
+				<p>시대인재 on 사이트 이용에 관한 간단한 궁금증을 해결하세요.<br>
+				(상담가능 시간 평일 10:00~19:00)</p>
+			</li>
+			<li>
+				<span>-</span>
+				<p>
+					환불, 동영상장애, 결제 등 회원정보 확인이 필요한 문의는 카카오톡 상담으로<br>진행 되지 않으므로 1:1 상담을 이용하시기 바랍니다.<br>
+					<a href="#" data-btn="link" class="popup">1:1 상담 바로가기 &gt;</a>
+				</p></li>
+		</ul>
+	</div>
+</div>
+</body>

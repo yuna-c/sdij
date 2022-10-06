@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/** Tablets **/
+@media (max-width:1024px) and (orientation:portrait), (max-width:1336px) and (orientation:landscape){
+    /* rw */
+    .rw-pc{ display:none !important; }/* pc */
+    .rw-mo{ display:block !important; }/* mobile */
+
+
+    /* list */
+    .list-live > li{ margin-top:0.666666667rem; padding:0 0.333333333rem; flex-basis:50%; }
+    .list-live [class*='sticker']{ margin-bottom:0.166666667rem; display:block; }
+    .list-live .tit{ display:block; font-size:0.733333333rem; text-align:right; }
+
+    .list-live2 > li{ width:50%; flex-basis:50%; }
+
+
+    /* tab */
+    .tab-icon > ul > li > a{ padding-left:1rem; }
+
+    /* popup */
+    /* S : 기존 택배 신청 배너 / 배너 관리자 작업 후 삭제 예정 */
+    .container-popup{ right:1.066666667rem; }
+    /* E : 기존 택배 신청 배너 / 배너 관리자 작업 후 삭제 예정 */
+    .popup-wrap{ right:1.066666667rem; }
+
+    /* live table */
+    .live-container.index-container .table-type2 table tr td{ padding:0.166666667rem 0.333333333rem; }
+
+    /* monthly */
+    #container.monthly-container{ padding-bottom:4rem; }
+    .monthly-btn{ padding:0.833333333rem 1.066666667rem; display:flex; position:fixed; left:0; right:0; bottom:0; background-color:#fff; }
+    .monthly-btn > *{ height:1.666666667rem; line-height:1.6rem; margin:0 0.333333333rem; flex:1; }
+
+    #container.exam-container .container-exam > .exam-content .tab-type1{ margin-bottom:0; }
+    #container.exam-container .container-exam > .exam-content .tab-content{ width:100%; height:100%; overflow-x:hidden; overflow-y:auto; }
+    .exam-content .exam-omr{ border-right:1px solid #ebe7e7; }
+
+    /* player */
+    .player-container .container-player{ padding:0; }
+
+    /* faq */
+    .list-faq > ul > li{ width:50%; }
+}
+
+
+
+/** mobiles **/
+@media (max-width:539px) and (orientation:portrait), (max-width:959px) and (orientation:landscape){
+    /* input */
+    .input-file > .btn{ float:none; }
+    .input-file > .file-info{ margin-top:0.166666667rem; float:none; }
+
+    /* list */
+    .list-tit > li{ width:100%; padding-top:0; }
+
+    .list-live2 > li{ width:100%; flex-basis:100%; }
+
+    /* tab */
+    .tab-type1 > a{ margin:0 0.233333333rem 0.5rem; font-size:0.6rem; }
+    .tab-icon > ul{ flex-wrap:wrap; }
+    .tab-icon > ul > li{ width:50%; flex:inherit; }
+    .tab-icon > ul > li > a{ padding-left:0.666666667rem; }
+    .tab-icon > ul > li > a > [class^='ico']{ width:1rem; height:1rem; margin-right:0.333333333rem; }
+    .tab-icon > ul > li > a > span{ display:block; flex:1; }
+    .tab-icon > ul > li > a > span > small{ font-size:0.4rem; }
+
+    /* table */
+    .table-view1 .tit-area{ padding:0.666666667rem; }
+    .table-view1 .txt-area{ padding:0.666666667rem 0; }
+
+    /* popup */
+    /* S : 기존 택배 신청 배너 / 배너 관리자 작업 후 삭제 예정 */
+    .container-popup{ left:50%; right:auto; transform:translate(-50%, 0); }
+    /* E : 기존 택배 신청 배너 / 배너 관리자 작업 후 삭제 예정 */
+    .popup-wrap{ left:50%; right:auto; transform:translate(-50%, 0); }
+
+    /* live table */
+    .live-container .table-type2 table tr th{ padding:0.666666667rem 0.333333333rem; }
+    .live-container .table-type2 table tr td > a{ padding:0.666666667rem 0.166666667rem; }
+    .live-container .table-type2 table tr td > a > em{ font-size:0.4rem; font-weight:400; }
+
+    /* monthly */
+    #container.exam-container .container-exam > .exam-tit{ padding:0.333333333rem 1.066666667rem; flex-direction:column; }
+    #container.exam-container .container-exam > .exam-tit .tit-dep1{ max-width:100%; margin-bottom:0.333333333rem; }
+    #container.exam-container .container-exam > .exam-tit .exam-timer{ width:auto; height:1.666666667rem; padding:0 0.666666667rem; }
+    #container.exam-container .container-exam > .exam-content{ padding:8rem 1.066666667rem 2.5rem; }
+    #container.exam-container .container-exam > .exam-content .tab-type1{ top:6.166666667rem; }
+
+    #container.exam-container .container-exam > .monthly-btn{ padding:0.333333333rem 1.066666667rem; }
+
+    /* teachers */
+    .teachers-container .table-type1 table tr th.tit-area, .teachers-container .table-type1 table tr td.tit-area{ width:50%; }
+    .teachers-container .table-type1.table-view1 table tr th, .teachers-container .table-type1.table-view2 table tr th{ width:auto; }
+    
+}
+
+
+
+/** mobiles xs **/
+@media (max-width:320px) and (orientation:portrait){
+    
+}

@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.form-type1 .agree-type2 + .agree-type1{ margin-top:10px; }
+
+/* login-container */
+.login-container .find-link{ display:inline-flex; font-size:18px; align-items:center; }
+.login-container .btn{ margin:0 0 0 auto; }
+.login-container .join-link{ margin-top:50px; display:flex; padding-top:40px; font-size:18px; background:linear-gradient(to right, #000 33%, rgba(255, 255, 255, 0) 34%) 0 0 repeat-x; background-size:3px 1px; }
+.login-container .join-link .txt-line{ margin:0 0 0 auto; }
+
+/* join-container */
+.join-container .type-area{ margin:190px -10px 0; display:flex; }
+.join-container .type-area > a{ margin:0 10px; padding:20px; display:block; border:1px solid #f2f2f2; flex:1; }
+.join-container .type-area > a > [class^='ico']{ width:64px; height:64px; margin:0 auto 10px; display:block; }
+.join-container .type-area > a:nth-child(2) .tit-dep4 > .tit{ background:linear-gradient(180deg, rgba(255,255,255,0) 50%, #ffe2ce 50%); }
+.join-container .type-area > a .tit-dep4{ margin-bottom:0; position:relative; }
+.join-container .type-area > a .tit-dep4:after{ content:''; width:24px; height:24px; margin-top:-12px; display:block; position:absolute; top:50%; right:0; background:url(//img.sdij.com/sdijx/common/ico_next.png) 50% 50% no-repeat; background-size:100% 100%; }
+.join-container .type-area > a .tit-dep4 > small{ display:block; }
+
+/* leave-container */
+.leave-container .form-type1 .agree-type2 .list-agree > li .input-checkbox{ padding-right:20px; }
+
+/** Tablets **/
+@media (max-width:1024px) and (orientation:portrait), (max-width:1336px) and (orientation:landscape){
+    .join-container .type-area{ margin-top:50px; }
+}
+
+/** mobiles **/
+@media (max-width:539px) and (orientation:portrait), (max-width:959px) and (orientation:landscape){
+    .join-container .type-area{ margin-top:20px; flex-direction:column; }
+    .join-container .type-area > a{ margin:10px; }
+
+    .login-container .find-area{ flex-direction:column; }
+    .login-container .find-area > .find-link{ margin-top:20px; font-size:14px; order:2; }
+    .login-container .find-area > .find-link > a{ margin-left:auto; }
+    .login-container .join-link{ margin-top:20px; padding-top:20px; padding-right:60px; display:block; position:relative; font-size:14px; word-break:keep-all; }
+    .login-container .join-link > .txt-line{ position:absolute; top:20px; right:0; }
+}

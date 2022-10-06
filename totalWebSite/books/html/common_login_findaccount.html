@@ -1,0 +1,129 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/common_login_findaccount.html
+* @ 페이지설명	: 공통 > 로그인,회원가입 > 아이디,비번찾기
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-03-29
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>로그인,회원가입 > 아이디,비번찾기</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	.style{}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="common" data-depth2="login" data-depth3="findaccount">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재 &gt;</span>
+		<span>로그인/회원가입</span>
+	</div>
+	<div id="content">
+		<h2 data-title="type1">로그인/회원가입</h2>	
+		<div data-layout="type1">
+			<form>
+				<fieldset class="m_b50">
+					<h3 data-title="type2">
+						아이디를 잊으셨나요?
+						<em>회원정보 상의 이름, 핸드폰번호로 아이디를 찾을 수 있습니다.</em>
+					</h3>
+					<dl data-form="wrap">
+						<dt><label for="test4" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="test4"></span></dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="select" title="휴대폰 번호 앞자리">
+								<select>
+									<option>010</option>
+									<option>011</option>
+									<option>017</option>
+									<option>018</option>
+									<option>019</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span data-form="input" class="size110" title="휴대폰 번호 중간자리">
+								<input type="text">
+							</span>
+							<em>-</em>
+							<span data-form="input" class="size110" title="휴대폰 번호 뒷자리">
+								<input type="text">
+							</span>
+						</dd>
+					</dl>
+					<div class="btn_wrap bor_bot1">
+						<!-- 20170405 data-btn="navy"로 수정 -->
+						<button type="button" data-btn="navy">확인</button>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<h3 data-title="type2">
+						비밀번호를 잊으셨나요?
+						<em>회원정보 상의 이름, 아이디, 핸드폰번호를 입력하시면 비밀번호를 재발급 받을 수 있습니다.</em>
+					</h3>
+					<dl data-form="wrap">
+						<dt><label for="test2" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="test2"></span></dd>
+						<dt><label for="test3" class="field_name">아이디<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="test3"></span></dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="select" title="휴대폰 번호 앞자리">
+								<select>
+									<option>010</option>
+									<option>011</option>
+									<option>017</option>
+									<option>018</option>
+									<option>019</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span data-form="input" class="size110" title="휴대폰 번호 중간자리">
+								<input type="text">
+							</span>
+							<em>-</em>
+							<span title="휴대폰 번호 뒷자리" data-form="input" class="size110">
+								<input type="text">
+							</span>
+						</dd>
+					</dl>
+					<div class="btn_wrap">
+						<!-- 20170405 data-btn="navy"로 수정 -->
+						<button type="button" data-btn="navy">확인</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

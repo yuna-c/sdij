@@ -1,0 +1,21 @@
+.grade-box ul{ padding:0; }
+.grade-box ul li{ vertical-align:middle; }
+.grade-box ul li:first-child{ width:200px; }
+
+.table-tit{ margin-bottom:0; }
+
+/* chart */
+.grade-box ul li .chart-container{ font-weight:400; }
+.bb-chart-radars .bb-axis text{ font-size:12px; cursor:pointer; }
+.bb-tooltip th{ background-color:#b2b2b2; font-weight:400; color:#000; }
+.bb-tooltip td{ border-left:none; }
+.bb-chart-radars .bb-levels text{ font-size:8px; }
+.bb-legend-item{ transform:translate(0, 10px); }
+
+@media print{
+    #header, #footer, .page-loc, .btn-print{ display:none; }
+    html, body, #wrap, #container, .layout-container{ width:100%; min-width:100%; min-height:29.7cm; margin:0; padding:0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+    .board-layout{ width:100%; margin:0; padding:0; background-color:#fff; }
+    .page-tit{ margin-top:20px; }
+    .grade-box{ padding:35px 85px; }
+}

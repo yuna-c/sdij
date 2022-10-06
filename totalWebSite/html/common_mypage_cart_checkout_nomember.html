@@ -1,0 +1,534 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/common_mypage_cart_checkout.html
+* @ 페이지설명	: 공통 > 마이페이지 > 장바구니 > 주문&결제
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-12
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>마이페이지 > 장바구니 > 주문&결제</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="common" data-depth2="mypage" data-depth3="cart" data-depth4="checkout" data-depth5="nomember">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재 &gt;</span>
+		<span>마이페이지 &gt;</span>
+		<span>장바구니</span>
+	</div>
+	<div id="content">
+		
+
+		<h2 data-title="type1" class="m_0">장바구니</h2>
+		<div data-layout="type1">
+			<div data-step="type2">
+				<div class="pass"><em>1</em>장바구니</div>
+				<div class="on"><em>2</em>주문/결제</div>
+				<div><em>3</em>결제완료</div>
+			</div>
+
+			<h3 data-title="type3" class="m_b15">
+				비회원 구매 약관 동의
+				<span class="a_right">비회원 구매를 위해 약관내용을 확인하신 후 동의하여 주시기 바랍니다.</span>
+			</h3>
+
+			<div data-box="type19" class="m_b50">
+				<div data-tab="type4">
+					<button type="button" class="on" id="tab1">수집하는 개인정보 항목</button>
+					<button type="button" id="tab2">개인정보의 수집및 이용목적</button>
+					<button type="button" id="tab3">개인정보의 보유 및 이용기간</button>
+				</div>
+				<div class="tab1">
+					<div data-form="textarea" class="type9">
+						첫째, “시대인재북스”는 비회원구매, 원활한 고객상담, 각종 서비스의 제공을 위해 비회원 주문 이용 시 아래와 같은 개인정보를 수집하고 있습니다.<br>
+						- 필수항목 : 주문자명, 휴대폰전화번호, 이메일 주소, 주문 비밀번호, 수신자명, 수신자 연락처, 배송주소,<br>
+						- 선택항목: 주문자연락처, 수신자명, 수신자연락처(수신자 다를시)<br>
+						- 개인정보 수집방법 : 홈페이지(비회원 구매)<br>
+						둘째, 서비스 이용과정이나 사업처리 과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.<br>
+						- IP Address, 쿠키, 방문 일시, OS종류, 브라우져 종류 서비스 이용 기록, 불량 이용 기록<br>
+						셋째, 부가 서비스 및 맞춤식 서비스 이용 또는 이벤트 응모 과정에서 해당 서비스의 이용자에 한해서만 아래와 같은 정보들이 수집될 수 있습니다.<br> 
+						- 개인정보 추가 수집에 대해 동의를 받는 경우<br>
+						넷째, 유료 서비스 이용 과정에서 아래와 같은 정보들이 수집될 수 있습니다.<br> 
+						- 신용카드 결제 시 : 카드사명, 카드번호 등<br>
+						- 휴대전화 결제 시 : 이동전화번호, 통신사, 결제승인번호, 이메일주소 등<br> 
+						- 계좌이체 시 : 은행명, 계좌번호 등<br> 
+						- 상품권 이용 시 : 상품권 번호<br> 
+						- 환불시 : 환불계좌정보(은행명, 계좌번호, 예금주명) 
+					</div>
+				</div>
+				<div class="tab2">
+					<div data-form="textarea" class="type9">
+						“시대인재북스"는 수집한 개인정보를 다음의 목적을 위해 활용합니다. 이용자가 제공한 모든 정보는 하기 목적에 필요한 용도 이외로는 사용되지 않으며, 이용 목적이 변경될 시에는 사전동의를 구할 것입니다.<br>
+						① 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산<br>
+						- 컨텐츠 제공, 특정 맞춤 서비스 제공, 물품배송 또는 청구서 등 발송, 금융거래 본인 인증 및 금융 서비스, 구매 및 요금 결제, 요금추심 등<br>
+						② 비회원 관리<br>
+						- 비회원 구매 서비스 이용에 따른 본인 확인, 개인 식별, 분쟁 조정을 위한 기록보존, 불만처리 등 민원처리, 고지사항 전달 
+					</div>
+				</div>
+				<div class="tab3">
+					<div data-form="textarea" class="type9">
+						이용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다. ① 관련법령에 의한 정보보유 사유 상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다. 이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.<br>
+						ⓐ 계약 또는 청약철회 등에 관한 기록<br>
+						- 보존 근거 : 전자상거래 등에서의 소비자보호에 관한 법률<br> 
+						- 보존 기간 : 5년<br> 
+						ⓑ 대금결제 및 재화 등의 공급에 관한 기록<br> 
+						- 보존 근거 : 전자상거래 등에서의 소비자보호에 관한 법률<br> 
+						- 보존 기간 : 5년<br> 
+						ⓒ 소비자의 불만 또는 분쟁처리에 관한 기록<br> 
+						- 보존 근거 : 전자상거래 등에서의 소비자보호에 관한 법률<br> 
+						- 보존 기간 : 3년<br> 
+						ⓓ 본인 확인에 관한 기록<br> 
+						- 보존 근거 : 정보통신망 이용촉진 및 정보보호 등에 관한 법률<br>
+						- 보존 기간 : 6개월<br> 
+						ⓔ 웹사이트 방문기록<br> 
+						- 보존 근거 : 통신비밀보호법<br> 
+						- 보존 기간 : 3개월 
+					</div>
+					
+				</div>
+
+				<p data-form="checkbox">
+					<input type="checkbox" id="check1">
+					<label for="check1">위의 사항을 확인했으며 동의합니다.</label>
+				</p>
+
+				<p data-title="type17" class="m_b20">개인정보의 위탁에 대한 안내</p>
+				<div data-form="textarea" class="type9">
+					시대인재북스는 배송, 요금정산 등 기본서비스 제공을 위한 개인정보 처리업무 외에는 외부업체에 위탁하고 있지 않으며, 관계법령에 따라 위탁계약 시 개인정보가 안전하게 관리될 수 있도록 필요한 사항들을 규정하고 있습니다.<br>
+					<회사의 개인정보 위탁처리 기관 및 위탁업무 내용><br>
+					- 제공받는 자: 이니시스, LG U+  (제공목적: 서비스 요금 정산)<br>
+					- 제공받는 자: CJ대한통운택배, 모아물류 (제공목적: 상품배송업무)<!-- 2017-10-27 텍스트 수정 -->
+				</div>
+				<p data-form="checkbox" class="m_b0">
+					<input type="checkbox" id="check4">
+					<label for="check4">위의 사항을 확인했으며 동의합니다.</label>
+				</p>
+			</div>
+
+			<h3 data-title="type3" class="m_b15">
+				주문/결제 확인
+				<span class="a_right">주문상품 변경은 <a href="" data-btn="link">장바구니</a> 단계에서 가능합니다.</span>
+			</h3>
+			<div data-table="type2" class="check m_b30">
+				<table>
+					<caption>주문내역</caption>
+					<colgroup>
+						<col style="width:100px;">
+						<col>
+						<col style="width:101px;">
+						<col style="width:71px;">
+						<col style="width:101px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">구분</th>
+							<th scope="col">상품정보</th>
+							<th scope="col">판매가</th>
+							<th scope="col">수량</th>
+							<th scope="col">합계</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><div data-icon="type1" class="orange"><span>시대인재<em>ON</em></span></div></td>
+							<td class="t_left">강좌<strong class="tit">강좌명강좌명강좌명강좌명</strong></td>
+							<td class="t_right">79,000원</td>
+							<td>1</td>
+							<td class="t_right">79,000원</td>
+						</tr>
+						<tr>
+							<td><div data-icon="type1" class="orange"><span>시대인재<em>ON</em></span></div></td>
+							<td class="t_left">서바이벌<strong class="tit">상품명상품명상품명상품명상품명</strong></td>
+							<td class="t_right">360,000원</td>
+							<td>1</td>
+							<td class="t_right">360,000원</td>
+						</tr>
+						<tr>
+							<td><div data-icon="type1" class="blue"><span>시대인재</span></div></td>
+							<td class="t_left">컨설팅<strong class="tit">최시대 수시 컨설팅</strong></td>
+							<td class="t_right">300,000원</td>
+							<td>1</td>
+							<td class="t_right">300,000원</td>
+						</tr>
+						<tr>
+							<td><div data-icon="type1" class="green"><span>시대인재<em>Books</em></span></div></td>
+							<td class="t_left">교재/도서(북스 상품구분값 들어감)<strong class="tit">나인재 모의고사 수학 가형</strong></td>
+							<td class="t_right">15,000원</td>
+							<td>3</td>
+							<td class="t_right">45,000원</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div data-box="type5" class="cart m_b50">
+				<dl>
+					<dt>총 상품금액</dt>
+					<dd>784,000원</dd>
+				</dl>
+				<dl>
+					<dt>배송비</dt>
+					<dd>3,000원</dd>
+				</dl>
+				<dl class="total">
+					<dt>총 결제예정금액</dt>
+					<dd><em>784,300</em>원</dd>
+				</dl>
+			</div>
+
+			<form>
+				<fieldset>
+					<h3 data-title="type3" class="m_b15">
+						구매자정보
+					</h3>
+					<dl data-form="wrap" class="m_b50">
+						<dt><label for="input5" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input5"></span></dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p class="m_b15">
+								<span data-form="select">
+									<select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>016</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 가운데 네자리">
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 마지막 네자리">
+								</span>
+								<button type="button" data-btn="whitegray">인증번호받기</button>
+							</p>
+							<p class="field_info">주문/배송 정보를 SMS로 안내해드리오니 정확하게 입력하세요.</p>
+						</dd>
+						<dt><label for="input8" class="field_name">인증번호</label></dt>
+						<dd>
+							<!-- 2017-10-27 마크업 수정 S -->
+							<p>
+								<span data-form="input"><input type="text" id="input8"></span>
+								<button type="button" data-btn="whitegray" class="size100">확인</button>
+								<span class="timer"><em>인증번호 입력 남은시간</em>3:00</span>
+							</p>
+							<p class="field_info f_color14">* 인증번호 입력 후 확인을 클릭해주세요.</p>
+							<!-- 2017-10-27 마크업 수정 E -->
+						</dd>
+						<dt><span class="field_name">이메일<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span  data-form="input" class="size170">
+								<input type="text">
+							</span>
+							<em class="f_size14">@</em>
+							<span  data-form="input" class="size170">
+								<input type="text">
+							</span>
+							<span data-form="select" class="type3">
+								<select>
+									<option>직접입력</option>
+									<option>naver.com</option>
+									<option>hanmail.net</option>
+									<option>gmail.com</option>
+								</select>
+							</span>
+						</dd>
+						<dt><label for="input6" class="field_name">주문비밀번호<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input6"></span></dd>
+						<dt><label for="input7" class="field_name">주문비밀번호 확인<strong>*<em>필수항목</em></strong></label></dt>
+						<dd>
+							<p><span data-form="input"><input type="text" id="input7"></span></p>
+							<p class="field_info f_color14">* 비밀번호는 "주문 확인"시 필수기재 사항으로 반드시 기억하셔야 합니다.</p>
+							<p class="field_info f_color14">* 비밀번호는 숫자+영문 조합하여 최소 4자 ~ 최대 10자로 입력하세요.</p><!-- 2017-10-27 텍스트 수정 -->
+						</dd>
+					</dl>
+				</fieldset>
+
+				<fieldset>
+					<h3 data-title="type2" class="m_b15">배송정보</h3>
+					<dl data-form="wrap" class="m_b50">
+						<dt><span class="field_name">배송지선택</span></dt>
+						<dd class="select_wrap">
+							<p class="m_b15">
+								<span data-form="radio" class="m_0">
+									<input type="radio" id="radio1_1" name="radio1" checked="checked">
+									<label for="radio1_1">주문고객동일</label>
+								</span>
+								<span data-form="radio">
+									<input type="radio" id="radio1_2" name="radio1">
+									<label for="radio1_2">과거배송지</label>
+								</span>
+								<span data-form="radio">
+									<input type="radio" id="radio1_3" name="radio1">
+									<label for="radio1_3">새로작성</label>
+								</span>
+							</p>
+							<p class="field_info">등록된 배송지가 없는 경우, 주문 완료된 첫 배송지 정보가 기본 배송지로 자동 설정됩니다.</p>
+						</dd>
+						<dt><label for="input1" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input1"></span></dd>
+						<dt><span class="field_name">주소<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p>
+								<span  data-form="input" class="size170">
+									<input type="text" readonly="readonly" title="우편번호">
+								</span>
+								<button type="button" data-btn="whitegray">우편번호 찾기</button>
+							</p>
+							<p>	
+								<span  data-form="input" class="size370">
+									<input type="text" id="input2" readonly="readonly">
+								</span>
+								<label for="input2" class="field_info">기본주소</label>
+							</p>
+							<p>	
+								<span  data-form="input" class="size370">
+									<input type="text" id="input3">
+								</span>
+								<label for="input3" class="field_info">나머지주소</label>
+							</p>
+						</dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p class="m_b15">
+								<span data-form="select">
+									<select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 가운데 네자리">
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 뒤 네자리">
+								</span>
+							</p>
+							<p class="field_info">주소 및 연락처가 정확하지 않을 경우 분실 및 반송 될 수 있습니다. </p>
+						</dd>
+						<dt><span class="field_name">전화번호</span></dt>
+						<dd>
+							<span data-form="select">
+								<select title="전화번호 앞자리">
+									<option>02</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="전화번호 가운데 자리">
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="전화번호 뒷자리">
+							</span>
+						</dd>
+						<dt><label for="input4" class="field_name">배송메모</label></dt>
+						<dd>
+							<textarea id="input4" data-form="textarea" class="type3" placeholder="한글 50자 이내 배송관련 메모를 작성하세요. 예) 경비실에 맡겨주세요."></textarea>
+						</dd>
+					</dl>
+				</fieldset>
+
+				<fieldset>
+					<h3 data-title="type3" class="m_b15">
+						결제정보
+						<span class="a_right"><a href="" data-btn="whitegray" class="type1">결제관련 FAQ</a></span>
+					</h3>
+					<dl data-form="wrap">
+						<dt><span class="field_name">결제수단</span></dt>
+						<dd class="select_wrap">
+							<p class="m_b15">
+								<span data-form="radio" class="m_0">
+									<input type="radio" id="radio2_1" name="radio2" checked="checked">
+									<label for="radio2_1">신용카드</label>
+								</span>
+								<span data-form="radio">
+									<input type="radio" id="radio2_2" name="radio2">
+									<label for="radio2_2">계좌이체</label>
+								</span>
+								<span data-form="radio">
+									<input type="radio" id="radio2_3" name="radio2">
+									<label for="radio2_3">휴대폰결제</label>l
+								</span>
+								<!-- <span data-form="radio">
+									<input type="radio" id="radio2_3" name="radio2">
+									<label for="radio2_3">무통장입금</label>
+								</span> -->
+							</p>
+							<p class="field_info">무이자할부 카드 정보는 결제창에서 확인하세요.</p>
+						</dd>
+						<dt><span class="field_name">결제수단</span></dt>
+						<dd class="select_wrap">
+							<p class="m_b15">
+								<span data-form="radio" class="m_0">
+									<input type="radio" id="radio3_1" name="radio3">
+									<label for="radio3_1">신용카드</label>
+								</span>
+								<span data-form="radio">
+									<input type="radio" id="radio3_2" name="radio3" checked="checked">
+									<label for="radio3_2">계좌이체</label>
+								</span>
+								<span data-form="radio">
+									<input type="radio" id="radio3_3" name="radio3">
+									<label for="radio3_3">휴대폰결제</label>
+								</span>
+								<!-- <span data-form="radio">
+									<input type="radio" id="radio3_3" name="radio3">
+									<label for="radio3_3">무통장입금</label>
+								</span> -->
+							</p>
+							<p class="field_info">
+								은행계좌에서 결제금액이 이체됩니다.<br>
+								인터넷 공인인증서가 필요합니다.<br>
+								은행 이용가능 서비스 시간은 은행 사정에 따라 다소 변경될 수 있습니다.
+							</p>
+						</dd>
+						<dt><span class="field_name">결제수단</span></dt>
+						<dd class="select_wrap">
+							<p class="m_b15">
+								<span data-form="radio" class="m_0">
+									<input type="radio" id="radio4_1" name="radio4">
+									<label for="radio4_1">신용카드</label>
+								</span>
+								<span data-form="radio">
+									<input type="radio" id="radio4_2" name="radio4">
+									<label for="radio4_2">계좌이체</label>
+								</span>
+								<span data-form="radio">
+									<input type="radio" id="radio4_3" name="radio4" checked="checked">
+									<label for="radio4_3">휴대폰결제</label>
+								</span>
+							</p>
+							<!--20180502 텍스트 수정 S-->
+							<!--심사 기간이후 문구-->
+							<p class="field_info">
+								월 최대 결제한도는 통신사별로 상이합니다. <br />
+								현금 영수증은 발급 되지 않습니다. (통신비 소득공제 제외)
+							</p>
+							<!--20180502 텍스트 수정 E-->
+						</dd>
+						<!--20180221 코드추가 E-->
+						<!-- <dt><span class="field_name">결제수단</span></dt>
+						<dd class="select_wrap">
+							<p class="m_b15">
+								<span data-form="radio" class="m_0">
+									<input type="radio" id="radio1" name="radio_test">
+									<label for="radio1">신용카드</label>
+								</span>
+								<span data-form="radio">
+									<input type="radio" id="radio2" name="radio_test">
+									<label for="radio2">계좌이체</label>
+								</span>
+								<span data-form="radio">
+									<input type="radio" id="radio3" name="radio_test" checked="checked">
+									<label for="radio3">무통장입금</label>
+								</span>
+							</p>
+							<p class="field_info">주문 시 부여된 가상계좌로 주문금액을 입금해주시면 구매가 완료 됩니다.</p>
+						</dd> -->
+						<dt><span class="field_name">총 결제금액</span></dt>
+						<dd class="m_b20"><strong class="field_name f_color5">784,300원</strong></dd>
+					</dl>
+
+					<p data-form="checkbox" class="type2 m_b25">
+						<input type="checkbox" id="check1">
+						<label for="check1">주문할 상품의 상품명, 상품가격, 배송정보, 환불규정을 확인하였으며 구매에 동의합니다. (전자상거래법 제8조 제2항)</label>
+					</p>
+
+					<div class="btn_wrap3 m_b50">
+						<button type="button" data-btn="login_whitegray">이전</button>
+						<button type="button" data-btn="navy" class="m_l10" data-popup="sample" id="common_layerpopup_confirm">주문/결제</button>
+					</div>
+				</fieldset>
+			</form>
+
+
+			<div data-box="type6">
+				<ol>
+					<li><span>1.</span><p>교재/도서 배송기간<br>교재/도서 발송일로부터 서울 : 2~3일, 지방 : 3~4일 (일요일 및 법정 공휴일 제외)</p></li>
+					<li><span>2.</span><p>교재/도서가 포함된 강좌는 교재/도서가 반송되어야 취소할 수 있습니다.</p></li>
+					<li><span>3.</span><p>수강 중인 강좌와 교재는 수강 중 재구매할 수 없습니다.</p></li>
+				</ol>
+				<p>
+					<a href="">시대인재 상품별 환불규정 ></a>
+					<a href="">교재 배송 및 구매 안내 ></a>
+				</p>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+<div data-popup="type1" class="popup1 common_layerpopup_confirm">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<div class="content_text">
+				<p>시대인재 서바이벌 실전모의 상품은 비닐 포장 된 상태로 발송되며,<br>
+				비닐 포장을 개봉하면 반품, 환불이 불가합니다.<br>
+				무료해설강의는 배송 이후 순차적으로 서비스 됩니다.<br><br>
+				<b class="f_bold">위 내용을 확인했고 동의하시겠습니까?</b>
+				</p>
+			</div>
+			<div class="btn_wrap">
+				<button type="button" data-btn="login_whitegray" class="close">취소</button>
+				<button type="button" data-btn="navy" class="m_l10">확인</button>
+			</div>
+		</div>
+	</div>
+	<div class="dim"></div>
+</div>
+
+<script>
+	$('*[data-tab="type4"] button').click(function(){
+    	var tab = $(this).attr('id');
+    	$(this).siblings().removeClass('on');
+    	$(this).addClass('on');
+    	$('*[class^="tab"]').hide();
+    	$('.' + tab).show();
+    })
+</script>
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

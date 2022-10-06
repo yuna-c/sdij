@@ -1,0 +1,16 @@
+/* 
+#header, #footer{ display:none; }
+.popup-section{ opacity:0;transition:all 0.2s;
+    
+    transform:translateY(-100px); }
+
+.popup-section.pop-on{ opacity:1;
+    transform:translateY(0); } */
+
+/* body{ height:100%; overflow:hidden; }
+.dim-layer{ display:block; }
+.dim-full{ width:100%; padding:30px 0; display:block; background-color:#fff; position:fixed; top:0; left:0; right:0; bottom:0; } */
+.dim-full{ width:100%; padding:30px 0; display:none; background-color:#fff; position:fixed; top:0; left:0; right:0; bottom:0; }
+.dim-full .page-top{ padding:30px 20px 0; position:absolute; top:0; left:0; right:0; background-color:#fff; z-index:10; }
+.dim-full .content-layout{ padding-top:86px; position:absolute; top:0; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto; }
+.dim-fixed .content-layout{ padding-bottom:65px; }

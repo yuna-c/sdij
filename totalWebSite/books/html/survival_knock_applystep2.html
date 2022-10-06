@@ -1,0 +1,155 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/launching_knock_applystep2.html
+* @ 페이지설명		: 런칭 > 서바이벌노크신청 > 신청서작성
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-16
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>서바이벌노크신청 > 신청서작성</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="survival" data-depth2="knock" data-depth3="applystep2">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+		<h2 data-title="type1" class="m_b0">서바이벌 실전모의 온라인 0회 무료신청</h2>
+			<div data-step="type2">
+				<div class="pass"><em>1</em>과목신청</div><!-- 완료단계 class="pass" -->
+				<div class="on"><em>2</em>배송지 입력</div><!-- 현재단계 class="on" -->
+				<div><em>3</em>신청완료</div>
+			</div>
+			<p class="field_info f_color5 m_b15">
+			* 신청 후 배송지 변경이 어려우니 정확한 배송지를 입력해 주세요. <br />
+			* 주소 기재 오류로 인한 반송은 재배송하지 않습니다.
+		  </p>
+			<form>
+				<fieldset class="m_b30">
+					<dl data-form="wrap">
+						<dt><label for="input3" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input3"></span></dd>
+						<dt><span class="field_name">주소<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p>
+								<span  data-form="input" class="size170">
+									<input type="text" readonly="readonly" title="우편번호">
+								</span>
+								<button type="button" data-btn="whitegray">우편번호 찾기</button>
+							</p>
+							<p>	
+								<span  data-form="input" class="size370">
+									<input type="text" id="input7" readonly="readonly">
+								</span>
+								<label for="input7" class="field_info">기본주소</label>
+							</p>
+							<p>	
+								<span  data-form="input" class="size370">
+									<input type="text" id="input8">
+								</span>
+								<label for="input8" class="field_info">나머지주소</label>
+							</p>
+						</dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p class="m_b15">
+								<span data-form="select">
+									<span class="sod_select " title="휴대폰번호 앞 세자리" tabindex="0" data-cycle="false" data-links="false" data-links-external="false" data-placeholder-option="false" data-filter=""><span class="sod_label">010</span><span class="sod_list_wrapper"><span class="sod_list"><span class="sod_option  selected active " title="010" data-value="010">010</span><span class="sod_option " title="011" data-value="011">011</span><span class="sod_option " title="017" data-value="017">017</span><span class="sod_option " title="018" data-value="018">018</span><span class="sod_option " title="019" data-value="019">019</span></span></span><select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select></span>
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 가운데 네자리">
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 뒤 네자리">
+								</span>
+							</p>
+							<span class="field_info">주소 및 연락처가 정확하지 않은 경우 분실 및 반송 될 수 있습니다.</span>
+						</dd>
+						<dt><span class="field_name">전화번호</span></dt>
+						<dd>
+							<span data-form="select">
+								<select title="지역번호">
+									<option>02</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="전화번호 앞자리">
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="전화번호 뒷자리">
+							</span>
+						</dd>
+						<dt><span class="field_name">배송메모</span></dt>
+						<dd>
+							<span  data-form="input" class="full">
+								<input type="text" title="배송메모" placeholder="한글50자 이내 배송관련 메모를 작성하세요. 예)경비실에 맡겨주세요">
+							</span>
+						</dd>
+					</dl>
+				</fieldset>
+				
+				<div class="btn_wrap3">
+					<button type="button" data-btn="navy" data-popup="sample" id="common_layerpopup">신청하기</button> 
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!--div data-popup="type1" class="popup1 common_layerpopup">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<div class="content_text t_center">
+				<p>이벤트 관련 문의는 FAQ 참고 부탁드리며,<br>
+				그 외 문의사항 있을 시 <a href="#" class="f_color5">고객센터 1:1 상담에 문의 남겨주시면</a><br>
+				12시간 이내 최대한 빠른 답변 드리겠습니다.<br>
+				<b class="f_bold">(주말 제외, 전화 문의는 불가합니다.)</b></p>
+			</div>
+			<div class="btn_wrap">
+				<button type="button" data-btn="navy" class="close">확인</button>
+			</div>
+		</div>
+	</div>
+	<div class="dim"></div>
+</div-->
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

@@ -1,0 +1,210 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/aca_reservation_list.html
+* @ 페이지설명	: 학원 > 강좌예약 > 리스트
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-27
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>강좌예약 > 리스트</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<link rel="stylesheet" href="../common/css/swiper.min.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/typed.js"></script>
+<script src="../common/js/aca_dev.js"></script>
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+<!-- 20180619 S-->
+<script type="text/javascript">
+	$(function(){
+		var top1 = $('#header').height();
+		var top2 = $('#wrap .location').height();
+		var top3 = $('#content').height();
+		console.log(top1,top2,top3)
+
+		$('#content_wrap').css({
+			'padding-Top' : (top1+top2+top3)+'px'
+		})
+	});
+</script>
+<!-- 20180619 E-->
+</head>
+<body data-depth1="aca" data-depth2="class_reservation" data-depth3="list">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+<!-- 20180619 S-->
+<div class="location">
+	<span>시대인재 &gt;</span>
+	<span>강좌예약 &gt;</span>
+	<span>고3</span>
+</div>
+<div id="content">
+	<div class="middle"> 
+			<h2 data-title="type1" class="m_b0">강좌예약</h2>
+			<div data-layout="type1">
+					<div class="notice_box">
+						<span class="b">※ 온라인 강좌예약 신청 안내 (관리자 입력)</span>
+						텍스트영역 550px / 한 줄당 25px 씩 늘어남
+						문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구
+						문구문구문구
+						텍스트영역 550px / 한 줄당 25px 씩 늘어남
+						문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구문구
+						문구문구문구
+						<button type="button" data-btn="black" class="size140">신청내역조회</button>
+					</div>
+			</div>
+	</div>
+</div>
+<!-- 20180619 E-->
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	 <div class="reservation_wrap">
+			<div class="middle_box">
+					<ul data-banner="right">
+	              <li>
+                    <a href="#" target="_self">
+                    	<img src="http://img.sdij.com/common/rolling_bn1.png" title="강좌 안내">
+                    </a>
+	              </li>
+	              <li>
+                    <a href="#" target="_self">
+                    	<img src="http://img.sdij.com/common/rolling_bn2.png" title="수강료게시판">
+                    </a>
+	              </li>
+				  </ul>
+					<div data-tab="type1" class="m_b25">
+						<a href="#" class="on">고3</a>
+						<a href="#">고2</a>
+						<a href="#">고1</a>
+					</div>
+					<div data-tab="type2" class="line num4 m_b50">
+			        <button type="button" class="on">
+			        	국어
+			        </button>
+			        <button type="button">
+								영어
+			        </button>
+			        <button type="button">
+								수학
+			        </button>
+			        <button type="button">
+								생명과학
+			        </button>
+			        <button type="button">
+								한국사
+			        </button>
+			        <button type="button">
+						 		지구과학
+			        </button>
+			    </div>
+					<!--20180703 추가-->
+			     <div data-tab="type2" class="line num4 m_b0">
+			      <!-- 하나의 탭만 있을 경우 m_b50이
+								탭 안에 버튼은 4개가 최대 /
+								5개부터는 탭이 새로 생성되며 
+	            마지막탭에만 m_b50이 붙어야되고 그 외에는 m_b0으로 붙어야됨
+	          -->
+			      	<button type="button" class="on" onclick="IfTab('A09012');">
+			        	전체 
+			        </button>
+			        <button type="button" onclick="IfTab('A09026');">
+								수학 서바이벌
+			        </button>
+			        <button type="button" onclick="IfTab('A09010');">
+								과탐 정규 및 <br /> 서바이벌
+			        </button>
+			        <button type="button" onclick="IfTab('A09027');">
+								영어서바이벌
+			        </button>
+			    </div>
+			    <!--두번째 탭-->
+			    <div data-tab="type2" class="line num4 m_b50">
+			    	<button type="button" onclick="IfTab('A09030');">
+			        	의대 심층면접<br /> (MMI)
+			        </button>
+			        <button type="button" onclick="IfTab('A09014');">
+								수강료게시표
+			        </button>			        
+			    </div>
+
+
+					<div data-table="type2" class="class_reservation">
+						<table>
+							<caption>강좌예약리스트</caption>
+							<colgroup>
+								<col style="width:45px;">
+								<col style="width:100px;">
+								<col style="width:70px;">
+								<col>
+								<col style="width:140px;">
+								<col style="width:80px;">
+								<col style="width:80px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">학년</th>
+									<th scope="col">과목</th>
+									<th scope="col">강사</th>
+									<th scope="col">강좌명</th>
+									<th scope="col">요일/시간</th>
+									<th scope="col">개강일</th>
+									<th scope="col">신청</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="7" class="no_list">
+										강좌예약이 없습니다.
+									</td>
+								</tr>
+								<tr>
+									<td>고3</td>
+									<td>수학 서바이벌</td>
+									<td>엄소연</td>
+									<td>
+										<span class="ing">접수중</span>
+										<span class="class_name">수능 최상위반 미적분 2</span>
+									</td>
+									<td>
+										토요일 <br />
+										AM 10:00 ~ 12:00
+									</td>
+									<td>
+										12월 30일 <br />
+										(토)
+									</td>
+									<td>
+										<button type="button" data-btn="navy">예약<br/>신청</button>
+									</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+			</div>
+			<!-- // Footer Include Area -->
+	</div>
+</div>
+</div>	<!-- // Wrap E -->
+</body>

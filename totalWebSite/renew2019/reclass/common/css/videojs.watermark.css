@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.vjs-watermark {
+    /* position: relative; */
+    display: inline;
+    z-index: 2000;
+    font-size: 0.533333333rem;
+    color: rgba(255, 255, 255, .3);
+}
+
+.vjs-watermark > div{ min-width:200px; display:inline-block; position:absolute; top:14%; left:1%; }
+.vjs-watermark > div:nth-child(2){ left:auto; right:1%; text-align:right; }
+.vjs-watermark > div:nth-child(3){ top:auto; bottom:14%; }
+.vjs-watermark > div:nth-child(4){ left:auto; right:1%; top:auto; bottom:14%; text-align:right; }
+.vjs-watermark > div:nth-child(5){ top:50%; left:1%; transform:translate(0, -50%); }
+.vjs-watermark > div:nth-child(6){ top:50%; left:auto; right:1%; text-align:right; transform:translate(0, -50%); }

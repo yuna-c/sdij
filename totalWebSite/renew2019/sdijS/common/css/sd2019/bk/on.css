@@ -1,0 +1,173 @@
+﻿/*************************************************************************
+* @ 서비스명    : sidaeInjae Total pc Site
+* @ 파일명     : /common/css/on.css
+* @ 페이지설명   : on.css
+* @ 작성자       : 김은옥 (publisher@to-be.co.kr)
+* @ 작성일       : 2017-03-27
+************************** 수정이력 ****************************************
+* 번호    작업자       변경내용 
+*_________________________________________________________________________
+* 김은옥   최초작성 
+*************************************************************************/
+
+/************************************ Base Reset Style ************************************/
+
+*[data-depth1="on"][data-depth2="main2"] .main_swipe_wrap .btn{position:fixed;left:50%;top:0;margin-left:-36px;width:72px;height:100%;z-index:9;}
+*[data-depth1="on"][data-depth2="main2"] .main_swipe_wrap .visual .main_visual1{background-image:url(http://img.sdij.com/common/on_bg_01.gif)}
+*[data-depth1="on"][data-depth2="main2"] .main_swipe_wrap .visual .main_visual2{background-image:url(http://img.sdij.com/common/on_bg_02.gif)}
+*[data-depth1="on"][data-depth2="main2"] .main_swipe_wrap .visual>div>.visual_text strong{text-align:center;}
+*[data-depth1="on"][data-depth2="main2"] .main_swipe_wrap .visual .main_visual3 .visual_text{margin:-180px auto 0 auto;width:1000px;height:410px;}
+*[data-depth1="on"][data-depth2="main2"] .main_swipe_wrap .visual>div>div>strong{font-size:90px;line-height:120px;font-family:'neob';letter-spacing:10px;}
+
+
+
+*[data-depth1="on"][data-depth2="main2"] .main_visual1 .on_box{position:absolute;top:50%;right:0;left:0;margin:-330px auto 0 auto;padding:65px 55px;width:680px;height:660px;color:#fff;text-align:left;background:#1e1e1e;box-sizing:border-box;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual1 .on_box h3{position:relative;margin:0 0 60px 0;font-size:20px;color:#ff4200;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual1 .on_box h3:after{content:'';display:block;position:absolute;top:55px;left:50%;margin:0 0 0 -380px;width:760px;height:2px;background:#fff;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual1 .on_box p{line-height:30px;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual1 .on_box p em{display:block;margin:0 0 40px 0;line-height:30px;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual1 .on_box p b{color:#ff4200;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual2 .on_box{position:absolute;top:50%;right:0;left:0;margin:-330px auto;padding:65px 60px;width:930px;height:660px;color:#b4b4b4;text-align:left;background:#1e1e1e;box-sizing:border-box;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual2 .on_box h3{position:relative;margin:0 0 75px 0;font-size:24px;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual2 .on_box h3:after{content:'';display:block;position:absolute;top:55px;left:50%;margin:0 0 0 -505px;width:1010px;height:2px;background:#fff;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual2 .on_box h3 b{color:#f6c108;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual2 .on_box h3 strong{color:#19a0ee;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual2 .on_box h3 strong span{font-size:22px;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual2 .on_box p{margin:0 0 50px 0;line-height:36px;font-size:22px;color:#f6c108;font-family:'neob';}
+*[data-depth1="on"][data-depth2="main2"] .main_visual2 .on_box ul{}
+*[data-depth1="on"][data-depth2="main2"] .main_visual2 .on_box ul li{font-size:16px;margin:0 0 20px 0;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual2 .on_box ul li:nth-child(4){margin:0 0 40px 0;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual2 .on_box small{position:absolute;right:20px;bottom:20px;font-size:12px;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual2 .on_box a{position:absolute;bottom:10%;right:0;left:0;margin:0 auto;width:250px;-webkit-animation:launching 1s infinite;-moz-animation:launching 1s infinite;-ms-animation:launching 1s infinite;-o-animation:launching 1s infinite;animation:launching 1s infinite;}
+*[data-depth1="on"][data-depth2="main2"] .main_swipe_wrap .btn{width:0;}
+*[data-depth1="on"][data-depth2="main2"] .main_swipe_wrap .btn > div{background:url(http://img.sdij.com/common/common.png) no-repeat 0 0;cursor:pointer;}
+*[data-depth1="on"][data-depth2="main2"] .main_visual1 .main_next{width:250px;margin-left:-125px;bottom:6%;border:none;background:url(http://img.sdij.com/common/common.png) no-repeat 0 0;background-position:-179px -1600px;-webkit-animation:launching 1s infinite;-moz-animation:launching 1s infinite;-ms-animation:launching 1s infinite;-o-animation:launching 1s infinite;animation:launching 1s infinite;}
+*[data-depth1="on"][data-depth2="main2"] .main_swipe_wrap .btn > div{width:40px;height:22px;}
+*[data-depth1="on"][data-depth2="main2"] .main_swipe_wrap .btn .main_prev{background-position:-520px -355px;}
+*[data-depth1="on"][data-depth2="main2"] .main_swipe_wrap .btn .main_next{}
+
+
+
+
+
+/*서바이벌*/
+
+*[data-depth1="on"][data-depth2="univ"][data-depth3="univ"][data-depth4="detail"] *[data-form="wrap"] dd{padding-top:15px;}
+*[data-depth1="on"][data-depth2="univ"][data-depth3="univ"][data-depth4="detail"] *[data-form="input"]{height:45px;}
+*[data-depth1="on"][data-depth2="univ"][data-depth3="univ"][data-depth4="detail"] *[data-btn="whitegray"]{height:45px;line-height:45px;}
+
+*[data-depth1="on"][data-depth2="survival"] #wrap{overflow-x:hidden;}
+*[data-depth1="on"][data-depth2="survival"][data-depth3="synopsis"] #wrap{overflow:inherit;}
+*[data-depth1="on"][data-depth2="survival"] .location{position:relative;z-index:2;border-bottom:1px solid rgba(0,0,0,0.15);}
+*[data-depth1="on"][data-depth2="survival"] *[data-subject="math2"] dt{position:relative;margin:0 0 60px 0;font-size:30px !important;}
+*[data-depth1="on"][data-depth2="survival"] *[data-subject="math2"] dt:after{display:block;position:absolute;bottom:-30px;left:0;right:0;margin:0 auto;width:30px;height:1px;background:#fff;content:'';}
+*[data-depth1="on"][data-depth2="survival"] *[data-subject="math2"] dd{line-height:100%;font-size:120px !important;font-weight:bold;}
+*[data-depth1="on"][data-depth2="survival"] *[data-title="type2"]{margin-bottom:20px;}
+*[data-depth1="on"][data-depth2="survival"] *[data-box="type10"] .box_bottom .btn_wrap3{top:31px;}
+*[data-depth1="on"][data-depth2="survival"] *[data-box="type10"]+*[data-btn="link"]{line-height:100%;}
+*[data-depth1="on"][data-depth2="survival"] p.field_info{width:100%;}
+*[data-depth1="on"][data-depth2="survival"] *[data-box="btn"]{display:block;}
+*[data-depth1="on"][data-depth2="survival"] *[data-box="btn"] a{display:inline-block;width:14.285%;font-size:18px;}
+
+ /*studeep*/
+*[data-depth1="on"][data-depth2="studeep"] *[data-tab="type2"]{margin:0 0 20px 0;}
+*[data-depth1="on"][data-depth2="studeep"][data-depth3="Scoring"][data-depth4="pop"] *[data-box="pop_content"]{padding:40px;}
+*[data-depth1="on"][data-depth2="studeep"][data-depth3="Scoring"][data-depth4="pop"] *[data-box="pop_content"] fieldset{margin-bottom:0;}
+*[data-depth1="on"][data-depth2="studeep"][data-depth3="Scoring"][data-depth4="pop"] *[data-box="pop_content"] .btn_wrap{padding:30px 0 0 0;}
+
+.survival_wrap{position:initial;}
+button.teacher{position:absolute;padding:0 !important;height:80px;text-indent:-9999px;}
+*[data-depth3="math"] button.teacher{margin:0 -155px 0 0;right:50%;top:315px;width:130px;}
+*[data-depth3="physics"] button.teacher{margin:2px -163px 0 0;right:50%;top:49%;width:150px;}
+*[data-depth3="lifescience1"] button.teacher{margin:2px -107px 0 0;right:50%;top:58%;width:140px;}
+*[data-depth3="lifescience2"] button.teacher{margin:-2px -165px 0 0;right:50%;top:48%;width:150px;}
+*[data-depth3^="earthscience"] button.teacher{margin:3px -179px 0 0;right:50%;top:60%;width:150px;}
+*[data-depth3="chemistry"] button.teacher{margin:-2px -132px 0 0;right:50%;top:48%;width:140px;}
+*[data-bg="white"]{position:relative;padding:50px 0 0 0;text-align:center;}
+*[data-bg="white"] img{margin:-50px auto 0;width:initial !important;}
+*[data-title="type15"] {position:absolute;left:0;top:90px;width:100%;height:50px;background:rgba(0, 0, 0, 0.2);z-index:1;} 
+*[data-depth3="math"] *[data-bg="white"]{background:#dededd;background-position:center 0;}
+*[data-depth3="physics"] *[data-bg="white"]{background:#e3e3e3;background-position:center 0;}
+*[data-depth3="lifescience1"] *[data-bg="white"]{background:#d3d3d2;background-position:center 0;}
+*[data-depth3="lifescience2"] *[data-bg="white"]{background:#e6e6e6;background-position:center 0;}
+*[data-depth3^="earthscience"] *[data-bg="white"]{background:#e5e5e5;background-position:center 0;}
+*[data-depth3="chemistry"] *[data-bg="white"]{background:#e7e7e2;background-position:center 0;} 
+*[data-depth2="survival"] *[data-layout="type4"] {margin-top:50px;}
+
+
+
+
+
+
+ /*설명회*/
+
+ .float_list{
+  overflow:hidden;
+  position:relative;
+  margin:0;
+  display: table;
+  width:100%;
+}
+.float_list:before{
+  border-bottom:2px #d2d2d2 solid;
+  content: "";
+  display: block;
+  width:100%;
+  bottom:0;
+  height:2px;
+  position:absolute;
+}
+.float_list li{width:50%;box-sizing:border-box;border-bottom:2px #d2d2d2 solid;height: auto;position:relative;display: table-cell;vertical-align: middle;padding:18px 0;}
+.float_list li.on{
+  background:#ffad00;
+}
+.float_list li.on a:after{
+  content: "";
+  display: block;
+  position:absolute;
+  width:100%;
+  height:2px;
+  bottom:-2px;
+  left:0;
+  background: #323232;
+}
+.float_list li:hover a{
+    text-decoration:underline;
+    background:none;
+}
+.float_list li a{
+  display:block;
+  background:none;
+  vertical-align: middle;
+  height:auto;
+  line-height:22px;
+  font-size:16px;
+  text-align: center;
+  color:#a0a0a0;
+  width:90%;
+  flex:unset;
+  margin:  0 auto!important;
+}
+.float_list li.on a{
+ color:#323232;
+ font-weight:bold;
+}
+
+*[data-depth1="on"][data-depth2="survival"][data-depth3="guide"][data-depth4="pop"] *[data-table="type4"] td em{padding:0;}
+*[data-depth1="on"][data-depth2="survival"][data-depth3="guide"][data-depth4="pop"] *[data-list="type2"] li p{padding-left:5px;}
+
+*[data-depth1="on"][data-depth2="survival"][data-depth3="guide"] *[data-box="pop_content"]{padding:40px 60px;}
+*[data-depth1="on"][data-depth2="survival"][data-depth3="guide"] *[data-table="type4"]{margin:0;}
+*[data-depth1="on"][data-depth2="survival"][data-depth3="guide"] *[data-title="type2"]{margin-bottom:20px;}
+
+
+/*장바구니*/
+*[data-tab="type1"].books_order a{
+  background:none;
+  border-bottom:2px #d2d2d2 solid;
+}
+*[data-tab="type1"].books_order a.on{
+  background:#ffad00;
+  color:#323232;
+  border-bottom:2px #323232 solid;
+}

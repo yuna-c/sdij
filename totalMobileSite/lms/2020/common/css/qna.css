@@ -1,0 +1,4 @@
+@charset "utf-8";
+
+/* container-qna */
+.container-qna .list-type1 > ul > li .content-area .more-txt a span.strong{ margin-bottom:0.166666667rem; display:block; overflow:hidden; text-overflow:ellipsis; }

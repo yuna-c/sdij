@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>멘토APP</title>
+  <link rel="stylesheet" href="/totalMobileSite/lms/2019/common/css/reset.css">
+  <link rel="stylesheet" href="/totalMobileSite/lms/2019/common/css/layout.css">
+  <link href='https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/5e08423b/stylesheet/NotoSerif-Web.css' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="/totalMobileSite/lms/2019/common/js/lib/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="/totalMobileSite/lms/2019/common/js/common.js"></script>
+</head>
+<body>
+  <div class="fixed-area">
+    <a href="#" class="prev">이전</a>
+    <span>공지사항</span>
+  </div>
+  <div class="form-wrap">
+    <form action="">
+      <fieldset>
+        <legend>공지사항리스트</legend>
+        <table class="type-01">
+          <colgroup>
+            <col width="20%"/>
+            <col width="80%"/>
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <select name="replyCondition" id="noticeOption" class="black">
+                  <option value="전체보기">전체보기</option>
+                </select>
+              </td>
+              <td>
+                <div class="search-box">
+                  <input type="text" placeholder="검색어를 입력하세요. (예. 서바이벌)">
+                  <a href="#" class="search-btn">검색</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </form>
+    <ul class="list-layout no-line">
+      <li>
+        <table>
+          <colgroup>
+            <col width="17%" />
+            <col width="76%" />
+            <col width="6%" />
+          </colgroup>
+          <thead>
+            <th>분류</th>
+            <th>제목</th>
+            <th>조회수</th>
+          </thead>
+        </table>
+      </li>
+      <li class="notice">
+        <table>
+          <colgroup>
+            <col width="17%" />
+            <col width="76%" />
+            <col width="6%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <span class="division all">전체공지</span>
+                <em>
+                  시대 N 부엉이관 전체
+                </em>
+              </td>
+              <td>
+                <a href="#">
+                  공지사항 제목 영역입니다. 공지사항 제목 제목 제목 제목 제목 제목 제목…
+                </a>
+                <span class="data">2019-01-01 오전 10:00</span>
+              </td>
+              <td>
+                9,999
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <colgroup>
+            <col width="17%" />
+            <col width="76%" />
+            <col width="6%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <span class="division mento">멘토알림</span>
+                <em>
+                  멘토링 알람 내역
+                </em>
+              </td>
+              <td>
+                <a href="#">
+                  멘토의 멘토링 알람입니다. 멘토일 일시 YYYY-MM-DD
+                </a>
+                <span class="data">2019-01-01 오전 10:00</span>
+              </td>
+              <td>
+                21
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <colgroup>
+            <col width="17%" />
+            <col width="76%" />
+            <col width="6%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <span class="division individual">개인공지</span>
+                <em>
+                  개인 알람 내역
+                </em>
+              </td>
+              <td>
+                <a href="#">
+                  제목 영역입니다.
+                </a>
+                <span class="data">2019-01-01 오전 10:00</span>
+              </td>
+              <td>
+                111
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <colgroup>
+            <col width="17%" />
+            <col width="76%" />
+            <col width="6%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <span class="division mento">멘토알림</span>
+                <em>
+                  멘토링 알람 내역
+                </em>
+              </td>
+              <td>
+                <a href="#">
+                  멘토의 멘토링 알람입니다. 멘토일 일시 YYYY-MM-DD
+                </a>
+                <span class="data">2019-01-01 오전 10:00</span>
+              </td>
+              <td>
+                21
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <colgroup>
+            <col width="17%" />
+            <col width="76%" />
+            <col width="6%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <span class="division individual">개인공지</span>
+                <em>
+                  개인 알람 내역
+                </em>
+              </td>
+              <td>
+                <a href="#">
+                  제목 영역입니다.
+                </a>
+                <span class="data">2019-01-01 오전 10:00</span>
+              </td>
+              <td>
+                111
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <colgroup>
+            <col width="17%" />
+            <col width="76%" />
+            <col width="6%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <span class="division mento">멘토알림</span>
+                <em>
+                  멘토링 알람 내역
+                </em>
+              </td>
+              <td>
+                <a href="#">
+                  멘토의 멘토링 알람입니다. 멘토일 일시 YYYY-MM-DD
+                </a>
+                <span class="data">2019-01-01 오전 10:00</span>
+              </td>
+              <td>
+                21
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <colgroup>
+            <col width="17%" />
+            <col width="76%" />
+            <col width="6%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <span class="division individual">개인공지</span>
+                <em>
+                  개인 알람 내역
+                </em>
+              </td>
+              <td>
+                <a href="#">
+                  제목 영역입니다.
+                </a>
+                <span class="data">2019-01-01 오전 10:00</span>
+              </td>
+              <td>
+                111
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <colgroup>
+            <col width="17%" />
+            <col width="76%" />
+            <col width="6%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <span class="division mento">멘토알림</span>
+                <em>
+                  멘토링 알람 내역
+                </em>
+              </td>
+              <td>
+                <a href="#">
+                  멘토의 멘토링 알람입니다. 멘토일 일시 YYYY-MM-DD
+                </a>
+                <span class="data">2019-01-01 오전 10:00</span>
+              </td>
+              <td>
+                21
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <colgroup>
+            <col width="17%" />
+            <col width="76%" />
+            <col width="6%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <span class="division individual">개인공지</span>
+                <em>
+                  개인 알람 내역
+                </em>
+              </td>
+              <td>
+                <a href="#">
+                  제목 영역입니다.
+                </a>
+                <span class="data">2019-01-01 오전 10:00</span>
+              </td>
+              <td>
+                111
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <colgroup>
+            <col width="17%" />
+            <col width="76%" />
+            <col width="6%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <span class="division mento">멘토알림</span>
+                <em>
+                  멘토링 알람 내역
+                </em>
+              </td>
+              <td>
+                <a href="#">
+                  멘토의 멘토링 알람입니다. 멘토일 일시 YYYY-MM-DD
+                </a>
+                <span class="data">2019-01-01 오전 10:00</span>
+              </td>
+              <td>
+                21
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <colgroup>
+            <col width="17%" />
+            <col width="76%" />
+            <col width="6%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <span class="division individual">개인공지</span>
+                <em>
+                  개인 알람 내역
+                </em>
+              </td>
+              <td>
+                <a href="#">
+                  제목 영역입니다.
+                </a>
+                <span class="data">2019-01-01 오전 10:00</span>
+              </td>
+              <td>
+                111
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+    <div class="pagingList">
+      <a href="#" class="d-prev disable">맨앞</a>
+      <a href="#" class="prev disable">이전</a>
+      <a href="#" class="on">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">7</a>
+      <a href="#">8</a>
+      <a href="#">9</a>
+      <a href="#">10</a>
+      <a href="#" class="next">다음</a>
+      <a href="#" class="d-next">맨뒤</a>
+    </div>
+  </div>
+</body>
+</html>

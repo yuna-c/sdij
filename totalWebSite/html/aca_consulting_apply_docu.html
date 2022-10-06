@@ -1,0 +1,384 @@
+<!--
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/aca_consulting_enter.html
+* @ 페이지설명	: 학원 > 컨설팅 > 정보입력
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-10
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용
+*_________________________________________________________________________
+* 김은옥 	최초작성
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>컨설팅 > 정보입력</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/aca_dev.js"></script>
+<script src="../common/js/typed.js"></script>
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="aca" data-depth2="consulting" data-depth3="apply" data-depth4="docu">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재 &gt;</span>
+		<span>입시R&D &gt;</span>
+		<span>컨설팅</span>
+	</div>
+	<div id="content">
+
+
+		<h2 data-title="type1" class="m_0">정시컨설팅 신청</h2>
+		<div data-layout="type1">
+			<div data-step="type2" class="m_b45">
+				<div class="pass"><em>1</em>본인확인</div>
+				<div class="pass"><em>2</em>컨설턴트 및 날짜 선택</div>
+				<div class="pass"><em>3</em>예약 확인</div>
+				<div class="on"><em>4</em>서류제출 및 예약완료</div>
+			</div>
+
+			<h3 data-title="type2">유의사항</h3>
+
+			<!-- 2017-12-19 마크업 추가 S -->
+			<div class="consult_box">
+				<img src="../common/img/consult_03.png" alt="컨설팅 유의사항"/>
+			</div>
+			<!-- 2017-12-19 마크업 추가 E -->
+
+			<!-- <div data-table="type4">
+				`
+					<caption>유의사항 내용</caption>
+					<colgroup>
+						<col style="width:130px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">방법</th>
+							<td><p>- 하단 컨설팅접수 버튼 클릭 후 예약</p>
+							<p>- 개인정보 입력 후 서류제출 단계에서 성적표 사진파일 업로드</p>
+							<p>- 컨설팅 일정 5일 전까지 결제 필수</p>
+							<p>- 시대인재 본관 (크리스피 2층) 현장 결제만 가능<br>
+							<span>(단, 12월 23일 - 26일 예약자의 경우 최대한 빠른 결제)</span></p></td>
+						</tr>
+						<tr>
+							<th scope="row">문의</th>
+							<td><p>- 컨설팅 예약자의 세부 절차 관련 문의 : 010-5810-2323 (문자전용)</p>
+							<p>- 신청오류 : 1522-0568 (시대인재 ON)</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div> -->
+
+			<ul data-text="ul1" class="m_b15">
+				<li class="f_color3">* 컨설팅을 위한 기본정보 입력 및 성적표를 제출하세요.</li>
+			</ul>
+
+			<form>
+				<fieldset>
+					<dl data-form="wrap" class="m_b20"><!--20180309 클래스 수정-->
+						<dt><span class="field_name">이름<strong>*<em>필수항목</em></strong></span></dt>
+						<dd><span class="field_name">김시대</span></dd>
+						<dt><span class="field_name">연락처<strong>*<em>필수항목</em></strong></span></dt>
+						<dd><span class="field_name">010-1234-5678</span></dd>
+						<dt><span class="field_name">생년월일<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="select" class="type1">
+								<select title="태어난 해">
+									<option>년</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<span data-form="select">
+								<select title="태어난 월">
+									<option>월</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<span data-form="select">
+								<select title="태어난 일">
+									<option>일</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+									<option>옵션3</option>
+									<option>옵션3</option>
+									<option>옵션3</option>
+									<option>옵션3</option>
+									<option>옵션3</option>
+									<option>옵션3</option>
+									<option>옵션3</option>
+									<option>옵션3</option>
+									<option>옵션3</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+						</dd>
+
+						<dt><label for="input1" class="field_name">학교<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input1"></span></dd>
+						<dt><span class="field_name">학년/계열<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="select" class="type1">
+								<select title="학년 선택">
+									<option>학년</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>N</option>
+								</select>
+							</span>
+							<span data-form="select" class="type1">
+								<select title="계열 선택">
+									<option>계열</option>
+									<option>문과</option>
+									<option>이과</option>
+								</select>
+							</span>
+						</dd>
+						<dt class="b_p10">
+							<label for="file_input2" class="field_name">성적표1</label>
+						</dt>
+						<dd class="no_line">
+							<span data-form="input"><input type="text" id="file_input2"></span>
+							<button type="button" data-btn="whitegray" class="m_l10" onclick="openNewWindow('common_fileup_pop.html')">파일업로드</button>
+						</dd>
+						<dt class="b_p10">
+							<label for="file_input3" class="field_name">성적표2</label>
+						</dt>
+						<dd class="no_line">
+							<span data-form="input"><input type="text" id="file_input3"></span>
+							<button type="button" data-btn="whitegray" class="m_l10" onclick="openNewWindow('common_fileup_pop.html')">파일업로드</button>
+						</dd>
+						<dt class="b_p10">
+							<label for="file_input4" class="field_name">성적표3</label>
+						</dt>
+						<dd class="no_line">
+							<span data-form="input"><input type="text" id="file_input4"></span>
+							<button type="button" data-btn="whitegray" class="m_l10" onclick="openNewWindow('common_fileup_pop.html')">파일업로드</button>
+						</dd>
+						<dt class="b_p10">
+							<label for="file_input1" class="field_name">학교생활기록부</label>
+						</dt>
+						<dd class="no_line">
+							<span data-form="input"><input type="text" id="file_input1"></span>
+							<button type="button" data-btn="whitegray" class="m_l10" onclick="openNewWindow('common_fileup_pop.html')">파일업로드</button>
+						</dd>
+						<dt class="b_p10">
+							<label for="file_input5" class="field_name">기타</label>
+						</dt>
+						<dd class="no_line">
+							<span data-form="input"><input type="text" id="file_input5"></span>
+							<button type="button" data-btn="whitegray" class="m_l10" onclick="openNewWindow('common_fileup_pop.html')">파일업로드</button>
+						</dd>
+						<dt class="b_p10">
+							&nbsp;
+						</dt>
+						<dd class="text">
+							jpg,bmp,png,pdf,hwp 형식의 파일만 등록 가능합니다. <br />
+							해당항목의 파일이 여러 개인 경우, 하나의 파일로 결합하여 업로드 하세요. <br />
+							<b>
+								Ex> 학교생활기록부 이미지가 4장인 경우, 1개의 pdf파일로 업로드 <br />
+								<a href="/academy/info/notice_detail.asp?bseq=160" target="_blank" alt="여러 개의 파일 한번에 올리는 법 안내(새창열림)">여러 개의 파일 한번에 올리는 법 안내 ></a>
+								서류는 시대인재 현장 방문제출도 가능합니다. (본관 2층 /대치동 1021-8)
+							</b>
+						</dd>
+						<!--20181204 추가수정-->
+						<dt class="line"><label for="input3" class="field_name">가<br />군</label></dt>
+						<dd class="line">
+							<table class="input_t">
+								<colgroup>
+									<col width="25%"/>
+									<col width="75%"/>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>1지망</th>
+										<td>
+												<p>
+													<label for="input3" class="field_name m_b10">학교</label><span data-form="input" class="m_l10"><input type="text" id="input3"></span>
+													<label for="input4" class="field_name m_b10 m_l20">학과</label><span data-form="input" class="m_l10"><input type="text" id="input4"></span>
+												</p>
+										</td>
+									</tr>
+									<tr>
+										<th>2지망</th>
+										<td>
+											<p>
+												<label for="input5" class="field_name m_b10">학교</label><span data-form="input" class="m_l10"><input type="text" id="input5"></span>
+												<label for="input6" class="field_name m_b10 m_l20">학과</label><span data-form="input" class="m_l10"><input type="text" id="input6">
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th class="no_pd">3지망</th>
+										<td>
+											<p>
+												<label for="input7" class="field_name">학교</label><span data-form="input" class="m_l10"><input type="text" id="input7"></span>
+												<label for="input8" class="field_name m_l20">학과</label><span data-form="input" class="m_l10"><input type="text" id="input8">
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</dd>
+						<dt class="line"><label for="input3" class="field_name">나<br />군</label></dt>
+						<dd class="line">
+							<table class="input_t">
+								<colgroup>
+									<col width="25%"/>
+									<col width="75%"/>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>1지망</th>
+										<td>
+												<p>
+													<label for="input3" class="field_name m_b10">학교</label><span data-form="input" class="m_l10"><input type="text" id="input3"></span>
+													<label for="input4" class="field_name m_b10 m_l20">학과</label><span data-form="input" class="m_l10"><input type="text" id="input4"></span>
+												</p>
+										</td>
+									</tr>
+									<tr>
+										<th>2지망</th>
+										<td>
+											<p>
+												<label for="input5" class="field_name m_b10">학교</label><span data-form="input" class="m_l10"><input type="text" id="input5"></span>
+												<label for="input6" class="field_name m_b10 m_l20">학과</label><span data-form="input" class="m_l10"><input type="text" id="input6">
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th class="no_pd">3지망</th>
+										<td>
+											<p>
+												<label for="input7" class="field_name">학교</label><span data-form="input" class="m_l10"><input type="text" id="input7"></span>
+												<label for="input8" class="field_name m_l20">학과</label><span data-form="input" class="m_l10"><input type="text" id="input8">
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</dd>
+						<dt class="line"><label for="input3" class="field_name">다<br />군</label></dt>
+						<dd class="line">
+							<table class="input_t">
+								<colgroup>
+									<col width="25%"/>
+									<col width="75%"/>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>1지망</th>
+										<td>
+												<p>
+													<label for="input3" class="field_name m_b10">학교</label><span data-form="input" class="m_l10"><input type="text" id="input3"></span>
+													<label for="input4" class="field_name m_b10 m_l20">학과</label><span data-form="input" class="m_l10"><input type="text" id="input4"></span>
+												</p>
+										</td>
+									</tr>
+									<tr>
+										<th>2지망</th>
+										<td>
+											<p>
+												<label for="input5" class="field_name m_b10">학교</label><span data-form="input" class="m_l10"><input type="text" id="input5"></span>
+												<label for="input6" class="field_name m_b10 m_l20">학과</label><span data-form="input" class="m_l10"><input type="text" id="input6">
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th class="no_pd">3지망</th>
+										<td>
+											<p>
+												<label for="input7" class="field_name">학교</label><span data-form="input" class="m_l10"><input type="text" id="input7"></span>
+												<label for="input8" class="field_name m_l20">학과</label><span data-form="input" class="m_l10"><input type="text" id="input8">
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</dd>
+						<!--20181204 추가수정 끝-->
+						<dt><label for="input3" class="field_name">수시지원대학</label></dt>
+						<dd>
+							<p>
+								<span data-form="select" class="type1">
+									<select title="유형 선택">
+										<option>유형</option>
+										<option>교과</option>
+										<option>학종</option>
+										<option>논술</option>
+										<option>특기자</option>
+										<option>기타</option>
+									</select>
+								</span>
+								<label for="input9" class="field_name m_l20">학교</label><span data-form="input" class="size180 m_l15"><input type="text" id="input9"></span>
+								<label for="input10" class="field_name m_l20">학과</label><span data-form="input" class="size180 m_l15"><input type="text" id="input10"></span>
+							</p>
+							<p>
+								<span data-form="select" class="type1">
+									<select title="유형 선택">
+										<option>유형</option>
+										<option>교과</option>
+										<option>학종</option>
+										<option>논술</option>
+										<option>특기자</option>
+										<option>기타</option>
+									</select>
+								</span>
+								<label for="input11" class="field_name m_l20">학교</label><span data-form="input" class="size180 m_l15"><input type="text" id="input11"></span>
+								<label for="input12" class="field_name m_l20">학과</label><span data-form="input" class="size180 m_l15"><input type="text" id="input12"></span>
+							</p>
+							<div class="btn">
+								<button type="button" class="add">+ 추가</button>
+								<button type="button" class="del">- 제거</button>
+							</div>
+						</dd>
+					</dl>
+						<ul data-text="ul1" class="m_0">
+							<li class="f_color3">※ 컨설팅 일정 2일 전까지 결제 필수</li>
+							<li class="f_color3">※ 시대인재 본관 (크리스피 2층) 현장 결제만 가능</li>
+						</ul>
+						<div class="btn_wrap">
+						<button type="button" data-btn="navy" class="size220">서류 제출 및 예약 완료</button>
+					</div>
+				</fieldset>
+			</form>
+
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

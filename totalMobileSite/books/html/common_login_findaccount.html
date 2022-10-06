@@ -1,0 +1,124 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_login_findaccount.html
+* @ 페이지설명	: 모바일 > 공통 > 로그인,회원가입 > 아이디,비밀번호찾기
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-01
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>로그인,회원가입 > 아이디,비밀번호찾기</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	.style{}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="common" data-depth2="login" data-depth3="findaccount">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+
+		<h2 data-title="type1">로그인/회원가입</h2>	
+		<div data-layout="type1">
+			<form>
+				<fieldset>
+					<h3 data-title="type2">
+						아이디를 잊으셨나요?
+						<em>회원정보 상의 이름, 휴대폰번호로<br>아이디를 찾을 수 있습니다.</em><!-- 20170712 텍스트 변경 -->
+					</h3>
+					<dl data-form="wrap" class="noline">
+						<dt><label for="test4" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="test4"></span></dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="select" title="휴대폰 번호 앞자리">
+								<select>
+									<option>010</option>
+									<option>011</option>
+									<option>017</option>
+									<option>018</option>
+									<option>019</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span data-form="input" class="size168" title="휴대폰 번호 중간자리">
+								<input type="text">
+							</span>
+							<em>-</em>
+							<span data-form="input" class="size168" title="휴대폰 번호 뒷자리">
+								<input type="text">
+							</span>
+						</dd>
+					</dl>
+					<div class="btn_wrap2 bor_bot1 m_b60">
+						<button type="button" data-btn="navy">확인</button>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<h3 data-title="type2">
+						비밀번호를 잊으셨나요?
+						<em>회원정보 상의 이름, 아이디, 휴대폰번호를 입력하시면<br>비밀번호를 재발급 받을 수 있습니다.</em><!-- 20170712 텍스트 변경 -->
+					</h3>
+					<dl data-form="wrap" class="noline">
+						<dt><label for="test2" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="test2"></span></dd>
+						<dt><label for="test3" class="field_name">아이디<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="test3"></span></dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd class="m_b60">
+							<span data-form="select" title="휴대폰 번호 앞자리">
+								<select>
+									<option>010</option>
+									<option>011</option>
+									<option>017</option>
+									<option>018</option>
+									<option>019</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span data-form="input" class="size168" title="휴대폰 번호 중간자리">
+								<input type="text">
+							</span>
+							<em>-</em>
+							<span data-form="input" class="size168" title="휴대폰 번호 뒷자리">
+								<input type="text">
+							</span>
+						</dd>
+					</dl>
+					<div class="btn_wrap3">
+						<button type="button" data-btn="navy">확인</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

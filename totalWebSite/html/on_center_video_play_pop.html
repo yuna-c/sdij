@@ -1,0 +1,115 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/on_center_vedio_play_pop.html
+* @ 페이지설명	: 온 > 고객센터 > 동영상가이드 > 재생사양_팝업
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-15
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>고객센터 > 동영상가이드 > 카톡상담_팝업</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/on.css">
+<script src="../common/js/jquery-2.1.1.js"></script>
+<script type="text/javascript">
+$(function(){
+	var fileTarget = $('*[data-form="file"] .file_hidden'); 
+	fileTarget.on('change', function(){ // 값이 변경되면 
+	if(window.FileReader){ // modern browser 
+		var filename = $(this)[0].files[0].name; 
+	} else { // old IE 
+		var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출 
+	} // 추출한 파일명 삽입 
+	$(this).siblings('.file_name').val(filename); });
+});
+</script>
+<style type="text/css">
+</style>
+</head>
+<!-- 20170419 data-depth 추가 -->
+<body data-depth1="on" data-depth2="center" data-depth3="vedio" data-depth4="play" data-depth5="pop">
+<!-- 20170419 class="type1" 추가 -->
+<div data-popup="pop" class="type2">
+	<div class="pop_wrap2">
+		<h2 data-title="type5" class="popup m_b40">시대인재 동영상 재생 권장사양</h2>
+		<h3 data-title="type2">
+			PC
+			<em>
+				해당 내용은 기본적인 권장 사양으로 사용자 PC 관리 상태 및 네트워크에 따라 동일 사양이더라도 끊김 현상이 발생<br>될 수 있습니다. Windows 7 이상 운영체제가 설치된 PC로 이용하셔야 정상적인 영상 재생이 가능합니다. 
+			</em>
+		</h3>
+		<div data-table="type2" class="m_b50">
+			<table>
+				<caption>테이블 설명 영역</caption>
+				<colgroup>
+					<col style="width:110px">
+					<col style="width:110px">
+					<col style="width:220px">
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" colspan="2">항목</th>
+						<th scope="col">최소사양</th>
+						<th scope="col">권장사양</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th colspan="2">CPU</th>
+						<td>Pentium Dual core 이상</td>
+						<td>Core 2 Duo 이상</td>
+					</tr>
+					<tr>
+						<th colspan="2">RAM</th>
+						<td>2G 이상</td>
+						<td>4G 이상</td>
+					</tr>
+					<tr>
+						<th colspan="2">그래픽카드</th>
+						<td>256MB 이상 VGA 카드</td>
+						<td>512MB 이상 VGA 카드</td>
+					</tr>
+					<tr>
+						<th colspan="2">화면해상도</th>
+						<td colspan="2">1280 × 1024 이상</td>
+					</tr>
+					<tr>
+						<th colspan="2">운영체제</th>
+						<td>Windows 7 이상 / IE 8 이상</td>
+						<td>Windows 7 이상 / IE 11 이상</td>
+					</tr>
+					<tr>
+						<th rowspan="2">인터넷<br>다운로드 속도</th>
+						<th>초고화질</th>
+						<td colspan="2">4.0Mbps 이상</td>
+					</tr>
+					<tr>
+						<th>고화질</th>
+						<td colspan="2">2.0Mbps 이상</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<h3 data-title="type2">
+			모바일
+			<em>
+				현재 판매되는 대부분의 기기에서 정상적으로 재생 됩니다. (안드로이드 및 IOS OS만 지원)
+			</em>
+		</h3>
+	</div>
+</div>
+</body>

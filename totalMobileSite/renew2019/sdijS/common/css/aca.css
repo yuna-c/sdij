@@ -1,0 +1,226 @@
+﻿/*************************************************************************
+* @ 서비스명    : sidaeInjae Total Mobile Site
+* @ 파일명     : /common/css/aca.css
+* @ 페이지설명   : aca.css
+* @ 작성자       : 김은옥 (publisher@to-be.co.kr)
+* @ 작성일       : 2017-03-27
+************************** 수정이력 ****************************************
+* 번호    작업자       변경내용 
+*_________________________________________________________________________
+* 김은옥   최초작성 
+*************************************************************************/
+
+
+*[data-depth1="aca"][data-depth2="main"] .teaser_swipe_wrap{height:100%;}
+*[data-depth1="aca"][data-depth2="main"] .main_box{position:absolute;top:50%;left:0;right:0;margin:-15.833rem auto 0 auto;padding:1.667rem;width:23.333rem;height:32.500rem;font-size:0.917rem;color:#fff;background:#1e1e1e;box-sizing:border-box;transform:scale(0.85);}
+*[data-depth1="aca"][data-depth2="main"] .main_box h3{margin:0 0 0.5rem 0;font-size:1.167rem;color:#27a7f1;font-weight:bold;}
+*[data-depth1="aca"][data-depth2="main"] .main_box p b{color:#27a7f1;}
+*[data-depth1="aca"][data-depth2="main"] .main_box p.sub_tit{position:relative;margin:0 0 2.500rem 0;font-size:1.083rem;}
+*[data-depth1="aca"][data-depth2="main"] .main_box p.sub_tit:after{display:block;position:absolute;top:5rem;left:50%;margin:0 0 0 -12.708rem;width:25.417rem;height:0.083rem;background:#fff;content:'';}
+*[data-depth1="aca"][data-depth2="main"] .main_box p.sub_tit span{display:block;}
+*[data-depth1="aca"][data-depth2="main"] .main_box p.sub_tit span em{color:#27a7f1;}
+*[data-depth1="aca"][data-depth2="main"] .main_box p.sub_tit span b{color:#f6c108;font-weight:normal;}
+*[data-depth1="aca"][data-depth2="main"] .main_box ul{margin:0.333rem 0 0 0;}
+*[data-depth1="aca"][data-depth2="main"] .main_box ul li{font-size:0.833rem;color:#c8c8c8;}
+*[data-depth1="aca"][data-depth2="main"] .main_box .common_btn{position:absolute;top:0;left:50%;width:2.500rem;height:100%;margin:0 0 0 -1.250rem;}
+*[data-depth1="aca"][data-depth2="main"] .main_box .common_btn .main_prev{position:absolute;top:-1.250rem;width:2.500rem;height:2.500rem;border:0.083rem solid #fff;background:url(http://img.sdij.com/mobile/common.png) no-repeat;background-position:-8.833rem -64.667rem;background-size:40rem auto;border-radius:50%;box-sizing:border-box;}
+*[data-depth1="aca"][data-depth2="main"] .main_box .common_btn .main_next{position:absolute;bottom:-1.250rem;width:2.500rem;height:2.500rem;border:0.083rem solid #fff;background:url(http://img.sdij.com/mobile/common.png) no-repeat;background-position:-12.583rem -64.667rem;background-size:40rem auto;border-radius:50%;box-sizing:border-box;}
+*[data-depth1="aca"][data-depth2="main"] #footer{display:none !important;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual1{background:url('http://img.sdij.com/mobile/main_01.gif') repeat-x;background-size:auto 100%;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual2{background:url('http://img.sdij.com/mobile/main_02.gif') repeat-x;background-size:auto 100%;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual3{background:url('http://img.sdij.com/mobile/main_03.gif') repeat-x;background-size:auto 100%;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual2 .main_box{margin-top:-15.833rem;height:35.833rem;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual1 .main_box p>em,
+*[data-depth1="aca"][data-depth2="main"] .main_visual2 .main_box p>em{display:block;margin:0 0 0.833rem 0;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual2 .main_box h3,
+*[data-depth1="aca"][data-depth2="main"] .main_visual2 .main_box p b,
+*[data-depth1="aca"][data-depth2="main"] .main_visual2 .main_box p.sub_tit span em{color:#7cc938;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual2 .main_box .main_prev{border:0.083rem solid #7cc938;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual3 .main_box h3,
+*[data-depth1="aca"][data-depth2="main"] .main_visual3 .main_box p span{color:#f6c108;font-weight:bold;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual3 .main_box p.sub_tit span{color:#fff;font-weight:normal;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual3 .main_box p.sub_tit span em{color:#f6c108;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual3 .main_box p b{color:#f6c108;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual3 .main_footer{position:absolute;bottom:0;left:0;right:0;margin:0 auto;padding:1.250rem;font-size:0.917rem;color:#8c8c8c;text-align:center;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual3 .main_footer a{color:#8c8c8c;text-decoration:underline;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual3 .main_box{margin-top:-15.417rem;}
+*[data-depth1="aca"][data-depth2="main"] .main_visual3 .main_box .main_prev{border:0.083rem solid #f6c108;}
+
+
+*[data-depth1="aca"][data-depth2="univr&d"][data-depth3="presentation"][data-depth4="input"] *[data-title="type1"]{margin-bottom:2.500rem;}
+
+/*컨설팅*/
+*[data-depth1="aca"][data-depth2="consulting"][data-depth3="apply"][data-depth4="certify"] *[data-form="wrap"] dd button + button,
+*[data-depth1="aca"][data-depth2="consulting"][data-depth3="wait"][data-depth4="input"] *[data-form="wrap"] dd button + button{margin:0;}
+*[data-depth1="aca"][data-depth2="consulting"][data-depth3="check"][data-depth4="pop"] *[data-form="wrap"]{padding-top:0;border-top:none;}
+*[data-depth1="aca"][data-depth2="consulting"][data-depth3="check"][data-depth4="detail"] .btn_wrap.half{margin:0 0 2.500rem 0;}
+*[data-depth1="aca"][data-depth2="consulting"][data-depth3="check"][data-depth4="detail"] .btn_wrap.half *[data-btn]{font-size:1.167rem;}
+*[data-depth1="aca"][data-depth2="consulting"][data-depth3="main"] .btn_wrap *[data-btn]{font-size:1.167rem;}
+*[data-depth1="aca"][data-depth2="consulting"][data-depth3="wait"][data-depth4="finish"] *[data-box="type1"] b{font-size:1.167rem;}
+
+*[data-depth1="aca"][data-depth2="class_reservation"][data-depth3="confirm"] *[data-table="type4"].consult2 th,
+*[data-depth1="aca"][data-depth2="class_waiting"][data-depth3="confirm"] *[data-table="type4"].consult2 th{
+  padding: 1.250rem 0.833rem;
+}
+
+*[data-depth1="aca"][data-depth2="univr&d"][data-depth3="presentation"][data-depth4="list"] *[data-list="type3"] li .title{width:65%;}
+*[data-depth1="aca"][data-depth2="univr&d"][data-depth3="presentation"][data-depth4="list"] *[data-list="type3"] li .title2{font-size:1.167rem;text-align:center;}
+*[data-depth1="aca"][data-depth2="univr&d"][data-depth3="presentation"][data-depth4="cancel"] *[data-list="type3"] li .title{width:80%;}
+
+*[data-depth1="aca"][data-depth2="timetable"][data-depth3="dccampus"] *[data-tab="type1"].double{background:#dcdcdc;}
+*[data-depth1="aca"][data-depth2="timetable"][data-depth3="dccampus"] *[data-tab="type2"] a{padding:1.500rem 0;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+*[data-depth1="aca"][data-depth2="univr&d"][data-depth3="presentation"] *[data-tab="type2"] a{padding:1.500rem 0;}
+*[data-depth1="aca"][data-depth2="acainfo"][data-depth3="map"] *[data-tab="type2"] button{line-height:1.500rem;}
+*[data-depth1="aca"][data-depth2="acainfo"][data-depth3="map"] *[data-tab="type2"] button a{
+  width:100%;
+  display: block;
+}
+
+/*맵쪽*/
+.map_wrap{
+  border:1px solid #d2d2d2;
+  overflow-x: scroll;
+  height:18.333rem;
+}
+.map_wrap .scroll_wrap{
+  width:62.5000rem;
+  height:55.833rem;
+  position:relative;
+}
+.map_wrap .scroll_wrap.location2{
+  width:41.667rem;
+  height:41.667rem
+}
+.map_wrap .scroll_wrap span{
+  font-size:25px;
+  color:#ffffff;
+  width:6.667rem;
+  height:5.167rem;
+  font-size:0;
+  text-indent: -9999px;
+  position:absolute;
+}
+.map_wrap .scroll_wrap span.area1{
+  left:34.333rem;
+  top:23.333rem;
+}
+.map_wrap .scroll_wrap span.area1.on,.map_wrap .scroll_wrap span.area1:hover{
+  background:url(http://img.sdij.com/map/m/m_flag1.png) no-repeat center top;
+  background-size:100%;
+}
+.map_wrap .scroll_wrap span.area2{
+  left:26.333rem;
+  bottom:9.533rem;
+  height:6.015rem;
+}
+.map_wrap .scroll_wrap span.area2.on,.map_wrap .scroll_wrap span.area2:hover{
+  background:url(http://img.sdij.com/map/m/m_flag2.png) no-repeat center top;
+  background-size:100%;
+}
+.map_wrap .scroll_wrap span.area3{
+  right:2.7rem;
+  top:26.2rem;
+  width:10.4rem;
+  height:2.70rem;
+  z-index:10;
+}
+.map_wrap .scroll_wrap span.area3.on,.map_wrap .scroll_wrap span.area3:hover{
+  background:url(http://img.sdij.com/map/m/m_flag3.png) no-repeat right center;
+  background-size:8.4rem;
+}
+.map_wrap .scroll_wrap span.area4{
+  left:27.083rem;
+  top:18.25rem;
+  z-index:10;
+}
+.map_wrap .scroll_wrap span.area4.on,.map_wrap .scroll_wrap span.area4:hover{
+  background:url(http://img.sdij.com/map/m/m_flag4.png) no-repeat center top;
+  background-size:100%;
+}
+.map_wrap .scroll_wrap span.area5{
+  left:4.108rem;
+  top:26.250rem;
+  width:10.4rem;
+  height:2.70rem;
+  z-index:10;
+}
+.map_wrap .scroll_wrap span.area5.on,.map_wrap .scroll_wrap span.area5:hover{
+  background:url(http://img.sdij.com/map/m/m_flag5.png) no-repeat left center;
+  background-size:contain;
+}
+.map_wrap .scroll_wrap span.area6{
+  right:20.5rem;
+  top:32.292rem;
+}
+.map_wrap .scroll_wrap span.area6.on,.map_wrap .scroll_wrap span.area6:hover{
+  background:url(http://img.sdij.com/map/m/m_flag6.png) no-repeat center top;
+  background-size:100%;
+}
+.map_wrap .scroll_wrap span.area7{
+  right:10.633rem;
+  top:23.558rem;
+  width:8.4rem;
+  height:3.90rem;
+}
+.map_wrap .scroll_wrap span.area7.on,.map_wrap .scroll_wrap span.area7:hover{
+  background:url(http://img.sdij.com/map/m/m_flag7.png) no-repeat center top;
+  background-size:100%;
+}
+.map_wrap .scroll_wrap span.area8{
+  right:13.583rem;
+  top:9.5rem;
+  width:11.4rem;
+  height:2.70rem;
+}
+.map_wrap .scroll_wrap span.area8.on,.map_wrap .scroll_wrap span.area8:hover{
+  background:url(http://img.sdij.com/map/m/m_flag8.png) no-repeat right center;
+  background-size:contain;
+}
+.map_wrap .scroll_wrap span.area9{
+  left:22.608rem;
+  top:26rem;
+  width: 7.867rem;
+}
+.map_wrap .scroll_wrap span.area9.on,.map_wrap .scroll_wrap span.area9:hover{
+  background:url(http://img.sdij.com/map/m/m_flag9.png) no-repeat center top;
+  background-size:100%;
+}
+.map_wrap .scroll_wrap span.area10{
+  left:11.797rem;
+  top:23.375rem;
+  width:10.9rem;
+}
+.map_wrap .scroll_wrap span.area10.on,.map_wrap .scroll_wrap span.area10:hover{
+  background:url(http://img.sdij.com/map/m/m_flag10.png) no-repeat center top;
+  background-size:100%;
+}
+.map_wrap .scroll_wrap span.area11{
+  right:10.475rem;
+  bottom:19.050rem;
+  width:8.9rem;
+  height:5.70rem;
+}
+.map_wrap .scroll_wrap span.area11.on,.map_wrap .scroll_wrap span.area11:hover{
+  background:url(http://img.sdij.com/map/m/m_flag11.png) no-repeat center bottom;
+  background-size:100%;
+}
+.map_wrap .scroll_wrap span.area13{
+  right:9.475rem;
+  top:17.8rem;
+  width:6.6rem;
+  height:4.083rem;
+}
+.map_wrap .scroll_wrap span.area13.on,.map_wrap .scro13_wrap span.area13:hover{
+  background:url(http://img.sdij.com/map/m/m_flag13.png) no-repeat center bottom;
+  background-size:100%;
+}
+.map_wrap .scroll_wrap span.area12{
+  left:17.6rem;
+  top:16.3rem;
+  width:6.667rem;
+  height:5.8rem;
+}
+.map_wrap .scroll_wrap span.area12.on,.map_wrap .scroll_wrap span.area12:hover{
+  background:url(http://img.sdij.com/map/m/m_flag12.png) no-repeat center top;
+  background-size:100%;
+}

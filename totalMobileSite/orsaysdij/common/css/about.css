@@ -1,0 +1,8 @@
+@charset "utf-8";
+.about-container .content-layout .page-tit{ padding:35px 0 40px; }
+.about-container .content-layout h3.page-tit{ line-height:43px; }
+.about-container .content-layout .gray-box2{ padding:15px 10px 10px; color:#000; }
+.about-container .content-layout .list-tit dd{ font-size:12px; text-align:center; }
+.about-container .content-layout h4.dep-tit{ margin-top:15px; margin-bottom:0; padding-top:10px; font-size:13px; border-top:1px solid #d3d3d3; }
+.about-container .content-layout h4.dep-tit .color-yellow{ padding:0px 2px; background-color:#ffc200 !important; }
+.about-container .content-layout .dep2-tit{ padding-bottom:12px; text-align:center; }

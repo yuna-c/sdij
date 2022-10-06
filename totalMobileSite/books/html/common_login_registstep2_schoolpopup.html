@@ -1,0 +1,102 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_login_registstep2_schoolpopup.html
+* @ 페이지설명	: 모바일 > 공통 > 로그인,회원가입 > 정보입력 > 학교검색팝업
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-25
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>로그인,회원가입 > 정보입력 > 학교검색팝업</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="common" data-depth2="login" data-depth3="registstep2" data-depth4="schoolpopup">
+<div id="wrap" data-popup="pop">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="pop_title">
+	<h1>학교검색</h1>
+	<button class="pop_close">닫기</button>
+</div>
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+
+		<p data-text="type4" class="m_b20">* 키워드를 2자 이상 입력하세요.</p>
+		<div data-layout="type1">
+
+			<form>
+				<fieldset>
+					<p class="m_b20">
+						<span data-form="radio">
+							<input type="radio" id="radio1" name="radio_test1">
+							<label for="radio1">중학교</label>
+						</span>
+						<span data-form="radio">
+							<input type="radio" id="radio2" name="radio_test1" checked="checked">
+							<label for="radio2">고등학교</label>
+						</span>
+					</p>
+					<p class="m_b60">
+						<span data-form="input" class="size380"><input type="text" id="input4" title="학교명 입력란"></span><button type="button" data-btn="whitegray" class="size160 m_l20">검색</button>
+					</p>
+				</fieldset>
+				<fieldset>
+					<ul class="school_list">
+						<li>서울고등학교</li>
+						<li>서울과학고등학교</li>
+						<li>서울국악예술고등학교</li>
+						<li>서울고등학교</li>
+						<li>서울과학고등학교</li>
+						<li>서울국악예술고등학교</li>
+						<li>서울고등학교</li>
+						<li>서울과학고등학교</li>
+						<li>서울국악예술고등학교</li>
+						<li>서울고등학교</li>
+						<li>서울과학고등학교</li>
+						<li>서울국악예술고등학교</li>
+						<li>서울고등학교</li>
+						<li>서울과학고등학교</li>
+						<li>서울국악예술고등학교</li>
+						<li>서울고등학교</li>
+						<li>서울과학고등학교</li>
+						<li>서울국악예술고등학교</li>
+						<li class="noresult">검색결과가 없습니다.</li>
+					</ul>
+					<div class="btn_fixbt">
+						<button type="button" data-btn="navy" class="m_popbtn">입력</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

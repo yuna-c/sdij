@@ -1,0 +1,159 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_mypage_ordercheck_none.html
+* @ 페이지설명	: 모바일 > 공통 > 마이페이지 > 주문&배송조회 > 내역없음 
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-22
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>헤더</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/swiper.min.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/typed.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="aca" data-depth2="main">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+<div id="content_wrap">
+
+</div>
+
+<!-- 이미지 1개일때 - autoH 중앙자동정렬 -->
+<!-- <div data-pop="pop" class="autoH">
+    <div class="pop_wrap">
+        <div class="content">
+            <a href="#"><img src="../common/img/pop_bg.png"/></a>
+        </div>
+        <div class="today">
+            <button type="button" class="t_close">오늘 하루 열지 않음</button>
+            <button type="button" class="close">닫기</button>
+        </div>
+    </div>
+    <div class="dim"></div>
+</div> -->
+
+<!-- 세로나열 2개 autoH 중앙자동정렬 -->
+<!-- <div data-pop="double" class="autoH">
+    <div class="pop_wrap">
+        <div class="content_wrap">
+            <div class="pop_cont">
+                <a href="#"><img src="../common/img/pop_bg.png"/></a>
+                <div class="today">
+                    <button type="button" class="t_close">오늘 하루 열지 않음</button>
+                    <button type="button" class="close">닫기</button>
+                </div>
+                <div class="dim"></div>
+            </div>
+            <div class="pop_cont">
+                <a href="#"><img src="../common/img/pop_bg5.png"/></a>
+                <div class="today">
+                    <button type="button" class="t_close">오늘 하루 열지 않음</button>
+                    <button type="button" class="close">닫기</button>
+                </div>
+                <div class="dim"></div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- 세로나열중 1개일때 autoH 중앙자동정렬 -->
+<!-- <div data-pop="double" class="autoH check">
+    <div class="pop_wrap">
+        <div class="content_wrap">
+            <div class="pop_cont">
+                <a href="#"><img src="../common/img/pop_bg.png"/></a>
+                <div class="today">
+                    <button type="button" class="t_close">오늘 하루 열지 않음</button>
+                    <button type="button" class="close">닫기</button>
+                </div>
+                <div class="dim"></div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- 이미지 스와이퍼 autoH 중앙자동정렬 -->
+<div data-pop="pop" class="autoH">
+    <div class="pop_wrap">
+        <div data-swipe="pop" class="pop swiper-container">
+            <div class="main-pagination"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="../common/img/pop_bg.png"/></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="../common/img/pop_bg2.png"/></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="../common/img/pop_bg3.png"/></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="../common/img/pop_bg4.png"/></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop_btn">
+            <div class="pop_prev">back</div>
+            <div class="pop_next">go</div>
+        </div>
+
+        <div class="today">
+            <button type="button" class="t_close">오늘 하루 열지 않음</button>
+            <button type="button" class="close">닫기</button>
+        </div>
+    </div>
+    <div class="dim"></div>
+</div>
+
+<script type="text/javascript">
+    var swiper7 = new Swiper('.pop.swiper-container', {
+        pagination: '.main-pagination',
+        paginationClickable: true,
+        spaceBetween: 0,
+        slidesPerView:1,
+        /*autoplay: 4000,*/
+        loop:true,
+        nextButton: '.pop_next',
+        prevButton: '.pop_prev',
+    });
+
+    $('*[data-pop="pop"] button').click(function(){
+        $(this).parents('*[data-pop="pop"]').hide();
+    });
+
+    $('*[data-pop="double"] button').click(function(){
+        if($(this).parents('*[data-pop="double"]').hasClass('check') == true){
+            $(this).parents('*[data-pop="double"]').addClass('off')
+            $(this).parents('.pop_cont').addClass('off');
+        } else{
+            $(this).parents('*[data-pop="double"]').addClass('check')
+            $(this).parents('.pop_cont').addClass('off');
+        }
+    });
+</script>
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

@@ -1,0 +1,535 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/aca_univr&d_consulting_enter01.html
+* @ 페이지설명	: 모바일 > 학원 > 입시R&D > 컨설팅 > 	정보입력_유의사항
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-19
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>입시R&D > 컨설팅 > 정보입력_유의사항</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/typed.js"></script>
+<script src="../common/js/jquery-minimap.js"></script><!-- 2018-02-01 스크립트 추가 -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="aca" data-depth2="college" data-depth3="reservation" data-depth4="select">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+		<div data-layout="type1">
+			<div data-tab="type1" class="p_t60 m_b60">
+				<a href="#" class="on">내 자리 예약하기</a>
+				<a href="#">내 자리 조회하기</a>
+			</div>
+
+			<ul data-text="type1" class="star6 m_b30">
+				<li>수업별 예약안내 문자를 수신한 수강생만 본 서비스를 이용할 수 있습니다.</li>
+				<li>이미 예약된 내역의 조회 또는 수정은 우측 내 자리 조회 메뉴를 이용하세요.</li>
+				<li>자리 예약은 수업 당일 AM 9:00까지만 가능합니다.</li>
+			</ul>
+
+			<div data-step="type2" class="reserve m_b60">
+				<div class="pass"><em>1</em>본인인증</div>
+				<div class="on"><em>2</em>좌석선택</div>
+				<div><em>3</em>완료</div>
+			</div>
+
+			<div data-table="type4" class="reserve m_b60">
+				<table>
+					<caption>유의사항 정보</caption>
+					<colgroup>
+						<col style="width:40%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">강좌명</th>
+							<td>이지영 윤리와 사상 개념완성 8차시</td>
+						</tr>
+						<tr>
+							<th scope="row">강의실</th>
+							<td><span class="f_color3">[대치]</span> 시대인재 1관 103호</td>
+						</tr>
+						<tr>
+							<th scope="row">수업일</th>
+							<td>2018-01-28 (일)</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<form data-form="reservation">
+				<fieldset>
+					<div data-wrap="reserve">
+						<h4>좌석선택</h4>
+
+						<div class="info_wrap">
+							<p class="seat_text">선택 가능 자리 중 본인이 착석할 자리를 선택 후 확인버튼을 누르세요.<br>1인당 1개의 자리만 예약 가능합니다.</p>
+							<!-- <dl data-box="seat">
+								<dt>총 좌석수  150</dt>
+								<dd>잔여 좌석수  <b>028</b></dd>
+							</dl> -->
+							
+							<div class="seat_info">
+								<span><b></b>선택가능</span>
+								<span><b></b>예약완료</span>
+								<span><b></b>선택불가</span>
+								<span><b></b>선택</span>
+							</div>
+						</div>
+
+						<!-- 2018-02-01 마크업 수정 S -->
+						<div class="seat_wrap">
+							<div id="minimap"></div>
+							<div id="parent"></div>
+							<div data-select="seat">
+								<p class="blackboard">칠 판</p>
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<button type="button" id="seat01">A01</button>
+								<button type="button" id="seat02">A02</button>
+								<button type="button" id="seat03" class="select">A03</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat04">A04</button>
+								<button type="button" id="seat05">A05</button>
+								<button type="button" id="seat06">A06</button>
+								<button type="button" id="seat07">A07</button>
+								<button type="button" id="seat08">A08</button>
+								<button type="button" id="seat09">A09</button>
+								<button type="button" id="seat10">A10</button>
+								<button type="button" id="seat11">A11</button>
+								<button type="button" id="seat12">A12</button>
+								<button type="button" id="seat13">A13</button>
+								<button type="button" id="seat14">A14</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat15">A15</button>
+								<button type="button" id="seat16">A16</button>
+								<button type="button" id="seat17">A17</button>
+								<button type="button" id="seat18">A18</button>
+								<span class="wall">벽</span><!-- 오른쪽 공백 -->
+
+								<br><!-- 줄바꿈 -->
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<button type="button" id="seat19">B01</button>
+								<button type="button" id="seat20" disabled>B02</button>
+								<button type="button" id="seat21" disabled>B03</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat22" disabled class="finish">B04</button>
+								<button type="button" id="seat23">B05</button>
+								<button type="button" id="seat24">B06</button>
+								<button type="button" id="seat25">B07</button>
+								<button type="button" id="seat26">B08</button>
+								<button type="button" id="seat27">B09</button>
+								<button type="button" id="seat28">B10</button>
+								<button type="button" id="seat29">B11</button>
+								<button type="button" id="seat30">B12</button>
+								<button type="button" id="seat31">B13</button>
+								<button type="button" id="seat32">B14</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat33">B15</button>
+								<button type="button" id="seat34">B16</button>
+								<button type="button" id="seat35">B17</button>
+								<button type="button" id="seat36">B18</button>
+								<span class="wall">벽</span><!-- 오른쪽 공백 -->
+
+								<br><!-- 줄바꿈 -->
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+
+								<br>
+								
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<button type="button" id="seat37">C01</button>
+								<button type="button" id="seat38">C02</button>
+								<button type="button" id="seat39">C03</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat40">C04</button>
+								<button type="button" id="seat41">C05</button>
+								<button type="button" id="seat42">C06</button>
+								<button type="button" id="seat43">C07</button>
+								<button type="button" id="seat44">C08</button>
+								<button type="button" id="seat45">C09</button>
+								<button type="button" id="seat46">C10</button>
+								<button type="button" id="seat47">C11</button>
+								<button type="button" id="seat48">C12</button>
+								<button type="button" id="seat49">C13</button>
+								<button type="button" id="seat50">C14</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat51">C15</button>
+								<button type="button" id="seat52">C16</button>
+								<button type="button" id="seat53">C17</button>
+								<button type="button" id="seat54">C18</button>
+								<span class="wall">벽</span><!-- 오른쪽 공백 -->
+
+								<br><!-- 줄바꿈 -->
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<button type="button" id="seat55">D01</button>
+								<button type="button" id="seat56">D02</button>
+								<button type="button" id="seat57">D03</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat58">D04</button>
+								<button type="button" id="seat59">D05</button>
+								<button type="button" id="seat60">D06</button>
+								<button type="button" id="seat61">D07</button>
+								<button type="button" id="seat62">D08</button>
+								<button type="button" id="seat63">D09</button>
+								<button type="button" id="seat64">D10</button>
+								<button type="button" id="seat65">D11</button>
+								<button type="button" id="seat66">D12</button>
+								<button type="button" id="seat67">D13</button>
+								<button type="button" id="seat68">D14</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat69">D15</button>
+								<button type="button" id="seat70">D16</button>
+								<button type="button" id="seat71">D17</button>
+								<button type="button" id="seat72">D18</button>
+								<span class="wall">벽</span><!-- 오른쪽 공백 -->
+
+								<br><!-- 줄바꿈 -->
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+
+								<br>
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<button type="button" id="seat73">E01</button>
+								<button type="button" id="seat74">E02</button>
+								<button type="button" id="seat75">E03</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat76">E04</button>
+								<button type="button" id="seat77">E05</button>
+								<button type="button" id="seat78">E06</button>
+								<button type="button" id="seat79">E07</button>
+								<button type="button" id="seat80">E08</button>
+								<button type="button" id="seat81">E09</button>
+								<button type="button" id="seat82">E10</button>
+								<button type="button" id="seat83">E11</button>
+								<button type="button" id="seat84">E12</button>
+								<button type="button" id="seat85">E13</button>
+								<button type="button" id="seat86">E14</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat87">E15</button>
+								<button type="button" id="seat88">E16</button>
+								<button type="button" id="seat89">E17</button>
+								<button type="button" id="seat90">E18</button>
+								<span class="wall">벽</span><!-- 오른쪽 공백 -->
+
+								<br><!-- 줄바꿈 -->
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<button type="button" id="seat91">F01</button>
+								<button type="button" id="seat92">F02</button>
+								<button type="button" id="seat93">F03</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat94">F04</button>
+								<button type="button" id="seat95">F05</button>
+								<button type="button" id="seat96">F06</button>
+								<button type="button" id="seat97">F07</button>
+								<button type="button" id="seat98">F08</button>
+								<button type="button" id="seat99">F09</button>
+								<button type="button" id="seat100">F10</button>
+								<button type="button" id="seat101">F11</button>
+								<button type="button" id="seat102">F12</button>
+								<button type="button" id="seat103">F13</button>
+								<button type="button" id="seat104">F14</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat105">F15</button>
+								<button type="button" id="seat106">F16</button>
+								<button type="button" id="seat107">F17</button>
+								<button type="button" id="seat108">F18</button>
+								<span class="wall">벽</span><!-- 오른쪽 공백 -->
+
+								<br><!-- 줄바꿈 -->
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+
+								<br>
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<button type="button" id="seat109">G01</button>
+								<button type="button" id="seat110">G02</button>
+								<button type="button" id="seat111">G03</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat112">G04</button>
+								<button type="button" id="seat113">G05</button>
+								<button type="button" id="seat114">G06</button>
+								<button type="button" id="seat115">G07</button>
+								<button type="button" id="seat116">G08</button>
+								<button type="button" id="seat117">G09</button>
+								<button type="button" id="seat118">G10</button>
+								<button type="button" id="seat119">G11</button>
+								<button type="button" id="seat120">G12</button>
+								<button type="button" id="seat121">G13</button>
+								<button type="button" id="seat122">G14</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat123">G15</button>
+								<button type="button" id="seat124">G16</button>
+								<button type="button" id="seat125">G17</button>
+								<button type="button" id="seat126">G18</button>
+								<span class="wall">벽</span><!-- 오른쪽 공백 -->
+
+								<br><!-- 줄바꿈 -->
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<button type="button" id="seat127">H01</button>
+								<button type="button" id="seat128">H02</button>
+								<button type="button" id="seat129">H03</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat130">H04</button>
+								<button type="button" id="seat131">H05</button>
+								<button type="button" id="seat132">H06</button>
+								<button type="button" id="seat133">H07</button>
+								<button type="button" id="seat134">H08</button>
+								<button type="button" id="seat135">H09</button>
+								<button type="button" id="seat136">H10</button>
+								<button type="button" id="seat137">H11</button>
+								<button type="button" id="seat138">H12</button>
+								<button type="button" id="seat139">H13</button>
+								<button type="button" id="seat140">H14</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat141">H15</button>
+								<button type="button" id="seat142">H16</button>
+								<button type="button" id="seat143">H17</button>
+								<button type="button" id="seat144">H18</button>
+								<span class="wall">벽</span><!-- 오른쪽 공백 -->
+
+								<br><!-- 줄바꿈 -->
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<button type="button" id="seat145">I01</button>
+								<button type="button" id="seat146">I02</button>
+								<button type="button" id="seat147">I03</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat148">I04</button>
+								<button type="button" id="seat149">I05</button>
+								<button type="button" id="seat150">I06</button>
+								<button type="button" id="seat151">I07</button>
+								<button type="button" id="seat152">I08</button>
+								<button type="button" id="seat153">I09</button>
+								<button type="button" id="seat154">I10</button>
+								<button type="button" id="seat155">I11</button>
+								<button type="button" id="seat156">I12</button>
+								<button type="button" id="seat157">I13</button>
+								<button type="button" id="seat158">I14</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat159">I15</button>
+								<button type="button" id="seat160">I16</button>
+								<button type="button" id="seat161">I17</button>
+								<button type="button" id="seat162">I18</button>
+								<span class="wall">벽</span><!-- 오른쪽 공백 -->
+
+								<br><!-- 줄바꿈 -->
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="hide">길</span>
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+
+								<br>
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<button type="button" id="seat163">J01</button>
+								<button type="button" id="seat164">J02</button>
+								<button type="button" id="seat165">J03</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat166">J04</button>
+								<button type="button" id="seat167">J05</button>
+								<button type="button" id="seat168">J06</button>
+								<button type="button" id="seat169">J07</button>
+								<button type="button" id="seat170">J08</button>
+								<button type="button" id="seat171">J09</button>
+								<button type="button" id="seat172">J10</button>
+								<button type="button" id="seat173">J11</button>
+								<button type="button" id="seat174">J12</button>
+								<button type="button" id="seat175">J13</button>
+								<button type="button" id="seat176">J14</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat177">J15</button>
+								<button type="button" id="seat178">J16</button>
+								<button type="button" id="seat179">J17</button>
+								<button type="button" id="seat180">J18</button>
+								<span class="wall">벽</span><!-- 오른쪽 공백 -->
+
+								<br><!-- 줄바꿈 -->
+
+								<span class="wall">벽</span><!-- 왼쪽 공백 -->
+								<button type="button" id="seat181">K01</button>
+								<button type="button" id="seat182">K02</button>
+								<button type="button" id="seat183">K03</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat184">K04</button>
+								<button type="button" id="seat185">K05</button>
+								<button type="button" id="seat186">K06</button>
+								<button type="button" id="seat187">K07</button>
+								<button type="button" id="seat188">K08</button>
+								<button type="button" id="seat189">K09</button>
+								<button type="button" id="seat190">K10</button>
+								<button type="button" id="seat191">K11</button>
+								<button type="button" id="seat192">K12</button>
+								<button type="button" id="seat193">K13</button>
+								<button type="button" id="seat194">K14</button>
+								<span class="hide">길</span>
+								<button type="button" id="seat195">K15</button>
+								<button type="button" id="seat196">K16</button>
+								<button type="button" id="seat197">K17</button>
+								<button type="button" id="seat198">K18</button>
+								<span class="wall">벽</span><!-- 오른쪽 공백 -->
+
+								<span class="wall2">아래벽</span><!-- 아래쪽 공백 -->
+							</div>
+							
+							<p class="result">
+								선택자리 A03
+								<button type="button" data-btn="whitegray">좌석새로고침</button><!-- 2018-201 텍스트 수정 -->
+							</p>
+						</div>
+						<!-- 2018-02-01 마크업 수정 E -->
+					</div>
+
+					<div class="btn_wrap p_b0">
+						<button type="button" data-btn="navy" data-popup="sample" id="reservation">확인</button>
+					</div>
+				</fieldset>
+			</form>
+
+		</div>
+	</div>
+</div>
+
+<div data-popup="type1" class="reservation">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<div class="content_text">
+				<p>강좌명 : 이지영 윤리와 사상 개념완성 8차시</p>
+				<p>강의실: <em class="f_color3">[대치]</em> 시대인재 1관</p>
+				<p class="m_b40">수업일: 2018-01-28 (일)</p>
+				<p><b>선택자리 C01</b></p>
+				<p>예약하시겠습니까?</p>
+			</div>
+		</div>
+		<div class="btn_wrap2">
+			<button type="button" data-btn="whitegray" class="close">닫기</button>
+			<button type="button" data-btn="navy">확인</button>
+		</div>
+	</div>
+	<div class="dim"></div>
+</div>
+
+<!-- 2018-02-01 스크립트 수정 S -->
+<script>
+	
+</script>
+<!-- 2018-02-01 스크립트 수정 E -->
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

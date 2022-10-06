@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>예비고1 입시설명회 > 정보입력</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../common/js/jquery.selectric.min.js"></script>
+<link rel="stylesheet" href="../common/css/aca.css">
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectric.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>  <!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="common" data-depth2="entrance_presentation" data-depth3="pop">
+<div data-popup="pop" class="type2 type7">
+  <div class="pop_wrap">
+     <div class="pop_wrap">
+        <form data-box="pop_content">
+                <fieldset>
+                    <h3 data-title="type2" class="m_b15">
+                        DB에 등록하시면 설명회 / 강좌 안내 문자를 수신하실 수 있습니다.
+                    </h3>
+                    <ul data-text="type5" class="m_b30">
+                        <li class="star f_color3">
+                           인증 받은 핸드폰 번호가 시대인재 문자 DB로 저장됩니다.
+                        </li>
+                    </ul>
+                    <dl data-form="wrap" class="m_b30">
+                        <dt>
+                            <label for="input2" class="field_name">
+                                이름
+                                 <strong>*<em>필수항목</em></strong>
+                            </label>
+                        </dt>
+                        <dd>
+                            <span data-form="input" class="size360">
+                                <input type="text" id="input2">
+                            </span>
+                        </dd>
+                        <dt>
+                            <span class="field_name">
+                                휴대폰번호
+                                 <strong>*<em>필수항목</em></strong>
+                            </span>
+                        </dt>
+                        <dd>
+                            <p class="m_b15">
+                               <select title="휴대폰번호 앞 세자리">
+                                <option selected="selected">선택</option>
+                                <option>010</option>
+                                <option>011</option>
+                                <option>017</option>
+                                <option>018</option>
+                                <option>019</option>
+                              </select>
+                                <em>-</em>
+                                <span  data-form="input" class="size110">
+                                  <input type="text" title="휴대폰번호 가운데 네자리">
+                                </span>
+                                <em>-</em>
+                                <span  data-form="input" class="size110">
+                                  <input type="text" title="휴대폰번호 뒤 네자리">
+                                </span>
+                                <button type="button" data-btn="black">인증번호받기</button>
+                            </p>
+                        </dd>
+                        <dt><label for="input2" class="field_name">인증번호</label></dt>
+                        <dd>
+                            <span data-form="input" class="m_b15"><input type="text" id="input2"></span>
+                            <span class="timer"><em>인증번호 입력 남은시간</em>3:00</span>
+                            <ul data-text="type5" class="m_b0">
+                                <li class="star f_color2">
+                                   입력한 핸드폰 번호로 인증번호가 발송됩니다.
+                                </li>
+                            </ul>
+                        </dd>
+                        <dt>
+                            <label for="input1" class="field_name">
+                                학교
+                                <strong>*<em>필수항목</em></strong>
+                            </label>
+                        </dt>
+                        <dd>
+                            <span data-form="input" class="size360">
+                                <input type="text" id="input1">
+                            </span>
+                        </dd>
+                        <dt><span class="field_name">학년<strong>*<em>필수항목</em></strong></span></dt>
+                        <dd>
+                            <select title="학년선택" class="type15">
+                                <option>선택</option>
+                                <option>N수</option>
+                                <option>고3</option>
+                                <option>고2</option>
+                                <option>중3</option>
+                                <option>기타</option>
+                            </select>
+                        </dd>
+                        <dt><span class="field_name">계열<strong>*<em>필수항목</em></strong></span></dt>
+                        <dd>
+                            <select title="계열선택" class="type15">
+                                <option>선택</option>
+                                <option>문과</option>
+                                <option>이과</option>
+                                <option>예체능</option>
+                                <option>기타</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <div class="recruit_form">
+                        <div class="big_t m_b20">
+                            개인 정보 수집 및 활용 동의 (필수)
+                                    <p>
+                                        <span data-form="radio" class="type1 m_0">
+                                            <input type="radio" id="agree" name="agree_radio" checked="checked">
+                                            <label for="agree">동의</label>
+                                        </span>
+                                        <span data-form="radio" class="type1">
+                                            <input type="radio" id="disagree" name="agree_radio">
+                                            <label for="disagree">동의하지 않음</label>
+                                        </span>
+                                    </p>
+                        </div>
+                        <textarea data-form="textarea" class="type13" readonly="readonly">
+수집목적 : 학원 강좌 및 설명회 외 정보 제공 등 서비스, 고객관리
+수집항목 : 이름, 핸드폰번호, 학교, 학년, 계열
+보유기간 : 제출 시점부터 3년간 보유
+
+개인정보 수집 및 이용에 동의하지 않을 권리가 있습니다.다만, 동의를 거부할 경우 학원 강좌, 서비스 정보를 SMS로 수신하실 수 없습니다.
+                        </textarea>
+                    </div>
+                    <div class="btn_wrap2">
+                        <button type="submit" data-btn="orange" class="full">확인</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="../common/js/jquery.min.js"></script>
+<script src="../common/js/jquery.selectric.js"></script>
+<script>
+  $(function(){
+    $('select, .select').selectric();
+
+    $('select').selectric({
+      maxHeight: 200
+    });
+
+    $('.customOptions').selectric({
+      optionsItemBuilder: function(itemData, element, index){
+        return element.val().length ? '<span class="ico ico-' + element.val() +  '"></span>' + itemData.text : itemData.text;
+      }
+    });
+
+    $('select').on('selectric-before-init');
+    $('.selectricWrapper').each(function(){
+      var selectClass = $(this).find('select').attr('class');
+      $(this).addClass(selectClass);
+    });
+
+
+  });
+</script>

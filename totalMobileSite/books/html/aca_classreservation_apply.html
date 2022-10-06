@@ -1,0 +1,169 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/aca_univr&d_presentation_apply
+* @ 페이지설명	: 모바일 > 학원 > 입시R&D > 설명회 > 	설명회신청     	
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-29
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>학원 > 강좌예약 > 	신청</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/typed.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="aca" data-depth2="class_reservation" data-depth3="apply">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+		<h2 data-title="type1">강좌예약 신청</h2>
+		<div data-layout="type1">
+			<div data-table="type4" class="m_b60">
+				<table>
+        <caption>설명회 정보</caption>
+        <colgroup>
+            <col width="" />
+            <col width="" />
+        </colgroup>
+        <tbody>
+            <tr>
+                <th scope="row" style="min-width:80px">강좌명/강사명</th>
+                <td>엄소연/ 수능 최상위반 미적분2</td>
+            </tr>
+            <tr>
+                <th scope="row">학년/과목</th>
+                <td>
+                    고3/ 수학서바이벌=
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">요일/ 시간</th>
+                <td>토/ AM10:00 ~ 12:00</td>
+            </tr>
+            <tr>
+                <th scope="row">개강일</th>
+                <td>7월 23일 (토)</td>
+            </tr>
+        </tbody>
+    </table>
+			</div>
+	
+			<form>
+				<fieldset>
+					<dl data-form="wrap" class="t_noline m_b60">
+						<dt><label for="input2" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input2"></span></dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="select">
+								<select title="휴대폰번호 앞 세자리">
+									<option>010</option>
+									<option>011</option>
+									<option>017</option>
+									<option>018</option>
+									<option>019</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span data-form="input" class="size168 m_b20">
+								<input type="text" title="휴대폰번호 가운데 네자리">
+							</span>
+							<em>-</em>
+							<span data-form="input" class="size168">
+								<input type="text" title="휴대폰번호 뒤 네자리">
+							</span>
+							<button type="button" data-btn="whitegray">인증번호받기</button>
+						</dd>
+						<dt><label for="input2" class="field_name">인증번호<strong>*<em>필수항목</em></strong></label></dt>
+						<dd class="m_b50">
+							<span data-form="input" class="size380 m_b25"><input type="text" id="input2"></span>
+							<span><button type="button" data-btn="whitegray" class="size160 m_l20">확인</button></span>
+							<span class="timer"><em>인증번호 입력 남은시간</em>03:00</span>
+						</dd>
+						<dt><label for="input1" class="field_name">학교<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input1"></span></dd>
+						<dt><span class="field_name">학년/계열<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="select" class="type1">
+								<select title="학년 선택">
+									<option>학년</option>
+									<option>기타</option>
+									<option>고1</option>
+									<option>고2</option>
+									<option>고3</option>
+								</select>
+							</span>
+							<span data-form="select" class="type1">
+								<select title="계열 선택">
+									<option>계열</option>
+									<option>문과</option>
+									<option>이과</option>
+								</select>
+							</span>
+						</dd>
+					</dl>
+
+					<div data-form="textarea" class="type6">
+						시대인재N학원은 원활한 상담 처리를 위해 아래와
+            같이 개인정보를 수집·이용하고자 합니다.
+            내용을 읽으신 후 동의 여부를 결정하여 주십시오. <br />
+            [수집항목] 이름, 연락처, 이메일주소 <br />
+            [수집목적] 문의내역 확인 및 상담, 답변 안내, 학습
+            및 입시정보제공 등에 사용<br />
+            [개인정보의 보유 및 이용기간] 1년<br /><br />
+
+            * 개인정보 수집 및 이용 동의를 하지 않을 경우 관
+            련 서비스의 제한이 있을 수 있습니다.
+					</div>
+
+					<p data-form="checkbox" class="m_b40">
+						<input type="checkbox" id="check1">
+						<label for="check1">개인정보의 수집 및 이용에 동의합니다.</label>
+					</p>
+					<p data-form="checkbox">
+						<input type="checkbox" id="check2">
+						<label for="check2">강좌 예약 관련 안내 SMS를 받겠습니다.</label>
+					</p>
+					<div class="btn_wrap half">
+						<button type="button" data-btn="login_whitegray">이전</button>
+						<button type="button" data-btn="navy" class="m_l10">신청</button>
+					</div>
+				</fieldset>
+			</form>
+
+			
+
+
+		</div>
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

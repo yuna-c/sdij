@@ -1,0 +1,408 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/launching_main.html
+* @ 페이지설명	: 런칭 > 시대인재 서바이벌이벤트 렌딩페이지
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-18
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>시대인재 서바이벌이벤트2차</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/event.css">
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<link rel="stylesheet" href="../common/css/mb-comingsoon-iceberg.min.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/selectordie.min.js"></script>
+<script src="../common/js/jquery.mb-comingsoon.min.js"></script>
+<script src="../common/js/typed.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  var btnLi = $('.btn_box li')
+  var actionT = $('.yellow_box').offset().top;
+  var actionH = $('.btn_box').height();
+  var windowH = $(window).height();
+  var actionNum =  actionT-actionH;
+  var yellowH = $('.yellow_box').height();
+  var btnH = $('.btn_box').height();
+  var scrollNum =  $(window).scrollTop()
+
+  if(0 <= scrollNum && scrollNum < windowH  ){
+    setTimeout(function(){
+      $('html,body').animate({
+        'scrollTop' : (windowH+yellowH+btnH)+'px'
+      },500)
+    },2000)
+  }
+
+
+  $(window).scroll(function(){
+    var scrT =  $(this).scrollTop();
+    var btnLi = $('.btn_box li').length;
+
+
+    if(scrT > actionNum){
+      for(var i=0;i<btnLi;i++){
+        var idx = i+1;
+        var speed = idx*200;  
+
+        $('.btn_box li').eq(i).delay(idx*200).animate({
+          'bottom' : 0
+        },500)
+      };
+    }
+  });
+})
+</script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="survival" data-depth2="main">
+<div id="wrap">	<!-- // Wrap S -->
+  <div class="zero_wrap">
+      <div class="landing">
+          <div class="mid_wrap">
+              <span class="top_title">
+                  2019 survival zero Ⅱ
+              </span>
+              <div class="title">
+                2019<br />
+                survival zero Ⅱ
+              </div>
+              <span class="add_title">
+                SURVIVAL ZERO II
+              </span>
+              <ul class="color_list">
+                <li>
+                  math<br />
+                  2set
+                </li>
+                <li class="sec">
+                  science 1<br />
+                  2set
+                </li>
+                <li class="thir">
+                  science 2<br />
+                  2set
+                </li>
+                <li class="four">
+                  score<br />
+                  report
+                </li>
+              </ul>
+              <span class="add_t">
+                올해 서바이벌 온라인 미시행 대신 작년 서바이벌 모의고사 Remastered를 선물로 드립니다.
+              </span>
+          </div>
+      </div>
+      <div class="yellow_box">
+        <ul>
+          <li>
+            <span>2018</span>
+            <span>서울대 의예과</span>
+          </li>
+          <li>
+            정시 합격생 총 30명 중 시대인재 서바이벌 16명 현강 수강
+          </li>
+          <li>
+            강남3구 합격생 총 27명 중 시대인재 서바이벌 21명 현강 수강
+          </li>
+          <li>
+            서울ㆍ경기지역 일반/자사고 합격생 총 55명 중 시대인재 서바이벌 37명 현강 수강
+          </li>
+          <li class="small">
+            *2018 시대인재 학원 현강 수강생 기준
+          </li>
+        </ul>  
+      </div>
+      <div class="btn_box">
+        <span class="bg"></span>
+        <ul>
+          <li class="fir">
+            <a href="#none" id="common_layerpopup_confi" >
+              individual
+              <span>1인 신청 유료 배송</span>
+            </a>
+          </li>
+          <li class="sec">
+            <a href="#none" id="common_layerpopup_confirm" data-popup="sample">
+              class
+              <span>반 신청 무료 배송</span>
+            </a>
+          </li>
+          <li class="thir">
+            <a href="#">
+              school
+              <span>선생님 신청 무료 배송</span>
+            </a>
+          </li>
+        </ul> 
+      </div>
+         <div class="box_05" style="display: none">
+        <!--팝업-->
+        <div data-popup="type1" class="join_pop popup2">
+          <div class="pop_wrap">
+            <p class="pop_title">
+              우리반 방 입장하기
+              <button type="button" class="close"><span class="hidden">닫기</span></button>
+            </p>
+            <div class="pw_box">
+              비밀번호
+              <input type="password">
+              <span>※ 방 비밀번호를 입력해 주세요.</span>
+              <div class="btn_wrap">
+                <button type="button" data-btn="navy" class="close">참여하기</button>
+              </div>
+            </div>
+          </div>
+          <button class="dim"></button>
+        </div>
+        <!-- 팝업 끝 -->
+        <div class="mid_wrap">
+            <ul class="step_list">
+                <li>
+                    우리 방 만들거나 <br />
+                    검색해서 참여하기<br />
+                    (학원/독서실/독재관도<br />
+                    신청 가능)
+
+                </li>
+                <li class="sec">
+                    가장 빨리<br />
+                    3명 모아서<br />
+                    모집 완료하기
+                </li>
+                <li class="thir">
+                    빨리 모은<br />
+                    100개 그룹ㆍ반은<br />
+                    바인더도 함께<br />
+                    도착
+                </li>
+            </ul>
+            <ul class="room_btn">
+              <li>
+                <a href="#">방 만들기</a>
+              </li>
+              <li>
+                 <div class="search_area">
+                   <span>방 참여하기</span>
+                   <input type="text" placeholder="방 이름 또는 그룹ㆍ학교 이름 검색">
+                   <button type="button" value="검색"></button>
+                 </div>
+              </li>
+             <!--  <li class="full">
+                방 만들고<br />
+                반 친구들에게 알려주세요!
+                <div class="sns_list">
+                  <a href="#" class="link">링크</a>
+                  <a href="#" class="instagram">인스타그램 </a>
+                  <a href="#" class="facebook">페이스북</a>
+                </div>
+              </li> -->
+            </ul>
+            <table>
+              <colgroup>
+                <col width="150px" />
+                <col width="70px" />
+                <col width="70px" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>학교</th>
+                  <th>학년</th>
+                  <th>반</th>
+                  <th>방장</th>
+                  <th>참여회원</th>
+                  <th class="line">참여현황</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>동성여자고등학교</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>김나래</td>
+                  <td>12</td>
+                  <td class="line">
+                    <input type="button" value="모집완료" class="finish">
+                  </td>
+                </tr>
+                <tr>
+                  <td>동성여자고등학교</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>김나래</td>
+                  <td>12</td>
+                  <td class="line">
+                    <input type="button" value="참여하기" class="apply" data-popup="sample" id="join_pop">
+                  </td>
+                </tr>
+                <tr>
+                  <td>동성여자고등학교</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>김나래</td>
+                  <td>12</td>
+                  <td class="line">
+                    <input type="button" value="모집완료" class="finish">
+                  </td>
+                </tr>
+                <tr>
+                  <td>동성여자고등학교</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>김나래</td>
+                  <td>12</td>
+                  <td class="line">
+                    <input type="button" value="참여하기" class="apply">
+                  </td>
+                </tr>
+                <tr>
+                  <td>동성여자고등학교</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>김나래</td>
+                  <td>12</td>
+                  <td class="line">
+                    <input type="button" value="모집완료" class="finish">
+                  </td>
+                </tr>
+                <tr>
+                  <td>동성여자고등학교</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>김나래</td>
+                  <td>12</td>
+                  <td class="line">
+                    <input type="button" value="참여하기" class="apply">
+                  </td>
+                </tr>
+                <tr>
+                  <td>동성여자고등학교</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>김나래</td>
+                  <td>12</td>
+                  <td class="line">
+                    <input type="button" value="모집완료" class="finish">
+                  </td>
+                </tr>
+                <tr>
+                  <td>동성여자고등학교</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>김나래</td>
+                  <td>12</td>
+                  <td class="line">
+                    <input type="button" value="참여하기" class="apply">
+                  </td>
+                </tr>
+                <tr>
+                  <td>동성여자고등학교</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>김나래</td>
+                  <td>12</td>
+                  <td class="line">
+                    <input type="button" value="모집완료" class="finish">
+                  </td>
+                </tr>
+                <tr>
+                  <td>동성여자고등학교</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>김나래</td>
+                  <td>12</td>
+                  <td class="line">
+                    <input type="button" value="참여하기" class="apply">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="paging">
+              <a href="#" class="prev">previous</a>
+              <a href="#" class="on">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#" class="next">next</a>
+            </div>
+        </div>
+    </div>
+    <div class="box_06"  style="display: none">
+        <div class="mid_wrap">
+            <ul class="notice_text">
+                <li>
+                    이벤트 유의사항
+                </li>
+                <li>
+                    3명을 모두 모은 그룹ㆍ반에게 혜택이 도착합니다. <br />
+                    가장 빠르게 모집을 완료한 100개 그룹ㆍ반은 바인더가 함께 배송됩니다.  <br />
+                    본 이벤트는 고1 ~ N수 회원이 참여 가능합니다.  <br />
+                    준비된 모의고사 수량이 소진될 경우 이벤트가 조기 마감할 수 있습니다.  <br />
+                    학교/학년/반 선택은 최초 등록 후 변경이 불가 합니다.  <br />
+                    동일 학교/학년/반으로 중복 개설은 가능하지만 1명이 다른 반에 중복 참여는 불가능합니다.  <br />
+                    부정적인 방법으로 참여 시 반 전체에 혜택이 지급되지 않습니다. <br />
+                    혜택 배송을 위해 방장에게 개별 연락이 갈 수 있습니다.  <br />
+                    그룹ㆍ반 신청을 했더라도 개인 신청, 교사용 신청으로 추가 수량 신청이 가능합니다.
+                </li>
+            </ul>
+        </div>
+    </div>    
+  </div>
+  <div data-popup="type1" class="popup1 common_layerpopup_confirm">
+    <div class="pop_wrap">
+      <div data-box="pop_content">
+        <div class="content_text">
+          <p>충분한 물량을 준비하였으나 모든 수량을 소진하여, <br />반배송 이벤트는 마감되었습니다.<br />
+          감사합니다.</p>
+        </div>
+        <div class="btn_wrap">
+          <button type="button" data-btn="navy" class="close">확인</button>
+        </div>
+      </div>
+    </div>
+    <button class="dim"></button>
+  </div>
+  <!--20180918 추가-->
+  <div data-popup="type1" class="popup1 common_layerpopup_confirm">
+    <div class="pop_wrap">
+      <div data-box="pop_content">
+        <div class="content_text">
+          <p>충분한 물량을 준비하였으나 모든 수량을 소진하여, <br />반배송 이벤트는 마감되었습니다.<br />
+          감사합니다.</p>
+        </div>
+        <div class="btn_wrap">
+          <button type="button" data-btn="navy" class="close">확인</button>
+        </div>
+      </div>
+    </div>
+    <button class="dim"></button>
+  </div>
+  <!--20180918 추가 끝-->
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

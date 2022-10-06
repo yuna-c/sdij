@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>rem_test</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+  $( window ).resize(function(){
+    var $width = $(window).width()
+    var $fontsize = 24/640*$width
+    $('html').css("font-size",$fontsize);
+  });
+});
+</script>
+<style>
+  *{margin:0;padding:0;text-decoration: none;}
+  li{list-style: none}
+  ul{
+    margin:4rem 0;
+    border: 1px #f00 solid;
+    width: 100%;
+    overflow: hidden;
+  }
+  ul li{
+    border: 1px #f00 solid;
+    float:left;
+    width:33.33%;
+    box-sizing: border-box;
+    font-size:3rem; 
+    padding:1.25rem;  
+  }
+</style>
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_login_pwend.html
+* @ 페이지설명	: 모바일 > 공통 > 로그인,회원가입 > 비밀번호변경완료
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-01
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>티저 메인</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/mb-comingsoon-iceberg.min.css">
+<link rel="stylesheet" href="../common/css/swiper.min.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/swiper.js"></script>
+<!-- <script src="../common/js/jquery.mb-comingsoon.min.js"></script> -->
+<!-- <script src="../common/js/common_dev.js"></script> -->	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="launching" data-depth2="main">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+<!-- 20171025 수정 S -->
+<!-- <div class="launching_head">
+	<a href="#">시대인재 서바이벌</a>
+	<a href="#" class="login">로그인</a>
+	<a href="#" class="inquire">배송조회</a>
+</div> -->
+<!-- 20171025 수정 E -->
+<div class="swiper-container teaser_swipe_wrap">
+	<div class="swiper-wrapper visual">
+		<div class="swiper-slide main_visual1">
+			<div class="launching_wrap">
+				<p class="launching_logo">시대인재 on</p>
+				<span class="event_text">이벤트 종료 시까지,</span>
+				<div class="countdown"></div>
+			</div>
+			<div class="main_next"><em>서바이벌 knock</em><span class="hidden">다음</span></div>
+		</div>
+
+		<div class="swiper-slide main_visual2">
+			<div class="main_prev"><span class="hidden">이전</span></div>
+			<div class="launching_wrap">
+				<h2>서바이벌 실전모의 온라인 0회</h2><!-- 2017-09-05 텍스트 수정 -->
+				<div class="launching_main2">
+					<p>수학 + 과학 1 + 과학 2</p>
+					<div class="swiper-container2 m_swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								2017학년도 서울대 의예과<br> 
+								합격생 95명중<br>
+								시대인재 현강생 38명<br>
+								(수학/과학 서바이벌 33명 수강)
+			                </div>
+							<div class="swiper-slide">
+								2017학년도 서울대 의예과<br>
+								정시 합격생 25명 중<br>
+								시대인재 현강생 17명<br>
+								(수학/과학 서바이벌 15명 수강)
+							</div>
+							<div class="swiper-slide">
+								2017학년도 서울대 의예과<br>
+								서울/경기 지역 일반고 합격생 52명 중<br>
+								시대인재 현강생 35명<br>
+								(수학/과학 서바이벌 30명 수강)
+							</div>
+							<div class="swiper-slide">
+								2017학년도 서울대 의예과<br>
+								강남3구 합격생 23명 중<br>
+								시대인재 현강생 20명<br>
+								(수학/과학 서바이벌 18명 수강)
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<p class="pass">* 2016년 시대인재 오프라인 현강 수강이력 기준</p><!-- 2017-09-05 마크업 추가 -->
+			</div>
+			<a href="#" class="sub_title"><span>be the 시대인재</span></a>
+		</div>
+	</div>
+</div>
+	<!-- 20171025 수정 S -->
+	<!-- <div data-popup="main">
+		<img src="../common/img/pop_img.png" alt="팝업 이미지">
+		<div class="btn_wrap">
+			<button type="button" data-btn="navy" class="close">확인</button>
+		</div>
+	</div> -->
+	<!-- 20171025 수정 E -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        effect:'slide', // 'slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
+        nextButton: '.main_next',
+        prevButton: '.main_prev',
+        slidesPerView: 1,
+        speed: 1000,
+        autoplay: false,
+        spaceBetween: 0,
+        mousewheelControl: false,
+        touchRatio: 0,
+        loop: false
+    });
+
+    $('*[data-popup="main"] .close').click(function(){
+		$(this).parents('*[data-popup="main"]').hide();
+	});
+    </script>
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

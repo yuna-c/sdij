@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/** Tablets **/
+@media (max-width:1024px) and (orientation:portrait), (max-width:1336px) and (orientation:landscape){
+    /* header */
+    #gnb{ display:none; position:absolute; left:0; right:0; z-index:999; }
+    #gnb:after{ content:''; position:fixed; top:0; bottom:0; left:0; right:0; background-color:#000; opacity:.5; filter:alpha(opacity=50); z-index:-1; }
+    #gnb > .content-layout{ padding:0.666666667rem 1.066666667rem; position:relative; background-color:#fff; z-index:9999; }
+    #gnb .gnb-menu{ flex-direction:column; }
+    #gnb .gnb-menu > li{ width:100%; margin:0; }
+    #gnb .gnb-menu > li.btn-area{ padding-top:0.666666667rem; }
+    #gnb .gnb-menu > li > a{ padding-right:1rem; position:relative; }
+    #gnb .gnb-menu > li > a:not(.btn):before{ content:''; width:0.333333333rem; height:0.333333333rem; margin-top:-0.166666667rem; position:absolute; top:50%; right:0.266666667rem; border-top:0.066666667rem solid #999; border-right:0.066666667rem solid #999; transform:rotate(45deg); }
+    #gnb .gnb-menu > li > a:after{ display:none; }
+    #gnb .gnb-menu > li.gnb-1depth > a:before{ margin-top:-0.266666667rem; transform:rotate(135deg); }
+    #gnb .gnb-menu > li .gnb-2depth{ width:100%; padding:0; position:relative; top:0; box-shadow:none; animation:none; }
+    #gnb .gnb-menu > li .gnb-2depth > a{ line-height:1.066666667rem; padding:0 0.333333333rem; font-size:0.533333333rem; }
+
+    #gnb .gnb-menu > li:hover > a{ color:#999; }
+    #gnb .gnb-menu > li:hover .gnb-2depth{ display:none; animation:none; }
+
+    #gnb .gnb-menu > li.selected > a{ color:#000; }
+    #gnb .gnb-menu > li.selected > a:before{ border-color:rgb(32, 14, 14); }
+    #gnb .gnb-menu > li.selected.gnb-1depth > a:before{ margin-top:-0.066666667rem; transform:rotate(-45deg); }
+    #gnb .gnb-menu > li.selected .gnb-2depth{ display:block; }         
+
+    #wrap.gnb-on{  }
+    #wrap.gnb-on #header{ z-index:9999; }
+    #wrap.gnb-on #gnb{ display:block; }
+    #wrap.gnb-on #nav{ z-index:99; }
+}
+
+
+
+/** mobiles **/
+@media (max-width:539px) and (orientation:portrait), (max-width:959px) and (orientation:landscape){
+    #wrap > *{ font-size:0.6rem; }
+    .form-layout{ width:100%; padding:0 1.066666667rem; }
+}
+
+
+
+/** mobiles xs **/
+@media (max-width:320px) and (orientation:portrait){
+}

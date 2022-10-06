@@ -1,0 +1,138 @@
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+[data-depth2="knock"][data-depth3="main"]{
+background: #ffffff
+}
+
+.survival_teaser{
+  height:100%;
+  box-sizing: border-box;
+  text-align:center;
+  overflow: hidden;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.survival_teaser .title_top{
+  background:url('http://img.sdij.com/common/event_title_bg01.png') no-repeat center center;
+  background-size:24rem;
+  position:absolute;
+  height: 60px;
+  width:100%;
+  top:50%;
+  margin:-0.5rem 0 0 0;  
+  font-size:0;
+  text-indent: -9999px;
+}
+.survival_teaser .sub_title{
+  position:absolute;
+  bottom:29%;
+  width:100%;
+}
+.survival_teaser .sub_title a{
+  display: block;
+  font-weight:100;
+  font-size:0.6rem;
+  color:#747474;
+  padding:2rem 0 0 0;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width:6.667rem;
+  margin:0 auto;
+  position:relative;
+}
+.survival_teaser .sub_title a span{
+  content: "";
+  position:absolute;
+  top:0;
+  left:50%;
+  background:url('http://img.sdij.com/common/be_bg01.png') no-repeat center top;
+  background-size:contain;
+  margin:0 0 0 -3.333rem;
+  height:2rem;
+  font-size:0;
+  text-align: center;
+  z-index: 2;
+  width:100%;
+}
+/*
+.survival_teaser .sub_title a:before{
+  content: "";
+  position:absolute;
+  width:1.8rem;
+  height:1.8rem;
+  background:#ffb400;
+  z-index:1;
+  top:-0.6rem;
+  right:1.3rem;
+  border-radius: 50px;
+}
+*/
+.survival_teaser .sub_title.color a span{
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+  animation-name: changeColor;
+}
+.survival_teaser .bottom_t{
+  position:absolute;
+  bottom:1rem;
+  left:0;
+  width:100%;
+  text-align: center;
+  font-size: 0.76rem;
+  color: #848282;
+  font-weight:100;
+  letter-spacing: 0;
+}
+
+
+/*해설지*/
+.download_wrap{
+  padding:5.5rem 0 0 0;
+}
+.download_wrap .full{
+  text-transform:uppercase;
+  position:relative;
+}
+.download_wrap .full:after{
+  content: "";
+  position:absolute;
+  width:2.5rem;
+  height:100%;
+  right:1rem;
+  background:url('http://img.sdij.com/common/m_download_bg.png') no-repeat center center;
+  background-size:100%;
+}
+.download_wrap ul{
+  padding:5rem 0 0 0;
+}
+.download_wrap ul li{
+  font-size:0.85rem;
+  line-height: 1.1rem;
+  margin:0.5rem 0 0 0;
+  letter-spacing: -1.5px;
+}
+.download_wrap ul li:first-child{
+  margin:0;
+}
+
+
+@keyframes changeColor {
+
+  25% {
+    background:url('http://img.sdij.com/common/be_bg01.png') no-repeat center top;
+     background-size:contain;
+  }
+  
+  50%{
+    background:url('http://img.sdij.com/common/be_bg02.png') no-repeat center top;
+   background-size:contain;
+  }
+  
+  75%{
+    background:url('http://img.sdij.com/common/be_bg03.png') no-repeat center top;
+   background-size:contain;
+  }
+  
+  100%{
+    background:url('http://img.sdij.com/common/be_bg04.png') no-repeat center top;
+     background-size:contain;
+  }
+}

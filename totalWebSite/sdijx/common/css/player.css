@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* player */
+.player-container .tit-lec .tit-side{ top:auto; bottom:0; }
+
+.player-container .banner-content{ margin-bottom:20px; }
+.player-container .banner-content img{ width:100%; height:auto; }
+
+.player-container .tit-player .tit-dep5{ padding-right:120px; }
+
+
+/* live plater */
+.live-container > .content-layout{ margin-top:40px; }
+
+/** Tablets **/
+@media (max-width:1024px) and (orientation:portrait), (max-width:1336px) and (orientation:landscape){
+    .player-container .tit-lec .tit-dep1{ margin-bottom:20px; }
+    .player-container .tit-lec .tit-side{ margin-bottom:40px; position:relative; transform:translate(0, 0); }
+
+    /* live plater */
+    .live-container > .content-layout{ margin-top:20px; }
+}
+
+
+/** mobiles **/
+@media (max-width:539px) and (orientation:portrait), (max-width:959px) and (orientation:landscape){
+}

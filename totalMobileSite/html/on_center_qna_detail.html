@@ -1,0 +1,138 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/on_center_qna_detail.html
+* @ 페이지설명	: 모바일 > 온 > 고객센터 > 일대일상담 > 상담신청
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-19
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>고객센터 > 일대일상담 > 상담신청</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/on.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="on" data-depth2="center" data-depth3="qna" data-depth4="detail">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+		<h2 data-title="type1" class="m_b60">고객센터</h2>
+		<!-- 2017-11-16 마크업 수정 S -->
+			<div data-title="type5" class="h_small m_b60">
+				<strong class="f_color5"><em>시대인재 온/북스 : 1522-0568</em><em>시대인재 학원 : 02-552-2373(고3)</em><em>02-554-2373(고 1/2)</em></strong>
+				<p>토, 일, 공휴일 및 고객센터 종료 시간에는<br>1:1 상담 및 카카오톡 상담을 이용해주세요.</p>
+			</div>
+			<!-- 2017-11-16 마크업 수정 E -->
+		<div data-tab="type1" class="double">
+			<a href="#">공지사항</a>
+			<a href="#">자주 묻는 질문</a>
+			<a href="#" class="on">1:1 상담</a>
+			<a href="#">동영상 장애가이드</a>
+		</div>
+		<div data-layout="type1">
+			<div data-text="type1">
+				<p>1:1 상담은 등록 순서대로 순차 답변 됩니다. 질문분류가 명확하지 않을 경우 답변에 시일이 소요될 수 있습니다.</p>
+				<p>질문 작성 전 <a href="#" data-btn="link" class="f_small3">자주 묻는 질문</a>의 내용을 확인하면 더욱 빠르고 쉽게 문제를 해결할 수 있습니다.</p>
+			</div>
+			<form>
+				<fieldset>
+					<dl data-form="wrap">
+						<dt><span class="field_name">질문분류</span></dt>
+						<dd>
+							<span data-form="select" class="size270">
+								<select title="질문 대분류">
+									<option>선택하세요</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<span data-form="select" class="size270 m_l20">
+								<select title="질문 소분류" disabled="disabled">
+									<option>선택하세요</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+						</dd>
+						<dt><label for="test5" class="field_name">제목</label></dt>
+						<dd>
+							<span data-form="input" class="full">
+								<input id="test5" type="text">
+							</span>
+						</dd>
+						<dt><span class="field_name">내용</span></dt>
+						<dd>
+							<textarea data-form="textarea" class="type2"></textarea>
+						</dd>
+
+						<dt class="m_b20"><span class="field_name">첨부파일</span><button type="button" data-btn="whitegray" class="small8 f_right">파일찾기</button></dt>
+						<dd>
+							<ul data-list="type13" class="short">
+								<li>
+									<span>파일파일파일.pdf</span>
+									<button type="button" data-btn="delete"><span class="hidden">삭제</span></button>
+								</li>
+								<li>
+									<span>파일파일파일파일파일파일.pdf</span> 
+									<button type="button" data-btn="delete"><span class="hidden">삭제</span></button>
+								</li>
+							</ul>
+							<ul data-text="type1" class="star">
+								<li>10MB 이하의 파일을 최대 5개까지 첨부하실 수 있습니다. (exe, zip 등 일부 파일은 첨부 제외)</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl data-form="wrap">
+						<dt><span class="field_name h_30">답변알림</span></dt>
+						<dd>
+							<p class="m_b30">
+								<span data-form="checkbox" class="type3 half">
+									<input type="checkbox" id="check39">
+									<label for="check39">SMS</label>
+								</span>
+								<span data-form="checkbox" class="type3 half">
+									<input type="checkbox" id="check29">
+									<label for="check29">이메일</label>
+								</span>
+							</p>
+							<p class="field_info">정확한 알림을 위해 회원정보에 기재된 연락처를 확인하세요.</p>
+						</dd>
+					</dl>
+				</fieldset>
+
+				<div class="btn_wrap3">
+					<button type="submit" data-btn="navy">등록</button>
+				</div>
+			</form>		
+		</div>	
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

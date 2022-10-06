@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+html, body, #wrap{ height:100%; background-color:#fff; counter-reset:section; }
+#wrap{ width:100%; max-width:640px; height:auto; min-height:100%; margin:0 auto; overflow-x:hidden; }
+*[data-depth1="survival"][data-depth2="zero"][data-depth3="main"] #wrap{ min-width:auto; }
+
+/* header */
+#zero-header{ width:100%; font-size:12px; }
+#zero-header .gnb-area{ height:55px; line-height:53px; margin:0 auto; padding:0 20px; position:relative; background-color:#fff; z-index:1; }
+#zero-header .gnb-area .btn-gnb{ padding:0 10px; position:absolute; top:0; left:10px; background:none; font-size:0; }
+#zero-header .gnb-area h1{ margin-left:30px; font-weight:bold;}
+#zero-header .gnb-area .gnb-select{padding-right:15px;background:url(http://pub.sdij.com:8000/renew2019/img/ico/ico_gnb_select.png) 28px 50% no-repeat; font-weight:bold;border:none;vertical-align:text-top;height:20px;line-height:17px;font-size:12px;
+display:inline-block;vertical-align:middle;margin-top:-3px;height:18px;}
+
+#zero-header .gnb-area .gnb-menu{ height:55px; line-height:18px; display:table; position:absolute; top:0; right:20px; text-align:right; }
+#zero-header .gnb-area .gnb-menu > div{ display:table-cell; vertical-align:middle; }
+#zero-header .gnb-area .gnb-menu a{ margin:0 5px; display:inline-block; }
+
+/* container */
+#container{ position:relative; }
+#container .nav-area{ width:100%; min-height:100%; position:absolute; top:0; left:0; background-color:#fff; z-index:99; transform:translate(-110%, 0); transition:all 0.3s ease-in; }
+#container.nav-on .nav-area{ position:relative; top:0; left:0; transform:translate(0, 0); transition:all 0.3s ease-in; }
+#container .nav-area .nav{ margin-bottom:40px; padding-top:5px; }
+#container .nav-area .nav ul li{ line-height:32px; font-size:20px; }
+#container .nav-area .nav ul li a{ display:block; color:#626262; }
+#container .nav-area .news-letter{ margin-bottom:40px; }
+#container .nav-area .family-site{ margin-bottom:10px; }
+#container .nav-area .family-site ul li{ line-height:26px; font-size:12px; }
+#container .nav-area .family-site ul li a{ display:block; font-weight:bold; }
+#container .nav-area .copyright ul li{ line-height:22px; font-size:12px; color:#626262; }
+#container .nav-area .copyright ul li a{ color:#626262; }
+#container .layout-container{ position:relative; top:0; left:0; transform:translate(0, 0); transition:all 0.3s ease-in; }
+#container .layout-container.no-transform{transform: initial;}
+#container.nav-on .layout-container{ position:absolute; top:0; left:0; transform:translate(110%, 0); }
+#container .btn-top{ position:fixed; right:.833333333rem; bottom:.833333333rem; z-index:999; }
+#container.nav-on .btn-top{ display:none; }
+
+*[data-box="type14"] fieldset, *[data-box="type13"] fieldset{ border-bottom:none; }
+*[data-box="type14"] fieldset button, *[data-box="type13"] fieldset button{ height:40px; line-height:38px; font-size:13px; }
+*[data-list="type5"] dd{ color:#666; }
+*[data-list="type4"].checkout{ margin:0; }
+*[data-list="type4"].checkout li{ padding:15px; }
+*[data-list="type4"] li .title{ font-size:14px; }
+*[data-list="type4"] li .cate{ height:20px; line-height:20px; padding:0 5px; }
+*[data-list="type4"] li .total{ font-size:15px; color:#000; }
+*[data-box="type5"].cart{ padding:0 15px; background-color:#fafafa; border-color:#ededed; }
+*[data-box="type5"].cart dt{ height:45px; line-height:45px; margin:0; padding:0; font-size:12px; color:#666; letter-spacing:-.025em; }
+*[data-box="type5"].cart dd{ height:45px; line-height:45px; margin:0; padding:0; font-size:15px; color:#666; letter-spacing:-.025em; }
+*[data-box="type5"].cart dt.total, *[data-box="type5"].cart dd.total{ border-color:#999; }
+*[data-box="type5"].cart dd.total, *[data-box="type5"].cart dd.total em{ font-size:15px; font-weight:bold; color:#000; }
+*[data-title="type3"]{ font-size:15px; font-weight:bold; margin-bottom:10px; line-height:22px; }
+*[data-form="radio"] label{ font-size:14px !important; }
+.field_name{ font-size:14px; }
+*[data-form="input"], *[data-form="select"], *[data-form="radio"] label, *[data-btn]{ height:40px !important; line-height:40px !important; font-size:14px; }
+*[data-btn="black"]{ background-color:#000; font-size:13px !important; color:#fff; }
+*[data-list="type1"] dt{ font-family:'Noto Sans KR'; }
+#wrap .box_05 table th{ padding:10px 0; border-top:1px solid #000; vertical-align:middle; }
+#wrap .join_pop .pop_wrap .btn_wrap button{ height:40px; line-height:38px; }
+*[data-tab="type1"]{ margin-bottom:10px !important; }
+*[data-tab="type1"] a.on, *[data-tab="type1"] button.on{ background-color:#000; font-size:13px; }
+*[data-tab="type1"] a, *[data-tab="type1"] button, .field_info, *[data-list="type4"].order .cart_empty, *[data-list="type2"] li p, *[data-list="type4"].order .cart_info, *[data-list="type4"] li .title *[data-btn="link"], *[data-list="type4"].checkout .amount, *[data-list="type4"].order .cart_summary span, *[data-list="type4"] li .price, *[data-box="type3"] a{ font-size:13px; }
+*[data-list="type4"].order .title{ line-height:39px; }
+*[data-list="type4"].order .cart_summary, *[data-list="type4"].order .cart_info{ padding:10px 20px; }
+*[data-box="type6"]{ background-color:#fafafa; }
+*[data-box="type3"] span{ line-height:20px; }
+
+.step-box{ line-height:25px; margin-bottom:30px; padding-top:0; padding-bottom:20px; position:relative; border-bottom:1px solid #ededed; }
+.step-box .tit{ font-size:15px; font-weight:bold; letter-spacing:-.025em; text-align:left; }
+.step-box .step{ position:absolute; top:0; right:0; }
+
+*[data-list="type5"] dt{ margin-bottom:1rem; }
+*[data-list="type5"] dt:before{ font-size:12px; }
+*[data-list="type5"] dd{ font-weight:normal; color:#000; }
+*[data-list="type5"] dt img{ height:9.167rem; }
+
+*[data-box="type14"] fieldset button, *[data-box="type14"] fieldset button:nth-child(2n), *[data-box="type13"] fieldset button{ border-color:#000 !important; color:#000; }
+.zero-btn .btn-on, .zero-btn .active{ background-color:#000 !important; border-color:#000 !important; color:#fff !important; }
+
+*[data-list="type1"] dd{ padding:1.25rem 0.833rem; }
+
+*[data-form="select"] select, *[data-text="type1"].star2 li{ font-size:14px; }
+
+.check-form li{ margin-bottom:10px; }
+.check-form li *[data-form="checkbox"]{ width:140px; display:inline-block; vertical-align:middle; }
+*[data-btn].size220{ font-size:13px; }
+
+*[data-form="input"] input, *[data-form="select"]{ vertical-align:top; }
+*[data-form="wrap"] em{ width:5px; height:1px; position:relative; top:-5px; }

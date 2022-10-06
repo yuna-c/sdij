@@ -1,0 +1,438 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/launching_knock_applystep2.html
+* @ 페이지설명	: 모바일 > 런칭 > 서바이벌노크신청 > 신청서작성
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-22
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>서바이벌노크신청 > 신청서작성</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<!-- <script src="../common/js/common_dev.js"></script> -->	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/common_dev.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	.style{}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="launching" data-depth2="knock" data-depth3="applystep2">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+		<div data-layout="type1">
+			<div data-step="type2" class="m_b55 p_t40">
+				<div class="pass"><em>1</em>과목신청</div><!-- 완료단계 class="pass" -->
+				<div class="on"><h2><em>2</em>회원가입</h2></div><!-- 현재단계 class="on" -->
+				<div><em>3</em>신청완료</div>
+			</div>
+
+			<form>
+				<fieldset class="m_b60">
+					<h3 data-title="type2" class="m_b25">회원가입</h3>
+					<dl data-form="wrap">
+						<dt><label for="input3" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input3"></span></dd>
+						<dt><label for="input4" class="field_name">아이디<strong>*<em>필수항목</em></strong></label></dt>
+						<dd>
+							<span data-form="input" class="size380 m_b25"><input type="text" id="input4"></span><button type="button" data-btn="whitegray" class="size160 m_l20">중복확인</button><span class="field_info">6자 이상의 영문, 영문+숫자조합</span>
+						</dd>
+						인
+						<dt><label for="input6" class="field_name">비밀번호 확인<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="password" id="input6"></span></dd>
+						<dt><span class="field_name">생년월일<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="select" class="m_b20">
+								<select title="태어난 해">
+									<option>년</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<span data-form="select" class="m_l28 m_b20">
+								<select title="태어난 월">
+									<option>월</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<span data-form="select" class="m_l28 m_b20">
+								<select title="태어난 일">
+									<option>일</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<span data-form="radio">
+								<input type="radio" id="radio1" name="radio_test1" checked="checked">
+								<label for="radio1">남자</label>
+							</span>
+							<span data-form="radio">
+								<input type="radio" id="radio2" name="radio_test1">
+								<label for="radio2">여자</label>
+							</span>
+						</dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p class="m_b30">
+								<span data-form="select">
+									<select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size168">
+									<input type="text" title="휴대폰번호 가운데 네자리">
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size168">
+									<input type="text" title="휴대폰번호 뒤 네자리">
+								</span>
+								<p><button type="button" data-btn="whitegray">인증번호받기</button></p>
+							</p>
+						</dd>
+						<dt><span class="field_name">인증번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="input" class="size380"><input type="text" id="input2"></span>
+							<button type="button" data-btn="whitegray" class="size160 m_l20 m_b30">확인</button><span class="timer"><em>인증번호 입력 남은시간</em>03:00</span>
+							<p class="f_size24">상품, 입시정보, 이벤트 정보 등을 SMS로 </p>
+							<p>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio5" name="radio_test2" checked="checked">
+									<label for="radio5">받음</label>
+								</span>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio6" name="radio_test2">
+									<label for="radio6">받지 않음</label>
+								</span>
+							</p>
+						</dd>
+					</dl>
+					
+					<dl data-form="wrap">
+						<dt>
+							<p class="field_info f_color5 m_b30">* 학부모 회원님은 자녀의 학교 정보를 입력하세요.</p>
+							<label for="input9" class="field_name">학교<strong>*<em>필수항목</em></strong></label>
+						</dt>
+						<dd class="m_b25"><span data-form="input" class="size380 m_b15"><input type="text" id="input9"></span><button type="button" data-btn="whitegray" class="size160 m_l20">학교검색</button></dd>
+						<dt><span class="field_name">계열/학년<strong>*<em>필수항목</em></strong></span></dt>
+						<dd class="m_b60">
+							<span data-form="select" class="size270">
+								<select title="계열선택">
+									<option>계열</option>
+									<option>문과</option>
+									<option>이과</option>
+								</select>
+							</span>
+							<span data-form="select" class="size270 m_l20">
+								<select title="학년선택">
+									<option>학년</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+							</span>
+						</dd>
+						<dt>
+							<span class="field_name">시대인재 재원 여부<strong>*<em>필수항목</em></strong></span>
+						</dt>
+						<dd>
+							<p class="triple">
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio50" name="radio_test50" checked="checked">
+									<label for="radio50">없음</label>
+								</span>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio51" name="radio_test50">
+									<label for="radio51">재원 했었음</label>
+								</span>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio52" name="radio_test50">
+									<label for="radio52">현재 재원중</label>
+								</span>
+							</p>
+						</dd>
+						<dt>
+							<span class="field_name">재원 캠퍼스<strong>*<em>필수항목</em></strong></span>
+						</dt>
+						<dd>
+							<p>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio60" name="radio_test60" checked="checked">
+									<label for="radio60">대치</label>
+								</span>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio61" name="radio_test60">
+									<label for="radio61">분당</label>
+								</span>
+							</p>
+						</dd>
+
+					</dl>
+					
+					<dl data-form="wrap">
+						<dt><span class="field_name">이메일<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p class="m_b30">
+								<span data-form="input" class="size520 m_b20">
+									<input type="text" title="이메일 계정">
+								</span>
+								<em class="at m_r0">@</em>
+								<span data-form="input" class="m_b20">
+									<input type="text" title="이메일주소 @ 뒷자리">
+								</span>
+								<span data-form="select" class="full">
+									<select title="메일주소">
+										<option>직접입력</option>
+										<option>naver.com</option>
+										<option>hanmail.net</option>
+										<option>gmail.com</option>
+									</select>
+								</span>
+							</p>
+							<!-- <p><span class="field_info f_color3">* 작성하신 메일주소로 해설지 PDF 파일이 발송됩니다.</span></p> --><!-- 2017-09-13 마크업 삭제 -->
+							<span class="field_name m_b30">상품, 입시정보, 이벤트 정보 등을 이메일로</span>
+							<p>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio5" name="radio_test3" checked="checked">
+									<label for="radio5">받음</label>
+								</span>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio6" name="radio_test3">
+									<label for="radio6">받지 않음</label>
+								</span>
+							</p>
+						</dd>
+						<dt><span class="field_name">주소</span></dt>
+						<dd>
+							<ul data-text="type1" class="star2 f_color5">
+								<li>회원 가입 시 작성하신 주소로 상품이 배송됩니다. 주소 기재 오류로 인한 재배송은 진행되지 않으니 주소를 정확하게 확인하세요</li>
+							</ul>
+							<p>
+								<span  data-form="input" class="size320">
+									<input type="text" readonly="readonly" title="우편번호">
+								</span>
+								<button type="button" data-btn="whitegray" class="size220 m_l20">우편번호 검색</button>
+							</p>
+							<p>	
+								<span  data-form="input" class="size370">
+									<input type="text" id="input7" readonly="readonly" placeholder="기본주소">
+								</span>
+							</p>
+							<p>	
+								<span  data-form="input" class="size370">
+									<input type="text" id="input8" placeholder="나머지주소">
+								</span>
+							</p>
+						</dd>
+						<dt><label for="input56" class="field_name">배송메시지</label></dt>
+						<dd>
+							<span data-form="input"><input type="text" id="input56"></span>
+						</dd>
+						<dt><span class="field_name">전화번호</span></dt>
+						<dd class="m_b60">
+							<span data-form="select">
+								<select title="지역번호">
+									<option>02</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size168">
+								<input type="text" title="전화번호 앞자리">
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size168">
+								<input type="text" title="전화번호 뒷자리">
+							</span>
+						</dd>
+					</dl>
+				</fieldset>
+
+				<fieldset class="m_b60">
+					<h3 data-title="type2" class="m_b25">9월 평가원 모의고사 가채점 점수</h3>
+					<dl data-form="wrap" class="type2">
+						<dt><span class="field_name">수학</span></dt>
+						<dd><span data-form="input" class="size140"><input type="text" title="수학점수"></span><span class="field_info m_l12">점</span></dd>
+						<dt><span class="field_name">과학 (1)</span></dt>
+						<dd>
+							<span data-form="select" class="size200">
+								<select title="첫번째 과학 과목선택">
+									<option>선택</option>
+									<option>물리Ⅰ</option>
+									<option>물리Ⅱ</option>
+									<option>화학Ⅰ</option>
+									<option>화학Ⅱ</option>
+									<option>생명과학Ⅰ</option>
+									<option>생명과학Ⅱ</option>
+									<option>지구과학Ⅰ</option>
+									<option>지구과학Ⅱ</option>
+								</select>
+							</span>
+							<span data-form="input" class="size140 m_l20"><input type="text" title="첫번째 과학과목점수"></span>
+							<span class="field_info m_l12">점</span>
+						</dd>
+						<dt><span class="field_name">과학 (2)</span></dt>
+						<dd>
+							<span data-form="select" class="size200">
+								<select title="두번째 과학 과목선택">
+									<option>선택</option>
+									<option>물리Ⅰ</option>
+									<option>물리Ⅱ</option>
+									<option>화학Ⅰ</option>
+									<option>화학Ⅱ</option>
+									<option>생명과학Ⅰ</option>
+									<option>생명과학Ⅱ</option>
+									<option>지구과학Ⅰ</option>
+									<option>지구과학Ⅱ</option>
+								</select>
+							</span>
+							<span data-form="input" class="size140 m_l20"><input type="text" title="두번째 과학과목점수"></span>
+							<span class="field_info m_l12">점</span>
+						</dd>
+					</dl>
+				</fieldset>
+
+				<h3 data-title="type2" class="m_b25">개인정보 수집 및 이용 동의</h3>
+				<fieldset data-form="wrap" class="p_t0 m_b60">
+					<p data-form="checkbox" class="type1">
+						<span>(주)하이컨시ON 이용약관, 정보 활용 및 개인정보 제 3자 제공에 모두 동의합니다.</span>
+						<input type="checkbox" id="check1">
+						<label for="check1">전체동의</label>
+					</p>
+					<div data-box="type3">
+						<p>
+							<span data-form="checkbox">
+								<a href="#" data-btn="link">하이컨시 ON 이용약관 (필수)</a>
+								<input type="checkbox" id="check2">
+								<label for="check2">동의</label>
+							</span>
+						</p>
+						<p>
+							<span data-form="checkbox">
+								<a href="#" data-btn="link">개인정보처리방침 (필수)</a>
+								<input type="checkbox" id="check3">
+								<label for="check3">동의</label>
+							</span>
+						</p>
+						<p>
+							<span data-form="checkbox">
+								<a href="#" data-btn="link">개인정보 수집 및 프로모션 이용안내 (선택)</a>
+								<input type="checkbox" id="check4">
+								<label for="check4">동의</label>
+							</span>
+						</p>
+					</div>
+					<p data-form="checkbox" class="type1">
+						<span>Be the 시대인재 이벤트 상품 발송에 필요한 개인정보 수집 및 제3자 제공에 동의합니다.</span>
+						<input type="checkbox" id="check5">
+						<label for="check5">전체동의</label>
+					</p>
+					<textarea data-form="textarea" readonly="readonly" class="m_b20 f_color2">
+1. 개인정보 이용목적 및 수집항목
+1) 서바이벌 knock 무료 배송 서비스를 위한 개인정보 이용 목적
+- 서바이벌 knock 배송에 대한 원활한 대응 및 서비스, 고객 관리 개인정보 수집 항목
+2) 서바이벌 knock 무료 배송 서비스를 위한 개인정보 수집 항목
+- 이름, 연락처, 주소, 신청과목
+3) 학습서비스를 위한 개인정보 수집 항목
+- 학교, 성적정보 
+
+2. 개인정보 보유기간
+㈜하이컨시온은 법령에 따른 개인정보 보유·이용기간 또는 고객으로부터 개인정보를 수집시에 동의 받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다. 상법 등 관련법령의 규정에 의하여 보존할 의무가 있는 경우 회사는 고객님의 개인정보를 보관합니다. 이 경우 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 다음과 같습니다.
+-보존기간 : 3년
+-보존근거 : 전자상거래 등에서의 소비자보호에 관한 법률
+
+3. 개인정보 제3자 제공 동의
+㈜하이컨시온은 서바이벌 knock 물품 배송을 위하여 필요한 개인정보를 CJ대한통운, 모아물류에 제공합니다.
+ 
+- 업체명: CJ대한통운, 모아물류
+- 기간: 이벤트 종료(배송기간 포함) 30일 후 즉시 개인정보 파기 처리
+- 위 업체는 수탁 받은 고객님의 개인정보를 서바이벌 knock 경품 발송의 목적으로만 사용하며 그 외에 다른 용도로 사용하지 않습니다.
+					</textarea>
+					<p data-form="checkbox" class="type1">
+						<span>Be the 시대인재 상품 신청을 위해 회원가입 후 자동로그인에 동의합니다.</span>
+						<input type="checkbox" id="check6">
+						<label for="check6">전체동의</label>
+					</p>
+				</fieldset>
+			</form>
+
+
+			<div class="btn_wrap3">
+				<button type="button" data-btn="navy" data-popup="sample" id="alert_1btn">신청완료</button>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+<!-- <div data-popup="type1" class="popup2 alert_1btn">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<div class="content_text">
+				<p>이벤트 관련 문의는 FAQ 참고 부탁드리며,</p>
+				<p>그 외 문의사항 있을 시</p>
+				<p><a href="mailto:sdijevent@sdij.com">sdijevent@sdij.com</a>으로 메일 주시면</p>
+				<p>12시간 이내 최대한 빠른 답변 드리겠습니다.</p>
+				<p><b>(주말 제외, 전화 문의는 불가합니다.)</b></p>
+			</div>
+		</div>
+		<div class="btn_wrap">
+			<button type="button" data-btn="navy">확인</button>
+		</div>
+	</div>
+	<button class="dim"></button>
+</div> -->
+
+<!-- 2017-11-17 마크업 추가 S -->
+<div data-popup="type1" class="popup2 alert_1btn">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<div class="content_text">
+				<p>이벤트 관련 문의는 FAQ 참고 부탁드리며,<br>
+				그 외 문의사항 있을 시<br>
+				<a href="#">고객센터 1:1 상담에 문의 남겨주시면</a><br>
+				12시간 이내 최대한 빠른 답변 드리겠습니다.<br>
+				<b class="f_bold">(주말 제외, 전화 문의는 불가합니다.)</b></p>
+			</div>
+		</div>
+		<div class="btn_wrap">
+			<button type="button" data-btn="navy" class="close">확인</button>
+		</div>
+	</div>
+	<div class="dim"></div>
+</div>
+<!-- 2017-11-17 마크업 추가 E -->
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

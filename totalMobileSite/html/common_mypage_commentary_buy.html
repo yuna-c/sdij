@@ -1,0 +1,345 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_mypage_commentary_buy.html
+* @ 페이지설명	: 모바일 > 공통 > 마이페이지 > 해설강좌수강 > 구매자 			
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-22
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>마이페이지 > 해설강좌수강 > 구매자</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="common" data-depth2="mypage" data-depth3="commentary" data-depth4="buy">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+		<h2 data-title="type1">무료해설강좌수강</h2>
+		<div data-layout="type1">
+			<span data-form="select" class="full m_b60">
+				<select>
+					<option>수학</option>
+					<option>생명과학 I</option>
+					<option>화학 II</option>
+				</select>
+			</span>
+			<!-- 2017-08-03 마크업 수정 S -->
+			<div class="studeep_img m_b80">
+				<img src="../common/img/studeep_product_img_math.png" alt="수학 서바이벌 2017 서울대학교 의예과 합격생 5명 중 4명은 시대인재 수학 서바이벌을 풀었습니다.">
+				<p class="img_text">
+					<strong>수학 서바이벌</strong>
+					<span>2017 서울대학교 의예과 합격생 5명 중 4명은</span>시대인재 수학 서바이벌을 풀었습니다.
+				</p>
+			</div>
+			<!-- 2017-08-03 마크업 수정 E -->
+			<div data-box="graph">
+				<div data-chart="donut" class="type2">
+					<p class="title">stu<b>deep</b><br>성적 입력 현황</p>
+					<span class="content"><strong>2</strong>회</span>
+					<div id="donut1"></div>
+				</div>
+
+				<div data-chart="donut" class="type2">
+					<p class="title">해설강의<br>수강률</p>
+					<span class="content"><strong>34</strong>%</span>
+					<div id="donut2"></div>
+				</div>
+				<a href="#" data-btn="link">stu<strong>deep</strong> 바로가기 ></a>
+			</div>
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			<script type="text/javascript">
+			  google.charts.load('current', {'packages':['corechart']});
+			  google.charts.setOnLoadCallback(drawChart);
+
+			  function drawChart() {
+
+			    var data = google.visualization.arrayToDataTable([
+			      ['Task', 'Percentage'],
+			      ['sample11', 1],
+			      ['sample22', 1],
+			      ['sample33', 1],
+			      ['sample44', 1],
+			      ['sample55', 1],
+			      ['sample66', 1],
+			    ]);
+
+			    var options = {
+
+					pieHole: 0.8,
+					chartArea:{left:10,right:10,top:10,bottom:10,width:'100%',height:'100%'},
+					pieSliceText: 'none',
+					pieSliceTextStyle: {
+						color: 'red',
+					},
+					legend:'none',
+					tooltip: { trigger: 'none' },
+					pieSliceBorderColor:'none',
+					backgroundColor:'transparent',
+					pieSliceText:'none',
+					slices: {
+				        0: { color: '#348ee3' },
+				        1: { color: '#348ee3' },
+				        2: { color: '#d7d7d7' },
+				        3: { color: '#d7d7d7' },
+				        4: { color: '#d7d7d7' },
+				        5: { color: '#d7d7d7' },
+				    },
+				};
+
+			    var chart = new google.visualization.PieChart(document.getElementById('donut1'));
+			    chart.draw(data, options);
+			  }
+
+			  google.charts.setOnLoadCallback(drawChart1);
+
+			  function drawChart1() {
+
+			    var data = google.visualization.arrayToDataTable([
+			      ['Task', 'Percentage'],
+			      ['sample11', 34],
+			      ['sample11', 66]
+			    ]);
+
+			    var options = {
+					pieHole: 0.8,
+					chartArea:{left:10,right:10,top:10,bottom:10,width:'100%',height:'100%'},
+					pieSliceText: 'none',
+					pieSliceTextStyle: {
+						color: 'red',
+					},
+					legend:'none',
+					tooltip: { trigger: 'none' },
+					pieSliceBorderColor:'none',
+					backgroundColor:'transparent',
+					pieSliceText:'none',
+					slices: {
+				        0: { color: '#348ee3' },
+				        1: { color: '#d7d7d7' },
+				    },
+				};
+
+			    var chart = new google.visualization.PieChart(document.getElementById('donut2'));
+			    chart.draw(data, options);
+			  }
+			</script>
+			<div data-table="type4" class="m_b20">
+				<table>
+					<caption>안내</caption>
+					<colgroup>
+						<col style="width:40%">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">선생님</th>
+							<td>
+								홍길동
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">강좌구성</th>
+							<td>100분 / 주 1회 ##강의</td>
+						</tr>
+						<tr>
+							<th scope="row">학습단계</th>
+							<td>개념완성, 문제풀이</td>
+						</tr>
+						<tr>
+							<th scope="row">제작방식</th>
+							<td>한강 땡땡 스튜디오</td>
+						</tr>
+						<tr>
+							<th scope="row">완강여부</th>
+							<td>
+							제작중(2017-12-31 완강예정)
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div data-table="type1" class="divide">
+				<table class="m_b30">가
+					<caption>구매 목록</caption>
+					<colgroup>
+						<col style="width:7%;">
+						<col>
+						<col style="width:7%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" colspan="2" class="v_m">강의명</th>
+							<th scope="col">강의시간</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="tit1">
+							<td class="t_left" colspan="3">홍길동 선생님의 수학(가) 서바이벌 해설강의 I</td>
+						</tr>
+						<tr>
+							<td><span class="f_color6">수강</span></td>
+							<td class="t_left">
+								<p class="m_b20">OT</p>
+								<!-- <button type="button" data-btn="black" class="small5">맛보기</button> --><!-- 2017-09-29 마크업 삭제 -->
+								<button type="button" data-btn="whitegray" class="small9">강의수강</button><!-- 2017-09-29 마크업 수정 -->
+							</td>
+							<td>50분</td>
+						</tr>
+						<tr class="tit2">
+							<td class="t_left" colspan="5">I. 대단원명 어드민에 설정한 단원명 적용</td>
+						</tr>
+						<tr>
+							<td><span class="f_color3">미수강</span></td>
+							<td class="t_left">
+								<p class="m_b20">수학(가) 서바이벌 1회 해설</p>
+								<button type="button" data-btn="black" class="small5">맛보기</button>
+								<button type="button" data-btn="whitegray" class="small5">HD</button>
+							</td>
+							<td>50분</td>
+						</tr>
+						<tr>
+							<td><span class="f_color3">미수강</span></td>
+							<td class="t_left">
+								<p class="m_b20">수학(가) 서바이벌 1회 해설</p>
+								<button type="button" data-btn="black" class="small5">맛보기</button>
+								<button type="button" data-btn="whitegray" class="small5">HD</button>
+								<button type="button" data-btn="whitegray" class="small6">첨부파일 (5)</button>
+								<div class="down_pop">
+									<button type="button" class="close">닫기</button>
+									<p class="down_title">첨부파일 다운로드</p>
+									<a href="#" data-btn="link">파일명 파일명 파일명.pdf</a>
+								</div>
+							</td>
+							<td>50분</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="field_info t_left">화학Ⅰ 해설 강좌는 박상현 선생님의 현강 복습 및 숙제 사이트에서 제공됩니다.<br>강의 수강 버튼을 누르면 해당 사이트에서 강좌 수강 가능합니다. 양해 부탁 드립니다.</p><!-- 2017-09-29 마크업 추가 -->
+			</div>
+
+
+			<div data-table="type4" class="m_b20">
+				<table>
+					<caption>안내</caption>
+					<colgroup>
+						<col style="width:40%">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">선생님</th>
+							<td>
+								홍길동
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">강좌구성</th>
+							<td>100분 / 주 1회 ##강의</td>
+						</tr>
+						<tr>
+							<th scope="row">학습단계</th>
+							<td>개념완성, 문제풀이</td>
+						</tr>
+						<tr>
+							<th scope="row">제작방식</th>
+							<td>한강 땡땡 스튜디오</td>
+						</tr>
+						<tr>
+							<th scope="row">완강여부</th>
+							<td>
+							제작중(2017-12-31 완강예정)
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div data-table="type1">
+				<table>
+					<caption>구매 목록</caption>
+					<colgroup>
+						<col style="width:7%;">
+						<col>
+						<col style="width:7%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" colspan="2" class="v_m">강의명</th>
+							<th scope="col">강의시간</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="tit1">
+							<td class="t_left" colspan="3">홍길동 선생님의 수학(가) 서바이벌 해설강의 I</td>
+						</tr>
+						<tr>
+							<td><span class="f_color6">수강</span></td>
+							<td class="t_left">
+								<p class="m_b20">OT</p>
+								<button type="button" data-btn="black" class="small5">맛보기</button>
+								<button type="button" data-btn="whitegray" class="small5">HD</button>
+							</td>
+							<td>50분</td>
+						</tr>
+						<tr class="tit2">
+							<td class="t_left" colspan="5">I. 대단원명 어드민에 설정한 단원명 적용</td>
+						</tr>
+						<tr>
+							<td><span class="f_color3">미수강</span></td>
+							<td class="t_left">
+								<p class="m_b20">수학(가) 서바이벌 1회 해설</p>
+								<button type="button" data-btn="black" class="small5">맛보기</button>
+								<button type="button" data-btn="whitegray" class="small5">HD</button>
+							</td>
+							<td>50분</td>
+						</tr>
+						<tr>
+							<td><span class="f_color3">미수강</span></td>
+							<td class="t_left">
+								<p class="m_b20">수학(가) 서바이벌 1회 해설</p>
+								<button type="button" data-btn="black" class="small5">맛보기</button>
+								<button type="button" data-btn="whitegray" class="small5">HD</button>
+								<button type="button" data-btn="whitegray" class="small6">첨부파일 (5)</button>
+								<div class="down_pop">
+									<button type="button" class="close">닫기</button>
+									<p class="down_title">첨부파일 다운로드</p>
+									<a href="#" data-btn="link">파일명 파일명 파일명.pdf</a>
+								</div>
+							</td>
+							<td>50분</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

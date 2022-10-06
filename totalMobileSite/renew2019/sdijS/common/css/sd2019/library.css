@@ -1,0 +1,46 @@
+.layout-library{ padding-bottom:0; }
+
+.layout-library .fs12{ font-size:12px; font-weight:400; }
+
+.layout-library .dep-tit{ margin:50px auto 30px; padding:20px 0; border-top:1px solid #000; border-bottom:1px solid #000; font-family:'Noto Serif KR', 'Noto Serif', serif, 'Sans-serif', 'Noto Sans KR'; font-size:20px; font-weight:400; text-align:center; }
+.layout-library .dep-tit small{ margin-top:20px; display:block; font-family:'Noto Sans KR','Sans-serif','돋움','Dotum','Apple SD Gothic Neo'; font-size:14px; text-align:center; }
+
+.layout-library .section{  }
+.layout-library .section .section-tit{ margin:40px auto 20px; font-size:18px; font-weight:600; word-break:keep-all; }
+.layout-library .section .section-tit:first-child{ margin-top:30px; }
+.layout-library .section .section-content{  }
+
+.layout-library .em-txt{ margin:0 2px; padding:0 2px; display:inline-block; background-color:#ffc200; }
+.layout-library .noto-txt{ line-height:22px; position:relative; font-size:12px; font-weight:300; }
+
+.layout-library .list-dotted > li:after{ top:8px; left:2px; }
+
+.layout-library .list-tit{ font-weight:400; }
+.layout-library .list-tit dt{ margin:20px auto 10px; font-size:16px; font-weight:400; }
+.layout-library .list-tit dt:first-child{ margin-top:0; }
+.layout-library .list-tit dd{ line-height:24px; margin-bottom:10px; font-size:14px; word-break:keep-all; }
+
+.layout-library .list-graph{ }
+.layout-library .list-graph dt{ margin:20px auto 5px; font-size:14px; font-weight:500; }
+.layout-library .list-graph dt:first-child{ margin-top:0; }
+.layout-library .list-graph dd{ width:100%; display:table; table-layout:fixed; }
+.layout-library .list-graph dd > div{ height:26px; display:table-cell; font-size:12px; font-weight:500px; text-align:center; vertical-align:middle; }
+.layout-library .list-graph dd > div.graph1{ background-color:#ffc200; }
+.layout-library .list-graph dd > div.graph2{ background-color:#ffe180; }
+.layout-library .list-graph dd > div.graph3{ background-color:#cecece; }
+.layout-library .list-graph dd > div.graph4{ background-color:#666; }
+
+.layout-library .list-txt{ font-size:14px; font-weight:500; }
+.layout-library .list-txt > p{ margin-top:5px; word-break:keep-all; }
+
+.layout-library .list-dotted li{ line-height:16px; margin-top:5px; font-weight:400; }
+.layout-library .list-dotted li:first-child{ margin-top:0; }
+
+.layout-library .visual-img{ margin:20px -20px; }
+.layout-library .visual-img > img{ width:100%; height:auto; display:block; }
+
+.layout-library .content-img{ font-size:0; }
+.layout-library .content-img > img, .layout-library .dep-tit > img{ width:100%; max-width:600px; }
+
+.layout-library .gray-box{ margin-top:20px; padding:20px 10px; background-color:#f2f2f2; }
+.layout-library .gray-box .tit{ margin-bottom:10px; font-weight:500; }

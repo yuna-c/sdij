@@ -1,0 +1,112 @@
+<!--
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_login_registstep1.html
+* @ 페이지설명	: 모바일 > N > 가채점 상담신청 > 핸드폰인증
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-01
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용
+*_________________________________________________________________________
+* 김은옥 	최초작성
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>모바일 > N > 가채점 상담신청 > 핸드폰인증</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	.style{}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="N" data-depth2="pre_scoring" data-depth3="certification">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+		<h2 data-title="type1" class="line m_b60">
+			<span>2019 학년도 시대인재 N </span>
+			가채점 상담신청
+		</h2>
+		<div data-layout="type1">
+			<div data-step="type2" class="noline m_b20">
+				<div class="on"><em>1</em>재원여부확인<br />(핸드폰인증)</div><!-- 현재단계 class="on" --><!-- 완료단계 class="pass" -->
+				<div><em>2</em>가채점<br />정보입력</div>
+				<div><em>3</em>상담신청완료</div>
+			</div>
+
+			<ul data-text="type1" class="dash f_color4 m_b40">
+				<li>
+						가채점 상담신청은 시대인재 N 재원생만<br />가능합니다.
+				</li>
+				<li>
+					등록 시 기입한 이름과 핸드폰번호로 인증 <br />받으세요.
+				</li>
+			</ul>
+
+			<form>
+				<fieldset class="m_b45">
+					<dl data-form="wrap">
+						<dt><label for="input1" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input1"></span></dd>
+						<dt><span class="field_name">핸드폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="select">
+								<select title="휴대폰번호 앞 세자리">
+									<option>010</option>
+									<option>011</option>
+									<option>017</option>
+									<option>018</option>
+									<option>019</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span data-form="input" class="size168 m_b20">
+								<input type="text" title="휴대폰번호 가운데 네자리">
+							</span>
+							<em>-</em>
+							<span data-form="input" class="size168">
+								<input type="text" title="휴대폰번호 뒤 네자리">
+							</span>
+							<button type="button" data-btn="whitegray">인증번호받기</button>
+						</dd>
+						<dt>
+							<label for="input2" class="field_name">인증번호</label>
+						</dt>
+						<dd class="m_b50">
+							<span data-form="input" class="m_b25"><input type="text" id="input2"></span>
+							<span class="timer"><em>인증번호 입력 남은시간</em>03:00</span>
+							<p class="field_info">
+								입력한 핸드폰 번호로 인증번호가 발송됩니다.
+							</p>
+						</dd>
+					</dl>
+					<div class="btn_wrap">
+						<button type="button" data-btn="navy">확인</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

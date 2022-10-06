@@ -1,0 +1,199 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/common_mypage_cart_cart.html
+* @ 페이지설명	: 공통 > 마이페이지 > 장바구니 > 장바구니
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-12
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>마이페이지 > 장바구니 > 장바구니</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="common" data-depth2="mypage" data-depth3="cart" data-depth4="cart">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재 &gt;</span>
+		<span>마이페이지 &gt;</span>
+		<span>장바구니</span>
+	</div>
+	<div id="content">
+		
+
+		<h2 data-title="type1" class="m_0">장바구니</h2>
+		<div data-layout="type1">
+			<div data-step="type2">
+				<div class="on"><em>1</em>장바구니</div>
+				<div><em>2</em>주문/결제</div>
+				<div><em>3</em>결제완료</div>
+			</div>
+
+			<h3 data-title="type2"><span class="f_color5">김시대님</span>의 장바구니입니다.</h3>
+			<div data-table="type2" class="check m_b30">
+				<table>
+					<caption>장바구니 내역</caption>
+					<colgroup>
+						<col style="width:50px;">
+						<col style="width:101px;">
+						<col>
+						<col style="width:101px;">
+						<col style="width:71px;">
+						<col style="width:101px;">
+						<col style="width:51px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col"><span data-form="checkbox"><input type="checkbox" id="check1"><label for="check1"></label></span></th>
+							<th scope="col">구분</th>
+							<th scope="col">상품정보</th>
+							<th scope="col">판매가</th>
+							<th scope="col">수량</th>
+							<th scope="col">합계</th>
+							<th scope="col">삭제</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span data-form="checkbox"><input type="checkbox" id="check2"><label for="check2"></label></span></td>
+							<td><div data-icon="type1" class="orange"><span>시대인재<em>ON</em></span></div></td>
+							<td class="t_left">강좌<strong class="tit">강좌명강좌명강좌명강좌명</strong></td>
+							<td class="t_right">79,000원</td>
+							<td>1</td>
+							<td class="t_right">79,000원</td>
+							<td><button type="button" class="delete"><span class="hidden">삭제</span></button></td>
+						</tr>
+						<tr>
+							<td><span data-form="checkbox"><input type="checkbox" id="check3"><label for="check3"></label></span></td>
+							<td><div data-icon="type1" class="orange"><span>시대인재<em>ON</em></span></div></td>
+							<td class="t_left">서바이벌<strong class="tit">상품명상품명상품명상품명상품명</strong></td>
+							<td class="t_right">360,000원</td>
+							<td>1</td>
+							<td class="t_right">360,000원</td>
+							<td><button type="button" class="delete"><span class="hidden">삭제</span></button></td>
+						</tr>
+						<tr>
+							<td><span data-form="checkbox"><input type="checkbox" id="check4"><label for="check4"></label></span></td>
+							<td><div data-icon="type1" class="blue"><span>시대인재</span></div></td>
+							<td class="t_left">컨설팅<strong class="tit">최시대 수시 컨설팅</strong></td>
+							<td class="t_right">300,000원</td>
+							<td>1</td>
+							<td class="t_right">300,000원</td>
+							<td><button type="button" class="delete"><span class="hidden">삭제</span></button></td>
+						</tr>
+						<tr>
+							<td><span data-form="checkbox"><input type="checkbox" id="check5"><label for="check5"></label></span></td>
+							<td><div data-icon="type1" class="green"><span>시대인재<em>Books</em></span></div></td>
+							<td class="t_left">교재/도서(북스 상품구분값 들어감)<strong class="tit">나인재 모의고사 수학 가형</strong></td>
+							<td class="t_right">15,000원</td>
+							<td>
+								<div class="amount">
+									<input type="number" value="999" min="1" max="999" readonly="readonly"><!--20180423 수정-->
+									<button type="button" class="up"><span class="hidden">up</span></button>
+									<button type="button" class="down"><span class="hidden">down</span></button>
+								</div>
+							</td>
+							<td class="t_right">45,000원</td>
+							<td><button type="button" class="delete"><span class="hidden">삭제</span></button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div data-table="type2" class="check m_b30">
+				<table>
+					<caption>장바구니 내역</caption>
+					<colgroup>
+						<col style="width:50px;">
+						<col style="width:101px;">
+						<col>
+						<col style="width:101px;">
+						<col style="width:71px;">
+						<col style="width:101px;">
+						<col style="width:51px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col"><span data-form="checkbox"><input type="checkbox" id="check6"><label for="check6"></label></span></th>
+							<th scope="col">구분</th>
+							<th scope="col">상품정보</th>
+							<th scope="col">판매가</th>
+							<th scope="col">수량</th>
+							<th scope="col">합계</th>
+							<th scope="col">삭제</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="cart_none">
+							<td colspan="7">장바구니에 담긴 상품이 없습니다.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div data-box="type5" class="cart">
+				<dl>
+					<dt>총 상품금액</dt>
+					<dd>784,000원</dd>
+				</dl>
+				<dl>
+					<dt>배송비</dt>
+					<dd>3,000원</dd>
+				</dl>
+				<dl class="total">
+					<dt>총 결제예정금액</dt>
+					<dd><em>784,300</em>원</dd>
+				</dl>
+			</div>
+
+			<div class="btn_wrap">
+				<button type="button" data-btn="navy">주문/결제</button>
+			</div>
+
+			<div data-box="type6">
+				<ol>
+					<li><span>1.</span><p>장바구니에 담겨진 상품/강좌/교재/도서는 30일 동안 보관됩니다. (단, 판매종료 상품은 별도 고지없이 삭제)</p></li>
+					<li><span>2.</span><p>교재 배송비는 주문 1건당 3,000원입니다. </p></li>
+					<li><span>3.</span><p>변심에 의한 반송 시, 환불금액에서 왕복 배송비가 제외됩니다.</p></li>
+					<li><span>4.</span><p>교재가 포함된 상품 또는 강좌의 결제를 취소하시면 해당 교재도 함께 취소됩니다.</p></li>
+					<li><span>5.</span><p>수강 중인 강좌와 교재는 수강 중 재구매 할 수 없습니다.</p></li>
+				</ol>
+				<p>
+					<a href="">시대인재 상품별 환불규정 ></a>
+					<a href="">교재 배송 및 구매 안내 ></a>
+				</p>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

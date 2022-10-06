@@ -1,0 +1,112 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/aca_acainfo_sdinintro.html
+* @ 페이지설명	: 학원 > 학원소개 > 시대인재소개
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-04
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>학원소개 > 시대인재소개</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<link rel="stylesheet" href="../common/css/elastislide.css">
+
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/on_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<script src="../common/js/modernizr.custom.17475.js"></script>
+<script src="../common/js/jquery.elastislide.js"></script>
+<!-- <script src="../common/js/jquerypp.custom.js"></script> -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	.style{}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="aca" data-depth2="acainfo" data-depth3="sdinintro">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재 &gt;</span>
+		<span>학원소개 &gt;</span>
+		<span>시대인재소개</span>
+	</div>
+	<div id="content">
+		
+
+		<h2 data-title="type1">시대인재소개</h2>
+		<div data-layout="type1">
+			<p data-text="type2">컨텐츠의 본질에 집중해 수험생의 꿈을 키우는 시대인재</p>
+			<div class="m_b50"><img src="../common/img/acainfo_sdinintro.png" alt="시대인재소개"></div>
+
+			<h3 data-title="type2">시설안내</h3>
+			<div data-slide="type1">
+				<!-- Elastislide Carousel -->
+				<ul id="carousel" class="elastislide-list">
+					<li data-preview="../common/img/sample/1.jpg"><button type="button"><img src="../common/img/sample/1.jpg" alt="image01" /></button></li>
+					<li data-preview="../common/img/sample/2.jpg"><button type="button"><img src="../common/img/sample/2.jpg" alt="image02" /></button></li>
+					<li data-preview="../common/img/sample/3.jpg"><button type="button"><img src="../common/img/sample/3.jpg" alt="image03" /></button></li>
+					<li data-preview="../common/img/sample/4.jpg"><button type="button"><img src="../common/img/sample/4.jpg" alt="image04" /></button></li>
+					<li data-preview="../common/img/sample/5.jpg"><button type="button"><img src="../common/img/sample/5.jpg" alt="image05" /></button></li>
+					<li data-preview="../common/img/sample/6.jpg"><button type="button"><img src="../common/img/sample/6.jpg" alt="image06" /></button></li>
+					<li data-preview="../common/img/sample/7.jpg"><button type="button"><img src="../common/img/sample/7.jpg" alt="image07" /></button></li>
+					<li data-preview="../common/img/sample/8.jpg"><button type="button"><img src="../common/img/sample/8.jpg" alt="image08" /></button></li>
+					<li data-preview="../common/img/sample/9.jpg"><button type="button"><img src="../common/img/sample/9.jpg" alt="image09" /></button></li>
+					<li data-preview="../common/img/sample/10.jpg"><button type="button"><img src="../common/img/sample/10.jpg" alt="image10" /></button></li>
+				</ul>
+				<!-- End Elastislide Carousel -->
+
+				<div class="image-preview">
+					<img id="preview" src="../common/img/sample/1.jpg" />
+				</div>
+			</div>
+			<script type="text/javascript">
+				var current = 0,
+					$preview = $( '#preview' ),
+					$carouselEl = $( '#carousel' ),
+					$carouselItems = $carouselEl.children(),
+					carousel = $carouselEl.elastislide( {
+						current : current,
+						minItems : 5,
+						onClick : function( el, pos, evt ) {
+
+							changeImage( el, pos );
+							evt.preventDefault();
+
+						},
+						onReady : function() {
+
+							changeImage( $carouselItems.eq( current ), current );
+							
+						}
+					} );
+			</script>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

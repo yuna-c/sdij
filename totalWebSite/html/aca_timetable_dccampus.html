@@ -1,0 +1,160 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/aca_timetable.html
+* @ 페이지설명	: 학원 > 시간표 > 대치캠퍼스
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-27
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>시간표 > 대치캠퍼스</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<link rel="stylesheet" href="../common/css/swiper.min.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/typed.js"></script>
+<script src="../common/js/aca_dev.js"></script>
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="aca" data-depth2="timetable">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재 &gt;</span>
+		<span>시간표 &gt;</span>
+		<span>대치캠퍼스</span>
+	</div>
+	<div id="content">
+
+
+		<h2 data-title="type1" class="m_b45">대치 시대인재 시간표</h2>
+		<div data-layout="type1">
+			<p data-text="type2" class="m_b25">근본이 다른 컨텐츠<br>시대인재가 제공하는 이 시기 가장 학습에 도움되는 강좌</p>치
+
+			<!-- 대치 -->
+			<div data-box="type12" class="m_b50">
+				<ul>
+					<li><h4>전화 문의</h4></li>
+					<li><span>고3</span>02-552-2373</li>
+					<li><span>고1/2</span>02-554-2373</li>
+					<li><span>수학스쿨</span>02-552-2378</li>
+					<li><span>영어스쿨</span>02-558-2373</li>
+					<li><span>특목센터</span>02-565-2373</li>
+				</ul>
+				<ul>
+					<li><h4>강좌예약/상담 문자전용<em>(학부모전화번호/학생/학교/강좌명)</em></h4></li>
+					<li><span>고3</span>010-5423-2378</li>
+					<li><span>고1/2</span>010-7441-2373</li>
+					<li><span>수학스쿨</span>010-7442-2373</li>
+					<li><span>영어스쿨</span>010-4752-2372</li>
+				</ul>
+				<!-- <img src="../common/img/timetable_img03.png" alt=""/>
+				<img src="../common/img/timetable_img04.png" alt=""/> -->
+			</div>
+
+			<!-- 분당 -->
+			<div data-box="type12" class="bundang m_b50">
+				<ul>
+					<li><h4><b>전화문의 :</b> 031-718-2373</h4></li>
+					<li><h4><b>강좌예약/상담/문자전용 :</b> 010-6620-2373<em>(학부모전화번호/학생/학교/강좌명)</em></h4></li>
+				</ul>
+			</div>
+
+			<div data-tab="type1" class="m_b20">
+				<a href="" class="on">고3 이과</a>
+				<a href="">고3 문과</a>
+				<a href="">고2</a>
+				<a href="">고1</a>
+			</div>
+
+			<div data-tab="type1" class="m_b30">
+				<a href="" class="on">고3 이과</a>
+				<a href="">고3 문과</a>
+				<a href="">고2</a>
+				<a href="">고1</a>
+				<a href="" class="line2">2017 특목센터<br>(대원/한영)</a><!-- 텍스트가 2줄일때 클래스 line2 추가 -->
+			</div>
+
+			<div data-tab="link" class="timetable">
+				<a href="" class="on">전체</a>
+				<a href="">수학서바이벌</a>
+				<a href="">과탐정규/서바이벌</a>
+			</div>
+
+			<div class="timetable_box m_b20">
+				<button type="button" data-popup="sample" id="timetable_pop")"><img src="../common/img/sample_timetable.png" alt="시간표 이미지"></button><!-- 2017-11-13 마크업 수정 -->
+			</div>
+
+			<div class="timetable_box m_b20">
+				<button type="button" data-popup="sample" id="timetable_pop"><img src="../common/img/timetable_img02.png" alt="시간표 이미지"></button><!-- 2017-11-13 마크업 수정 -->
+			</div>
+			
+			<div class="attached_file">
+				<button type="button" data-btn="whitegray" class="down_link">첨부파일 다운로드</button>
+				<div class="down_pop">
+					<button type="button" class="close">닫기</button>
+					<p class="down_title">첨부파일 다운로드</p>
+					<a href="#" data-btn="link">파일명 파일명 파일명파일명 파일명 파일명파일명 파일명 파일명.pdf</a>
+					<a href="#" data-btn="link">파일명 파일명 파일명.pdf</a>
+					<a href="#" data-btn="link">파일명 파일명 파일명.pdf</a>
+					<a href="#" data-btn="link">파일명 파일명 파일명.pdf</a>
+					<a href="#" data-btn="link">파일명 파일명 파일명.pdf</a>
+					<a href="#" data-btn="link">파일명 파일명 파일명.pdf</a>
+					<a href="#" data-btn="link">파일명 파일명 파일명.pdf</a>
+					<a href="#" data-btn="link">파일명 파일명 파일명.pdf</a>
+					<a href="#" data-btn="link">파일명 파일명 파일명.pdf</a>
+					<a href="#" data-btn="link">파일명 파일명 파일명.pdf</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div data-popup="type1" class="timetable_pop">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<div class="pop_box">
+				<img src="../common/img/timetable_01.png" alt="서바이벌 오프라인" class="on">
+				<img src="../common/img/timetable_02.png" alt="서바이벌 오프라인">
+				<img src="../common/img/synopsis_1.png" alt="서바이벌 오프라인">
+				<img src="../common/img/synopsis_2.png" alt="서바이벌 오프라인">
+			</div>
+		</div>
+	</div>
+	<!-- 2017-11-15 마크업 수정 S -->
+	<div class="timetable_btn">
+		<button class="timetable_prev" disabled="disabled">back</button>
+		<button class="timetable_next">go</button>
+		<button type="button" class="close">닫기</button>
+	</div>
+	<!-- 2017-11-15 마크업 수정 E -->
+</div>
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

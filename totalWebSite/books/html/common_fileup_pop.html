@@ -1,0 +1,63 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/01_layerpopup.html
+* @ 페이지설명 	: 01_layerpopup.html
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-03-29
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>파일업로드 팝업</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<!-- <link rel="stylesheet" href="../common/css/common.css"> -->
+<script src="../common/js/jquery-2.1.1.js"></script>
+<script type="text/javascript">
+$(function(){
+	var fileTarget = $('*[data-form="file"] .file_hidden'); 
+	fileTarget.on('change', function(){ // 값이 변경되면 
+	if(window.FileReader){ // modern browser 
+		var filename = $(this)[0].files[0].name; 
+	} else { // old IE 
+		var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출 
+	} // 추출한 파일명 삽입 
+	$(this).siblings('.file_name').val(filename); });
+});
+</script>
+<style type="text/css">
+</style>
+</head>
+<body style="margin:0;padding:0;font-family: 'neol','neob', sans-serif, 'Dotum',돋움,굴림,sans-serif;">
+<div data-popup="pop" style="max-width:550px;">
+	<div class="pop_wrap">
+		<form data-box="pop_content" style="padding: 40px 40px 30px 40px">
+			<fieldset style="border: 0;margin:0;padding:0">
+				<dl style="margin:0;border: 1px solid #d2d2d2;position: relative;padding: 10px 11px 10px 17px;overflow:hidden;">
+					<dt style="position: absolute;color: #323232;left: 15px;top: 10px;padding: 0;line-height: 50px;font-size: 14px;">파일등록</dt>
+					<dd style="margin-left: 70px;padding: 0;font-size: 0;">
+						<span data-form="file" style="display: inline-block;">
+							<input type="text" readonly="readonly" class="file_name" style="padding: 0 20px;font-size: 14px;margin: 0 10px 0 0;width: 260px;height: 50px;border: 1px solid #d2d2d2;background: #ebebeb;box-sizing: border-box;">
+							<input type="file" id="fileup1" class="file_hidden" style="position: absolute;width: 1px;height: 1px;padding: 0; margin: -1px;overflow: hidden;clip: rect(0,0,0,0);border: 0;">
+							<label for="fileup1" data-btn="whitegray" class="size100" style="font-size: 14px;color: #fff;text-align: center;    border-radius: 0;width:100px;vertical-align: top;height: 50px;line-height: 50px;background: #a0a0a0;display: inline-block; padding: 0;cursor: pointer;">파일찾기</label>
+						</span>
+					</dd>
+				</dl>
+			</fieldset>
+		</form>
+		<div class="btn_wrap3" style="padding-bottom: 40px;text-align: center;">
+			<button type="submit" data-btn="navy" style="height: 50px;line-height: 50px;font-size:18px;background: #284678;display: inline-block;padding: 0;width: 140px;color: #fff;text-align: center;border-radius: 0;vertical-align: top;border:0">확인</button>
+		</div>
+	</div>
+</div>
+</body>

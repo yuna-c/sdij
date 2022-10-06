@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* 
+default2.asp
+.teacher-container .content-layout .img-area{ width:100%; min-height:540px; position:relative; }
+.teacher-container .content-layout .img-area:before{ content:""; width:200px; height:265px; position:absolute; right:0; background:url(//img.orsaysdij.com/common/mo/teacher/orsay.png) 50% 50% no-repeat; background-size:100% auto;  }
+
+.teacher-container .content-layout .txt-area{ padding:0 10px; position:absolute; }
+.teacher-container .content-layout .txt-area .page-tit{ margin-top:-4px; padding-top:0; font-weight:900; text-align:left; }
+.teacher-container .content-layout .txt-area .dep-tit{ line-height:18px; padding-bottom:130px; position:relative; font-size:13px; }
+.teacher-container .content-layout .txt-area .dep-tit:after{ content:""; width:1px; height:110px; position:absolute; bottom:0; background-color:#707070; }
+
+.teacher-container .content-layout .list-tit{ line-height:16px; }
+.teacher-container .content-layout .list-tit dl dt{ margin-top:0px; padding-top:0px; font-weight:bold; }
+.teacher-container .content-layout .list-tit dl dt, .teacher-container .content-layout .list-tit dl dd{ font-size:12px; } */
+
+.teacher-container .content-layout .teacher-area{ width:100%; min-height:540px; position:relative; }
+.teacher-container .content-layout .teacher-area .img-area{ position:absolute; top:0; right:10px; }
+.teacher-container .content-layout .teacher-area .img-area img{ width:200px; height:265px; }
+
+.teacher-container .content-layout .teacher-area .txt-area{ padding:0 10px; position:absolute; }
+.teacher-container .content-layout .teacher-area .txt-area .page-tit{ margin-top:-4px; padding-top:0; font-weight:900; text-align:left; }
+.teacher-container .content-layout .teacher-area .txt-area .dep-tit{ line-height:18px; padding-bottom:130px; position:relative; font-size:13px; }
+.teacher-container .content-layout .teacher-area .txt-area .dep-tit:after{ content:""; width:1px; height:110px; position:absolute; bottom:0; background-color:#707070; }
+
+.teacher-container .content-layout .teacher-area .list-tit{ line-height:16px; }
+.teacher-container .content-layout .teacher-area .list-tit dl dt{ margin-top:0px; padding-top:0px; font-weight:bold; }
+.teacher-container .content-layout .teacher-area .list-tit dl dt, .teacher-container .content-layout .teacher-area .list-tit dl dd{ font-size:12px; }

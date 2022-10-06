@@ -1,0 +1,106 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/aca_consulting_booking_fileuploadpopup.html
+* @ 페이지설명	: 학원 > 컨설팅 > 예약완료 > 	서류등록팝업
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-11
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>컨설팅 > 예약완료 > 	서류등록팝업</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<script src="../common/js/jquery-2.1.1.js"></script>
+<script type="text/javascript">
+$(function(){
+	var fileTarget = $('*[data-form="file"] .file_hidden'); 
+	fileTarget.on('change', function(){ // 값이 변경되면 
+	if(window.FileReader){ // modern browser 
+		var filename = $(this)[0].files[0].name; 
+	} else { // old IE 
+		var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출 
+	} // 추출한 파일명 삽입 
+	$(this).siblings('.file_name').val(filename); });
+});
+</script>
+<style type="text/css">
+</style>
+</head>
+<!-- 20170419 data-depth 추가 -->
+<body data-depth1="aca" data-depth2="consulting" data-depth3="booking" data-depth4="fileuploadpopup">
+<!-- 20170419 class="type1" 추가 -->
+<div data-popup="pop" class="type1">
+	<div class="pop_wrap">
+		<form data-box="pop_content">
+			<fieldset>
+				<dl>
+					<dt>학교생활기록부</dt>
+					<dd>
+						<span data-form="file">
+							<input type="text" readonly="readonly" class="file_name">
+							<input type="file" id="fileup1" class="file_hidden">
+							<label for="fileup1" data-btn="whitegray" class="size100">파일찾기</label>
+						</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>모의고사성적표 1</dt>
+					<dd>
+						<span data-form="file">
+							<input type="text" readonly="readonly" class="file_name">
+							<input type="file" id="fileup1" class="file_hidden">
+							<label for="fileup1" data-btn="whitegray" class="size100">파일찾기</label>
+						</span>
+					</dd>
+				</dl>
+				<dl class="disabled">
+					<dt>모의고사성적표 2</dt>
+					<dd>
+						<span data-form="file">
+							<input type="text" readonly="readonly" class="file_name">
+							<input type="file" id="fileup1" class="file_hidden" disabled="disabled">
+							<label for="fileup1" data-btn="whitegray" class="size100">파일찾기</label>
+						</span>
+					</dd>
+				</dl>
+				<dl class="disabled">
+					<dt>모의고사성적표 3</dt>
+					<dd>
+						<span data-form="file">
+							<input type="text" readonly="readonly" class="file_name">
+							<input type="file" id="fileup1" class="file_hidden" disabled="disabled">
+							<label for="fileup1" data-btn="whitegray" class="size100">파일찾기</label>
+						</span>
+					</dd>
+				</dl>
+				<dl class="disabled">
+					<dt>수능성적표</dt>
+					<dd>
+						<span data-form="file">
+							<input type="text" readonly="readonly" class="file_name">
+							<input type="file" id="fileup1" class="file_hidden" disabled="disabled">
+							<label for="fileup1" data-btn="whitegray" class="size100">파일찾기</label>
+						</span>
+					</dd>
+				</dl>
+			</fieldset>
+		</form>
+		<div class="btn_wrap3">
+			<button type="submit" data-btn="navy">저장</button>
+		</div>
+	</div>
+</div>
+</body>

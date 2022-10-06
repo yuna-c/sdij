@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* teachers */
+.noti-content{ height:40px; line-height:40px; margin-bottom:40px; background-color:#ffedc1; overflow:hidden; }
+.noti-content .wide-layout .tit{ margin-right:10px; font-weight:700; vertical-align:top; }
+.noti-content .wide-layout > a{ max-width:1120px; display:inline-block; overflow:hidden; text-overflow:ellipsis; word-break:break-all; white-space:nowrap; }
+.noti-content .wide-layout > a:hover{ color:#000; text-decoration:underline; }
+
+.list-teachers > ul{ width:calc( 100% + 20px ); margin:-30px -10px 0; display:-webkit-box; display:-ms-flexbox; display:flex; -webkit-box-lines:multiple; -ms-flex-wrap:wrap; flex-wrap:wrap; }
+.list-teachers > ul > li{ width:calc( 25% - 20px ); margin:30px 10px; }
+.list-teachers > ul > li > a, .list-teachers > ul > li > a > span{ display:block; }
+.list-teachers > ul > li > a:hover{ color:#000; }
+.list-teachers > ul > li > a > span:not(.img){ width:100%; overflow:hidden; word-break:break-all; white-space:nowrap; }
+.list-teachers > ul > li > a .img{ width:100%; margin-bottom:10px; position:relative; background-color:#000; font-size:0; -webkit-transition:.5s ease-in-out; transition:.5s ease-in-out; overflow:hidden; }
+.list-teachers > ul > li > a .img > img{ width:100%; height:auto; }
+.list-teachers > ul > li > a:hover .img{ -webkit-transition:.5s ease-in-out; transition:.5s ease-in-out; }
+.list-teachers > ul > li > a:hover .img > img{ transform:scale(1.05); -webkit-transition:.5s ease-in-out; transition:.5s ease-in-out; }
+.list-teachers > ul > li > a .tit{ font-size:20px; font-weight:700; color:#888; letter-spacing:-0.5px; }
+
+/* index */
+.index-container .banner-content{ background-color:#000; }
+.index-container .banner-content .swiper-container .swiper-slide{ width:100%; height:auto; display:block; font-size:0; text-align:center; visibility:hidden; }
+.index-container .banner-content .swiper-container .swiper-slide > img{ width:100%; height:auto; }
+
+/* main */
+.main-container .banner-content{ position:relative; font-size:0; }
+.main-container .banner-content .img-area{ width:100%; font-size:0; }
+.main-container .banner-content .img-area > img{ width:100%; height:auto; }
+.main-container .banner-content .btn-profile{ position:absolute; left:20px; bottom:20px; }
+.main-container .curri-content .swiper-container{ padding-bottom:16px; position:relative; }
+.main-container .curri-content .swiper-container .swiper-slide{ width:100%; height:auto; display:block; font-size:0; text-align:center; }
+.main-container .curri-content .swiper-container .swiper-slide > img{ width:100%; height:auto; }
+.main-container .curri-content .swiper-container .swiper-pager{ position:absolute; top:60px; left:105px; }
+.main-container .curri-content .swiper-container .swiper-btn{ position:absolute; left:105px; bottom:0; }
+.main-container .no-data > [class^='ico']{ width:40px; height:40px; }
+.main-container .no-data{ height:100px; background:none; }
+
+/* review */
+.review-container .table-type1 ul > li > .type-area [class^='ico']{ margin-right:0; }
+.review-container .info-area { margin:10px auto 0; display:flex; align-items:center; } 
+.review-container .info-area .right{ display:inline-block; margin-left:auto; }
+.review-container .info-area .right a{ font-size:14px; }
+.review-container .view-type1 .info-area > .grade{ margin-left:4px; }
+.review-container .view-type1 .info-area > .grade > [class^='ico']{ top:0px; }
+.review-container .view-type1 .info-area > .grade:before{ display:none;}
+.review-container .view-type1 .info-area > .grade .ico-star, .review-container .view-type1 .info-area > .grade .ico-star-on{ width:16px; height:16px; }
+.review-container .grade{ line-height:1; padding:0; }
+.review-container .grade .ico-star, .review-container .grade .ico-star-on{ width:36px; height:36px; }
+
+/* board : qnaWrite */
+.board-container .form-type1 dt[class*='qna-type'], .board-container .form-type1 dd[class*='qna-type']{ display:none; }
+
+/** Tablets **/
+@media (max-width:1024px) and (orientation:portrait), (max-width:1336px) and (orientation:landscape){
+    /* teachers */
+    .noti-content{ margin-bottom:20px; }
+    .noti-content .wide-layout .tit{ width:24px; height:24px; display:inline-block; font-size:0; }
+    .noti-content .wide-layout > a{ width:calc( 100% - 40px ); }
+
+    .list-teachers > ul > li{ width:calc( 50% - 20px ); }
+
+    /* main */
+    .main-container .curri-content .swiper-container .swiper-btn{ left:40px; }
+}
+
+/** mobiles **/
+@media (max-width:539px) and (orientation:portrait), (max-width:959px) and (orientation:landscape){
+    .board-container .tit-dep1 .btn-write{ width:40px; height:40px; top:10px; background-color:#000; }
+    .board-container .tit-dep1 .btn-write .ico-plus{ width:20px; height:20px; background-image:url(//img.sdij.com/sdijx/common/ico_plus_w.png); }
+
+    .form-type1.form-qna .row .col-60, .form-type1.form-qna .row .col-40{ width:100%; }
+    .form-type1.form-qna .row .col-40{ margin-top:5px; }
+
+    .list-teachers > ul > li{ width:calc( 100% - 20px ); }
+
+    /* main */
+    .main-container .banner-content .btn-profile{ height:28px; line-height:26px; padding:0 8px; position:absolute; top:10px; left:auto; right:10px; border-radius:16px; font-size:12px; }
+    .main-container .curri-content .swiper-container .swiper-pager{ display:none; }
+}
+
+/** mobiles xs **/
+@media (max-width:320px) and (orientation:portrait){
+    .list-teachers > ul > li > a > span:not(.img){ text-overflow:ellipsis; }
+}

@@ -1,0 +1,104 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/launching_knock_productinfo.html
+* @ 페이지설명	: 모바일 > 런칭 > 서바이벌노크신청 > 서바이벌상품설명
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-23
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>서바이벌노크신청 > 서바이벌상품설명</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/mb-comingsoon-iceberg.min.css">
+<link rel="stylesheet" href="../common/css/swiper.min.css">
+<script src="../common/js/common_ui.js"></script>
+<!-- <script src="../common/js/common_dev.js"></script> -->	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/common_dev.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="launching" data-depth2="knock" data-depth3="productinfo">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+		<div data-layout="type1">
+
+			<div class="swiper-container launching_swipe_wrap">
+				<div class="swiper-wrapper visual">
+					<div class="swiper-slide">
+						<dl data-icon="type5" class="product1">
+							<dt>온라인 서바이벌 실전모의 1회분</dt>
+							<dd>(수학 + 과학1 + 과학2)</dd>
+						</dl>
+					</div>
+					
+					<div class="swiper-slide">
+						<dl data-icon="type5" class="product2">
+							<dt>해설지 (PDF 제공)</dt>
+							<dd>신청 완료 후, 배송 조회 페이지에서 다운로드</dd><!-- 2017-09-13 텍스트 수정 -->
+						</dl>
+					</div>
+					<!-- <div class="swiper-slide">
+						<dl data-icon="type5" class="product3">
+							<dt>master note</dt>
+							<dd></dd>
+						</dl>
+					</div> -->
+				</div>
+				<div class="swiper-pagination pager"></div>
+	            <!-- <div class="launching_prev"><span class="hidden">이전</span></div>
+	            <div class="launching_next"><span class="hidden">다음</span></div>-->
+		    </div>
+		    <!-- Swiper JS -->
+		    <div class="launching_prev"><span class="hidden">이전</span></div>
+	        <div class="launching_next"><span class="hidden">다음</span></div>
+	    	<div class="btn_fixbt">
+	    		<button type="button" data-btn="navy">신청하기</button>
+	    	</div>
+	    </div>
+
+
+	    <!-- Initialize Swiper -->
+	    <script>
+	    var swiper = new Swiper('.swiper-container', {
+	    	direction: 'horizontal',
+	        effect:'slide', // 'slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
+	        slidesPerView: 1,
+	        speed: 1000,
+	        autoplay: false,
+	        spaceBetween: 0,
+	        mousewheelControl: true,
+	        loop: false,
+	        pagination: '.swiper-pagination',
+	        nextButton: '.launching_next',
+        	prevButton: '.launching_prev',
+
+	    });
+	    </script>
+
+	</div>
+</div>
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

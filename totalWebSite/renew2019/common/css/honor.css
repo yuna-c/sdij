@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* 명예의 전당 */
+.board-tab .tab-honor{ margin-bottom:50px; display:block; position:relative; left:1px; }
+.board-tab .tab-honor > li{ width:280px; height:38px; float:left; position:relative; }
+.board-tab .tab-honor > li > a{ width:281px; height:39px; margin-top:-1px; margin-left:-1px; display:flex; border:1px solid #ddd; justify-content:center; align-items:center; box-sizing:border-box; }
+.board-tab .tab-honor > li:hover > a, .board-tab .tab-honor > li.selected > a{ background-color:#000; color:#fff; }
+
+.honor-list{ border-top:1px solid #000; }
+.honor-list > ul > li{ min-height:180px; padding:25px 20px 25px 360px; position:relative; border-bottom:1px solid #ededed; }
+.honor-list > ul > li .data-img{ width:320px; height:180px; position:absolute; top:25px; left:20px; background-color:#000; overflow:hidden; }
+.honor-list > ul > li .data-img > img{ width:100%; height:100%; }
+.honor-list > ul > li .data-logo{ background:#fff url(//img.sdij.com/sd2019/pc/logo.png) 50% 50% no-repeat; border:1px solid #ededed; }
+.honor-list > ul > li .data-name{ line-height:1; margin-bottom:10px; font-size:30px; font-weight:bold; }
+.honor-list > ul > li .data-name span{ display:block; font-size:16px; font-weight:normal; }
+.honor-list > ul > li .data-content{ height:135px; position:relative; font-size:18px; font-weight:700; word-break:keep-all; }
+.honor-list > ul > li .data-content:after{ content:'영상 인터뷰 >'; display:block; position:absolute; left:0; bottom:0; font-size:14px; font-weight:400; text-decoration:underline; }
+.honor-list > ul > li .list-dotted{ margin-bottom:0; }
+.honor-list .data-content span.data-txt{ width:460px; display:block; position:absolute; bottom:28px; font-size:15px; font-weight:400; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+/* 학습수기 */
+.review-list{ width:100%; overflow:hidden; }
+.review-list > ul{ width:842px; margin-left:-1px; *zoom:1; }
+.review-list > ul:after{ content:''; display:block; clear:both; }
+.review-list > ul > li{ width:50%; padding:25px 20px; float:left; position:relative; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+.review-list > ul > li:before{ content:''; width:1px; position:absolute; top:25px; left:0; bottom:25px; background-color:#ededed; }
+.review-list > ul > li .data-content:after{ content:'합격수기 >'; }
+
+.review-container .board-video .profile-content{ width:100%; min-height:auto; text-align:center; }
+.review-container .board-video .profile-content .data-img{ margin:0 auto; position:relative; }
+.review-container .board-video .profile-content .data-name{ margin-bottom:0; padding-left:0; }
+
+/* PDF */
+.review-container .board-video .txt-content{ margin-bottom:20px; }
+.review-container .pdf-area{ width:100%; }
+.review-container .pdf-area iframe{ width:100%; }
+
+/* review-list 데이터 없을 때 */
+.video-img{ width:100%; height:100%; margin-bottom:50px; padding-bottom:56.25%; display:block; }
+.video-logo{ position:relative; background:#fff url(//img.sdij.com/sd2019/pc/logo.png) 50% 50% no-repeat; border:1px solid #ededed; z-index:1; }
+.video-logo:after{ content:'추후 공개됩니다.'; margin-top:40px; margin-left:10px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); font-size:30px; font-weight:700; }
+.no-data{ width:100%; height:134px; display:flex; justify-content:center; align-items:center; border-top:1px solid #000; text-align:center; border-bottom:1px solid #ededed; }
+
+
+
+/* 연대기 */
+.summary-container .summary-list{ border-top:1px solid #000; } 
+.summary-container .summary-list > ul > li{ padding:25px 20px; border-bottom:1px solid #ededed; }
+
+.summary-container .summary-list .tit-area{ max-width:220px; text-align:right; }
+.summary-container .summary-list .tit-area .tit{ margin-bottom:10px; font-size:30px; font-weight:700; }
+.summary-container .summary-list .visual-area .txt-area{ line-height:1.6; margin-top:15px; }
+
+.summary-container .summary-list .visual-area .video-info{ max-width:900px; height:160px; position:relative; top:0; left:0; overflow:hidden; *zoom:1; }
+.summary-container .summary-list .visual-area .video-info li{ margin-left:10px; float:left; }
+.summary-container .summary-list .visual-area .video-info li:first-child{ margin-left:0; }
+.summary-container .summary-list .visual-area .video-info li .video-area{ width:290px; } /* height:160px; padding-bottom:0; */
+.summary-container .summary-list .visual-area .video-info:after{ content:""; display:block; clear:both; }

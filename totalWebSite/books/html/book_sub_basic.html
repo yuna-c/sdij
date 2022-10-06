@@ -1,0 +1,689 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/on_univ_univ_list.html
+* @ 페이지설명	: 온 > 입시정보 > 입시분석 > 리스트
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-03
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>시대인재 Books 상세</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/books.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<link rel="stylesheet" href="../common/css/swiper.min.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/book_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<script src="../common/js/swiper.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="book" data-depth2="sub" data-depth3="basic">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+		<div data-layout="type1">
+			<h2 data-title="type5" class="m_b20">
+				<em class="new">NEW</em><!-- 2018-01-16 마크업 추가 -->
+				한권으로 완성하는 수학 2018
+				<em class="state_1">판매종료</em>
+				<em class="state_2">일시품절</em>
+				<em class="state_3">판매중</em>
+				<em class="state_4">사전판매</em>
+				<em class="state_2">입고대기</em>
+				<p class="sub_title">
+					수능에서 논술까지 한번에! 수학 가형, 수리 논술을 완벽하게 대비하는 교재 - 이과 수험생 필독서
+					<span>이해원 지음</span>
+				</p>
+			</h2>
+			<div data-box="book_detail">
+				<div class="left">
+					<button data-target="target1" class="img_box">
+						<img src="../common/img/book_product1.png" alt="책 제목">
+					</button>
+					<!-- <button type="button">미리보기</button> -->
+				</div>
+				<div class="right">
+					<dl>
+						<dt>정가</dt>
+						<dd>27,000원</dd>
+						<dt>판매가</dt>
+						<dd><span class="important"><strong>24,300원</strong> (10%▼ 할인)</span></dd>
+						<dt>출간일</dt>
+						<dd>2017-01-28 <span class="book_state">초판</span></dd>
+						<dt>페이지</dt>
+						<dd>280쪽</dd>
+						<dt class="relative">판형</dt>
+						<dd class="relative">
+							200X280mm / 980g
+							<button type="button" class="pan_state">판형알림</button>
+							<div class="pan_popup">
+								<span>- A3 (297X420mm)</span>
+								<span>- B4 (257X364mm)</span>
+								<span>- A4 (210X297mm)</span>
+								<span>- B5 (102X257mm)</span>
+								<span>- A5 (148X210mm)</span>
+								<span>- B6 (129X182mm)</span>
+								<span>- A6 (105X140mm)</span>
+								<span>- 8C (8절)</span>
+								<span class="last">- 기타 (가로X세로)</span>
+							</div>
+						</dd>
+						<dt>ISBN</dt>
+						<dd>1234567890</dd>
+						<dt>배송비</dt>
+						<dd>무료배송(만원이상 구매 시)</dd>
+						<dt>도착예정일</dt>
+						<dd><span class="important"><strong>2일 이내</strong></span> 도착 예정</dd>
+						<dt class="line"><label for="am_1">주문수량</label></dt>
+						<dd class="line">
+							<span data-form="amount" class="type1">
+								<input id="am_1" type="number" value="1" min="1" max="99">
+								<em>
+									<button type="button" class="plus">증가</button>
+									<button type="button" class="minus">감소</button>
+								</em>						
+							</span>
+						</dd>
+					</dl>
+					<div class="btn_wrap3">
+						<button type="button" data-btn="navy" data-popup="sample" id="purchase">바로구매</button><!-- 2017-10-18 마크업 추가 -->
+						<button type="button" data-btn="whitegray" class="m_l10">장바구니</button>
+					</div>
+				</div>
+			</div>
+			<div data-toggle="type1" class="big m_b30"><!--20180313 클래스추가-->
+				<p class="title">
+					<span>연관도서</span>
+					<em data-form="checkbox" class="type5">
+						<input type="checkbox" id="book_all">
+						<label for="book_all">전체선택</label>
+					</em>
+					<button type="button" data-btn="whitegray" class="size110">장바구니 담기</button>
+				</p>
+				<ul>
+					<li>
+						<span data-form="checkbox">
+							<input type="checkbox" id="book_title1">
+							<label for="book_title1">선택</label>
+						</span>
+						<a href="#">한권으로 완성하는 수학 2018-미적분2 (지수로그함수/삼각함수/극한)</a>
+					</li>
+					<li>
+						<span data-form="checkbox">
+							<input type="checkbox" id="book_title2">
+							<label for="book_title2">선택</label>
+						</span>
+						<a href="#">한권으로 완성하는 수학 2018-미적분2 (지수로그함수/삼각함수/극한)</a>
+					</li>
+					<li>
+						<span data-form="checkbox">
+							<input type="checkbox" id="book_title3">
+							<label for="book_title3">선택</label>
+						</span>
+						<a href="#">한권으로 완성하는 수학 2018-미적분2 (지수로그함수/삼각함수/극한)</a>
+					</li>
+					<li>
+						<span data-form="checkbox">
+							<input type="checkbox" id="book_title4">
+							<label for="book_title4">선택</label>
+						</span>
+						<a href="#">한권으로 완성하는 수학 2018-미적분2 (지수로그함수/삼각함수/극한)</a>
+					</li>
+				</ul>
+			</div>
+			<!--20180313 소스추가 S-->
+			<div data-box="book_detail" class="set">
+				<div class="left">
+					<button data-target="target1" class="img_box">
+						<img src="../common/img/book_product1.png" alt="책 제목">
+					</button>
+				</div>
+				<div class="right">
+					<dl>
+						<dt>정가</dt>
+						<dd>27,000원</dd>
+						<dt>판매가</dt>
+						<dd><span class="important"><strong>24,300원</strong> (10%▼ 할인)</span></dd>
+						<dt>출간일</dt>
+						<dd>2017-01-28 <span class="book_state">초판</span></dd>
+						<dt>페이지</dt>
+						<dd>280쪽</dd>
+						<dt class="relative">판형</dt>
+						<dd class="relative">
+							200X280mm / 980g
+							<button type="button" class="pan_state">판형알림</button>
+							<div class="pan_popup">
+								<span>- A3 (297X420mm)</span>
+								<span>- B4 (257X364mm)</span>
+								<span>- A4 (210X297mm)</span>
+								<span>- B5 (102X257mm)</span>
+								<span>- A5 (148X210mm)</span>
+								<span>- B6 (129X182mm)</span>
+								<span>- A6 (105X140mm)</span>
+								<span>- 8C (8절)</span>
+								<span class="last">- 기타 (가로X세로)</span>
+							</div>
+						</dd>
+						<dt>ISBN</dt>
+						<dd>1234567890</dd>
+						<dt>배송비</dt>
+						<dd>무료배송(만원이상 구매 시)</dd>
+						<dt>도착예정일</dt>
+						<dd class="m_b0"><span class="important"><strong>2일 이내</strong></span> 도착 예정</dd>
+					</dl>
+				</div>
+			</div>
+
+			<div data-toggle="type1" class="big m_b0">
+				<p class="title set">
+					<em data-form="checkbox" class="type5">
+						<input type="checkbox" id="book_all_set">
+						<label for="book_all_set">전체선택</label>
+					</em>
+				</p>
+				<table class="set_list">
+					<colgroup>
+						<col width="60px" />
+						<col width="430px" />
+						<col width="155px" />
+						<col width="" />
+					</colgroup>
+					<tbody>
+						<!--20180321 코드수정 S-->
+						<tr class="gray">
+								<td>
+									<span data-form="checkbox">
+										<input type="checkbox" id="setbook_tit1" disabled="disabled">
+										<label for="setbook_tit1">선택</label>
+									</span>
+								</td>
+								<td>
+										한	권으로 완성하는 수학 2018-미적분2 (지수로그함수/삼각함수/극한)
+								</td>
+								<td colspan="2" class="right">
+									<em>(출시예정, 00월 예정)</em>
+								</td>
+						</tr>
+						<!--20180321 코드수정 E-->
+						<tr>
+								<td>
+									<span data-form="checkbox">
+										<input type="checkbox" id="setbook_tit2" disabled="disabled" class="check" checked="checked">
+										<label for="setbook_tit2">선택</label>
+									</span>
+								</td>
+								<td>
+									<a href="#">
+										한	권으로 완성하는 수학 2018-미적분2 (지수로그함수/삼각함수/극한)
+										<em>(사전판매, 00/00 입고예정)</em>
+									</a>
+								</td>
+								<td class="summary">
+										<em>14000원</em>
+										<strong>12,600원</strong>
+								</td>
+								<td>
+										<div data-form="amount" class="type1">
+											<input id="am_1" value="1" min="1" max="99" type="number">
+											<em>
+												<button type="button" class="plus">증가</button>
+												<button type="button" class="minus">감소</button>
+											</em>						
+										</div>
+								</td>
+						</tr>
+						<tr>
+								<td>
+									<span data-form="checkbox">
+										<input type="checkbox" id="setbook_tit3">
+										<label for="setbook_tit3">선택</label>
+									</span>
+								</td>
+								<td>
+									<a href="#">
+										한	권으로 완성하는 수학 2018-미적분2 (지수로그함수/삼각함수/극한)
+										<em>(사전판매, 00/00 입고예정)</em>
+									</a>
+								</td>
+								<td class="summary">
+										<em>14000원</em>
+										<strong>12,600원</strong>
+								</td>
+								<td>
+										<div data-form="amount" class="type1">
+											<input id="am_1" value="1" min="1" max="99" type="number">
+											<em>
+												<button type="button" class="plus">증가</button>
+												<button type="button" class="minus">감소</button>
+											</em>						
+										</div>
+								</td>
+						</tr>
+						<tr>
+								<td>
+									<span data-form="checkbox">
+										<input type="checkbox" id="setbook_tit4">
+										<label for="setbook_tit4">선택</label>
+									</span>
+								</td>
+								<td>
+									<a href="#">
+										한	권으로 완성하는 수학 2018-미적분2 (지수로그함수/삼각함수/극한)미적분2 (지수로그함수/삼각함수/극한)미적분2 (지수로그함수/삼각함수/극한)
+									</a>
+								</td>
+								<td class="summary">
+										<em>14000원</em>
+										<strong>12,600원</strong>
+								</td>
+								<td>
+										<div data-form="amount" class="type1">
+											<input id="am_1" value="1" min="1" max="99" type="number">
+											<em>
+												<button type="button" class="plus">증가</button>
+												<button type="button" class="minus">감소</button>
+											</em>						
+										</div>
+								</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn_wrap5 m_b30">
+				<button type="button" data-btn="navy" data-popup="sample" id="purchase">바로구매</button>
+				<button type="button" data-btn="whitegray" class="m_l10">장바구니</button>
+			</div>
+			<!--20180313 소스추가 E-->
+			<div data-tab="type2" class="m_b50">
+				<button type="button" class="on">책소개</button>
+				<button type="button">저자소개</button>
+				<button type="button">목차</button>
+				<button type="button">서평</button>
+				<button type="button">부가자료</button>
+				<button type="button">교재문의</button>
+			</div>
+			<dl data-toggle="type2">
+				<dt>책소개</dt>
+				<dd>
+					<p>
+						최고의 수능 수학 대비 교재<br>
+						첫째로 Critical Point를 통해서 수능 수학에서 가장 중요 한 개념을 설명합니다. 그 이후 기본 예제, 수능 기출, 평가 원 기출<br>
+						을 통해 기출에 Critical Point를 스스로 적용해볼 수 있고, 그 포인트를 연습할 수 있는 새로운 문제가 있습니다. 둘째로 특<br>
+						강을 통해서 수능 문제에 나올 만한 내용을 배우고, 수능 문제를 빠르게 해결할 수 있는 스킬에 대한 것을 배웁니다. 또한 그<br>
+						스킬을 적용할 수 있는 기출과 새로운 문제가 있습니다. 셋째로 스킬을 암기하도록 하지 않고, 스킬을 교과서의 내용으로 유<br>
+						도하면서 수학을 제대로 공부 할 수 있도록 내용이 구성되어 있습니다.<br>
+						최고의 수능 수학 대비 교재<br>
+						첫째로 Critical Point를 통해서 수능 수학에서 가장 중요 한 개념을 설명합니다. 그 이후 기본 예제, 수능 기출, 평가 원 기출<br>
+						을 통해 기출에 Critical Point를 스스로 적용해볼 수 있고, 그 포인트를 연습할 수 있는 새로운 문제가 있습니다. 둘째로 특<br>
+						강을 통해서 수능 문제에 나올 만한 내용을 배우고, 수능 문제를 빠르게 해결할 수 있는 스킬에 대한 것을 배웁니다. 또한 그<br>
+						스킬을 적용할 수 있는 기출과 새로운 문제가 있습니다. 셋째로 스킬을 암기하도록 하지 않고, 스킬을 교과서의 내용으로 유<br>
+						도하면서 수학을 제대로 공부 할 수 있도록 내용이 구성되어 있습니다.<br>
+					</p>
+					<button type="button" class="box_size">펼쳐보기</button>
+				</dd>
+				<dt>저자소개</dt>
+				<dd>
+					<p>
+						저자 이해원<br>
+						연세대학교 수학과 재학 중.<br>
+						그는 고3 시절 공부를 썩 잘하지 못해 지방대에 입학했었다. 1년 정도 대학교에서 공부를 했지만, 적성에 맞지 않아 다시 수<br>
+						능 공부를 시작하게 된다. 재수를 하면서 수능 수학과 수리논술의 정확한 공부법을 깨닫고, 평가원 모의고사, 수능에서 수학<br>
+						100점을 받는다. 또한 수능과 논술을 모두 반영하는 복잡한 입시에서 연고대를 총 4번 합격하는 등 계속해서 대학교에 합
+						<br>
+						격하기 시작한다. 정시, 수시 등 다양하고 복잡한 입시에 휘둘리는 수험생들이 모든 것을 한 번에 대비할 수 있는 책이 되기<br>
+						를 바라면서 자신이 깨달은 [수능 수학/수리논술]에 대한 모든 것을 책에 담아 <한권으로 완성하는 수학>, <이해원 모의고<br>
+						사> 시리즈를 출간하기에 이른다.
+						<br>
+					</p>
+					<button type="button" class="box_size">펼쳐보기</button>
+				</dd>
+				<dt>목차</dt>
+				<dd>
+					<p>
+						저자 이해원<br>
+						연세대학교 수학과 재학 중.<br>
+						그는 고3 시절 공부를 썩 잘하지 못해 지방대에 입학했었다. 1년 정도 대학교에서 공부를 했지만, 적성에 맞지 않아 다시 수<br>
+						능 공부를 시작하게 된다. 재수를 하면서 수능 수학과 수리논술의 정확한 공부법을 깨닫고, 평가원 모의고사, 수능에서 수학<br>
+						100점을 받는다. 또한 수능과 논술을 모두 반영하는 복잡한 입시에서 연고대를 총 4번 합격하는 등 계속해서 대학교에 합
+						<br>
+						격하기 시작한다. 정시, 수시 등 다양하고 복잡한 입시에 휘둘리는 수험생들이 모든 것을 한 번에 대비할 수 있는 책이 되기<br>
+						를 바라면서 자신이 깨달은 [수능 수학/수리논술]에 대한 모든 것을 책에 담아 <한권으로 완성하는 수학>, <이해원 모의고<br>
+						사> 시리즈를 출간하기에 이른다.
+						<br>
+					</p>
+				</dd>
+				<dt>서평</dt>
+				<dd>
+					<p>
+						저자 이해원<br>
+						연세대학교 수학과 재학 중.<br>
+						그는 고3 시절 공부를 썩 잘하지 못해 지방대에 입학했었다. 1년 정도 대학교에서 공부를 했지만, 적성에 맞지 않아 다시 수<br>
+						능 공부를 시작하게 된다. 재수를 하면서 수능 수학과 수리논술의 정확한 공부법을 깨닫고, 평가원 모의고사, 수능에서 수학<br>
+						100점을 받는다. 또한 수능과 논술을 모두 반영하는 복잡한 입시에서 연고대를 총 4번 합격하는 등 계속해서 대학교에 합
+						<br>
+						격하기 시작한다. 정시, 수시 등 다양하고 복잡한 입시에 휘둘리는 수험생들이 모든 것을 한 번에 대비할 수 있는 책이 되기<br>
+						를 바라면서 자신이 깨달은 [수능 수학/수리논술]에 대한 모든 것을 책에 담아 <한권으로 완성하는 수학>, <이해원 모의고<br>
+						사> 시리즈를 출간하기에 이른다.
+						<br>
+					</p>
+				</dd>
+			</dl>
+			<h3 data-title="type2" class="m_b20">부가자료</h3>
+			<div data-table="type1" class="m_b50">
+				<table>
+					<caption>부가자료</caption>
+					<colgroup>
+						<col>
+						<col style="width:50%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">구분</th>
+							<th scope="col">퍄일다운로드</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>[2018 한완수] 정오표 (2017.02.27)</td>
+							<td>
+								<button type="button" data-btn="file" class="pdf">
+									<span class="hidden">pdf 첨부파일</span>
+								</button>
+								<button type="button" data-btn="file" class="hwp">
+									<span class="hidden">hwp 첨부파일</span>
+								</button>
+								<button type="button" data-btn="file" class="word">
+									<span class="hidden">word 첨부파일</span>
+								</button>
+								<button type="button" data-btn="file" class="zip">
+									<span class="hidden">zip 첨부파일</span>
+								</button>
+							</td>
+							</td>
+						</tr>
+						<tr>
+							<td>[2018 한완수] 정오표 (2017.02.27)</td>
+							<td>
+								<button type="button" data-btn="file" class="pdf">
+									<span class="hidden">pdf 첨부파일</span>
+								</button>
+								<button type="button" data-btn="file" class="hwp">
+									<span class="hidden">hwp 첨부파일</span>
+								</button>
+								<button type="button" data-btn="file" class="word">
+									<span class="hidden">word 첨부파일</span>
+								</button>
+								<button type="button" data-btn="file" class="zip">
+									<span class="hidden">zip 첨부파일</span>
+								</button>
+							</td>
+							</td>
+						</tr>
+						<tr>
+							<td>[2018 한완수] 정오표 (2017.02.27)</td>
+							<td>
+								<button type="button" data-btn="file" class="pdf">
+									<span class="hidden">pdf 첨부파일</span>
+								</button>
+								<button type="button" data-btn="file" class="hwp">
+									<span class="hidden">hwp 첨부파일</span>
+								</button>
+								<button type="button" data-btn="file" class="word">
+									<span class="hidden">word 첨부파일</span>
+								</button>
+								<button type="button" data-btn="file" class="zip">
+									<span class="hidden">zip 첨부파일</span>
+								</button>
+							</td>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<h3 data-title="type2" class="m_b20">교재문의</h3>
+			<div data-detail="type1" class="books_reply">
+				<p class="info">
+					교재 내용 관련 문의만 작성해주세요! <span>(배송/결제/다운로드 오류 관련 문의는 고객센터에서 가능합니다)</span>
+					<a href="#">바로가기 &gt;</a>
+					<span class="d_block">(도서 내용 관련 문의는 접수가 어려운 점 양해 부탁드립니다.)</span>
+				</p>
+				<form class="enter_reply">
+					<fieldset>
+						<span data-form="textarea" class="type6">
+							<textarea placeholder="관련 성 없는 글이나 광고 및 욕설, 비속어나 타인을 비방하는 문구를 사용하시면 비공개 될 수 있습니다."></textarea>
+						</span>
+						<button type="button" data-btn="navy">등록</button>
+					</fieldset>
+					
+					<!-- <fieldset class="admin_name">
+						<label for="admin_name">이름(아이디)</label>
+						<span data-form="input">
+							<input type="text" id="admin_name">
+						</span>
+						<span data-form="checkbox" class="type4">
+							<input type="checkbox" id="che_1">
+							<label for="che_1">공지등록</label>
+						</span>
+					</fieldset> -->
+					
+				</form>
+				<div class="btn_box">
+					<span class="total_reply">전체 댓글수 <em class="f_color3">43</em></span>
+					<a href="#" data-btn="whitegray" class="f_right">리스트</a>
+				</div>
+			</div>
+			<div data-detail="type2" class="book_type">
+				<div data-box="reply" class="no_reply">
+					등록된 댓글이 없습니다.
+				</div>
+				<div data-box="reply" class="notice">
+					<p class="reply_title">
+						<span class="red">공지</span>
+						<span class="user_name">최시대</span>
+						<span class="write_date">2017-08-09 17:57</span>
+						<button type="button" class="reply_enter">답글</button>
+						<!-- <button type="button" class="reply_cancel">답글취소</button> -->
+						<!-- <button type="button" class="reply_report">신고</button> -->
+						<button type="button" class="reply_del">삭제</button>
+					</p>
+					<p class="reply_text">
+						댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 
+					</p>
+				</div>
+				<div data-box="reply">
+					<p class="reply_title">
+						<span class="black">비구매</span>
+						<span class="user_name">가나다</span>
+						<span class="write_date">2017-08-09 17:57</span>
+						<!-- <button type="button" class="reply_enter">답글</button> -->
+						<button type="button" class="reply_cancel">답글취소</button>
+						<button type="button" class="reply_report">신고</button>
+						<!-- <button type="button" class="reply_del">삭제</button> -->
+					</p>
+					<p class="reply_text">
+						댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 
+						<button type="button" class="reply_show">댓글 3</button>
+					</p>
+				</div>
+				<div class="hide_reply">
+					<form class="enter_reply">
+						<fieldset>
+							<span data-form="textarea" class="type1">
+								<textarea placeholder="로그인 후 댓글을 작성 할 수 있습니다."></textarea>
+							</span>
+							<button type="button" data-btn="navy">등록</button>
+						</fieldset>
+						<fieldset class="admin_name">
+							<label for="admin_name">이름(아이디)</label>
+							<span data-form="input">
+								<input type="text" id="admin_name">
+							</span>
+							<!-- <span data-form="checkbox" class="type4">
+								<input type="checkbox" id="che_2">
+								<label for="che_2">공지등록</label>
+							</span> -->
+						</fieldset>	
+					</form>
+					<div data-box="reply" class="type1 blue_alret">
+						<p class="reply_title">
+							<span class="user_name">최시대</span>
+							<span class="write_date">2017-08-09 17:57</span>
+							<!-- <button type="button" class="reply_report">신고</button> -->
+							<button type="button" class="reply_del">삭제</button>
+						</p>
+						<p class="reply_text">
+							댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 
+						</p>
+					</div>
+					<div data-box="reply" class="type1">
+						<p class="reply_title">
+							<span class="user_name">어인재</span>
+							<span class="write_date">2017-08-09 17:57</span>
+							<button type="button" class="reply_report">신고</button>
+							<!-- <button type="button" class="reply_del">삭제</button> -->
+						</p>
+						<p class="reply_text">
+							댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 
+						</p>
+					</div>
+				</div>
+				
+				<div data-box="reply">
+					<p class="reply_title">
+						<span class="black">구매</span>
+						<span class="user_name">김시재</span>
+						<span class="write_date">2017-08-09 17:57</span>
+						<button type="button" class="reply_enter">답글</button>
+						<!-- <button type="button" class="reply_cancel">답글취소</button> -->
+						<button type="button" class="reply_report">신고</button>
+						<!-- <button type="button" class="reply_del">삭제</button> -->
+					</p>
+					<p class="reply_text">
+						댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글
+						<button type="button" class="reply_show">댓글 3</button>
+					</p>
+				</div>
+
+				<div class="hide_reply">
+					<form class="enter_reply">
+						<fieldset>
+							<span data-form="textarea" class="type1">
+								<textarea placeholder="로그인 후 댓글을 작성 할 수 있습니다."></textarea>
+							</span>
+							<button type="button" data-btn="navy">등록</button>
+						</fieldset>
+						<fieldset class="admin_name">
+							<label for="admin_name">이름(아이디)</label>
+							<span data-form="input">
+								<input type="text" id="admin_name">
+							</span>
+							<!-- <span data-form="checkbox" class="type4">
+								<input type="checkbox" id="che_3">
+								<label for="che_3">공지등록</label>
+							</span> -->
+						</fieldset>	
+					</form>
+					<div data-box="reply" class="type1 blue_alret">
+						<p class="reply_title">
+							<span class="user_name">최시대</span>
+							<span class="write_date">2017-08-09 17:57</span>
+							<!-- <button type="button" class="reply_report">신고</button> -->
+							<button type="button" class="reply_del">삭제</button>
+						</p>
+						<p class="reply_text">
+							댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 
+						</p>
+					</div>
+					<div data-box="reply" class="type1">
+						<p class="reply_title">
+							<span class="user_name">어인재</span>
+							<span class="write_date">2017-08-09 17:57</span>
+							<button type="button" class="reply_report">신고</button>
+							<!-- <button type="button" class="reply_del">삭제</button> -->
+						</p>
+						<p class="reply_text">
+							댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 댓글댓글댓글 
+						</p>
+					</div>
+				</div>
+			</div>
+			<div data-form="page">
+				<button type="button" class="page_first">처음으로</button>
+				<button type="button" class="page_prev">이전</button>
+				<button type="button">1</button>
+				<button type="button">2</button>
+				<button type="button">3</button>
+				<span>4</span>
+				<button type="button">5</button>
+				<button type="button">6</button>
+				<button type="button">7</button>
+				<button type="button">8</button>
+				<button type="button">9</button>
+				<button type="button">10</button>
+				<button type="button" class="page_next">다음</button>
+				<button type="button" class="page_last">마지막으로</button>
+			</div>
+		</div>
+	</div>
+	<ul class="book_rankfix">
+		<li><a href="#">BEST</a></li>
+		<li><a href="#">국어</a></li>
+		<li><a href="#">수학</a></li>
+		<li><a href="#">영어</a></li>
+		<li><a href="#">사회</a></li>
+		<li><a href="#">과학</a></li>
+		<li><a href="#">기타</a></li>
+		<li><a href="#">패키지</a></li>
+	</ul>
+</div>
+<!--20180223 코드 수정 S-->
+<div data-popup="type1" class="target1">
+	<span class="bg"></span>
+	<div class="zoom_box">
+		<button type="button" class="close">닫기</button>
+		이미지 노출 영역
+	</div>
+</div>
+<!--20180223 코드 수정 E-->
+<!-- 2017-10-18 마크업 추가 S -->
+<div data-popup="type1" class="purchase">
+	<div class="pop_wrap">
+		<p class="pop_title">
+			바로 구매하기
+			<button type="button" class="close"><span class="hidden">닫기</span></button>
+		</p>
+		<div data-box="pop_content">
+			<div class="btn_wrap">
+				<button type="button" data-btn="navy">회원주문</button>
+				<button type="button" data-btn="whitegray" class="m_l10">비회원주문</button>
+			</div>
+		</div>
+	</div>
+	<button class="dim"></button>
+</div>
+<!-- 2017-10-18 마크업 추가 E -->
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

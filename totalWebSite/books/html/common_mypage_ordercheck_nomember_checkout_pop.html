@@ -1,0 +1,81 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/common_login_registstep2_schoolpopup.html
+* @ 페이지설명	: 공통 > 로그인,회원가입 > 정보입력 > 학교검색팝업
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-25
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>로그인</title><!-- 170601 타이틀 수정 -->
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<style type="text/css">
+</style>
+</head>
+<body data-depth1="common" data-depth2="mypage" data-depth3="ordercheck" data-depth4="nomember" data-depth5="checkout" data-depth6="pop">
+<div data-popup="pop" class="type1">
+	<div class="pop_wrap">
+		<div data-layout="type2">
+			<h3 data-title="type2">
+				[비회원 주문조회] 주문비밀번호 찾기
+			</h3>
+			<form>
+				<fieldset>
+					<dl data-form="wrap">
+						<dt><label for="input1" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input1"></span></dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p>
+								<span data-form="select">
+									<select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size80">
+									<input type="text" title="휴대폰번호 가운데 네자리">
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size80">
+									<input type="text" title="휴대폰번호 뒤 네자리">
+								</span>
+								<button type="button" data-btn="whitegray" class="size110">인증번호받기</button>
+							</p>
+							<p class="field_info f_color14">* 주문 시 입력했던 핸드폰 번호를 입력해주세요.</p>
+						</dd>
+						<dt><label for="input2" class="field_name">인증번호</label></dt>
+						<dd>
+							<span data-form="input"><input type="text" id="input2"></span>
+							<button type="button" data-btn="whitegray" class="size100">확인</button>
+							<span class="timer"><em>인증번호 입력 남은시간</em>3:00</span>
+						</dd>
+					</dl>
+					<div class="btn_wrap">
+						<button type="button" data-btn="navy" class="size180">주문 비밀번호 확인</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+</body>

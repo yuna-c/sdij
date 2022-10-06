@@ -1,0 +1,1533 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/on_univr&d_grade_analysis.html
+* @ 페이지설명	: 온 > 입시정보R&D > 재원생성적표 > 인증
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-11
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>입시정보R&D > 재원생성적표 > 인증</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/on.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="on" data-depth2="univr&d" data-depth3="grade" data-depth4="certification">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재ON &gt;</span>
+		<span>입시정보 &gt;</span>
+		<span>재원생 성적표</span>
+	</div>
+	<div id="content">
+		
+		<h2 data-title="type1">재원생 성적표</h2>
+		<div data-layout="type1">
+			 <!-- <h2 data-title="type5" class="t_center m_b25">수학 서바이벌</h2> 1개만 구매시 노출-->
+			<div data-tab="type1" class="m_b60">
+				<a href="#" class="on">수학 서바이벌</a>
+				<a href="#">생명과학 I 서바이벌</a>
+				<a href="#">화학 II 서바이벌</a>
+			</div>
+			<h3 data-title="type5" class="t_center m_b30">
+				<strong class="f_color5">홍길동님의 9회</strong> 성적분석표
+				<span data-form="select" class="type11">
+					<select>
+						<option>1회</option>
+						<option>2회</option>
+						<option>3회</option>
+						<option>4회</option>
+						<option>5회</option>
+					</select>
+				</span>
+			</h3>
+
+			<div data-box="score">
+				<button type="button">프린트</button>
+				<!-- 2017-10-16 마크업 수정 S -->
+				<p>
+					<span><em>점수</em><strong>92</strong>점</span>
+					<span><em>등급</em><strong>2</strong>이하</span>
+					<span><em>백분위</em><strong>92</strong>미만</span>
+				</p>
+				<!-- 2017-10-16 마크업 수정 E -->
+				<ul>
+					<li><span>1등급컷 96점</span></li>
+					<li>내등급</li>
+					<li>2등급컷 88점</li>
+				</ul>
+			</div>
+			
+			<div id="chart_div" data-form="combochart"></div>
+			<div id="chart_div2" data-form="combochart"></div>
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			<script type="text/javascript">
+				google.charts.load('current', {'packages':['corechart']});
+				google.charts.setOnLoadCallback(drawVisualization);
+
+				function drawVisualization() {
+				// Some raw data (not necessarily accurate)
+				var data = google.visualization.arrayToDataTable([
+				 ['횟수', '온라인 상위 50% 평균','본인 점수'],
+				 ['1회', 50, 80],
+				 ['2회', 60, 70,],
+				 ['3회', 70, 90],
+				 ['4회', 80, 70],
+				 ['5회', 90, 80],
+				 ['6회', 100, 90]
+				]);
+
+				var options = {
+				seriesType: 'bars',
+				chartArea:{left:30,top:50,width:'100%',height:'80%'},
+				backgroundColor:'none',
+				bar: {
+						groupWidth: '14',
+						stroke:'#000',
+					},
+				candlestick:{
+					fallingColor :{
+						fill : '#000'
+					},
+				},
+				colors:['#828282','#348ee3'],
+				lineWidth: 0,
+				// legend: {position:'top'},
+				legend:{
+						position:'top', 
+						alignment: 'center',
+						textStyle: {
+							color: '#a0a0a0', 
+							fontSize: 12
+							},
+						background:'#000',
+						},
+				vAxis:{
+					minValue: 40,
+					textStyle: {
+						color: '#a0a0a0',
+						size:'14',
+						}
+					},
+				hAxis:{
+					minValue: 40,
+					textStyle: {
+						color: '#323232',
+						size:'14',
+						fontName:'neob',
+						}
+					},
+				series: {1: {type: 'line',pointShape:'circle'}},
+				pointSize:17,/* pointsize 수정 */
+				};
+
+				var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+				chart.draw(data, options);
+				}
+
+				function drawVisualization() {
+				// Some raw data (not necessarily accurate)
+				var data = google.visualization.arrayToDataTable([
+				 ['횟수', '온라인 상위 50% 평균','본인 점수'],
+				 ['1회', 50, 80],
+				 ['2회', 60, 70,],
+				 ['3회', 70, 90],
+				 ['4회', 80, 70],
+				 ['5회', 90, 80],
+				 ['6회', 100, 90]
+				]);
+
+				var options = {
+				seriesType: 'bars',
+				chartArea:{left:30,top:50,width:'100%',height:'80%'},
+				backgroundColor:'none',
+				bar: {
+						groupWidth: '14',
+						stroke:'#000',
+					},
+				candlestick:{
+					fallingColor :{
+						fill : '#000'
+					},
+				},
+				colors:['#828282','#348ee3'],
+				lineWidth: 0,
+				// legend: {position:'top'},
+				legend:{
+						position:'top', 
+						alignment: 'center',
+						textStyle: {
+							color: '#a0a0a0', 
+							fontSize: 12
+							},
+						background:'#000',
+						},
+				vAxis:{
+					minValue: 40,
+					textStyle: {
+						color: '#a0a0a0',
+						size:'14',
+						}
+					},
+				hAxis:{
+					minValue: 40,
+					textStyle: {
+						color: '#323232',
+						size:'14',
+						fontName:'neob',
+						}
+					},
+				series: {1: {type: 'line',pointShape:'circle'}},
+				pointSize:17,/* pointsize 수정 */
+				};
+
+				var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+				chart.draw(data, options);
+				}
+			</script>
+			<script type="text/javascript">
+				google.charts.load('current', {'packages':['corechart']});
+				google.charts.setOnLoadCallback(drawVisualization);
+
+				function drawVisualization() {
+				// Some raw data (not necessarily accurate)
+				var data = google.visualization.arrayToDataTable([
+				 ['횟수', '온라인 상위 50% 평균','본인 점수'],
+				 ['1회', 50, 80],
+				 ['2회', 60, 70,],
+				 ['3회', 70, 90],
+				 ['4회', 80, 70],
+				 ['5회', 90, 80],
+				 ['6회', 100, 90]
+				]);
+
+				var options = {
+				seriesType: 'bars',
+				chartArea:{left:30,top:50,width:'100%',height:'80%'},
+				backgroundColor:'none',
+				bar: {
+						groupWidth: '14',
+						stroke:'#000',
+					},
+				candlestick:{
+					fallingColor :{
+						fill : '#000'
+					},
+				},
+				colors:['#828282','#348ee3'],
+				lineWidth: 0,
+				// legend: {position:'top'},
+				legend:{
+						position:'top', 
+						alignment: 'center',
+						textStyle: {
+							color: '#a0a0a0', 
+							fontSize: 12
+							},
+						background:'#000',
+						},
+				vAxis:{
+					minValue: 40,
+					textStyle: {
+						color: '#a0a0a0',
+						size:'14',
+						}
+					},
+				hAxis:{
+					minValue: 40,
+					textStyle: {
+						color: '#323232',
+						size:'14',
+						fontName:'neob',
+						}
+					},
+				series: {1: {type: 'line',pointShape:'circle'}},
+				pointSize:17,/* pointsize 수정 */
+				};
+
+				var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+				chart.draw(data, options);
+				}
+				
+				function drawVisualization() {
+				// Some raw data (not necessarily accurate)
+				var data = google.visualization.arrayToDataTable([
+				 ['횟수', '온라인 상위 50% 평균','본인 점수'],
+				 ['1회', 50, 80],
+				 ['2회', 60, 70,],
+				 ['3회', 70, 90],
+				 ['4회', 80, 70],
+				 ['5회', 90, 80],
+				 ['6회', 100, 90]
+				]);
+
+				var options = {
+				seriesType: 'bars',
+				chartArea:{left:30,top:50,width:'100%',height:'80%'},
+				backgroundColor:'none',
+				bar: {
+						groupWidth: '14',
+						stroke:'#000',
+					},
+				candlestick:{
+					fallingColor :{
+						fill : '#000'
+					},
+				},
+				colors:['#828282','#348ee3'],
+				lineWidth: 0,
+				// legend: {position:'top'},
+				legend:{
+						position:'top', 
+						alignment: 'center',
+						textStyle: {
+							color: '#a0a0a0', 
+							fontSize: 12
+							},
+						background:'#000',
+						},
+				vAxis:{
+					minValue: 40,
+					textStyle: {
+						color: '#a0a0a0',
+						size:'14',
+						}
+					},
+				hAxis:{
+					minValue: 40,
+					textStyle: {
+						color: '#323232',
+						size:'14',
+						fontName:'neob',
+						}
+					},
+				series: {1: {type: 'line',pointShape:'circle'}},
+				pointSize:17,/* pointsize 수정 */
+				};
+
+				var chart = new google.visualization.ComboChart(document.getElementById('chart_div2'));
+				chart.draw(data, options);
+				}
+			</script>
+			<h3 data-title="type3">전 회차 본인 점수 전체 분석</h3>
+			<div data-table="type6" class="m_b20">
+				<table>
+					<colgroup>
+						<col>
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">응시회차</th>
+							<th scope="col">1회<em>2017<br>09-11</em></th>
+							<th scope="col">2회<em>2017<br>09-11</em></th>
+							<th scope="col">3회<em>2017<br>09-11</em></th>
+							<th scope="col">4회<em>2017<br>09-11</em></th>
+							<th scope="col">5회<em>2017<br>09-11</em></th>
+							<th scope="col">6회<em>2017<br>09-11</em></th>
+							<th scope="col">7회</th>
+							<th scope="col">8회</th>
+							<th scope="col">9회</th>
+							<th scope="col">10회</th>
+							<th scope="col">11회</th>
+							<th scope="col">12회</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- <tr>
+							<th scope="row">최종 응시일자</th>
+							<td>2017-06-07</td>
+							<td>2017-06-07</td>
+							<td>2017-06-07</td>
+							<td>2017-06-07</td>
+							<td>2017-06-07</td>
+							<td>2017-06-07</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr> -->
+						<tr class="on">
+							<th scope="row">본인 원점수</th>
+							<td>92점</td>
+							<td>92점</td>
+							<td>92점</td>
+							<td>92점</td>
+							<td>92점</td>
+							<td>92점</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+						</tr>
+						<tr>
+							<th scope="row">온라인 상위 50% 평균</th>
+							<td>86점</td>
+							<td>86점</td>
+							<td>86점</td>
+							<td>86점</td>
+							<td>86점</td>
+							<td>86점</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">최고점</th>
+							<td>99점</td>
+							<td>99점</td>
+							<td>99점</td>
+							<td>99점</td>
+							<td>99점</td>
+							<td>99점</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr class="on">
+							<th scope="row">등급</th>
+							<td>2등급	</td>
+							<td>2등급</td>
+							<td>2등급</td>
+							<td>2등급</td>
+							<td>2등급</td>
+							<td>2등급</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+						</tr>
+						<tr class="on">
+							<th scope="row">예상 백분위</th>
+							<td>93</td>
+							<td>93</td>
+							<td>93</td>
+							<td>93</td>
+							<td>93</td>
+							<td>93</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div data-table="type6">
+				<table>
+					<colgroup>
+						<col>
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+						<col style="width:50px">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">응시회차</th>
+							<th scope="col">1회<em>2017<br>09-11</em></th>
+							<th scope="col">2회<em>2017<br>09-11</em></th>
+							<th scope="col">3회<em>2017<br>09-11</em></th>
+							<th scope="col">4회<em>2017<br>09-11</em></th>
+							<th scope="col">5회<em>2017<br>09-11</em></th>
+							<th scope="col">6회<em>2017<br>09-11</em></th>
+							<th scope="col">7회</th>
+							<th scope="col">8회</th>
+							<th scope="col">9회</th>
+							<th scope="col">10회</th>
+							<th scope="col">11회</th>
+							<th scope="col">12회</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- <tr>
+							<th scope="row">최종 응시일자</th>
+							<td>2017-06-07</td>
+							<td>2017-06-07</td>
+							<td>2017-06-07</td>
+							<td>2017-06-07</td>
+							<td>2017-06-07</td>
+							<td>2017-06-07</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr> -->
+						<tr class="on">
+							<th scope="row">본인 원점수</th>
+							<td>92점</td>
+							<td>92점</td>
+							<td>92점</td>
+							<td>92점</td>
+							<td>92점</td>
+							<td>92점</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+						</tr>
+						<tr>
+							<th scope="row">온라인 상위 50% 평균</th>
+							<td>86점</td>
+							<td>86점</td>
+							<td>86점</td>
+							<td>86점</td>
+							<td>86점</td>
+							<td>86점</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">최고점</th>
+							<td>99점</td>
+							<td>99점</td>
+							<td>99점</td>
+							<td>99점</td>
+							<td>99점</td>
+							<td>99점</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr class="on">
+							<th scope="row">등급</th>
+							<td>2등급	</td>
+							<td>2등급</td>
+							<td>2등급</td>
+							<td>2등급</td>
+							<td>2등급</td>
+							<td>2등급</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+						</tr>
+						<tr class="on">
+							<th scope="row">예상 백분위</th>
+							<td>93</td>
+							<td>93</td>
+							<td>93</td>
+							<td>93</td>
+							<td>93</td>
+							<td>93</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+							<td class="null">-</td>
+						</tr>
+					</tbody>
+				</table>
+				<span class="f_color2">※ 응시 이력이 없는 회차의 경우 하이픈(-)으로 노출됩니다.</span>
+			</div>
+
+			<h3 data-title="type3"><span class="f_color5">#회</span> 전체 응시자 오답률 Best 5</h3>
+			<div data-table="type1" class="small">
+				<table>
+					<colgroup>
+						<col>
+						<col style="width:150px">
+						<col style="width:150px">
+						<col style="width:150px">
+						<col style="width:150px">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">순위</th>
+							<th scope="col">문항번호</th>
+							<th scope="col">오답률</th>
+							<th scope="col">단원</th>
+							<th scope="col">나의 정오</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1위</td>
+							<td>5</td>
+							<td>96%</td>
+							<td>수열</td>
+							<td class="f_color3">X</td>
+						</tr>
+						<tr>
+							<td>2위</td>
+							<td>13</td>
+							<td>95%</td>
+							<td>수열</td>
+							<td class="f_color3">X</td>
+						</tr>
+						<tr>
+							<td>3위</td>
+							<td>18</td>
+							<td>95%</td>
+							<td>수열</td>
+							<td>○</td>
+						</tr>
+						<tr>
+							<td>4위</td>
+							<td>21</td>
+							<td>95%</td>
+							<td>수열</td>
+							<td class="f_color3">X</td>
+						</tr>
+						<tr>
+							<td>5위</td>
+							<td>26</td>
+							<td>95%</td>
+							<td>수열</td>
+							<td>○</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				
+			<h3 data-title="type3"><span class="f_color5">#회</span> 전체 문항 상세 분석</h3>
+			<div data-table="type1" class="small">
+				<table>
+					<colgroup>
+						<col style="width:50px;">
+						<col style="width:160px;">
+						<col>
+						<col>
+						<col>
+						<col style="width:80px;">
+						<col style="width:75px;">
+						<col style="width:75px;">
+						<col style="width:75px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">문항<br>번호</th>
+							<th scope="col" rowspan="2">단원</th>
+							<th scope="col" rowspan="2">정답률</th>
+							<th scope="col" rowspan="2">난이도</th>
+							<th scope="col" rowspan="2">채점결과</th>
+							<th scope="col" rowspan="2">가장 빈번한<br>오답</th>
+							<th scope="col" colspan="3">등급별 정답률</th>
+						</tr>
+						<tr>
+							<th scope="col">1등급</th>
+							<th scope="col">2등급</th>
+							<th scope="col">3등급이하</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>행렬</td>
+							<td>98%</td>
+							<td>A</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>수열</td>
+							<td>98%</td>
+							<td>B</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>공간도형</td>
+							<td>98%</td>
+							<td>C</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>행렬</td>
+							<td>98%</td>
+							<td>D</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr class="check">
+							<td>5</td>
+							<td>수열</td>
+							<td>98%</td>
+							<td>E</td>
+							<td class="f_color3">X</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>공간도형</td>
+							<td>98%</td>
+							<td>A</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>행렬</td>
+							<td>98%</td>
+							<td>B</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>수열</td>
+							<td>98%</td>
+							<td>C</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>공간도형</td>
+							<td>98%</td>
+							<td>D</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>행렬</td>
+							<td>98%</td>
+							<td>E</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>수열</td>
+							<td>98%</td>
+							<td>A</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>공간도형</td>
+							<td>98%</td>
+							<td>B</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr class="check">
+							<td>13</td>
+							<td>행렬</td>
+							<td>98%</td>
+							<td>C</td>
+							<td class="f_color3">X</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>수열</td>
+							<td>98%</td>
+							<td>D</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>공간도형</td>
+							<td>98%</td>
+							<td>E</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td>행렬</td>
+							<td>98%</td>
+							<td>A</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td>수열</td>
+							<td>98%</td>
+							<td>B</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr class="check">
+							<td>18</td>
+							<td>공간도형</td>
+							<td>98%</td>
+							<td>C</td>
+							<td class="f_color3">X</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td>행렬</td>
+							<td>98%</td>
+							<td>D</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td>수열</td>
+							<td>98%</td>
+							<td>E</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>21</td>
+							<td>공간도형</td>
+							<td>98%</td>
+							<td>A</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>22</td>
+							<td>행렬</td>
+							<td>98%</td>
+							<td>B</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr class="check">
+							<td>23</td>
+							<td>수열</td>
+							<td>98%</td>
+							<td>C</td>
+							<td class="f_color3">X</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>24</td>
+							<td>공간도형</td>
+							<td>98%</td>
+							<td>D</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>행렬</td>
+							<td>98%</td>
+							<td>E</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>26</td>
+							<td>수열</td>
+							<td>98%</td>
+							<td>A</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>27</td>
+							<td>공간도형</td>
+							<td>98%</td>
+							<td>B</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr class="check">
+							<td>28</td>
+							<td>행렬</td>
+							<td>98%</td>
+							<td>C</td>
+							<td class="f_color3">X</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>29</td>
+							<td>수열</td>
+							<td>98%</td>
+							<td>D</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+						<tr>
+							<td>30</td>
+							<td>공간도형</td>
+							<td>98%</td>
+							<td>E</td>
+							<td>○</td>
+							<td>③</td>
+							<td>98%</td>
+							<td>98%</td>
+							<td>98%</td>
+						</tr>
+					</tbody>
+					
+				</table>
+				<span class="f_color3">※ 난이도는 A가 가장 어렵고 E가 가장 쉬운 문항을 의미합니다.</span>
+			</div>
+			<h3 data-title="type3"><span class="f_color5">#회</span> 단원별 상세 분석</h3>
+			<div data-table="type1" class="small">
+				<table>
+					<colgroup>
+						<col style="width:60px">
+						<col>
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:105px">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2" colspan="2">평가요소</th>
+							<th scope="col" rowspan="2">배점</th>
+							<th scope="col" rowspan="2" class="my_score">본인득점</th>
+							<th scope="col" colspan="4">응시자 평균 득점</th>
+							<th scope="col" rowspan="2">문항번호</th>
+						</tr>
+						<tr>
+							<th scope="col">1%</th>
+							<th scope="col">1등급</th>
+							<th scope="col">2등급</th>
+							<th scope="col">3등급이하</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="4">수 I</td>
+							<td>행렬</td>
+							<td>4</td>
+							<td class="my_score">4</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.9</td>
+							<td>5.3</td>
+							<td>1,19</td>
+						</tr>
+						<tr>
+							<td>지수/로그</td>
+							<td>3</td>
+							<td class="my_score">3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>수열</td>
+							<td>7</td>
+							<td class="my_score">2</td>
+							<td>7</td>
+							<td>6.7</td>
+							<td>6.6</td>
+							<td>6.1</td>
+							<td>5,16</td>
+						</tr>
+						<tr>
+							<td>수열의극한</td>
+							<td>6</td>
+							<td class="my_score">2</td>
+							<td>6</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.7</td>
+							<td>2,18</td>
+						</tr>
+						<tr class="summary">
+							<td colspan="2">합계</td>
+							<td>22</td>
+							<td class="my_score">11</td>
+							<td>22</td>
+							<td>21</td>
+							<td>21</td>
+							<td>20</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td rowspan="4">수 II</td>
+							<td>방정식/부동식</td>
+							<td>4</td>
+							<td class="my_score">4</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.9</td>
+							<td>5.3</td>
+							<td>1,19</td>
+						</tr>
+						<tr>
+							<td>삼각함수</td>
+							<td>3</td>
+							<td class="my_score">3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>함수의 극한</td>
+							<td>7</td>
+							<td class="my_score">2</td>
+							<td>7</td>
+							<td>6.7</td>
+							<td>6.6</td>
+							<td>6.1</td>
+							<td>5,16</td>
+						</tr>
+						<tr>
+							<td>미분</td>
+							<td>6</td>
+							<td class="my_score">2</td>
+							<td>6</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.7</td>
+							<td>2,18</td>
+						</tr>
+						<tr class="summary">
+							<td colspan="2">합계</td>
+							<td>22</td>
+							<td class="my_score">11</td>
+							<td>22</td>
+							<td>21</td>
+							<td>21</td>
+							<td>20</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td rowspan="4">적분과<br>통계</td>
+							<td>적분</td>
+							<td>4</td>
+							<td class="my_score">4</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.9</td>
+							<td>5.3</td>
+							<td>1,19</td>
+						</tr>
+						<tr>
+							<td>경우의 수</td>
+							<td>3</td>
+							<td class="my_score">3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>확률</td>
+							<td>7</td>
+							<td class="my_score">2</td>
+							<td>7</td>
+							<td>6.7</td>
+							<td>6.6</td>
+							<td>6.1</td>
+							<td>5,16</td>
+						</tr>
+						<tr>
+							<td>통계</td>
+							<td>6</td>
+							<td class="my_score">2</td>
+							<td>6</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.7</td>
+							<td>2,18</td>
+						</tr>
+						<tr class="summary">
+							<td colspan="2">합계</td>
+							<td>22</td>
+							<td class="my_score">11</td>
+							<td>22</td>
+							<td>21</td>
+							<td>21</td>
+							<td>20</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<h3 data-title="type3"><span class="f_color5">#회</span> 난이도별 상세 분석</h3>
+			<div data-table="type1" class="small m_b85">
+				<table>
+					<colgroup>
+						<col>
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:135px">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">난이도</th>
+							<th scope="col" rowspan="2">배점</th>
+							<th scope="col" rowspan="2" class="my_score">본인득점</th>
+							<th scope="col" colspan="4">응시자 평균 득점</th>
+							<th scope="col" rowspan="2">문항번호</th>
+						</tr>
+						<tr>
+							<th scope="col">1%</th>
+							<th scope="col">1등급</th>
+							<th scope="col">2등급</th>
+							<th scope="col">3등급이하</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="f_bold">2/3점 문항</td>
+							<td>14</td>
+							<td class="my_score">4</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.9</td>
+							<td>5.3</td>
+							<td>1, 4, 6, 8</td>
+						</tr>
+						<tr>
+							<td class="f_bold">4점 일반문항</td>
+							<td>16</td>
+							<td class="my_score">3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>9, 20, 22, 25, 28, 30, 35, 38, 40</td>
+						</tr>
+						<tr>
+							<td class="f_bold">시대인재 킬러문항</td>
+							<td>70</td>
+							<td class="my_score">2</td>
+							<td>7</td>
+							<td>6.7</td>
+							<td>6.6</td>
+							<td>6.1</td>
+							<td>5,16</td>
+						</tr>
+						<tr class="summary">
+							<td>합계</td>
+							<td>100</td>
+							<td class="my_score">11</td>
+							<td>22</td>
+							<td>21</td>
+							<td>21</td>
+							<td>20</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 data-title="type8"><span>응시 전 회차 테마별 누적 분석</span></h3>
+			<p class="field_info m_b40">※ 지금까지 응시한 모든 시험의 누적 통계 분석입니다.</p>
+			<h4 data-title="type3">테마별 누적 상세 분석</h4>
+			<div data-table="type1" class="small">
+				<table>
+					<colgroup>
+						<col>
+						<col>
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+					</colgroup>
+					<thead>
+						<tr class="type1">
+							<th scope="col" rowspan="2" colspan="2">평가요소</th>
+							<th scope="col" rowspan="2">배점</th>
+							<th scope="col" rowspan="2" class="my_score">본인득점</th>
+							<th scope="col" colspan="4">응시자 평균 득점</th>
+						</tr>
+						<tr class="type1">
+							<th scope="col">1%</th>
+							<th scope="col">1등급</th>
+							<th scope="col">2등급</th>
+							<th scope="col">3등급이하</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="4">수 I</td>
+							<td>행렬</td>
+							<td>4</td>
+							<td class="my_score">4</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.9</td>
+							<td>5.3</td>
+						</tr>
+						<tr>
+							<td>지수/로그</td>
+							<td>3</td>
+							<td class="my_score">3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>수열</td>
+							<td>7</td>
+							<td class="my_score">2</td>
+							<td>7</td>
+							<td>6.7</td>
+							<td>6.6</td>
+							<td>6.1</td>
+						</tr>
+						<tr>
+							<td>수열의극한</td>
+							<td>6</td>
+							<td class="my_score">2</td>
+							<td>6</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.7</td>
+						</tr>
+						<tr class="summary">
+							<td colspan="2">합계</td>
+							<td>22</td>
+							<td class="my_score">11</td>
+							<td>22</td>
+							<td>21</td>
+							<td>21</td>
+							<td>20</td>
+						</tr>
+						<tr>
+							<td rowspan="4">수 II</td>
+							<td>방정식/부동식</td>
+							<td>4</td>
+							<td class="my_score">4</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.9</td>
+							<td>5.3</td>
+						</tr>
+						<tr>
+							<td>삼각함수</td>
+							<td>3</td>
+							<td class="my_score">3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>함수의 극한</td>
+							<td>7</td>
+							<td class="my_score">2</td>
+							<td>7</td>
+							<td>6.7</td>
+							<td>6.6</td>
+							<td>6.1</td>
+						</tr>
+						<tr>
+							<td>미분</td>
+							<td>6</td>
+							<td class="my_score">2</td>
+							<td>6</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.7</td>
+						</tr>
+						<tr class="summary">
+							<td colspan="2">합계</td>
+							<td>22</td>
+							<td class="my_score">11</td>
+							<td>22</td>
+							<td>21</td>
+							<td>21</td>
+							<td>20</td>
+						</tr>
+						<tr>
+							<td rowspan="4">적분과<br>통계</td>
+							<td>적분</td>
+							<td>4</td>
+							<td class="my_score">4</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.9</td>
+							<td>5.3</td>
+						</tr>
+						<tr>
+							<td>경우의 수</td>
+							<td>3</td>
+							<td class="my_score">3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>확률</td>
+							<td>7</td>
+							<td class="my_score">2</td>
+							<td>7</td>
+							<td>6.7</td>
+							<td>6.6</td>
+							<td>6.1</td>
+						</tr>
+						<tr>
+							<td>통계</td>
+							<td>6</td>
+							<td class="my_score">2</td>
+							<td>6</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.7</td>
+						</tr>
+						<tr class="summary">
+							<td colspan="2">합계</td>
+							<td>22</td>
+							<td class="my_score">11</td>
+							<td>22</td>
+							<td>21</td>
+							<td>21</td>
+							<td>20</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h4 data-title="type3">난이도별 누적 상세 분석</h4>
+			<div data-table="type1" class="small">
+				<table>
+					<colgroup>
+						<col>
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+						<col style="width:75px">
+					</colgroup>
+					<thead>
+						<tr class="type1">
+							<th scope="col" rowspan="2">난이도</th>
+							<th scope="col" rowspan="2">배점</th>
+							<th scope="col" rowspan="2" class="my_score">본인득점</th>
+							<th scope="col" colspan="4">응시자 평균 득점</th>
+						</tr>
+						<tr class="type1">
+							<th scope="col">1%</th>
+							<th scope="col">1등급</th>
+							<th scope="col">2등급</th>
+							<th scope="col">3등급이하</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="f_bold">2/3점 문항</td>
+							<td>14</td>
+							<td class="my_score">4</td>
+							<td>6</td>
+							<td>6</td>
+							<td>5.9</td>
+							<td>5.3</td>
+						</tr>
+						<tr>
+							<td class="f_bold">4점 일반문항</td>
+							<td>16</td>
+							<td class="my_score">3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td class="f_bold">시대인재 킬러문항</td>
+							<td>70</td>
+							<td class="my_score">2</td>
+							<td>7</td>
+							<td>6.7</td>
+							<td>6.6</td>
+							<td>6.1</td>
+						</tr>
+						<tr class="summary">
+							<td>합계</td>
+							<td>100</td>
+							<td class="my_score">11</td>
+							<td>22</td>
+							<td>21</td>
+							<td>21</td>
+							<td>20</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+
+
+
+
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

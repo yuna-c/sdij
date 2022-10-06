@@ -1,0 +1,241 @@
+<!--
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_login_registstep2.html
+* @ 페이지설명	: 모바일 > N > 가채점 상담신청 > 정보입력
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-01
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용
+*_________________________________________________________________________
+* 김은옥 	최초작성
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>가채점 상담신청 > 정보입력</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	.style{}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="N" data-depth2="pre_scoring" data-depth3="registstep">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+
+		<h2 data-title="type1" class="line m_b60">
+			<span>2019 학년도 시대인재 N </span>
+			가채점 상담신청
+		</h2>
+		<div data-layout="type1">
+			<div data-step="type2" class="noline m_b20">
+				<div class="pass"><em>1</em>재원여부확인<br />(핸드폰인증)</div><!-- 현재단계 class="on" --><!-- 완료단계 class="pass" -->
+				<div class="on"><em>2</em>가채점<br />정보입력</div>
+				<div><em>3</em>상담신청완료</div>
+			</div>
+
+			<form>
+				<fieldset>
+					<dl data-form="wrap" class="noline">
+						<dt><label for="input1" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input1"></span></dd>
+
+							<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p class="m_b40">
+								<span class="field_name">010-1997-0214</span>
+							</p>
+							<p><span class="field_name">상품, 입시정보, 이벤트 정보 등을 SMS로</span></p>
+							<p>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio1" name="sns_radio" checked="checked">
+									<label for="radio1">받음</label>
+								</span>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio2" name="sns_radio">
+									<label for="radio2">받지 않음</label>
+								</span>
+							</p>
+						</dd>
+						<dt><span class="field_name">학원<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio3" name="academy" checked="checked">
+									<label for="radio3">정규반</label>
+								</span>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio4" name="academy">
+									<label for="radio4">신설시작반(N관)</label>
+								</span>
+							</p>
+						</dd>
+
+						<dt><label for="input1" class="field_name">가채점 점수입력<strong>*<em>필수항목</em></strong></label></dt>
+						<dd>
+							<p>
+								<span class="field_name m_b10">한국사</span>
+								<span data-form="input"><input type="text" id="input2"></span>
+							</p>
+							<p>
+								<span class="field_name m_b10">국어</span>
+								<span data-form="input"><input type="text" id="input3"></span>
+							</p>
+							<div class="m_b30">
+								<span class="field_name m_b10">수학</span>
+								<p class="m_b20">
+									<span data-form="radio">
+										<input type="radio" id="radio5" name="math_type" checked="checked">
+										<label for="radio5">가형</label>
+									</span>
+									<span data-form="radio">
+										<input type="radio" id="radio6" name="math_type">
+										<label for="radio6">나형</label>
+									</span>
+								</p>
+								<span data-form="input"><input type="text" id="input4"></span>
+							</div>
+							<p class="m_b30">
+								<span class="field_name m_b10">영어</span>
+								<span data-form="input"><input type="text" id="input5"></span>
+							</p>
+							<div class="m_b30">
+								<p class="m_b20">
+									<span data-form="radio">
+										<input type="radio" id="radio7" name="subject_type" checked="checked">
+										<label for="radio7">과학</label>
+									</span>
+									<span data-form="radio">
+										<input type="radio" id="radio8" name="subject_type">
+										<label for="radio8">사회</label>
+									</span>
+								</p>
+								<p class="m_b20">
+									<span data-form="select" class="full m_b20">
+										<select title="과학탐구과목선택">
+											<option value="미선택">미선택</option>
+											<option value="물리Ⅰ">물리Ⅰ</option>
+											<option value="물리Ⅱ">물리Ⅱ</option>
+											<option value="화학Ⅰ">화학Ⅰ</option>
+											<option value="화학Ⅱ">화학Ⅱ</option>
+											<option value="생명과학Ⅰ">생명과학Ⅰ</option>
+											<option value="생명과학Ⅱ">생명과학Ⅱ</option>
+											<option value="지구과학Ⅰ">지구과학Ⅰ</option>
+											<option value="지구과학Ⅱ">지구과학Ⅱ</option>
+										</select>
+									</span>
+									<span data-form="input"><input type="text" id="input5"></span>
+								</p>
+								<p>
+									<span data-form="select" class="full m_b20">
+										<select title="사회탐구과목선택">
+											<option value="미선택">미선택</option>
+											<option value="한국지리">한국지리</option>
+											<option value="세계지리">세계지리</option>
+											<option value="동아시아사">동아시아사</option>
+											<option value="세계사">세계사</option>
+											<option value="생활과 윤리">생활과 윤리</option>
+											<option value="사회문화">사회문화</option>
+											<option value="법과 정치">법과 정치</option>
+											<option value="경제">경제</option>
+										</select>
+									</span>
+									<span data-form="input"><input type="text" id="input5"></span>
+								</p>
+							</div>
+							<p>
+								<span class="field_name m_b10">제2외국어</span>
+								<span data-form="select" class="full m_b20">
+									<select title="제2외국어 과목">
+										<option value="미선택">미선택</option>
+										<option value="아랍어">아랍어</option>
+										<option value="일본어">일본어</option>
+										<option value="중국어">중국어</option>
+										<option value="독일어">독일어</option>
+										<option value="프랑스어">프랑스어</option>
+										<option value="스페인어">스페인어</option>
+										<option value="한문">한문</option>
+										<option value="베트남어">베트남어</option>
+										<option value="러시아어">러시아어</option>
+										</select>
+									</select>
+								</span>
+								<span data-form="input"><input type="text" id="input7"></span>
+							</p>
+						</dd>
+
+						<dt><span class="field_name">수시원서 접수내역<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p>
+								<span data-form="radio">
+									<input type="radio" id="radio9" name="applyCheck" checked="checked">
+									<label for="radio9">미접수</label>
+								</span>
+								<span data-form="radio">
+									<input type="radio" id="radio10" name="applyCheck">
+									<label for="radio10">접수</label>
+								</span>
+							</p>
+							<p>
+								<span data-form="input" class="size380">
+									<input type="text" id="input8">
+								</span>
+								<button type="button" data-btn="whitegray" class="size160 m_l20">추가</button>
+							</p>
+						</dd>
+						<dt><span class="field_name">가채점 상담 문의</span></dt>
+						<dd>
+							<h3 data-title="type2">질문</h3>
+							<div data-layout="type1">
+								<textarea data-form="textarea" class="type2" placeholder="가채점 상담내용을 300자 이내로 작성하세요."></textarea>
+							</div>
+						</dd>
+					</dl>
+					<p data-form="checkbox" class="type1">
+						<span>개인정보 수집 및 활용 동의</span>
+						<input type="checkbox" id="check1">
+						<label for="check1">네, 개인정보 수집, 이용에 동의합니다.</label>
+					</p>
+					<div data-layout="type1">
+			<textarea data-form="textarea" readonly="readonly">
+시대인재N학원은 원활한 상담 처리를 위해 아래와 같이 개인정보를 수집·이용하고자 합니다.
+내용을 읽으신 후 동의 여부를 결정하여 주십시오.
+
+[수집항목] 이름, 연락처, 가채점점수, 수시원서 접수 내역
+[수집목적] 생담내역 확인 및 상담, 답변 안내, 학습 및 입시정보제공 등에 사용
+[개인정보의 보유 및 이용기간 1년
+
+* 개인정보 수집 및 이용 동의를 하지 않을 경우 관련 서비스의 제한이 있을 수 있습니다.
+			</textarea>
+					 </div>
+					<div class="btn_wrap">
+						<button type="button" data-btn="navy">신청완료</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

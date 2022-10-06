@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <meta property="og:url" content="http://www.sdij.com/" />
+    <meta property="og:image" content="http://img.sdij.com/sd2019/pc/logo.png" />
+    <meta property="og:title" content="시대인재" />
+    <meta property="og:description" content="올해 마지막 서바이벌 모의고사 선물, 시대인재대치, 시대인재분당, 시대인재재수종합N, 시대인재북스, 대입전문컨설팅" />
+    <meta property="og:site_name" content="시대인재" />
+    <meta name="description" content="올해 마지막 서바이벌 모의고사 선물, 시대인재대치, 시대인재분당, 시대인재재수종합N, 시대인재북스, 대입전문컨설팅" />
+    <meta name="title" content="시대인재" />
+    <meta name="keywords" content="9월 모평,수능 대비, 시대인재, 시대인재 서바이벌, 서바이벌 모의고사" />
+
+    <title> 시대인재 </title>
+    <link rel="shortcut icon" href="http://img.sdij.com/sd2019/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="http://img.sdij.com/sd2019/favicon_32.png" />
+    <link rel="icon" href="http://img.sdij.com/sd2019/favicon_32.ico" sizes="32x32" />
+
+    <!-- S : css -->
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/reset.css?ver=<%=now()%>" />
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/lib/swiper.min.css?ver=<%=now()%>" />
+	<link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/layout.css?ver=<%=now()%>" />
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/board.css?ver=<%=now()%>" />
+    <!--// E : css -->
+    
+    <!-- S : page css -->
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/schedule.css?ver=<%=now()%>" />
+    <!--// E : page css -->
+
+    <!-- S : js -->
+    <script type="text/javascript" src="/totalWebSite/renew2019/lms/common/js/lib/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/totalWebSite/renew2019/lms/common/js/lib/swiper.min.js"></script>
+    <script type="text/javascript" src="/totalWebSite/renew2019/lms/common/js/common.js"></script>
+    <!--// E : js -->
+</head>
+<body>
+
+<div id="wrap">
+    <!-- S : header -->
+    <header id="header">
+        <h1 class="logo"><a href="/totalWebSite/renew2019/lms/main/main.html"><img src="http://img.sdij.com/sd2019/app/common/logo_w.png" alt="시대인재"></a></h1>
+        <a href="/totalWebSite/renew2019/lms/setup/index.html" class="btn-setup">설정 바로가기</a>
+    </header>
+    <!--// E : header -->
+
+    <!-- S : container -->
+    <section id="container" class="schedule-container">
+        <!-- S : 유저 정보 -->
+        <article class="container-user content-layout">
+            <div class="box-shadow">
+                <div class="user-name">시대인재N 신관 S반 홍길동 (123번)</div>
+
+                <!-- <div class="user-info"><a href="/score/list.html">
+                    <span>상점 100점</span>
+                    <span>벌점 100점</span>
+                </a></div> -->
+            </div>
+        </article>
+        <!--// E : 유저 정보 -->
+
+        <!-- S : 시간표 -->
+        <article class="container-table content-layout">
+            <!-- S : 타이틀 추가 -->
+            <h2 class="tit-dep1"><span>시간표</span></h2>
+            <!--// E : 타이틀 추가 -->
+
+            <div class="table-type1">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th><span>월</span></th>
+                            <th><span>화</span></th>
+                            <th class="today"><span>수</span></th><!-- 현재 요일 class="today" 추가 -->
+                            <th><span>목</span></th>
+                            <th><span>금</span></th>
+                            <th><span>토</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1교시</th>
+                            <td>수학(가) 서바 L층 101호</td>
+                            <td>&nbsp;</td>
+                            <td class="today">수학(가) 서바 L층 101호</td>
+                            <td>&nbsp;</td>
+                            <td>국어 김은양 303호</td>
+                            <td rowspan="2">희망자습</td>
+                        </tr>
+                        <tr>
+                            <th>2교시</th>
+                            <td>수학(가) 서바 L층 101호</td>
+                            <td>&nbsp;</td>
+                            <td class="today">수학(가) 서바 L층 101호</td>
+                            <td>&nbsp;</td>
+                            <td>국어 김은양 303호</td>
+                        </tr>
+                        <tr>
+                            <td colspan="7" class="bg-gray">점심식사</td>
+                        </tr>
+                        <tr>
+                            <th>3교시</th>
+                            <td>수학(가) 서바 L층 101호</td>
+                            <td>&nbsp;</td>
+                            <td class="today">수학(가) 서바 L층 101호</td>
+                            <td>국어 김은양 303호</td>
+                            <td>&nbsp;</td>
+                            <td rowspan="3">희망자습</td>
+                        </tr>
+                        <tr>
+                            <th>4교시</th>
+                            <td>국어 김은양 303호</td>
+                            <td>수학(가) 서바 L층 101호</td>
+                            <td class="today">수학(가) 서바 L층 101호</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>4.5교시</th>
+                            <td>수학(가) 서바 L층 101호</td>
+                            <td>&nbsp;</td>
+                            <td class="today">수학(가) 서바 L층 101호</td>
+                            <td>&nbsp;</td>
+                            <td>국어 김은양 303호</td>
+                        </tr>
+                        <tr>
+                            <td colspan="7" class="bg-gray">저녁식사</td>
+                        </tr>
+                        <tr>
+                            <th>5교시</th>
+                            <td>수학(가) 서바 L층 101호</td>
+                            <td>&nbsp;</td>
+                            <td class="today">수학(가) 서바 L층 101호</td>
+                            <td>국어 김은양 303호</td>
+                            <td>&nbsp;</td>
+                            <td rowspan="3">희망자습</td>
+                        </tr>
+                        <tr>
+                            <th>6교시</th>
+                            <td>국어 김은양 303호</td>
+                            <td>수학(가) 서바 L층 101호</td>
+                            <td class="today">수학(가) 서바 L층 101호</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>심야</th>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td class="today">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <!--// E : 시간표 -->
+    </section>
+    <!--// E : container -->
+
+    <!-- S : nav -->
+    <nav id="nav">
+        <div class="nav-link">
+            <a href="/totalWebSite/renew2019/lms/main/main.html">
+                <i class="ico-home-g"></i>
+                홈
+            </a>
+            <a href="/totalWebSite/renew2019/lms/schedule/view.html" class="selected">
+                <i class="ico-calendar-g"></i>
+                시간표
+            </a>
+            <a href="/totalWebSite/renew2019/lms/setup/push.html">
+                <i class="ico-bell-g"></i>
+                알림
+            </a>
+            <a href="/totalWebSite/renew2019/lms/mentoring/list.html">
+                <i class="ico-write-g"></i>
+                TA신청
+            </a>
+        </div>
+    </nav>
+    <!--/ / E : nav -->
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>--/ / E : nav -->
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>

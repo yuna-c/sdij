@@ -1,0 +1,35 @@
+html, body, #wrap, #container{ height:100%; }
+#header, #footer{ display:none; }
+.exam-container{ min-height:auto; margin:0; padding:40px 0; box-sizing:border-box; }
+
+.table-tit{ margin-top:0; }
+.table-tit > small{ margin-top:10px; display:block; position:relative; bottom:0; }
+
+.exam-container{ height:100%; max-width:100%; padding:0; overflow:hidden; }
+.exam-container *{ box-sizing:border-box; }
+.exam-container .container-exam{ height:100%; }
+.exam-container .exam-tit{ width:100%; background-color:#000; position:absolute; top:0; left:0; right:0; z-index:10; }
+.exam-container .exam-tit > *{ padding:20px 40px; }
+.exam-container .exam-tit .table-tit{ font-weight:700; color:#fff; }
+.exam-container .exam-tit .exam-timer{ padding:0 40px; display:flex; position:absolute; top:40px; right:40px; bottom:40px; background-color:#fafafa; border:1px solid #ededed; font-size:22px; font-weight:700; justify-content:center; align-items:center; }
+.exam-container .exam-tit .exam-timer > span{ margin:0 5px; }
+
+.exam-container .container-exam > .exam-content{ height:100%; padding:188px 40px 100px; display:flex; position:relative; overflow:hidden; }
+.exam-container .container-exam > .exam-content .tab-content{ height:100%; display:block !important; }
+.exam-container .tab-type1{ padding:0 40px; position:absolute; top:152px; left:0; right:0; *zoom:1; }
+.exam-container .tab-type1:after{ content:''; display:block; clear:both; }
+.exam-container .tab-type1 > a{ width:500px; line-height:26px; margin:0; display:block; float:right; border-bottom:none; text-align:left; font-size:20px; font-weight:700; color:#000; cursor:default; }
+.exam-container .tab-type1 > a:first-child{ float:left; }
+.exam-container .exam-view{ margin-right:20px; flex:1; }
+.exam-container .exam-view, .exam-container .exam-view .iframe-area{ height:100%; }
+.exam-container .exam-omr{ width:500px; margin-left:auto; overflow-x:hidden; overflow-y:auto; }
+.exam-container .exam-omr .board-table{ border-top:1px solid #000; }
+.exam-container .exam-omr .board-table tr td{ padding:0; }
+.exam-container .exam-omr .board-table tr td > label{ padding:20px 0; display:block; text-align:center; }
+.exam-container .exam-omr .board-table tr td > label input[type='radio']{ -webkit-appearance:radio; }
+.exam-container .exam-omr .board-table tr td .form-radio{ margin:0; padding:20px 0; display:block; text-align:center; }
+.exam-container .exam-omr .board-table tr td .form-input{ padding:20px; }
+
+.exam-container .board-btn{ width:100%; padding:20px 40px; display:flex; position:absolute; left:0; right:0; bottom:0; }
+.exam-container .board-btn .btn{ margin-left:20px; }
+.exam-container .board-btn .btn:first-child{ margin-left:0; }

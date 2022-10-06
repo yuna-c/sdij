@@ -1,0 +1,68 @@
+.view-content *{ word-break:keep-all; }
+.view-content .relative{ position:relative; }
+
+.view-content .pl20{ padding-left:20px; }
+.view-content .pl50{ padding-left:50px; }
+.view-content .pl80{ padding-left:80px; }
+.view-content .pl90{ padding-left:90px; }
+.view-content .pl120{ padding-left:120px; }
+.view-content .fs10{ font-size:10px !important; }
+.view-content .fs15{ font-size:15px !important; font-weight:500 !important; }
+.view-content .f100{ font-weight:100 !important; }
+.view-content .f900{ font-weight:900 !important; }
+.view-content .red{ font-weight:500 !important; font-size:10px !important; color:#e00d15 !important; }
+
+.view-content .page-tit{ font-family:'Noto Serif KR', 'Noto Serif', serif, 'Sans-serif', 'Noto Sans KR'; font-size:30px; font-weight:bold; }
+.view-content hr.division-line{ margin:50px auto; border:none; border-top:1px solid #626262; }
+.view-content .dep-tit{ margin-bottom:30px; line-height:24px; font-family:'Noto Serif KR', 'Noto Serif', serif, 'Sans-serif', 'Noto Sans KR'; font-size:20px; font-weight:100; text-align:center; }
+.view-content .dep-tit small{ display:block; font-family:'Noto Serif KR', 'Noto Serif', serif, 'Sans-serif', 'Noto Sans KR'; font-size:10px; }
+
+.view-content .blind-txt, .view-content .blind-txt::selection{ color:#fff; }
+.view-content .em-txt{ padding:0 3px; display:inline-block; background-color:#ffc200; font-weight:500; }
+.view-content span.em-txt{ margin-top:3px; }
+.view-content span.em-txt:first-child{ margin-top:0; }
+.view-content .noto-txt{ line-height:22px; position:relative; font-size:10px; }
+.view-content .noto-txt:after{ content:'*'; display:block; position:absolute; top:0; left:-10px; }
+.view-content .floating-txt{ width:55px; height:55px; display:table; background-color:#000; border-radius:100%; }
+.view-content .floating-txt span{ line-height:16px; display:table-cell; font-size:13px; font-weight:500; color:#ffc200; text-align:center; vertical-align:middle; }
+
+.view-content .list-history{ font-size:14px; font-weight:100; }
+.view-content .list-history li{ margin-bottom:20px; padding-left:40px; position:relative; }
+.view-content .list-history li.relative{ width:calc(100% - 60px); max-width:300px; padding-left:0; }
+.view-content .list-history li span{ line-height:14px; }
+.view-content .list-history li .data-year{ position:absolute; top:0; left:0; font-weight:500; }
+
+.view-content .list-tit{ line-height:26px; }
+.view-content .list-tit dt{ margin:30px auto 10px; font-size:15px; font-weight:500; }
+.view-content .list-tit dt:first-child{ margin-top:0; }
+.view-content .list-tit dd{ margin-bottom:10px; font-size:14px; font-weight:100; }
+.view-content .list-tit dd.pl80, .view-content .list-tit dd.pl150{ margin-top:-10px; }
+.view-content .list-tit dd.pl300{ margin-top:-25px; }
+
+.view-content .floating-box{ padding-left:65px; }
+.view-content .floating-box .txt .em-txt{ margin-bottom:3px; }
+.view-content .floating-box .floating-txt{ position:absolute; top:0; left:0; }
+
+.view-content .visual-table{ width:100% }
+.view-content .visual-table table{ width:100%; table-layout:fixed; }
+.view-content .visual-table table tr th{ height:30px; background-color:#000; border-top:20px solid #fff; border-left:2px solid #fff; font-size:14px; font-weight:100; color:#ffc300; }
+.view-content .visual-table table tr td{ height:50px; line-height:22px; margin-bottom:10px; background-color:#f2f2f2; border-left:2px solid #fff; font-size:14px; font-weight:100; text-align:center; }
+.view-content .visual-table02 table tr td{ height:40px; border-bottom:2px solid #fff; }
+.view-content .visual-table table tr.total-line td{ height:50px; background-color:#000; font-weight:500; color:#ffc300; }
+.view-content .visual-table table tr:first-child th{ border-top:none; }
+.view-content .visual-table table tr th:first-child, .view-content .visual-table table tr td:first-child{ border-left:none; }
+
+.view-content .section{ position:relative; }
+
+.view-content .about-floating1{ width:60px; height:60px; position:absolute; top:0; right:-65px; }
+.view-content .about-floating1 span{ font-size:10px; }
+
+.view-content .about-graph{ width:100%; height:80px; position:relative; }
+.view-content .about-graph:before{ content:''; height:2px; display:block; position:absolute; top:30px; left:25px; right:5px; background-color:#ffc200; z-index:1; }
+.view-content .about-graph:after{ content:'▶'; display:block; position:absolute; top:22px; right:0; font-size:10px; color:#ffc200; z-index:3; }
+.view-content .about-graph span{ line-height:15px; display:inline-block; position:absolute; font-size:10px; font-weight:100; z-index:2; }
+.view-content .about-graph span.text1{ top:25px; left:0; }
+.view-content .about-graph span.text2{ top:15px; left:20%; }
+.view-content .about-graph span.text3{ top:0; left:55%; }
+.view-content .about-graph span.text4{ top:40px; left:30%; }
+.view-content .about-graph span.text5{ top:40px; left:75%; }

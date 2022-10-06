@@ -1,0 +1,140 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명    : sidaeInjae Total Web Site
+* @ 파일명     : /html/common_login_registstep1.html
+* @ 페이지설명 : 공통 > 로그인,회원가입 > 본인인증
+* @ 작성자     : 김은옥
+* @ 작성일     : 2017-03-29
+************************** 수정이력 ****************************************
+* 번호    작업자       변경내용 
+*_________________________________________________________________________
+* 김은옥   최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>에러페이지</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png">
+<!-- <link rel="stylesheet" href="../common/css/common.css"> -->
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>  <!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+*{margin:0;padding:0;}
+html,body{
+  height:100%;
+}
+/*gnb*/
+#header{padding:1.25rem 0 0 0;background:#1e1e1e;z-index:9;}
+#header .m_logo{margin:0 0 1.25rem 1.25rem;padding:0 1.25rem 0 0;width:7.733rem;position:relative;}
+#header .m_logo.sdijon{width:9.600rem;}
+#header .m_logo.books{width:11.200rem;}
+#header .m_logo.sdijN{width:12.266rem;}
+#header .m_logo:after{display:block;position:absolute;right:0;top:50%;margin:-0.166rem 0 0 0;width:0.667rem;height:0.333rem;background:url('http://img.sdij.com/mobile/common.png') no-repeat;background-size:40rem auto;background-position:0 -102.083rem;content:'';}
+#header .m_logo.on:after{background-position:-1.042rem -102.083rem;}
+#header .m_logo.sdijon:after{background-position:0 -103.125rem;}
+#header .m_logo.sdijon.on:after{background-position:-1.042rem -103.125rem;}
+#header .m_logo.books:after{background-position:0 -104.167rem;}
+#header .m_logo.books.on:after{background-position:-1.042rem -104.167rem;}
+#header .m_logo.sdijN:after{background-position:0 -105.208rem;}
+#header .m_logo.sdijN.on:after{background-position:-1.042rem -105.208rem;}
+#header .head_btn{float:right;padding:0 1.25rem 0 0;font-size:0;}
+#header .head_btn .mypage{padding:0;width:1.333rem;height:1.417rem;background:url('http://img.sdij.com/mobile/common.png') no-repeat;background-size:40rem auto;background-position:0 -100rem;position:relative;text-indent:-9999px;}
+#header .head_btn .mypage.on:after{display:block;position:absolute;right:-0.25rem;top:-0.167rem;width:0.667rem;height:0.667rem;background:#ee1010;border-radius:50%;content:'';}
+#header .head_btn .mypage:active,
+#header .head_btn .mypage:focus{background-position:-2.083rem -100rem;}
+#header .head_btn .menu{margin:0 0 0 1.417rem;padding:0;width:1.5rem;height:1.1rem;background:url('http://img.sdij.com/mobile/common.png') no-repeat;background-size:40rem auto;background-position:-4.167rem -100rem;text-indent:-9999px;}
+#header .head_btn .menu:active,
+#header .head_btn .menu:focus{background-position:-6.25rem -100rem;}
+#header #navi{display:none;}
+#header #navi a{float:left;width:25%;height:10rem;position:relative;text-indent:-9999px}
+#header #navi a.on{background:#64a9f8;}
+#header #navi a:after{display:block;position:absolute;left:50%;top:50%;margin:-2.021rem 0 0 -1.9375rem;width:3.875rem;height:4.042rem;background:url('http://img.sdij.com/mobile/common.png') no-repeat;background-size:40rem auto;background-position:0 -112.5rem;content:'';}
+#header #navi a.on:after{background-position:0 -106.25rem;}
+#header #navi .sdijon.on{background:#e48743;}
+#header #navi .sdijon:after{height:5rem;background-position:-4.167rem -112.500rem;}
+#header #navi .sdijon.on:after{background-position:-4.167rem -106.25rem;}
+#header #navi .book.on{background:#91c546;}
+#header #navi .book:after{margin-top:-2.083rem;height:5.3rem;background-position:-8.333rem -112.500rem;}
+#header #navi .book.on:after{background-position:-8.333rem -106.25rem;}
+#header #navi .N.on{background:#826eea;}
+#header #navi .N:after{margin-top:-2.500rem;height:5.500rem;background-position:-12.500rem -112.500rem;}
+#header #navi .N.on:after{background-position:-12.500rem -106.25rem;}
+/*gnb END*/
+#wrap{
+  min-width: 1024px;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+#content_wrap{
+  height:100%;
+  display:table;
+  width:100%;
+  padding:0;
+  min-height: 100%;
+  margin: 0 0 -150px 0;
+  background: #f5f5f5;
+  box-sizing: border-box;
+}
+#content_wrap .error_wrap{
+  display:table-cell;
+  vertical-align:middle;
+}
+#content_wrap .error_wrap .error{
+  width:740px;
+  margin:0 auto;
+  padding:40px 0 50px 0;
+}
+#content_wrap .error_wrap .error .text{
+  line-height:26px;
+}
+*[data-box="type1"] {
+    background: #fff;
+    border: 1px solid #d2d2d2;
+    text-align: center;
+    box-sizing: border-box;
+}
+*[data-box="type1"].error{margin:0;padding:34px 0 57px 0;height:auto;}
+*[data-box="type1"].error p.text{font-size:16px;font-family:'neol'}
+*[data-icon="type2"]{
+  text-align:center;
+}
+*[data-icon="type2"] dt{position:relative;margin-bottom:4px;padding-top:184px;font-size:30px;color:#ffad00;font-family:'neob';font-weight:600;}
+*[data-icon="type2"] dt:before{display:inline-block;position:absolute;left:50%;top:0;margin-left:-155px;width:310px;height:160px;background:url('http://img.sdij.com/common/common.png') no-repeat;content:''}
+*[data-icon="type2"] dd{margin-bottom:16px;font-size:20px;font-family:'neob';font-weight:600}
+*[data-icon="type2"].ico01 dt:before{background-position:-690px -270px;}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<!-- 20180523 추가S -->
+<body data-depth1="common" data-depth2="error">
+<div id="wrap"> <!-- // Wrap S -->
+<!-- // Header Include Area --> <!--gnb영역-->
+<div id="content_wrap">
+  <!-- // Snb Include Area -->
+    <div class="error_wrap">
+      <div data-box="type1" class="error">
+        <dl data-icon="type2" class="ico01">
+          <dt>페이지 오류 안내</dt>
+          <dd>해당 페이지를 찾을 수 없습니다.</dd>
+        </dl>
+        <p class="text">
+          홈페이지 이용에 불편을 드려 죄송합니다. <br />
+          잠시 후에 이용해 주십시요.
+        </p>
+      </div>
+   </div>
+</div>
+<!-- 20180523 추가E -->
+<!-- // Footer Include Area -->
+</div>  <!-- // Wrap E -->
+</body>

@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* 
+#header, .btn-top{ display:none; }
+.layer-top{ padding-top:20px; text-align:right; } */
+
+/* dim */
+.dim-layer{width:100%; height:100%; display:none; position:fixed; top:0; bottom:0; left:0; right:0; z-index:9999; }
+.dim-layer .dim-bg{ position:absolute; top:0; bottom:0; left:0; right:0; background-color:#000; opacity:.7; filter:alpha(opacity=70); z-index:-1; }
+.dim-content{  max-width:320px; padding:50px 40px; display:none; position:absolute; top:50%; left:50%; margin:0 0 0 -160px;background-color:#fff; border:1px solid #000; box-sizing:border-box; }
+.dim-content .dim-tit{ margin-bottom:20px; font-size:28px; color:#333; letter-spacing:-.05em; }
+.dim-content .dim-tit small{ line-height:24px; margin-top:15px; display:inline-block; font-size:16px; color:#333; }
+.dim-content .dim-txt{ line-height:24px; font-size:18px; color:#333; }
+.dim-content .dim-box{ height:390px; line-height:24px; padding:20px; border:1px solid #000; font-size:14px; overflow-x:hidden; overflow-y:auto; word-break:break-all; box-sizing:border-box; }
+.dim-content .dim-btn{ margin-top:30px; text-align:right; }
+.dim-content .dim-btn .btn{ width:120px; height:40px; line-height:38px; }
+.dim-content .board-list table tr td{ padding:10px; border-left:1px solid #ededed; }
+.dim-content .board-list table tr td:first-child{ border-left:none; }.dim-content{ padding:50px 40px; box-sizing:border-box; }
+.dim-content .btn-close{ position:absolute; top:20px; right:20px; font-size:0; }
+.dim-content .dim-tit{ margin-bottom:20px; font-size:24px; color:#333; letter-spacing:-.05em; text-align:center;}
+.dim-content .dim-tit small{ line-height:24px; margin-top:10px; display:inline-block; font-size:15px; color:#333; }
+.dim-content .dim-txt{ line-height:24px; font-size:18px; color:#333; }
+.dim-content .dim-box{ height:390px; line-height:24px; padding:20px; border:1px solid #000; font-size:14px; overflow-x:hidden; overflow-y:auto; word-break:break-all; box-sizing:border-box; }
+.dim-content .dim-btn{ margin-top:30px; text-align:right; }
+.dim-content .dim-btn .btn{ width:120px; height:40px; line-height:38px; }
+
+.dim-alert{ width:480px; height:215px; /*margin-top:-107px; margin-left:-240px;*/ position:absolute; top:50%; left:50%; }
+.dim-tit-alert{ width:480px; height:262px; /*margin-top:-131px; margin-left:-240px;*/ position:absolute; top:50%; left:50%; }
+.dim-alert .dim-txt, .dim-tit-alert .dim-txt{ height:75px; }
+.dim-alert .dim-btn, .dim-tit-alert .dim-btn{ margin-top:0; }
+
+.dim-terms{ width:680px; height:628px; margin-left:-340px; position:absolute; top:50%; left:50%; }
+.dim-terms .dim-tit{ margin-bottom:25px; }
+
+.dim-form{ width:100%;  position:absolute; top:30%; left:50%; }
+.dim-form .btn{ height:40px; line-height:38px; }
+.dim-form .input-text, .dim-form .select{ height:40px; line-height:38px; padding-left:10px; ;background-color:#fff; border:1px solid #000; }
+.dim-form .select{ background-position:95% 50%; }
+.dim-form .radio{ width:100px; }
+.dim-form .dim-box{ height:185px; margin-bottom:0; padding:15px; }
+.dim-form .cert-form{ position:relative; }
+.dim-form .cert-form .cert-txt{ width:100px; height:40px; line-height:38px; display:inline-block; position:absolute; top:0; right:0; bottom:0 ;text-align:center; ; /*border-left:1px solid #000;*/ }
+.dim-form table{ width:100%; }
+.dim-form table tr th{ padding:18px 0; font-weight:normal; text-align:left; vertical-align:top; }
+.dim-form table tr td{ padding:10px 0 10px 10px; }
+.dim-form table tr td .btn{ font-size:14px; }
+.dim-form .dim-agree{ margin-top:20px; padding-top:30px; border-top:1px solid #000; }
+.dim-form .dim-agree .tit{ margin-bottom:10px; font-size:18px; font-weight:400; }
+.dim-form .dim-agree .dim-box{ height:90px; margin-bottom:10px; padding:10px 15px; }
+.dim-form .dim-agree .txt-center .radio{ width:115px; }
+.dim-form .dim-btn{ margin-top:20px; }
+
+.dim-coupon dl dt{ padding:15px; background-color:#fafafa; border-top:1px solid #000; vertical-align:middle; }
+.dim-coupon dl dt:first-child{ border-top:none; }
+.dim-coupon dl dt > div{ height:60px; line-height:30px; font-size:20px; overflow:hidden; word-wrap:break-word; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; }
+.dim-coupon dl dd, .dim-coupon ul li{ padding:15px; border-top:1px solid #ededed; }
+.dim-coupon dl dd .form-radio, .dim-coupon ul li .form-radio{ display:block; }
+.dim-coupon dl dd .form-radio > span, .dim-coupon ul li .form-radio > span{ display:block; }
+
+.dim-coupon dl dd .form-radio .tit, .dim-coupon ul li .form-radio .tit{ margin-bottom:5px; display:inline-block; font-weight:700; }
+.dim-coupon dl dd .form-radio .txt, .dim-coupon ul li .form-radio .txt{ padding-left:25px; color:#999; vertical-align:middle; overflow:hidden; text-overflow:ellipsis; word-wrap:normal; white-space:nowrap; word-wrap:normal; }
+.dim-coupon dl dd > .date-txt, .dim-coupon ul li > .date-txt{ padding-left:25px; font-size:12px; color:#999; }
+.dim-coupon .total-txt{ padding:25px 0; border-top:1px solid #000; font-size:20px; text-align:center; }
+.dim-coupon .form-radio .ico-radio{ margin-right:6px; }

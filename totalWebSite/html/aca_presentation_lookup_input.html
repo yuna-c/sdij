@@ -1,0 +1,104 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/aca_presentation_apply.html
+* @ 페이지설명	: 학원 > 설명회 > 설명회신청
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-03
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>설명회 > 설명회신청</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>
+<script src="../common/js/aca_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/typed.js"></script>
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	.style{}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="aca" data-depth2="presentation" data-depth3="lookup" data-depth4="input">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재 &gt;</span>
+		<span>설명회 &gt;</span>
+		<span>신청조회</span>
+	</div>
+	<div id="content">
+		
+		<h2 data-title="type1">신청조회</h2>
+		<p data-text="type2">신청 이름과 휴대폰 번호를 입력하세요.</p>
+		<div data-layout="type1">
+			<form>
+				<fieldset>
+					<dl data-form="wrap" class="m_b20">
+						<dt><label for="input1" class="field_name">이름</label></dt>
+						<dd><span data-form="input"><input type="text" id="input1"></span></dd>
+						<!-- 2018-01-29 마크업 수정 S -->
+						<dt><span class="field_name">휴대폰번호</span></dt>
+						<dd>
+							<span data-form="select">
+								<select title="휴대폰번호 앞 세자리">
+									<option>010</option>
+									<option>011</option>
+									<option>017</option>
+									<option>018</option>
+									<option>019</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="휴대폰번호 가운데 네자리">
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="휴대폰번호 뒤 네자리">
+							</span>
+							<button type="button" data-btn="whitegray">인증번호전송</button>
+						</dd>
+						<dt><label for="input2" class="field_name">인증번호</label></dt>
+						<dd>
+							<span data-form="input"><input type="password" id="input2"></span><span class="field_info f_color3">03:00</span>
+						</dd>
+						<!-- 2018-01-29 마크업 수정 E -->
+					</dl>
+
+					<div class="btn_wrap3">
+						<button type="button" data-btn="navy">조회</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

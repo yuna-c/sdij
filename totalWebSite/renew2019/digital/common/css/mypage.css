@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* index */
+.notice-article{ margin:0.666666667rem auto; padding:0.333333333rem 0 0.333333333rem 2.133333333rem; background-color:#ffdb42; position:relative; }
+.notice-article:before{ content:''; width:2.133333333rem; display:block; position:absolute; top:0; left:0; bottom:0; background:url(http://img.sdij.com/sd2019/dgt/common/ico_bell.png) 50% 50% no-repeat; background-size:0.8rem 0.8rem; }
+.notice-article > a{ padding-right:3rem; display:block; position:relative; font-weight:700; letter-spacing:-0.011666667rem; }
+.notice-article > a:after{ content:'확인하기'; display:block; position:absolute; top:50%; right:0.666666667rem; font-weight:700; letter-spacing:-0.011666667rem; text-decoration:underline; transform:translate(0, -50%); }
+
+.timetable-article{ margin-bottom:1.666666667rem; }
+.timetable-article .tit-area .tit-side .week{ margin:0 0.266666667rem; font-size:0.533333333rem; font-weight:700; }
+.timetable-article .time-table{ display:flex; }
+.timetable-article .time-table > dl{ -ms-flex:1; flex:1; }
+.timetable-article .time-table > dl > dt{ height:1.666666667rem; margin:0.333333333rem auto; line-height:1.17; font-size:0.8rem; font-weight:700; letter-spacing:0.028666667rem; }
+.timetable-article .time-table > dl > dt > p{ font-size:0.466666667rem; font-weight:500; letter-spacing:0.016666667rem; }
+.timetable-article .time-table > dl > dd{ height:4.333333333rem; margin:0.333333333rem auto; padding-left:0.333333333rem; display:flex; background:url(http://img.sdij.com/sd2019/dgt/common/timetable_bg2.png) 0 0 repeat-y; background-size:2px auto; align-items:center; }
+.timetable-article .time-table > dl.today > dd{ background:none; border-left:4px solid #ceffea; }
+.timetable-article .time-table > dl > dd > a{ width:100%; padding-right:0.333333333rem; display:block; }
+.timetable-article .time-table > dl > dd > a > span{ display:block; }
+.timetable-article .time-table > dl > dd > a .name{ margin-bottom:0.166666667rem; font-weight:700; }
+.timetable-article .time-table > dl > dd > a .tit{ height:calc( 1em * 1.35 * 2 ); line-height:1.35; margin-bottom:0.166666667rem; display:block; display:-webkit-box; overflow:hidden; text-overflow:ellipsis; word-break:break-all; word-wrap:break-word; -webkit-line-clamp:2; -webkit-box-orient:vertical; white-space:normal; }
+.timetable-article .time-table > dl > dd > a .time{ margin-bottom:0.166666667rem; font-weight:500; }
+.timetable-article .time-table > dl > dd > a:after{ content:'강좌보기'; height:0.666666667rem; line-height:0.6rem; padding-right:0.4rem; display:inline-block; font-size:0.4rem; letter-spacing:-0.014333333rem; background:url(http://img.sdij.com/sd2019/dgt/common/ico_more.png) 100% 50% no-repeat; background-size:0.266666667rem 0.266666667rem; text-decoration:underline; }
+.timetable-article .time-table > dl > dd.live{ border-color:#ffe1e1; }
+.timetable-article .time-table > dl > dd.live > a:after{ content:'LIVE'; width:1.833333333rem; height:0.666666667rem; line-height:0.6rem; padding:0; background:#ffe1e1 none; border:1px solid #000; border-bottom-width:2px; font-size:0.4rem; font-weight:700; text-align:center; text-decoration:none; }
+.timetable-article .time-table > dl.time-list > dd{ padding-left:0.666666667rem; background:url(http://img.sdij.com/sd2019/dgt/common/timetable_bg.png) 0 0 repeat-y; background-size:7px auto; font-size:0.666666667rem; font-weight:700; letter-spacing:-0.024rem; -webkit-box-orient:vertical; -ms-flex-direction:column; flex-direction:column; justify-content:space-around; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
+.timetable-article .time-table > dl.time-list > dd .num{ font-size:1.6rem; }
+.timetable-article .time-table > dl.time-list > dd .time{ font-size:0.4rem; }
+
+.board-article{ margin:0 -0.333333333rem 0; display:flex; }
+.board-article > div{ margin:0 0.333333333rem; -ms-flex:1; flex:1; }
+.board-article .board-list > li{ padding:0.333333333rem 0; border-bottom:1px dotted #222; }
+.board-article .board-list > li > a > span{ display:block; }
+.board-article .board-list > li > a > span[class*='sticker']{ margin-bottom:0.333333333rem; }
+/* .board-article .board-list > li > a > span.name{ font-size:0.4rem; font-weight:700; letter-spacing:-0.006666667rem; } */
+.board-article .board-list > li > a > span.tit{ display:-webkit-box; font-size:0.533333333rem; font-weight:700; color:#222; letter-spacing:-0.019rem; overflow:hidden; text-overflow:ellipsis; word-break:break-all; word-wrap:break-word; -webkit-line-clamp:2; -webkit-box-orient:vertical; white-space:normal; }
+.board-article .board-list + .btn{ margin-top:0.333333333rem; }
+
+/* mobile */
+@media all and (max-width:539px) and (orientation:portrait){
+    .timetable-article .time-table{ display:block; }
+    .timetable-article .time-table > dl{ margin-top:1rem; }
+    .timetable-article .time-table > dl.time-list{ display:none; }
+    .timetable-article .time-table > dl > dt{ height:auto; margin-bottom:0.666666667rem; }
+    .timetable-article .time-table > dl > dt > p{ display:inline-block; }
+    .timetable-article .time-table > dl > dd{ height:auto; position:relative; }
+    .timetable-article .time-table > dl > dd > a{ padding:0.166666667rem 2.666666667rem 0.166666667rem 0.333333333rem; }
+    .timetable-article .time-table > dl > dd > a .tit{ height:calc( 1em * 1.35 * 1 ); -webkit-line-clamp:1; }
+    .timetable-article .time-table > dl > dd a:before{ content:attr(data-time); margin-bottom:0.166666667rem; display:block; font-size:0.533333333rem; font-weight:700; }
+    .timetable-article .time-table > dl > dd > a:after{ position:absolute; right:0; bottom:0.333333333rem; }
+    .timetable-article .time-table > dl > dd.live > a:after{ width:2.333333333rem; }
+
+    .board-article{ -webkit-box-orient:vertical; -ms-flex-direction:column; flex-direction:column; }
+    .board-article > div:first-child{ margin-bottom:1rem; }
+}
+@media all and (max-width:959px) and (orientation:landscape){
+    .timetable-article .time-table{ display:block; }
+    .timetable-article .time-table > dl{ margin-top:1rem; }
+    .timetable-article .time-table > dl.time-list{ display:none; }
+    .timetable-article .time-table > dl > dt{ height:auto; margin-bottom:0.666666667rem; }
+    .timetable-article .time-table > dl > dt > p{ display:inline-block; }
+    .timetable-article .time-table > dl > dd{ height:auto; position:relative; }
+    .timetable-article .time-table > dl > dd > a{ padding:0.166666667rem 2.666666667rem 0.166666667rem 0.333333333rem; }
+    .timetable-article .time-table > dl > dd > a .tit{ height:calc( 1em * 1.35 * 1 ); -webkit-line-clamp:1; }
+    .timetable-article .time-table > dl > dd a:before{ content:attr(data-time); margin-bottom:0.166666667rem; display:block; font-size:0.533333333rem; font-weight:700; }
+    .timetable-article .time-table > dl > dd > a:after{ position:absolute; right:0; bottom:0.333333333rem; }
+    .timetable-article .time-table > dl > dd.live > a:after{ width:2.333333333rem; }
+
+    .board-article{ -webkit-box-orient:vertical; -ms-flex-direction:column; flex-direction:column; }
+    .board-article > div:first-child{ margin-bottom:1rem; }
+}

@@ -1,0 +1,168 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/common_mypage_ordercheck_detail.html
+* @ 페이지설명	: 공통 > 마이페이지 > 주문/배송조회 > 주문상세
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-17
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>마이페이지 > 주문/배송조회 > 주문상세</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+<script type="text/javascript">
+function popup1() {
+    window.open('common_mypage_cart_change_destination.html', 'common_mypage_cart_change_destination', 'width=822, height=1088, scrollbars= 0, toolbar=0, menubar=no');
+}
+</script>
+</head>
+<body data-depth1="common" data-depth2="mypage" data-depth3="ordercheck" data-depth4="detail" data-depth="event">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재ON &gt;</span>
+		<span>마이페이지 &gt;</span>
+		<span>주문/배송조회</span>
+	</div>
+	<div id="content">
+		
+
+		<h2 data-title="type1">주문/배송 조회</h2>
+		<div data-layout="type1">
+			<h3 data-title="type2">
+				주문정보
+				<span class="right_btn"><!--20180510 추가-->
+					<button type="button" data-btn="whitegray">정답 및 해설지 다운</button>
+				</span>
+			</h3>
+			<div data-table="type4" class="m_b50">
+				<table>
+					<caption>주문정보 상세</caption>
+					<colgroup>
+						<col style="width:130px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">주문번호</th>
+							<td>
+								1234
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">주문일자</th>
+							<td>2017-01-01</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="3" class="v_top">주문상품</th>
+							<td class="btn80_right">
+								홍길동 모의고사 수학 가형
+								<span class="f_color3 prepare"><b>배송준비중</b></span>
+								<button type="button" data-btn="whitegray" class="small">배송조회</button>
+							</td>
+						</tr>
+						<tr>
+							<td class="btn80_right">
+								서바이벌 실전모의 온라인 0회 무료신청
+								<span class="f_color3"><b>환불완료</b></span>
+							</td>
+						</tr>
+						<tr>
+							<td class="btn80_right">
+								서바이벌 실전모의 온라인 0회 무료신청
+								<button type="button" data-btn="whitegray" class="small delivery">배송조회</button>
+								<button type="button" data-btn="whitegray" class="small">배송조회</button>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">주문금액</th>
+							<td>194,400원</td>
+						</tr>
+						<tr>
+							<th scope="row">배송메모</th>
+							<td>경비실에 맡겨주세요.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 data-title="type2">배송정보</h3>
+			<div data-table="type4" class="m_b30">
+				<table class="m_b20">
+					<caption>배송정보 상세</caption>
+					<colgroup>
+						<col style="width:130px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">이름</th>
+							<td>홍길동</td>
+						</tr>
+						<tr>
+							<th scope="row">주소</th>
+							<td>서울특별시 강남구 삼성로 434 쥬비스타워 5층</td>
+						</tr>
+						<tr>
+							<th scope="row">휴대폰번호</th>
+							<td>010-1234-5678</td>
+						</tr>
+						<tr>
+							<th scope="row">전화번호</th>
+							<td>02-1234-5678</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--20180510 삭제-->
+				<!--div data-box="type6">
+					<ul>
+						<li>
+							<span>-</span>
+							<p>
+								주문번호 당 하나의 배송지로만 변경 가능합니다.
+						 	</p>
+						 </li>
+						<li><span>-</span><p>주문상품의 배송상태가 [배송준비중]일 때만 변경 가능하며 [배송중] 상태의 상품 배송지 변경은 고객센터(1522-0568 또는 1:1 상담)로 문의 주시기 바랍니다.  </p></li>
+						<li><span>-</span>
+							<p>
+								[배송준비중]으로 노출 중인 상품이더라도 실제 상품이 포장되어 출고직전인 경우 해당 메뉴를 통해 배송지 변경 불가하니 고객센터(1522-0568 또는 1:1 상담)로 문의 주시기 바랍니다. 
+							</p>
+						</li>
+					</ul>
+				</div-->
+			</div>
+		</div>
+		<div class="btn_wrap3"><!--20180510 추가-->
+			<button type="button" data-btn="whitegray">이전</button>
+		</div>
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

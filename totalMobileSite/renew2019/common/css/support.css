@@ -1,0 +1,24 @@
+.wid100{ width:100%; }
+/* .pl5{ padding-left:5px !important; } */
+.dim-content .dim-btn .btn{ width: calc( 50% - 2px ); }
+.input-text-mid{ width: calc(50% - 11px) !important; }
+
+.support{ padding-bottom:0; }
+.support .board-table table tr th{ padding:15px 10px; text-align: center;}
+.support .table-list1 table tr th{ text-align:center; }
+.support .table-list1 table tr td.on{ background-color:#ededed;}
+.support .form-select select{ padding-right: 15px; padding-left: 10px;}
+/* .board-table{ border-top:none!important;} */
+
+.form-radio{ margin-left:5px; }
+.step-box { line-height: 25px; margin-bottom: 30px; padding-top: 0; padding-bottom: 20px; position: relative; border-bottom: 1px solid #ededed; }
+.step-box .tit { font-size: 15px; font-weight: bold; letter-spacing: -.025em; text-align: left; }
+.step-box .step { position: absolute; top: 0; right: 0; }
+
+.form-defult table tr td:first-child, .board-table table tr td{ padding-left:10px; }
+@media (max-width:375px){
+    .form-defult table tr td:first-child, .board-table table tr td{ padding-left:5px; }
+}
+
+.img-box{ border:none; text-align:center; }
+.img-box > img{ max-width:320px; }

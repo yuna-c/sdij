@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.btn-download2{ height:40px; line-height:38px; }
+
+.page-tit{ margin-top:50px; }
+.table-tit > small{ margin-top:10px; display:block; position:relative; bottom:0; }
+
+.white-box{ padding:40px 20px; position:relative; }
+.white-box .dep3-tit{ margin:50px auto 10px; }
+.white-box > .dep3-tit:first-child{ margin-top:0; }
+.white-box .list-number > li{ color:#000; }
+.white-box > .info-area{ display:flex; position:absolute; top:-1px; left:0; right:0; bottom:0; background:rgba(0, 0, 0, .7); font-size:24px; font-weight:700; color:#fff; justify-content:center; align-items:center; }
+
+/* index */
+.index-container .board-table{ width:450px; }
+.index-container .board-table table tr td{ padding:10px; }
+
+.lec-container .board-table{ border-top:1px solid #000; }

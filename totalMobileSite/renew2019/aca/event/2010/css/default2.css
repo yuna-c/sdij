@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/* step-box */
+.step-box{ line-height:25px; margin-bottom:30px; padding-top:0; padding-bottom:20px; position:relative; border-bottom:1px solid #ededed; }
+.step-box .tit{ font-size:15px; font-weight:bold; letter-spacing:-0.025em; text-align:left; }
+.step-box .step{ position:absolute; top:0; right:0; }
+
+/* form-toggle */
+.form-toggle > [class^='toggle'] input{ width:0; height:0; position:absolute; opacity:0; }
+.form-toggle > [class^='toggle'] .btn{ cursor:pointer; }
+.form-toggle > [class^='toggle'] input:checked + .btn{ background-color:#000; color:#fff; }
+.form-toggle .toggle-radio .btn{ width:calc(50% - 5px); margin-left:5px; }
+.form-toggle .toggle-radio:first-child .btn{ margin-left:0; }
+.form-toggle .toggle-radio .btn-on, .toggle-radio .active{ background-color:#000; border-color:#000; color:#fff !important; }
+.form-toggle .toggle-checkbox .btn{ width:calc(50% - 5px); margin-left:5px; }
+.form-toggle .btn-on, .toggle-btn .active{ background-color:#000; border-color:#000; color:#fff !important; } 
+
+/* form-toggle2 */
+.form-toggle2 .toggle-radio .btn{ width:calc((100% - 10px) / 3); }
+.form-toggle2 .toggle-radio:first-child .btn{ margin-left:0; }
+.form-toggle2 .toggle-radio:nth-child(5) .btn{ margin-left:0; }
+.form-toggle2 .toggle-checkbox .btn{ width:calc((100% - 10px) / 3); box-sizing:border-box; }
+.form-toggle2 .toggle-checkbox .btn{ margin-left:0px; margin-bottom:5px; }
+/* .form-toggle2.col4 .toggle-checkbox .btn{ width:calc((100% - 10px) / 4); } */
+.form-toggle2.col4 .toggle-checkbox .btn { width: calc((50% - 10px) / 2); }
+
+/* subject-area */
+.subject-area{ margin-bottom:20px; }
+.subject-area > ul{ display:flex; justify-content:center; align-items:center; }
+.subject-area > ul > li:nth-child(even){ margin:0 10px; } 
+.subject-area .img{ width:110px; height:158px; /*width:7rem; height:10rem;*/ display:flex; position:relative; background-color:#fafafa; border:1px solid #d3d3d3; justify-content:center; align-items:center; box-sizing:border-box; }
+.subject-area .img:after{ content:'과목을 \A 선택해주세요'; display:flex; position:absolute; top:0; left:0; right:0; bottom:0; font-size:12px; color:#a3a3a3; text-align:center; white-space:pre; justify-content:center; align-items:center; z-index:1; }
+.subject-area .img > img{ min-width:100%; max-height:100%; position:relative; z-index:10; }
+.subject-area .txt{ height:24px; margin-top:10px; font-size:1rem; font-weight:700; text-align:center; }
+
+.event-info{ margin-top:50px; padding:50px 0; background-color:#ececec; }
+.event-info .board-table{ background-color:#fff; }
+.event-info .board-table table tr td{ padding:15px; text-align:left; }
+.event-info .board-table table tr th{ padding:15px; text-align:center; }
+
+/* event */
+.event-container{ margin-bottom:0; }
+.event-container img{ width:100%; }
+
+.event-container .content-layout{ padding-bottom:50px; } /* padding-bottom:35px; */
+.event-container .content-layout .tit{ max-width:280px; margin:0 auto; padding:50px 0 24px; }
+.event-container .content-layout .img-area p{ max-width:280px; width:100%; margin:0 auto; padding-bottom:25px; }
+.event-container .content-layout .img-area p:last-child{ padding-bottom:0; }
+
+.event-container .event-header .bg-black{ padding:0px 6px; background-color:#000; font-weight:500; color:#fff; }
+.event-container .event-header .page-tit{ margin-top:50px; margin-bottom:100px; padding-bottom:0; font-weight:700; }
+.event-container .event-header .page-tit .ff-serif{ position:relative; margin-top:100px; font-weight:500; }
+.event-container .event-header .page-tit .ff-serif:before{ content:""; width:50px; display:block; margin:-5px auto 20px; height:1px; background:#999; }
+
+.event-container .event-cont01{ background-color:#f8f8f8; }
+.event-container .event-cont02{ padding-top:50px; }
+.event-container .event-cont03{ background:#f8f8f8 url(//img.sdij.com/sd2019/mobile/aca/event/2010/ico_logo.png) no-repeat 100% 100%; background-size:200px auto; }
+.event-container .event-cont03 .img-area p:first-child{ padding-bottom:15px; }
+
+/* ordergate */
+.ordergate-container .page-tit{ margin-bottom:30px; }
+.ordergate-container .table-tit{ font-size:15px; } 
+.ordergate-container .ordergate-content .table-tit{ border-color:#ddd; font-size:15px; } /* font-size:15px; */
+.ordergate-container .ordergate-content .tit{ padding:12px 0 15px; font-weight:700; text-align:center; }
+.ordergate-container .ordergate-content .pirce-area .table-tit{ padding:0; border:1px solid #000; }
+.ordergate-container .ordergate-content .pirce-area .tit{ margin:0 10px 10px; font-size:21px; }
+.ordergate-container .ordergate-content .board-btn{ margin:0 10px 10px; }
+.ordergate-container .ordergate-content .bg-area{ background-color:#f8f8f8; }
+.ordergate-container .ordergate-content .img-area p{ text-align:center; }
+.ordergate-container .ordergate-content .img-area p img{ max-width:280px; width:100%; }
+
+@media screen and (min-width:1024px){
+	html{ font-size:16px !important; }
+}
+
+@media all and (min-width:320px) and (max-width:413px) and (orientation:portrait){
+	html{font-size:12px !important;}
+	.flex-center > ul{ justify-content:center !important; } /* max-width:82px; max-height:118px; */
+	.subject-area .img{ width:82px; height:118px; }
+	.event1-container .event-cont01 .content-layout .table-tit{ padding:10px 0; }
+}
+
+/* event1 
+.event1-container .event-header .content-layout .page-tit{ margin-bottom:0; }
+.event1-container .event-cont01 .content-layout .table-tit{ border-color:#ddd; font-size:15px; }
+.event1-container .event-cont01 .content-layout .tit{ padding:12px 0 15px; font-weight:700; text-align:center; }
+.event1-container .event-cont01 .content-layout .pirce-area .table-tit{ padding:0; border:1px solid #000; }
+.event1-container .event-cont01 .content-layout .pirce-area .tit{ margin:0 10px 10px; font-size:21px; }
+.event1-container .event-cont01 .content-layout .board-btn{ margin:0 10px 10px; }
+.event1-container .event-cont01 .content-layout .bg-area{ background-color:#f8f8f8; }
+.event1-container .event-cont01 .content-layout .img-area p{ text-align:center; }
+.event1-container .event-cont01 .content-layout .img-area p img{ max-width:280px; width:100%; }
+*/

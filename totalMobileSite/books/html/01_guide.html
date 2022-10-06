@@ -1,0 +1,854 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: Guide
+* @ 파일명 		: /html/01_do.html
+* @ 페이지설명 	: Guide
+* @ 작성자 		: 도혜진
+* @ 작성일 		: 2017-03-29
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 도혜진 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Guide</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/mb-comingsoon-iceberg.min.css">
+<script src="../common/js/common_ui.js"></script>
+<!-- <script src="../common/js/common_dev.js"></script> -->	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/jquerypp.custom.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+.guide>*{vertical-align:middle;}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body>
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+
+		<h2 class="title_type1">data-title="type1"</h2>
+		<h2 data-title="type1">공지사항</h2>
+
+		<h2 class="title_type1">data-title="type1" class="light"</h2>
+		<h2 data-title="type1" class="light">공지사항</h2>
+
+		<h2 class="title_type1">data-title="type2"</h2>
+		<div data-layout="type1">
+			<h3 data-title="type2">
+				아이디를 잊으셨나요?
+				<em>회원정보 상의 이름, 휴대폰번호로 아이디를 찾을 수 있습니다.</em>
+			</h3>
+		</div>
+
+		<h2 class="title_type1">data-step="type2"</h2>
+		<div data-layout="type1">
+			<div data-step="type2">
+				<div class="on"><h2><em>1</em>과목신청</h2></div><!-- 현재단계 class="on" --> <!-- 완료단계 class="pass" -->
+				<div><em>2</em>회원가입</div>
+				<div><em>3</em>신청완료</div>
+			</div>
+		</div>
+
+		<h2 class="title_type1">data-step="type2" class="noline"</h2>
+		<div data-layout="type1">
+			<div data-step="type2" class="noline">
+				<div class="pass"><em>1</em>본인인증</div><!-- 완료단계 class="pass" -->
+				<div class="on"><em>2</em>정보입력</div><!-- 현재단계 class="on" -->
+				<div><em>3</em>가입완료</div>
+			</div>
+		</div>
+
+		<h2 class="title_type1">data-text="type1"</h2>
+		<div data-layout="type1">
+			<div data-text="type1">
+				<p>입력 정보가 정확한지 확인 후 다시 시도 해 주세요.</p>
+				<p>회원 가입 여부를 다시 확인 해 주세요.</p>
+				<p>정확한 정보 입력에도 검색이 되지 않는다면 고객센터로 문의 해 주세요.</p>
+			</div>
+		</div>
+
+		<h2 class="title_type1">data-text="type3"</h2>
+		<div data-layout="type1">
+			<p data-text="type3">선택 완료 후,<br>과목 변경이 불가합니다.<br>변경 사항이 없는지<br>정확하게 확인하세요.</p>
+		</div>
+
+		<h2 class="title_type1">data-text="type2"</h2>
+		<div data-layout="type1">
+			<p data-text="type2">만 14세 미만 회원으로 가입하시려면 보호자(부모님, 법정 대리인)의 동의가 필요합니다.</p>
+		</div>
+
+		<h2 class="title_type1">data-text="type4"</h2>
+		<div data-layout="type1">
+			<p data-text="type4">* 키워드를 2자 이상 입력하세요.</p>
+		</div>
+
+		<h2 class="title_type1">data-form="input"</h2>
+		<div data-layout="type1">
+			<p>
+				<label for="test4" class="field_name">data-form="input"</label><span data-form="input"><input type="text" id="test4"></span>
+			</p>
+			<p>
+				<label for="test4" class="field_name">data-form="input" class="size140"</label><span data-form="input" class="size140"><input type="text" id="test4"></span>
+			</p>
+			<p>
+				<label for="test4" class="field_name">data-form="input" class="size168"</label><span data-form="input" class="size168"><input type="text" id="test4"></span>
+			</p>
+			<p>
+				<label for="test4" class="field_name">data-form="input" class="size320"</label><span data-form="input" class="size320"><input type="text" id="test4"></span>
+			</p>
+			<p>
+				<label for="test4" class="field_name">data-form="input" class="size380"</label><span data-form="input" class="size380"><input type="text" id="test4"></span>
+			</p>
+			<p>
+				<label for="test4" class="field_name">data-form="input" class="size520"</label><span data-form="input" class="size520"><input type="text" id="test4"></span>
+			</p>
+		</div>
+
+		<h2 class="title_type1">data-form="select"</h2>
+		<div data-layout="type1">
+			<p>
+				<span data-form="select">
+					<select title="타이틀">
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+					</select>
+				</span>
+			</p>
+			<p>
+				<span data-form="select" class="size200">
+					<select title="타이틀">
+						<option>size200</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+					</select>
+				</span>
+			</p>
+			<p>
+				<span data-form="select" class="size270">
+					<select title="타이틀">
+						<option>size270</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+					</select>
+				</span>
+			</p>
+			<p>
+				<span data-form="select" class="full">
+					<select title="타이틀">
+						<option>full</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+					</select>
+				</span>
+			</p>
+		</div>
+
+		<h2 class="title_type1">data-form="radio"</h2>
+		<div data-layout="type1">
+			<span data-form="radio">
+				<input type="radio" id="radio1" name="radio_test1" checked="checked">
+				<label for="radio1">남자</label>
+			</span>
+			<span data-form="radio">
+				<input type="radio" id="radio2" name="radio_test1">
+				<label for="radio2">여자</label>
+			</span>
+		</div>
+
+		<h2 class="title_type1">data-form="checkbox"</h2>
+		<div data-layout="type1">
+			<span data-form="checkbox">
+				<input type="checkbox" id="check2">
+				<label for="check2">동의</label>
+			</span>
+		</div>
+
+		<h2 class="title_type1">data-form="checkbox" class="type1"</h2>
+		<div data-layout="type1">
+			<p data-form="checkbox" class="type1">
+				<span>(주)하이컨시ON 이용약관, 정보 활용 및 개인정보 제 3자 제공에 모두 동의합니다.</span>
+				<input type="checkbox" id="check1">
+				<label for="check1">전체동의</label>
+			</p>
+		</div>
+		
+		<h2 class="title_type1">data-form="textarea"</h2>
+		<div data-layout="type1">
+			<textarea data-form="textarea">data-form="textarea"</textarea>
+		</div>
+
+		<h2 class="title_type1">data-form="textarea" readonly="readonly"</h2>
+		<div data-layout="type1">
+			<textarea data-form="textarea" readonly="readonly">
+1. 개인정보 이용목적 및 수집항목
+1) 서바이벌 knock 무료 배송 서비스를 위한 개인정보 이용 목적
+- 서바이벌 knock 배송에 대한 원활한 대응 및 서비스, 고객 관리 개인정보 수집 항목
+2) 서바이벌 knock 무료 배송 서비스를 위한 개인정보 수집 항목
+- 이름, 연락처, 주소, 신청과목
+3) 학습서비스를 위한 개인정보 수집 항목
+- 학교, 성적정보 
+
+2. 개인정보 보유기간
+㈜하이컨시온은 법령에 따른 개인정보 보유·이용기간 또는 고객으로부터 개인정보를 수집시에 동의 받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다. 상법 등 관련법령의 규정에 의하여 보존할 의무가 있는 경우 회사는 고객님의 개인정보를 보관합니다. 이 경우 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 다음과 같습니다.
+-보존기간 : 3년
+-보존근거 : 전자상거래 등에서의 소비자보호에 관한 법률
+
+3. 개인정보 제3자 제공 동의
+㈜하이컨시온은 서바이벌 knock 물품 배송을 위하여 필요한 개인정보를 00택배에게 제공합니다.
+ 
+- 업체명: 00 택배
+- 기간: 이벤트 종료(배송기간 포함) 30일 후 즉시 개인정보 파기 처리
+- 위 업체는 수탁 받은 고객님의 개인정보를 서바이벌 knock 경품 발송의 목적으로만 사용하며 그 외에 다른 용도로 사용하지 않습니다.
+			</textarea>
+		</div>
+
+		<h2 class="title_type1">data-btn="color"</h2>
+		<div data-layout="type1">
+			<button type="button" data-btn="black">data-btn="black"</button>
+			<button type="button" data-btn="gray">data-btn="gray"</button>
+			<button type="button" data-btn="whitegray">data-btn="whitegray"</button>
+			<button type="button" data-btn="login_whitegray">data-btn="login_whitegray"</button>
+			<button type="button" data-btn="red">data-btn="red"</button>
+			<button type="button" data-btn="navy">data-btn="navy"</button>
+			<button type="button" data-btn="blue">data-btn="blue"</button>
+			<button type="button" data-btn="orange">data-btn="orange"</button>
+			<button type="button" data-btn="orange2">data-btn="orange2"</button>
+			<button type="button" data-btn="fontgray">data-btn="fontgray"</button>
+			<button type="button" data-btn="navy" class="disabled" disabled="disabled">class="disabled"</button>
+			<p>
+				<button type="button" data-btn="link">data-btn="link"</button>
+			</p>
+		</div>
+
+		<h2 class="title_type1">data-btn="color" class="size"</h2>
+		<div data-layout="type1">
+			<button type="button" data-btn="black" class="size160">size160</button>
+			<button type="button" data-btn="gray" class="size220">size220</button>
+			<button type="button" data-btn="whitegray" class="size270">size270</button>
+		</div>
+
+		<h2 class="title_type1">class="btn_wrap"</h2>
+		<div data-layout="type1">
+			<div class="btn_wrap">
+				<button type="button" data-btn="navy">class="btn_wrap"</button>
+			</div>
+		</div>
+
+		<h2 class="title_type1">class="btn_wrap bor_bot1"</h2>
+		<div data-layout="type1">
+			<div class="btn_wrap bor_bot1">
+				<button type="button" data-btn="navy" class="size220">class="btn_wrap bor_bot1"</button>
+			</div>
+		</div>
+
+		<h2 class="title_type1">class="btn_wrap2"</h2>
+		<div data-layout="type1">
+			<div class="btn_wrap2">
+				<button type="button" data-btn="navy">class="btn_wrap2"</button>
+			</div>
+		</div>
+
+		<h2 class="title_type1">class="btn_wrap3"</h2>
+		<div data-layout="type1">
+			<div class="btn_wrap3">
+				<button type="button" data-btn="navy">class="btn_wrap3"</button>
+			</div>
+		</div>
+
+		<h2 class="title_type1">class="btn_fixbt"</h2>
+		<div data-layout="type1">
+			<div class="btn_fixbt">
+				<button type="button" data-btn="navy">class="btn_fixbt"</button>
+			</div>
+		</div>
+
+		<h2 class="title_type1">data-form="wrap"</h2>
+		<div data-layout="type1">
+			<dl data-form="wrap">
+				<dt><label for="input3" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+				<dd><span data-form="input"><input type="text" id="input3"></span></dd>
+				<dt><label for="input4" class="field_name">아이디<strong>*<em>필수항목</em></strong></label></dt>
+				<dd class="m_b25"><span data-form="input" class="size380 m_b25"><input type="text" id="input4"></span><button type="button" data-btn="whitegray" class="size160 m_l20">중복확인</button><span class="field_info">6자 이상의 영문, 영문+숫자조합</span></dd>
+				인
+				<dt><label for="input6" class="field_name">비밀번호 확인<strong>*<em>필수항목</em></strong></label></dt>
+				<dd><span data-form="input"><input type="password" id="input6"></span></dd>
+				<dt><span class="field_name">생년월일<strong>*<em>필수항목</em></strong></span></dt>
+				<dd>
+					<span data-form="select" class="m_b20">
+						<select title="태어난 해">
+							<option>년</option>
+							<option>옵션1</option>
+							<option>옵션2</option>
+							<option>옵션3</option>
+						</select>
+					</span>
+					<span data-form="select" class="m_l28 m_b20">
+						<select title="태어난 월">
+							<option>월</option>
+							<option>옵션1</option>
+							<option>옵션2</option>
+							<option>옵션3</option>
+						</select>
+					</span>
+					<span data-form="select" class="m_l28 m_b20">
+						<select title="태어난 일">
+							<option>일</option>
+							<option>옵션1</option>
+							<option>옵션2</option>
+							<option>옵션3</option>
+						</select>
+					</span>
+					<span data-form="radio">
+						<input type="radio" id="radio1" name="radio_test1" checked="checked">
+						<label for="radio1">남자</label>
+					</span>
+					<span data-form="radio">
+						<input type="radio" id="radio2" name="radio_test1">
+						<label for="radio2">여자</label>
+					</span>
+				</dd>
+				<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+				<dd class="m_b60">
+					<p class="m_b10">
+						<span data-form="select">
+							<select title="휴대폰번호 앞 세자리">
+								<option>010</option>
+								<option>011</option>
+								<option>017</option>
+								<option>018</option>
+								<option>019</option>
+							</select>
+						</span>
+						<em>-</em>
+						<span  data-form="input" class="size168">
+							<input type="text" title="휴대폰번호 가운데 네자리">
+						</span>
+						<em>-</em>
+						<span  data-form="input" class="size168">
+							<input type="text" title="휴대폰번호 뒤 네자리">
+						</span>
+					</p>
+					<p>
+						<span class="field_name">상품, 입시정보, 이벤트 정보 등을 SMS로</span>
+						<span data-form="radio" class="type1">
+							<input type="radio" id="radio3" name="radio_test2" checked="checked">
+							<label for="radio3">받음</label>
+						</span>
+						<span data-form="radio" class="type1">
+							<input type="radio" id="radio4" name="radio_test2">
+							<label for="radio4">받지 않음</label>
+						</span>
+					</p>
+				</dd>
+				<dt><label for="input2" class="field_name">인증번호</label></dt>
+				<dd class="m_b50">
+					<span data-form="input" class="m_b25"><input type="text" id="input2"></span>
+					<span class="timer"><em>인증번호 입력 남은시간</em>03:00</span>
+					<p class="field_info">
+						입력한 휴대폰번호로 인증번호가 발송됩니다.<br>
+						1개의 휴대폰번호로 1개의 아이디만 가입 가능합니다.
+					</p>
+				</dd>
+			</dl>
+		</div>
+
+		<h2 class="title_type1">data-form="wrap" class="type1"</h2>
+		<div data-layout="type1">
+			<form data-form="wrap" class="type1">
+				<fieldset>
+					<span data-form="input"><input type="text" id="input1" placeholder="아이디"></span>
+					<span data-form="input"><input type="password" id="input2" placeholder="비밀번호"></span>
+					<button type="button" data-btn="navy">로그인</button>
+				</fieldset>
+				<a href="#" class="find_account">아이디 또는 비밀번호를 잊으셨습니까?</a>
+			</form>
+		</div>
+
+		<h2 class="title_type1">data-form="wrap" class="type2"</h2>
+		<div data-layout="type1">
+			<dl data-form="wrap" class="type2">
+				<dt><span class="field_name">수학</span></dt>
+				<dd><span data-form="input" class="size140"><input type="text" title="수학점수"></span><span class="field_info m_l12">점</span></dd>
+				<dt><span class="field_name">과학 (1)</span></dt>
+				<dd>
+					<span data-form="select" class="size200">
+						<select title="첫번째 과학 과목선택">
+							<option>선택</option>
+							<option>물리Ⅰ</option>
+							<option>물리Ⅱ</option>
+							<option>화학Ⅰ</option>
+							<option>화학Ⅱ</option>
+							<option>생명과학Ⅰ</option>
+							<option>생명과학Ⅱ</option>
+							<option>지구과학Ⅰ</option>
+							<option>지구과학Ⅱ</option>
+						</select>
+					</span>
+					<span data-form="input" class="size140 m_l20"><input type="text" title="첫번째 과학과목점수"></span>
+					<span class="field_info m_l12">점</span>
+				</dd>
+				<dt><span class="field_name">과학 (2)</span></dt>
+				<dd>
+					<span data-form="select" class="size200">
+						<select title="두번째 과학 과목선택">
+							<option>선택</option>
+							<option>물리Ⅰ</option>
+							<option>물리Ⅱ</option>
+							<option>화학Ⅰ</option>
+							<option>화학Ⅱ</option>
+							<option>생명과학Ⅰ</option>
+							<option>생명과학Ⅱ</option>
+							<option>지구과학Ⅰ</option>
+							<option>지구과학Ⅱ</option>
+						</select>
+					</span>
+					<span data-form="input" class="size140 m_l20"><input type="text" title="두번째 과학과목점수"></span>
+					<span class="field_info m_l12">점</span>
+				</dd>
+			</dl>
+		</div>
+
+		<h2 class="title_type1">data-form="wrap" class="noline"</h2>
+		<div data-layout="type1">
+			<dl data-form="wrap" class="noline">
+				<dt><label for="test4" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+				<dd><span data-form="input"><input type="text" id="test4"></span></dd>
+				<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+				<dd>
+					<span data-form="select" title="휴대폰 번호 앞자리">
+						<select>
+							<option>010</option>
+							<option>011</option>
+							<option>017</option>
+							<option>018</option>
+							<option>019</option>
+						</select>
+					</span>
+					<em>-</em>
+					<span data-form="input" class="size168" title="휴대폰 번호 중간자리">
+						<input type="text">
+					</span>
+					<em>-</em>
+					<span data-form="input" class="size168" title="휴대폰 번호 뒷자리">
+						<input type="text">
+					</span>
+				</dd>
+			</dl>
+		</div>
+
+		<h2 class="title_type1">data-form="consult"</h2>
+		<form data-form="consult">
+			<fieldset>					
+				<div class="consult_list1">
+					<h3>컨설턴트</h3>
+					<div class="consult_btn1">
+						<button type="button">이민하 / 예약</button>
+						<button type="button" disabled="">정이규 (문과) / 마감</button>
+						<button type="button">정이규 (이과) / 마감</button>
+						<button type="button">강동우 (로미오) / 예약</button>
+						<button type="button">김용욱 (물량공급) / 예약</button>
+						<!-- <button type="button" class="RD">입시R&D센터</button> -->
+					</div>
+				</div>
+
+				<div class="consult_list2">
+					<h3>날짜</h3>
+					<div class="consult_btn2">
+						<button type="button">12월 1일 (금) <span>예약</span></button>
+						<button type="button">12월 2일 (토) <span>예약</span></button>
+						<button type="button">12월 3일 (일) <span>예약</span></button>
+						<button type="button" disabled="disabled">12월 4일 (월) <span>마감</span></button>
+						<button type="button">12월 5일 (화) <span>예약</span></button>
+						<button type="button" disabled="disabled">12월 6일 (수) <span>마감</span></button>
+						<button type="button">12월 7일 (목) <span>예약</span></button>
+						<button type="button">12월 8일 (금) <span>예약</span></button>
+						<button type="button">12월 9일 (토) <span>예약</span></button>
+						<button type="button" disabled="disabled">12월 10일 (일) <span>마감</span></button>
+						<button type="button">12월 11일 (월) <span>예약</span></button>
+						<button type="button" disabled="disabled">12월 12일 (화) <span>마감</span></button>
+						<button type="button">12월 13일 (수) <span>예약</span></button>
+						<button type="button" disabled="disabled">12월 14일 (목) <span>마감</span></button>
+						<button type="button">12월 15일 (금) <span>예약</span></button>
+						<button type="button" disabled="disabled">12월 16일 (토) <span>마감</span></button>
+						<button type="button">12월 17일 (일) <span>예약</span></button>
+						<button type="button">12월 18일 (월) <span>예약</span></button>
+						<button type="button">12월 19일 (화) <span>예약</span></button>
+						<button type="button" disabled="disabled">12월 20일 (수) <span>마감</span></button>
+						<button type="button">12월 21일 (목) <span>예약</span></button>
+						<button type="button" disabled="disabled">12월 22일 (금) <span>마감</span></button>
+						<button type="button">12월 23일 (토) <span>예약</span></button>
+						<button type="button" disabled="disabled">12월 24일 (일) <span>마감</span></button>
+						<button type="button">17년 12월 25일 (월) <span>예약</span></button>
+						<button type="button" disabled="disabled">17년 12월 26일 (화) <span>마감</span></button>
+						<button type="button">12월 27일 (수) <span>예약</span></button>
+						<button type="button">12월 28일 (목) <span>예약</span></button>
+						<button type="button">12월 29일 (금) <span>예약</span></button>
+						<button type="button" disabled="disabled">12월 30일 (토) <span>마감</span></button>
+						<button type="button">12월 31일 (일) <span>예약</span></button>
+						<div class="consult_dim">
+							<p><span>컨설턴트를 선택하세요.</span></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="consult_list3">
+					<h3>회차/시간</h3>
+					<div class="consult_btn3">
+						<button type="button" disabled="disabled">1회차 : 09시 10분 (50분) <span>마감</span></button>
+						<button type="button" disabled="disabled">2회차 : 10시 20분 (50분) <span>마감</span></button>
+						<button type="button">3회차 : 11시 30분 (50분) <span>예약</span></button>
+						<button type="button">4회차 : 12시 40분 (50분) <span>예약</span></button>
+						<button type="button">5회차 : 13시 50분 (50분) <span>예약</span></button>
+						<button type="button" disabled="disabled">6회차 : 14시 00분 (50분) <span>마감</span></button>
+						<button type="button">7회차 : 15시 10분 (50분) <span>예약</span></button>
+						<button type="button">8회차 : 16시 20분 (50분) <span>예약</span></button>
+						<button type="button">9회차 : 17시 30분 (50분) <span>예약</span></button>
+						<button type="button" disabled="disabled">10회차 : 18시 40분 (50분) <span>마감</span></button>
+						<button type="button" disabled="disabled">11회차 : 19시 50분 (50분) <span>마감</span></button>
+						<button type="button">12회차 : 20시 00분 (50분) <span>예약</span></button>
+						<div class="consult_dim">
+							<p><span>날짜를 선택하세요.</span></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="consult_list4">
+					<h3>입시 R&amp;D센터</h3>
+					<div class="consult_dim2">
+						<p class="m_b60">성적과 요구사항에 최적화 된 컨설턴트가 자동
+						배정되며 접수 시, 상세 일정 선택은 불가합니다.
+						(예약 신청 완료 시, 시대인재 학원에서 신청 순서대로
+						개별 연락 드릴 예정입니다.)</p>
+
+						<p>[입시R&amp;D 소속 컨설턴트]
+						<em>- 강동우 (로미오)</em>
+						<em>- 김용욱 (물량공급)</em>
+						<em>- 윤환석 (아우켈라)</em>
+						<em>- 이용석 (프리오드)</em>
+						<em>- 이승엽 (플루토늄)</em></p>
+					</div>
+				</div>
+
+				<h3>신청확인</h3>
+				<dl class="consult_check">
+					<dt>컨설턴트</dt>
+					<dd>이민하</dd>
+					<dt>날짜</dt>
+					<dd>2017년 12월 3일 (일)</dd>
+					<dt>회차/시간</dt>
+					<dd>3회차/11시 30분 (50분)</dd>
+				</dl>
+				<div class="btn_wrap">
+					<button type="button" data-btn="navy" data-popup="sample" id="consult">신청</button>
+				</div>
+			</fieldset>
+		</form>
+
+		<script type="text/javascript">
+			$('*[class^="consult_list"] button').click(function(){
+				if($(this).parents().hasClass('consult_list1') == true){
+					if($(this).hasClass('RD') == true){
+						$('*[class^="consult_list"]').hide();
+						$('.consult_list1').show();
+						$('.consult_list4').show();
+					}else{
+						$('*[class^="consult_btn"] button').siblings().removeClass('select');
+						$(this).parents('.consult_list1').nextAll('div').show();
+						$('.consult_list4').hide();
+						$('.consult_list3 .consult_dim').show();
+						$('.consult_list2 .consult_dim').hide();
+					}
+				}else{
+				    $('.consult_list3 .consult_dim').hide();
+				}
+				$(this).siblings().removeClass('select');
+				$(this).addClass('select');
+			});
+		</script>
+
+		<h2 class="title_type1">data-box="type1"</h2>
+		<div data-layout="type1">
+			<div data-box="type1">
+				<span>입력하신 정보와 일치하는 아이디는 <b class="f_color1">sidae****</b> 입니다.</span>
+			</div>
+		</div>
+
+		<h2 class="title_type1">data-box="type1" class="error"</h2>
+		<div data-layout="type1">
+			<div data-box="type1" class="error">
+				<dl data-icon="type2" class="ico03">
+					<dt>SDIJ.COM(시대인재) 회원이 되셨습니다.</dt>
+					<dd>단 한 문제로 바뀔 <em>김시대님</em>의 꿈을 응원합니다.<br>시대의 인재가 되다.</dd>
+				</dl>
+			</div>
+		</div>
+
+		<h2 class="title_type1">data-box="type1" class="small"</h2>
+		<div data-layout="type1">
+			<div data-box="type1" class="small">
+				<strong>서바이벌의 위치를 확인하세요!</strong>
+				<span>운송장번호 : <em>1234567890</em></span>
+				<button type="button" data-btn="whitegray" class="size160">배송조회</button>
+				<button type="button" data-btn="whitegray" class="size160 m_l20">FAQ 확인</button>
+			</div>
+		</div>
+
+		<h2 class="title_type1">data-box="type3"</h2>
+		<div data-layout="type1">
+			<div data-box="type3">
+				<p>
+					<span data-form="checkbox">
+						<a href="#" data-btn="link">하이컨시 ON 이용약관 (필수)</a>
+						<input type="checkbox" id="check2">
+						<label for="check2">동의</label>
+					</span>
+				</p>
+				<p>
+					<span data-form="checkbox">
+						<a href="#" data-btn="link">개인정보처리방침 (필수)</a>
+						<input type="checkbox" id="check3">
+						<label for="check3">동의</label>
+					</span>
+				</p>
+				<p>
+					<span data-form="checkbox">
+						<a href="#" data-btn="link">개인정보 수집 및 프로모션 이용안내 (선택)</a>
+						<input type="checkbox" id="check4">
+						<label for="check4">동의</label>
+					</span>
+				</p>
+			</div>
+		</div>
+
+		<h2 class="title_type1">data-box="type13"</h2>
+		<div data-layout="type1">
+			<form data-box="type13">
+				<div data-list="type5" class="m_b50">
+					<dl>
+						<dt><img src="../common/img/knock_test_math.png" alt="수학모의고사"></dt>
+						<dd>수학(가형)</dd>
+					</dl>
+					<dl>
+						<dt><img src="../common/img/knock_test_life1.png" alt="생명과학모의고사"></dt>
+						<dd>생명과학 I</dd>
+					</dl>
+					<dl>
+						<dt></dt>
+						<dd></dd>
+					</dl>
+				</div>
+
+				<fieldset>
+					<button type="button">물리 I</button>
+					<button type="button">화학 I</button>
+					<button type="button">생명과학 I</button>
+					<button type="button">생명과학 II</button>
+					<button type="button" class="disabled" disabled="disabled">지구과학 I</button>
+					<button type="button" class="disabled" disabled="disabled">지구과학 II</button>
+				</fieldset>
+			</form>
+		</div>
+
+		<h2 class="title_type1">data-table="type4"</h2>
+		<div data-layout="type1">
+			<div data-table="type4" class="m_b60">
+				<table>
+					<caption>서바이벌 knock신청 유의사항</caption>
+					<tbody>
+						<tr>
+							<th scope="col">배송관련</th>
+						</tr>
+						<tr>
+							<td>
+								<ul data-list="type2">
+									<li><span>-</span><p><strong>상품은 6월 13일 ~ 15일 배송</strong> 시작 되고 매주 화/금요일에 출고되며, 배송은 1-2일(2-5일) 소요될 수 있습니다.<br>(금요일~월요일 신청 시 → 화요일 발송 / 화요일~목요일 신청 시 → 금요일 발송)</p></li>
+								</ul>	
+							</td>
+						</tr>
+						<tr>
+							<th scope="col">저작권관련</th>
+						</tr>
+						<tr>
+							<td>
+								<ul data-list="type2">
+									<li><span>-</span><p>무단 복사, 복제, 제본, 유포를 철저히 금지하고 있습니다.</p></li>
+									<li><span>-</span><p>웹사이트, 중고나라 등에 제본을 올리는 행위 또한 무단복제 행위이므로 반드시 유의해주시기 바랍니다.</p></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="col">문의사항</th>
+						</tr>
+						<tr>
+							<td>
+								<ul data-list="type2">
+									<li><span>-</span><p>이벤트 관련 문의는 FAQ 참고 부탁 드리며, 그외 이벤트 관련 문의사항이 있을 시에는</p><p><a href="mainto:sdij_event@sdin.com" data-btn="link">sdij_event@sdin.com</a> 으로 메일 보내시면 확인 후 순차적으로 답변됩니다.</p></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<h2 class="title_type1">data-list="type1"</h2>
+		<div data-layout="type1">
+			<dl data-list="type1">
+				<dt>1. 어떤 이벤트인가요?</dt>
+				<dd>
+					<p>오프라인 상위권 학생들의 사랑을 받았던 시대인재 서바이벌이 온라인에 곧 런칭 될 예정입니다.</p>
+					<p>본 이벤트는 시대인재 온라인 사이트 런칭을 기념하여 서바이벌 모의고사를 무료로 미리 체험 할 수 있는 Be the</p>
+					<p>시대인재 세트(서바이벌 0회 모의고사)를 무료로 제공하는 이벤트 입니다.</p>
+				</dd>
+				<dt>2. 상품 구성은 어떻게 되나요?</dt>
+				<dd>
+					<p>서바이벌 실전 모의고사 [수학+과학①+과학②], studeep, master note 총 3종으로 구성되어 있습니다.</p>
+					<p>모의고사는 총 3과목을 선택할 수 있으며 각 모의고사 1회분으로 구성되어 있습니다.</p>
+				</dd>
+			</dl>
+		</div>
+
+		<h2 class="title_type1">data-list="type2"</h2>
+		<div data-layout="type1">
+			<ul data-list="type2">
+				<li><span>-</span><p>적발 시 법적인 절차에 따라 형사고발 조치가 진행될 수 있습니다.</p></li>
+				<li><span>-</span><p>웹사이트, 중고나라 등에 제본을 올리는 행위 또한 무단복제 행위이므로 반드시 유의해주시기 바랍니다.</p></li>
+			</ul>
+		</div>
+
+		<h2 class="title_type1">data-list="type5"</h2>
+		<div data-layout="type1">
+			<div data-list="type5">
+				<dl>
+					<dt><img src="../common/img/knock_test_math.png" alt="수학모의고사"></dt>
+					<dd>수학(가형)</dd>
+				</dl>
+				<dl>
+					<dt><img src="../common/img/knock_test_life1.png" alt="생명과학모의고사"></dt>
+					<dd>생명과학 I</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd></dd>
+				</dl>
+			</div>
+		</div>
+
+		<h2 class="title_type1">data-icon="type2" class="ico03"</h2>
+		<div data-layout="type1">
+			<dl data-icon="type2" class="ico03">
+				<dt>SDIJ.COM(시대인재) 회원이 되셨습니다.</dt>
+				<dd>아무에게나 허락되지 않았던<br>서바이벌의 문이 열린다.</dd>
+			</dl>
+		</div>
+
+		<h2 class="title_type1">data-icon="type2" class="ico04"</h2>
+		<div data-layout="type1">
+			<dl data-icon="type2" class="ico04">
+				<dt>비밀번호가 변경되었습니다.</dt>
+				<dd>변경된 비밀번호로 로그인 할 수 있습니다.</dd>
+			</dl>
+		</div>
+
+		<h2 class="title_type1">data-icon="type2" class="ico05"</h2>
+		<div data-layout="type1">
+			<dl data-icon="type2" class="ico05">
+				<dt>시대인재 회원가입과<br>Be the 시대인재 신청이<br>완료되었습니다.</dt>
+				<dd><a href="#" data-btn="whitegray">FAQ 확인</a></dd>
+			</dl>
+		</div>
+
+		<h2 class="title_type1">data-icon="type4"</h2>
+		<div data-layout="type1">
+			<dl data-icon="type4">
+				<dt>서바이벌 knock 전량마감</dt>
+				<dd>이벤트종료<br>성원에 감사드립니다.</dd>
+			</dl>
+		</div>
+
+		<h2 class="title_type1">data-icon="type5" class="product1"</h2>
+		<div data-layout="type1">
+			<dl data-icon="type5" class="product1">
+				<dt>서바이벌 실전모의 1회분</dt>
+				<dd>(수학 + 과학1 + 과학2)</dd>
+			</dl>
+		</div>
+
+		<h2 class="title_type1">data-icon="type5" class="product2"</h2>
+		<div data-layout="type1">
+			<dl data-icon="type5" class="product2">
+				<dt><span>stu</span>deep</dt>
+				<dd></dd>
+			</dl>
+		</div>
+
+		<h2 class="title_type1">data-icon="type5" class="product3"</h2>
+		<div data-layout="type1">
+			<dl data-icon="type5" class="product3">
+				<dt>master note</dt>
+				<dd></dd>
+			</dl>
+		</div>
+
+		<h2 class="title_type1">class="timeline"</h2>
+		<div data-layout="type1">
+			<div class="timeline">
+				<ul>
+					<li>6월 초 Be the 시대인재</li>
+					<li>7월 중 시대인재 ON 오픈</li>
+					<!-- <li>7월 말 서바이벌 오픈</li> -->
+				</ul>
+			</div>
+		</div>
+
+		<h2 class="title_type1">class="countdown"</h2>
+		<div class="countdown"></div>
+
+		<h2 class="title_type1">class="school_list"</h2>
+		<div data-layout="type1">
+			<ul class="school_list">
+				<li>서울고등학교</li>
+				<li>서울과학고등학교</li>
+				<li>서울국악예술고등학교</li>
+				<li>서울고등학교</li>
+				<li>서울과학고등학교</li>
+				<li>서울국악예술고등학교</li>
+				<li class="noresult">검색결과가 없습니다.</li>
+			</ul>
+		</div>
+
+		<h2 class="title_type1">title</h2>
+		<div data-layout="type1"></div>
+
+		
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

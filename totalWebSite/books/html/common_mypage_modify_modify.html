@@ -1,0 +1,280 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/common_mypage_modify_modify.html
+* @ 페이지설명	: 공통 > 마이페이지 > 회원정보수정 > 정보수정
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-18
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>마이페이지 > 회원정보수정 > 정보수정</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	.style{}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="common" data-depth2="mypage" data-depth3="modify" data-depth4="modify">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재ON &gt;</span>
+		<span>마이페이지 &gt;</span>
+		<span>회원정보수정</span>
+	</div>
+	<div id="content">
+		
+
+		<h2 data-title="type1">회원정보수정</h2>
+		<div data-layout="type1">
+			<form>
+				<fieldset>
+					<dl data-form="wrap">
+						<dt><label for="input3" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input3" readonly="readonly" value="김시대"></span></dd>
+						<dt><label for="input4" class="field_name">아이디<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input4" readonly="readonly" value="sidaeinjae"></span></dd>
+						<dt><label for="input5" class="field_name">비밀번호<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="password" id="input5" readonly="readonly" value="1234"></span><button type="button" data-btn="whitegray" class="size100">변경</button></dd>
+						<dt><label for="input6" class="field_name">비밀번호 확인<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="password" id="input6"></span><button type="button" data-btn="whitegray" class="size100">확인</button><span class="field_info">8자 이상의 영문, 숫자, 특수문자 중 2가지 조합</span></dd>
+						<dt><span class="field_name">생년월일<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="select" class="type1">
+								<select title="태어난 해">
+									<option>년</option>
+									<option selected="selected">1983년</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<span data-form="select">
+								<select title="태어난 월">
+									<option>월</option>
+									<option selected="selected">01월</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<span data-form="select">
+								<select title="태어난 일">
+									<option>일</option>
+									<option selected="selected">01일</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<span data-form="radio">
+								<input type="radio" id="radio1" name="radio_test1" checked="checked">
+								<label for="radio1">남</label>
+							</span>
+							<span data-form="radio">
+								<input type="radio" id="radio2" name="radio_test1">
+								<label for="radio2">여</label>
+							</span>
+						</dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p>
+								<span  data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 앞 네자리" readonly="readonly" value="010">
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 가운데 네자리" readonly="readonly" value="1234">
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 뒤 네자리" readonly="readonly" value="5678">
+								</span>
+								<button type="button" data-btn="whitegray" class="size100">변경</button>
+							</p>
+							<p>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio3" name="radio_test3" checked="checked">
+									<label for="radio3">상품, 입시정보, 이벤트 정보 등을 SMS로 받음</label>
+								</span>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio4" name="radio_test3">
+									<label for="radio4">받지 않음</label>
+								</span>
+							</p>
+						</dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p>
+								<span data-form="select">
+									<select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 가운데 네자리">
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 뒤 네자리">
+								</span>
+								<button type="button" data-btn="whitegray">인증번호전송</button>
+							</p>
+							<p>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio5" name="radio_test2" checked="checked">
+									<label for="radio5">상품, 입시정보, 이벤트 정보 등을 SMS로 받음</label>
+								</span>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio6" name="radio_test2">
+									<label for="radio6">받지 않음</label>
+								</span>
+							</p>
+						</dd>
+						<dt><label for="input9" class="field_name">인증번호<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="password" id="input9"></span><button type="button" data-btn="whitegray" class="size100">확인</button><span class="field_info f_color3">03:00</span></dd>
+						<dt><span class="field_name">이메일<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p>
+								<span data-form="input" class="size170">
+									<input type="text" title="이메일 계정" value="sidaeinjae">
+								</span>
+								<em class="f_size14">@</em>
+								<span data-form="input" class="size170">
+									<input type="text" title="이메일주소 @ 뒷자리" value="sdij.com">
+								</span>
+								<span data-form="select" class="type3">
+									<select title="메일주소">
+										<option>직접입력</option>
+										<option>naver.com</option>
+										<option>hanmail.net</option>
+										<option>gmail.com</option>
+									</select>
+								</span>
+							</p>
+							<p>	
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio7" name="radio_test4" checked="checked">
+									<label for="radio7">상품, 입시정보, 이벤트 정보 등을 이메일로 받음</label>
+								</span>
+								<span data-form="radio" class="type1">
+									<input type="radio" id="radio8" name="radio_test4">
+									<label for="radio8">받지 않음</label>
+								</span>
+							</p>
+						</dd>
+						<!-- 2017-09-22 마크업 수정 S -->
+						<dt class="infoline"><span class="hidden">주소정보</span></dt>
+						<dd><p class="field_info f_color3">* 주소를 수정해도 배송지는 변경되지 않습니다. 상품 배송지 변경 희망 시, 고객센터 (1:1 상담)에 문의 글을 남겨주세요.</p></dd>
+						<!-- 2017-09-22 마크업 수정 E -->
+						<dt><span class="field_name">주소</span></dt>
+						<dd>
+							<p>
+								<span  data-form="input" class="size170">
+									<input type="text" readonly="readonly" title="우편번호" value="06108">
+								</span>
+								<button type="button" data-btn="whitegray">우편번호 찾기</button>
+							</p>
+							<p>	
+								<span  data-form="input" class="size370">
+									<input type="text" id="input7" readonly="readonly" value="서울특별시 강남구 삼성로 434">
+								</span>
+								<label for="input7" class="field_info">기본주소</label>
+							</p>
+							<p>	
+								<span  data-form="input" class="size370">
+									<input type="text" id="input8" value="쥬비스타워 5층">
+								</span>
+								<label for="input8" class="field_info">나머지주소</label>
+							</p>
+						</dd>
+						<dt><span class="field_name">전화번호</span></dt>
+						<dd>
+							<span data-form="select">
+								<select title="지역번호">
+									<option>02</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="전화번호 앞자리">
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="전화번호 뒷자리">
+							</span>
+						</dd>
+					</dl>
+					<p data-form="checkbox" class="type1">
+						<input type="checkbox" id="check1">
+						<label for="check1">SDIJ.COM 사이트를 이용하기 위한 통합 이용약관, 정보 활용 및 개인정보 제3자 제공에 모두 동의 합니다.</label>
+					</p>
+					<div data-box="type3" class="m_b30">
+						<p>
+							<span data-form="checkbox">
+								<input type="checkbox" id="check2" checked="checked">
+								<label for="check2">시대인재 이용약관 (필수)</label>
+							</span>
+							<a href="#">자세히보기</a>
+						</p>
+						<p>
+							<span data-form="checkbox">
+								<input type="checkbox" id="check3" checked="checked">
+								<label for="check3">개인정보 처리방침 (필수)</label>
+							</span>
+							<a href="#">자세히보기</a>
+						</p>
+						<p>
+							<span data-form="checkbox">
+								<input type="checkbox" id="check4">
+								<label for="check4">개인정보 수집 및 프로모션 이용안내 (선택)</label>
+							</span>
+							<a href="#">자세히보기</a>
+						</p>
+					</div>
+					<div class="btn_wrap3">
+						<button type="button" data-btn="navy">확인</button>
+						<a href="" class="link">시대인재 회원 탈퇴 하시겠습니까? ></a>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

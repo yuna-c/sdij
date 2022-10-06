@@ -1,0 +1,148 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/aca_consulting_info.html
+* @ 페이지설명	: 학원 > 컨설팅 > 컨설팅신청안내
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-10
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>컨설팅 > 컨설팅신청안내</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/aca_dev.js"></script>
+<script src="../common/js/typed.js"></script>
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="aca" data-depth2="college" data-depth3="reservation" data-depth4="certify">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+		
+		<h2 data-title="type1" class="m_b0">시대인재 단과 내 자리 예약하기</h2>
+
+		<div data-layout="type1">
+			<div data-box="reservation">
+				<ul data-list="type2" class="reserve">
+					<li><span>※</span><p>수업별 예약안내 문자를 수신한 수강생만 본 서비스를 이용할 수 있습니다.</p></li>
+					<li><span>※</span><p>이미 예약된 내역의 조회 또는 수정은 우측 내 자리 조회 메뉴를 이용하세요.</p></li>
+					<li><span>※</span><p>자리 예약은 수업 당일 AM 9:00까지만 가능합니다.</p></li><!-- 2018-01-31 텍스트 수정 -->
+				</ul>
+				<button type="button" data-btn="black" class="size140">내 자리 조회</button>
+			</div>
+
+			<div data-step="type2" class="m_b45">
+				<div class="on"><em>1</em>본인인증</div>
+				<div><em>2</em>좌석선택</div>
+				<div><em>3</em>완료</div>
+			</div>
+			
+			<form>
+				<fieldset>
+					<dl data-form="wrap" class="m_b20">
+						<!-- 2018-01-31 마크업 추가 S -->
+						<dt><span class="field_name f_bold">강좌명</span></dt>
+						<dd><span class="field_name f_bold">수업</span></dd>
+						<!-- 2018-01-31 마크업 추가 E -->
+						<dt><label for="input1" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="input1"></span></dd>
+						<dt><span class="field_name">휴대폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p>
+								<span data-form="select">
+									<select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 가운데 네자리">
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size110">
+									<input type="text" title="휴대폰번호 뒤 네자리">
+								</span>
+								<button type="button" data-btn="whitegray" class="size140">인증번호전송</button>
+							</p>
+						</dd>
+						<dt><label for="input2" class="field_name">인증번호</label></dt>
+						<dd>
+							<span data-form="input"><input type="text" id="input2"></span>
+							<button type="button" data-btn="whitegray" class="size100">확인</button>
+							<span class="timer"><em>인증번호 입력 남은시간</em>3:00</span>
+						</dd>
+					</dl>
+
+					<ul data-text="ul1" class="m_b40">
+						<li>입력한 휴대폰번호로 인증번호가 발송됩니다.</li>
+						<li>인증된 핸드폰 번호로 추후 예약내역 조회 및 수정이 가능합니다.</li>
+					</ul>
+
+					<ul data-list="reservation">
+						<li>
+							<p data-form="checkbox" class="f_bold">
+								<input type="checkbox" id="check1">
+								<label for="check1">개인정보 수집 및 이용에 동의합니다.</label>
+							</p>
+							<button type="button" data-toggle="type3">열기</button>
+							<div data-box="type17" class="box_bottom hide_box">
+								<div data-form="textarea" class="type8">
+									| 개인정보 수집 및 이용 동의<br>
+									시대인재 학원은 자리 예약 서비스 제공을 위한 최소한의 개인정보를 수집·이용합니다<br>
+									[수집항목] 이름, 핸드폰번호, 재원정보, 예약정보<br>
+									[수집목적] 학원 재원 정보 조회, 학원 수강 관련 정보제공 등에 사용<br>
+									[개인정보의 보유 및 이용기간] 서비스 종료 후 30일 이내 파기<br>
+									단, 재원생 인증 결과 조회된 재원정보(학원, 수강반, 정보)는 회원 탈퇴 시 파기<br><br>
+
+									<em>* 개인정보 수집 및 이용 동의를 하지 않을 경우 관련 서비스의 제한이 있을 수 있습니다.</em>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<div class="btn_wrap p_b0">
+						<button type="button" data-btn="navy">확인</button>
+					</div>
+				</fieldset>
+			</form>
+
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

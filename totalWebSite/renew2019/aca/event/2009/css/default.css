@@ -1,0 +1,4 @@
+/* board-lec */
+.board-lec table tr th{ padding:15px 0; background-color:#fafafa; border-bottom:1px solid #ededed; }
+.board-lec table tr td.lec-area .data-tit{ margin-bottom:0; }
+.board-lec table tr td.price-area{ text-align:center; }

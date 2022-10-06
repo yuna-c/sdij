@@ -1,0 +1,23 @@
+.layout-contents{ padding-bottom:0; }
+.layout-contents .dep-tit{ line-height:42px; margin:30px auto 10px; font-family:'Noto Serif KR', 'Noto Serif', serif, 'Sans-serif', 'Noto Sans KR'; font-size:20px; font-weight:400; text-align:center; }
+
+.layout-contents .visual-table table{ width:100%; border-bottom:1px solid #ededed; }
+.layout-contents .visual-table table tr th{ height:30px; padding:10px; background-color:#f2f2f2; border-top:1px solid #000; border-bottom:1px solid #ededed; font-size:13px; }
+.layout-contents .visual-table table tbody tr th{ background-color:#fafafa; font-weight:400; text-align:left; }
+.layout-contents .visual-table table tbody tr th.txt-center{ padding:10px 0; border-right:1px solid #ededed; }
+.layout-contents .visual-table table tr td{ height:auto; padding:10px; border-bottom:1px solid #ededed; word-break:break-all; word-break:keep-all; }
+.layout-contents .visual-table table tr td .tit{ line-height:18px; margin-bottom:0; font-size:14px; font-weight:700; color:#000; }
+.layout-contents .visual-table table tr td .tit small{ display:block; font-weight:400; font-size:13px; }
+.layout-contents .visual-table table tr td .tit + .list-dash, .layout-contents .visual-table table tr td .tit + .tit{ margin-top:10px; }
+
+.layout-contents .visual-table2 table{ table-layout:fixed; }
+.layout-contents .visual-table2 table tbody tr th, .layout-contents .visual-table2 table tr td{ padding:20px 10px; text-align:center; }
+.layout-contents .visual-table2 table tr td.img-area{ padding:20px 30px 10px; }
+.layout-contents .visual-table2 table tr td img{ width:139px; max-width:100%; }
+.layout-contents .visual-table2 .gray-box{ margin-top:10px; padding:10px 5px; background-color:#f2f2f2; font-size:12px; }
+
+.layout-contents .board-tit{ margin:60px auto 30px; font-size:16px; font-weight:700; }
+.layout-contents .board-tit small{ font-size:16px; font-weight:400; }
+
+.layout-contents .visual-table3 table tbody tr th, .layout-contents .visual-table3 table tr td{ text-align:center; }
+.layout-contents .visual-table3 table tr td{ font-size:13px; }

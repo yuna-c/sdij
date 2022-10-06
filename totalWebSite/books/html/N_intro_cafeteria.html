@@ -1,0 +1,337 @@
+
+<!-- 
+/*************************************************************************
+* @ 서비스명        : sidaeInjae Total Web Site
+* @ 파일명         : /html/N_intro_cafeteria.html
+* @ 페이지설명   : 학원 > 학원소개 > 공지사항 > 리스트
+* @ 작성자         : 김은옥
+* @ 작성일         : 2017-04-03
+************************** 수정이력 ****************************************
+* 번호        작업자             변경내용 
+*_________________________________________________________________________
+* 김은옥   최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>시대인재N 시스템 > 시대인재N 급식</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/N.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<link rel="stylesheet" href="../common/css/swiper.min.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>  <!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js, N : N_dev.js -->
+<script src="../common/js/N_dev.js"></script>
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/selectordie.min.js"></script>
+
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+    .style{}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="N" data-depth2="intro" data-depth3="cafeteria">
+<div id="wrap"> <!-- // Wrap S -->
+<!-- // Header Include Area -->
+<div id="content_wrap">
+    <!-- // Snb Include Area -->
+    <div class="location">
+        <span>시대인재N &gt;</span>
+        <span>시대인재N 소개 &gt;</span>
+        <span>시대인재N 급식</span>
+    </div>
+    <div id="content">
+        <h2 data-title="type1">시대인재N 급식</h2>
+        <div data-layout="type1">
+            <div class="cafeteria_wrap">
+                <!-- <span class="day_th">6/1 (월) 식단</span>-->
+                <div class="calendar" id="cafeteria_wrap">
+                    <div class="month_area">  
+                        <div class="pop_btn">
+                            <div class="pop_prev pop4">back</div>
+                            <div class="pop_next pop4">go</div>
+                        </div>                   
+                        <span data-form="select" class="type12">
+                            <select title="월">
+                                <option>1월</option>
+                                <option>2월</option>
+                                <option>3월</option>
+                                <option>4월</option>
+                                <option>5월</option>
+                                <option>6월</option>
+                                <option>7월</option>
+                                <option>8월</option>
+                                <option>9월</option>
+                                <option>10월</option>
+                                <option>11월</option>
+                                <option>12월</option>
+                            </select>
+                        </span>
+                    </div> 
+                    <div class="list">
+                        <div data-pop="pop" class="cafeteria type2">
+                            <div class="pop_wrap">
+                                <div data-swipe="pop" class="pop4 swiper-container">
+                                    <!-- <div class="main-pagination"></div> -->
+                                    <div class="swiper-wrapper">
+                                         <div class="swiper-slide">
+                                            <div class="day_list">
+                                                <span class="red">일요일</span>
+                                                <span class="td gray on">27</span>
+                                            </div>
+                                        </div>
+                                         <div class="swiper-slide">
+                                            <div class="day_list">
+                                                <span>월요일</span>
+                                                <span class="td gray">28</span>
+                                            </div>
+                                        </div>
+                                         <div class="swiper-slide">
+                                            <div class="day_list">
+                                                <span>화요일</span>
+                                                <span class="td gray">29</span>
+                                            </div>
+                                        </div>
+                                         <div class="swiper-slide">
+                                            <div class="day_list">
+                                                <span>수요일</span>
+                                                <span class="td">1</span>
+                                            </div>
+                                        </div>
+                                         <div class="swiper-slide">
+                                            <div class="day_list">
+                                                <span>목요일</span>
+                                                <span class="td">2</span>
+                                            </div>
+                                        </div>
+                                         <div class="swiper-slide">
+                                            <div class="day_list">
+                                                <span>금요일</span>
+                                                <span class="td">3</span>
+                                            </div>
+                                        </div>
+                                         <div class="swiper-slide">
+                                            <div class="day_list">
+                                                <span>토요일</span>
+                                                <span class="td">4</span>
+                                            </div>
+                                        </div>
+                                         <div class="swiper-slide">
+                                            <div class="day_list">
+                                                <span>일요일</span>
+                                                <span class="td">끝</span>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="today_list">
+                    <li>
+                        <div class="b_layer">
+                            <span>점심</span>
+                            <div class="main-pagination pop1"></div>
+                        </div>
+                          <div data-pop="pop" class="cafeteria">
+                            <div class="pop_wrap">
+                                <div data-swipe="pop" class="pop1 swiper-container">
+                                    <div class="main-pagination"></div>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="../common/img/menu1.png"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="../common/img/menu2.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop_btn">
+                                    <div class="pop_prev pop1">back</div>
+                                    <div class="pop_next pop1">go</div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="menu_t">
+                            <tbody>
+                                <tr>
+                                    <th>메<br />뉴</th>
+                                    <td>
+                                        흑미밥, 닭곰탕&amp;당면사리, 도톰동그랑땡구이,
+                                        해물떡볶이, 탕평채, 포기김치 
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <div class="b_layer">
+                            <span>저녁</span>
+                            <div class="main-pagination pop2"></div>
+                        </div>
+                          <div data-pop="pop" class="cafeteria">
+                            <div class="pop_wrap">
+                                <div data-swipe="pop" class="pop2 swiper-container">
+                                    <div class="main-pagination"></div>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="../common/img/menu2.png"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="../common/img/menu1.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop_btn">
+                                    <div class="pop_prev pop2">back</div>
+                                    <div class="pop_next pop2">go</div>
+                                </div>
+                            </div>
+                        </div>
+                         <table class="menu_t">
+                            <tbody>
+                                <tr>
+                                    <th>메<br />뉴</th>
+                                    <td>
+                                        흑미밥, 닭곰탕&amp;당면사리, 도톰동그랑땡구이,
+                                        해물떡볶이, 탕평채, 포기김치 
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>       
+                <ul class="today_list">
+                    <li>
+                        <div class="b_layer">
+                            <span>점심</span>
+                            <div class="main-pagination pop3"></div>
+                        </div>
+                          <div data-pop="pop" class="cafeteria">
+                            <div class="pop_wrap">
+                                <div data-swipe="pop" class="pop3 swiper-container">
+                                    <div class="main-pagination"></div>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="../common/img/menu1.png"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="../common/img/menu2.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop_btn">
+                                    <div class="pop_prev pop3">back</div>
+                                    <div class="pop_next pop3">go</div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="menu_t">
+                            <tbody>
+                                <tr>
+                                    <th>메<br />뉴</th>
+                                    <td>
+                                        흑미밥, 닭곰탕&amp;당면사리, 도톰동그랑땡구이,
+                                        해물떡볶이, 탕평채, 포기김치 
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="no_menu">
+                            <div class="layer">
+                                <span>
+                                        식단 등록 준비중입니다.
+                                </span>
+                            </div>
+                    </li>
+                </ul>       
+                <ul class="today_list">
+                    <li class="full_no_menu">
+                            <div class="layer">
+                                <span>
+                                        식단 등록 준비중입니다.
+                                </span>
+                            </div>
+                    </li>
+                </ul>
+                </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+ var swiper = new Swiper('.swiper-container.pop1', {
+        observer: true,
+        observeParents: true,
+        pagination: '.main-pagination.pop1',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        keyboardControl: false,
+        loop:true,
+        nextButton: '.pop_next.pop1',
+        prevButton: '.pop_prev.pop1',
+ });
+</script>
+<script type="text/javascript">
+ var swiper = new Swiper('.swiper-container.pop2', {
+        observer: true,
+        observeParents: true,
+        pagination: '.main-pagination.pop2',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        keyboardControl: false,
+        loop:true,
+        nextButton: '.pop_next.pop2',
+        prevButton: '.pop_prev.pop2',
+ });
+</script>
+<script type="text/javascript">
+ var swiper = new Swiper('.swiper-container.pop3', {
+        observer: true,
+        observeParents: true,
+        pagination: '.main-pagination.pop3',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        keyboardControl: false,
+        loop:true,
+        nextButton: '.pop_next.pop3',
+        prevButton: '.pop_prev.pop3',
+ });
+</script>
+<script type="text/javascript">
+ var swiper = new Swiper('.swiper-container.pop4', {
+       spaceBetween: 0,
+        initialSlide: 0,
+        speed:200,
+        slidesPerView:7,
+        slidesPerGroup: 5 ,
+        centeredSlides: false,
+        autoplayDisableOnInteraction: true,
+        freemode: true,
+        spaceBetween: 0,
+        touchratio:0,
+        followfinger:false,
+        simulateTouch: false,
+        nextButton: '.pop_next.pop4',
+        prevButton: '.pop_prev.pop4',
+        navigation: {
+        nextEl:  '.pop_next.pop4',
+        prevEl:  '.pop_prev.pop4',  
+      }
+ });
+</script>
+<!-- // Footer Include Area -->
+</div>  <!-- // Wrap E -->
+</body>

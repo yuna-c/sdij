@@ -1,0 +1,195 @@
+<!--
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/aca_presentation_list.html
+* @ 페이지설명	: 학원 > 설명회 > 설명회신청리스트
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-04
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용
+*_________________________________________________________________________
+* 김은옥 	최초작성
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>설명회 > 설명회신청리스트</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	.style{}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="aca" data-depth2="presentation" data-depth3="list">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재 &gt;</span>
+		<span>설명회 &gt;</span>
+		<span>설명회신청</span>
+	</div>
+	<div id="content">
+
+		<h2 data-title="type1">설명회신청</h2>
+		<!--20180306 소스추가 S-->
+			<!--p data-text="type2" class="line">어떤 변화에도 대응하는 가장 진화된 전략</p-->
+			<div data-text="type3" class="o_h m_b20" style="height:50px;">
+				<!--p>학년, 계열, 주제 확인 후 본인에게 적합한 설명회를 신청하세요.</p>
+				<p>
+					<span data-form="select" class="type5">
+						<select title="계열 선택">
+							<option>클래스</option>
+							<option>옵션1</option>
+							<option>옵션2</option>
+							<option>옵션3</option>
+						</select>
+					</span>
+					<span data-form="select" class="type5">
+						<select title="학년 선택">
+							<option>학년</option>
+							<option>옵션1</option>
+							<option>옵션2</option>
+							<option>옵션3</option>
+						</select>
+					</span>
+					<span data-form="select" class="type5">
+						<select title="계열 선택">
+							<option>계열</option>
+							<option>옵션1</option>
+							<option>옵션2</option>
+							<option>옵션3</option>
+						</select>
+					</span>
+					<button type="button" data-btn="whitegray" class="size80 static">검색</button>
+				</p-->
+
+				<button type="button" data-btn="whitegray" class="f_left">문자수신 DB등록</button>
+				<button type="button" data-btn="whitegray" class="f_right">신청조회</button>
+			</div>
+			<div data-tab="type1" class="p_list m_b30">
+          <a href="#" class="" onclick="IfStu('A11005');">N수</a>
+          <a href="#" class="" onclick="IfStu('A11004');">고3</a>
+          <a href="#" class="" onclick="IfStu('A11003');">고2</a>
+          <a href="#" class="" onclick="IfStu('A11002');">고1</a>
+          <a href="#" class="on" onclick="IfStu('A11001');">기타</a>
+      </div>
+      <!--20180307 소스수정 S-->
+			<ul data-tab="type1" class="float_list">
+          <li class="on">
+          	<div class="table_wrap"><a href="#" onclick="IfBrfGrp('1');">[이과] 3월 학평분석 및 입시전략 설명회 1부&nbsp;</a></div></li>
+          <li class=""><div class="table_wrap"><a href="#" onclick="IfBrfGrp('3');">[이과] 3월 학평분석 및 입시전략 설명회 2부&nbsp;</a></div></li>
+      </ul>
+      <ul data-tab="type1" class="float_list">
+          <li><div class="table_wrap"><a href="#" onclick="IfBrfGrp('1');">[이과] 3월 학평분석 및 입시전략 설명회 1부&nbsp;</a></div></li>
+          <li class=""><div class="table_wrap"><a href="#" onclick="IfBrfGrp('3');">[이과] 3월 학평분석 및 입시전략 설명회 2부&nbsp;</a></div></li>
+      </ul>
+			<p class="m_b40"></p>
+			<!--
+			 ul안에 li가 3개가 최대로 들어가게 해주세요!
+			 3배수대로 ul이 통째로 생겨야지 디자인이 안깨져요!
+			-->
+			<!--20180307 소스수정 E-->
+
+			<!--20180306 소스추가 E-->
+
+			<div data-table="type2">
+				<table>
+					<caption>설명회 목록</caption>
+					<!-- 2018-01-29 마크업 수정 S -->
+					<colgroup>
+						<!--col style="width:90px;"--><!--20180308 코드수정 S-->
+						<col style="width:70px;">
+						<col style="width:60px;">
+						<col>
+						<col style="width:125px;">
+						<col style="width:80px;">
+						<col style="width:120px;"><!--20180308 코드수정 S-->
+					</colgroup>
+					<!-- 2018-01-29 마크업 수정 E -->
+					<thead>
+						<tr>
+							<!--th scope="col">클래스</th--><!--20180308 코드수정 S-->
+							<th scope="col">대상학년</th>
+							<th scope="col">계열</th>
+							<th scope="col">제목</th>
+							<th scope="col">일자</th>
+							<th scope="col">장소</th>
+							<th scope="col">진행상황</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="7">등록된 게시글이 없습니다.</td>
+						</tr>
+						<!-- 하단 설명회 안내 박스 없는 경우 class="no_answer", 하단 설명회 안내 박스 없는 경우 class="answer" -->
+						<tr class="no_answer">
+							<!--td><span class="f_color3">대치</span></td--><!--20180308 코드수정 S-->
+							<td>고3/N</td>
+							<td>문과</td>
+							<td class="t_left"><button type="button" class="table_link" disabled="disabled">학교별 내신분석 설명회</button></td>
+							<td>2017-03-19 (일) 오후 2시</td>
+							<!--20180308 소스수정 S(클래스 추가)-->
+							<td><button type="button" class="map" onclick="IfKakaoMap('대치동 1021-8 동선빌딩 2층')">시대인재 본관</button></td>
+							<!--20180308 코드수정 class추가 S-->
+							<td><button type="button" data-btn="navy" class="size100">예약신청<br />가능</button></td>
+						</tr>
+						<tr>
+							<!--td><span class="f_color3">대치</span></td--><!--20180308 코드수정 S-->
+							<td>고3/N</td>
+							<td>문과</td>
+							<td class="t_left"><button type="button" class="table_link">학교별 내신분석 설명회</button></td>
+							<td>2017-03-19 (일) 오후 2시</td>
+							<td><button type="button" class="map" onclick="IfKakaoMap('대치동 1021-8 동선빌딩 2층')">시대인재 본관</button></td>
+							<td><button type="button" data-btn="navy" class="size100">예약신청<br />가능</button></td>
+						</tr>
+						<tr class="hide_tr type1">
+							<td colspan="7">
+								<p>
+									<strong>학교별 내신분석 설명회</strong><br>1. 3월 화평 분석<br>(1) 최근 2개년 학평<br>* 평가원 + 수능 국수영 등급컷 분석
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<!--td><span class="f_color3">분당</span></td--><!--20180308 코드수정 S-->
+							<td>고3/N</td>
+							<td>이과</td>
+							<td class="t_left"><button type="button" class="table_link">학교별 내신분석 설명회</button></td>
+							<td>2017-03-19 (일) 오후 2시</td>
+							<td><button type="button" class="map" onclick="IfKakaoMap('대치동 1021-8 동선빌딩 2층')">시대인재 본관</button></td>
+							<td><span class="f_color2">신청마감</span></td>
+						</tr>
+						<tr class="hide_tr type1">
+							<td colspan="7">
+								<p>내용</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

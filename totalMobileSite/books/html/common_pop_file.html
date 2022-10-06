@@ -1,0 +1,62 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_login_registstep2_schoolpopup.html
+* @ 페이지설명	: 모바일 > 공통 > 로그인,회원가입 > 정보입력 > 학교검색팝업
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-25
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>로그인,회원가입 > 정보입력 > 학교검색팝업</title>
+<!-- <link rel="stylesheet" href="../common/css/common.css"> -->
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+
+
+<body data-device="mobile" data-depth1="common" data-depth2="login" data-depth3="registstep2" data-depth4="schoolpopup" style="margin:0;padding:0">
+<div id="wrap" data-popup="pop">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+<div id="pop_title" style="position: fixed;left: 0;top: 0;width: 100%;height: 4rem;background: #ebebeb;border-bottom: 1px solid #323232;box-sizing: border-box;z-index: 99;">
+	<h1 style="font-weight: bold;font-size: 1.333rem;margin:0;text-align: center;line-height: 4rem;">파일등록</h1>
+	<button class="pop_close" style="position: absolute;right: 0.750rem;top: 50%;margin: -1.083rem 0 0 0;width: 2.167rem;height: 2.167rem;font-size: 0;text-indent: -9999px;
+background: url(http://img.sdij.com/mobile/common.png) no-repeat;background-position-x: 0%;background-position-y: 0%;background-size: auto auto;background-position: -4rem 0;background-size: 26.667rem auto;border:0">닫기</button>
+</div>
+<div id="content_wrap" style="padding:6.667rem 1.667rem 0 1.667rem;background: #ffffff;">
+	<!-- // Snb Include Area -->
+	<div id="content" style="margin:auto">
+			<fieldset style="margin: 0;padding: 0;border:0">
+          <div style="margin: 0 0 2.5rem 0;padding: 0;border-bottom:1px #d2d2d2 solid;">
+            <span data-form="file">
+                <input type="text" readonly="readonly" class="file_name" style="-webkit-appearance: none;-moz-appearance: none;appearance: none;border-radius: 0px;border: 1px solid #d2d2d2;background: #ebebeb;box-sizing: border-box;width: 100%;height: 4.167rem;font-size:1rem;line-height: 4.167rem;padding:0 0.833rem;color: #323232;font-weight:400">
+                <input type="file" id="sFile" name="sFile" class="file_hidden" style="position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);border: 0;">
+                <label for="sFile" style="display: inline-block;padding: 0;width: 100%;height: 4.167rem;line-height: 4.167rem;font-size: 1.167rem;color: #fff;text-align: center;vertical-align: top;background: #a0a0a0;margin:0.833rem 0 2.5rem 0;cursor: pointer; ">파일찾기</label>
+            </span>
+          </div>
+      </fieldset>
+   		<div style="text-align: center;color: #323232;font-size: 1rem;">
+          <button type="submit" style="display: inline-block;padding: 0;width: 100%;height: 4.167rem;line-height: 4.167rem;font-size: 1.333rem;color: #fff;text-align: center;vertical-align: top;background:#284678;border:0;cursor: pointer;">확인</button>
+      </div>   
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

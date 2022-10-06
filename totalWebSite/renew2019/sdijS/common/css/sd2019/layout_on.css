@@ -1,0 +1,6 @@
+.page-tit{ margin-top:50px; }
+.list-dotted li, p.list-dotted{ font-weight:400; }
+
+.dim-form{ width:560px; margin-left:-280px; }
+.dim-layer .btn-close{ top:60px; right:40px; }
+.btn-close .ico-close{ width:20px; height:20px; background-image:url(http://img.sdij.com/sd2019/pc/ico/ico_close2.png); }

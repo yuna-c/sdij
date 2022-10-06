@@ -1,0 +1,19 @@
+/*certify*/
+.btn-vertical{ height: 46px!important; line-height: 46px !important; vertical-align: top; }
+
+/*support step*/
+/* .support .step-box{ margin-top:70px; margin-bottom:0; border:none; } */
+.support .list-dotted li{ font-weight:400; }
+.input-text-mid{ width:calc(50% - 10px) !important; }
+.sub-txt{ font-size:12px; }
+.board-table table{ border-top:1px solid #000; }
+.board-table table tr td{ padding:10px; }
+.day-table table{ width: 300px;margin: 0 auto;  }
+.day-table table th, .day-table table td{ text-align:center !important; }
+
+/* alert */
+.dim-support-alert1{ height:330px; }
+.dim-support-alert1 .dim-txt{ height:126px; word-break:keep-all; }
+
+.dim-btn{ font-size:0; }
+.dim-btn .btn:first-child{ margin-right:5px; }

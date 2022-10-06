@@ -1,0 +1,151 @@
+<!--
+/*************************************************************************
+* @ 서비스명    : sidaeInjae Total Mobile Site
+* @ 파일명     : /html/common_mypage_cart_checkout_addresspopup.html
+* @ 페이지설명 : 모바일 > 공통 > 마이페이지 > 장바구니 > 주문결제_배송지추가_팝업
+* @ 작성자     : 김은옥
+* @ 작성일     : 2017-06-26
+************************** 수정이력 ****************************************
+* 번호    작업자       변경내용
+*_________________________________________________________________________
+* 김은옥   최초작성
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>예비고1 입시설명회 > 정보입력</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>  <!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="common" data-depth2="entrance_presentation" data-depth3="popup">
+<div id="wrap" data-popup="pop">  <!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="pop_title">
+  <h1>DB 입력</h1>
+  <button class="pop_close">닫기</button>
+</div>
+
+
+<div id="content_wrap">
+  <!-- // Snb Include Area -->
+  <div id="content">
+    <div data-layout="type1">
+      <h3 data-title="type2" class="m_b15">
+        DB에 등록하시면 설명회 / 강좌 안내 문자를 수신하실 수 있습니다.
+      </h3>
+      <p class="field_info m_b30 f_color3">인증 받은 핸드폰 번호가 시대인재 문자 DB로 저장됩니다.</p>
+      <form>
+        <fieldset>
+        <dl data-form="wrap" class="noline">
+          <dt><label for="user_name" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+          <dd><span data-form="input"><input id="user_name" type="text"></span></dd>
+          <dt><span class="field_name">핸드폰번호<strong>*<em>필수항목</em></strong></span></dt>
+          <dd>
+            <span data-form="select" title="휴대폰 번호 앞자리">
+              <select>
+                <option>010</option>
+                <option>011</option>
+                <option>017</option>
+                <option>018</option>
+                <option>019</option>
+              </select>
+            </span>
+            <em>-</em>
+            <span data-form="input" class="size168 m_b20" title="휴대폰 번호 중간자리">
+              <input type="text">
+            </span>
+            <em>-</em>
+            <span data-form="input" class="size168" title="휴대폰 번호 뒷자리">
+              <input type="text">
+            </span>
+            <button type="button" data-btn="black">인증번호받기</button>
+          </dd>
+          <dt><label for="input2" class="field_name">인증번호</label></dt>
+          <dd class="m_b50">
+            <span data-form="input" class="m_b25"><input type="text" id="input2"></span>
+            <span class="timer"><em>인증번호 입력 남은시간</em>03:00</span>
+            <p class="field_info">
+              입력한 핸드폰 번호로 인증번호가 발송됩니다.
+            </p>
+          </dd>
+          <dt>
+            <label for="input9" class="field_name">학교<strong>*<em>필수항목</em></strong></label>
+          </dt>
+          <dd class="m_b25">
+            <span data-form="input" class="full m_b15">
+              <input type="text" id="input9">
+            </span>
+          </dd>
+          <dt><span class="field_name">학년<strong>*<em>필수항목</em></strong></span></dt>
+          <dd class="m_b60">
+            <span data-form="select" class="full">
+              <select title="학년선택">
+                <option>선택</option>
+                <option>N수</option>
+                <option>고3</option>
+                <option>고2</option>
+                <option>고1</option>
+                <option>기타</option>
+              </select>
+            </span>
+          </dd>
+           <dt><span class="field_name">계열<strong>*<em>필수항목</em></strong></span></dt>
+          <dd class="m_b60">
+            <span data-form="select" class="full">
+              <select title="계열선택">
+                <option>선택</option>
+                <option>이과</option>
+                <option>문과</option>
+                <option>예체능</option>
+                <option>기타</option>
+              </select>
+            </span>
+          </dd>
+        </dl>
+      </fieldset>
+      </form>
+      <h3 data-title="type2" class="line m_b20">
+        개인 정보 수집 및 활용 동의 (필수)
+      </h3>
+      <p>
+          <span data-form="radio" class="type1 m_0">
+              <input type="radio" id="agree" name="agree_radio" checked="checked">
+              <label for="agree">동의</label>
+          </span>
+          <span data-form="radio" class="type1">
+              <input type="radio" id="disagree" name="agree_radio">
+              <label for="disagree">동의하지 않음</label>
+          </span>
+      </p>
+      <textarea data-form="textarea" class="type13" readonly="readonly">
+수집목적 : 학원 강좌 및 설명회 외 정보 제공 등 서비스, 고객관리
+수집항목 : 이름, 핸드폰번호, 학교, 학년, 계열
+보유기간 : 제출 시점부터 3년간 보유
+
+개인정보 수집 및 이용에 동의하지 않을 권리가 있습니다.다만, 동의를 거부할 경우 학원 강좌, 서비스 정보를 SMS로 수신하실 수 없습니다.
+      </textarea>
+    </div>
+     <div class="btn_wrap">
+      <button type="button" data-btn="orange" class=" full">확인</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>  <!-- // Wrap E -->
+</body>

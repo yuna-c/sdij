@@ -1,0 +1,138 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/on_center_qna_detail.html
+* @ 페이지설명	: 온 > 고객센터 > 일대일상담 > 상세
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-03-29
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>고객센터 > 일대일상담 > 상세</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/on.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/on_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="on" data-depth2="center" data-depth3="qna" data-depth4="detail">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재ON &gt;</span>
+		<span>고객센터</span>
+	</div>
+	<div id="content">
+		<h2 data-title="type1">고객센터</h2>
+		<div data-layout="type1">
+			<!-- 2017-11-16 마크업 수정 S -->
+			<div data-box="type1" class="tel">
+				<p><em>시대인재 온/북스 : </em>1522-0568</p>
+				<p><em>&nbsp;시대인재 학원 : </em>02-552-2373 (고3), 02-554-2373 (고1/2)</p>
+				<span>토, 일, 공휴일 및 고객센터 종료 시간에는 1:1 상담 및 카카오톡 상담을 이용해 주세요.</span>
+			</div>
+			<!-- 2017-11-16 마크업 수정 E -->
+			<div data-tab="type1" class="quarter">
+				<a href="#" class="on">공지사항</a>
+				<a href="#">자주묻는질문</a>
+				<a href="#">1:1 상담</a>
+				<a href="#">동영상장애가이드</a>
+			</div>
+			<div data-text="type1">
+				<p>1:1 상담은 등록 순서대로 순차 답변 됩니다. 질문분류가 명확하지 않을 경우 답변에 시일이 소요될 수 있습니다.</p>
+				<p>질문 작성 전 <a href="#" data-btn="link">자주 묻는 질문</a>의 내용을 확인하면 더욱 빠르고 쉽게 문제를 해결할 수 있습니다.</p>
+			</div>
+			<form>
+				<fieldset>
+					<dl data-form="wrap" class="m_b30">
+						<dt><span class="field_name">질문분류</span></dt>
+						<dd>
+							<span data-form="select" class="type4">
+								<select title="질문 대분류">
+									<option>선택하세요</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<span data-form="select" class="type4 m_l10">
+								<select title="질문 소분류" disabled="disabled">
+									<option>선택하세요</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+						</dd>
+						<dt><label for="test5" class="field_name">제목</label></dt>
+						<dd>
+							<span data-form="input" class="full">
+								<input id="test5" type="text">
+							</span>
+						</dd>
+						<dt><span class="field_name">내용</span></dt>
+						<dd>
+							<textarea data-form="textarea"></textarea>
+						</dd>
+						<dt><span class="field_name">첨부파일</span></dt>
+						<dd>
+							<p>
+								<button type="button" data-btn="whitegray" class="m_0" onclick="openNewWindow('common_fileup_pop.html')">파일찾기</button>
+							</p>
+							<ul data-list="type1">
+								<li><span>파일파일파일.pdf</span> <button type="button" class="delete"><span class="hidden">삭제</span></button></li>
+								<li><span>파일파일파일파일파일파일.pdf</span> <button type="button" class="delete"><span class="hidden">삭제</span></button></li>
+							</ul>
+							<p class="field_info m_b5">※ 10MB 이하의 파일을 최대 5개까지 첨부하실 수 있습니다. (exe, zip 등 일부 파일은 첨부 제외)</p>
+						</dd>
+						<dt><span class="field_name h_30">답변알림</span></dt>
+						<dd>
+							<p>
+								<span data-form="checkbox">
+									<input type="checkbox" id="check39">
+									<label for="check39">SMS</label>
+								</span>
+								<span data-form="checkbox">
+									<input type="checkbox" id="check29">
+									<label for="check29">이메일</label>
+								</span>
+							</p>
+							<p class="field_info m_b5">정확한 알림을 위해 회원정보에 기재된 연락처를 확인하세요.</p>
+						</dd>
+					</dl>
+				</fieldset>
+				<div class="btn_wrap3">
+					<button type="submit" data-btn="navy">등록</button>
+				</div>
+				<button type="button" class="kakao">
+					<span class="hidden">시대인재ON 카카오톡 상담안내</span>
+				</button>
+			</form>		
+		</div>	
+	</div>
+</div>
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

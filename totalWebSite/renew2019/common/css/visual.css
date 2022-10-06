@@ -1,0 +1,66 @@
+.view-content{ width:860px; margin:0 auto; }
+.view-content .relative{ position:relative; }
+.view-content .pl50{ padding-left:50px; }
+.view-content .pl80{ padding-left:80px; }
+.view-content .pl150{ padding-left:150px; }
+.view-content .pl200{ padding-left:200px; }
+.view-content .pl300{ padding-left:300px; }
+.view-content .fs16{ font-size:16px !important; }
+.view-content .fs20{ font-size:20px !important; }
+.view-content .fs28{ font-size:28px !important; font-weight:500 !important; }
+.view-content .f100{ font-weight:100 !important; }
+.view-content .red{ font-weight:500 !important; color:#e00d15 !important; }
+
+.view-content .page-tit{ font-family:'Noto Serif KR', 'Noto Serif', serif, 'Sans-serif', 'Noto Sans KR'; font-size:48px; font-weight:bold; }
+.view-content hr.division-line{ width:30px; margin:70px auto; border-color:#000; }
+.view-content .dep-tit{ line-height:36px; margin:100px auto 50px; font-family:'Noto Serif KR', 'Noto Serif', serif, 'Sans-serif', 'Noto Sans KR'; font-size:32px; font-weight:100; text-align:center; }
+.view-content .dep-tit small{ display:block; font-family:'Noto Serif KR', 'Noto Serif', serif, 'Sans-serif', 'Noto Sans KR'; font-size:16px; }
+
+.view-content .blind-txt, .view-content .blind-txt::selection{ color:#fff; }
+.view-content .em-txt{ padding:0 3px; display:inline-block; background-color:#ffc200; font-weight:500; }
+.view-content span.em-txt{ margin-top:3px; }
+.view-content span.em-txt:first-child{ margin-top:0; }
+.view-content .noto-txt{ line-height:22px; position:relative; font-size:14px; }
+.view-content .noto-txt:after{ content:'*'; display:block; position:absolute; top:0; left:-10px; }
+.view-content .floating-txt{ width:120px; height:120px; display:table; background-color:#000; border-radius:100%; }
+.view-content .floating-txt span{ line-height:20px; display:table-cell; font-size:24px; font-weight:500; color:#ffc200; text-align:center; vertical-align:middle; }
+
+.view-content .list-history{ line-height:30px; font-size:20px; font-weight:100; }
+.view-content .list-history li{ margin-bottom:25px; padding-left:65px; position:relative; }
+.view-content .list-history li .data-year{ position:absolute; top:0; left:0; font-weight:500; }
+
+.view-content .list-tit{ line-height:30px; font-size:20px; font-weight:100; }
+.view-content .list-tit dt{ line-height:34px; margin:55px auto 30px; font-size:28px; font-weight:500; }
+.view-content .list-tit dt:first-child{ margin-top:0; }
+.view-content .list-tit dd{ margin-bottom:20px; }
+.view-content .list-tit dd.pl80, .view-content .list-tit dd.pl150{ margin-top:-10px; }
+.view-content .list-tit dd.pl300{ margin-top:-25px; }
+
+.view-content .floating-box{ margin-top:60px; padding-left:95px; }
+.view-content .floating-box .txt .em-txt{ margin-bottom:3px; }
+.view-content .floating-box .floating-txt{ position:absolute; top:-25px; left:-50px; }
+
+.view-content .visual-table{ width:654px; }
+.view-content .visual-table table{ table-layout:fixed; }
+.view-content .visual-table table tr th{ width:80px; height:35px; margin-top:20px; background-color:#000; border-top:20px solid #fff; border-left:2px solid #fff; font-size:14px; font-weight:100; color:#ffc300; }
+.view-content .visual-table table tr td{ width:80px; height:65px; line-height:22px; background-color:#f2f2f2; border-left:2px solid #fff; font-size:16px; font-weight:100; text-align:center; }
+.view-content .visual-table02 table tr td{ height:50px; border-bottom:2px solid #fff; }
+.view-content .visual-table table tr.total-line td{ background-color:#000; font-weight:500; color:#ffc300; }
+.view-content .visual-table table tr:first-child th{ border-top:none; }
+.view-content .visual-table table tr th:first-child, .view-content .visual-table table tr td:first-child{ border-left:none; }
+
+.view-content .section{ padding-left:240px; position:relative; }
+.view-content .section .section-tit{ line-height:34px; position:absolute; top:0; left:0; font-family:'Noto Serif KR', 'Noto Serif', serif, 'Sans-serif', 'Noto Sans KR'; font-size:26px; font-weight:bold; }
+.view-content .section .section-content{ width:800px; }
+
+.view-content .about-graph{ width:480px; height:130px; position:relative; }
+.view-content .about-graph:before{ content:''; height:2px; display:block; position:absolute; top:59px; left:40px; right:10px; background-color:#ffc200; z-index:1; }
+.view-content .about-graph:after{ content:'▶'; display:block; position:absolute; top:45px; right:0; color:#ffc200; z-index:3; }
+.view-content .about-graph span{ line-height:20px; display:inline-block; position:absolute; font-size:15px; font-weight:100; z-index:2; }
+.view-content .about-graph span.text1{ top:50px; left:0; }
+.view-content .about-graph span.text2{ top:30px; left:60px; }
+.view-content .about-graph span.text3{ top:10px; left:240px; }
+.view-content .about-graph span.text4{ top:70px; left:150px; }
+.view-content .about-graph span.text5{ top:70px; left:340px; }
+
+.view-content .about-floating1{ position:absolute; top:0; left:550px; }

@@ -1,0 +1,165 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/01_layerpopup.html
+* @ 페이지설명 	: 01_m_layerpopup.html
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-10
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>layerpopup</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<!-- <script src="../common/js/common_dev.js"></script> -->	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body>
+<div id="wrap" class="guide">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+		<h2 class="title_type1">data-popup="type1" class="popup1"</h2>
+		<button type="button" data-btn="black" data-popup="sample" id="type1">alarm_popup(대)</button>
+
+		<h2 class="title_type1">data-popup="type1" class="popup2"</h2>
+		<button type="button" data-btn="black" data-popup="sample" id="alert_1btn">alarm_popup(소)_1btn</button>
+
+		<h2 class="title_type1">data-popup="type1" class="popup2"</h2>
+		<button type="button" data-btn="black" data-popup="sample" id="alert_2btn">alarm_popup(소)_2btn</button>
+
+		<h2 class="title_type1">m_common_login_login_alertpopup</h2>
+		<button type="button" data-btn="black" data-popup="sample" id="m_common_login_login_alertpopup">로그인 알림팝업</button>
+
+		<h2 class="title_type1">common_layerpop_record</h2>
+		<button type="button" data-btn="black" data-popup="sample" id="common_layerpop_record">로그인 알림팝업</button>
+	</div>
+</div>
+
+
+<!-- type1 팝업 -->
+<div data-popup="type1" class="popup1 type1">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<p class="content_title">Title</p>
+			<div class="content_text">
+				content
+			</div>
+		</div>
+		<div class="btn_wrap">
+			<button type="button" data-btn="navy" class="close">확인</button>
+		</div>
+	</div>
+	<button class="dim"></button>
+</div>
+<!-- // type1 팝업 -->
+
+
+<!-- alert_1btn 팝업 -->
+<div data-popup="type1" class="popup2 alert_1btn">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<div class="content_text">
+				<p>안전한 비밀번호를 입력하세요.</p>
+				<p>영문 또는 영문+숫자 조합으로 여섯자리 이상의 아이디를 만드세요.</p>
+			</div>
+		</div>
+		<div class="btn_wrap">
+			<button type="button" data-btn="navy" class="close">확인</button>
+		</div>
+	</div>
+	<button class="dim"></button>
+</div>
+<!-- // alert_1btn 팝업 -->
+
+
+<!-- m_common_btn2_smallpopup 팝업 -->
+<div data-popup="type1" class="popup2 alert_2btn">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<div class="content_text">
+				<p>가입을 취소하시겠습니까?</p>
+			</div>
+		</div>
+		<div class="btn_wrap2">
+			<button type="button" data-btn="whitegray" class="close">취소</button>
+			<button type="button" data-btn="navy">확인</button>
+		</div>
+	</div>
+	<button class="dim"></button>
+</div>
+<!-- // m_common_btn2_smallpopup 팝업 -->
+
+
+<!-- m_common_login_login_alertpopup 팝업 -->
+<div data-popup="type1" class="popup1 m_common_login_login_alertpopup">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<p class="content_title">로그인 정보가 유효하지 않습니다.</p>
+			<div class="content_text">
+				<p>아이디 또는 비밀번호가 적절하지 않거나 등록된 아이디가 아닙니다.</p>
+				<p>아이디 또는 비밀번호가 기억나지 않으시면 <a href="" data-btn="link">아이디 또는 비밀번호를 잊으셨습니까?</a>링크를 사용하시기 바랍니다.</p>
+				<p>아직 시대인재의 회원이 아니라면, Be the 시대인재를 통해 회원 가입 하세요.</p>
+			</div>
+		</div>
+		<div class="btn_wrap">
+			<button type="button" data-btn="navy" class="close">확인</button>
+		</div>
+	</div>
+	<button class="dim"></button>
+</div>
+<!-- // m_common_login_login_alertpopup 팝업 -->
+
+<!-- common_layerpop_record 팝업 -->
+<div data-popup="type1" class="popup1 common_layerpop_record">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<p class="content_title">이력보기</p>
+			<dl data-detail="type3">
+				<dt>학력/이력</dt>
+				<dd>
+					- 서울대 중문과 + 서울대 치의학대학원 졸업<br>
+					- 제1회 M/DEET 언어추론 전국수석<br>
+					- LEET 7회 중 6회 수석배출<br>
+					- MEET 6회 중 4회 수석배출<br>
+					- 보건복지부 EHR(전자의무기록) 연구단에서 온톨로지 연구<br>
+					- 2009~2011 연세대 LEET 모의고사 초청 특강
+				</dd>
+				<dt>주요특징</dt>
+				<dd>
+					- 꿈드림 언어이해 기본교재 기출문제의 비밀코드<br>
+					- 꿈드림 언어이해•언어추론 통합기본강의교재<br>
+					- LEET & MEET 언어기출 + (PSAT & 대수능)<br>
+					- 꿈드림 언어이해&언어추론 기출고사 해설집<br>
+					- 언어이해 꿈드림 모의고사 문제집
+				</dd>
+			</dl>
+		</div>
+		<div class="btn_wrap">
+			<button type="button" data-btn="navy" class="close">확인</button>
+		</div>
+	</div>
+	<button class="dim"></button>
+</div>
+<!-- // common_layerpop_record 팝업 -->
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

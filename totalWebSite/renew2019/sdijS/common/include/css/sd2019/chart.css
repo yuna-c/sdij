@@ -1,0 +1,182 @@
+.legend-wrap{
+  border-bottom:1px solid #000000;
+  overflow:hidden;
+  margin:50px 0 0 0;
+}
+.legend-wrap .table-tit{
+  border-bottom:0;
+  float:left;
+  margin:0;
+  padding:0;
+}
+.legend-wrap .legend{
+  float:right;
+  padding:0 0 20px 0;
+}
+.legend-wrap .legend li{
+  font-size:15px;
+  display: inline-block;
+  line-height: 40px;
+  color:#000000;
+  padding:0 0 0 20px;
+}
+.legend-wrap .legend li:first-child{
+  padding:0;
+}
+.legend-wrap .legend li:before{
+  content: "";
+  margin:0 10px 0 0;
+  width:14px;
+  display:inline-block;
+  vertical-align: middle;
+}
+.legend-wrap .legend li.gray:before{
+  background:#cccccc;
+  height:14px;
+}
+.legend-wrap .legend li.blue:before{
+  background:#000000;
+  height: 4px;
+}
+.scroll_box{
+  position:relative;
+  padding:100px 0 40px 0;
+}
+.scroll_box.on{
+  overflow-x: scroll;
+}
+.graph_wrap{
+  text-align:center;
+  position:relative;
+  width:840px;
+}
+.graph_wrap .graph_area{
+  height:160px;
+  /*margin:155px 0 0 0;*/
+  margin:55px 0 0 0;
+  position:relative;
+}
+.graph_wrap .graph_area:after{
+  border-bottom:1px #323232 solid;
+  content: "";
+  position:absolute;
+  width:100%;
+  bottom:0px;
+  left:0;
+}
+.graph_wrap .graph_area .score_bg{
+  height:100%;
+  padding:0 0 0 60px;
+  position:relative;
+}
+.graph_wrap .graph_area .score_bg li{
+  border-top:1px #d2d2d2 solid;
+  height:20%;
+  box-sizing: border-box;
+  position:relative;
+}
+.graph_wrap .graph_area .score_bg li .s_num{
+  position:absolute;
+  left:-60px;
+  color:#000000;
+  font-size:15px;
+  top:-13px;
+}
+.graph_wrap .graph_area .score_bar{
+  position:absolute;
+  bottom:0;
+  left:40px;
+  width:100%;
+  height:100%;
+  text-align:left;
+}
+.graph_wrap .graph_area .score_bar>li{
+  font-size:14px;
+  display: inline-block;
+  width:70px;
+  height:100%;
+  text-align: center;
+  position:relative;
+  width:70px;
+}
+.graph_wrap .graph_area .score_bar li span.month{
+  position:absolute;
+  bottom:-35px;
+  left:0;
+  width:70px;
+  color:#000000;
+  font-weight:400;
+  font-size:15px;
+}
+.graph_wrap .graph_area .score_bar>li.on span.month{
+  color:#f00 ;
+}
+.graph_wrap .graph_area .score_bar li span.g_bar{
+  width:15px;
+  background:#cccccc;
+  position:absolute;
+  bottom:0;
+  left:50%;
+  margin:0 0 0 -7.5px;
+  cursor: pointer;
+  height:100%;
+}
+.graph_wrap .graph_area .score_bar li .blue_bar{
+  position:absolute;
+  width: 15px;
+  height: 5px;
+  margin:0 0 -2.5px -7.5px;
+  left:50%;
+  z-index: 3;
+/*   background:url('http://img.sdij.com/common/b_bar.png') no-repeat center center; */
+  bottom:100%;
+  background:#000000;
+}
+.graph_wrap .graph_area .score_bar li .blue_bar .data{
+  border:1px #d2d2d2 solid;
+  box-sizing: border-box;
+  position: absolute;
+  top:-133px;
+  left:50%;
+  margin:0 0 0 -30px;
+  height:auto;
+  padding:10px;
+  background: #ffffff;
+}
+.graph_wrap .graph_area .score_bar li .blue_bar .data.on{
+  display: block;
+}
+.graph_wrap .graph_area .score_bar li .blue_bar .data:after{
+  content: "";
+  position:absolute;
+  bottom:-12px;
+  left:50%;
+  width:20px;
+  height: 14px;
+  margin:0 0 0 -10px;
+  background:url('http://img.sdij.com/common/bottom_arrow.png') no-repeat center center;
+}
+.graph_wrap .graph_area .score_bar li .blue_bar .data>span{
+  font-weight: 600;
+  display: inline-block;
+  width:38px;
+  padding:0 0 5px 0;
+  margin:0 0 5px 0;
+  border-bottom:1px #d2d2d2 solid;
+  font-size:12px;
+}
+.graph_wrap .graph_area .score_bar li.on .blue_bar .data>span{
+  color:#f00;
+}
+.graph_wrap .graph_area .score_bar li .blue_bar .data ul li{
+  text-align:center;
+  line-height:17px;
+  font-size:12px;
+}
+.graph_wrap .graph_area .score_bar li .blue_bar .data ul li:first-child{
+  font-weight:600;
+  margin:0 0 5px 0;
+}
+.graph_wrap .graph_area .score_bar li .blue_bar .data ul li span{
+  display: block;
+}

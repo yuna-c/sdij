@@ -1,0 +1,300 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/01_layerpopup.html
+* @ 페이지설명 	: 01_layerpopup.html
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-03-29
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>layerpopup</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<link rel="stylesheet" href="../common/css/elastislide.css">
+<link rel="stylesheet" href="../common/css/swiper.min.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<script src="../common/js/modernizr.custom.17475.js"></script>
+<script src="../common/js/jquery.elastislide.js"></script>
+<script src="../common/js/jquerypp.custom.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+.map_area{width:100%;height:450px;line-height:450px;font-size:16px;color:#fff;text-align:center;background:#77a;}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body>
+<div id="wrap" class="guide">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+		<h2 class="title_type1">data-popup="type1"</h2>
+		<button type="button" data-btn="black" data-popup="sample" id="test1">width="540"</button>
+		<button type="button" data-btn="black" data-popup="sample" id="test2">width="760"</button>
+
+		<h2 class="title_type1">common_layerpopup</h2>
+		<button type="button" data-btn="black" data-popup="sample" id="common_layerpopup">공통레이어팝업</button>
+
+		<h2 class="title_type1">common_layerpopup_confirm</h2>
+		<button type="button" data-btn="black" data-popup="sample" id="common_layerpopup_confirm">확인/취소팝업</button>
+
+		<h2 class="title_type1">common_layerpopup_mapview</h2>
+		<button type="button" data-btn="black" data-popup="sample" id="common_layerpopup_mapview">지도보기</button>
+
+		<h2 class="title_type1">common_layerpopup_teacherview</h2>
+		<button type="button" data-btn="black" data-popup="sample" id="common_layerpopup_teacherview">이력보기</button>
+
+		<h2 class="title_type1">common_mypage_cart_checkout_addresspopup</h2>
+		<button type="button" data-btn="black" data-popup="sample" id="common_mypage_cart_checkout_addresspopup">배송지선택</button>
+	</div>
+</div>
+
+<div data-popup="type1" class="test1 popup1">
+	<div class="pop_wrap">
+		<p class="pop_title">
+			width="540"
+			<button type="button" class="close"><span class="hidden">닫기</span></button>
+		</p>
+		<!-- <form data-box="pop_content">
+			<fieldset>
+				<dl>
+					<dt>파일등록</dt>
+					<dd>
+						<span data-form="file">
+							<input type="text" readonly="readonly" class="file_name">
+							<input type="file" id="fileup1" class="file_hidden">
+							<label for="fileup1" data-btn="whitegray" class="size100">파일등록</label>
+						</span>
+					</dd>
+				</dl>
+			</fieldset>
+		</form>
+		<div class="btn_wrap3">
+			<button type="submit" data-btn="navy">확인</button>
+		</div> -->
+	</div>
+	<button class="dim"></button>
+</div>
+
+<div data-popup="type1" class="test2 popup2">
+	<div class="pop_wrap">
+		<p class="pop_title">
+			width="760"
+			<button type="button" class="close"><span class="hidden">닫기</span></button>
+		</p>
+		
+	</div>
+	<button class="dim"></button>
+</div>
+
+
+<!-- common_layerpopup 팝업 -->
+<div data-popup="type1" class="popup1 common_layerpopup">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<p class="content_title">로그인 정보가 유효하지 않습니다.</p>
+			<div class="content_text">
+				<p>아이디 또는 비밀번호가 적절하지 않거나 등록된 아이디가 아닙니다.</p>
+				<p>아이디 또는 비밀번호가 기억나지 않으시면 <a href="" data-btn="link">아이디 또는 비밀번호를 잊으셨습니까?</a>링크를 사용하시기 바랍니다.</p>
+				<p>아직 시대인재의 회원이 아니라면, Be the 시대인재를 통해 회원 가입 하세요.</p>
+			</div>
+			<div class="btn_wrap">
+				<button type="button" data-btn="black" class="close">확인</button>
+			</div>
+		</div>
+	</div>
+	<button class="dim"></button>
+</div>
+<!-- // common_layerpopup 팝업 -->
+
+
+<!-- common_layerpopup_confirm 팝업 -->
+<div data-popup="type1" class="popup1 common_layerpopup_confirm">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<div class="content_text">
+				<p>“김우빈 컨설턴트 / 상시 / 2017.03.06 /14:00~15:00<br>컨설팅 예약을 취소하시겠습니까?”</p>
+			</div>
+			<div class="btn_wrap">
+				<button type="button" data-btn="login_whitegray" class="close">취소</button>
+				<button type="button" data-btn="navy" class="m_l10">확인</button>
+			</div>
+		</div>
+	</div>
+	<button class="dim"></button>
+</div>
+<!-- // common_layerpopup_confirm 팝업 -->
+
+
+<!-- common_layerpopup_mapview 팝업 -->
+<div data-popup="type1" class="popup2 common_layerpopup_mapview">
+	<div class="pop_wrap">
+		<p class="pop_title">
+			지도보기
+			<button type="button" class="close"><span class="hidden">닫기</span></button>
+		</p>
+		<div data-box="pop_content">
+			<div class="map_area m_b30">map_area</div>
+			<div data-table="type4" class="m_b20">
+				<table>
+					<caption>상세정보</caption>
+					<colgroup>
+						<col style="width:130px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>주소</th>
+							<td>서울특별시 강남구 도곡로 460 (대치동, 동선빌딩) 2층</td>
+						</tr>
+						<tr>
+							<th>문의</th>
+							<td>02 – 552- 2373</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="t_right">
+				<button type="button" data-btn="whitegray" class="close">빠른길찾기</button>
+			</div>
+		</div>
+	</div>
+	<button class="dim"></button>
+</div>
+<!-- // common_layerpopup_mapview 팝업 -->
+
+
+<!-- common_layerpopup_teacherview 팝업 -->
+<div data-popup="type1" class="popup2 common_layerpopup_teacherview">
+	<div class="pop_wrap">
+		<p class="pop_title">
+			이력보기
+			<button type="button" class="close"><span class="hidden">닫기</span></button>
+		</p>
+		<div data-box="pop_content">
+			<dl data-list="type3">
+				<dt><img src="../common/img/people2.png" alt="컨설턴트 사진"></dt>
+				<dd><strong>최시대</strong><em>입시컨설턴트</em></dd>
+			</dl>
+			<dl data-detail="type3">
+				<dt>학력/이력</dt>
+				<dd>
+					- 서울대 중문과 + 서울대 치의학대학원 졸업<br>
+					- 제1회 M/DEET 언어추론 전국수석<br>
+					- LEET 7회 중 6회 수석배출<br>
+					- MEET 6회 중 4회 수석배출<br>
+					- 보건복지부 EHR(전자의무기록) 연구단에서 온톨로지 연구<br>
+					- 2009~2011 연세대 LEET 모의고사 초청 특강
+				</dd>
+				<dt>주요특징</dt>
+				<dd>
+					- 꿈드림 언어이해 기본교재 기출문제의 비밀코드<br>
+					- 꿈드림 언어이해•언어추론 통합기본강의교재<br>
+					- LEET & MEET 언어기출 + (PSAT & 대수능)<br>
+					- 꿈드림 언어이해&언어추론 기출고사 해설집<br>
+					- 언어이해 꿈드림 모의고사 문제집
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<button class="dim"></button>
+</div>
+<!-- // common_layerpopup_teacherview 팝업 -->
+
+
+<!-- common_mypage_cart_checkout_addresspopup 팝업 -->
+<div data-popup="type1" class="popup2 common_mypage_cart_checkout_addresspopup">
+	<div class="pop_wrap">
+		<p class="pop_title">
+			배송지선택
+			<button type="button" class="close"><span class="hidden">닫기</span></button>
+		</p>
+		<div data-box="pop_content">
+			<div data-text="type1" class="m_b15">
+				<p>과거 배송된 주소지 입니다. (최대 5개까지 보관)</p>
+				<p>선택하시면 자동으로 주소지가 입력됩니다.</p>
+			</div>
+			<div data-table="type1">
+				<table>
+					<caption>과거 배송지 목록</caption>
+					<colgroup>
+						<col style="width:70px">
+						<col style="width:81px">
+						<col style="width:131px">
+						<col>
+						<col style="width:51px">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">선택</th>
+							<th scope="col">이름</th>
+							<th scope="col">연락처</th>
+							<th scope="col">배송지</th>
+							<th scope="col">관리</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="btn_td"><button type="button" data-btn="navy" class="small4">선택</button></td>
+							<td>김시대</td>
+							<td>010-1234-5678</td>
+							<td class="t_left">서울특별시 강남구 삼성로 434 쥬비스타워 5층</td>
+							<td class="btn_td"><button type="button" class="delete"><span class="hidden">삭제</span></button></td>
+						</tr>
+						<tr>
+							<td class="btn_td"><button type="button" data-btn="navy" class="small4">선택</button></td>
+							<td>김시대</td>
+							<td>010-1234-5678</td>
+							<td class="t_left">서울특별시 강남구 삼성로 434 쥬비스타워 5층</td>
+							<td class="btn_td"><button type="button" class="delete"><span class="hidden">삭제</span></button></td>
+						</tr>
+						<tr>
+							<td class="btn_td"><button type="button" data-btn="navy" class="small4">선택</button></td>
+							<td>김시대</td>
+							<td>010-1234-5678</td>
+							<td class="t_left">서울특별시 강남구 삼성로 434 쥬비스타워 5층</td>
+							<td class="btn_td"><button type="button" class="delete"><span class="hidden">삭제</span></button></td>
+						</tr>
+						<tr>
+							<td class="btn_td"><button type="button" data-btn="navy" class="small4">선택</button></td>
+							<td>김시대</td>
+							<td>010-1234-5678</td>
+							<td class="t_left">서울특별시 강남구 삼성로 434 쥬비스타워 5층</td>
+							<td class="btn_td"><button type="button" class="delete"><span class="hidden">삭제</span></button></td>
+						</tr>
+						<tr>
+							<td class="btn_td"><button type="button" data-btn="navy" class="small4">선택</button></td>
+							<td>김시대</td>
+							<td>010-1234-5678</td>
+							<td class="t_left">서울특별시 강남구 삼성로 434 쥬비스타워 5층</td>
+							<td class="btn_td"><button type="button" class="delete"><span class="hidden">삭제</span></button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<button class="dim"></button>
+</div>
+<!-- // common_mypage_cart_checkout_addresspopup 팝업 -->
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

@@ -1,0 +1,1174 @@
+﻿@import url(//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+input[type=text], input[type=password]{
+    -webkit-border-radius:0;
+    -webkit-appearance:none;
+}
+*{ -webkit-text-size-adjust: none;box-sizing:border-box;}
+a[href^=tel]{color:#fff838; text-decoration:none;}
+
+.survival_teaser{
+  height:100%;
+  box-sizing: border-box;
+  text-align:center;
+  overflow: hidden;
+}
+.survival_teaser .title_top{
+  background:url('http://img.sdij.com/common/event_title_bg02.png') no-repeat center center;
+/*   background-size:640px; */
+  height:62px;
+  position:absolute;
+  height: 70px;
+  width:100%;
+  top:50%;
+  margin:-5px 0 0 0;
+  font-size:0;
+  box-sizing:border-box;
+}
+.survival_teaser .sub_title{
+  position:absolute;
+  bottom: -260px;
+  width:100%;
+  font-size: 20px;
+  color: #333333;
+}
+.survival_teaser .sub_title a{
+  display: block;
+  font-weight:100;
+  font-size:9px;
+  color:#747474;
+  padding:55px 0 0 0;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width:100%;
+  margin:0 auto;
+  position:relative;
+  text-indent: -9999px;
+}
+.survival_teaser .sub_title a span{
+  content: "";
+  font-size:0;
+  position:absolute;
+  width:100%;
+  top:0;
+  left:0;
+  height:55px;
+  background:url('http://img.sdij.com/common/be_bg01.png') no-repeat center top;
+  transition:0.5s;
+}
+.survival_teaser .sub_title.color span{
+  background-size:100px!important;
+  transition:0.5s;
+}
+.survival_teaser .sub_title .small{
+  font-size:15px;
+  color:#747474;
+  font-weight:100;
+}
+.survival_teaser .bottom_t{
+  position:absolute;
+  bottom:30px;
+  right:80px;
+  font-size:18px;
+  color:#848282;
+  font-weight:100;
+  letter-spacing: 0;
+}
+/*해설지*/
+.download_wrap{
+  padding:150px 0 0 0;
+}
+.download_wrap button{
+  position:relative;
+  padding:0 30px 0 15px;
+  text-align: left
+}
+.download_wrap .full{
+  width:100%;
+  text-transform: uppercase;
+  font-weight:600;
+  position:relative;
+  padding:0;
+  text-align: center;
+}
+.download_wrap .full:after{
+  content:"";
+  width:40px;
+  height:100%;
+  position:absolute;
+  right:30px;
+  vertical-align: top;
+  background:url(http://img.sdij.com/common/download_bg.png) no-repeat center center;
+}
+.download_wrap button:after{
+  content:"";
+  width:40px;
+  height:100%;
+  position:absolute;
+  right:5px;
+  vertical-align: top;
+  background:url(http://img.sdij.com/common/download_bg.png) no-repeat center center;
+}
+.download_wrap ul{
+  padding:30px 0 0 0;
+  width:100%;
+  margin:0 auto;
+}
+.download_wrap ul li{
+  font-size:13px;
+  line-height: 20px;
+}
+
+.download_wrap table{
+  border-spacing: 0;
+  width:100%;
+}
+.download_wrap table th{
+  font-size:17px;
+  width:35%;
+  font-weight: 400;
+  text-align: center;
+}
+.download_wrap table td{
+  padding:10px 0;
+  position:relative;
+}
+.download_wrap table td button{
+  text-transform: uppercase;
+  font-weight:600;
+}
+.download_wrap  table td button:after{
+  content:"";
+  width:40px;
+  height:100%;
+  position:absolute;
+  right:30px;
+  vertical-align: top;
+  background:url(http://img.sdij.com/common/download_bg.png) no-repeat center center;
+}
+
+/*2차 추가*/
+/*
+
+
+#wrap .box_01{
+    background:#000000
+}
+#wrap .box_02{
+    background:#f8f8f8;
+}
+#wrap .box_03{
+    background:#ececec;
+}
+#wrap .box_04{
+    background:#f6f6f6;
+}
+#wrap .box_05{
+    padding:100px 0;
+}
+#wrap .box_06{
+    background:#f0f0f0;
+    height:auto;
+    padding:60px 0;
+}
+#wrap .title{
+    font-size:70px;
+    color:#484848;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight:300;
+}
+#wrap .box_02 .title{
+  font-size:0;
+  padding:70px 0 0 0;
+  background:url(http://img.sdij.com/common/event/event_title_bg04.png) no-repeat center top;
+}
+#wrap .title span{
+    display: block;
+    font-size:20px;
+    color:#b5b5b5;
+    padding:5px 0 0 0;
+    letter-spacing:-1px;
+  line-height: 40px;
+}
+
+#wrap .mid_wrap .add_list{
+   padding:40px 0 0 0;
+}
+#wrap .mid_wrap .add_list li{
+  font-size:20px;
+  line-height: 50px;
+  font-weight:300;
+}
+#wrap .mid_wrap .add_list li.size_01{
+    font-size:14px;
+}
+#wrap .mid_wrap .add_list li.size_02{
+    font-size:18px;
+    line-height:40px;
+}
+#wrap .mid_wrap .add_list li.size_03{
+   font-size:22px;
+   letter-spacing: -1px;
+}
+#wrap .mid_wrap .add_list li em{
+  border-bottom:1px #323232 solid;
+  padding:0 0 2px 0;
+}
+#wrap .mid_wrap .add_list li.color_01{
+    color:#323232;
+}
+#wrap .mid_wrap .add_list li.color_02{
+    color:#878787;
+}
+#wrap .mid_wrap .add_list li.color_03{
+    color:#b5b5b5;
+}
+#wrap .mid_wrap .add_list li.color_04{
+    color:#c2c2c2;
+}
+#wrap .mid_wrap .add_list li.color_05{
+    color:#7e7e7e;
+}
+
+#wrap .mid_wrap .goods{
+    margin:90px 0 0 0;
+    display: block;
+    height:285px;
+    background:url(http://img.sdij.com/common/event/binder_bg.png) no-repeat center top;
+}
+#wrap .mid_wrap .apply_group{
+    width:660px;
+    margin:0 auto;
+}
+#wrap .mid_wrap .apply_group li{
+    margin:35px 0 0 0;
+    text-transform: uppercase;
+    font-size:40px;
+    position:relative;
+    border:1px #d5d5d5 solid;
+    padding:8px;
+    background:#ebebeb;
+}
+#wrap .mid_wrap .apply_group li:first-child{
+    margin:0
+}
+#wrap .mid_wrap .apply_group li .line{
+    padding:65px 0;
+    border:1px #e1e1e1 solid;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:#ffffff;
+    font-weight:300;
+}
+#wrap .mid_wrap .apply_group li .line a{
+    display: block;
+    font-size:0;
+    line-height:0px;
+    padding:45px 0 0 0;
+}
+#wrap .mid_wrap .apply_group li:first-child .line a{
+    background:url(http://img.sdij.com/common/event/event_title_bg05.png) no-repeat center top;
+}
+#wrap .mid_wrap .apply_group li.sec .line a{
+    background:url(http://img.sdij.com/common/event/event_title_bg06.png) no-repeat center top;
+}
+#wrap .mid_wrap .apply_group li.thir .line a{
+    background:url(http://img.sdij.com/common/event/event_title_bg07.png) no-repeat center top;
+}
+#wrap .mid_wrap .apply_group li .line a>span{
+    display:block;
+    font-size:20px;
+    color:#b5b5b5;
+    line-height: 20px;
+}
+#wrap .mid_wrap .apply_group li .check_list{
+    font-size:0;
+    padding:30px 0 0 0;
+}
+#wrap .mid_wrap .apply_group li .check_list span{
+    font-size:15px;
+    padding:0 0 0 18px;
+    background:url(http://img.sdij.com/common/event/check_bg.png) no-repeat left top;
+    color:#878787;
+    margin:0 0 0 15px;
+}
+#wrap .mid_wrap .apply_group li .check_list span:first-child{
+    margin:0;
+}
+*/
+
+/*2차 수정디자인*/
+
+
+.zero_wrap{
+  height:100%;
+  text-align: center;
+  font-family: 'Nanum Square';
+}
+.zero_wrap .landing{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+.zero_wrap .landing .mid_wrap .top_title{
+  height:30px;
+  font-size:0;
+  margin:0 7%;
+  position:absolute;
+  width:86%;
+  top:90px;
+  left:0;
+  background:url('http://img.sdij.com/common/event/top_title_bg.png') no-repeat left center;
+}
+.zero_wrap .landing .mid_wrap .top_title:after{
+  content: "";
+  float:right;
+  width:100px;
+  height:100%;
+  background:url('http://img.sdij.com/common/event/color_group.png') no-repeat left center;
+  background-size:contain;
+  padding:0;
+}
+.zero_wrap .landing.final .mid_wrap .top_title:after{
+  background:url('http://img.sdij.com/common/event/final/color_group_final.png') no-repeat left center;
+}
+.zero_wrap .landing.final .mid_wrap .top_title{
+  background:url('http://img.sdij.com/common/event/final/top_title_bg_final.png') no-repeat left center;
+}
+.zero_wrap .landing .mid_wrap .title{
+  text-align:left;
+  width:860px;
+  font-size:0;
+  padding:105px 0 0 0;
+  background:url('http://img.sdij.com/common/event/zero_title.png') no-repeat left top;
+  position:absolute;
+  top:25%;
+  left:50%;
+  margin:0 0 0 -430px;
+}
+.zero_wrap .landing .mid_wrap .title:after{
+  content:"비교 불가 최상의 수능 서바이벌 모의고사";
+  position:absolute;
+  margin:40px 0 0 0;
+  color:#b3b3b3;
+  font-size:17px;
+  line-height:20px;
+  font-weight:300;
+  font-family: 'Nanum Square';
+}
+.zero_wrap .landing.final .mid_wrap .title{
+  text-align:left;
+/*   width:86%; */
+  padding:105px 0 0 0;
+/*   background:url('http://img.sdij.com/common/event/final/zero_title.png') no-repeat 94px top; */
+  background:url('http://img.sdij.com/common/event/final/zero_title_final.png') no-repeat center top;
+  position:absolute;
+  width: 784px;
+  margin: 0 0 0 -392px;
+}
+.zero_wrap .landing.final .mid_wrap .title:after{
+  content:"비교 불가 최상의 수능 서바이벌 모의고사";
+  position:absolute;
+  margin:40px 0 0 15px;
+  color:#b3b3b3;
+  font-size:18px;
+  line-height:20px;
+  font-weight:300;
+  font-family: 'Nanum Square';
+}
+.zero_wrap .landing .mid_wrap .add_title{
+  position:absolute;
+  bottom:40%;
+  right:95px;
+  font-size:0;
+  padding:25px 0 0 0;
+  width:395px;
+  background:url('http://img.sdij.com/common/event/zero_add_title.png') no-repeat right center;
+}
+.zero_wrap .landing.final .mid_wrap .add_title{
+  position:absolute;
+  bottom:35%;
+  font-size:0;
+  padding:25px 0 0 0;
+  width:100%;
+  right:0;
+  background:url('http://img.sdij.com/common/event/final/zero_add_title_final.png') no-repeat right center;
+}
+.zero_wrap .landing .mid_wrap .color_list{
+  font-size:0;
+  position:absolute;
+  left:50%;
+  margin:0 0 0 -284px;
+  bottom:22%;
+}
+.zero_wrap .landing.final .mid_wrap .color_list{
+  bottom:21%;
+}
+.zero_wrap .landing .mid_wrap .color_list li{
+  display: inline-block;
+  *display: inline;
+  zoom:1;
+  width:112px;
+  height:112px;
+  border-radius:100%;
+  font-size:0;
+  margin:0 15px;
+}
+.zero_wrap .landing .mid_wrap .color_list li:first-child{
+  background:#75bee1 url('http://img.sdij.com/common/event/zero_text_01.png') no-repeat center center;
+}
+.zero_wrap .landing .mid_wrap .color_list li.sec{
+  background:#83d05e url('http://img.sdij.com/common/event/zero_text_02.png') no-repeat center center;
+}
+.zero_wrap .landing .mid_wrap .color_list li.thir{
+  background:#b752d6 url('http://img.sdij.com/common/event/zero_text_03.png') no-repeat center center;
+}
+.zero_wrap .landing .mid_wrap .color_list li.four{
+  background:#dd6d2b url('http://img.sdij.com/common/event/zero_text_04.png') no-repeat center center;
+}
+.zero_wrap .landing.final .mid_wrap .color_list li:first-child{
+  background:#03c3ee url('http://img.sdij.com/common/event/zero_text_01.png') no-repeat center center;
+}
+.zero_wrap .landing.final .mid_wrap .color_list li.sec{
+  background:#37db62 url('http://img.sdij.com/common/event/zero_text_02.png') no-repeat center center;
+}
+.zero_wrap .landing.final .mid_wrap .color_list li.thir{
+  background:#da49dd url('http://img.sdij.com/common/event/zero_text_03.png') no-repeat center center;
+}
+.zero_wrap .landing.final .mid_wrap .color_list li.four{
+  background:#ff5646 url('http://img.sdij.com/common/event/final/zero_text_04_final.png') no-repeat center center;
+}
+.zero_wrap .landing .mid_wrap .add_t{
+  width:890px;
+  text-align: right;
+  margin:95px auto 0 auto;
+  color:#cccccc;
+  font-weight:300;
+  font-size:16px;
+  position: absolute;
+  bottom:80px;
+  right:200px;
+  font-family: 'Nanum Square';
+}
+.zero_wrap .landing.final .mid_wrap .add_t{
+  font-size:17px;
+  bottom:60px;
+  right:unset;
+  left:50%;
+  margin:0 0 0 -65px;
+  width:700px;
+  text-align: left;
+  color:#b0b0b0;
+  line-height: 30px;
+  letter-spacing:-0.25px;
+  font-family: 'NanumSquareRound',sans-serif;
+  font-weight:400;
+}
+.zero_wrap .landing.final .mid_wrap .add_t em{
+  display: block;
+  padding:0 0 35px 0;
+  color:#838282;
+  font-family: 'NanumSquareRound',sans-serif;
+}
+.zero_wrap .landing.final .mid_wrap .color_add{
+  position:absolute;
+  bottom:20%;
+  left:50%;
+  margin:0 0 0 125px;
+  width:350px;
+  font-size:0;
+  height:55px;
+  background:url('http://img.sdij.com/common/event/final/color_text_bg.png') no-repeat left top;
+}
+.zero_wrap .landing.final .mid_wrap .color_add:after{
+  content: "";
+  position:absolute;
+  font-size:0px;
+  width:100%;
+  left:0;
+  bottom:-55px;
+  padding:40px 0 0 0;
+  /*background:url('http://img.sdij.com/common/event/final/addtext_bg.png') no-repeat center center;*/
+}
+.zero_wrap .yellow_box{
+  padding:245px 0 105px 0;
+  background:#ffb700 url('http://img.sdij.com/common/event/zero_bg_02.png') no-repeat right top;
+  text-align: left;
+}
+.zero_wrap .yellow_box.final{
+  background:#ffb700 url('http://img.sdij.com/common/event/final/zero_bg_02_final.png') no-repeat right top;
+}
+.zero_wrap .yellow_box ul{
+  width: 900px;
+  margin:0 auto;
+}
+.zero_wrap .yellow_box.final ul{
+  width:780px;
+}
+.zero_wrap .yellow_box ul li{
+  padding:0 0 0 91px;
+  line-height:50px;
+  font-size:19px;
+  color:#ffffff;
+  font-weight:600;
+  font-family: 'Nanum Square';
+}
+.zero_wrap .yellow_box.final ul li{
+  font-size:20px;
+}
+.zero_wrap .yellow_box ul li:first-child{
+  line-height:24px;
+  height:24px;
+  padding:0;
+  margin:0 0 30px 0;
+  font-size:0;
+}
+.zero_wrap .yellow_box ul li:first-child span{
+  display: inline-block;
+  font-size:27px;
+  padding:0 20px 0 0;
+  font-weight:400;
+}
+.zero_wrap .yellow_box ul li:first-child span:first-child{
+  font-size:28px;
+  font-weight:100;
+}
+.zero_wrap .yellow_box ul li.small{
+  font-size:15px;
+}
+.zero_wrap .btn_box{
+  padding:0 0 200px 0;
+  text-align: center;
+  overflow:hidden;
+}
+.zero_wrap .btn_box .bg{
+  display: block;
+  padding:350px 0 0 0;
+  background:#ebe9ec url('http://img.sdij.com/common/event/zero_bg_01.png') no-repeat center bottom;
+}
+.zero_wrap .btn_box ul{
+  padding:280px 0 62px 0;
+  position:relative;
+  width:700px;
+  margin:0 auto;
+}
+.zero_wrap .btn_box ul:before{
+  display: block;
+  content: "";
+  height:20px;
+  background:url('http://img.sdij.com/common/event/color_group.png') no-repeat center top;
+  background-size:contain;
+  width:110px;
+  margin:0 0 0 -55px;
+  left:50%;
+  position:absolute;
+  top:120px;
+}
+.zero_wrap .btn_box.final ul:before{
+  background:url('http://img.sdij.com/common/event/final/color_group_final.png') no-repeat center top;
+}
+.zero_wrap .btn_box ul li{
+  position:absolute;
+  margin:0 0 0 110px;
+}
+.zero_wrap .btn_box ul li:first-child{
+  margin:0;
+}
+.zero_wrap .btn_box ul li a{
+  display: block;
+  text-transform:uppercase;
+  font-size:30px;
+  line-height: 100%;
+}
+.zero_wrap .btn_box ul li.fir{
+  left:10px;
+  bottom:-800px;
+}
+.zero_wrap .btn_box ul li.fir a{
+  color:#be63da;
+  width:160px;
+}
+.zero_wrap .btn_box.final ul li.fir a{
+  color:#da49dd;
+}
+.zero_wrap .btn_box.final ul li.sec a{
+  color:#03c3ee;
+}
+.zero_wrap .btn_box.final ul li.thir a{
+  color:#37db62;
+}
+.zero_wrap .btn_box ul li.sec{
+  bottom:0;
+  left:172px;
+  bottom:-800px;
+}
+.zero_wrap .btn_box ul li.sec a{
+  color:#70b8e0;
+  width:130px;
+}
+.zero_wrap .btn_box ul li.thir{
+  bottom:0;
+  right:10px;
+  bottom:-800px
+}
+.zero_wrap .btn_box ul li.thir a{
+  color:#7ece53;
+  width:160px;
+}
+.zero_wrap .btn_box ul li a span{
+  display: block;
+  font-size:12px;
+  color:#ffffff;
+  line-height: 22px;
+  margin:10px 0 0 0;
+  font-family: 'Nanum Square';
+
+}
+.zero_wrap .btn_box ul li.fir a span{
+  background:#be63da;
+}
+.zero_wrap .btn_box ul li.sec a span{
+  background:#70b8e0;
+}
+.zero_wrap .btn_box ul li.thir a span{
+  background:#7ece53;
+}
+.zero_wrap .btn_box.final ul li.fir a span{
+  background:#da49dd;
+}
+.zero_wrap .btn_box.final ul li.sec a span{
+  background:#03c3ee;
+}
+.zero_wrap .btn_box.final ul li.thir a span{
+  background:#37db62;
+}
+#wrap .box_05{
+  width:660px;
+  margin:0 auto;
+  height:auto;
+  padding:0 0 100px 0;
+  text-align:center;
+}
+#wrap .step_list{
+  font-size:0;
+  padding:0 0 70px 0;
+}
+#wrap .step_list li{
+  border:1px #a6a6a6 solid;
+  display: inline-block;
+  *display: inline;
+  zoom:1;
+  font-size:18px;
+  color:#303030;
+  width:31%;
+  height:193px;
+  vertical-align: top;
+  margin:0 0 0 3.5%;
+  padding:50px 15px;
+  word-break: keep-all;
+  text-align:left;
+  line-height: 25px;
+  position:relative;
+  font-weight:300;
+  letter-spacing: -1px;
+}
+#wrap .step_list li:first-child{
+  margin:0;
+}
+#wrap .step_list li:before{
+  content: "01";
+  position:absolute;
+  top:0;
+  left:0;
+  width:34px;
+  padding:5px 0;
+  text-align: center;
+  font-size:14px;
+  font-weight:800;
+  color:#ffffff;
+  background:#a0a0a0
+}
+#wrap .step_list li.sec:before{
+  content: "02"
+}
+#wrap .step_list li.thir:before{
+  content: "03"
+}
+#wrap .step_list li.thir:after{
+  content: "";
+  position:absolute;
+  bottom:-33px;
+  right:-30px;
+  width:90px;
+  height:123px;
+  background:url(http://img.sdij.com/common/event/s_binder_bg.png) no-repeat left top;
+}
+#wrap .room_btn{
+  overflow: hidden;
+}
+#wrap .room_btn>li{
+  border-top:3px #a0a0a0 solid;
+  float:right;
+  height:110px;
+  width:320px;
+}
+#wrap .room_btn>li:first-child{
+  float:left;
+  background:#1a2e4e;
+  border:0;
+}
+#wrap .room_btn>li:first-child a{
+  display: block;
+  line-height: 110px;
+  font-size:28px;
+  color:#ffffff;
+}
+#wrap .room_btn>li .search_area{
+  overflow: hidden;
+  position:relative;
+}
+#wrap .room_btn>li .search_area span{
+  display: block;
+  font-size:25px;
+  color:#2d2928;
+  font-weight:300;
+  padding:21px 0;
+}
+#wrap .room_btn>li .search_area input,
+#wrap .room_btn>li .search_area button{
+  float:left;
+  height:42px;
+  box-sizing:border-box;
+  position:relative
+}
+#wrap .room_btn>li .search_area input{
+  width:100%;
+  padding:0 42px 0 2%;
+  border:1px #c0c0c0 solid;
+  font-size:17px;
+  color:#726c6b;
+  letter-spacing: -1px;
+}
+#wrap .room_btn>li .search_area button{
+  position:absolute;
+  width:42px;
+  bottom:0;
+  right:0;
+  background:url(http://img.sdij.com/common/event/search_bg.png) no-repeat center center;
+}
+#wrap .room_btn>li.full{
+  width:100%;
+  height:auto;
+  clear: both;
+  border:0;
+  padding:55px 170px 0 0;
+  text-align: left;
+  font-size:25px;
+  color:#333333;
+  letter-spacing: -1px;
+  font-weight:300;
+  position:relative;
+  line-height: 28px;
+}
+#wrap .room_btn>li.full .sns_list{
+  position:absolute;
+  right:0;
+  bottom:0;
+  font-size:0
+}
+#wrap .room_btn>li.full .sns_list a{
+  display: inline-block;
+  *display: inline;
+  zoom:1;
+  width:51px;
+  height:51px;
+  vertical-align: top;
+  margin:0 0 0 10px;
+}
+#wrap .room_btn>li.full .sns_list a.link{
+  background:url(http://img.sdij.com/common/event/link_bg.png) no-repeat center center;
+}
+#wrap .room_btn>li.full .sns_list a.instagram{
+  background:url(http://img.sdij.com/common/event/insta_bg.png) no-repeat center center;
+}
+#wrap .room_btn>li.full .sns_list a.facebook{
+  background:url(http://img.sdij.com/common/event/facebook_bg.png) no-repeat center center;
+}
+#wrap .box_05 table{
+  width:100%;
+  border-spacing: 0;
+  margin:60px 0 0 0;
+}
+#wrap .box_05 table th{
+  border-top:3px #3b3736 solid;
+  font-size:15px;
+  color:#575151;
+  padding:7px 0 25px 0;
+  position:relative;
+}
+#wrap .box_05 table th.line{
+  border-top:0;
+  width:130px;
+  padding:7px 0 25px 10px
+}
+#wrap .box_05 table th.line:before{
+  border-top:3px #3b3736 solid;
+  content: "";
+  position:absolute;
+  top:-2px;
+  right:0;
+  width:120px;
+}
+#wrap .box_05 table td{
+  font-size:15px;
+  color:#575151;
+  letter-spacing: -1px;
+  padding:5px 0;
+}
+#wrap .box_05 table td.line{
+  width:120px;
+  text-align: right;
+  padding:5px 0 5px 10px
+}
+#wrap .box_05 table td input{
+  border:0;
+  width:120px;
+  height:30px;
+  line-height:30px;
+  display:block;
+  margin:0 auto;
+  color:#ffffff;
+  font-weight:600;
+  font-size:15px;
+}
+#wrap .box_05 table td input.apply{
+  background:#525252;
+}
+#wrap .box_05 table td input.finish{
+  background:#b9b9b9;
+}
+#wrap .box_05 .paging{
+  border-top:1px #575151 solid;
+  margin:30px 0 0 0 ;
+  padding:40px 0 0 0;
+  font-size:0;
+}
+#wrap .box_05 .paging a{
+  display: inline-block;
+  *display: inline;
+  zoom:1;
+  font-size:12px;
+  padding:0 15px;
+  color:#525252;
+}
+#wrap .box_05 .paging a.on{
+  font-weight:600;
+}
+#wrap .box_06{
+  height:auto;
+  padding:60px 0;
+  background:#f0f0f0;
+}
+#wrap .box_06 .mid_wrap{
+    text-align: left;
+}
+#wrap .box_06 .mid_wrap .notice_text{
+    width:660px;
+    margin:0 auto;
+}
+#wrap .box_06 .mid_wrap .notice_text li:first-child{
+    border-bottom:2px #575151 solid;
+    font-size:18px;
+    font-weight:600;
+    padding:0 0 5px 0;
+}
+#wrap .box_06 .mid_wrap .notice_text li{
+    font-size:14px;
+    line-height: 26px;
+    padding:20px 0 0 0;
+    color:#575151;
+}
+
+#wrap .join_pop .pop_wrap{
+  border:1px #a0a0a0 solid;
+  width:660px;
+  margin:-206.5px 0 0 -330px;
+}
+#wrap .join_pop .pop_wrap .pop_title{
+  background:none;
+  border:0;
+  color:#575151;
+  font-size:32px;
+  font-weight:300;
+  font-family: 'Noto Sans KR', sans-serif;
+  padding:30px 15px 25px 15px;
+}
+#wrap .join_pop .pop_wrap .pw_box{
+  padding:45px 15px 50px 15px;
+  font-size:24px;
+  color:#525252;
+  font-weight:600;
+}
+#wrap .join_pop .pop_wrap .pw_box input{
+  display: block;
+  border:1px #c2c2c2 solid;
+  height:55px;
+  line-height: 55px;
+  width:100%;
+  padding:0 2%;
+  font-weight:400;
+  margin:5px 0 10px 0;
+  font-size:20px;
+}
+#wrap .join_pop .pop_wrap .pw_box span{
+  color:#575151;
+  font-size:20px;
+  font-weight:300;
+  letter-spacing: -1px;
+}
+#wrap .join_pop .pop_wrap .btn_wrap button{
+  width:263px;
+  height:70px;
+  line-height: 70px;
+  font-size:28px;
+}
+
+/*입시 설명회 티저*/
+body[data-depth1="entrance_presentation"][data-depth2="main"] #footer{
+  display: none;
+  background:#ffffff;
+}
+.pop_landing{
+  max-width:1024px;
+  margin:0 auto;
+  height:100%;
+  position:relative;
+  font-family: 'Nanum Square';
+  display: table;
+  width:90%;
+}
+.pop_landing .top{
+  position:absolute;
+  width:100%;
+  top:7%;
+  font-size:0;
+  height: 40px;
+  margin:0 auto 215px auto;
+  background:url('http://img.sdij.com/common/event/final/color_group_final.png') no-repeat right center;
+}
+.pop_landing .top:after{
+  content: "";
+  height:100%;
+  width:164px;
+  display: block;
+  background:url(http://img.sdij.com/common/event/sdij_logo.png) no-repeat left center;
+  background-size:75%;
+}
+.pop_landing .mid_wrap{
+  display: table-cell;
+  vertical-align: middle;
+}
+.pop_landing .title{
+  color:#000000;
+  font-size:57px;
+  position:relative;
+  margin:0 0 190px 0;
+  line-height: 70px;
+}
+.pop_landing.set2 .title{
+  margin:0 0 250px 0;
+}
+.pop_landing .title:before{
+  border-top:1px #000000 solid;
+  content: "";
+  width:124px;
+  display: block;
+  margin:0 0 30px 0;
+}
+.pop_landing .title span{
+  display: block;
+  font-size:30px;
+  color:#7d7d7d;
+  font-weight:500;
+  line-height: 24px;
+  margin:30px 0 0 0;
+}
+.pop_landing .color_list{
+}
+.pop_landing .color_list li{
+  display: inline-block;
+  vertical-align: top;
+  width:174px;
+  height:174px;
+  border-radius: 50%;
+  margin:0 0 0 75px;
+  position:relative;
+  letter-spacing: -0.5px;
+}
+.pop_landing .color_list li:first-child{
+  background:#03c3ee;
+  margin:0;
+}
+.pop_landing.set2 .color_list li:first-child{
+  background: #da49dd;
+}
+.pop_landing .color_list li.sec{
+  background:#37db62;
+}
+.pop_landing.set2 .color_list li.sec{
+  background:#03c3ee;
+}
+.pop_landing .color_list li.thir{
+  background:#da49dd;
+}
+.pop_landing.set2 .color_list li.thir{
+  background:#ff5646;
+}
+.pop_landing .color_list li.four{
+  background:#ff5646;
+}
+.pop_landing.set2 .color_list li.four{
+  background:#37db62;
+}
+.pop_landing .color_list li a{
+  display: table;
+  width:100%;
+  height:100%;
+  color:#ffffff;
+  font-weight:600;
+  text-align:center;
+  font-size: 30px;
+  line-height:37px;
+}
+.pop_landing.set2 .color_list li a{
+  font-size:24px;
+  line-height: 110%;
+}
+.pop_landing .color_list li a span{
+  display: table-cell;
+  vertical-align: middle;
+}
+.pop_landing .color_list li em{
+  font-size:20px;
+  color:#a19f9f;
+  width:400px;
+  line-height: 25px;
+  display: block;
+  padding:30px 0 0 15px;
+}
+
+@media screen and (max-width: 1600px){
+  .survival_teaser .title_top{
+    background-size:100%;
+    width:100%;
+    max-width:34%;
+    left:50%;
+    margin:-5px 0 0 -17%;
+  }
+  .survival_teaser .bottom_t{
+    font-size:12px;
+  }
+  .survival_teaser .sub_title{
+    bottom: -180px;
+  }
+  .survival_teaser .sub_title a{
+    padding:32px 0 0 0;
+  }
+  .survival_teaser .sub_title a span{
+    position:absolute;
+    top:0;
+    height:32px;
+    background-size:contain;
+  }
+  .survival_teaser .sub_title .small{
+    padding:5px 0 0 0;
+    font-size:12px;
+  }
+  .survival_teaser .sub_title.color a span{
+    background-size:contain!important;
+  }
+
+  /*2차 추가*/
+   .zero_wrap .landing .mid_wrap .top_title{
+    height:20px;
+  }
+  .zero_wrap .landing .mid_wrap .title{
+    width:800px;
+    margin:0 0 0 -400px;
+  }
+  .zero_wrap .landing .mid_wrap .title:after{
+    margin:20px 0 0 0;
+    font-size:16px;
+  }
+  .zero_wrap .landing .mid_wrap .color_list{
+    margin:0 0 0 -248px;
+    bottom:20%;
+  }
+  .zero_wrap .landing .mid_wrap .color_list li{
+    width:100px;
+    height:100px;
+    margin:0 12px;
+  }
+  .zero_wrap .landing .mid_wrap .add_t{
+    font-size:14px;
+    bottom:60px;
+  }
+  /*3차*/
+  .zero_wrap .landing.final .mid_wrap .add_title{
+    bottom:45%;
+    padding:15px 0 0 0;
+    background-size:460px;
+  }
+  .zero_wrap .landing.final .mid_wrap .color_list{
+    bottom:27%;
+  }
+  .zero_wrap .landing.final .mid_wrap .add_t{
+    font-size:14px;
+    right:1%;
+    left:unset;
+    margin:0;
+    width:700px;
+    line-height: 30px;
+    width: auto;
+    padding:0 5% 0 0;
+  }
+  .zero_wrap .landing.final .mid_wrap .add_t em{
+    padding:0 0 25px 0;
+  }
+  /*입시설명*/
+  .pop_landing .top:after{
+    width:124px;
+    background-size:80%;
+  }
+  .pop_landing .title{
+    font-size:42px;
+    margin:0 0 12% 0;
+    line-height: 49px;
+  }
+  .pop_landing .title span{
+    font-size:25px;
+    color:#7d7d7d;
+    line-height: 20px;
+    margin:20px 0 0 0;
+  }
+  .pop_landing .color_list li{
+    width:145px;
+    height:145px;
+  }
+  .pop_landing .color_list li a{
+    font-size: 22px;
+    line-height:28px;
+  }
+  .pop_landing.set2 .color_list li a{
+    font-size:20px;
+  }
+  .pop_landing .color_list li em{
+    font-size:15px;
+    line-height: 20px;
+    padding:20px 0 0 15px;
+  }
+}

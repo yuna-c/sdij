@@ -1,0 +1,270 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/aca_acainfo_map.html
+* @ 페이지설명	: 모바일 > 학원 > 학원소개 > 오시는길
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-26
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>학원소개 > 오시는길</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="aca" data-depth2="acainfo" data-depth3="map">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+		<h2 data-title="type1">오시는길</h2>
+		<div data-layout="type1">
+			<div data-tab="type2" class="line" id="maptab">
+          <button type="button" class="on">
+          	<a href="?class_cd=101">시대인재 본관</a>
+          </button>
+          <button type="button">
+          	<a href="?class_cd=102">시대인재 신관</a>
+          </button>
+          <button type="button">
+          	<a href="?class_cd=118">시대인재 2관</a>
+          </button>
+          <button type="button">
+          	<a href="?class_cd=119">시대인재 3관</a>
+          </button>
+          <button type="button">
+          	<a href="?class_cd=120">시대인재 4관</a>
+          </button>
+          <button type="button">
+          	<a href="?class_cd=121">시대인재 5관</a>
+          </button>
+          <button type="button">
+          	<a href="?class_cd=123">시대인재 서바이벌관</a>
+          </button>
+          <button type="button">
+          	<a href="?class_cd=124">시대인재 특목관</a>
+          </button>
+          <button type="button">
+          	<a href="?class_cd=125">시대인재 커피관</a>
+          </button>
+          <button type="button" class="last_line">
+          	<a href="?class_cd=128">시대인재 오아시스 생협관</a>
+          </button>
+          <button type="button" class="last_line">
+            <a href="?class_cd=129">
+                      시대인재 수학스쿨 2관<br />
+                    (중등)</a>
+          </button>
+          <!--20180709 추가-->
+          <button type="button" class="last_line">
+            <a href="?class_cd=130">시대인재 N관</a>
+          </button>
+      </div>
+      <div data-tab="type2" class="line" id="maptab">
+          <button type="button" class="on">
+            <a href="?class_cd=126">분당 시대인재</a>
+          </button>
+      </div>
+			<div data-table="type4" class="m_b60">
+				<table>
+					<caption>주문정보 상세</caption>
+					<colgroup>
+						<col style="width:39%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" class="v_m">도로명 주소</th>
+							<td>
+								서울특별시 강남구 도곡로 460(대치동,동선빌딩) 2층
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">지번주소</th>
+							<td>
+								서울특별시 강남구 대치동<br>1021-8
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">전화번호</th>
+							<td>02-2088-2846</td>
+						</tr>
+						<tr>
+							<th scope="row">팩스</th>
+							<td>02-6927-2848</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="map_wrap m_b30">
+				<div class="scroll_wrap">
+          <!-- <img src="http://img.sdij.com/map/m/m_map_img.jpg" alt="시대인재대치점지도" class="border_img"> -->
+					<img src="http://img.sdij.com/map/m/m_map_img.png" alt="시대인재대치점지도" class="border_img"><!--20180709 수정-->
+					<span class="area1 on" id="area1">시대인재 본관</span>
+					<span class="area2" id="area2">시대인재 신관</span>
+					<span class="area3" id="area3">시대인재 2관</span>
+					<span class="area4" id="area4">시대인재 3관</span>
+					<span class="area5" id="area5">시대인재 4관</span>
+					<span class="area6" id="area6">시대인재 5관</span>
+					<span class="area7" id="area7">시대인재 서바이벌관</span>
+					<span class="area8" id="area8">시대인재 특복반</span>
+					<span class="area9" id="area9">시대인재 커피관</span>
+					<span class="area10" id="area10">시대인재 오아시스 생협관</span>
+          <span class="area11" id="area11">시대인재 수학스쿨 2관(중등)</span>
+					<span class="area13" id="area13">시대인재 N관</span>
+				</div>
+			</div>
+      <!-- 20180416 소스추가 S -->
+      <div class="map_wrap m_b30">
+        <div class="scroll_wrap location2">
+          <img src="http://img.sdij.com/map/m/m_map_img2.jpg" alt="시대인재분당점지도" class="border_img">
+          <span class="area12 on" id="area12">분당 시대인재</span>
+        </div>
+      </div>
+      <script type="text/javascript"> //20180416 js수정
+          /*지도 파라미터*/
+          setTimeout(function(){
+                var mapNum = location.search;
+                var key = mapNum.split('=');
+                mapCursor(key[1]);
+
+                function mapCursor(key){
+                   if(key == 101){
+                    mapFn(0,0);
+                   };
+                   if(key == 102){
+                    mapFn(1,1);
+                   };
+                   if(key == 118){
+                    mapFn(2,2);
+                   };
+                   if(key == 119){
+                    mapFn(3,3);
+                   };
+                   if(key == 120){
+                    mapFn(4,4);
+                   };
+                   if(key == 121){
+                    mapFn(5,5);
+                   };
+                   if(key == 123){
+                    mapFn(6,6);
+                   };
+                   if(key == 124){
+                    mapFn(7,7);
+                   };
+                   if(key == 125){
+                    mapFn(8,8);
+                   };
+                   if(key == 128){
+                    mapFn(9,9);
+                   };
+                   if(key == 129){
+                    mapFn(10,10);
+                   };
+                   // 20180709 추가
+                   if(key == 130){
+                    mapFn(12,11);
+                   };
+                   if(key == 126){
+                    mapFn(11,0);
+                   };
+                };
+
+                function mapFn(num,order){
+                  var flagNum = num+1;
+                  var flagArea = $('#area'+flagNum).position();
+                  var left = flagArea.left;
+                  var top = flagArea.top;
+
+                  $('.scroll_wrap span').eq(order).addClass('on').siblings().removeClass('on');
+                  $('[data-tab="type2"] button').eq(order).addClass('on').siblings().removeClass('on');
+                  $('.map_wrap ').animate({
+                    'scrollTop' : top-90,
+                    'scrollLeft' : left-90
+                  });
+
+                  $('.scroll_wrap span').on('mouseover',function(){
+                    var idx = $(this).index();
+                    if(idx != num+1){
+                      $(this).addClass('on');
+                    };
+                  });
+
+                  $('.scroll_wrap span').on('mouseleave',function(){
+                    var idx = $(this).index();
+                    if(idx != num+1){
+                      $(this).removeClass('on');
+                    };
+                  }); 
+                };
+          },10)
+      </script>
+      <!-- 20180416 소스추가 E -->
+    <a href="https://m.map.daum.net/actions/searchView?q=%EC%8B%9C%EB%8C%80%EC%9D%B8%EC%9E%AC#!/25491446/map/place" class="m_b60" target="_blank" data-btn="whitegray" alt="다음맵으로 보기(바로가기)">다음맵으로 보기</a>
+    
+			<div data-table="type4">
+				<table>
+					<caption>주문정보 상세</caption>
+					<colgroup>
+						<col style="width:39%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">버스</th>
+							<td class="btn130_right">
+								<span class="f_color5">간선버스</span> 140, 400, 402, 407, 
+								420, 421, 440, 441, 462, 470, 
+								471, 541, 542
+								(강남역.우성아파트 하차)
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">지하철</th>
+							<td class="btn130_right">
+								<span class="f_color1">3호선</span> 강남역 7번출구 직진 후, 
+								우성아파트 사거리 우회전 해서 
+								80M
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">자가용</th>
+							<td>
+								강남역에서 테헤란로 288m
+								직진하신 후 국기원입구 역삼
+								초교방면 우회전 후 역삼로에서 
+								강남대로 방면 우회전. 역삼로 
+								3길 우회전 후 강남대로78길 
+								좌회전. 역삼로1길 좌회전 후 
+								25m이동 후 도착
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

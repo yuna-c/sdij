@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>팝업</title>
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body>
+
+<!-- layer pop start -->
+<div data-pop="launching">
+	<div class="pop_wrap">
+		<div class="content">
+			<h2>시대인재on</h2>
+			<!-- 2017-09-22 마크업 삭제 S -->
+			<!-- <p>
+				<span>서바이벌 실전모의 <em>온라인 0회</em></span>
+				<em>수학 + 과학 1 + 과학 2</em>
+			</p> -->
+			<!-- 2017-09-22 마크업 삭제 E -->
+			<a href="#" class="sub_title">Be the 시대인재</a>
+		</div>
+		<div class="today">
+			<span data-form="checkbox">
+				<input type="checkbox" id="pop">
+				<label for="pop">오늘 하루 열지 않기</label>
+			</span>
+			<button type="button">닫기</button>
+		</div>
+	</div>
+</div>
+<style>
+a{text-decoration:none}
+button{border:none;}
+em{font-style:normal;}
+	/* launching banner popup start*/
+
+*[data-form="checkbox"]{display:inline-block;margin:0 20px 0 0;line-height:30px;}
+p[data-form="checkbox"]{margin:20px 0 15px;}
+*[data-form="checkbox"] input{display:none;}
+*[data-form="checkbox"] label{display:inline-block;padding:0 0 0 40px;line-height:30px;font-size:14px;color:#323232;position:relative;}
+*[data-form="checkbox"] label:before{content:'';display:block;position:absolute;left:0;top:0px;width:30px;height:30px;background:url('../common/img/common.png') no-repeat;background-position:0 -350px;box-sizing:border-box;}
+*[data-form="checkbox"] label:after{content:'';display:block;position:absolute;left:5px;top:7px;width:20px;height:16px;background:url('../common/img/common.png') no-repeat;background-position:0 -425px;}
+*[data-form="checkbox"] input:checked + label:after{background-position:0 -400px;}
+*[data-form="checkbox"] label:hover:before{background-position:-40px -400px;}
+
+*[data-pop="launching"]{position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(30,30,30,0.5);}
+*[data-pop="launching"] .pop_wrap{position:absolute;left:50%;top:50%;margin:-305px 0 0 -310px;width:620px;height:610px;}
+*[data-pop="launching"] .pop_wrap .content{padding:30px;height:550px;background:url('../common/img/bannerpop_bg.png') no-repeat;background-size:100%;box-sizing:border-box;}
+*[data-pop="launching"] .pop_wrap .content h2{margin:150px auto 60px auto;width:422px;height:65px;text-indent:-9999px;background:url('../common/img/bannerpop_ci2.png') no-repeat;background-size:cover;}/* 2017-09-22 css 수정 */
+*[data-pop="launching"] .pop_wrap .content p{margin:0 0 30px 0;text-align:center;color:#fff;font-family:'neob'}
+*[data-pop="launching"] .pop_wrap .content p span{display:block;margin:0 0 30px 0;font-size:60px;}
+*[data-pop="launching"] .pop_wrap .content p span em{display:block;line-height:100%;font-size:60px;}
+*[data-pop="launching"] .pop_wrap .content p > em{display:block;font-size:34px;line-height:100%;color:#6fbae9;}
+/**[data-pop="launching"] .pop_wrap .content p em:after{content:'';display:block;margin:30px auto 0 auto;width:20px;height:1px;background:#95a1af;}*/
+*[data-pop="launching"] .pop_wrap .content .sub_title{display:block;margin:0 auto 20px auto;width:360px;height:90px;background:url('../common/img/bannerpop_sub.png') no-repeat;text-indent:-9999px;}
+/**[data-pop="launching"] .pop_wrap .content a{display:block;margin:auto;width:170px;height:70px;line-height:70px;font-size:30px;background:#ffad00;color:#2b435e;font-family:'neob';text-align:center;}*/
+*[data-pop="launching"] .pop_wrap .today{padding:15px;background:#fff;}
+*[data-pop="launching"] .pop_wrap .today button{float:right;margin:5px 0 0 0;width:20px;height:20px;text-indent:-9999px;background:url('../common/img/common.png') no-repeat;background-position:0 -950px;}
+
+ /* 모바일 스타일 정의 */
+@media screen and (max-width: 640px){
+  *[data-pop="launching"] .pop_wrap .content h2{margin:70px 0 30px 0;width:100%;height:75px;background-size:100%;}/* 2017-09-22 css 수정 */
+  *[data-pop="launching"] .pop_wrap{position:static;margin:20% auto 0 auto;width:90%;height:50%;max-height:390px;}
+  *[data-pop="launching"] .pop_wrap .content{height:340px;background-size:100% 100%;}
+  *[data-pop="launching"] .pop_wrap .content p{margin:0 0 20px 0;}
+  *[data-pop="launching"] .pop_wrap .content p span{margin:0 0 15px 0;font-size:24px;}
+  *[data-pop="launching"] .pop_wrap .content p span em{font-size:24px;}
+  *[data-pop="launching"] .pop_wrap .content p > em{font-size:20px;}
+  /**[data-pop="launching"] .pop_wrap .content p em:after{margin:20px auto 0 auto;}*/
+  *[data-pop="launching"] .pop_wrap .content .sub_title{width:180px;height:45px;background-size:100%;}
+  *[data-pop="launching"] .pop_wrap .content a{width:85px;height:35px;line-height:35px;font-size:15px;}
+  *[data-pop="launching"] .pop_wrap .today{height:60px;box-sizing:border-box;}
+
+} 
+/* launching banner popup end*/
+</style>
+<!-- layer pop end -->
+</body>

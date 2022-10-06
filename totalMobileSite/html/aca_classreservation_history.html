@@ -1,0 +1,91 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/aca_univr&d_presentation_apply
+* @ 페이지설명	: 모바일 > 학원 > 입시R&D > 설명회 > 	설명회신청     	
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-29
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>학원 > 강좌예약 > 	신청내역조회</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/aca.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/typed.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="aca" data-depth2="class_reservation" data-depth3="history">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+		<h2 data-title="type1">신청내역조회</h2>
+		<p data-text="type6">신청 이름과 휴대폰 번호를 입력하세요.</p>
+		<div data-layout="type1">
+			<form>
+				<fieldset>
+					<dl data-form="wrap" class="p_t60">
+						<dt><label for="input1" class="field_name">이름</label></dt>
+						<dd><span data-form="input"><input type="text" id="input1"></span></dd>
+						<dt><span class="field_name">휴대폰번호</span></dt>
+						<dd>
+							<span data-form="select">
+								<select title="휴대폰번호 앞 세자리">
+									<option>010</option>
+									<option>011</option>
+									<option>017</option>
+									<option>018</option>
+									<option>019</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span data-form="input" class="size168 m_b20">
+								<input type="text" title="휴대폰번호 가운데 네자리">
+							</span>
+							<em>-</em>
+							<span data-form="input" class="size168">
+								<input type="text" title="휴대폰번호 뒤 네자리">
+							</span>
+							<button type="button" data-btn="whitegray">인증번호받기</button>
+						</dd>
+						<dt><label for="input2" class="field_name">인증번호</label></dt>
+						<dd>
+							<span data-form="input"><input type="text" id="input2"></span>
+							<span class="timer"><em>인증번호 입력 남은시간</em>03:00</span>
+						</dd>
+					</dl>
+					<div class="btn_wrap">
+						<button type="button" data-btn="navy">조회</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

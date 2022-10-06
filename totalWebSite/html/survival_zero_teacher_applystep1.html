@@ -1,0 +1,154 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/launching_knock_applystep2.html
+* @ 페이지설명		: 런칭 > 서바이벌제로 > 무료신청 > 교사용 신청
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-16
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>서바이벌제로 > 무료신청 > 교사용 신청</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="survival" data-depth2="zero" data-depth3="applystep2" deta-depth4="teacher">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+
+		<h2 data-title="type1" class="m_b60">2019 SURVIVAL ZERO Ⅱ 무료신청 / 그룹ㆍ반 신청</h2>
+		<div data-layout="type1">
+			<div data-step="type2">
+				<div class="on"><em>1</em>신청서작성</div><!-- 현재단계 class="on" --><!-- 완료단계 class="pass" -->
+				<div><em>2</em>신청완료</div>
+			</div>
+
+
+			<form>
+				<fieldset class="m_b10">
+					
+					<h3 data-title="type2">신청서 작성</h3>
+					<dl data-form="wrap">
+						<dt><label for="t_input1" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span class="field_name">김시대선생님</span></dd>
+						<dt><label for="t_input5" class="field_name">학교<strong>*<em>필수항목</em></strong></label></dt>
+						<dd><span data-form="input"><input type="text" id="t_input5"></span><button type="button" data-btn="whitegray" onclick="openNewWindow('common_login_registstep2_schoolpopup.html')">학교검색</button></dd>
+						<dt><span class="field_name">담당계열/학년/과목<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="select" class="type8">
+								<select title="계열선택">
+									<option>계열</option>
+									<option>문과</option>
+									<option>이과</option>
+								</select>
+							</span>
+							<span data-form="select" class="type8 m_l10">
+								<select title="학년선택">
+									<option>학년</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+							</span>
+							<span data-form="input" class="m_l10"><input type="text" id="t_input8"></span>
+						</dd>
+						
+						<dt><span class="field_name">신청과목/수량<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="textarea" class="type1 type12">
+								<textarea name="subject_detail" id="" cols="30" rows="8" placeholder="">과목별 필요하신 수량을 적어주시면 바인더와 함께 일괄 배송 됩니다. 								예) 수학(가) 30개, 생명과학1 10개				   								  ※ 과목: 수학(가형) / 생명과학1 / 화학 1 / 지구과학1 /물리1 /생명과학2  / 지구과학2		
+																			-----------------------------------------------------------------------------------------</textarea>
+							</span>
+						</dd>
+
+						<dt><span class="field_name">주소<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<ul data-text="type5">
+								<li class="star f_color5">주소 기재 오류로 인한 재배송은 진행되지 않으니 주소를 정확하게 확인하세요.</span>
+							</ul>
+							<p>
+								<span  data-form="input" class="size170">
+									<input type="text" readonly="readonly" title="우편번호">
+								</span>
+								<button type="button" data-btn="whitegray">우편번호 찾기</button>
+							</p>
+							<p>	
+								<span  data-form="input" class="size370">
+									<input type="text" id="input7" readonly="readonly">
+								</span>
+								<label for="input7" class="field_info">기본주소</label>
+							</p>
+							<p>	
+								<span  data-form="input" class="size370">
+									<input type="text" id="input8">
+								</span>
+								<label for="input8" class="field_info">나머지주소</label>
+							</p>
+						</dd>
+						<dt><label for="t_input7" class="field_name">배송메시지</label></dt>
+						<dd>
+							<span data-form="input" class="full">
+								<input type="text" title="배송메시지" id="t_input7">
+							</span>
+						</dd>
+						<dt><span class="field_name">핸드폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<span data-form="select">
+								<select title="지역번호">
+									<option>선택</option>
+									<option>02</option>
+									<option>옵션1</option>
+									<option>옵션2</option>
+									<option>옵션3</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="전화번호 앞자리">
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="전화번호 뒷자리">
+							</span>
+						</dd>
+					</dl>
+				</fieldset>
+				<div class="btn_wrap3">
+					<button type="button" data-btn="navy" data-popup="sample" id="common_layerpopup">신청완료</button>
+				</div>
+			</form>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

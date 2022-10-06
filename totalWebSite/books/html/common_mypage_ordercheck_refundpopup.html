@@ -1,0 +1,199 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/common_mypage_ordercheck_refundpopup.html
+* @ 페이지설명	: 공통 > 마이페이지 > 주문/배송조회 > 환불&결제취소신청팝업
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-18
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>마이페이지 > 주문/배송조회 > 환불&결제취소신청팝업</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/selectordie.min.js"></script>
+<style type="text/css">
+</style>
+</head>
+<body data-depth1="common" data-depth2="mypage" data-depth3="ordercheck" data-depth4="refundpopup">
+<div data-popup="pop" class="type2">
+	<div class="pop_wrap">
+
+
+		<form data-box="pop_content">
+			<!-- 20170512 환불/결제취소 상품선택 추가 -->
+			<fieldset>
+				<h1 data-title="type2">환불/결제취소 상품</h1>
+				<dl data-form="wrap">
+					<dt><label for="select1" class="field_name">신청사유</label></dt>
+					<dd>
+						<span data-form="select" class="type6">
+							<select id="select2">
+								<option>선택해주세요.</option>
+								<option selected="selected">전체</option>
+								<option>부분</option>
+							</select>
+						</span>
+					</dd>
+					<dt><span class="field_name f_color3">환불예정금액</span></dt>
+					<dd class="text_wrap">
+						<span class="f_color3">720,000원</span>
+						<ul data-list="type2" class="f_color2">
+							<li><span>※</span><p>환불 예정 금액과 실제 환불 금액은 다를 수 있습니다.</p></li>
+							<li><span>※</span><p>출고대기 상태의 교재 또는 도서가 있는 경우 고객센터 1588-1588로 문의 바랍니다.</p></li>
+						</ul>
+					</dd>
+				</dl>
+			</fieldset>
+			<!-- // 20170512 환불/결제취소 상품선택 추가 -->
+
+			<!-- 20170512 환불/결제취소 상품선택 추가 -->
+			<fieldset>
+				<h1 data-title="type2">환불/결제취소 상품</h1>
+				<dl data-form="wrap">
+					<dt><label for="select1" class="field_name">신청사유</label></dt>
+					<dd>
+						<span data-form="select" class="type6 m_b10">
+							<select id="select3">
+								<option>선택해주세요.</option>
+								<option>전체</option>
+								<option selected="selected">부분</option>
+							</select>
+						</span>
+						<span data-form="checkbox" class="m_b10">
+							<input type="checkbox" id="check2" checked="checked">
+							<label for="check2">물리I 서바이벌</label>
+						</span>
+						<span data-form="checkbox" class="m_b10">
+							<input type="checkbox" id="check3" checked="checked">
+							<label for="check3">수학 가형 서바이벌</label>
+						</span>
+						<span data-form="checkbox">
+							<input type="checkbox" id="check4">
+							<label for="check4">최시대 수시컨설팅</label>
+						</span>
+					</dd>
+					<dt><span class="field_name f_color3">환불예정금액</span></dt>
+					<dd class="text_wrap">
+						<span class="f_color3">320,000원</span>
+						<ul data-list="type2" class="f_color2">
+							<li><span>※</span><p>환불 예정 금액과 실제 환불 금액은 다를 수 있습니다.</p></li>
+							<li><span>※</span><p>출고대기 상태의 교재 또는 도서가 있는 경우 고객센터 1588-1588로 문의 바랍니다.</p></li>
+						</ul>
+					</dd>
+				</dl>
+			</fieldset>
+			<!-- // 20170512 환불/결제취소 상품선택 추가 -->
+
+			<fieldset>
+				<h1 data-title="type2">환불/결제취소 신청 사유</h1>
+				<dl data-form="wrap">
+					<dt><label for="select1" class="field_name">신청사유</label></dt>
+					<dd>
+						<span data-form="select" class="type6">
+							<select id="select1">
+								<option>신청 사유를 선택해주세요.</option>
+								<option>파손된 교재가 배송됐어요.</option>
+								<option>결제한 상품 외에 다른 상품이 배송 됐어요.</option>
+								<option>이 상품은 이용하고 싶지 않아요.(고객 변심)</option>
+								<option>다른 상품으로 재 구매할 거에요.(고객 변심)</option>
+								<option>기타</option>
+							</select>
+						</span>
+					</dd>
+					<dt><label for="input1" class="field_name">추가의견</label></dt>
+					<dd><span data-form="input" class="size370"><input type="text" id="input1" placeholder="추가 의견을 입력해주세요."></span></dd>
+				</dl>
+			</fieldset>
+
+			<fieldset>
+				<h1 data-title="type2">환불 받을 계좌정보</h1>
+				<dl data-form="wrap">
+					<dt><label for="input2" class="field_name">은행명</label></dt>
+					<dd><span data-form="input" class="size370"><input type="text" id="input2"></span></dd>
+					<dt><label for="input3" class="field_name">계좌번호</label></dt>
+					<dd><span data-form="input" class="size370"><input type="text" id="input3"></span></dd>
+					<dt><label for="input4" class="field_name">예금주명</label></dt>
+					<!-- 20170508 부모동의 체크박스 추가 -->
+					<dd>
+						<span data-form="input" class="size370 m_b10"><input type="text" id="input4"></span>
+						<span data-form="checkbox">
+							<input type="checkbox" id="check1">
+							<label for="check1" class="f_color3"><b>미성년자 계좌로의 환불 시 부모 동의</b></label>
+						</span>
+					</dd>
+					<!-- // 20170508 부모동의 체년크박스 추가 -->
+				</dl>
+			</fieldset>
+
+			<fieldset>
+				<h1 data-title="type2">교재/도서를 수거할 주소 입력</h1>
+				<dl data-form="wrap">
+					<dt><label for="select1" class="field_name">주소</label></dt>
+					<dd>
+						<p>
+							<span  data-form="input" class="size170">
+								<input type="text" readonly="readonly" title="우편번호">
+							</span>
+							<button type="button" data-btn="whitegray">우편번호 찾기</button>
+						</p>
+						<p>	
+							<span  data-form="input" class="size370">
+								<input type="text" id="input5" readonly="readonly">
+							</span>
+							<label for="input5" class="field_info">기본주소</label>
+						</p>
+						<p>	
+							<span  data-form="input" class="size370">
+								<input type="text" id="input6">
+							</span>
+							<label for="input6" class="field_info">나머지주소</label>
+						</p>
+					</dd>
+					<dt><label for="input1" class="field_name">전화번호</label></dt>
+					<dd>
+						<p>
+							<span data-form="select">
+								<select title="휴대폰번호 앞 세자리">
+									<option>010</option>
+									<option>011</option>
+									<option>017</option>
+									<option>018</option>
+									<option>019</option>
+								</select>
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="휴대폰번호 가운데 네자리">
+							</span>
+							<em>-</em>
+							<span  data-form="input" class="size110">
+								<input type="text" title="휴대폰번호 뒤 네자리">
+							</span>
+						</p>
+					</dd>
+				</dl>
+			</fieldset>
+		</form>
+		
+		<div class="btn_wrap3">
+			<button type="submit" data-btn="navy">신청</button>
+		</div>
+
+
+	</div>
+</div>
+</body>

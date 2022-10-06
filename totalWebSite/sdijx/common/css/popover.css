@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.popover-wrap{ padding:20px; display:none; position:absolute; background-color:#fff; border-radius:10px; box-shadow:0 8px 16px 0 rgba(0, 0, 0, .2); z-index:999; }
+.popover-container{ display:none; }
+.popover-container .popover-tit{ margin:20px 0 10px; font-weight:500; letter-spacing:-.4px; }
+.popover-container .popover-tit:first-child{ margin-top:0; }
+
+/* filter */
+.filter-check{ width:360px; }
+.filter-check > .input-checkbox{ margin-bottom:10px; display:block; }

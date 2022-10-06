@@ -1,0 +1,47 @@
+/*
+10-08 추가내용
+.pr5{ padding-right:5px !important; }
+.pl5{ padding-left:5px !important; }
+.pl0{ padding-left:0px !important; }
+.board-view2.blk table{ border-bottom:1px solid #000; }
+*/
+/*10-10 추가내용*/
+.m-auto{ margin:0 auto; }
+
+.sticker-faq{  width:70px; padding:0px 5px; height:22px; line-height:22px; display:inline-block; background-color:#ddd; font-size:12px; font-weight:300; color:#000; text-align:center; vertical-align:middle; }
+
+.gray-box.faq { margin-top:50px; }
+.gray-box.faq > div{ padding:30px 160px; height:auto; }
+
+.black-box.faq { padding:20px 0; }
+.black-box.faq ul { display:table; width:100%; table-layout:fixed; }
+.black-box.faq ul li{ display:table-cell; padding:0 30px; border-right:1px solid #888; }
+.black-box.faq ul li  span{ display:block; color:white; }
+.black-box.faq ul li  a{ display:inline-block; margin-right: 20px;}
+.black-box.faq ul li  span.data-tit { font-size:15px; }
+.black-box.faq ul li  span.data-txt { font-size:30px; font-weight:600; }
+.black-box.faq ul li  span.data-sub { margin-top:10px; font-size:12px; color:#888; }
+
+.search-area.white{ background:white; }
+.hash-txt{ font-size:12px; color:#999; }
+.dep2-tab.faq > li { height:98px; }
+.dep2-tab > li > a.tab-a{ font-size:18px; padding-top:26px; padding-bottom:26px; }
+
+.board-list.accordion table tr td.circle-faq:before{ content:'A'; width:25px; height:25px; line-height:25px; margin-top:4px; display:inline-block; background-color:#000; font-weight:bold; color:#fff; text-align:center; vertical-align:middle; border-radius:50%; }
+.board-list.accordion table tr.title td:last-child{ background:#fff url(http://img.sdij.com/sd2019/pc/ico/ico_arrow_down.png) 95% 50% no-repeat }
+.board-list.accordion table tr.title.selected td:last-child{ background-image:url(http://img.sdij.com/sd2019/pc/ico/ico_arrow_up.png) }
+.board-list.accordion table tr.title td span{ margin:10px 0; }
+.board-list.accordion table tr.content{ display:none; background-color:#fafafa; color:#000; }
+.board-list.accordion table tr.content td{ padding:25px 10px 15px; vertical-align:top; }
+.board-list.accordion table tr td{ text-align:center; }
+.board-list.accordion table tr td span{ width:540px; line-height:27px; }
+
+.ico-pass{ margin:3px auto; width:20px; height:18px; background-image:url(http://img.sdij.com/sd2019/pc/ico/ico_pass.png); }
+.ico-video{ margin:3px auto; width:20px; height:18px; background-image:url(http://img.sdij.com/sd2019/pc/ico/ico_video.png); }
+.ico-textbook{ margin:3px auto; width:20px; height:18px; background-image:url(http://img.sdij.com/sd2019/pc/ico/ico_textbook.png); }
+.ico-etc{ margin:3px auto; width:20px; height:18px; background-image:url(http://img.sdij.com/sd2019/pc/ico/ico_etc.png); }
+
+.dep2-tab > li.selected > a .ico-pass{ background-image:url(http://img.sdij.com/sd2019/pc/ico/ico_pass_on.png); }
+.dep2-tab > li.selected > a .ico-video{ background-image:url(http://img.sdij.com/sd2019/pc/ico/ico_video_on.png); }
+.dep2-tab > li.selected > a .ico-textbook{ background-image:url(http://img.sdij.com/sd2019/pc/ico/ico_textbook_on.png); }
+.dep2-tab > li.selected > a .ico-etc{ background-image:url(http://img.sdij.com/sd2019/pc/ico/ico_etc_on.png); }

@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+.noti-content{ background-color:#ffedc1; padding:6px 10px; }
+.sticker-green{ background-color:#ceffea; }
+
+/* info tab */
+.benefit-container .tab-type{ margin:20px auto 10px; }
+.benefit-container .tab-type ul{ width:calc( 100% + 20px ); position:relative; top:-10px; left:-10px; *zoom:1; } 
+.benefit-container .tab-type ul:after{ content:''; display:block; clear:both; }
+.benefit-container .tab-type ul li{ width:calc( 50% - 20px ); margin:10px; float:left; display:inline-block; border:1px solid #e9e9e9; }
+
+.benefit-container .tab-type ul li .txt-area{ padding:40px; }
+.benefit-container .tab-type ul li .txt-area .txt{ line-height:28px; font-size:24px; font-weight:700; }
+.benefit-container .tab-type ul li .txt-area .tit-dep1{ margin-bottom:0; }
+.benefit-container .tab-type ul li .txt-area .tit-red{ background:linear-gradient(180deg, rgba(255,255,255,0) 50%, #ffe1e1 50%); }
+
+.benefit-container .tab-type ul li .info-area{ background-color:#fcfcfc; border-top:1px solid #e9e9e9; }
+.benefit-container .tab-type ul li .info-area a{ width:calc( 50% - 2px ); padding:10px 0; display:inline-block; font-size:14px; font-weight:500; text-align:center; border-left:1px solid #e9e9e9; }
+.benefit-container .tab-type ul li .info-area > a{ border-left:none; }
+
+.benefit-container .table-type1 ul > li > .type-area{ position:relative; }
+
+/* coupon */
+.benefit-container .benefit-area{ margin:20px auto 10px; }
+.benefit-container .benefit-area > ul{ width:calc( 100% + 20px ); position:relative; top:-10px; left:-10px; *zoom:1; }
+.benefit-container .benefit-area > ul:after{ content:''; display:block; clear:both; }
+.benefit-container .benefit-area > ul > li{ width:calc( 50% - 20px ); margin:10px; padding:20px 40px; float:left; position:relative; border:1px solid #e9e9e9; overflow:hidden; }
+.benefit-container .benefit-area > ul > li{ display:block; }
+.benefit-container .benefit-area > ul > li .txt-area .span{ margin-bottom:2px; font-size:14px; font-weight:500; }
+.benefit-container .benefit-area > ul > li .txt-area .tit-dep4{ margin:4px auto 10px; display:flex; flex-direction:row; justify-content:space-between; align-items:center; }
+.benefit-container .sort-area{ margin-bottom:0; }
+
+/** tablet **/
+@media (max-width:1024px) and (orientation:portrait), (max-width:1336px) and (orientation:landscape){
+	.benefit-container .tab-type ul li .txt-area{ padding:40px 20px; }
+}
+/** mobiles **/
+@media (max-width:539px) and (orientation:portrait), (max-width:959px) and (orientation:landscape){
+	.benefit-container .tit-dep4{ margin:50px auto 16px; }
+
+	.benefit-container .tab-type ul{ width:100%; top:0; left:0; }
+	.benefit-container .tab-type ul li{ width:100%; margin:10px auto; float:none; border-color:#f2f2f2; }
+	.benefit-container .tab-type ul li:first-child{ margin-bottom:0; }
+	.benefit-container .tab-type ul li .txt-area{ padding:20px; }
+	.benefit-container .tab-type ul li .info-area{ background-color:#f2f2f2; border-color:#f2f2f2; }
+	.benefit-container .tab-type ul li .info-area a{ border-color:#f2f2f2; }
+
+	.benefit-container .benefit-area > ul{ width:100%; top:0; left:0; }
+	.benefit-container .benefit-area > ul > li{ width:100%; margin:10px auto; padding:22px 24px; float:none; }
+	
+	.benefit-container .sort-area{ flex-direction:column; align-items:flex-start; }
+	.benefit-container .sort-area > *{ margin-top:10px; }
+	.benefit-container .sort-area > *:first-child{ margin-top:0; }
+	.benefit-container .sort-area .date-sort{ width:100%; padding:0 5px; display:flex; align-items:center; }
+	.benefit-container .sort-area .date-sort .input-date{ flex:1; }
+	.benefit-container .sort-area .date-sort + .form-toggle{ width:100%; margin-left:0; }
+	.benefit-container .sort-area .form-toggle > *{ flex:1; }
+	.benefit-container .sort-area .form-toggle + .sort-side{ width:calc( 25% - 10px ); margin-right:5px; }
+	.benefit-container .sort-area .form-toggle + .sort-side .btn{ width:100%; align-items:flex-end; }
+}
+@media (max-width:320px) and (orientation:portrait){
+	.benefit-container .sort-area .sort-side{ margin-left:auto; }
+}

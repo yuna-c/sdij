@@ -1,0 +1,46 @@
+.layout-library{ width:980px; margin:0 auto 80px; }
+
+.layout-library .fs12{ font-size:12px; }
+.layout-library .fs14{ font-size:14px; }
+.layout-library .fs20{ font-size:20px; font-weight:400; }
+
+.layout-library hr.division-line{ width:30px; margin:70px auto; border-color:#000; }
+.layout-library .dep-tit{ line-height:36px; margin:80px auto 50px; font-family:'Noto Serif KR', 'Noto Serif', serif, 'Sans-serif', 'Noto Sans KR'; font-size:32px; font-weight:400; text-align:center; }
+
+.layout-library .em-txt{ margin:0 2px; padding:0 2px; display:inline-block; background-color:#ffc200; }
+.layout-library .noto-txt{ line-height:22px; position:relative; font-size:14px; font-weight:300; }
+.layout-library .visual-txt{ font-size:28px; font-weight:500; text-align:center; }
+
+.layout-library .list-tit{ padding-left:145px; position:relative; font-size:20px; font-weight:300; }
+.layout-library .list-tit dt{ margin:20px auto 10px; font-weight:500; }
+.layout-library .list-tit dt:first-child{ margin-top:0; }
+
+.layout-library .list-graph{ }
+.layout-library .list-graph dt{ margin:20px auto 5px; font-size:20px; font-weight:500; }
+.layout-library .list-graph dt:first-child{ margin-top:0; }
+.layout-library .list-graph dd{ width:100%; display:table; table-layout:fixed; }
+.layout-library .list-graph dd > div{ height:26px; display:table-cell; font-size:14px; font-weight:500px; text-align:center; vertical-align:middle; }
+.layout-library .list-graph dd > div.graph1{ background-color:#ffc200; }
+.layout-library .list-graph dd > div.graph2{ background-color:#ffe180; }
+.layout-library .list-graph dd > div.graph3{ background-color:#cecece; }
+.layout-library .list-graph dd > div.graph4{ background-color:#666; }
+
+.layout-library .list-txt{ font-size:28px; font-weight:500; }
+.layout-library .list-txt > p{ margin-top:5px; }
+
+.layout-library .list-dotted li{ font-weight:400; }
+
+.layout-library .img-circle{ width:108px; height:108px; padding-top:36px; position:absolute; left:0; background-color:#fff; border:1px solid #b3b3b3; border-radius:50%; text-align:center; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+
+.layout-library .visual-img{ height:367px; margin:60px auto 80px; position:relative; }
+.layout-library .visual-img > img{ margin-left:-550px; display:block; position:absolute; top:0; left:50%; }
+
+.layout-library .content-img{ width:760px; font-size:0; box-shadow:3px 4px 10px 0px rgba(0, 0, 0, 0.5); }
+
+.layout-library .gray-box{ margin-top:20px; padding:20px; background-color:#f2f2f2; }
+.layout-library .gray-box .tit{ margin-bottom:10px; font-weight:500; }
+
+.layout-library .section{ padding-left:240px; position:relative; }
+.layout-library .section .section-tit{ width:195px; line-height:34px; padding:40px 0 80px; position:absolute; top:0; left:0; border-top:1px solid #000; border-bottom:1px solid #000; font-family:'Noto Serif KR', 'Noto Serif', serif, 'Sans-serif', 'Noto Sans KR'; font-size:28px; font-weight:500; }
+.layout-library .section .section-tit .noto-txt{ position:absolute; left:0; bottom:-54px; }
+.layout-library .section .section-content{ width:740px; }

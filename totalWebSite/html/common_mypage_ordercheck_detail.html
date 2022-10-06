@@ -1,0 +1,208 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/common_mypage_ordercheck_detail.html
+* @ 페이지설명	: 공통 > 마이페이지 > 주문/배송조회 > 주문상세
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-17
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>마이페이지 > 주문/배송조회 > 주문상세</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="common" data-depth2="mypage" data-depth3="ordercheck" data-depth4="detail">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재ON &gt;</span>
+		<span>마이페이지 &gt;</span>
+		<span>주문/배송조회</span>
+	</div>
+	<div id="content">
+		
+
+		<h2 data-title="type1">주문/배송 조회</h2>
+		<div data-layout="type1">
+			<h3 data-title="type2">주문정보</h3>
+			<!-- 20170512 주문정보상세 테이블 수정 -->
+			<div data-table="type4" class="m_b50">
+				<table>
+					<caption>주문정보 상세</caption>
+					<colgroup>
+						<col style="width:130px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">주문번호</th>
+							<td>7432135</td>
+						</tr>
+						<tr>
+							<th scope="row">주문일자</th>
+							<td>2017-01-01</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="3" class="v_top">주문상품</th>
+							<td class="btn80_right">
+								홍길동 모의고사 수학 가형
+								<button type="button" data-btn="whitegray" class="small">배송조회</button>
+							</td>
+						</tr>
+						<tr>
+							<td class="btn80_right">
+								최시대 수시컨설팅
+								<span class="f_color3">환불완료</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="btn80_right">
+								수학 서바이벌
+								<button type="button" data-btn="whitegray" class="small">배송조회</button>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">주문금액</th>
+							<td>194,400원</td>
+						</tr>
+						<tr>
+							<th scope="row">배송메모</th>
+							<td>경비실에 맡겨주세요.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- // 20170512 주문정보상세 테이블 수정 -->
+
+			<h3 data-title="type2">배송정보</h3>
+			<div data-table="type4" class="m_b50">
+				<table>
+					<caption>배송정보 상세</caption>
+					<colgroup>
+						<col style="width:130px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">이름</th>
+							<td>홍길동</td>
+						</tr>
+						<tr>
+							<th scope="row">주소</th>
+							<td>서울특별시 강남구 삼성로 434 쥬비스타워 5층</td>
+						</tr>
+						<tr>
+							<th scope="row">휴대폰번호</th>
+							<td>010-1234-5678</td>
+						</tr>
+						<tr>
+							<th scope="row">전화번호</th>
+							<td>02-1234-5678</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 data-title="type2">결제정보</h3>
+			<div data-table="type4" class="m_b50">
+				<table>
+					<caption>결제정보 상세</caption>
+					<colgroup>
+						<col style="width:130px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">결제수단</th>
+							<td class="btn80_right">
+								신용카드
+								<button type="button" data-btn="whitegray" class="small">영수증</button>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">결제금액</th>
+							<td>194,400원</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 data-title="type2">주문상태</h3>
+			<div data-table="type4" class="m_0">
+				<table>
+					<caption>주문상태 상세</caption>
+					<colgroup>
+						<col style="width:130px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">주문현황</th>
+							<td>
+								<strong class="f_color5">결제완료</strong><br>
+								롯데카드/일시불
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div data-table="type4" class="m_0">
+				<table>
+					<caption>주문상태 상세</caption>
+					<colgroup>
+						<col style="width:130px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">주문현황</th>
+							<td>
+								<strong class="f_color3">입금대기중</strong><br>
+								입금계좌번호 : 123456-78-901234<br>
+								은행(예금주) : 우리은행 (하이컨시온)<br>
+								입금하실금액 : 194,400원<br>
+								<span class="f_color3">입금기한 : 2017-01-01</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="btn_wrap">
+				<a href="" data-btn="login_whitegray">이전</a>
+				<a href="" data-btn="login_whitegray" class="m_l10">마이페이지</a>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

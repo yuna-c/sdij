@@ -1,0 +1,68 @@
+<%
+'-----------------------------------------------------------------------
+' 업 무 명 : 시대인재 단과 > 2020 시대인재 추석특강 > 현장수업
+' 모듈기능 : 시대인재 단과 > 2020 시대인재 추석특강 > 현장수업
+' 파 일 명 : default.asp
+' 작성일자 : 
+' 작 성 자 :
+'-----------------------------------------------------------------------
+' 변경일자   변경자  변동내역
+'-----------------------------------------------------------------------
+%>
+
+<!--#include virtual="renew2019/common/include/incMeta.asp"-->
+<!--#include virtual="renew2019/common/include/incHeader.asp"-->
+<link rel="stylesheet" type="text/css" href="css/default2.css?ver=<%=now()%>">
+
+<!-- S : container -->
+<div class="layout-container event1-container">
+	
+	<input type="hidden" name="memId" value="<%=COOK_ID%>">
+
+	<div class="event-header">
+		<div class="content-layout">
+			<h2 class="page-tit">
+				2021<br> 
+				시대인재<br> 
+				전국 모의고사
+			</h2>
+		</div>
+	</div>
+	
+	<div class="event-cont01">
+		<div class="content-layout">
+			<h4 class="table-tit mt0">공통 과목</h4>
+			<div class="img-area mt10">
+				<p><img src="http://img.sdij.com/sd2019/mobile/event/2010/cont4_img1.png" alt="img"></p>
+			</div>
+
+			<h4 class="table-tit mt0">개별 선택</h4>
+			<div class="img-area bg-area">
+				<p><img src="http://img.sdij.com/sd2019/mobile/event/2010/cont4_img2.png" alt="img"></p>
+			</div>
+			<p class="tit">or</p>
+			<div class="img-area bg-area">
+				<p><img src="http://img.sdij.com/sd2019/mobile/event/2010/cont4_img3.png" alt="img"></p>
+			</div>
+
+			<div class="pirce-area mt30">
+				<p class="table-tit"></p>
+				<p class="tit txt-right">47,000원</p>
+			</div>
+
+			<div class="board-btn mt40">
+				<a href="javascript:IfAppSend()" class="btn btn-black">시대인재 전국 모의고사 신청하기</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!--// E : container -->
+
+
+<script type="text/javascript">
+$(function(){
+
+});
+</script>
+<!--#include virtual="renew2019/common/include/incFooter.asp"-->

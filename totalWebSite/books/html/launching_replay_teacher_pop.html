@@ -1,0 +1,409 @@
+	<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/common_mypage_ordercheck_refundpopup.html
+* @ 페이지설명	: 공통 > 마이페이지 > 주문/배송조회 > 환불&결제취소신청팝업
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-18
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>시대인재</title><!-- 170602 타이틀 수정 -->
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/selectordie.min.js"></script>
+<style type="text/css">
+</style>
+</head>
+<body data-depth1="launching" data-depth2="replay" data-depth3="teacher" data-depth4="popup">
+<div data-popup="pop" class="type5">
+	<h1 data-title="type9">시대인재N 재수종합 강사진 /커리큘럼</h1><!-- 20170703 텍스트 수정 -->
+	<div class="pop_wrap">	
+		<!-- <div data-tab="type2" class="short">
+			<button type="button" class="on" id="tab2">커리큘럼</button>
+			<button type="button" id="tab1">강사</button>
+		</div> 20170710 수정 -->
+		<div class="tab2" style="display:block;">
+			<h2 data-title="type2">시대인재N 재수종합 강사진 /커리큘럼</h2><!-- 20170703 텍스트 수정 -->
+			<div data-table="type4" class="replay">
+				<table>
+					<caption>커리큘럼</caption>
+					<colgroup>
+						<col style="width:80px;">
+						<col style="width:110px;">
+						<col style="width:70px;">
+						<col style="width:60px;">
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" colspan="2">과목</th><!-- 2017-06-30 텍스트 수정 -->
+							<th scope="col">강사</th>
+							<th scope="col">시간</th>
+							<th scope="col">커리큘럼</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row" colspan="2">국어</th>
+							<td><p><strong>박상희</strong></p><p><strong>김상훈</strong></p></td>
+							<td class="t_center">6시간</td>
+							<td>
+								<p class="description">
+									<span><strong>박상희 /김상훈 각각 국어 전 영역 정규 커리큘럼</strong></span>
+									<span><strong>수능 직전 12주간 이감 실전모의 1교시 실시<br>(+ 해설강의)</strong></span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">수학</th>
+							<th scope="row">필수</th>
+							<td><p><strong>권경수</strong></p><p><strong>엄소연</strong></p></td>
+							<td class="t_center">6시간</td>
+							<td>
+								<p class="description">
+									<span>
+										<strong>시대인재 서바이벌 정규반과 동일한 커리큘럼<br>+ 재종반을 위한 추가 정규 컨텐츠</strong>
+										<span>1순환 기벡 (권경수) + 미적 (엄소연)</span>
+										<span>2순환 기벡 (엄소연) + 미적 (권경수)</span>
+									</span>
+									<span><strong>시대인재 서바이벌 실전모의반과 동일한 커리큘럼<br>+ 서바이벌 N 실전모의 (재종반을 위한 추가 컨텐츠)</strong></span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">추가 /<br>보완선택</th>
+							<td><p><strong>강기원</strong></p></td>
+							<td class="t_center">2시간 /2시간</td>
+							<td>
+								<p class="description">
+									<span><strong>기벡 2시간 /미적 2시간<br>(희망자에 한 /2과목 모두 수강가능 /추가 수강료X)</strong></span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">영어</th>
+							<th scope="row">필수</th>
+							<td><p><strong>조정호</strong></p><p><strong>고창영</strong></p><p><strong>정석현</strong></p><p><strong>조오제</strong></p></td>
+							<td class="t_center">1.5시간</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">추가선택</th>
+							<td><p><strong>오렌지</strong></p></td>
+							<td class="t_center">1.5시간</td>
+							<td>
+								<p class="description">
+									<span><strong>희망자에 한 (추가 수강료X)</strong></span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="6">과탐<br>정규</th>
+							<th scope="row">물리I</th>
+							<td><p><strong>김성도</strong></p></td>
+							<td class="t_center" rowspan="6">각 3.5시간</td>
+							<td rowspan="6">
+								<p class="description">
+									<span class="n_dash m_b30">
+										<strong>물리Ⅰ/생명과학Ⅰ/생명과학Ⅱ/지구과학Ⅰ/지구과학Ⅱ
+										<span class="m_t5">
+											시대인재 서바이벌 정규반과 동일한 커리큘럼<br>+ 서바이벌 N 실전모의 (재종반을 위한 추가 컨텐츠)
+										</span></strong>
+									</span>
+									<span class="n_dash"><strong>화학Ⅰ</strong></span>
+									<span><strong>박상현 FINAL 정규반 커리큘럼 진행</strong></span>
+								</p>
+							</td>
+							
+						</tr>
+						<tr>
+							<th scope="row">화학I</th>
+							<td><p><strong>박상현</strong></p></td>
+						</tr>
+						<tr>
+							<th scope="row">생명과학I</th>
+							<td><p><strong>최수준</strong></p></td>
+						</tr>
+						<tr>
+							<th scope="row">생명과학II</th>
+							<td><p><strong>최수준</strong></p></td>
+						</tr>
+						<tr>
+							<th scope="row">지구과학I</th>
+							<td><p><strong>엄영대</strong></p></td>
+						</tr>
+						<tr>
+							<th scope="row">지구과학II</th>
+							<td><p><strong>엄영대</strong></p></td>
+						</tr>
+
+						<tr class="alert">
+							<th scope="row" rowspan="4"><p>과탐</p><p>만점강화</p><br><p>PLUS</p><p>커리큘럼</p><p>SYSTEM</p></th>
+							<td colspan="4">
+
+								<p><strong>생명과학I /생명과학II /화학I 선택자 한정</strong></p>
+								<p><strong>서바이벌 실전모의반 필수적 병행 시스템</strong></p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">화학I</th>
+							<td><p><strong>박상현</strong></p></td><!-- 20170703 텍스트 수정 -->
+							<td rowspan="3" colspan="2">
+								<p class="description">
+									<span class="n_dash m_b30"><strong>과학 정규수업 (3.5시간 + 3.5시간) 외에<br>추가반 진행으로<br> 시대인재 서바이벌 실전모의반 커리큘럼 필수적 병행 시스템</strong></span>
+									<span class="m_b30">생Ⅰ /생Ⅱ /화Ⅰ 선택자 각 과목별 10만원씩 매월 종합반 수강료에서 추가 (선택 X)</span>
+									<em class="n_dash">
+										예를 들어 물리Ⅰ /생명과학Ⅰ 선택자의 경우<br>
+										물Ⅰ (서바정규 /3.5시간) + 생Ⅰ (서바정규 /3.5시간) +<br>
+										생Ⅰ (서바모의 /3.5시간) = 총 10.5시간 진행
+									</em>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">생명과학I</th>
+							<td><p><strong>한종철</strong></p></td>
+						</tr>
+						<tr>
+							<th scope="row">생명과학II</th>
+							<td><p><strong>최수준</strong></p></td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="4">논술</th>
+							<th scope="row">수학</th>
+							<td><p><strong>김기원</strong></p></td>
+							<td>2시간</td>
+							<td rowspan="4"></td>
+						</tr>
+						<tr>
+							<th scope="row">물리</th>
+							<td><p><strong>김성도</strong></p></td>
+							<td rowspan="3">1시간</td>
+						</tr>
+						<tr>
+							<th scope="row">화학</th>
+							<td><p><strong>이홍주</strong></p></td>
+						</tr>
+						<tr>
+							<th scope="row">생명과학</th>
+							<td><p><strong>최수준</strong></p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="tab1">
+			<h2 data-title="type2">시대인재 강사진</h2>
+			<div data-table="type4" class="replay vt">
+				<table>
+					<caption>강사소개</caption>
+					<colgroup>
+						<col style="width:50%;">
+						<col style="width:50%;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><span class="f_color5">[국어] </span>박상희T</th>
+							<th scope="row"><span class="f_color5">[국어] </span>김상훈T</th>
+						</tr>
+						<tr>
+							<td>
+								<p class="description">
+									<span>2017년 국어 FINAL 수강생 1500여명</span>
+									<!-- <span>강남대성 재직기간 (2012-2014) 3년 연속<br> 전체 총 강사평가 압도적 1위 최우수 강사상</span> 20170704 삭제 -->
+									<span>고대 국문 /서울대 대학원 석사</span>
+									<span>전 EBSi /강남대성</span>
+								</p>
+							</td>
+							<td>
+								<p class="description">
+									<span>2017년 대치동 국어 FINAL 수강생 1500여명</span>
+									<span>현 강남대성 /대성마이맥 온라인</span>
+									<!-- <span>강남대성 단과 최단시간 마감</span>
+									<span>강남대성 강의평가 1위 최우수 강사상 수상</span>20170704 삭제 -->
+									<span>서울대 국어국문</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><span class="f_color5">[수학] </span>권경수</th>
+							<th scope="row"><span class="f_color5">[수학] </span>엄소연T</th>
+						</tr>
+						<tr>
+							<td>
+								<p class="description">
+									<span>2017년 FINAL 서바이벌 정규+실전모의 1300명 이상</span>
+									<!-- <span>2017학년도 서울대 의예과 합격 현강생 15명 이상 확인</span> --><!-- 20170707 수정 -->
+									<span>대치동 전교권 (지균 /학추) 학생들 대부분 수강</span>
+									<span>서울대 수학과</span>
+								</p>
+							</td>
+							<td>
+								<p class="description">
+									<span>2017<!-- 년 --> 시대인재 서바이벌 FINAL 1300여명</span><!-- 20170707 수정 -->
+									<span>전 강남대성<br><!-- 강남대성 강사평가 전체 1위 /최우수 강사상<br>(5년 연속)20170704 삭제 --> (수능 전과목 만점자 다수배출)</span>
+									<span>서강대 수학과 /동 교육대학원<br>(자연과학대 수석 졸)</span><!-- 20170703 텍스트 수정 -->
+									<span>전 안양외고 교사</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><span class="f_color5">[수학] </span>강기원T</th>
+							<th scope="row"><span class="f_color5">[수리논술] </span>김기원T</th>
+						</tr>
+						<tr>
+							<td>
+								<p class="description">
+									<span>2016 시대인재 서바이벌 FINAL<br>최상위 정규반 + 실전모의반 200명 이상</span>
+									<span>2016 수리논술 FINAL 전타임 마감</span>
+									<span>서울대 수리과학부 (전액장학생)</span>
+								</p>
+							</td>
+							<td>
+								<p class="description">
+									<!-- <span>강남대성 수리논술 압도적 최다수강 1위<br>(만족도 /실적 평판도 최상위)</span>20170704 삭제 -->
+									<span>2017학년도 메이저의대 합격생 현황<br>연대 의예과 3명 /고대 의예과 7명 /성대 의예과 1명<br>울산대 의예과 2명 /가톨릭대 의예과 4명</span>
+									<span>2016학년도 연대 의예과 논술 정원 13명 중 3명 합격<br>(메이저의대 20명 이상 합격)</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><span class="f_color5">[영어] </span>조정호T</th>
+							<th scope="row"><span class="f_color5">[영어] </span>고창영T</th>
+						</tr>
+						<tr>
+							<td>
+								<p class="description">
+									<span>2016년 FINAL (대치 /분당) 800여명 이상<br>(외대부고 재학생 최다수강 1위)</span>
+									<span>2015년 시대인재 의치대 두반 모두 100명 마감<br>(수강생 90% 내외 1등급 만점 /모의평가 전국수석 수개월 연속 배출)</span>
+									<span>현 메가스터디 온라인</span>
+								</p>
+							</td>
+							<td>
+								<p class="description">
+									<span>전 평가원 및 교육청 모의고사 출제위원</span>
+									<span>2016 수능 전국수석 (전과목 만점) 3명 이상 배출<br>(서울 만점자 6명 중 3명 이상 시대인재 현장수강)</span>
+									<span>전 메가스터디 온라인</span>
+									<span>전 한대부고 /경문고</span>
+									<span>서울대 영어교육과</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><span class="f_color5">[영어] </span>정석현T</th>
+							<th scope="row"><span class="f_color5">[영어] </span>조오제T</th>
+						</tr>
+						<tr>
+							<td>
+								<p class="description">
+									<span>전 강남대성 /이투스 온라인</span>
+									<span>서울대 영어교육 (전 대원외고 교사)</span>
+									<span>저서 셀파 유형편 /Longman 실전모의고사<br>자이스토리 프리미엄 독해 외 다수</span>
+								</p>
+							</td>
+							<td>
+								<p class="description">
+									<span>2016 고3 내신 최상위권 최다수강 1위</span>
+									<span>2014-6년 대치동 영문법 특강 압도적 최다 수강 1위</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><span class="f_color5">[영어] </span>오렌지T</th>
+							<th scope="row"><span class="f_color5">[물리/물리논술] </span>김성도T</th>
+						</tr>
+						<tr>
+							<td>
+								<p class="description">
+									<span>현 EBS 강사<br>(2016학년도 EBS 수특 영독 /올림포스 강의<br>2015 /6 학년도 12만여명 수강)</span>
+									<span>전 강남대성/ 현 대성마이맥 온라인</span>
+									<span>대원외고/ 서강대 영문과</span>
+								</p>
+							</td>
+							<td>
+								<p class="description">
+									<span>2015 대치동 고3 물리 수능/논술/심층면접<br>압도적 최다수강 1위</span>
+									<span>(2017년 군복무 전역 이후) 고3 물리 수능 /논술로 복귀</span>
+									<span>카이스트 물리학과</span>
+									<span>서울대학교 대학원 물리교육과 수료</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><span class="f_color5">[화학논술] </span>이홍주T</th>
+							<th scope="row"><span class="f_color5">[화학] </span>박상현T</th>
+						</tr>
+						<tr>
+							<td>
+								<p class="description">
+									<span>2016 /2017년 대치동 화학논술 압도적 최다수강 1위</span>
+									<span>포스텍 화학공학 대학원</span>
+									<span>전 EBS 과학논술</span>
+								</p>
+							</td>
+							<td>
+								<p class="description">
+									<span>2017학년도 서울대 의예과 합격생 대치 현강생 13명 배출<!-- (강남 3구 서울대 의예과 합격생 배출 1위) --></span><!-- 20170705 수정 -->
+									<span>2017년 대치동 화학1 최다수강 1위<!-- <br>전국 온라인 최다수강생 보유 1위 --></span><!-- 20170705 수정 -->
+									<span>2017학년도 고3 10월 교육청 수강생 중 67%<br>1등급 배출</span><!-- 20170703 텍스트 수정 -->
+									<span>2016학년도 전과목 만점자(전국수석) 7명 중<br>4명 배출</span><!-- 20170703 텍스트 수정 -->
+									<!-- <span>2015학년도 강남권 전과목 만점자(전국수석) 과반이상 수강</span>	20170705 수정 -->
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><span class="f_color5">[생명과학/생명논술] </span>최수준T</th>
+							<th scope="row"><span class="f_color5">[생명과학] </span>한종철T</th>
+						</tr>
+						<tr>
+							<td>
+								<p class="description">
+									<span>2016년 FINAL 정규 /실전모의반 1100명 이상</span>
+									<span>대치동 생명논술 압도적 최다 1위</span>
+									<span>서울대 생명과학 이학박사</span>
+								</p>
+							</td>
+							<td>
+								<p class="description">
+									<span>2016 강남대성 생1 최상위 1반 강의<!-- <br>(2016 강남대성 전체 강사평가 1위) --></span><!-- 20170707 수정 -->
+									<span>2016  FINAL 수강생 1500여명</span>
+									<span>현 강남대성 /대성마이맥 온라인</span>
+									<span>전 EBS</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><span class="f_color5">[지구과학] </span>엄영대T</th>
+							<th></th>
+						</tr>
+						<tr>
+							<td>
+								<p class="description">
+									<span>2017년 지구과학 압도적 최다수강생 보유 1위<br>(1500명 이상)</span>
+									<span>서울대 지구과학교육과<br>동 대학 지구환경과학부 석사</span>
+									<span>현 메가스터디 온라인 1위</span>
+								</p>
+							</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+</body>

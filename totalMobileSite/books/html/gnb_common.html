@@ -1,0 +1,185 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_mypage_ordercheck_none.html
+* @ 페이지설명	: 모바일 > 공통 > 마이페이지 > 주문&배송조회 > 내역없음 
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-22
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>헤더</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/swiper.min.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/typed.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="aca" data-depth2="main">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+<div style="height:100%;background:#000"></div>
+<!-- <div id="header">
+    <button type="button" class="m_logo">
+        <img src="../common/img/ci.png" alt="시대인재">
+    </button>
+    <div class="head_btn">
+        <button type="button" class="mypage on">마이메뉴</button>
+        <button type="button" class="menu">메뉴</button>
+    </div>
+    <div id="navi">
+        <a href="#">시대인재</a>
+        <a href="#" class="sdijon">시대인재 ON</a>
+        <a href="#" class="N on">시대인재 N</a>
+        <a href="#" class="book">시대인재 Books</a>
+    </div>
+</div>-->
+<!-- 학원 메뉴 팝업 S -->
+<!-- <div data-popup="laypop" class="type1">
+    <div class="top">
+        <div class="logo">
+            <img src="../common/img/ci.png" alt="시대인재">
+        </div>
+        <div class="head_btn">
+            <a href="#">홈페이지</a>
+            <button type="button" class="close">닫기</button>
+        </div>
+    </div>
+    <div class="bottom">
+        <div data-tab="type1" class="m_menu">
+            <button type="button" id="deachi" class="on">대치</button>
+            <button type="button" id="bundang">분당</button>
+        </div>
+        <ul data-list="type16" class="tab_noshow deachi" style="display:block">
+            <li>
+                <button type="button">학원소개</button>
+                <ul>
+                    <li>
+                        <a href="#">시대인재소개</a>
+                        <a href="#">오시는길</a>
+                        <a href="#">공지사항</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">강사소개</a>
+            </li>
+            <li>
+                <a href="#">시간표</a>
+            </li>
+            <li>
+                <button type="button">입시R&D</button>
+                <ul>
+                    <li>
+                        <a href="#">재원성적표</a>
+                        <a href="#">입시정보</a>
+                        <a href="#">설명회</a>
+                        <a href="#">컨설팅</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul data-list="type16" class="tab_noshow bundang">
+            <li>
+                <button type="button">학원소개</button>
+                <ul>
+                    <li>
+                        <a href="#">시대인재소개</a>
+                        <a href="#">오시는길</a>
+                        <a href="#">공지사항</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">강사소개</a>
+            </li>
+            <li>
+                <a href="#">시간표</a>
+            </li>
+            <li>
+                <button type="button">입시R&D</button>
+                <ul>
+                    <li>
+                        <a href="#">재원성적표</a>
+                        <a href="#">입시정보</a>
+                        <a href="#">설명회</a>
+                        <a href="#">컨설팅</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div> -->
+<!-- 학원 메뉴 팝업 E -->
+
+<!-- 마이페이지 팝업 S -->
+<!-- <div data-popup="laypop" class="type2">
+    <div class="top">
+        <p class="user">
+            <img src="../common/img/user_img.png" alt="회원사진">
+            김시대님
+        </p>
+        <div class="head_btn">
+            <a href="#" class="setting">설정</a>
+            <button type="button" class="close">닫기</button>
+        </div>
+    </div>
+    <div class="bottom">
+        <ul data-list="type16" class="mypage">
+            <li>
+                <a href="#">장바구니 <span class="f_color3">(2)</span></a>
+            </li>
+            <li>
+                <a href="#">주문/배송조회</a> 
+            </li>
+            <li>
+                <a href="#">해설강좌수강</a>
+            </li>
+            <li>
+                <a href="#">컨설팅내역조회</a>
+            </li>
+            <li>
+                <a href="#">내 게시물 보기</a>
+            </li>
+            <li>
+                <a href="#">고객센터</a>
+            </li>
+            <li>
+                <a href="#">1:1문의</a>
+            </li>
+            <li>
+                <a href="#">로그아웃</a>
+            </li>
+        </ul>
+    </div>
+</div> -->
+<!-- 마이페이지 팝업 E -->
+<!-- <footer id="footer">
+    <div class="inner">
+        <h3>시대인재</h3>
+        <div>
+            <p>주소 : 서울특별시 강남구 삼성로 434 5층 (대치동, 쥬비스타워) (주)하이컨시온 우)06279<span>|</span>대표이사 : 오우석<span>|</span>사업자등록번호 : 429-88-00534<span>|</span>대표번호 : 02-2051-2378</p>
+            <em>Copyright (주)하이컨시온. All Right Reserved.</em>
+        </div>
+    </div>
+</footer> -->
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

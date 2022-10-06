@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* modal */
+.modal-wrap{ width:100%; height:100%; display:none; position:fixed; top:0; bottom:0; left:0; right:0; z-index:9999; }
+.modal-wrap .modal-bg{ position:absolute; top:0; bottom:0; left:0; right:0; background-color:#000; opacity:.5; filter:alpha(opacity=50); z-index:-1; }
+
+.modal-container{ display:none; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); }
+.modal-M{ width:16.66666667rem; }
+.modal-F{ width:100%; height:100%; top:0; left:0; transform:translate(0, 0); }
+
+/* default modal */
+.modal-container .modal-header{ height:2.333333333rem; line-height:2.266666667rem; position:relative; background-color:#000; border-top-left-radius:1rem; border-top-right-radius:1rem; font-size:0.6rem; font-weight:700; color:#fff; text-align:center; }
+.modal-container .modal-header .btn-close{ width:0.6rem; height:0.6rem; margin-top:-0.3rem; position:absolute; top:50%; right:1rem; background:url(http://img.sdij.com/sd2019/app/common/ico_close_w.png) 50% 0 no-repeat; background-size:100% 100%; font-size:0; text-indent:-9999em; }
+.modal-container .modal-content{ padding:1rem; background-color:#fff; border-bottom-left-radius:1rem; border-bottom-right-radius:1rem; }
+
+/* full modal */
+.modal-F .modal-header{ height:auto; line-height:1.266666667rem; padding:1.333333333rem 0 1rem; position:absolute; top:0; left:0; right:0; background-color:#fff; border-radius:0; font-size:0.866666667rem; color:#000; z-index:2; }
+.modal-F .modal-header .btn-close{ background-image:url(http://img.sdij.com/sd2019/app/common/ico_close_g.png); }
+.modal-F .modal-content{ height:100%; padding:3.933333333rem 0 3.333333333rem; border-radius:0; overflow:auto; z-index:1; }
+.modal-F .modal-btn{ display:flex; position:absolute; left:0; right:0; bottom:0; z-index:3; }
+.modal-F .modal-btn .btn{ height:2.666666667rem; line-height:2.6rem; border:none; border-radius:0; font-size:0.666666667rem; font-weight:700; }

@@ -1,0 +1,254 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/aca_acainfo_map.html
+* @ 페이지설명	: 모바일 > 학원 > 학원소개 > 오시는길
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-26
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>N > 온라인접수 > 팝업</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/jaejong.css">
+<link rel="stylesheet" href="../common/css/swiper.min.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/swiper.js"></script>
+<!-- <script src="../common/js/common_dev.js"></script> -->	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="N" data-depth2="counsel" data-depth3="application" data-depth4="exam" data-depth5="pop">
+<div id="wrap" data-popup="pop">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+<div id="pop_title">
+	<h1>시대인재 N 응시원서 온라인 접수</h1>
+	<button class="pop_close">닫기</button>
+</div>
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+		<div data-layout="type1">
+			<form>
+				<fieldset>
+					<dl data-form="wrap" class="b_tn p_t0">
+						<dt><span class="field_name">전형</span></dt>
+						<dd><span class="field_text">유시험</span></dd>
+						<dt><span class="field_name">계열</span></dt>
+						<dd><span class="field_text">인문계</span></dd>
+						<dt><span class="field_name">수험번호</span></dt>
+						<dd>
+							<p class="field_text f_color5 m_b20"><b>B1234A</b></p>
+							<p class="field_text">* 수험번호를 메모하시기 바랍니다. 시험 당일 필요합니다.</p>
+						</dd>
+						<dt><span class="field_name">응시과목 선택</span></dt>
+						<dd class="m_b30">
+							<ul data-text="type1" class="dash2 m_b30">
+								<li>수능 응시 (예정)과목을 선택하세요.</li>
+								<li>접수 후 과목 변경 불가합니다.</li>
+							</ul>
+							<div class="check_wrap">
+								<span data-form="checkbox">
+									<input type="checkbox" id="check1">
+									<label for="check1">생활과 윤리</label>
+								</span>
+								<span data-form="checkbox">
+									<input type="checkbox" id="check2">
+									<label for="check2">윤리와 사상</label>
+								</span>
+								<span data-form="checkbox">
+									<input type="checkbox" id="check3">
+									<label for="check3">한국 지리</label>
+								</span>
+								<span data-form="checkbox">
+									<input type="checkbox" id="check4">
+									<label for="check4">세계 지리</label>
+								</span>
+								<span data-form="checkbox">
+									<input type="checkbox" id="check5">
+									<label for="check5">동아시아사</label>
+								</span>
+								<span data-form="checkbox">
+									<input type="checkbox" id="check6">
+									<label for="check6">세계사</label>
+								</span>
+								<span data-form="checkbox">
+									<input type="checkbox" id="check7">
+									<label for="check7">법과 정치</label>
+								</span>
+								<span data-form="checkbox">
+									<input type="checkbox" id="check8">
+									<label for="check8">경제</label>
+								</span>
+								<span data-form="checkbox">
+									<input type="checkbox" id="check9">
+									<label for="check9">사회/문화</label>
+								</span>
+							</div>
+						</dd>
+						<dt><label for="input3" class="field_name">이름</label></dt>
+						<dd><span data-form="input"><input type="text" id="input3"></span></dd>
+						<dt><span class="field_name">생년월일</span></dt>
+						<dd class="m_b60">
+							<span data-form="date" class="full">
+								<input type="date">
+							</span>
+						</dd>
+						<dt><span class="field_name">재학구분</span></dt>
+						<dd>
+							<p>
+								<span data-form="radio">
+									<input type="radio" id="radio1" name="radio_test1" checked="checked">
+									<label for="radio1">고교졸업</label>
+								</span>
+								<span data-form="radio">
+									<input type="radio" id="radio2" name="radio_test1">
+									<label for="radio2">검정고시</label>
+								</span>
+							</p>
+						</dd>
+						<dt><label for="input4" class="field_name">출신학교</label></dt>
+						<dd><span data-form="input"><input type="text" id="input4"></span></dd>
+						<dt><span class="field_name">졸업년도</span></dt>
+						<dd class="m_b60">
+							<span data-form="select" class="full">
+								<select title="년도선택">
+									<option>선택</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+							</span>
+						</dd>
+						<dt><span class="field_name">본인 연락처</span></dt>
+						<dd>
+							<p>
+								<span data-form="select">
+									<select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size168">
+									<input type="text" title="휴대폰번호 가운데 네자리">
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size168">
+									<input type="text" title="휴대폰번호 뒤 네자리">
+								</span>
+							</p>
+						</dd>
+						<dt><span class="field_name">학부모 연락처</span></dt>
+						<dd>
+							<p>
+								<span data-form="select">
+									<select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size168">
+									<input type="text" title="휴대폰번호 가운데 네자리">
+								</span>
+								<em>-</em>
+								<span  data-form="input" class="size168">
+									<input type="text" title="휴대폰번호 뒤 네자리">
+								</span>
+							</p>
+						</dd>
+					</dl>
+					<dl data-form="wrap" class="m_b30">
+						<dt class="m_b25"><span class="field_name l_hight">성적표 업로드</span><button type="button" data-btn="whitegray" class="small8 f_right">파일찾기</button></dt>
+						<dd class="m_b30">
+							<ul data-list="type13" class="short">
+								<li>
+									<span>파일파일파일.pdf</span>
+									<button type="button" data-btn="delete"><span class="hidden">삭제</span></button>
+								</li>
+								<li>
+									<span>파일파일파일파일파일파일.pdf</span> 
+									<button type="button" data-btn="delete"><span class="hidden">삭제</span></button>
+								</li>
+								<li>
+									<span>파일파일파일파일파일파일.pdf</span> 
+									<button type="button" data-btn="delete"><span class="hidden">삭제</span></button>
+								</li>
+							</ul>
+							<p class="field_info">※ jpg, bmp, png 이미지 파일만 업로드 가능합니다.</p>
+						</dd>
+						<dt>
+							<span data-form="checkbox">
+								<input type="checkbox" id="check29">
+								<label for="check29">성적표 추후 보완</label>
+							</span>
+						</dt>
+						<dd>
+							<ul data-text="type1" class="dash2">
+								<li>원서 접수 후 추후 성적표를 등록할 경우 체크하세요.</li>
+								<!-- <li>접수내역조회 메뉴에서 1회에 한 해 성적표를 업로드 할 수 있습니다.</li> --><!-- 2018-02-05 마크업 삭제 -->
+							</ul>
+						</dd>
+					</dl>
+					<ul data-text="type1" class="star3 m_b60">
+						<li>최초 등록 후 수정이 불가하므로 정확한 내용을 기입하시기 바랍니다.</li>
+						<li>추후 성적표 원본을 대조하므로 반드시 본인의 성적표를 업로드 하세요.</li>
+					</ul>
+					<h2 data-title="type13">개인정보수집 및 이용 동의</h2>
+					<div data-form="textarea" class="type5 m_b30">
+						시대인재N학원은 재원생 확인을 위하여 아래와 같이 개인정보를 수집·이용하고자 합니다.내용을 자세히 읽으신 후 동의
+						여부를 결정하여 주십시오.<br><br>
+						[수집항목] 이름, 생년월일, 연락처, 학교, 서적 [수집목적] 학생관리, 상담, 학습 및 입시정보제공 등에 사용[개인정보의
+						보유 및 이용기간] 퇴원 후 1년<br>
+						<em>* 개인정보 수집 및 이용 동의를 하지 않을 경우 관련 서비스의 제한이 있을 수 있습니다. </em>
+					</div>
+					<p class="m_b60">
+						<span data-form="radio">
+							<input type="radio" id="radio3" name="radio_test2" checked="checked">
+							<label for="radio3">동의합니다</label>
+						</span>
+						<span data-form="radio">
+							<input type="radio" id="radio4" name="radio_test2">
+							<label for="radio4">동의하지 않습니다</label>
+						</span>
+					</p>
+					<div class="btn_wrap">
+						<button type="button" data-btn="navy" data-popup="sample" id="alert_1btn">접수</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<script>
+   
+</script>
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

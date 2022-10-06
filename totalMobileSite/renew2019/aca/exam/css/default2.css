@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* default */
+.exam-container .page-tit{ margin-bottom:30px; }
+
+/* board-btn */
+.board-btn .btn{ width:calc(50% - 5px); margin-bottom:10px; }
+.board-btn .btn:nth-child(even){ margin-left:0; }
+.board-btn .btn-lg2{ width:100%; padding:0; }
+
+/* table-tit */
+.table-tit{ font-size:15px; padding:15px 0; }
+.table-tit small{ margin-top:5px; display:block; position:relative; right:0; bottom:0; font-weight:300;  } 
+.board-tab .tab-list{ margin-bottom:10px; }
+.board-table table tr td a{ min-width:75px; display:inline-block; line-height:38px; }
+.board-table table tr td a.btn{ padding:0 15px !important; } 
+.lecture-container .board-table{ border-top:1px solid #000; }
+
+/* 해설지 */
+.btn-download2{ min-width:200px; width:calc(50% - 35px) !important; height:40px; line-height:38px; } 
+.lecture-container .page-tit{ border-bottom:0; }
+.lecture-container .btn-download2{ min-width:auto; width:calc((100% - 10px) / 3) !important; margin-bottom:5px; padding-left:10px; padding-right:0px; }
+.lecture-container .btn-download2:after{ right:10px; }
+
+.page-tit{ margin-top:50px; border-bottom:1px solid #000; } 
+.finish-container .white-box{ border-top:none; }
+.white-box{ padding:30px 20px; position:relative; }
+.white-box .dep3-tit{ margin:0 auto 10px; }
+.white-box > .dep3-tit:first-child{ margin-top:none; }
+.white-box .list-number > li{ color:#000; }
+.white-box > .info-area{ padding:0 20px; display:flex; position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0, 0, 0, .7); font-size:24px; font-weight:700; color:#fff; justify-content:center; align-items:center; }
+
+@media all and (min-width:414px) and (max-width:700px){
+	.lecture-container .btn-download2{ width:calc(50% - 3px) !important; }
+}
+
+@media all and (min-width:320px) and (max-width:413px) and (orientation:portrait){
+	.table-tit{ padding:10px 0; font-size:14px; }
+	.white-box > .info-area{ height:100%; } 
+	.white-box .list-number > li{ font-size:13px; }
+ 	.list-number li{ padding-left:12px; } 
+	.list-number li:after{ width:12px; }
+	.board-tab .tab-list a{ font-size:13px; }
+	.lecture-container .btn-download2{ min-width:100%; width:100%; display:block; }
+}
+

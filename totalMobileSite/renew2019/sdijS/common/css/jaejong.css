@@ -1,0 +1,372 @@
+﻿/*************************************************************************
+* @ 서비스명    : sidaeInjae Total Mobile Site
+* @ 파일명     : /common/css/N.css
+* @ 페이지설명   : N.css
+* @ 작성자       : 김은옥 (publisher@to-be.co.kr)
+* @ 작성일       : 2017-03-27
+************************** 수정이력 ****************************************
+* 번호    작업자       변경내용 
+*_________________________________________________________________________
+* 김은옥   최초작성 
+*************************************************************************/
+
+*[data-depth1="N"][data-depth2="main"] #wrap{height:auto;}
+
+
+*[data-depth1="N"][data-depth2="main"] #footer{display:none !important;}
+*[data-depth1="N"][data-depth2="main"] *[data-box="main"]{position:relative;}
+*[data-depth1="N"][data-depth2="main"] *[data-box="main"] .N_text{position:absolute;top:50%;left:0;right:0;margin:-1.167rem auto 0 auto;width:19.667rem;height:2.333rem;text-indent:-9999px;background:url('http://img.sdij.com/mobile/N_text.png') no-repeat center center;background-size:cover;}
+*[data-depth1="N"][data-depth2="main"] *[data-box="main"] .main_footer{position:static;padding:2.083rem 0;background:#fff;}
+*[data-depth1="N"][data-depth2="main"] *[data-box="main"] .main_footer a{color:#8c8c8c;text-decoration:underline;}
+
+*[data-depth1="N"][data-depth2="counsel"][data-depth3="application"][data-depth4="pop"] *[data-form="wrap"]:first-child,
+*[data-depth1="N"][data-depth2="counsel"][data-depth3="application_exam"][data-depth4="pop"] *[data-form="wrap"]:first-child{padding-top:0;border-top:none;}
+*[data-depth1="N"][data-depth2="counsel"][data-depth3="qualification"] .btn_wrap{padding:0;margin:0 0 1.667rem 0;}
+
+
+
+*[data-depth1="N"][data-depth2="univr&d"][data-depth3="grades"][data-depth4="main"] [data-box="type1"].icon span{
+  font-weight:400;
+}
+*[data-depth1="N"][data-depth2="univr&d"][data-depth3="grades"][data-depth4="main"] [data-box="type1"].icon span b{
+  font-size: 1.333rem;
+}
+[data-device="mobile"][data-depth1="N"][data-depth2="univr&d"][data-depth3="grades"][ data-depth4="analysis"] *[data-table="type1"] td .down_pop{
+  white-space:normal;
+  word-break:break-all;
+  position:absolute;
+  margin:0 0 0 -7.5rem;
+}
+[data-device="mobile"][data-depth1="N"][data-depth2="univr&d"][data-depth3="grades"][ data-depth4="analysis"] *[data-table="type1"] td .down_pop .down_title{
+  font-weight:600;
+}
+[data-device="mobile"][data-depth1="N"][data-depth2="univr&d"][data-depth3="grades"][ data-depth4="analysis"] *[data-table="type1"] td .down_pop .close{
+  background: url(http://img.sdij.com/mobile/close_bg.png) no-repeat;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-size:contain;
+  right:10px;
+  top:10px;
+}
+*[data-depth1="N"][data-depth2="univr&d"][data-depth3="grades"][data-depth4="analysis"] [data-tab="type1"].line2{
+  margin:0;
+}
+
+*[data-depth1="N"][data-depth2="counsel"][data-depth3="consulting"][data-depth4="list"] *[data-list="type3"].long .title{
+  margin:0.417rem 0;
+}
+
+*[data-depth1="N"][data-depth2="counsel"][data-depth3="consulting"][data-depth4="detail"] *[data-detail="type1"] dt p{
+  margin:0.417rem 0;
+}
+*[data-depth1="N"][data-depth2="counsel"][data-depth3="consulting"][data-depth4="detail"] *[data-detail="type1"] dt .divide:after{
+  display:none;
+}
+*[data-depth1="N"][data-depth2="counsel"][data-depth3="application_exam"][data-depth4="pop"] *[data-popup="type1"] .content_text{text-align:center;}
+
+
+/*식단*/
+.cafeteria_wrap{
+  font-size:1rem;  
+  margin:0 0 1.667rem 0;
+}
+.cafeteria_wrap [data-tab="type1"]{
+  margin:0 -1.667rem;
+}
+.cafeteria_wrap .calendar{
+  margin:2.500rem -1.667rem 1.667rem -1.667rem;
+}
+.cafeteria_wrap .calendar .month_area{
+  background:#323232;
+  position:relative;
+  text-align: center;
+  z-index: 9;
+}
+.cafeteria_wrap .calendar .month_area .pop_btn .pop_prev,.cafeteria_wrap .calendar .month_area .pop_btn .pop_next{
+  position:absolute;
+  font-size:0;
+  width:0.833rem;
+  cursor:pointer;
+  top:50%;
+  height:1.5rem;
+  margin:-0.5835rem 0 0 0;
+}
+.cafeteria_wrap .calendar .month_area .pop_btn .pop_prev.swiper-button-disabled,.cafeteria_wrap .calendar .month_area .pop_btn .pop_next.swiper-button-disabled{
+  display: none;
+}
+.cafeteria_wrap .calendar .month_area .pop_btn .pop_prev{
+  left:1.667rem;
+  background:url(http://img.sdij.com/mobile/prev_arrow.png) no-repeat center center;
+  background-size:contain;
+}
+.cafeteria_wrap .calendar .month_area .pop_btn .pop_next{
+  right:1.667rem;
+  background:url(http://img.sdij.com/mobile/next_arrow.png) no-repeat center center;
+  background-size:contain;
+}
+.cafeteria_wrap .calendar .month_area *[data-form="select"]{
+  border:0;
+  background:#323232;
+  text-align: center;
+}
+.cafeteria_wrap .calendar .month_area *[data-form="select"] select{
+  color:#ffffff;
+  font-size:1.333rem;
+  border:0;
+  display: inline-block;
+  width:auto;
+  padding:0;
+  margin:0;
+  text-align: center;
+}
+.cafeteria_wrap .calendar .month_area *[data-form="select"] select option{
+  color:#323232;
+}
+.cafeteria_wrap .calendar .month_area *[data-form="select"]:after{
+  content: "";
+  height:100%;
+  width:0.833rem;
+  background:url(http://img.sdij.com/mobile/w_arrow.png) no-repeat center center;
+  background-size:contain;
+  display: inline-block;
+}
+.cafeteria_wrap .calendar .month_area *[data-form="select"]:focus{
+  background:url(http://img.sdij.com/mobile/w_arrow_on.png) no-repeat center center;
+  background-size:contain;
+}
+.cafeteria_wrap .calendar .list{
+  overflow: hidden;
+  border-bottom:1px #d2d2d2 solid;
+  position:relative
+}
+.cafeteria_wrap .calendar .list .pop_btn{
+  position:absolute;
+  background:#ffffff;
+  width:100%;
+  height:100%;
+}
+.cafeteria_wrap .calendar .list .pop_btn .pop_next,.cafeteria_wrap .calendar .list .pop_btn .pop_prev{
+  position:absolute;
+  font-size:0;
+  width:0.623rem;
+  cursor:pointer;
+  top:50%;
+  height:1.5rem;
+  margin:-0.5835rem 0 0 0;
+}
+.cafeteria_wrap .calendar .list .pop_btn .pop_prev{
+  left:0.203rem;
+  background:url(http://img.sdij.com/mobile/prev_arrow.png) no-repeat center center;
+  background-size:contain;
+}
+.cafeteria_wrap .calendar .list .pop_btn .pop_next{
+  right:0.203rem;
+  background:url(http://img.sdij.com/mobile/next_arrow.png) no-repeat center center;
+  background-size:contain;
+}
+.cafeteria_wrap .calendar .list .pop_btn .pop_prev.swiper-button-disabled,.cafeteria_wrap .calendar .list .pop_btn .pop_next.swiper-button-disabled{
+  opacity:0.3;
+  cursor:no-drop
+}
+*[data-pop="pop"].cafeteria.type2{
+  height:auto;
+  background:none;
+  margin:0 4%;
+  width:auto;
+  border:1px transparent solid;
+  border-bottom:0;
+  border-top:0;
+}
+*[data-pop="pop"].cafeteria.type2 .swiper-container{
+  font-size:0;
+  border-left:1px #d2d2d2 solid;
+}
+*[data-pop="pop"].cafeteria.type2 .swiper-container .swiper-slide{
+  box-sizing: border-box;
+  overflow: hidden;
+}
+*[data-pop="pop"].cafeteria.type2 .swiper-slide .day_list{
+   border-right:1px #d2d2d2 solid;
+}
+*[data-pop="pop"].cafeteria.type2 .swiper-slide .day_list span{
+  display: block;
+  text-align: center;
+  background:#ffffff;
+  width:100%;
+  line-height:5rem;
+  font-size:1rem;    
+}
+*[data-pop="pop"].cafeteria.type2 .swiper-slide .day_list span:first-child{
+  background:#ebebeb;
+  line-height: 3.333rem;
+  border-bottom:1px #d2d2d2 solid;
+  box-sizing: border-box;
+}
+*[data-pop="pop"].cafeteria.type2 .swiper-slide .day_list span.gray{
+ color:#b4b4b4 
+}
+*[data-pop="pop"].cafeteria.type2 .swiper-slide .day_list span.red{
+  color:#ee1010;
+}
+*[data-pop="pop"].cafeteria.type2 .swiper-slide .day_list span.on{
+  background:#ffad00;
+  color:#000000;
+}
+.cafeteria_wrap .menu_info{
+  position:relative;
+}
+.cafeteria_wrap .menu_info li{
+  margin:1.667rem 0 0 0;
+  padding:4.167rem 0 0 0;
+  position:relative;
+}
+.cafeteria_wrap .menu_info li:first-child{
+  margin:0;
+}
+.cafeteria_wrap .menu_info li.no_menu{
+  padding:0;
+}
+.cafeteria_wrap .menu_info li.no_menu,.cafeteria_wrap .menu_info li.preparing_menu{
+  height:18.333rem;  
+  padding:0;
+}
+.cafeteria_wrap .menu_info li.no_menu .layer,.cafeteria_wrap .menu_info li.preparing_menu .layer{
+  text-align: center;
+  height:100%;
+  display: table;
+  width:100%;
+}
+.cafeteria_wrap .menu_info li.no_menu .layer{
+  background:url(http://img.sdij.com/mobile/no_menu.png) no-repeat center center;
+  background-size:contain
+}
+.cafeteria_wrap .menu_info li.preparing_menu .layer{
+  background:url(http://img.sdij.com/mobile/preparing_menu.png) no-repeat center center;
+  background-size:contain
+}
+.cafeteria_wrap .menu_info li.no_menu .layer span,.cafeteria_wrap .menu_info li.preparing_menu .layer span{
+  display: table-cell;
+  vertical-align: middle;
+  color:#f5f5f5;
+  font-size:1.5rem;
+  line-height: 2.167rem;
+}
+.cafeteria_wrap .menu_info .b_layer{
+  position:absolute;
+  z-index:1000;
+  width:100%;
+  top:0;
+  background: #323232;
+  position: absolute;
+  height:4.167rem;
+}
+.cafeteria_wrap .menu_info .b_layer .main-pagination{
+  z-index: 9999;
+  position:absolute;
+  right:0.625rem;
+  top:50%;
+  margin:-0.3335rem 0 0 0;;
+  width:5rem;
+  height:0.667rem;
+  text-align: right;
+}
+.cafeteria_wrap .menu_info .b_layer .main-pagination span{
+  width:0.667rem;
+  height:0.667rem;
+  display: inline-block;
+  vertical-align: top;
+  margin:0 0.15rem;
+}
+.cafeteria_wrap .menu_info .b_layer .main-pagination .swiper-pagination-bullet{
+  opacity: 1;
+  background:#666d72;  
+}
+.cafeteria_wrap .menu_info .b_layer .main-pagination .swiper-pagination-bullet-active{
+  background:#ffffff;
+  opacity: 1;
+}
+.cafeteria_wrap .menu_info .b_layer span{
+  display: block;
+  text-align: center;
+  font-size:1.167rem;
+  color:#ffffff;
+  font-weight:600;
+  height:100%;
+  line-height: 4.167rem;
+}
+.cafeteria_wrap .menu_info table{
+  border-spacing:0;
+  border-top:1px #d2d2d2 solid;
+}
+.cafeteria_wrap .menu_info table th{
+  border-bottom:1px #d2d2d2 solid;
+  border-right:1px #d2d2d2 solid;
+  width:2.5rem;
+  text-align:center;
+  background:#ebebeb;
+}
+.cafeteria_wrap .menu_info table td{
+  padding:0 1.25rem;
+  line-height:1.25rem;
+  border-bottom:1px #d2d2d2 solid;
+}
+.cafeteria_wrap .menu_info table tr{
+  height:6.875rem;
+}
+*[data-pop="pop"].cafeteria{
+  position:initial;
+  width:100%;
+  height:17.333rem;
+  margin:0 0 0.833rem 0;
+  background:#000000;
+}
+*[data-pop="pop"].cafeteria .pop_wrap{
+  width:100%;
+  height:100%;
+}
+*[data-pop="pop"].cafeteria{
+  position:relative;
+  top:0;
+  width:23.333rem;
+  height:17.333rem;
+  margin:0 0 0.833rem 0;
+  background:#000000;
+  overflow:hidden;
+}
+*[data-pop="pop"].cafeteria .pop_wrap{
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  margin: 0;
+}
+*[data-pop="pop"].cafeteria.type2 .pop_wrap{
+  box-sizing: border-box
+}
+*[data-pop="pop"].cafeteria *[data-swipe="pop"].swiper-container{
+  position:relative;
+  margin:auto;
+  width:100%;
+/*   height:calc(100% - 4.167rem); */
+  height:100%;
+  box-sizing:border-box;
+  z-index: 9
+}
+*[data-pop="pop"].cafeteria *[data-swipe="pop"] .swiper-wrapper a{
+  display:block;
+  width:100%;
+  height:100%;
+}
+*[data-pop="pop"].cafeteria *[data-swipe="pop"] .swiper-wrapper{
+  width:100%;
+  height:100%;
+}
+*[data-pop="pop"].cafeteria *[data-swipe="pop"] .swiper-slide img{
+  width: 100%;
+}
+*[data-pop="pop"].cafeteria .pop_btn{
+  margin: 0;
+  width:100%;
+}
+
+

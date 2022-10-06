@@ -1,0 +1,203 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/common_mypage_ordercheck.html
+* @ 페이지설명	: 공통 > 마이페이지 > 주문/배송조회
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-04-17
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>마이페이지 > 주문/배송조회</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="common" data-depth2="mypage" data-depth3="ordercheck">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div class="location">
+		<span>시대인재ON &gt;</span>
+		<span>마이페이지 &gt;</span>
+		<span>주문/배송조회</span>
+	</div>
+	<div id="content">
+		
+
+		<h2 data-title="type1">주문/배송 조회</h2>
+		<div data-layout="type1">
+			<h3 data-title="type2">기간설정</h3>
+			<div data-box="type9" class="m_b30">
+				<button data-btn="type1" class="on">1주일</button>
+				<button data-btn="type1" class="m_l5">1개월</button>
+				<button data-btn="type1" class="m_l5">3개월</button>
+				<button data-btn="type1" class="m_l5">6개월</button>
+				<span data-form="date" class="m_l20">
+					<input type="text" class="datepicker">
+				</span>
+				<em>~</em>
+				<span data-form="date">
+					<input type="text" class="datepicker">
+				</span>
+				<button data-btn="sch1" class="m_l10">검색</button>>
+			</div>
+
+			<!-- 20170512 주문/배송목록 테이블 수정 -->
+			<div data-table="type2" class="check m_b45">
+				<table>
+					<caption>주문/배송목록</caption>
+					<colgroup>
+						<col style="width:131px;">
+						<col style="width:101px;">
+						<col>
+						<col style="width:101px;">
+						<col style="width:101px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">결제일시/주문번호</th>
+							<th scope="col">구분</th>
+							<th scope="col">상품정보</th>
+							<th scope="col">결제수단</th>
+							<th scope="col">주문상태/변경</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="5">해당 기간에 주문/배송 내역이 없습니다.</td>
+						</tr>
+						<tr>
+							<td rowspan="3">2017-01-01 15:40:38 <a href="" data-btn="link">1234567890</a></td>
+							<td>
+								<div data-icon="type3" class="orange"><span>시대인재<em>ON</em></span></div>
+							</td>
+							<td class="t_left">
+								<span>수학 서바이벌</span><br>
+								<span class="f_color2">수량 : 1개</span><br>
+								<strong class="price"><span>360,000</span>원</strong>
+							</td>
+							<td rowspan="3">무통장입금</td>
+							<td rowspan="3">
+								<button type="button" data-btn="whitegray" class="small" onclick="openNewWindow('common_mypage_ordercheck_refundpopup.html')">결제취소</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div data-icon="type3" class="orange"><span>시대인재<em>ON</em></span></div>
+							</td>
+							<td class="t_left">
+								<span>물리 서바이벌</span><br>
+								<span class="f_color2">수량 : 1개</span><br>
+								<strong class="price"><span>360,000</span>원</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div data-icon="type3" class="blue"><span>시대인재</span></div>
+							</td>
+							<td class="t_left">
+								<span>최시대 수시컨설팅</span><br>
+								<span class="f_color2">수량 : 1개</span><br>
+								<strong class="price"><span>360,000</span>원</strong>
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="2">2017-01-01 15:40:38 <a href="" data-btn="link">1234567890</a></td>
+							<td>
+								<div data-icon="type3" class="orange"><span>시대인재<em>ON</em></span></div>
+							</td>
+							<td class="t_left">
+								<span>지구과학 서바이벌</span><br>
+								<span class="f_color2">수량 : 1개</span><br>
+								<strong class="price"><span>360,000</span>원</strong>
+							</td>
+							<td rowspan="2">신용카드</td>
+							<td rowspan="2">
+								<button type="button" data-btn="whitegray" class="small" onclick="openNewWindow('common_mypage_ordercheck_refundpopup.html')">환불신청</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div data-icon="type3" class="green"><span>시대인재<em>Books</em></span></div>
+							</td>
+							<td class="t_left">
+								<span>나인재 모의고사 수학 가형</span><br>
+								<span class="f_color2">수량 : 3개</span><br>
+								<strong class="price"><span>75,000</span>원</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>2017-01-01 15:40:38 <a href="" data-btn="link">1234567890</a></td>
+							<td>
+								<div data-icon="type3" class="blue"><span>시대인재</span></div>
+							</td>
+							<td class="t_left">
+								<span>나인재 상시컨설팅</span><br>
+								<span class="f_color2">수량 : 1개</span><br>
+								<strong class="price"><span>300,000</span>원</strong>
+							</td>
+							<td>신용카드</td>
+							<td>환불완료</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- // 20170512 주문/배송목록 테이블 수정 -->
+
+			<h3 data-title="type2" class="m_b30">주문/배송 안내</h3>
+			<div data-box="type6">
+				<ul>
+					<li><span>-</span><p>무통장입금의 경우 입금승인 완료 후 서비스 이용 가능 및 교재 발송대기 상태가 됩니다.</p></li>
+					<li><span>-</span><p>배송조회는 교재가 실제 발송된 이후 택배사 배송조회 팝업을 통해 확인 가능합니다.</p></li>
+					<li><span>-</span><p>해당 주문건의 상세 내용 및 전자 영수증은 주문번호 클릭 후 상세 페이지에서 확인 바랍니다.</p></li>
+					<li><span>-</span><p>컨설팅 상품의 경우 주문 이후 24시간 내에 입금승인이 안되는 경우 자동으로 취소됩니다.</p></li>
+					<li>
+						<span>-</span>
+						<p>주문상태별 환불 절차는 다음과 같습니다.
+							<ul class="m_l10 f_color7">
+								<li>
+									<span>-</span>
+									<p>
+										<b>무통장입금</b><br> 입금대기 – 가상 계좌로 입금 전 상태를 말하며 입금 전 결제취소 가능<br>
+										입금승인 – 부여된 가상 계좌로 입금 내역이 확인 완료된 상태를 말하며 환불신청이 가능하지만 취소 수수료 및 일정 기간 소요</span>
+									</p>
+								</li>
+								<li><span>-</span><p><b>신용카드 / 실시간 계좌이체</b><br> 결제완료 – 승인 처리가 완료된 상태로 취소 수수료 부과 및 영업일 기준 5일 이후 취소 내역 확인 가능</p></li>
+								<li><span>-</span><p>교재/도서 : 포장을 제거하지 않은 낙서, 훼손이 없는 새 상품만 환불 가능하며 사용감이 있는 경우 환불 불가.<br> 단, 파본은 교환 가능</p></li>
+							</ul>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

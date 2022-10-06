@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* 명예의 전당 */
+.board-tab .tab-honor{ margin-bottom:30px; display:flex; flex-wrap:wrap; }
+.board-tab .tab-honor > li{ width:50%; float:left; }
+.board-tab .tab-honor > li > a{ height:38px; margin-top:-1px; margin-left:-1px; display:flex; border:1px solid #ddd; text-align:center; justify-content:center; align-items:center; box-sizing:border-box; }
+.board-tab .tab-honor > li:hover > a, .board-tab .tab-honor > li.selected > a{ background-color:#000; color:#fff; }
+
+.honor-list{ border-top:1px solid #000; }
+.honor-list > ul > li{ padding:25px 0; border-bottom:1px solid #ededed; }
+.honor-list > ul > li:after{ content:''; display:block; clear:both; }
+.honor-list > ul > li .data-img{ width:40%; float:right; background-color:#000; overflow:hidden; }
+.honor-list > ul > li .data-img > .video-area > img, .honor-list > ul > li .data-img > .video-area > iframe{ width:100%; height:100%; position:absolute; top:0; left:0; right:0; bottom:0; }
+.honor-list > ul > li .data-txt{ width:60%; padding-right:20px; float:left; position:relative; box-sizing:border-box; word-break:keep-all;}
+.honor-list > ul > li .data-logo{ background:#fff url(//img.sdij.com/sd2019/pc/logo.png) 50% 50% no-repeat; border:1px solid #ededed; }
+.honor-list > ul > li .data-name{ margin-bottom:10px; font-size:18px; font-weight:bold; }
+.honor-list > ul > li .data-name span{ margin-top:5px; display:block; font-size:12px; }
+.honor-list > ul > li .data-name span.data-sum{ width:100%; padding-bottom:8px; font-weight:400; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.honor-list > ul > li .data-content{ font-size:14px; clear:both; }
+.honor-list > ul > li .data-content:after{ content:'영상 인터뷰 >'; margin-top:10px; padding-right:10px; display:block; position:absolute; bottom:0; font-size:12px; text-decoration:underline; }
+.honor-list > ul > li .list-dotted{ margin-bottom:0; }
+.honor-list > ul > li .list-dotted li{ line-height:20px; font-size:13px; color:#666; }
+	
+/* 학습수기 */
+.review-list > ul > li .data-content{ padding-top:10px; position:relative; }
+.review-list > ul > li .data-content:after{ content:'합격수기 >'; }
+.review-container .board-video{ margin-bottom:50px; }
+
+/* PDF */
+.review-container .board-video .txt-content{ margin-bottom:20px; }
+.review-container .pdf-area{ width:100%; }
+.review-container .pdf-area iframe{ width:100%; }
+
+/* review-list 데이터 없을 때 */
+.video-img{ width:100%; height:100%; margin-bottom:50px; padding-bottom:56.25%; display:block; }
+.video-logo{ position:relative; background:#fff url(//img.sdij.com/sd2019/pc/logo.png) 50% 45% no-repeat; border:1px solid #ededed; z-index:1; }
+.video-logo:after{ content:'추후 공개됩니다.'; width:100%; margin-top:20px; margin-left:5px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); font-size:24px; font-weight:600; text-align:center; }
+.no-data{ width:100%; height:134px; display:flex; justify-content:center; align-items:center; border-top:1px solid #000; text-align:center; border-bottom:1px solid #ededed; }
+
+/* 연대기 */
+.summary-container .summary-list > ul > li .txt-area ul li{ font-size:14px; }
+.summary-container .summary-list > ul > li .btn-area a{ width:100%; text-align:right; }
+.summary-container .summary-list > ul > li .video-info{ border-top:1px solid #000; }
+.summary-container .summary-list > ul > li .video-info li{ padding:25px 0; border-bottom:1px solid #ededed; }
+
+@media (max-width:380px){
+	.board-tab .tab-honor > li > a{ font-size:13px; }
+	.quick-banner > a{ font-size:12px; }
+}
+
+@media print {#pdfviewer {display:none;}}

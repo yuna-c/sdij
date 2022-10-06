@@ -1,0 +1,117 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_pop_document.html
+* @ 페이지설명	: 모바일 > 공통 > 팝업 > 서류등록          	
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-26
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>팝업 > 서류등록 </title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="common" data-depth2="pop" data-depth3="document">
+<div id="wrap" data-popup="pop">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="pop_title">
+	<h1>컨설팅 서류등록</h1>
+	<button class="pop_close">닫기</button>
+</div>
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+
+		<div data-layout="type1">
+			<div data-table="type2">
+				<table>
+					<colgroup>
+						<col style="width:18%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="col">자료1</td>
+							<td>
+								<span class="file_cate">학교생활기록부</span>
+								<span data-form="file">
+									<input type="text" readonly="readonly" class="file_name">
+									<input type="file" id="fileup1" class="file_hidden">
+									<label for="fileup1" data-btn="whitegray" class="small7 f_right">파일찾기</label>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="col">자료2</td>
+							<td>
+								<span class="file_cate">모의고사성적표1</span>
+								<span data-form="file">
+									<input type="text" readonly="readonly" class="file_name">
+									<input type="file" id="fileup2" class="file_hidden">
+									<label for="fileup2" data-btn="whitegray" class="small7 f_right">파일찾기</label>
+								</span>
+							</td>
+						</tr>
+						<tr class="disabled">
+							<th scope="col">자료3</td>
+							<td>
+								<span class="file_cate">학교생활기록부</span>
+								<span data-form="file">
+									<input type="text" readonly="readonly" class="file_name">
+									<input type="file" id="fileup3" class="file_hidden">
+									<label for="fileup3" data-btn="whitegray" class="small7 f_right">파일찾기</label>
+								</span>
+							</td>
+						</tr>
+						<tr class="disabled">
+							<th scope="col">자료4</td>
+							<td>
+								<span class="file_cate">모의고사성적표1</span>
+								<span data-form="file">
+									<input type="text" readonly="readonly" class="file_name">
+									<input type="file" id="fileup4" class="file_hidden">
+									<label for="fileup4" data-btn="whitegray" class="small7 f_right">파일찾기</label>
+								</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="btn_fixbt">
+				<button type="submit" data-btn="navy">저장</button>
+			</div>
+
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

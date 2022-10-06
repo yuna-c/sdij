@@ -1,0 +1,22 @@
+html, body{ width:100%; min-width:220px; height:100%; }
+.player-list-layout{ min-height:100%; position:relative; overflow:hidden; }
+.player-list-layout .tab-list{ border-bottom:1px solid #323232; }
+.player-list-layout .tab-list > a{ width:50%; height:50px; line-height:48px; display:block; float:left; background-color:#1f1f1f; font-size:12px; color:#666; text-align:center; }
+.player-list-layout .tab-list > a.selected{ background-color:#232323; color:#bebebe; }
+.player-list-layout .tab-content{ display:none; position:absolute; top:51px; left:0; right:0; bottom:0; }
+.player-list-layout .tab-on{ display:block; }
+
+.player-list-layout .play-list{ background-color:#323232; overflow-x:hidden; overflow-y:auto; }
+.player-list-layout .play-list li{ height:30px; line-height:28px; padding:0 20px; border-bottom:1px solid #3d3d3d; }
+.player-list-layout .play-list li a{ display:block; position:relative; font-size:11px; color:#ccc; }
+.player-list-layout .play-list li a.play-on{ color:#ffad00; }
+.player-list-layout .play-list li a > span{ display:block; }
+.player-list-layout .play-list li a > .list-tit{ width:195px; height:30px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.player-list-layout .play-list li a > .list-time{ position:absolute; top:0; right:0; }
+
+.player-list-layout .bookmark{ height:auto; min-height:auto; padding:0; }
+.player-list-layout .bookmark .bm_list{ height:375px; position:absolute; top:70px; left:0; right:0; bottom:0; }
+.player-list-layout .bookmark .bm_list li{ padding:11px 10px; }
+.player-list-layout .bookmark .bm_list input{ width:calc(100% - 56px) }
+.bookmark span.time{ letter-spacing:-.05em; }
+*[data-btn="bookmark1"].start{ width:35px; }

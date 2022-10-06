@@ -1,0 +1,131 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Web Site
+* @ 파일명 		: /html/launching_main.html
+* @ 페이지설명	: 런칭 > 서바이벌노크신청 메인
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-18
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>서바이벌노크신청 메인 (티저페이지&로그인)</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectordie.css">
+<link rel="stylesheet" href="../common/css/mb-comingsoon-iceberg.min.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/swiper.js"></script>
+<script src="../common/js/selectordie.min.js"></script>
+<script src="../common/js/jquery.mb-comingsoon.min.js"></script>
+<script src="../common/js/typed.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="launching" data-depth2="main">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+	<!-- 20171025 수정 S -->
+	<!-- <div class="launching_head">
+		<a href="#">시대인재 서바이벌</a>
+		<a href="#" class="inquire">배송조회</a>
+		<button type="button" onclick="openNewWindow3('launching_login_pop.html')">로그인</button>
+	</div> -->
+	<!-- 20171025 수정 E -->
+	<div class="swiper-container teaser_swipe_wrap">
+		<div class="swiper-wrapper visual">
+			<div class="swiper-slide main_visual1">
+				<div class="launching_wrap">
+					<p class="launching_logo">시대인재 on</p>
+					<span class="event_text">이벤트 종료 시까지,</span>
+					<div class="countdown"></div>					
+				</div>
+				<div class="main_next"><em>서바이벌 knock</em><span class="hidden">다음</span></div>
+			</div>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.countdown').mbComingsoon({ expiryDate: new Date(2018, 4, 1, 18, 0), speed:900 });       
+        });
+      </script>
+			<div class="swiper-slide main_visual2">
+				<div class="main_prev"><span class="hidden">이전</span></div>
+				<div class="launching_wrap">
+					<h2>서바이벌 실전모의 온라인 0회</h2>
+					<div class="launching_main2">
+						<ul>
+							<li>수학</li>
+							<li>과학 1</li>
+							<li>과학 2</li>
+						</ul>
+						<div class="type-wrap">
+                <div id="typed-strings">
+                    <span><em>2017학년도 서울대 의예과 합격생 95명중<br>시대인재 현강생 38명 (수학/과학 서바이벌 33명 수강)</em><b></b><em>2017학년도 서울대 의예과 정시 합격생 25명 중<br>시대인재 현강생 17명 (수학/과학 서바이벌 15명 수강)</em><b></b><em>2017학년도 서울대 의예과 서울/경기 지역 일반고 합격생 52명 중<br>시대인재 현강생 35명 (수학/과학 서바이벌 30명 수강)</em><b></b><em>2017학년도 서울대 의예과 강남3구 합격생 23명 중<br>시대인재 현강생 20명 (수학/과학 서바이벌 18명 수강)</em></span>
+                </div>
+                <span id="typed" class="typed" style="white-space:pre;"></span>
+                <!-- <div id="typed-strings2" class="hidden">
+                    <span><em>2017학년도 서울대 의예과 서울/경기 지역 일반고 합격생 52명 중<br>시대인재 현강생 35명 (수학/과학 서바이벌 30명 수강)</em><b></b><em>2017학년도 서울대 의예과 강남3구 합격생 23명 중<br>시대인재 현강생 20명 (수학/과학 서바이벌 18명 수강)</em></span>
+                </div>
+                <span id="typed2" class="typed2" style="white-space:pre;"></span>  -->
+            </div>
+					</div>
+					<a href="#" class="sub_title"><span>be the 시대인재</span></a>
+					<p>* 2016년 시대인재 오프라인 현강 수강이력 기준</p><!-- 2017-09-05 마크업 추가 -->
+				</div>
+			</div>
+		</div>
+        <div class="teaser_main_footer">
+        	<h1>시대인재</h1>
+        	<p>Copyright (주)하이컨시온. All Right Reserved.</p>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <!-- 20171025 수정 S -->
+    <!-- <div data-pop="main2">
+        <img src="../common/img/pop_img.png" alt="팝업 이미지">
+        <div class="btn_wrap">
+			<button type="button" data-btn="navy" class="close">확인</button>
+		</div>
+    </div> -->
+    <!-- 20171025 수정 E -->
+    <!-- Initialize Swiper -->
+    <!-- 170601 스크립트 수정 -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        effect:'coverflow', // 'slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
+        nextButton: '.main_next',
+        prevButton: '.main_prev',
+        slidesPerView: 1,
+        speed: 1000,
+        autoplay: false,
+        spaceBetween: 0,
+        mousewheelControl: false,
+        touchRation:0,
+        preventClicks:false,
+        simulateTouch: false,
+        loop: false
+    });
+
+    $('*[data-pop="main2"] .close').click(function(){
+		$(this).parents('*[data-pop="main2"]').hide();
+	});
+	
+    </script>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flex_eample</title>
+</head>
+<style>
+  * {
+   margin:0;
+   padding:0;
+  }
+  li{
+    list-style: none;
+  }
+  ul{
+    border:1px red solid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction:row; 
+    /*
+      flex-direction:column;은 수직형태
+    */
+    justify-content:center;
+    align-items: center;
+    height: 400px;
+  }
+  ul li{
+    border:1px #f00 solid;
+    width:20%;
+  }
+  div{
+    border:1px #f00 solid;
+  }
+</style>
+<body>
+  <div class="container">
+    <ul>
+      <li data-num="first">
+        1
+      </li>
+      <li data-num="sec">
+        2
+      </li>
+      <li data-num="thir">
+        3
+      </li>
+      <li data-num="four">
+        4
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/launching_knock_applystep2.html
+* @ 페이지설명	: 모바일 > 런칭 > 이벤트 > 서바이벌제로(2차) >  교사용 신청서작성
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-05-22
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>이벤트 > 서바이벌제로(2차) >  교사용 신청서작성</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<!-- <script src="../common/js/common_dev.js"></script> -->	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/common_dev.js"></script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	.style{}
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="survival" data-depth2="knock" data-depth3="applystep2" data-depth4="team">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+		<h2 data-title="type1" class="line">2019 SURVIVAL ZERO Ⅱ<br />무료신청 / 그룹ㆍ반 신청</h2>
+		<div data-layout="type1">
+			<div data-step="type2" class="noline p_t40">
+				<div class="on"><em>1</em>신청서작성</div><!-- 완료단계 class="pass" -->
+				<div><em>2</em>신청완료</div>
+			</div>
+			<form>	
+				<fieldset class="m_b60">
+					<dl data-form="wrap" class="m_b30">
+						<dt><label for="input3" class="field_name">이름<strong>*<em>필수항목</em></strong></label></dt>
+						<dd>
+							<span class="field_name">김시대선생님</span>
+						</dd>
+						<dt>
+							<label for="input9" class="field_name">학교<strong>*<em>필수항목</em></strong></label>
+						</dt>
+						<dd class="m_b25"><span data-form="input" class="size380 m_b15"><input type="text" id="input9"></span><button type="button" data-btn="whitegray" class="size160 m_l20">학교검색</button></dd>
+
+						<dt><span class="field_name">담당계열/학년/과목<strong>*<em>필수항목</em></strong></span></dt>
+						<dd class="m_b60">
+							<span data-form="select" class="full m_b15">
+								<select title="계열선택">
+									<option>계열</option>
+									<option>문과</option>
+									<option>이과</option>
+								</select>
+							</span>
+							<span data-form="select" class="size270">
+								<select title="학년선택">
+									<option>학년</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+							</span>
+							<span data-form="input" class="size270 m_l20"><input type="text" id="input3"></span>
+						</dd>
+
+						<dt><label for="room_input3" class="field_name">신청과목/수량<strong>*<em>필수항목</em></strong></label></dt>				
+						<dd>
+							<ul data-text="type1" class="star2 f_color5">
+								<li>
+									과목별 필요하신 수량을 적어주시면 바인더와 함께 일괄 배송 됩니다.	<br />
+									예) 수학(가) 30개, 생명과학1 10개	<br />
+									※ 과목: 수학(가형) / 생명과학1 / 화학 1 / 지구과학1 /물리1 /생명과학2  / 지구과학2	
+								</li>
+							</ul>
+							<textarea data-form="textarea"></textarea>
+						</dd>		
+						
+						<dt><span class="field_name">주소<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<ul data-text="type1" class="star2 f_color5">
+								<li>
+									주소 기재 오류로 인한 재배송은 진행되지 않으니 주소를 정확하게 확인하세요. 
+								</li>
+							</ul>
+							<p>
+								<span  data-form="input" class="size320">
+									<input type="text" readonly="readonly" title="우편번호">
+								</span>
+								<button type="button" data-btn="whitegray" class="size220 m_l20">우편번호 검색</button>
+							</p>
+							<p>	
+								<span  data-form="input" class="size370">
+									<input type="text" id="input7" readonly="readonly" placeholder="기본주소">
+								</span>
+							</p>
+							<p>	
+								<span  data-form="input" class="size370">
+									<input type="text" id="input8" placeholder="나머지주소">
+								</span>
+							</p>
+						</dd>
+						<dt><label for="input56" class="field_name">배송메시지</label></dt>
+						<dd>
+							<span data-form="input"><input type="text" id="input56" placeholder="한글 50자 이내 배송관련 메모를 작성하세요."></span>
+						</dd>
+						<dt><span class="field_name">핸드폰번호<strong>*<em>필수항목</em></strong></span></dt>
+						<dd>
+							<p class="m_b30">
+								<span data-form="select">
+									<select title="휴대폰번호 앞 세자리">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size168">
+									<input type="text" title="휴대폰번호 가운데 네자리">
+								</span>
+								<em>-</em>
+								<span data-form="input" class="size168">
+									<input type="text" title="휴대폰번호 뒤 네자리">
+								</span>
+							</p>
+						</dd>
+					</dl>
+				</fieldset>
+				<div class="btn_wrap3">
+					<button type="button" data-btn="navy" data-popup="sample" id="alert_1btn">신청완료</button>
+				</div>
+		</div>
+
+
+	</div>
+</div>
+<!-- <div data-popup="type1" class="popup2 alert_1btn">
+	<div class="pop_wrap">
+		<div data-box="pop_content">
+			<div class="content_text">
+				<p>이벤트 관련 문의는 FAQ 참고 부탁드리며,</p>
+				<p>그 외 문의사항 있을 시</p>
+				<p><a href="mailto:sdijevent@sdij.com">sdijevent@sdij.com</a>으로 메일 주시면</p>
+				<p>12시간 이내 최대한 빠른 답변 드리겠습니다.</p>
+				<p><b>(주말 제외, 전화 문의는 불가합니다.)</b></p>
+			</div>
+		</div>
+		<div class="btn_wrap">
+			<button type="button" data-btn="navy">확인</button>
+		</div>
+	</div>
+	<button class="dim"></button>
+</div> -->
+
+<!--div data-popup="type1" class="popup2 alert_1btn">
+	<div class="pop_wrap>
+		<div data-box="pop_content">
+			<div class="content_text">
+				<p>이벤트 관련 문의는 FAQ 참고 부탁드리며,<br>
+				그 외 문의사항 있을 시<br>
+				<a href="#">고객센터 1:1 상담에 문의 남겨주시면</a><br>
+				12시간 이내 최대한 빠른 답변 드리겠습니다.<br>
+				<b class="f_bold">(주말 제외, 전화 문의는 불가합니다.)</b></p>
+			</div>
+		</div>
+		<div class="btn_wrap">
+			<button type="button" data-btn="navy" class="close">확인</button>
+		</div>
+	</div>
+	<div class="dim"></div>
+</div-->
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

@@ -1,0 +1,210 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_mypage_order_cancel_pop.html
+* @ 페이지설명	: 모바일 > 공통 > 마이페이지 > 주문&배송조회 > 환불&결제취소_팝업  			
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-26
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>마이페이지 > 주문&배송조회 > 환불&결제취소_팝업</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+	/*.font_set{position:relative;margin-bottom:1.250rem !important;font-size:1rem;color:#ee1010;}
+	.font_set2{font-size:1.333rem;color:#ee1010;position:absolute;top:0;right:0;font-weight:bold;}
+	.border_b{border-bottom:2px solid #d2d2d2;}*/
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="common" data-depth2="mypage" data-depth3="order" data-depth4="cancel" data-depth5="pop">
+<div id="wrap" data-popup="pop">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="pop_title">
+	<h1>환불/결제취소 신청</h1>
+	<button class="pop_close">닫기</button>
+</div>
+
+
+<div id="content_wrap" class="gray">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+		<div data-layout="type1">
+			<h2 data-title="type2">환불/결제 취소상품</h2>
+			<div data-form="wrap" class="noline type1">
+				<h3 data-title="type6">상품선택</h3>
+				<p data-form="select" class="full m_b40">
+					<select title="타이틀">
+						<option>전체</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+					</select>
+				</p>
+				<p data-text="red_sum"><span>환불예정금액</span><strong>720,000원</strong></p>
+				<ul data-text="type1" class="star m_b0">
+					<li>환불 예정 금액과 실제 환불 금액은 다를 수 있습니다.</li>
+					<li>출고대기 상태의 교재 또는 도서가 있는 경우 고객센터 <br>1522-0568로 문의 바랍니다.</li><!-- 2017-08-07 고객센터 번호 수정 -->
+				</ul>
+			</div>
+			<h2 data-title="type2">환불/결제 취소상품</h2>
+			<div data-form="wrap" class="noline type1">
+				<h3 data-title="type6">상품선택</h3>
+				<p data-form="select" class="full">
+					<select title="타이틀">
+						<option>부분</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+					</select>
+				</p>
+				<p data-form="checkbox" class="m_b15">
+					<input type="checkbox" id="test1">
+					<label for="test1">물리 I 서바이벌</label>
+				</p>
+				<p data-form="checkbox" class="m_b15">
+					<input type="checkbox" id="test2">
+					<label for="test2">물리 I 서바이벌</label>
+				</p>
+				<p data-form="checkbox" class="m_b40">
+					<input type="checkbox" id="test3">
+					<label for="test3">물리 I 서바이벌</label>
+				</p>
+				<p data-text="red_sum"><span>환불예정금액</span><strong>720,000원</strong></p>
+				<ul data-text="type1" class="star m_b0">
+					<li>환불 예정 금액과 실제 환불 금액은 다를 수 있습니다.</li>
+					<li>출고대기 상태의 교재 또는 도서가 있는 경우 고객센터 <br>1522-0568로 문의 바랍니다.</li><!-- 2017-08-07 고객센터 번호 수정 -->
+				</ul>
+
+			</div>
+			<h2 data-title="type2">환불/결제취소 신청 사유</h2>
+			<div data-form="wrap" class="noline type4"><!-- 2017-08-03 클래스 type1 -> type4로 변경 -->
+				<h3 data-title="type6">신청사유</h3>
+				<p data-form="select" class="full m_b60">
+					<select title="타이틀">
+						<option>신청 사유를 선택해주세요.</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+						<option>선택</option>
+					</select>
+				</p>
+				<h3 data-title="type6">추가의견</h3>
+				<span data-form="input" class="m_b60"><!-- 2017-08-03 클래스 m_b60 추가 -->
+					<input type="text" id="test4" placeholder="추가 의견을 입력해주세요.">
+				</span>
+			</div>
+			<h2 data-title="type2">환불 받을 계좌정보</h2>
+			<div data-form="wrap" class="noline type1">
+				<h3 data-title="type6">은행명</h3>
+				<span data-form="input" class="m_b60">
+					<input type="text">
+				</span>
+				<h3 data-title="type6">계좌번호</h3>
+				<span data-form="input" class="m_b60">
+					<input type="text">
+				</span>
+				<h3 data-title="type6">예금주명</h3>
+				<span data-form="input" class="m_b30">
+					<input type="text">
+				</span>
+				<p data-form="checkbox" class="type3 red">
+					<input type="checkbox" id="check1">
+					<label for="check1">미성년자 계좌로의 환불 시 부모 동의</label>
+				</p>
+			</div>
+			<h2 data-title="type2">교재/도서를 수거할 주소 입력</h2>
+			<dl data-form="wrap" class="noline type1">
+				<dt><span class="field_name">주소</span></dt>
+				<dd>
+					<p>
+						<span data-form="input" class="size320">
+							<input type="text" readonly="readonly" title="우편번호">
+						</span>
+						<button type="button" data-btn="whitegray" class="size220 m_l20">우편번호 검색</button>
+					</p>
+					<p>	
+						<span data-form="input" class="size370">
+							<input type="text" id="input7" readonly="readonly" placeholder="기본주소">
+						</span>
+					</p>
+					<p>	
+						<span data-form="input" class="size370">
+							<input type="text" id="input8" placeholder="나머지주소">
+						</span>
+					</p>
+				</dd>
+				<dt><span class="field_name">전화번호</span></dt>
+				<dd>
+					<span data-form="select" title="휴대폰 번호 앞자리">
+						<select>
+							<option>010</option>
+							<option>011</option>
+							<option>017</option>
+							<option>018</option>
+							<option>019</option>
+						</select>
+					</span>
+					<em>-</em>
+					<span data-form="input" class="size168" title="휴대폰 번호 중간자리">
+						<input type="text">
+					</span>
+					<em>-</em>
+					<span data-form="input" class="size168" title="휴대폰 번호 뒷자리">
+						<input type="text">
+					</span>
+				</dd>
+			</dl>
+			
+			<!-- 2017-10-20 마크업 추가 S -->
+			<div class="return_info m_b60">
+				<h2 data-title="type2">환불 관련 참고사항 안내</h2>
+				<ul data-text="type10">
+					<li><span>-</span> 배송 전: 즉시 환불 처리 가능</li>
+					<li><span>-</span> 배송 중: 배송 현황 확인 후 상품 수령 전에 배송 중지되며 환불 처리 가능</li>
+					<li><span>-</span> 배송 완료: 7일 이내에 택배기사님 방문하여 상품 수거 후, 담당자가 상품 확인하여 환불 처리 진행</li>  
+					<li><span>-</span> 단, 배송 전이라도 주소 기재는 필수입니다.</li>
+					<li><span>-</span> 1만원 이상 구매하여 무료로 배송 받은 후 고객의 변심으로 인한 취소 시 
+					  왕복 배송비 6,000원은 고객 부담이며, 반송 후 미사용 상태 확인 시에 
+					  최종 결제 금액에서 왕복 배송비 차감 후 환불 완료됩니다.</li>
+				</ul>
+				<a href="#">시대인재 상품별 환불규정 ></a>
+			</div>
+			<!-- 2017-10-20 마크업 추가 E -->
+
+
+			<h2 data-title="type2">환불 반려 사유</h2>
+			<div class="return_text">어드민에 관리자가 작성한 사유 노출어드민에 관리자가
+			작성한 사유 노출어드민에 관리자가 작성한 사유 노출어
+			드민에 관리자가 작성한 사유 노출어드민에 관리자가 작
+			성한 사유 노출어드민에 관리자가 작
+			성한 사유 노출</div>
+			<button type="button" data-btn="navy">신청</button>
+		</div>
+
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

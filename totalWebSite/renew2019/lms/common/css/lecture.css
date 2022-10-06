@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.box-gray{ padding:1.066666667rem; background-color:#eee; border-radius:1rem; }
+
+.lecture-container .tit-area .select-type2{ width:5.833333333rem; }
+
+.lecture-container .list-col2 > ul > li:first-child{ margin-top:1rem; }
+.lecture-container .list-col2 > ul > li .tit-area .tit-side{ right:0.666666667rem; }
+.lecture-container .list-col2 > ul > li .content-area .list-dash{ margin-bottom:0.666666667rem; padding:0 0.666666667rem; }
+
+
+.lecture-container .list-col2 > ul > li .tit-area div.tit-side{ margin-top:0; position:absolute !important; }
+.lecture-container .list-col2 > ul > li .tit-area .tit-side span{ padding-left:0.666666667rem; position:relative; }
+.lecture-container .list-col2 > ul > li .tit-area .tit-side span[class^="color"]{ font-weight:500; }
+.lecture-container .list-col2 > ul > li .tit-area .tit-side span:after{ content:''; width:1px; display:block; position:absolute; top:4px; left:0.266666667rem; bottom:2px; background-color:#ddd; }
+.lecture-container .list-col2 > ul > li .tit-area .tit-side span:first-child:after{ display:none; }
+/*
+.lecture-container .list-col2 > ul > li .tit-area .tit-side span{ padding-left:0.666666667rem; position:relative; }
+.lecture-container .list-col2 > ul > li .tit-area .tit-side span[class^="color"]{ font-weight:500; }
+.lecture-container .list-col2 > ul > li .tit-area .tit-side span:after{ content:''; width:1px; display:block; position:absolute; top:4px; left:0.266666667rem; bottom:2px; background-color:#ddd; }
+.lecture-container .list-col2 > ul > li .tit-area .tit-side span:first-child:after{ display:none; }
+*/
+/* Tablets */
+@media all and (min-width:600px) and (orientation:portrait){
+    .lecture-container .list-col2 > ul{ margin-top:-1rem; margin-left:-1.333333333rem;}
+    .lecture-container .list-col2 > ul > li{ width:calc(50% - 1.333333333rem); float:left; margin-left:1.333333333rem; }
+}
+@media all and (min-width:1024px) and (orientation:landscape){
+    .lecture-container .list-col2 > ul{ margin-top:-1rem; margin-left:-1.333333333rem;}
+    .lecture-container .list-col2 > ul > li{ width:calc(50% - 1.333333333rem); float:left; margin-left:1.333333333rem; }
+}
+

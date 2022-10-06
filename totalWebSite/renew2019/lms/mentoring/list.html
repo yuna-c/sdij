@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <meta property="og:url" content="http://www.sdij.com/" />
+    <meta property="og:image" content="http://img.sdij.com/sd2019/pc/logo.png" />
+    <meta property="og:title" content="시대인재" />
+    <meta property="og:description" content="올해 마지막 서바이벌 모의고사 선물, 시대인재대치, 시대인재분당, 시대인재재수종합N, 시대인재북스, 대입전문컨설팅" />
+    <meta property="og:site_name" content="시대인재" />
+    <meta name="description" content="올해 마지막 서바이벌 모의고사 선물, 시대인재대치, 시대인재분당, 시대인재재수종합N, 시대인재북스, 대입전문컨설팅" />
+    <meta name="title" content="시대인재" />
+    <meta name="keywords" content="9월 모평,수능 대비, 시대인재, 시대인재 서바이벌, 서바이벌 모의고사" />
+
+    <title> 시대인재 </title>
+    <link rel="shortcut icon" href="http://img.sdij.com/sd2019/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="http://img.sdij.com/sd2019/favicon_32.png" />
+    <link rel="icon" href="http://img.sdij.com/sd2019/favicon_32.ico" sizes="32x32" />
+
+    <!-- S : css -->
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/reset.css?ver=<%=now()%>" />
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/lib/swiper.min.css?ver=<%=now()%>" />
+	<link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/layout.css?ver=<%=now()%>" />
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/board.css?ver=<%=now()%>" />
+    <!--// E : css -->
+    
+    <!-- S : page css -->
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/mentoring.css?ver=<%=now()%>" />
+    <!--// E : page css -->
+
+    <!-- S : js -->
+    <script type="text/javascript" src="/totalWebSite/renew2019/lms/common/js/lib/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/totalWebSite/renew2019/lms/common/js/lib/swiper.min.js"></script>
+    <script type="text/javascript" src="/totalWebSite/renew2019/lms/common/js/common.js"></script>
+    <!--// E : js -->
+</head>
+<body>
+
+<div id="wrap">
+    <!-- S : header -->
+    <header id="header">
+        <h1 class="logo"><a href="/totalWebSite/renew2019/lms/main/main.html"><img src="http://img.sdij.com/sd2019/app/common/logo_w.png" alt="시대인재"></a></h1>
+        <a href="/totalWebSite/renew2019/lms/setup/index.html" class="btn-setup">설정 바로가기</a>
+    </header>
+    <!--// E : header -->
+
+    <!-- S : container -->
+    <section id="container" class="mentoring-container">
+        <!-- S : 유저 정보 -->
+        <article class="container-user content-layout">
+            <div class="box-shadow">
+                <div class="user-name">시대인재N 신관 S반 홍길동 (123번)</div>
+
+                <!-- <div class="user-info"><a href="/score/list.html">
+                    <span>상점 100점</span>
+                    <span>벌점 100점</span>
+                </a></div> -->
+            </div>
+        </article>
+        <!--// E : 유저 정보 -->
+
+        <!-- S : TA멘토링 -->
+        <article class="container-tab content-layout">
+            <div class="tab-dep1">
+                <a href="javascript:void(0);" class="selected"><span>TA멘토링 신청하기</span></a>
+                <a href="javascript:void(0);"><span>TA멘토링 이력보기</span></a>
+            </div>
+
+            <!-- S : TA멘토링 신청 -->
+            <div class="tab-content tab-on">
+                <div class="tit-area mb1">
+                    <h4 class="tit-dep4">
+                        <i class="ico-users"></i>
+                        오늘의 멘토 00명
+                    </h4>
+
+                    <!-- S : 새로고침 버튼 추가 -->
+                    <a href="javascript:void(0)" class="ico-redo">새로고침</a>
+                    <!--// E : 새로고침 버튼 추가 -->
+    
+                    <div class="select select-type2 tit-side">
+                        <select>
+                            <option hidden disabled selected>과목</option>
+                            <option value="">국어</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- S : 리스트 없을 경우 -->
+                <div class="list-no-data">
+                    <i class="ico-note">!</i>
+                    금일 TA상담이 가능한 멘토가 없습니다.
+                </div>
+                <!--// E : 리스트 없을 경우 -->
+    
+                <div class="list-type1 list-col2">                   
+                    <ul class="float-area">
+                        <!-- S : 온라인/대면 멘토링 완료 시 -->
+                        <li><!-- 최대 리스트 6개 노출 이후 더보기 버튼 클릭 시 노출 -->
+                            <div class="tit-area">
+                                <span class="sticker">생명과학 Ⅰ</span>
+                                <span class="tit-side color-red">마감</span>
+                            </div>
+                            <div class="content-area">
+                                <div class="preview">
+                                    <span class="name">홍길동 멘토</span>
+                                    <span class="txt">답변완료</span>
+                                </div>
+    
+                                <div class="flex-area">
+                                    <a href="javascript:void(0);" class="btn btn-black" onclick="fnOpenLayer('.modal-estimate');">만족도 평가</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!--// E : 온라인/대면 멘토링 완료 시 -->
+    
+                        <!-- S : 대면신청 시 -->
+                        <li>
+                            <div class="tit-area">
+                                <span class="sticker">국어</span>
+                                <span class="tit-side color-gray">대기 99명</span>
+                            </div>
+                            <div class="content-area">
+                                <div class="preview">
+                                    <span class="name">홍길동 멘토</span>
+                                    <span class="txt">대면 70번</span>
+                                </div>
+    
+                                <div class="flex-area">
+                                    <a href="javascript:void(0);" class="btn btn-disabled">대면 답변대기</a>
+                                    <a href="javascript:void(0);" class="btn">대면 신청취소</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!--// E : 대면신청 시 -->
+    
+                        <!-- S : 대면신청 시작전 -->
+                        <li>
+                            <div class="tit-area">
+                                <span class="sticker">화학 Ⅱ</span>
+                                <span class="tit-side color-gray">대기 1명</span>
+                            </div>
+                            <div class="content-area">
+                                <div class="preview">
+                                    <span class="name">홍길동 멘토</span>
+                                    <span class="txt">대면 2번</span>
+                                </div>
+    
+                                <div class="flex-area">
+                                    <a href="javascript:void(0);" class="btn btn-red">4층 이동 대기</a>
+                                    <a href="javascript:void(0);" class="btn">대면 신청취소</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!--// E : 대면신청 시작전 -->
+    
+                        <!-- S : 온라인신청 시 -->
+                        <li>
+                            <div class="tit-area">
+                                <span class="sticker">수학</span>
+                                <span class="tit-side color-gray">대기 99명</span>
+                            </div>
+                            <div class="content-area">
+                                <div class="preview">
+                                    <span class="name">홍길동 멘토</span>
+                                    <span class="txt">답변 중</span>
+                                </div>
+    
+                                <div class="flex-area">
+                                    <a href="javascript:void(0);" class="btn btn-disabled">온라인 답변대기</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!--// E : 온라인신청 시 -->
+    
+                        <!-- S : 기본 TA 신청 -->
+                        <li>
+                            <div class="tit-area">
+                                <span class="sticker">수학</span>
+                                <span class="tit-side color-gray">대기 99명</span>
+                            </div>
+                            <div class="content-area">
+                                <div class="preview">
+                                    <span class="name">홍길동 멘토</span>
+                                    <span class="txt">답변 중</span>
+                                </div>
+    
+                                <div class="flex-area">
+                                    <a href="javascript:void(0);" class="btn btn-black" onclick="fnOpenLayer('.modal-mentoring');">TA 신청하기</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!--// E : 기본 TA 신청 -->
+    
+                        <!-- S : 기본 TA 신청 -->
+                        <li>
+                            <div class="tit-area">
+                                <span class="sticker">수학</span>
+                                <span class="tit-side color-gray">대기 99명</span>
+                            </div>
+                            <div class="content-area">
+                                <div class="preview">
+                                    <span class="name">홍길동 멘토</span>
+                                    <span class="txt">답변 중</span>
+                                </div>
+    
+                                <div class="flex-area">
+                                    <a href="javascript:void(0);" class="btn btn-black" onclick="fnOpenLayer('.modal-mentoring');">TA 신청하기</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!--// E : 기본 TA 신청 -->
+                    </ul>
+                </div>
+    
+                <div class="list-btn mt1">
+                    <a href="javascript:void(0);" class="btn btn-more">더 보기</a>
+                </div>
+            </div>
+            <!--// E : TA멘토링 신청 -->
+
+            <!-- S : TA멘토링 이력 -->
+            <div class="tab-content">
+                <!-- S : 리스트 없을 경우 -->
+                <div class="list-no-data">
+                    <i class="ico-note">!</i>
+                    TA멘토링 신청 이력이 없습니다.
+                </div>
+                <!--// E : 리스트 없을 경우 -->
+
+                <div class="list-type1">
+                    <ul>
+                        <!-- S : 온라인 멘토링 이력 -->
+                        <li><!-- 최대 리스트 6줄 노출 이후 더보기 버튼 클릭 시 노출 -->
+                            <div class="tit-area">
+                                <p class="date">
+                                    <span>2019.11.19(화)</span>
+                                    <span class="color-purple">온라인 답변</span>
+                                </p>
+                                <a href="javascript:void(0);" class="btn btn-black tit-side" onclick="fnOpenLayer('.modal-estimate');">만족도 평가</a>
+                            </div>
+                            <div class="content-area">
+                                <span class="sticker">생명과학 Ⅰ</span>
+
+                                <div class="more-txt"><a href="javascript:void(0)" onclick="readMore(this);">
+                                    <!-- S : 질문 내용 -->
+                                    <span class="strong">Q.</span>
+                                    질문내용
+
+                                    <!-- S : 첨부파일 이미지 영역 -->
+                                    <span class="img-box">
+                                        <img src="https://via.placeholder.com/1000x500" alt="">
+                                    </span>
+                                    <!--// E : 첨부파일 이미지 영역 -->
+                                    <!--// E : 질문 내용 -->
+
+                                    <!-- S : 답변 내용 -->
+                                    <div class="replay-area">
+                                        <span class="strong color-purple mt1">A.</span>
+                                        답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용
+                                        
+                                        <!-- S : 첨부파일 이미지 영역 -->
+                                        <span class="img-box">
+                                            <img src="https://via.placeholder.com/1000x500" alt="">
+                                        </span>
+                                        <!--// E : 첨부파일 이미지 영역 -->
+                                    </div>
+                                    <!--// E : 답변 내용 -->
+                                </a></div>
+                            </div>
+                        </li>
+                        <!--// E : 온라인 멘토링 이력 -->
+
+                        <!-- S : 대면 멘토링 이력 -->
+                        <li>
+                            <div class="tit-area">
+                                <p class="date">
+                                    <span>2019.11.19(화)</span>
+                                    <span class="color-blue">대변 답변</span>
+                                </p>
+                                <a href="javascript:void(0)" class="btn btn-disabled tit-side">만족도 평가 완료</a>
+                            </div>
+                            <div class="content-area">
+                                <span class="sticker">생명과학 Ⅰ</span>
+
+                                <div class="more-txt"><a href="javascript:void(0)" onclick="readMore(this);">
+                                    <!-- S : 질문 내용 -->
+                                    <span class="strong">Q.</span>
+                                    질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용
+
+                                    <!-- S : 첨부파일 이미지 영역 -->
+                                    <span class="img-box">
+                                        <img src="https://via.placeholder.com/1000x500" alt="">
+                                    </span>
+                                    <!--// E : 첨부파일 이미지 영역 -->
+                                    <!--// E : 질문 내용 -->
+
+                                    <!-- S : 답변 내용 -->
+                                    <div class="replay-area">
+                                        <span class="strong color-blue mt1">A.</span>
+                                        답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용
+                                        
+                                        <!-- S : 첨부파일 이미지 영역 -->
+                                        <span class="img-box">
+                                            <img src="https://via.placeholder.com/1000x500" alt="">
+                                        </span>
+                                        <!--// E : 첨부파일 이미지 영역 -->
+                                    </div>
+                                    <!--// E : 답변 내용 -->
+                                </a></div>
+                            </div>
+                        </li>
+                        <!--// E : 대면 멘토링 이력 -->
+
+                        <!-- S : 온라인 멘토링 이력 -->
+                        <li>
+                            <div class="tit-area">
+                                <p class="date">
+                                    <span>2019.11.19(화)</span>
+                                    <span class="color-purple">온라인 답변</span>
+                                </p>
+                                <a href="javascript:void(0);" class="btn btn-black tit-side" onclick="fnOpenLayer('.modal-estimate');">만족도 평가</a>
+                            </div>
+                            <div class="content-area">
+                                <span class="sticker">생명과학 Ⅰ</span>
+
+                                <div class="more-txt"><a href="javascript:void(0)" onclick="readMore(this);">
+                                    <!-- S : 질문 내용 -->
+                                    <span class="strong">Q.</span>
+                                    질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용
+
+                                    <!-- S : 첨부파일 이미지 영역 -->
+                                    <span class="img-box">
+                                        <img src="https://via.placeholder.com/1000x500" alt="">
+                                    </span>
+                                    <!--// E : 첨부파일 이미지 영역 -->
+                                    <!--// E : 질문 내용 -->
+
+                                    <!-- S : 답변 내용 -->
+                                    <div class="replay-area">
+                                        <span class="strong color-purple mt1">A.</span>
+                                        답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용
+                                        
+                                        <!-- S : 첨부파일 이미지 영역 -->
+                                        <span class="img-box">
+                                            <img src="https://via.placeholder.com/1000x500" alt="">
+                                        </span>
+                                        <!--// E : 첨부파일 이미지 영역 -->
+                                    </div>
+                                    <!--// E : 답변 내용 -->
+                                </a></div>
+                            </div>
+                        </li>
+                        <!--// E : 온라인 멘토링 이력 -->
+                        
+                        <!-- S : 대면 멘토링 이력 -->
+                        <li>
+                            <div class="tit-area">
+                                <p class="date">
+                                    <span>2019.11.19(화)</span>
+                                    <span class="color-blue">대변 답변</span>
+                                </p>
+                                <a href="javascript:void(0)" class="btn btn-disabled tit-side">만족도 평가 완료</a>
+                            </div>
+                            <div class="content-area">
+                                <span class="sticker">생명과학 Ⅰ</span>
+
+                                <div class="more-txt"><a href="javascript:void(0)" onclick="readMore(this);">
+                                    <!-- S : 질문 내용 -->
+                                    <span class="strong">Q.</span>
+                                    질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용
+
+                                    <!-- S : 첨부파일 이미지 영역 -->
+                                    <span class="img-box">
+                                        <img src="https://via.placeholder.com/1000x500" alt="">
+                                    </span>
+                                    <!--// E : 첨부파일 이미지 영역 -->
+                                    <!--// E : 질문 내용 -->
+
+                                    <!-- S : 답변 내용 -->
+                                    <div class="replay-area">
+                                        <span class="strong color-blue mt1">A.</span>
+                                        답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용
+                                        
+                                        <!-- S : 첨부파일 이미지 영역 -->
+                                        <span class="img-box">
+                                            <img src="https://via.placeholder.com/1000x500" alt="">
+                                        </span>
+                                        <!--// E : 첨부파일 이미지 영역 -->
+                                    </div>
+                                    <!--// E : 답변 내용 -->
+                                </a></div>
+                            </div>
+                        </li>
+                        <!--// E : 대면 멘토링 이력 -->
+
+                        <!-- S : 온라인 멘토링 이력 -->
+                        <li>
+                            <div class="tit-area">
+                                <p class="date">
+                                    <span>2019.11.19(화)</span>
+                                    <span class="color-purple">온라인 답변</span>
+                                </p>
+                                <a href="javascript:void(0);" class="btn btn-black tit-side" onclick="fnOpenLayer('.modal-estimate');">만족도 평가</a>
+                            </div>
+                            <div class="content-area">
+                                <span class="sticker">생명과학 Ⅰ</span>
+
+                                <div class="more-txt"><a href="javascript:void(0)" onclick="readMore(this);">
+                                    <!-- S : 질문 내용 -->
+                                    <span class="strong">Q.</span>
+                                    질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용
+
+                                    <!-- S : 첨부파일 이미지 영역 -->
+                                    <span class="img-box">
+                                        <img src="https://via.placeholder.com/1000x500" alt="">
+                                    </span>
+                                    <!--// E : 첨부파일 이미지 영역 -->
+                                    <!--// E : 질문 내용 -->
+
+                                    <!-- S : 답변 내용 -->
+                                    <div class="replay-area">
+                                        <span class="strong color-purple mt1">A.</span>
+                                        답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용
+                                        
+                                        <!-- S : 첨부파일 이미지 영역 -->
+                                        <span class="img-box">
+                                            <img src="https://via.placeholder.com/1000x500" alt="">
+                                        </span>
+                                        <!--// E : 첨부파일 이미지 영역 -->
+                                    </div>
+                                    <!--// E : 답변 내용 -->
+                                </a></div>
+                            </div>
+                        </li>
+                        <!--// E : 온라인 멘토링 이력 -->
+
+                        <!-- S : 대면 멘토링 이력 -->
+                        <li>
+                            <div class="tit-area">
+                                <p class="date">
+                                    <span>2019.11.19(화)</span>
+                                    <span class="color-blue">대변 답변</span>
+                                </p>
+                                <a href="javascript:void(0)" class="btn btn-disabled tit-side">만족도 평가 완료</a>
+                            </div>
+                            <div class="content-area">
+                                <span class="sticker">생명과학 Ⅰ</span>
+
+                                <div class="more-txt"><a href="javascript:void(0)" onclick="readMore(this);">
+                                    <!-- S : 질문 내용 -->
+                                    <span class="strong">Q.</span>
+                                    질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용질문내용
+
+                                    <!-- S : 첨부파일 이미지 영역 -->
+                                    <span class="img-box">
+                                        <img src="https://via.placeholder.com/1000x500" alt="">
+                                    </span>
+                                    <!--// E : 첨부파일 이미지 영역 -->
+                                    <!--// E : 질문 내용 -->
+
+                                    <!-- S : 답변 내용 -->
+                                    <div class="replay-area">
+                                        <span class="strong color-blue mt1">A.</span>
+                                        답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용답변내용
+                                        
+                                        <!-- S : 첨부파일 이미지 영역 -->
+                                        <span class="img-box">
+                                            <img src="https://via.placeholder.com/1000x500" alt="">
+                                        </span>
+                                        <!--// E : 첨부파일 이미지 영역 -->
+                                    </div>
+                                    <!--// E : 답변 내용 -->
+                                </a></div>
+                            </div>
+                        </li>
+                        <!--// E : 대면 멘토링 이력 -->
+                    </ul>
+                </div>
+
+                <div class="list-btn mt1">
+                    <a href="javascript:void(0);" class="btn btn-more">더 보기</a>
+                </div>
+            </div>
+            <!--// E : TA멘토링 이력 -->
+        </article>
+        <!--// E : TA멘토링 -->
+    </section>
+    <!--// E : container -->
+
+    <!-- S : nav -->
+    <nav id="nav">
+        <div class="nav-link">
+            <a href="/totalWebSite/renew2019/lms/main/main.html">
+                <i class="ico-home-g"></i>
+                홈
+            </a>
+            <a href="/totalWebSite/renew2019/lms/schedule/view.html">
+                <i class="ico-calendar-g"></i>
+                시간표
+            </a>
+            <a href="/totalWebSite/renew2019/lms/setup/push.html">
+                <i class="ico-bell-g"></i>
+                알림
+            </a>
+            <a href="/totalWebSite/renew2019/lms/mentoring/list.html" class="selected">
+                <i class="ico-write-g"></i>
+                TA신청
+            </a>
+        </div>
+    </nav>
+    <!--/ / E : nav -->
+
+    <!-- S : modal-wrap -->
+    <link rel="stylesheet" type="text/css" href="/totalWebSite/renew2019/lms/common/css/modal.css">
+
+    <div class="modal-wrap">
+        <div class="modal-bg"></div>
+
+        <!-- S : TA멘토링 신청하기 -->
+        <div class="modal-container modal-F modal-mentoring">
+            <div class="modal-header">
+                <h3 class="modal-tit">TA멘토링 신청하기</h3>
+                <a href="javascript:void(0);" class="btn-close">팝업창 닫기</a>
+            </div>
+        
+            <div class="modal-content">
+                <div class="form-type2">
+                    <table>
+                        <colgroup>
+                            <col style="width:25%;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="box-area">
+                                    <div class="tit">
+                                        <span>지구과학Ⅱ</span>
+                                        <span>홍길동 멘토</span>
+
+                                        <div class="form-radio">
+                                            <label class="input-radio">
+                                                <input type="radio">
+                                                <span class="ico ico-radio"></span>
+                                                <span class="color-blue">대면 멘토링</span>
+                                            </label>
+        
+                                            <label class="input-radio">
+                                                <input type="radio">
+                                                <span class="ico ico-radio"></span>
+                                                <span class="color-purple">온라인 멘토링</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" class="border-none">
+                                    <!-- S : 이미지 업로드 -->
+                                    <label class="input-image">
+                                        <span class="file-preview"></span>
+                                        <input type="file" onchange="imageUpload(this);">
+                                        <span class="btn btn-M">
+                                            <i class="ico-plus"></i> 이미지 업로드
+                                        </span>
+                                    </label>
+                                    <!--// E : 이미지 업로드 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>문항정보</th>
+                                <td>
+                                    <label class="input-text">
+                                        <input type="text" placeholder="교재명, 문항번호">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>상세내용</th>
+                                <td>
+                                    <div class="textarea">
+                                        <textarea rows="5" placeholder="상세 질문 내용을 입력해주세요."></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="modal-btn">
+                <a href="javascript:void(0);" onclick="fnCloseLayer('.modal-mentoring');" class="btn btn-gray">취소</a>
+                <input type="submit" onclick="fnCloseLayer('.modal-mentoring');" class="btn btn-black" value="신청하기">
+            </div>
+        </div>
+        <!--// E : TA멘토링 신청하기 -->
+
+        <!-- S : TA멘토링 평가하기 -->
+        <div class="modal-container modal-F modal-estimate">
+            <div class="modal-header">
+                <h3 class="modal-tit">TA멘토링 평가하기</h3>
+                <a href="javascript:void(0);" class="btn-close">팝업창 닫기</a>
+            </div>
+        
+            <div class="modal-content">
+                <div class="form-type2">
+                    <table>
+                        <colgroup>
+                            <col style="width:auto;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="box-area">
+                                    <div class="tit">
+                                        <span>2019.11.05 (화)</span>
+                                        <span class="color-blue">대면 답변</span><!-- <span class="color-purple">온라인 답변</span> -->
+
+                                        <div class="form-radio">
+                                            물리1 홍길동 멘토
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="tit">1. TA의 답변을 통해 질문한 내용을 정확하게 이해할 수 있었고 학습에 도움이 되었다.</p>
+
+                                    <div class="form-radio">
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            1점 아주 그렇지 않다
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            2점 그렇지 않다
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            3점 보통이다
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            4점 그렇다
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            5점 아주 그렇다
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="tit">2. 질문에 대한 TA의 답변 시간이 적절 하였다.</p>
+
+                                    <div class="form-radio">                                        
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            1점 아주 그렇지 않다
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            2점 그렇지 않다
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            3점 보통이다
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            4점 그렇다
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            5점 아주 그렇다
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="tit">3. TA는 질문에 대하여 성실하게 답변 하였다.</p>
+
+                                    <div class="form-radio">                                        
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            1점 아주 그렇지 않다
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            2점 그렇지 않다
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            3점 보통이다
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            4점 그렇다
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio">
+                                            <span class="ico ico-radio"></span>
+                                            5점 아주 그렇다
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="tit">4. 추가적의 의견이 있으시면 작성해 주세요.</p>                                    
+
+                                    <div class="textarea">
+                                        <textarea rows="5"></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="modal-btn">
+                <a href="javascript:void(0);" onclick="fnCloseLayer('.modal-estimate');" class="btn btn-gray">취소</a>
+                <input type="submit" onclick="fnCloseLayer('.modal-estimate');" class="btn btn-black" value="평가 완료">
+            </div>
+        </div>
+        <!--// E : TA멘토링 평가하기 -->
+    </div>
+    <!--// E : modal-wrap -->
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>
+    <!--// E : modal-wrap -->
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>

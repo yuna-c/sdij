@@ -1,0 +1,70 @@
+/* border-tab */
+.board-tab .tab-list a{ overflow:hidden; text-overflow:ellipsis; }
+.board-lec table tr td.lec-area .data-tit{ font-size:16px; font-weight:700; letter-spacing::-.035em; }
+/* board-lec */
+.board-lec{ margin:0; }
+.board-lec table{ border-bottom:1px solid #ededed; } 
+.board-lec table tr td{ padding:0 10px; }
+.board-lec .lec-tit{ padding:15px 0; background-color:#fafafa; border-bottom:1px solid #ededed; }
+.board-lec .form-checkbox{ margin-left:20px; }
+.board-lec table tr td.price-area .price{ display:inline; }
+.board-lec table tr td.txt-area{ font-weight:700; vertical-align:top; }
+.board-lec table tr td.txt-area div span{ width:50%; line-height:30px; display:inline-block; color:#999; }
+.board-lec table tr td.price-area .form-checkbox:first-child{ margin:20px 0; }
+.board-lec table tr td.price-area .tit{ width:43%; }
+.board-lec table tr td.lec-area{ padding:15px 10px 0;  }
+.board-lec table tr td.lec-area .data-tit span{ }
+.board-lec table tr td.lec-area .data-info{ padding-bottom:0; border-bottom:none; }
+.board-lec table tr td.lec-area .data-info span{ font-size:12px; }
+.board-lec table tr td.lec-area .data-info:last-child{ line-height:20px; padding-bottom:15px; position:relative; border-bottom:1px solid #ddd; color:#999; } 
+
+/* lec-tit */
+.lec-tit span{ margin-left:20px; display:inline-block; text-align:center; font-size:14px; }
+
+/* tab-tit */
+.table-tit{ margin-top:50px; }
+
+
+
+/* border-tab  실서버 버전
+.board-tab .tab-list a{ overflow:hidden; text-overflow:ellipsis; }
+.board-lec table tr td.lec-area .data-tit{ font-size:16px; font-weight:700; letter-spacing::-.035em; }
+
+ board-lec 
+.board-lec{ margin:0; }
+.board-lec table{ border-bottom:1px solid #ededed; } 
+.board-lec table tr td{ padding:0 10px; }
+.board-lec .lec-tit{ padding:15px 0; background-color:#fafafa; border-bottom:1px solid #ededed; }
+.board-lec .form-checkbox{ margin-left:20px; }
+.board-lec table tr td.price-area .price{ display:inline; }
+.board-lec table tr td.txt-area{ font-weight:700; vertical-align:top; }
+.board-lec table tr td.txt-area div span{ width:50%; line-height:30px; display:inline-block; color:#999; }
+.board-lec table tr td.price-area .form-checkbox:first-child{ margin:20px 0; }
+.board-lec table tr td.price-area .tit{ width:43%; }
+.board-lec table tr td.lec-area{ padding:15px 10px 0; }
+.board-lec table tr td.lec-area .data-info{ padding-bottom:0; border-bottom:none; }
+.board-lec table tr td.lec-area .data-info .info-txt:after{ content: ''; width:1px; display:block; position:absolute; top:5px; left:0px; bottom:4px; background-color:#ddd; }
+.board-lec table tr td.lec-area .data-info .info-txt{ font-size:12px; }
+.board-lec table tr td.lec-area .data-info:last-child{ line-height:20px; padding-bottom:15px; position:relative; border-bottom:1px solid #ddd; color:#999; } 
+.board-lec table tr td.lec-area .data-info .info-txt > p{ display:inline !important; }
+.board-lec table tr td.lec-area .data-info .info-txt > p span { font-size:12px; margin-left:0; padding-left:2px; } 
+.board-lec table tr td.lec-area .data-info span:after{ display:none; }
+.board-lec table tr td.lec-area .data-info .info-txt p br{ display:none !important; }
+
+ lec-tit 
+.lec-tit span{ margin-left:20px; display:inline-block; text-align:center; font-size:14px; }
+
+ tab-tit 
+.table-tit{ margin-top:50px; }
+*/
+
+
+
+
+
+
+
+
+
+
+

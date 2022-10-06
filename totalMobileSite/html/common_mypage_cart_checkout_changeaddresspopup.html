@@ -1,0 +1,146 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명    : sidaeInjae Total Mobile Site
+* @ 파일명     : /html/common_mypage_cart_checkout_addresspopup.html
+* @ 페이지설명 : 모바일 > 공통 > 마이페이지 > 장바구니 > 주문결제_배송지변경_팝업  
+* @ 작성자     : 김은옥
+* @ 작성일     : 2017-06-26
+************************** 수정이력 ****************************************
+* 번호    작업자       변경내용 
+*_________________________________________________________________________
+* 김은옥   최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>마이페이지 > 장바구니 > 주문결제_내 배송지변경_팝업</title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>  <!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="common" data-depth2="mypage" data-depth3="cart" data-depth4="checkout" data-depth5="addresspopup">
+<div id="wrap" data-popup="pop">  <!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="pop_title">
+<!--20180302 소스추가 S-->
+  <h1>배송지 변경</h1>
+  <button class="pop_close">닫기</button>
+</div>
+
+
+<div id="content_wrap">
+  <!-- // Snb Include Area -->
+  <div id="content">
+    <div data-layout="type1">
+      <ul data-list="type2" class="color1 m_b50">
+        <li><span>-</span><p>한 주문번호 당 하나의 배송지로만 변경 가능합니다.</p></li>
+        <li><span>-</span><p>주문상품의 배송상태가 [배송준비중]일 때만 변경 가능하며 [배송중] 상태의 상품 배송지 변경은 고객센터(1522-0568 또는 1:1 상담)로 문의 주시기 바랍니다. </p></li>
+      </ul>
+      <h3 data-title="type2" class="line no_mg">
+        현재 배송지입니다.
+      </h3>
+      <table data-table="type4" class="m_b50">
+        <colgroup>
+          <col width="40%">
+          <col width="60%">
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>
+              이름
+            </th>
+            <td>
+              이지현
+            </td>
+          </tr>
+          <tr>
+            <th>
+              휴대폰번호
+            </th>
+            <td>
+              010-1234-5678
+            </td>
+          </tr>
+          <tr>
+            <th>
+              주소
+            </th>
+            <td>
+              서울특별시 강남구 삼성로 434 쥬비스타워 5층
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 data-title="type2" class="line">
+        변경할 배송지 정보를 입력하세요.
+      </h3>
+      <form>
+        <fieldset>
+        <dl data-form="wrap" class="noline">
+          <dt><label for="user_name" class="field_name">이름</label></dt>
+          <dd><span data-form="input"><input id="user_name" type="text"></span></dd>
+          <dt><span class="field_name">휴대폰번호</span></dt>
+          <dd>
+            <span data-form="select" title="휴대폰 번호 앞자리">
+              <select>
+                <option>010</option>
+                <option>011</option>
+                <option>017</option>
+                <option>018</option>
+                <option>019</option>
+              </select>
+            </span>
+            <em>-</em>
+            <span data-form="input" class="size168" title="휴대폰 번호 중간자리">
+              <input type="text">
+            </span>
+            <em>-</em>
+            <span data-form="input" class="size168" title="휴대폰 번호 뒷자리">
+              <input type="text">
+            </span>
+          </dd>
+          <dt><span class="field_name">주소</span></dt>
+          <dd>
+            <p>
+              <span data-form="input" class="size320">
+                <input type="text" readonly="readonly" title="우편번호">
+              </span>
+              <button type="button" data-btn="whitegray" class="size220 m_l20">우편번호 검색</button>
+            </p>
+            <p> 
+              <span data-form="input" class="size370">
+                <input type="text" id="input7" readonly="readonly" placeholder="기본주소">
+              </span>
+            </p>
+            <p> 
+              <span data-form="input" class="size370">
+                <input type="text" id="input8" placeholder="나머지주소">
+              </span>
+            </p>
+          </dd>
+        </dl>
+      </fieldset>
+      </form>
+    </div>
+     <div class="btn_wrap b_t">
+      <button type="button" data-btn="navy">변경하기</button>
+    </div>
+  </div>
+</div>
+<!--20180302 소스추가 E-->
+<!-- // Footer Include Area -->
+</div>  <!-- // Wrap E -->
+</body>

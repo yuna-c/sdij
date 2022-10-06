@@ -1,0 +1,51 @@
+@font-face {
+	font-family: "Noto Sans KR";
+	font-weight: 100;
+	font-style: normal;
+	src: url("/common/font/notoSans/NotoSans-Light.eot?") format("eot"),
+	url("/common/font/notoSans/NotoSans-Light.otf") format("opentype"),
+	url("/common/font/notoSans/NotoSans-Light.woff") format("woff"),
+	url("/common/font/notoSans/NotoSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Noto Sans KR";
+	font-weight: 400;
+	font-style: normal;
+	src: url("/common/font/notoSans/NotoSans-Regular.eot?") format("eot"),
+	url("/common/font/notoSans/NotoSans-Regular.otf") format("opentype"),
+	url("/common/font/notoSans/NotoSans-Regular.woff") format("woff"),
+	url("/common/font/notoSans/NotoSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Noto Sans KR";
+	font-weight: 500;
+	font-style: normal;
+	src: url("/common/font/notoSans/NotoSans-Medium.eot?") format("eot"),
+	url("/common/font/notoSans/NotoSans-Medium.otf") format("opentype"),
+	url("/common/font/notoSans/NotoSans-Medium.woff") format("woff"),
+	url("/common/font/notoSans/NotoSans-Medium.woff2") format("woff2");
+}
+
+
+@font-face {
+	font-family: "Noto Sans KR";
+	font-weight: 700;
+	font-weight: bold;
+	font-style: normal;
+	src: url("/common/font/notoSans/NotoSans-Bold.eot?") format("eot"),
+	url("/common/font/notoSans/NotoSans-Bold.otf") format("opentype"),
+	url("/common/font/notoSans/NotoSans-Bold.woff") format("woff"),
+	url("/common/font/notoSans/NotoSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Noto Serif KR";
+	font-weight: 400;
+	font-style: normal;
+	src: url("/common/font/notoSans/NotoSerifCJKkr-Regular-subset.eot?") format("eot"),
+	url("/common/font/notoSans/NotoSerifCJKkr-Regular-subset.otf") format("opentype"),
+	url("/common/font/notoSans/NotoSerifCJKkr-Regular-subset.woff") format("woff"),
+	url("/common/font/notoSans/NotoSerifCJKkr-Regular-subset.woff2") format("woff2");
+}

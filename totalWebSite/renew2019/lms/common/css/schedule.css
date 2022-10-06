@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+#container.schedule-container{ padding-bottom:3.7rem; }
+.schedule-container .table-type1 table tr th, .schedule-container .table-type1 table tr td{ padding:0.5rem 0.333333333rem; border-left:none; word-break:keep-all; }
+.schedule-container .table-type1 table tbody tr th.today, .schedule-container .table-type1 table tbody tr td.today{ background-color:rgba(0, 63, 171, .05); font-weight:700; color:#003fab; }
+.schedule-container .table-type1 table thead tr th.today span{ background-color:#003fab; font-weight:700; color:#fff; }
+
+/* mobile */
+@media all and (max-width:539px) and (orientation:portrait){
+    .schedule-container .table-type1 table tr th, .schedule-container .table-type1 table tr td{ padding:0.166666667rem; }
+}
+@media all and (max-width:959px) and (orientation:landscape){
+    .schedule-container .table-type1 table tr th, .schedule-container .table-type1 table tr td{ padding:0.166666667rem; }
+}

@@ -1,0 +1,225 @@
+
+select{
+  -webkit-appearance: none;
+  font-family: inherit;
+  -moz-appearance: none;
+  appearance: none;
+}
+/*======================================================================
+  Selectric
+======================================================================*/
+.selectricWrapper {
+  position: relative;
+  width: 100px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align:middle;;
+  box-sizing: border-box;
+}
+
+.selectricWrapper.type1{width:130px;}
+.selectricWrapper.type2{width:120px;}
+.selectricWrapper.type3{width:190px;}
+.selectricWrapper.type4{width:220px;}
+.selectricWrapper.type5{width:140px;}
+.selectricWrapper.type6{width:370px;}
+.selectricWrapper.type7{width:150px;}
+.selectricWrapper.type8{width:180px;}
+.selectricWrapper.type9{width:290px;}
+.selectricWrapper.type10{width:160px;}
+.selectricWrapper.type11{width:130px;}
+.selectricWrapper.type12{width:90px}
+.selectricWrapper.type13{width:170px}
+.selectricWrapper.type14{width:470px}
+.selectricWrapper.type15{width:360px}
+.selectricWrapper.type16{width:100px}
+.selectricWrapper.full{width:100%}
+
+
+.selectricResponsive {
+  width: 100%;
+}
+/* {
+  border: 1px solid #d2d2d2;
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+  position: relative;
+  color: #888;
+  font-weight: 400;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 0 10px;
+  vertical-align: top;
+  width: 110px;
+  -webkit-appearance: none;
+  background: #ffffff url(http://img.sdij.com/common/select_bg.png) no-repeat 90% center;
+  font-family: inherit;
+  -moz-appearance: none;
+  appearance: none;
+} */
+.selectric {
+  border: 1px solid #d2d2d2;
+  background: #ffffff;
+  position: relative;
+  box-sizing: border-box;
+
+}
+.selectric .label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 30px 0 0;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height:50px;
+  color: #444;
+  min-height: 18px;
+}
+.selectric .button {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  color: #BBB;
+  text-align: center;
+  font: 0/0 a;
+  /* IE Fix */
+  *font: 20px/30px Lucida Sans Unicode, Arial Unicode MS, Arial;
+}
+.selectric .button:after {
+  content: "";
+  position: absolute;
+  right:15px;
+  top:0;
+  margin: auto;
+  width:10px;
+  height:45px;
+  background: #ffffff url(http://img.sdij.com/common/select_bg.png) no-repeat 90% center;
+}
+
+.selectricHover .selectric {
+  border-color: #CCC;
+}
+.selectricHover .selectric .button {
+  color: #888;
+}
+.selectricHover .selectric .button:after {
+  border-top-color: #888;
+}
+
+.selectricOpen {
+  z-index: 9999;
+}
+.selectricOpen .selectric {
+  border-color: #CCC;
+/*   background: #F0F0F0; */
+  border:1px #ffad00 solid;
+}
+.selectricOpen .selectric .button:after{
+  background:url(http://img.sdij.com/common/select_bg_on.png) no-repeat 90% center;
+}
+.selectricOpen .selectricItems {
+  display: block;
+}
+
+.selectricDisabled {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.selectricHideSelect {
+  position: relative;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+.selectricHideSelect select {
+  position: absolute;
+  left: -100%;
+  display: none;
+}
+
+.selectricInput {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  outline: none !important;
+  border: none !important;
+  *font: 0/0 a !important;
+  background: none !important;
+}
+
+.selectricTempShow {
+  position: absolute !important;
+  visibility: hidden !important;
+  display: block !important;
+}
+
+/* Items box */
+.selectricItems {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  border-top:0;
+  z-index: -1;
+  border:1px solid #ffad00;
+  border-top:0;
+}
+.selectricItems .selectricScroll {
+  height: 100%;
+  overflow: auto;
+}
+.selectricAbove .selectricItems {
+  top: auto;
+  bottom: 100%;
+}
+.selectricItems ul, .selectricItems li {
+  list-style: none;
+  margin: 0;
+  padding:0;
+  font-size: 12px;
+  line-height:20px;
+  min-height: 20px;
+}
+.selectricItems li {
+  display: block;
+  padding: 11px 5px 11px 10px;
+  color: #666;
+  cursor: pointer;
+}
+.selectricItems li:first-child{
+  border-top:0;
+}
+.selectricItems li.selected {
+/*   background: #EFEFEF; */
+  color: #444;
+  font-weight:600;
+  color:#ffad00
+}
+.selectricItems li:hover {
+/*   background: #F0F0F0; */
+  color:#ffad00
+}
+.selectricItems li.disabled {
+  background: #F5F5F5;
+  color: #BBB;
+  border-top-color: #FAFAFA;
+  cursor: default;
+}

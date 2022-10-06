@@ -1,0 +1,756 @@
+ <!--
+/*************************************************************************
+* @ 서비스명    : sidaeInjae Total Web Site
+* @ 파일명     : /html/common_login_registstep2.html
+* @ 페이지설명 : 공통 > 시대인재 직원채용 > 정보입력
+* @ 작성자     : 김은옥
+* @ 작성일     : 2017-03-29
+************************** 수정이력 ****************************************
+* 번호    작업자       변경내용
+*_________________________________________________________________________
+* 김은옥   최초작성
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="1600px"><!-- 2017-09-28 메타태그 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>시대인재 직원채용 > 정보입력</title>
+<link rel="shortcut icon" type="image/x-icon" href="../common/img/sdij_favicon.png"><!-- 170601 파비콘 추가 -->
+<!--셀렉트박스 플러그인 20180919 추가 -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../common/js/jquery.selectric.min.js"></script>
+<!--셀렉트박스 플러그인 20180919 추가 끝-->
+<link rel="stylesheet" href="../common/css/aca.css">
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="../common/css/selectric.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>  <!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<script src="../common/js/selectordie.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    function popupOpen(urltype){
+      var url= "/html/"+urltype+".html";
+      var winWidth = 620;
+      var winHeight = 320;
+      var popupOption= "width="+winWidth+", height="+winHeight;
+      window.open(url,"",popupOption);
+    };
+   $(function() {
+        $('input.datepicker').datepicker({
+        });
+    });
+</script>
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-depth1="common" data-depth2="member_recruit" data-depth3="registstep2">
+<div id="wrap"> <!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+  <!-- // Snb Include Area -->
+  <div class="location">
+    <span>시대인재 &gt;</span>
+    <span>직원채용</span>
+  </div>
+  <div id="content">
+
+    <h2 data-title="type1" class="line m_b20">
+      <span>입시교육의 뉴패러다임, 시대인재와 함께 하세요.</span>
+      직원채용
+    </h2>
+    <div data-layout="type1" class="recruit_form">
+       <form>
+        <fieldset>
+          <div class="big_t member">
+               <span>출판사업부 현장 영업팀 정규 채용</span> 입사지원서 작성
+          </div>
+          <ul class="add_t m_t30">
+            <li class="m_b25">
+               <span data-form="radio" class="m_b10">
+                  <input type="radio" id="radio1" name="apply_type">
+                  <label for="radio1">파일로 지원하기</label>
+               </span>
+               <p class="m_b10">
+                  자유양식으로 작성하신 이력서, 자기소개서를 업로드 하여 빠르게 지원하실 수 있습니다. <br />
+                  이력서, 경력증명서, 자기소개서 등의 제출서류를 하나의 첨부파일로 업로드 하세요.
+                </p>
+                <div class="filebox">
+                   <input class="upload-name" value="" disabled="disabled" name="attFileA" id="attFileA">
+                   <a href="javascript: void(0);" onclick="popupOpen('apply_fileup_pop')">
+                      <label for="ex_filename">파일찾기</label>
+                    </a>
+                </div>
+            </li>
+            <li>
+              <span data-form="radio" class="m_b10">
+                <input type="radio" id="radio2" name="apply_type">
+                <label for="radio2">지원서 작성하기</label>
+              </span>
+              <p>
+                자사 양식에 맞춰  강사 채용 지원서를 작성, 접수하실 수 있습니다. <br />
+                * 표시는 필수 항목이며 작성 중인 지원서는 자동 저장 되지 않으니 작성에 주의하시기 바랍니다. <br />
+                (장시간 지원서 작성 시, 페이지 하단 임시저장 기능을 사용하세요.)
+              </p>
+            </li>
+           </ul>
+
+          <div class="big_t">
+            인적사항
+            <strong>*<em>필수항목</em></strong>
+          </div>
+          <table class="apply_t">
+            <colgroup>
+              <col width="160px" />
+              <col width="" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td class="my_photo">
+                  <div class="img">
+                    <!-- <img src="http://img.sdij.com/common/photo.jpg" alt=""> -->
+                  </div>
+                  <input type="button" data-btn="whitegray" onclick="popupOpen('img_fileup_pop')" value="*사진등록 &gt;">
+                </td>
+                <td>
+                  <table>
+                    <colgroup>
+                      <col width="100px" />
+                      <col width="" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>
+                          <label for="input3" class="field_name">
+                            이름<strong>*<em>필수항목</em></strong>
+                          </label>
+                        </th>
+                        <td>
+                          <span data-form="input">
+                            <input type="text" id="input3">
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <label for="input3" class="field_name">
+                            생년월일<strong>*<em>필수항목</em></strong>
+                          </label>
+                        </th>
+                        <td>
+                          <select title="태어난 해">
+                            <option>년</option>
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                          </select>
+                          <select title="태어난 월" class="m_l10">
+                            <option>월</option>
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                          </select>
+                          <select title="태어난 일" class="m_l10" size="1" >
+                            <option>일</option>
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <span class="field_name">
+                            핸드폰번호<strong>*<em>필수항목</em></strong>
+                          </span>
+                        </th>
+                        <td>
+                            <p>
+                              <select title="휴대폰번호 앞 세자리">
+                                <option selected="selected">선택</option>
+                                <option>010</option>
+                                <option>011</option>
+                                <option>017</option>
+                                <option>018</option>
+                                <option>019</option>
+                              </select>
+                              <em>-</em>
+                              <span  data-form="input" class="size110">
+                                <input type="text" title="휴대폰번호 가운데 네자리">
+                              </span>
+                              <em>-</em>
+                              <span  data-form="input" class="size110">
+                                <input type="text" title="휴대폰번호 뒤 네자리">
+                              </span>
+                            </p>
+                            <span class="field_info">
+                              ※ 전형결과 알림에 사용되오니, 반드시 연결가능한 번호를 입력하세요.
+                            </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <span class="field_name">
+                            주소<strong>*<em>필수항목</em></strong>
+                          </span>
+                        </th>
+                        <td>
+                          <p>
+                            <span  data-form="input" class="size170 m_b10">
+                              <input type="text" readonly="readonly" title="우편번호">
+                            </span>
+                            <button type="button" data-btn="whitegray">우편번호 찾기</button>
+                          </p>
+                          <p>
+                            <span  data-form="input" class="size370 m_b10">
+                              <input type="text" id="input7" readonly="readonly">
+                            </span>
+                            <label for="input7" class="field_info">기본주소</label>
+                          </p>
+                          <p>
+                            <span  data-form="input" class="size370">
+                              <input type="text" id="input8">
+                            </span>
+                            <label for="input8" class="field_info">나머지주소</label>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <span class="field_name">
+                            이메일<strong>*<em>필수항목</em></strong>
+                          </span>
+                        </th>
+                        <td>
+                          <p>
+                              <span data-form="input" class="size100">
+                                <input type="text" title="이메일 계정">
+                              </span>
+                              <em class="f_size14">@</em>
+                              <span data-form="input" class="size100">
+                                <input type="text" title="이메일주소 @ 뒷자리">
+                              </span>
+                              <select title="메일주소" class="type3 m_l10">
+                                <option>직접입력</option>
+                                <option>naver.com</option>
+                                <option>hanmail.net</option>
+                                <option>gmail.com</option>
+                                <option>gmail.com</option>
+                                <option>gmail.com</option>
+                                <option>gmail.com</option>
+                                <option>gmail.com</option>
+                              </select>
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="apply_t">
+                    <colgroup>
+                      <col width="160px" />
+                      <col width="" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>
+                            <span class="field_name">
+                              장애여부<strong>*<em>필수항목</em></strong>
+                            </span>
+                        </th>
+                        <td>
+                            <span class="field_info">
+                              대상자는 관련법령에 의거 우대하고 있습니다.
+                            </span>
+                            <p>
+                              <span data-form="radio" class="type3">
+                                <input type="radio" id="radio5" name="disability" checked="checked">
+                                <label for="radio5">비대상</label>
+                              </span>
+                              <span data-form="radio" class="type3">
+                                <input type="radio" id="radio6" name="disability">
+                                <label for="radio6">대상</label>
+                              </span>
+                              <select title="등급" class="type3 m_l10" disabled="">
+                                <option>등급</option>
+                                <option>1등급</option>
+                                <option>2등급</option>
+                                <option>3등급</option>
+                                <option>4등급</option>
+                                <option>5등급</option>
+                                <option>6등급</option>
+                                <option>7등급</option>
+                              </select>
+                            </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                            <span class="field_name">
+                              보훈여부<strong>*<em>필수항목</em></strong>
+                            </span>
+                        </th>
+                        <td>
+                            <span class="field_info">
+                              대상자는 관련법령에 의거 우대하고 있습니다.
+                            </span>
+                            <p>
+                              <span data-form="radio" class="type3">
+                                <input type="radio" id="radio7" name="Veterans" checked="checked">
+                                <label for="radio7">비대상</label>
+                              </span>
+                              <span data-form="radio" class="type3">
+                                <input type="radio" id="radio8" name="Veterans">
+                                <label for="radio8">대상</label>
+                              </span>
+                              <select title="보훈번호" class="type3 m_l10" disabled="">
+                                <option>보훈번호</option>
+                                <option>1등급</option>
+                                <option>2등급</option>
+                                <option>3등급</option>
+                                <option>4등급</option>
+                                <option>5등급</option>
+                                <option>6등급</option>
+                                <option>7등급</option>
+                              </select>
+                              <select title="관계" class="type3 m_l10" disabled="">
+                                <option>관계</option>
+                                <option>1등급</option>
+                                <option>2등급</option>
+                                <option>3등급</option>
+                                <option>4등급</option>
+                                <option>5등급</option>
+                                <option>6등급</option>
+                                <option>7등급</option>
+                              </select>
+                            </p>
+                        </td>
+                      </tr>
+                       <tr>
+                        <th>
+                            <span class="field_name">
+                              병역사항<strong>*<em>필수항목</em></strong>
+                            </span>
+                        </th>
+                        <td>
+                            <p class="m_b10">
+                              <span data-form="radio" class="type3">
+                                <input type="radio" id="radio9" name="military" checked="checked">
+                                <label for="radio9">비대상</label>
+                              </span>
+                              <span data-form="radio" class="type3">
+                                <input type="radio" id="radio10" name="military">
+                                <label for="radio10">군필</label>
+                              </span>
+                              <span data-form="radio" class="type3">
+                                <input type="radio" id="radio11" name="military">
+                                <label for="radio11">미필</label>
+                              </span>
+                              <span data-form="radio" class="type3">
+                                <input type="radio" id="radio12" name="military">
+                                <label for="radio12">면제</label>
+                              </span>
+                              <span data-form="radio" class="type3">
+                                <input type="radio" id="radio13" name="military">
+                                <label for="radio13">복무중</label>
+                              </span>
+                            </p>
+                            <p>
+                              <span class="field_name m_r10">면제사유</span>
+                              <span  data-form="input" class="size615 m_b10">
+                                <input type="text" title="면제사유" readonly="readonly">
+                              </span>
+                            </p>
+                            <p>
+                              <span class="field_name m_r10">제대구분</span>
+                              <select title="제대구분" class="type3">
+                                <option>선택</option>
+                                <option>만기제대</option>
+                                <option>소집해제</option>
+                                <option>기타</option>
+                              </select>
+                              <span class="field_name m_l10 m_r10">복무기간</span>
+                              <span data-form="date">
+                                <input type="text" class="datepicker">
+                              </span>
+                              ~
+                              <span data-form="date">
+                                <input type="text" class="datepicker">
+                              </span>
+                            </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="big_t">
+            연봉
+            <strong>*<em>필수항목</em></strong>
+          </div>
+           <table class="apply_t">
+            <tbody>
+              <tr>
+                <td>
+                  <p class="m_b20">
+                    <span class="field_name">희망연봉</span>
+                    <span  data-form="input" class="size150 m_l10">
+                      <input type="text" id="input7">
+                    </span>
+                    만원
+                    <span class="field_name m_l40">직전연봉</span>
+                    <span  data-form="input" class="size150 m_l10">
+                      <input type="text" id="input7">
+                    </span>
+                    만원
+                  </p>
+                  <p class="field_info line">
+                    연봉은 희망연봉을 고려하여 회사 내규에 준하여 책정합니다. <br />
+                    직전 회사의 연봉계약서 상의 연봉을 입력합니다. <br />
+                    면접 진행 시 최종직장소득증빙 자료를 요청합니다. 신입의 경우 직전연봉에 0을 입력하세요.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <div class="big_t">
+            학력사항
+            <strong>*<em>필수항목</em></strong>
+          </div>
+          <table class="apply_t">
+            <tbody>
+              <tr>
+                <td>
+                  <select title="최종학력선택-" class="type4">
+                    <option selected="selected">-최종학력선택-</option>
+                    <option>옵션2</option>
+                    <option>옵션3</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table class="center">
+                    <colgroup>
+                      <col width="" / >
+                      <col width="190px" / >
+                      <col width="300px" / >
+                      <col width="" / >
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>학교명</th>
+                        <th>전공</th>
+                        <th>재학기간</th>
+                        <th>이수형태</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-form="input" class="size150">
+                            <input type="text" title="학교명">
+                          </span>
+                          <select title="선택-" class="type5">
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                          </select>
+                        </td>
+                        <td>
+                          <span data-form="input" class="size180">
+                            <input type="text" title="학교명">
+                          </span>
+                        </td>
+                        <td>
+                           <span data-form="date">
+                              <input type="text" class="datepicker">
+                            </span>
+                          ~
+                           <span data-form="date">
+                              <input type="text" class="datepicker">
+                            </span>
+                        </td>
+                        <td>
+                          <select title="선택-">
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-form="input" class="size150">
+                            <input type="text" title="학교명">
+                          </span>
+                          <select title="선택-" class="type5">
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                          </select>
+                        </td>
+                        <td>
+                          <span data-form="input" class="size180">
+                            <input type="text" title="학교명">
+                          </span>
+                        </td>
+                        <td>
+                           <span data-form="date">
+                              <input type="text" class="datepicker">
+                            </span>
+                          ~
+                           <span data-form="date">
+                              <input type="text" class="datepicker">
+                            </span>
+                        </td>
+                        <td>
+                          <select title="선택-">
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-form="input" class="size150">
+                            <input type="text" title="학교명">
+                          </span>
+                          <select title="선택-" class="type5">
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                          </select>
+                        </td>
+                        <td>
+                          <span data-form="input" class="size180">
+                            <input type="text" title="학교명">
+                          </span>
+                        </td>
+                        <td>
+                          <span data-form="date">
+                            <input type="text" class="datepicker">
+                          </span>
+                          ~
+                          <span data-form="date">
+                            <input type="text" class="datepicker">
+                          </span>
+                        </td>
+                        <td>
+                          <select title="선택-">
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="btn" colspan="4">
+                          <span>
+                            * 4년제 다중 학적자는 [추가]를 클릭하시면 현재 입력폼에서 추가 학력사항을 작성하실 수 있습니다. (최대 10개)  
+                          </span>
+                          <input type="button" value="+추가">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="big_t">경력사항</div>
+          <table class="apply_t">
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <span data-form="radio" class="type3">
+                      <input type="radio" id="radio14" name="career" checked="checked">
+                      <label for="radio14">신입</label>
+                    </span>
+                    <span data-form="radio" class="type3">
+                      <input type="radio" id="radio15" name="career">
+                      <label for="radio15">경력</label>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table class="center">
+                    <colgroup>
+                      <col width="220px" / >
+                      <col width="130px" / >
+                      <col width="130px" / >
+                      <col width="" / >
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th colspan="4" class="sum">
+                          총 경력
+                          <div class="total">
+                            (총 <span>75</span>개월)
+                          </div>
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>회사명</th>
+                        <th>근무부서</th>
+                        <th>직급(직책)</th>
+                        <th>근무기간</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-form="input" class="size200">
+                            <input type="text" title="회사명">
+                          </span>
+                        </td>
+                        <td>
+                          <span data-form="input" class="size130">
+                            <input type="text" title="근무부서">
+                          </span>
+                        </td>
+                        <td>
+                           <span data-form="input" class="size130">
+                              <input type="text" title="직급(직책)">
+                            </span>
+                        </td>
+                        <td class="t_center">
+                          <span data-form="date">
+                            <input type="text" class="datepicker">
+                          </span>
+                          ~
+                          <span data-form="date">
+                            <input type="text" class="datepicker">
+                          </span>
+                          <select title="선택-">
+                            <option>선택</option>
+                            <option>재직</option>
+                            <option>휴직</option>
+                            <option>퇴사</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="v_middle">
+                          담당업무
+                        </th>
+                        <td colspan="3">
+                          <span data-form="input" class="full">
+                            <input type="text" title="회사명">
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="btn" colspan="4">
+                          <span>
+                          * [추가]를 클릭하시면 현재 입력폼에서 추가 경력사항을 작성하실 수 있습니다. (최대 10개)  
+                          </span>
+                          <input type="button" value="+추가">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="big_t">
+            자기소개
+            <strong>*<em>필수항목</em></strong>
+          </div>
+          <table class="apply_t">
+            <tbody>
+              <tr>
+                <td>
+                  <textarea data-form="textarea" class="type4">
+* 본인의 가치관 및 성과를 중심으로 자유롭게 작성 해 주십시오.
+(최대 5000자까지 기입가능)
+                </textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="big_t m_b20">
+            개인 정보 수집 및 활용 동의 (필수)
+            <p>
+              <span data-form="radio" class="type1 m_0">
+                <input type="radio" id="agree" name="agree_radio" checked="checked">
+                <label for="agree">동의</label>
+              </span>
+              <span data-form="radio" class="type1">
+                <input type="radio" id="disagree" name="agree_radio">
+                <label for="disagree">동의하지 않음</label>
+              </span>
+            </p>
+          </div>
+          <textarea data-form="textarea" class="type13" readonly="readonly">
+수집목적 : 입사 지원 및 선발전형, 이력관리, 기타 채용 진행사항 안내
+수집항목 : 본인사진, 성명, 생년월일, 핸드폰번호, 최종학력, 전공, 이메일주소, 주소, 경력사항, 자기소개
+보유기간 : 제출 시점부터 3년간 보유
+개인정보 수집 및 이용에 동의하지 않을 권리가 있습니다.다만, 동의를 거부할 경우 입사 지원을 하실 수 없습니다.
+          </textarea>
+          <div class="btn_wrap t_left">
+            <button type="button" value="취소" data-btn="whitegray">취소</button>
+            <button type="button" value="임시저장" data-btn="whitegray">임시저장</button>
+            <button type="button" value="최종제출" data-btn="orange" class="submit">최종제출</button>
+          </div>
+        </fieldset>
+       </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>  <!-- // Wrap E -->
+
+<!-- 20180919 추가 -->
+<script src="../common/js/jquery.min.js"></script>
+<script src="../common/js/jquery.selectric.js"></script>
+<script>
+  $(function(){
+    $('select, .select').selectric();
+
+    $('select').selectric({
+      maxHeight: 200
+    });
+
+    $('.customOptions').selectric({
+      optionsItemBuilder: function(itemData, element, index){
+        return element.val().length ? '<span class="ico ico-' + element.val() +  '"></span>' + itemData.text : itemData.text;
+      }
+    });
+
+    $('select').on('selectric-before-init');
+    $('.selectricWrapper').each(function(){
+      var selectClass = $(this).find('select').attr('class');
+      $(this).addClass(selectClass);
+    });
+
+
+  });
+</script>
+<!-- 20180919 추가 끝-->
+</body>

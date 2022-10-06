@@ -1,0 +1,29 @@
+#wrap{ max-width:100%; }
+/*#wrap, #container{ height:100%; }*/
+
+#header{ height:50px; line-height:50px; text-align:center; border-bottom:1px solid #ededed; font-size:18px; }
+#header > div{ width:100%; }
+#header a{ width:60px; height:100%; display:block; float:right; vertical-align:top; }
+#header a:first-child{ float:left; }
+#header a i{ vertical-align:middle; }
+
+#footer{ padding-bottom:0; }
+
+/* layout */
+#container .layout-container{ width:100%; min-height:100%; font-size:14px; transform:inherit; }
+#container .fixed-container{ padding-bottom:65px; }
+#container .full-container{ transform:inherit; }
+
+/* fontawesome */
+.ico-fa{ font-size:0; }
+.ico-fa i{ font-size:30px; }
+
+.dim-layer .dim-alert{ width:auto; max-width:100%; height:auto; margin:0; padding:20px 20px 0; top:auto; left:20px; right:20px; bottom:20px; border-radius:10px; overflow:hidden; }
+.dim-layer .dim-txt{ height:auto; padding-bottom:20px; font-size:14px; font-weight:normal; text-align:center; }
+.dim-layer .dim-btn{ margin:0 -20px; }
+.dim-layer .dim-btn .btn{ width:100%; border:none; border-top:1px solid #ccc; }
+
+.pop-content{ padding:20px; }
+.dim-tit{ margin-bottom:20px; font-size:22px; font-weight:600; }
+
+.btn, .number-btn .input-text{ border-color:#ddd; }

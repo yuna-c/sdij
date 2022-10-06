@@ -1,0 +1,39 @@
+.input-text-xs{ width:80px; }
+.select-xs{ width:170px; margin-left:10px; }
+.input-text-sm, .select-sm{ width:140px; }
+.table-tit{ margin-bottom:30px; }
+.info-txt{ margin-bottom:10px; }
+
+.form-defult2 table{ text-align:center; }
+.form-defult2 table tr th{ height:56px; line-height:20px; padding:0; background-color:#fafafa; border-bottom:1px solid #ededed; font-weight:bold; color:#000; text-align:center; }
+.form-defult2 table tr td:first-child{ padding-left:0; }
+
+.form-more{ margin-top:40px; }
+.form-more > div{ line-height:24px; margin-left:20px; padding:6px 0; display:inline-block; color:#666; }
+
+.board-table table tr td{ padding:10px 5px; border-bottom:none; }
+.form-radio ul li{ margin-top:-1px; padding:30px; border:1px solid #ccc; position:relative; box-sizing:border-box; }
+.form-radio ul li:first-child{ margin-top:0; }
+.form-radio ul li.selected{ position:relative; border:2px solid #000; z-index:10; }
+.form-radio ul li .radio{ line-height:30px; margin-right:20px; margin-bottom:15px; font-size:18px; font-weight:500; }
+.form-radio ul li .radio input[type="radio"]{ position:relative; top:-2px; }
+.form-radio ul li input[type="file"]{ position:relative; top:-2px; }
+.form-radio ul li .input-text{ width:640px; height:30px; line-height:28px; margin-left:17px; }
+.form-radio ul li .txt{ line-height:24px; display:block; }
+.form-select{ margin-bottom:40px; font-size:0; }
+.form-select .select{ width:265px; margin-left:20px; }
+.form-select .select:first-child{ width:270px; margin-left:0; }
+
+.form-step1 > .fr{ width:180px; padding-top:10px; }
+.form-step1 > .fr .file-preview{ width:100%; height:240px; display:block; position:relative; border:1px solid #ccc; box-sizing:border-box; }
+.form-step1 > .fr .file-preview input[type="file"]{ width:1px; height:1px; margin:-1px; padding:0; position:absolute; border:0; overflow:hidden; clip:rect(0,0,0,0); }
+.form-step1 > .fr .file-preview span.txt{ line-height:18px; position:absolute; top:140px; left:0; right:0; text-align:center; }
+.form-step1 > .fr .file-preview span.txt:after{ content:""; width:30px; height:30px; position:absolute; top:-60px; left:75px; background:url(http://img.sdij.com/sd2019/pc/ico/ico_plus.png) 50% 0 no-repeat; }
+.form-step1 > .fr .file-preview span.img{ position:absolute; top:0; left:0; right:0; bottom:0; overflow:hidden; }
+.form-step1 > .fr .file-preview span.img img{ width:100%; height:100%; }
+
+.form-step2 .form-defult, .form-step3 .form-defult, .form-step4 .form-defult{ width:840px; }
+.form-step5 .textarea{ height:200px; }
+
+.form-step-btn > .fl{ font-size:0; }
+.form-step-btn > .fl .btn:first-child{ margin-right:10px; }

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* step-box */
+.step-box{ line-height:25px; margin-bottom:30px; padding-top:0; padding-bottom:20px; position:relative; border-bottom:1px solid #ededed; }
+.step-box .tit{ font-size:15px; font-weight:bold; letter-spacing:-0.025em; text-align:left; }
+.step-box .step{ position:absolute; top:0; right:0; }
+
+/* form-toggle */
+.form-toggle > [class^='toggle'] input{ width:0; height:0; position:absolute; opacity:0; }
+.form-toggle > [class^='toggle'] .btn{ cursor:pointer; }
+.form-toggle > [class^='toggle'] input:checked + .btn{ background-color:#000; color:#fff; }
+.form-toggle .toggle-radio .btn{ width:calc(50% - 5px); margin-left:5px; }
+.form-toggle .toggle-radio:first-child .btn{ margin-left:0; }
+.form-toggle .toggle-radio .btn-on, .toggle-radio .active{ background-color:#000; border-color:#000; color:#fff !important; }
+.form-toggle .toggle-checkbox .btn{ width:calc(50% - 5px); margin-left:5px; }
+.form-toggle .btn-on, .toggle-btn .active{ background-color:#000; border-color:#000; color:#fff !important; } 
+
+/* form-toggle2 */
+.form-toggle2 .toggle-radio .btn{ width:calc((100% - 30px) / 4); margin-left:5px; }
+.form-toggle2 .toggle-radio:first-child .btn{ margin-left:0; }
+.form-toggle2 .toggle-radio:nth-child(5) .btn{ margin-left:0; }
+.form-toggle2 .toggle-checkbox .btn{ width:calc((100% - 30px) / 4); box-sizing:border-box; }
+.form-toggle2 .toggle-checkbox:first-child .btn{ margin-left:0; margin-bottom:10px; }
+.form-toggle2 .toggle-checkbox:nth-child(5) .btn{ margin-left:0; margin-bottom:10px; } 
+
+/* subject-area */
+.subject-area{ margin-bottom:20px; }
+.subject-area > ul{ display:flex; justify-content:center;  align-items:center; }
+.subject-area > ul > li:nth-child(even){ margin:0 10px; } 
+.subject-area .img{ width:7rem; height:10rem; display:flex; position:relative; background-color:#fafafa; border:1px solid #d3d3d3; justify-content:center; align-items:center; box-sizing:border-box; }
+.subject-area .img:after{ content:'과목을 \A 선택해주세요'; display:flex; position:absolute; top:0; left:0; right:0; bottom:0; font-size:12px; color:#a3a3a3; text-align:center; white-space:pre; justify-content:center; align-items:center; z-index:1; }
+.subject-area .img > img{ min-width:100%; max-height:100%; position:relative; z-index:10; }
+.subject-area .txt{ height:24px; margin-top:10px; font-size:1rem; font-weight:700; text-align:center; }
+
+@media screen and (min-width:1024px){html{ font-size: 16px !important; }}
+
+@media all and (min-width:320px) and (max-width:413px) and (orientation:portrait){
+	html{font-size:12px !important;}
+	.flex-center > ul{ justify-content:center !important; }
+}

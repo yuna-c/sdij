@@ -1,0 +1,367 @@
+﻿@charset "utf-8";
+
+.float-area{ *zoom:1; }
+.float-area:after{ content:''; display:block; clear:both; }
+.float-area .fl{ float:left; }
+.float-area .fr{ float:right; }
+
+.flex-area{ margin:0 -0.333333333rem; display:flex; }
+.flex-area > *{ margin:0 0.333333333rem; }
+
+.relative{ position:relative; }
+.absolute{ position:absolute; }
+.blind{ width:0; height:0; line-height:0; position:absolute; left:-9999px; font-size:0; overflow:hidden; }
+.border-none{ border:none !important; }
+
+.txt-left{ text-align:left !important; }
+.txt-right{ text-align:right !important; }
+.txt-center{ text-align:center !important; }
+
+.mb0{ margin-bottom:0 !important; }
+.mb1{ margin-bottom:1rem !important; }
+.mt1{ margin-top:1rem !important; }
+
+.color-gray{ color:#999 !important; }
+.color-red{ color:#f33737 !important; }
+.color-purple{ color:#8028f4 !important; }
+.color-blue{ color:#003fab !important; }
+.color-orange{ color:#DB850F !important; }/* <!-- S : TA 3차 : 시간표 --> */
+
+/* tit */
+[class*='tit'] > [class*='ico']:first-child{ margin-right:0.166666667rem; }
+.tit-dep1{ margin-bottom:1rem; padding-bottom:0.266666667rem; font-size:0.866666667rem; font-weight:700; text-align:center; }
+.tit-dep1 > span{ border-bottom:2px solid #000; }
+.tit-dep4{ margin-bottom:0.5rem; font-size:0.666666667rem; font-weight:700; }
+
+.tit-area{ position:relative; }
+.tit-area .tit-side{ position:absolute; top:0; right:0; }
+
+/* txt */
+.strong{ font-weight:700; }
+.txt-link, .txt-link:hover{ display:inline-block; text-decoration:underline; }
+
+/* btn */
+.btn{ width:100%; height:1.333333333rem; line-height:1.266666667rem; display:inline-block; background-color:#fff; border:none; border:1px solid #000; border-radius:1rem; font-size:0.533333333rem; text-align:center; vertical-align:top; box-sizing:border-box; }
+.btn:hover{ text-decoration:none; }
+.btn-active{ border-color:#003fab; color:#003fab; }
+.btn-disabled{ border-color:#999; color:#999; }
+.btn-black{ background-color:#000; border-color:#000; color:#fff; }
+.btn-gray{ background-color:#eee; border-color:#eee; }
+.btn-red{ background-color:#f33737; border-color:#f33737; color:#fff; }
+.btn-blue{ background-color:#003fab; border-color:#003fab; color:#fff; }
+.btn-M{ width:auto; padding:0 0.666666667rem; }
+.btn-strong{ font-weight:700; }
+.btn-more{ margin-bottom:0.666666667rem; border:none; color:#999; }
+.btn-more:after{ content:''; width:0.6rem; height:0.333333333rem; margin-left:0.333333333rem; display:inline-block; background:url(http://img.sdij.com/sd2019/app/common/ico_bottom_g.png) 50% 0 no-repeat; background-size:100% 100%; }
+.btn-back{ padding:0.166666667rem; display:inline-block; border:none; font-size:0; }
+.btn-back:after{ content:''; width:0.466666667rem; height:0.866666667rem; display:block; background:url(http://img.sdij.com/sd2019/app/common/ico_left_w.png) 50% 50% no-repeat; background-size:100% 100%; }
+.btn-setup{ padding:0.166666667rem; display:inline-block; border:none; font-size:0; }
+.btn-setup:after{ content:''; width:0.866666667rem; height:0.866666667rem; display:block; background:url(http://img.sdij.com/sd2019/app/common/ico_setup_w.png) 50% 50% no-repeat; background-size:100% 100%; }
+.btn > i{ position:relative; top:-2px; }
+/* ~6/29 css 수정 */
+.btn-del{ width:0.733333333rem; height:0.733333333rem; position:absolute; top:-0.166666667rem; right:0; background:url(http://img.sdij.com/sd2019/app/common/ico_close_r.png) 50% 50% no-repeat; background-size:100% 100%; font-size:0; }
+
+.btn-area{ margin:0 -0.333333333rem 0.666666667rem; display:flex; justify-content:flex-end; }
+.btn-area > *{ margin:0 0.333333333rem; }
+/* ~6/29 css 수정 */
+
+/* input, select, textarea */
+.input-checkbox{ display:inline-block; position:relative; cursor:pointer; }
+.input-checkbox input[type="checkbox"]{ width:0; height:0; position:absolute; opacity:0; }
+.input-checkbox .ico-checkbox{ width:0.466666667rem; height:0.466666667rem; margin-right:2px; background:url(http://img.sdij.com/sd2019/app/common/input_checkbox.png) 0 100% no-repeat; background-size:100% 100%; vertical-align:middle; }
+.input-checkbox input[type="checkbox"]:checked + .ico-checkbox{ background-image:url(http://img.sdij.com/sd2019/app/common/input_checkbox_check.png); }
+
+.input-checkbox-toggle .ico-checkbox{ width:1.6rem; height:0.866666667rem; margin-right:0; position:relative; background:none; background-color:#ddd; border-radius:1rem; }
+.input-checkbox-toggle .ico-checkbox:after{ content:''; width:0.8rem; position:absolute; top:0.033333333rem; left:0.033333333rem; bottom:0.033333333rem; background-color:#fff; border-radius:0.4rem; transform:translateX(0); transition:all .15s ease-in-out; }
+.input-checkbox-toggle input[type="checkbox"]:checked ~ .ico-checkbox{ background:none; background-color:#000; }
+.input-checkbox-toggle input[type="checkbox"]:checked ~ .ico-checkbox:after{ transform:translateX(0.733333333rem); transition:all .15s ease-in-out; }
+
+.input-radio{ display:inline-block; position:relative; cursor:pointer; }
+.input-radio input[type="radio"]{ width:0; height:0; position:absolute; opacity:0; }
+.input-radio .ico-radio{ width:0.466666667rem; height:0.466666667rem; margin-right:2px; background:url(http://img.sdij.com/sd2019/app/common/input_radio.png) 0 100% no-repeat; background-size:100% 100%; vertical-align:middle; }
+.input-radio input[type="radio"]:checked ~ .ico-radio{ background-image:url(http://img.sdij.com/sd2019/app/common/input_radio_check.png); }
+
+.input-text{ width:100%; display:inline-block; }
+.input-text input{ width:100%; height:1.8rem; line-height:1.733333333rem; padding:0 0.666666667rem; display:inline-block; border:none; border-radius:0; border-bottom:1px solid #ddd; font-size:0.466666667rem; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; letter-spacing:-.05em; }
+
+.input-image{ display:inline-block; position:relative; font-size:0; }/* ~6/29 css 수정 */
+.input-image .file-preview{ width:2.666666667rem; height:2.666666667rem; margin-right:0.333333333rem; display:inline-block; position:relative; background-color:#eee; border-radius:0.6rem; overflow:hidden; }
+.input-image .file-preview:after{ content:''; width:0.8rem; height:0.8rem; position:absolute; top:50%; left:50%; background:url(http://img.sdij.com/sd2019/app/common/ico_image_g.png) 50% 0 no-repeat; background-size:100% 100%; transform:translate(-50%, -50%); }
+.input-image .file-preview > img{ max-width:100%; max-height:100%; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); }
+.input-image .file-preview.on:after{ display:none; }
+.input-image input[type="file"]{ width:0; height:0; margin:0; padding:0; display:inline-block; position:absolute; top:0; left:0; opacity:0; z-index:0; }
+.input-image input[type="file"] ~ .btn{ margin-top:0.666666667rem; margin-left:0.333333333rem; }
+
+.select{ width:100%; display:inline-block; position:relative; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; vertical-align:top; }
+.select select{ width:100%; height:1.8rem; line-height:1.733333333rem; padding-left:0.733333333rem; padding-right:1.666666667rem; position:relative; background-color:#fff; border:none; border-bottom:1px solid #ddd; font-size:0.533333333rem; vertical-align:top; z-index:1; }
+.select select:disabled{ background-color:#eee; color:#999; }
+.select:after{ content:''; width:0.6rem; height:0.333333333rem; margin-top:-0.166666667rem; display:block; position:absolute; top:50%; right:0.566666667rem; background:url(http://img.sdij.com/sd2019/app/common/ico_bottom.png) 50% 50% no-repeat; background-size:100% 100%; z-index:2; }
+
+.select-type2 select{ height:1.333333333rem; line-height:1.266666667rem; border:1px solid #003fab; border-radius:1rem; font-weight:700; color:#003fab; }
+.select-type2:after{ right:0.733333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_bottom_b.png); }
+
+.textarea{ width:100%; }
+.textarea textarea{ width:100%; line-height:0.8rem; padding:0.5rem 0.666666667rem; border:none; border:1px solid #ddd; font-size:0.466666667rem; text-align:left; box-shadow:none; vertical-align:middle; resize:none; -webkit-appearance:none; }
+
+.input-text input::placeholder, .textarea textarea::placeholder{ color:#999; opacity:1; }
+.input-text input::-webkit-input-placeholder, .input-text input:-ms-input-placeholder, .input-text input:-mos-input-placeholder, .textarea textarea::-webkit-input-placeholder, .textarea textarea:-ms-input-placeholder, .textarea textarea:-mos-input-placeholder{ color:#999; }
+
+/* ico */
+/* .ico-{ width:rem; height:rem; background-image:url(http://img.sdij.com/sd2019/app/common/); } */
+[class*='ico']{ display:inline-block; position:relative; top:-1px; background-position:50% 0; background-size:100% 100%; background-repeat:no-repeat; text-indent:-9999px; vertical-align:middle; }
+.ico-bell-g{ width:0.733333333rem; height:0.733333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_bell_g.png); }
+.ico-calendar{ width:0.666666667rem; height:0.666666667rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_calendar.png); }
+.ico-cilpboard{ width:0.866666667rem; height:1rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_cilpboard.png); }/* ~ 6/29 아이콘 수정 */
+.ico-calendar-g{ width:0.733333333rem; height:0.733333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_calendar_g.png); }
+.ico-calendaruser-g{ width:0.733333333rem; height:0.866666667rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_calendaruser_g.png); }
+.ico-delete-g{ width:0.533333333rem; height:0.533333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_delete_g.png); }
+.ico-food-g{ width:0.733333333rem; height:0.666666667rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_food_g.png); }
+.ico-graph{ width:0.666666667rem; height:0.666666667rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_graph.png); }
+.ico-help-b{ width:0.733333333rem; height:0.733333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_help_b.png); }
+.ico-home-g{ width:0.733333333rem; height:0.733333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_home_g.png); }
+.ico-note{ width:3.333333333rem; height:3.333333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_note.png); }
+.ico-magic{ width:0.533333333rem; height:0.533333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_magic.png); }
+.ico-medal-g{ width:0.733333333rem; height:0.666666667rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_medal_g.png); }
+.ico-owl{ width:1.066666667rem; height:1.066666667rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_owl.png); }/* ~6/29 부엉이포스트 아이콘 수정 */
+.ico-owl-g{ width:0.733333333rem; height:0.666666667rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_owl_g.png); }
+.ico-plus{ width:0.533333333rem; height:0.533333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_plus.png); }
+.ico-redo{ width:1.066666667rem; height:0.866666667rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_redo.png); font-size:0; }
+.ico-search{ width:0.733333333rem; height:0.733333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_search.png); }
+.ico-smile-w{ width:0.733333333rem; height:0.733333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_smile_w.png); }
+.ico-sad-r{ width:0.733333333rem; height:0.733333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_sad_r.png); }
+.ico-userwrite{ width:1rem; height:1rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_userwrite.png); }
+.ico-userlike{ width:1rem; height:1rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_userlike.png); }
+.ico-usernew{ width:1rem; height:1rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_usernew.png); }
+.ico-users{ width:1rem; height:1rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_users.png); }/* ~6/29 부엉이포스트 아이콘 추가 */
+.ico-write-g{ width:0.733333333rem; height:0.733333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_write_g.png); }
+.ico-file{ width:0.533333333rem; height:0.566666667rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_file.png); }/* ~6/29 아이콘 추가 */
+
+/* ~ 6/29 아이콘 추가 */
+.ico-write{ width:0.733333333rem; height:0.733333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_write.png); }
+.ico-plus{ width:1rem; height:1rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_plus.png); }
+.ico-clock-check-g{ width:0.733333333rem; height:0.733333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_clock_check_g.png); }
+/* ~ 6/29 아이콘 추가 */
+
+/* <!-- S : 선택특강 nav 추가 --> */
+.ico-plus-g{ width:0.733333333rem; height:0.733333333rem; background-image:url(http://img.sdij.com/sd2019/app/common/ico_plus_g.png); }
+/* <!--// E : 선택특강 nav 추가 --> */
+
+/* stickter */
+[class*='sticker']{ height:1.333333333rem; line-height:1.2rem; padding:0 0.8rem; display:inline-block; border:1px solid #ddd; border-radius:1rem; font-weight:700; text-align:center; }
+.sticker-red{ background-color:#f33737; border-color:#f33737; color:#fff; }
+.sticker-white{ background-color:#fff; border-color:#000; color:#000; }
+.sticker-black{ background-color:#000; border-color:#000; color:#fff; }
+.sticker-blue{ background-color:#003fab; border-color:#003fab; color:#fff; }
+.sticker-purple{ background-color:#8028f4; border-color:#8028f4; color:#fff; }
+
+/* layout */
+.content-layout{ padding:0 1.066666667rem; }
+.form-layout{ width:15.33333333rem; margin:0 auto; }
+.grid-layout{ margin:0 -0.666666667rem; display:flex; }
+.grid-layout .grid-col2{ margin:0 0.666666667rem; flex:1; }
+.table-layout{ width:100%; display:table; table-layout:fixed; }
+.table-layout > *{ display:table-cell; vertical-align:middle; }
+
+/* <!-- S : TA 3차 : 시간표 --> */
+.search-date{ line-height:1.333333333rem; margin-bottom:1rem; font-size:0.666666667rem; font-weight:700; text-align:center; }
+.search-date > span{ line-height:1.333333333rem; }
+.search-date .btn-prev{ width:0.4rem; height:0.733333333rem; margin-right:0.666666667rem; display:inline-block; position:relative; top:-2px; background:url(http://img.sdij.com/sd2019/app/common/ico_left.png) 50% 50% no-repeat; background-size:100% 100%; font-size:0; text-indent:-9999em; vertical-align:middle; }
+.search-date .btn-next{ width:0.4rem; height:0.733333333rem; margin-left:0.666666667rem; display:inline-block; position:relative; top:-2px; background:url(http://img.sdij.com/sd2019/app/common/ico_right.png) 50% 50% no-repeat; background-size:100% 100%; font-size:0; text-indent:-9999em; vertical-align:middle; }
+/* <!--// E : TA 3차 : 시간표 --> */
+
+/* mobile */
+@media all and (max-width:539px) and (orientation:portrait){
+  .form-layout{ width:100%; padding:0 1.066666667rem; }
+  .grid-layout{ margin:0; display:block; }
+  .grid-layout .grid-col2{ width:100%; margin:0; padding:0; }
+  .grid-layout .grid-col2:first-child{ margin-bottom:1rem; }
+}
+@media all and (max-width:959px) and (orientation:landscape){
+  .form-layout{ width:100%; padding:0 1.066666667rem; }
+  .grid-layout{ margin:0; display:block; }
+  .grid-layout .grid-col2{ width:100%; margin:0; padding:0; }
+  .grid-layout .grid-col2:first-child{ margin-bottom:1rem; }
+}
+
+.hr{ height:0.333333333rem; margin:1rem auto; background-color:#eee; border:none; }
+ 
+ /* box */
+.box-shadow{ background-color:#fff; border-radius:1rem; -webkit-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.16); -moz-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.16); box-shadow:0px 0px 20px 0px rgba(0,0,0,0.16); }
+
+/* list */
+/* ~6/29 css 수정 */
+.list-search{ max-width:20rem; margin:0 auto; display:flex; position:relative; }
+.list-search > *:not(.btn-search){ margin:0 0.166666667rem; }
+.list-search .select{ width:10rem; }
+.list-search .select select{ height:1.8rem; line-height:1.733333333rem; border:1px solid #ddd; border-radius:1rem; }
+.list-search .input-text input{ padding:0 2.066666667rem 0 1rem; border:1px solid #ddd; border-radius:1rem; }
+.list-search .btn-search{ margin-top:-0.366666667rem; background-color:transparent; border:none; position:absolute; top:50%; right:1rem; font-size:0; }
+/* ~6/29 css 수정 */
+
+.list-tit{  }
+.list-tit > li:after{ content:''; display:block; clear:both; }
+.list-tit > li > .tit{ float:left; }
+.list-tit > li > .txt{ float:right; }
+
+.list-type1 > ul > li{ padding:0.66666666rem; margin-top:1rem; border-radius:1rem; -webkit-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.16); -moz-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.16); box-shadow:0px 0px 20px 0px rgba(0,0,0,0.16); overflow:hidden; }
+.list-type1 > ul > li:first-child{ margin-top:0; }
+
+.list-type1 > ul > li .tit-area{ line-height:1.333333333rem; margin-bottom:0.666666667rem; padding:0 0.333333333rem 0.666666667rem; position:relative; border-bottom:1px solid #ddd; }
+.list-type1 > ul > li .tit-area .date span{ padding-left:0.666666667rem; position:relative; font-size:0.533333333rem; font-weight:700; }
+.list-type1 > ul > li .tit-area .date span:first-child{ padding-left:0; }
+.list-type1 > ul > li .tit-area .date span:after{ content:''; width:1px; display:block; position:absolute; top:4px; left:0.266666667rem; bottom:2px; background-color:#ddd; }
+.list-type1 > ul > li .tit-area .date span:first-child:after{ display:none; }
+.list-type1 > ul > li .tit-area .tit-side > .btn{ width:6rem; margin-left:0.333333333rem; }
+.list-type1 > ul > li .tit-area .tit-side > .btn:first-child{ margin-left:0; }
+
+.list-type1 > ul > li .content-area .more-txt > a{ margin-top:0.333333333rem; padding:0 1.4rem 0.266666667rem 0.333333333rem; position:relative; display:block; overflow:hidden; text-overflow:ellipsis; word-wrap:normal; white-space:nowrap; }
+.list-type1 > ul > li .content-area .more-txt > a .img-box{ margin-top:0.666666667rem; display:none; }
+.list-type1 > ul > li .content-area .more-txt > a .img-box > img{ max-width:100%; }
+.list-type1 > ul > li .content-area .more-txt > a .replay-area{ margin:0.666666667rem -2.066666667rem -0.933333333rem -1rem; padding:0.666666667rem 2.066666667rem 0.933333333rem 1rem; display:none; background-color:#fafafa; }
+.list-type1 > ul > li .content-area .more-txt > a.on{ overflow:visible; word-break:break-all; white-space:initial; }
+.list-type1 > ul > li .content-area .more-txt > a:after{ content:''; width:0.733333333rem; height:0.4rem; position:absolute; top:0.233333333rem; right:0; display:inline-block; background:url(http://img.sdij.com/sd2019/app/common/ico_bottom.png) 50% 0 no-repeat; background-size:100% 100%; font-size:0; text-indent:-9999em; transition:all .2s ease-out; }
+.list-type1 > ul > li .content-area .more-txt > a.on:after{ transform:rotate(180deg); }
+.list-type1 > ul > li .content-area .more-txt > a.on .img-box{ display:block; }
+.list-type1 > ul > li .content-area .more-txt > a.on .replay-area{ display:block; }
+
+/* ~6/29 첨부파일 추가 */
+.list-type1 > ul > li .file-area{ margin-left:-0.333333333rem; padding:0 0.333333333rem; }
+.list-type1 > ul > li .file-area a{ margin:0.1rem 0 0.1rem  0.333333333rem; font-size:0.466666667rem; }
+.list-type1 > ul > li .file-area a .ico-file{ margin-right:0.166666667rem; }
+/* ~6/29 첨부파일 추가 */
+
+.list-number{ counter-reset:section; }
+.list-number > li{ padding-left:0.666666667rem; line-height:0.8rem; position:relative; }
+.list-number > li:before{ counter-increment:section; content:counter(section); width:0.533333333rem; height:0.533333333rem; line-height:0.466666667rem; padding-right:1px; display:block; position:absolute; top:0.166666667rem; left:0; border:1px solid #000; border-radius:0.5rem; font-size:0.333333333rem; text-align:center; box-sizing:border-box; }
+
+.list-dash > li, p.list-dash{ line-height:inherit; padding-left:8px; position:relative; word-break:break-all; word-break:keep-all; }
+.list-dash > li:after, p.list-dash:after{ content:"-"; position:absolute; top:-1px; left:0; }
+
+.list-dotted > li, p.list-dotted{ line-height:inherit; margin:0.166666667rem 0; padding-left:0.333333333rem; position:relative; word-break:break-all; word-break:keep-all; }
+.list-dotted > li:after, p.list-dotted:after{ content:""; width:0.166666667rem; height:0.166666667rem; background-color:#000; border-radius:50%; position:absolute; top:0.333333333rem; left:0; overflow:hidden; }
+
+.list-data > li{ padding:0.666666667rem 1.066666667rem; position:relative; border-bottom:1px solid #ddd; font-size:0.6rem; }
+.list-data > li > .link{ display:block; position:relative; }
+.list-data > li > .link:after{ content:''; width:0.4rem; height:0.733333333rem; margin-top:-0.366666667rem; position:absolute; top:50%; right:0; background:url(http://img.sdij.com/sd2019/app/common/ico_right.png) 50% 50% no-repeat; background-size:100% 100%; }
+.list-data > li > .input-checkbox{ margin-top:-0.433333333rem; position:absolute; top:50%; right:1.066666667rem; }
+
+.list-no-data{ width:100%; height:auto; padding:4rem 0 5rem; background-color:#fff; font-size:1rem; font-weight:700; color:#ddd; text-align:center; z-index:10; word-break:keep-all; }
+.list-no-data > .ico-note{ margin:0 auto 1.666666667rem; display:block; }
+
+/* tab */
+.tab-dep1{ margin-bottom:1rem; text-align:center; }
+.tab-dep1 > a{ margin:0 0.666666667rem; padding-bottom:0.266666667rem; display:inline-block; font-size:0.866666667rem; font-weight:700; color:#999; }
+.tab-dep1 > a > span{ border-bottom:2px solid #ddd; }
+.tab-dep1 > a.selected{ color:#000; }
+.tab-dep1 > a.selected > span{ border-color:#000; }
+
+/* <!-- S : TA 3차 : 시간표 > 컨텐츠 일정표 --> */
+.tab-dep2{ font-size:0; display:flex; justify-content:center; align-items:center; }
+.tab-dep2 > li{ display:inline-flex; justify-content:center; align-items:center; }
+.tab-dep2 > li:before{ content:''; width:1px; height:0.6rem; display:inline-block; background-color:#ddd; vertical-align:middle; }
+.tab-dep2 > li:first-child:before{ display:none; }
+.tab-dep2 > li a{ margin:0 0.666666667rem; padding:0 0.333333333rem; font-size:0.666666667rem; font-weight:700; color:#999; }
+.tab-dep2 > li.selected a{ color:#000; }
+/* <!--// E : TA 3차 : 시간표 > 컨텐츠 일정표 --> */
+
+.tab-content{ display:none; }
+.tab-on{ display:block; }
+
+/* table */
+.table-type1{ padding:1rem 0.666666667rem; background-color:#fff; border-radius:1rem; -webkit-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.16); -moz-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.16); box-shadow:0px 0px 20px 0px rgba(0,0,0,0.16); }
+.table-type1 table{ width:100%; font-size:13px; table-layout:fixed; }
+.table-type1 table tr th, .table-type1 table tr td{ min-height:1.8rem; padding:0.666666667rem 0; border-top:1px solid #ddd; border-left:1px solid #ddd; font-size:0.533333333rem; text-align:center; vertical-align:middle; }
+.table-type1 table tr th{ font-weight:400; }
+.table-type1 table tr:first-child th, .table-type1 table tr:first-child td{ border-top:none; }
+.table-type1 table tr th:first-child{ border-left:none; }
+.table-type1 table thead tr th{ padding:0 0.266666667rem 0.666666667rem; border:none; }
+.table-type1 table thead tr th > span{ line-height:1.6rem; margin:0 auto; display:block; border:1px solid #ddd; border-radius:1rem; font-weight:400; }
+.table-type1 .bg-gray{ background-color:#fafafa; color:#999; }
+
+.table-type2{ overflow:hidden; }
+.table-type2 table{ width:calc( 100% + 1px ); margin-left:-1px; border-top:1px solid #ddd; table-layout:fixed; }
+.table-type2 table tr th, .table-type2 table tr td{ padding:0.666666667rem 0.333333333rem; border-left:1px solid #ddd; border-bottom:1px solid #ddd; word-break:keep-all; vertical-align:middle; }
+.table-type2 table tr th{ background-color:#fafafa; }
+.table-type2 table tr td{ padding-left:0.666666667rem; }
+.table-type2 table tr td.txt-center{ padding-left:0.333333333rem; }
+
+/* form */
+.form-radio .input-radio{ margin-left:1.333333333rem; }
+.form-radio .input-radio:first-child{ margin-left:0; }
+
+.form-checkbox .input-checkbox{ margin-left:1.333333333rem; }
+.form-checkbox .input-checkbox:first-child{ margin-left:0; }
+
+.form-type1 table{ width:100%; font-size:0.466666667rem; table-layout:fixed; }
+.form-type1 table tr th, .form-type1 table tr td{ height:1.733333333rem; border-bottom:1px solid #ddd; vertical-align:middle; }
+.form-type1 table tr td .input-text input, .form-type1 table tr td .textarea textarea{ border:none; }
+.form-type1 .form-radio .input-radio{ margin-left:0.666666667rem; }
+
+.form-type2 table{ width:100%; table-layout:fixed; }
+.form-type2 table tr th{ line-height:1.8rem; padding:0.666666667rem 0 0.666666667rem 1.066666667rem; border-top:10px solid #eee; font-size:0.6rem; text-align:left; vertical-align:top; }
+.form-type2 table tr td{ padding:0.666666667rem 0; border-top:10px solid #eee; }
+.form-type2 table tr td:first-child{ padding-left:1.066666667rem; }
+.form-type2 table tr td .input-text input, .form-type2 table tr td .textarea textarea{ border:none; font-size:0.533333333rem; }
+
+.form-type2 table thead tr .box-area{ padding:0 1.066666667rem; border-top:none; }
+.form-type2 table thead tr .box-area .tit{ padding:0 1rem; position:relative; border-radius:1rem; -webkit-box-shadow:0px 0px 10px 0px rgba(0,0,0,0.16); -moz-box-shadow:0px 0px 10px 0px rgba(0,0,0,0.16); box-shadow:0px 0px 10px 0px rgba(0,0,0,0.16); }
+.form-type2 table thead tr .box-area .tit > span{ padding-left:0.866666667rem; position:relative; }
+.form-type2 table thead tr .box-area .tit > span:first-child{ padding-left:0; }
+.form-type2 table thead tr .box-area .tit > span:after{ content:''; width:1px; display:block; position:absolute; top:4px; left:0.366666667rem; bottom:3px; background-color:#ddd; }
+.form-type2 table thead tr .box-area .tit > span:first-child:after{ display:none; }
+.form-type2 table thead tr .box-area .tit .form-radio{ position:absolute; top:0; right:1rem; bottom:0; }
+.form-type2 table thead tr .box-area .tit .form-radio .input-radio{ margin-left:0.666666667rem; font-weight:400; }
+
+.form-small > ul > li{ padding:0.166666667rem 0; }
+.form-small .form-radio{ margin-bottom:0.333333333rem; padding:0 0.5rem; }
+.form-small .input-text{ position:relative; }
+.form-small .input-text .label{ line-height:1.733333333rem; padding-left:0.666666667rem; position:absolute; top:0; left:0; bottom:0; font-size:0.6rem; color:#999; }
+.form-small [class*='type']{ width:100%; display:table; table-layout:fixed; }
+.form-small [class*='type'] > *{ padding:0 0.166666667rem; display:table-cell; }
+.form-small [class*='type'] > *:first-child{ padding-left:0; }
+.form-small [class*='type'] > *:last-child{ padding-right:0; }
+.form-small .type-col2 > .input-text{ width:75%; }
+.form-small .type-col2 > span{ width:25%; }
+.form-small .type-col4 > *{ width:25%; }
+.form-small .select, .form-small .btn{ margin-top:auto; font-size:0.466666667rem; }
+.form-small .form-btn{ margin:1.066666667rem -0.333333333rem 0; display:flex; }
+.form-small .form-btn > *{ margin:0 0.333333333rem; }
+
+/* info */
+.info-type1{ text-align:center; }
+.info-type1 > *{ margin-top:0.666666667rem; }
+.info-type1 > *:first-child{ margin-top:0; }
+.info-type1 .tit{ font-size:1rem; font-weight:700; }
+
+/* Tablets */
+@media all and (min-width:600px) and (orientation:portrait){
+  .form-type2 table tr th, .form-type2 table tr td:first-child{ padding-left:2.066666667rem; }
+  .form-type2 table tr td{ padding:0.666666667rem; }
+}
+@media all and (min-width:1024px) and (orientation:landscape){
+  .form-type2 table tr th, .form-type2 table tr td:first-child{ padding-left:2.066666667rem; }
+  .form-type2 table tr th{ padding-left:2.066666667rem; }
+  .form-type2 table tr td{ padding:0.666666667rem; }
+}
+/* mobile */
+@media all and (max-width:539px) and (orientation:portrait){
+  .form-type2 table thead tr .box-area .tit{ padding-bottom:0.5rem; }
+  .form-type2 table thead tr .box-area .tit .form-radio{ line-height:0.666666667rem; position:relative; right:0; text-align:right; }
+  .form-type2 table thead tr .box-area .tit .form-radio .input-radio:first-child{ margin-left:0; }
+
+  .list-no-data{ padding:2rem 0 3rem; }
+
+  .list-type1 > ul > li .tit-area div.tit-side{ margin-top:0.333333333rem; position:relative; text-align:right; }
+
+}
+@media all and (max-width:959px) and (orientation:landscape){
+  .form-type2 table thead tr .box-area .tit{ padding-bottom:0.5rem; }
+  .form-type2 table thead tr .box-area .tit .form-radio{ line-height:0.666666667rem; position:relative; right:0; text-align:right; }
+  .form-type2 table thead tr .box-area .tit .form-radio .input-radio:first-child{ margin-left:0; }
+
+  .list-no-data{ padding:2rem 0 3rem; }
+
+  .list-type1 > ul > li .tit-area div.tit-side{ margin-top:0.333333333rem; position:relative; text-align:right; }
+}
+
+

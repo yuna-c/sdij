@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+html, body{ height:100%; background-color:#fff; overflow:hidden; }
+
+/* wrap */
+#wrap{ height:100%; margin:0 auto; overflow:auto; }
+#wrap > *{ font-size:0.533333333rem; font-weight:400; letter-spacing:-.05em; }
+
+/* header */
+#header{ position:relative; background-color:#000; }
+#header .content-layout{ position:relative; }
+#header .btn-back{ margin-top:-0.233333333rem; position:absolute; top:50%; left:1.2rem; }
+#header .tit-dep1{ line-height:2.666666667rem; color:#fff; text-align:center; }
+#header .tit-dep1 img{ height:0.866666667rem; vertical-align:baseline; }
+#header .tit-player{ height:2.666666667rem; padding:0 1rem; text-align:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+#header .tit-side{ display:flex; align-items:center; }
+#header .tit-side .btn-black{ margin:0 0.333333333rem; border-color:#fff; font-size:0.466666667rem; }
+#header .tit-side .link{ margin:0 0.166666667rem; display:inline-block; font-size:0.466666667rem; color:#eee; }
+#header .btn-menu{ width:0.866666667rem; height:0.866666667rem; display:block; position:relative; background:url(//img.sdij.com/sd2019/app/common/ico_menu_w.png) 50% 0 no-repeat; background-size:100% 100%; font-size:0; z-index:999; }
+
+/* gnb */
+#gnb{ position:relative; border-bottom:1px solid #ebe7e7; }
+#gnb .gnb-menu{ display:flex; justify-content:center; align-items:center; }
+#gnb .gnb-menu > li{ margin:0 0.333333333rem; position:relative; }
+#gnb .gnb-menu > li > a:not(.btn){ line-height:1.666666667rem; padding:0 0.333333333rem; display:block; position:relative; font-size:0.6rem; font-weight:700; color:#999; }
+#gnb .gnb-menu > li.selected > a{ color:#000; }
+#gnb .gnb-menu > li.selected > a:after{ content:''; height:2px; position:absolute; left:0; right:0; bottom:-1px; background-color:#000; }
+#gnb .gnb-menu > li:hover > a{ color:#000; }
+#gnb .gnb-menu > li .gnb-2depth{ width:6rem; padding:0.666666667rem 0; display:none; position:absolute; top:calc( 1.666666667rem + 2px ); left:0; background-color:#fff; box-shadow:0 0 20px 0 rgba(0 ,0, 0, .16); z-index:999; }
+#gnb .gnb-menu > li .gnb-2depth:after{ content:''; width:5rem; height:0.666666667rem; display:block; position:absolute; top:-0.5rem; left:0; z-index:99; }
+#gnb .gnb-menu > li:hover .gnb-2depth{ display:block; animation:gnbAni .3s ease-in-out; }
+#gnb .gnb-menu > li .gnb-2depth > a{ line-height:0.8rem; margin:0.166666667rem 0; padding:0 1.333333333rem 0 0.666666667rem; display:block; font-size:0.466666667rem; }
+#gnb .gnb-menu > li .gnb-2depth > a:hover{ text-decoration:underline; }
+
+#wrap.gnb-on #header .btn-menu{ background-image:url(//img.sdij.com/sd2019/app/common/ico_close_w.png); }
+#wrap.gnb-on{ position:relative; }
+
+@keyframes gnbAni{
+    from{ opacity:0; top:0; }
+    to{ opacity:1; top:calc( 1.666666667rem + 2px ); }
+}
+
+/* nav */
+#nav{ position:fixed; left:0; right:0; bottom:0; background-color:#fff; border-top:1px solid #ddd; z-index:9999; }
+#nav .nav-menu{ display:flex; }
+#nav .nav-menu > li{ justify-content:center; align-items:center; flex:1; }
+#nav .nav-menu > li > a{ padding:0.666666667rem 0; display:flex; font-size:0.533333333rem; color:#999; justify-content:center; align-items:center; flex-direction:column; letter-spacing:-.05em; }
+#nav .nav-menu > li.selected > a{ color:#000; }
+#nav .nav-menu > li > a [class^='ico']{ margin-bottom:2px; }
+
+.ico-class{ width:1.333333333rem; height:1.333333333rem; background-image:url(//img.sdij.com/sd2019/app/common/ico_class_g.png); }
+.ico-delv{ width:1.333333333rem; height:1.333333333rem; background-image:url(//img.sdij.com/sd2019/app/common/ico_delv_g.png); }
+.ico-lecture{ width:1.333333333rem; height:1.333333333rem; background-image:url(//img.sdij.com/sd2019/app/common/ico_lecture_g.png); }
+.ico-live{ width:1.333333333rem; height:1.333333333rem; background-image:url(//img.sdij.com/sd2019/app/common/ico_live_g.png); }
+.ico-qna{ width:1.333333333rem; height:1.333333333rem; background-image:url(//img.sdij.com/sd2019/app/common/ico_qna_g.png); }
+
+#nav .nav-menu > li.selected .ico-class{ background-image:url(//img.sdij.com/sd2019/app/common/ico_class.png); }
+#nav .nav-menu > li.selected .ico-delv{ background-image:url(//img.sdij.com/sd2019/app/common/ico_delv.png); }
+#nav .nav-menu > li.selected .ico-lecture{ background-image:url(//img.sdij.com/sd2019/app/common/ico_lecture.png); }
+#nav .nav-menu > li.selected .ico-live{ background-image:url(//img.sdij.com/sd2019/app/common/ico_live.png); }
+#nav .nav-menu > li.selected .ico-qna{ background-image:url(//img.sdij.com/sd2019/app/common/ico_qna.png); }
+
+/* container */
+#container{ max-width:1366px; min-height:calc( 100% - 4.366666667rem ); margin:0 auto; padding:0.666666667rem 0 2.666666667rem; background-color:#fff; }
+#container.flex-container{ width:100%; height:100%; margin:0 auto; padding:0; display:-ms-flexbox; display:-webkit-flex; display:flex; -webkit-box-align:center; -ms-flex-align:center; align-items:center; -webkit-box-pack:center; -ms-flex-pack:center; justify-content:center; }
+#container.player-container{ padding-top:0; }
+#container.index-container{ padding-bottom:4.333333333rem; }
+
+.login-container{ flex-direction:column; }
+.login-container .container-logo{ margin-bottom:1.666666667rem; text-align:center; }
+.login-container .container-logo .tit{ line-height:1.666666667rem; font-size:1.133333333rem; font-weight:700; }
+.login-container .container-logo .tit > small{ line-height:1rem; margin-top:0.357142857rem; display:block; font-size:0.642857143rem; font-weight:400; }
+.login-container .container-logo .img{ margin-top:1rem; }
+.login-container .container-logo .img > img{ width:100%; height:auto; }
+.login-container .container-login li > .input-text{ display:block; }
+.login-container .container-login li[class*='type'] > .input-text{ display:table-cell; }
+
+/* layout */
+.content-layout{ max-width:1366px; margin:0 auto; padding:0 1.066666667rem; }
+.form-layout{ width:15.33333333rem; }

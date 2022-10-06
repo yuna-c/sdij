@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+html, body, #wrap{ height:100%; background-color:#fff; counter-reset:section; }
+#wrap{ width:100%; max-width:640px; height:auto; min-height:100%; margin:0 auto; overflow:hidden; }
+
+/* header */
+#header{ width:100%; font-size:12px; }
+#header .gnb-area{ height:55px; line-height:53px; margin:0 auto; padding:0 20px; position:relative; background-color:#fff; z-index:1; }
+#header .gnb-area .btn-gnb{ padding:0 10px; position:absolute; top:0; left:10px; background:none; font-size:0; }
+#header .gnb-area h1{ margin-left:30px; font-weight:bold;}
+#header .gnb-area .gnb-select{padding-right:15px;background:url(//img.sdij.com/sd2019/mobile/ico/ico_gnb_select.png) 28px 50% no-repeat; font-weight:bold;border:none;vertical-align:text-top;height:20px;line-height:17px;font-size:12px;
+display:inline-block;vertical-align:middle;margin-top:-3px;height:18px;}
+#header .gnb-area .gnb-util > a{ margin-left:5px; display:inline-block; }
+
+/* container */
+#container{ position:relative; }
+#container .nav-area{ width:100%; min-height:calc(100% - 21px); position:absolute; top:0; left:0; background-color:#fff; z-index:99; transform:translate(-110%, 0); transition:all 0.3s ease-in; }
+#container.nav-on .nav-area{ position:relative; top:0; left:0; transform:translate(0, 0); transition:all 0.3s ease-in; z-index:9999; }
+#container .nav-area .nav{ margin-bottom:40px; padding-top:5px; }
+#container .nav-area .nav ul li{ line-height:32px; font-size:20px; }
+#container .nav-area .nav ul li a{ display:block; color:#626262; }
+#container .nav-area .news-letter{ margin-bottom:40px; }
+#container .nav-area .family-site{ margin-bottom:10px; }
+#container .nav-area .family-site ul li{ line-height:26px; font-size:12px; }
+#container .nav-area .family-site ul li a{ display:block; font-weight:bold; }
+#container .nav-area .copyright ul li{ line-height:22px; font-size:12px; color:#626262; }
+#container .nav-area .copyright ul li a{ color:#626262; }
+#container .layout-container{ transform:translate(0, 0); transition:all 0.3s ease-in; }
+#container .layout-container.no-transform{transform: initial;}
+#container.nav-on .layout-container{ position:absolute; top:0; left:0; transform:translate(110%, 0); z-index:1; }
+#container.nav-on .page-btn{ display:none; }
+
+#wrap > .btn-top{ position:absolute; right:10px !important; z-index:999; }
+.main-layout-container .tit-layout > .txt-box p:first-child{ padding-right:80px; word-break:keep-all; }

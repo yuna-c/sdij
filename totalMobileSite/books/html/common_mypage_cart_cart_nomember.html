@@ -1,0 +1,167 @@
+<!-- 
+/*************************************************************************
+* @ 서비스명		: sidaeInjae Total Mobile Site
+* @ 파일명 		: /html/common_mypage_cart_cart.html
+* @ 페이지설명	: 모바일 > 공통 > 마이페이지 > 장바구니 > 장바구니  			
+* @ 작성자 		: 김은옥
+* @ 작성일 		: 2017-06-22
+************************** 수정이력 ****************************************
+* 번호 		작업자 			변경내용 
+*_________________________________________________________________________
+* 김은옥 	최초작성 
+*************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>마이페이지 > 장바구니 > 장바구니 </title>
+<link rel="stylesheet" href="../common/css/common.css">
+<script src="../common/js/common_ui.js"></script>
+<script src="../common/js/common_dev.js"></script>	<!-- // 개발적용 시 반드시 삭제 // 공통 : common_dev.js, 온 : on_dev.js, 학원 : aca_dev.js, 서점 : book_dev.js -->
+<!-- // 개별 작업자용 Style S -->
+<style type="text/css">
+
+</style>
+<!-- // 개별 작업자용 Style E -->
+</head>
+<body data-device="mobile" data-depth1="common" data-depth2="mypage" data-depth3="cart" data-depth4="cart" data-depth5="nomember">
+<div id="wrap">	<!-- // Wrap S -->
+<!-- // Header Include Area -->
+
+
+<div id="content_wrap">
+	<!-- // Snb Include Area -->
+	<div id="content">
+
+		<h2 data-title="type1" class="m_0">장바구니</h2>
+		<div data-layout="type1">
+			<div data-step="type2">
+				<div class="on"><em>1</em>장바구니</div>
+				<div><em>2</em>주문/결제</div>
+				<div><em>3</em>결제완료</div>
+			</div>
+
+			<!-- <h3 data-title="type2" class="m_b40"><span class="f_color5">김시대님</span>의 장바구니입니다.</h3> --><!-- 2017-10-18 마크업 삭제 -->
+			<p data-box="type5" class="small">
+				<span data-form="checkbox" class="type4">
+					<input type="checkbox" id="test1">
+					<label for="test1">상품 전체선택</label>
+				</span>
+				<button type="button" data-btn="whitegray" class="small f_right">선택삭제</button>
+			</p>
+			<div data-box="full" class="m_b60">
+				<ul data-list="type4">
+					<li class="empty">장바구니에 담긴 상품이 없습니다.</li>
+					<li>
+						<span data-form="checkbox" class="type5">
+							<input type="checkbox" id="test2">
+							<label for="test2"><span class="hidden">선택</span></label>
+						</span>
+						<span class="cate on">시대인재 ON</span>
+						<p class="title">[서바이벌] <strong><a data-btn="link">2018 수능대비 수학 서바이벌</a></strong></p>
+						<p class="price">판매가 : 360,000원</p>
+						<p class="summary">
+							<span class="amount">
+								<button type="button" class="up"><span class="hidden">증가</span></button>
+								<input type="number" value="1" disabled="disabled">
+								<button type="button" class="down"><span class="hidden">감소</span></button>
+							</span>
+							<span class="total">360,000 원</span>
+						</p>
+					</li>
+					<li>
+						<span data-form="checkbox" class="type5">
+							<input type="checkbox" id="test3">
+							<label for="test3"><span class="hidden">선택</span></label>
+						</span>
+						<span class="cate">시대인재</span>
+						<p class="title">[서바이벌] <strong><a data-btn="link">2018 수능대비 수학 서바이벌</a></strong></p>
+						<p class="price">판매가 : 360,000원</p>
+						<p class="summary">
+							<span class="amount">
+								<button type="button" class="up"><span class="hidden">증가</span></button>
+								<input type="number" value="1" disabled="disabled">
+								<button type="button" class="down"><span class="hidden">감소</span></button>
+							</span>
+							<span class="total">360,000 원</span>
+						</p>
+					</li>
+					<li>
+						<span data-form="checkbox" class="type5">
+							<input type="checkbox" id="test4">
+							<label for="test4"><span class="hidden">선택</span></label>
+						</span>
+						<span class="cate books">시대인재 Books</span>
+						<p class="title">[서바이벌] <strong><a data-btn="link">2018 수능대비 수학 서바이벌</a></strong></p>
+						<p class="price">판매가 : 360,000원</p>
+						<p class="summary">
+							<span class="amount">
+								<button type="button" class="up"><span class="hidden">증가</span></button>
+								<input type="number" min="1" max="99" value="1">
+								<button type="button" class="down"><span class="hidden">감소</span></button>
+							</span>
+							<span class="total">360,000 원</span>
+						</p>
+					</li>
+					<li>
+						<span data-form="checkbox" class="type5">
+							<input type="checkbox" id="test2">
+							<label for="test2"><span class="hidden">선택</span></label>
+						</span>
+						<span class="cate on">시대인재 ON</span>
+						<p class="title">[서바이벌] <strong><a data-btn="link">2018 수능대비 수학 서바이벌</a></strong></p>
+						<p class="price">판매가 : 360,000원</p>
+						<p class="summary">
+							<span class="amount">
+								<button type="button" class="up"><span class="hidden">증가</span></button>
+								<input type="number" disabled="disabled" value="1">
+								<button type="button" class="down"><span class="hidden">감소</span></button>
+							</span>
+							<span class="total">360,000 원</span>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div data-box="type5" class="cart">
+				<dl>
+					<dt>총 상품금액</dt>
+					<dd>784,000원</dd>
+					<dt>배송비</dt>
+					<dd>(+) 3,000원</dd>
+					<dt class="total">총 결제예정금액</dt>
+					<dd class="total"><em>784,300</em>원</dd>
+				</dl>
+			</div>
+			<!-- 2017-10-18 마크업 수정 S -->
+			<div class="btn_wrap m_b60">
+				<button type="button" data-btn="black" class="m_b20">비회원 주문/결제</button>
+				<button type="button" data-btn="navy" class="m_b20">회원 주문/결제</button>
+				<button type="button" data-btn="whitegray">쇼핑 계속하기</button>
+			</div>
+			<!-- 2017-10-18 마크업 수정 E -->
+			<div data-box="type6">
+				<ol data-list="type2" class="m_b55">
+					<li><span>1.</span><p>장바구니에 담겨진 상품/강좌/교재/도서는 30일 동안 보관됩니다. (단, 판매종료 상품은 별도 고지없이 삭제)</p></li>
+					<li><span>2.</span><p>교재 배송비는 주문 1건당 3,000원입니다. </p></li>
+					<li><span>3.</span><p>변심에 의한 반송 시, 환불금액에서 왕복 배송비가 제외됩니다.</p></li>
+					<li><span>4.</span><p>교재가 포함된 상품 또는 강좌의 결제를 취소하시면 해당 교재도 함께 취소됩니다.</p></li>
+					<li><span>5.</span><p>수강 중인 강좌와 교재는 수강 중 재구매 할 수 없습니다.</p></li>
+				</ol>
+				<p class="link_box">
+					<a href="" data-btn="link" class="type1">시대인재 상품별 환불규정 ></a>
+					<a href="" data-btn="link" class="type1">교재 배송 및 구매 안내 ></a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- // Footer Include Area -->
+</div>	<!-- // Wrap E -->
+</body>

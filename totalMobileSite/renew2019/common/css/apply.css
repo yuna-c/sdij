@@ -1,0 +1,519 @@
+/*응시원서접수*/
+.table-wrap table{
+  width:100%;
+  margin:0 0 25px 0;
+}
+.table-wrap table th{
+  text-align: left;
+  line-height: 120%;
+  padding:3% 0 0 0;
+  min-width:68px;
+  vertical-align:top;
+  color:#000000;
+}
+.table-wrap table td{
+  line-height: 120%;
+  padding:3% 0 0 0;
+  color:#000000;
+}
+.table-wrap table tr:first-child th,
+.table-wrap table tr:first-child td{
+  padding:0;
+}
+.btn-list{
+  text-align: center;
+  padding:0 0 25px 0;
+  border-bottom:1px #626262 solid;
+  margin:0 0 50px 0;
+}
+.btn-list a{
+  border:1px #626262 solid;
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  font-size:15px;
+  font-weight:600;
+  margin:15px 0 0 0;
+  color:#626262;
+}
+.btn-list a:first-child{
+  margin:0;
+}
+.squared_list > li{
+  margin:50px 0 0 0;
+}
+.squared_list > li:first-child{
+  margin:0;
+}
+.squared_list > li .th{
+  display: block;
+  font-size:15px;
+  font-weight:600;
+  margin:0 0 7px 0;
+}
+.squared_list > li .detail{
+  border:1px #626262 solid;
+  padding:15px;
+}
+.squared_list > li .detail .mid-th{
+  font-weight: 600;
+  font-size:16px;
+  margin:0 0 10px 0
+}
+.squared_list > li .detail .mid-th span{
+  display: inline-block;
+  font-size:12px;
+}
+.squared_list > li .detail span{
+  display: block;
+}
+.squared_list > li .detail > ul > li{
+  margin:35px 0 0 0;
+}
+.squared_list > li .detail > ul > li:first-child{
+  margin:0;
+}
+.squared_list > li .detail ul li span{
+  display: block;
+  font-weight: 600;
+  padding:0 0 10px 0;
+}
+.dot_txt{
+  padding:0 0 0 15px;
+}
+.dot_txt li{
+  list-style-type: disc;
+  list-style-position: outside;
+  margin:8px 0 0 0;
+  font-size:13px;
+  line-height: 130%;
+}
+.dot_txt li:first-child{
+  margin:0;
+}
+.squared_list > li .detail > a{
+  display: block;
+  text-align: center;
+  background:#626262;
+  color:#ffffff;
+  font-size:15px;
+  line-height: 40px;
+  height: 40px;
+  margin:20px 0 0 0;
+}
+.dot_txt li em{
+  display: block;
+  font-size:12px;
+  line-height:13px;
+  margin:8px 0 0 0;
+}
+/*폼*/
+.form-apply{
+
+}
+.form-apply .top-t{
+  width:100%;
+  border-bottom:1px #d0d0d0 solid;
+}
+.form-apply .top-t th{
+  text-align: left;
+  vertical-align: top;
+}
+.form-apply .top-t td .num-txt{
+  font-size:30px;
+  line-height: 100%;
+}
+.form-apply .top-t td,
+.form-apply .top-t th{
+  padding:25px 0 15px 0;
+}
+.form-apply .top-t tr{
+  border-top:1px #626262 solid;
+}
+.form-apply .top-t tr.info-txt,
+.form-apply .top-t tr:first-child{
+  border-top:0;
+}
+.form-apply .top-t tr.info-txt td,
+.form-apply .top-t tr.info-txt th,
+.form-apply .top-t tr:first-child th,
+.form-apply .top-t tr:first-child td{
+  padding:0 0 15px 0;
+}
+.form-apply .list-form{
+  width:100%;
+}
+.form-apply .list-form > li{
+  border-top:1px #626262 solid;
+  padding:25px 0;
+}
+.form-apply .list-form > li:last-child{
+  padding:25px 0 0 0;
+}
+.form-apply .list-form > li:first-child{
+  border-top:0;
+}
+.form-apply .list-form > li .input-text{
+  height: 40px;
+  line-height: 40px;
+  font-size:13px;
+  letter-spacing: -1px;
+}
+.form-apply .small-date{
+  width:100%;
+}
+.form-apply .small-date th{
+  padding:5px 5px 5px 0;
+  font-size:12px;
+}
+.form-apply .small-date td{
+  padding:5px;
+  text-align: center;
+}
+.form-apply .small-date select,
+.form-apply .small-date input{
+  width:100%;
+}
+.form-apply .number-group{
+  overflow:hidden;
+  font-size:0;
+}
+.form-apply .number-group input,
+.form-apply .number-group select{
+  width:32%;
+  margin:0 0 0 2%;
+  box-sizing: border-box;
+}
+.form-apply .number-group select{
+  margin:0
+}
+.form-apply .th-txt{
+  display: block;
+  font-weight: 600;
+  margin:0 0 7px 0;
+}
+.form-apply .dash-txt{
+  margin:0 0 20px 0;
+}
+.form-apply .dash-txt li{
+  padding:0 0 0 12px;
+  position:relative;
+}
+.form-apply .dash-txt li:before{
+  content: "-";
+  position:absolute;
+  left:0;
+  top:0;
+  width:10px;
+}
+.form-apply .set-input{
+  margin:0 0 10px 0;
+  overflow: hidden;
+  height: 40px;
+}
+.form-apply .set-input input[type="text"],
+.form-apply .set-input a{
+  float:left;
+  width:66%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.form-apply .set-input a,
+.form-apply .file label{
+  float:right;
+  line-height: 40px;
+  text-align: center;
+  color:#ffffff;
+  width:32%;
+  background:none;
+  background:#626262;
+  box-sizing: border-box;
+}
+.form-apply .file input[type="text"],
+.form-apply .file label{
+  display:inline-block;
+  *display:inline;
+  zoom:1;
+}
+.form-apply .file input[type="file"]{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.file-btn{
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  color:#ffffff;
+  width:32%;
+  min-width:75px;
+  background:none;
+  background:#626262;
+}
+.small-btn{
+  display: inline-block;
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+  color:#ffffff;
+  width:60px;
+  background:#b5b5b5;
+}
+*[data-list="file"] {
+  margin:15px 0;
+}
+*[data-list="file"] li{
+  text-align:right;
+  background:#ebebeb;
+  border-top:1px solid #d2d2d2;
+  border-bottom:1px solid #d2d2d2;
+  padding:5px 10px 5px 0;;
+}
+*[data-list="file"] li:nth-child(n+2){
+  border-top:none;
+}
+*[data-list="file"] li > span{
+  float:left;
+  width:70%;
+  padding:0 0 0 2%;
+  line-height:40px;
+  text-align:left;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+*[data-list="file"] li *[data-btn="delete"],
+*[data-list="file"] li .delete{
+  font-size:0;
+  width: 40px;
+  height: 40px;
+  background: url(http://img.sdij.com/mobile/common.png) no-repeat;
+  background-size: 40rem auto;
+  background-position: 0 -70.755rem;
+}
+*[data-list="file"] li *[data-btn="delete"] span,
+*[data-list="file"] li .delete span{
+  font-size:0;
+}
+.add-txt{
+  display: block;
+  line-height: 120%;
+  margin:15px 0 0 0;
+}
+.add-txt.right{
+  text-align: right;
+}
+.add-txt.small{
+  font-size:13px;
+}
+.add-txt.big{
+  font-size:15px;
+}
+.add-txt.color_01{
+  color:#626262;
+}
+.form-apply .check{
+  display: inline-block;
+  min-width:90px;
+  margin:0 10px 0 0;
+  vertical-align: middle;
+}
+.form-apply .check input{
+  height: 20px;
+}
+.form-apply .certification-num{
+  overflow: hidden;
+}
+.form-apply .btn-group{
+   margin:10px 0;
+}
+.form-apply .btn-group.right{
+  text-align:right;
+}
+.form-apply .btn-group a{
+  display: inline-block;
+  text-align: center;
+  background:#626262;
+  color:#ffffff;
+  height: 40px;
+  line-height: 40px;
+  width:32%;
+  min-width:90px;
+}
+.form-apply .form-agree{
+  padding:0 0 40px 0;
+}
+.form-apply .form-agree .radio{
+  margin:10px 10px 0 0;
+}
+
+.form-detail{
+}
+.form-detail .board-btn{
+  margin:0;
+}
+.form-detail .list-dotted{
+  padding:0 0 25px 0;
+  margin:0 0 25px 0;
+  border-bottom:1px #626262 solid;
+}
+.form-detail table{
+  width:100%;
+  border-bottom:1px #626262 solid;
+  margin:0 0 25px 0;
+}
+.form-detail table.small-date{
+  border-bottom:0;
+}
+.form-detail table th{
+  text-align:left;
+  vertical-align:top;
+  min-width:94px;
+}
+.form-detail table th,
+.form-detail table td{
+  padding:0 0 25px 0;
+}
+.form-apply .file label{
+  float:right;
+  line-height: 40px;
+  text-align: center;
+  color:#ffffff;
+  width:32%;
+  background:none;
+  background:#626262;
+  box-sizing: border-box;
+}
+.form-detail .file input[type="text"],
+.form-detail .file label{
+  display:block;
+  text-align:center;
+  background:#626262;
+  line-height:40px;
+  height:40px;
+  color:#ffffff;
+}
+.form-detail .file input[type="file"]{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.file-list li{
+  margin:5px 0 0 0;
+}
+.file-list li:first-child{
+  margin:0;
+}
+/*
+.file-list li a{
+  font-size:0;
+  display:inline-block;
+  width:10px;
+  height:10px;
+  background:url(/renew2019/img/sdn/delete-btn.png) no-repeat center center;
+  background-size:100%;
+  vertical-align: middle;
+  margin:0 0 0 5px;
+}
+*/
+.border-th{
+  font-weight:600;
+  margin:0 0 15px 0;
+  display: block;
+}
+.border-table-pass{
+  width:100%;
+}
+.form-detail .border-table-pass th{
+  border-top:1px #000000 solid;
+  border-bottom:1px #d1d1d1 solid;
+  text-align: center;
+  min-width:auto;
+}
+.form-detail .border-table-pass th,
+.form-detail  .border-table-pass td{
+  text-align: center;
+  padding:15px 0;
+  color:#000;
+  font-size:13px;
+}
+.dim_box{
+  padding: 20px;
+  height: 100px;
+  overflow-y: scroll;
+  overflow-x:hidden;
+  border: 1px solid #000;
+}
+
+*[data-title="type2"]{
+  position:relative;
+  margin:0 auto 20px auto;
+  line-height:24px;
+  font-size:18px;
+  font-weight:600;
+}
+*[data-list="type13"]{
+  margin:0 0 15px 0;
+}
+*[data-list="type13"] li{
+  text-align:right;
+}
+*[data-list="type13"] li:nth-child(n+2){
+  border-top:none;
+}
+*[data-list="type13"] li span{
+  float:left;
+  width:78%;
+  font-size:16px;
+  line-height:100%;
+  text-align:left;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+ }
+*[data-list="type13"].pass{
+  margin:0 0 10px 0;
+}
+*[data-list="type13"].pass li{
+  text-align:left;
+}
+*[data-list="type13"].pass > li > *{
+  margin:15px 0 0 0;
+  line-height:25px;
+}
+*[data-list="type13"].pass > li > *:first-child{
+  margin:0;
+}
+*[data-list="type13"].pass li h4{
+  font-size:15px;
+  line-height:120%;
+  font-weight:600;
+}
+*[data-list="type13"].pass li strong{
+  display:block;
+  color:#348ee3;
+}
+*[data-list="type13"].pass li b{
+  display:block;
+}
+*[data-list="type13"].pass li ul li{
+  line-height:22px;
+  border:none;
+  background:none;
+}
+*[data-list="type13"].pass li *[data-text="type1"].dash2 li:before{
+  height:1px;
+}
+*[data-list="type13"].pass li *[data-text="type1"].star li:before{
+  font-weight:600;
+}

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+#container.faq-container{ padding-bottom:0; }
+#container .lnb-type1{ margin:0; background:none; }
+
+.faq-container, .qna-container, .qna-view-container, .notice-container{ padding-top:40px; }
+.qna-write-container{ padding-top:20px; }
+
+.faq-container .toggle-type2 > dl > dd .content-area{ line-height:28px; font-size:18px; letter-spacing:-0.5px; word-break:break-all; }
+.faq-container .toggle-type2 > dl > dd .content-area img{ max-width:100%; }
+.faq-container .toggle-type2 > dl > dd .file-area{ line-height:32px; margin-top:20px; padding-left:50px; position:relative; font-size:0; }
+.faq-container .toggle-type2 > dl > dd .file-area .tit{ position:absolute; left:0; font-size:12px; }
+.faq-container .toggle-type2 > dl > dd .file-area .btn{ height:32px; line-height:30px; margin:0 5px 5px; padding-left:10px; }
+.faq-container .toggle-type2 > dl > dd .file-area .btn .ico-file{ width:20px; height:20px; }
+
+.help-center{ margin-top:100px; background-color:#fcfcfc; border-top:1px dotted #000; }
+.help-center .wide-layout{ display:flex; }
+.help-center .wide-layout > div{ padding:60px 80px; position:relative; border-left:1px dotted #000; flex:1; }
+.help-center .wide-layout > div:first-child{ border-left:none; }
+.help-center .wide-layout > div .tit-dep2{ margin-top:0; }
+.help-center .wide-layout > div .time{ position:absolute; top:40px; right:80px; }
+
+/** Tablets **/
+@media (max-width:1024px) and (orientation:portrait), (max-width:1336px) and (orientation:landscape){
+    .faq-container, .qna-container, .qna-view-container, .notice-container{ padding-top:20px; }
+    .qna-write-container{ padding-top:0; }
+
+    .faq-container .sort-area .form-toggle{ width:calc( 100% - 220px ); margin-top:-5px; flex-wrap:wrap; }
+    .faq-container .sort-area .form-toggle > *{ margin:5px; }
+
+    .help-center .wide-layout > div{ padding:20px; }
+    .help-center .wide-layout > div .tit-dep2{ margin-bottom:20px; }
+    .help-center .wide-layout > div:first-child .tit-dep2{ margin-bottom:50px; }
+    .help-center .wide-layout > div .time{ margin-bottom:10px; position:relative; top:0; left:0; }
+}
+
+/** mobiles **/
+@media (max-width:539px) and (orientation:portrait), (max-width:959px) and (orientation:landscape){
+    .faq-container .sort-area{ flex-direction:column; }
+    .faq-container .sort-area .sort-side{ margin-top:5px; }
+    .faq-container .sort-area .form-toggle{ width:100%; }
+
+    .help-center .wide-layout{ padding:0; flex-direction:column; }
+    .help-center .wide-layout > div{ border-left:none; }
+    .help-center .wide-layout > div:first-child{ border-bottom:1px dotted #000; }
+}

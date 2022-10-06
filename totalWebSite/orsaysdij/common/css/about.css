@@ -1,0 +1,11 @@
+@charset "utf-8";
+.about-container .board-layout .dep1-tit{ margin:60px auto 60px; }
+
+.about-container .board-layout .gray-box > div{ width:410px; height:100%; padding:20px 32px; }
+.about-container .board-layout .gray-box > div .board-tit{ line-height:38px; margin-bottom:12px; font-size:26px; font-weight:500; text-align:left; }
+.about-container .board-layout .gray-box > div .list-tit dd{ line-height:24px; }
+.about-container .board-layout .gray-box > div .board1-tit{ line-height:29px; margin-top:20px; padding:12px 0 0 0; border-top:1px solid #ddd; font-weight:700; text-align:center; }
+.about-container .board-layout .gray-box > div .color-yellow{ padding:0px 2px; background-color:#ffc200 !important; }
+
+.about-container .board-layout .dep2-tit{ margin:40px auto 30px; font-size:32px; text-align:center; }
+.about-container .board-layout .dep3-tit{ font-weight:400; font-size:26px; text-align:center; }

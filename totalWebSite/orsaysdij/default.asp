@@ -1,0 +1,1 @@
+<% response.redirect "/orsaysdij/main/default.asp" %>

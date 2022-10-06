@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* modal */
+.modal-wrap{ width:100%; height:100%; display:none; position:fixed; top:0; bottom:0; left:0; right:0; z-index:9999; }
+.modal-wrap .modal-bg{ position:absolute; top:0; bottom:0; left:0; right:0; background-color:#000; opacity:.5; filter:alpha(opacity=50); z-index:-1; }
+
+/* default modal */
+.modal-container{ display:none; padding:2rem 0; position:absolute; top:50%; left:50%; background-color:#fff; transform:translate(-50%, -50%); }
+.modal-container .modal-header{ line-height:2rem; padding:0 1rem; position:absolute; top:0; left:0; right:0; background-color:#000; color:#fff; z-index:2; }
+.modal-container .modal-header .tit-dep4{ margin-bottom:0; }
+.modal-container .modal-header .btn-close{ width:0.6rem; height:0.6rem; margin-top:-0.3rem; position:absolute; top:50%; right:1rem; background:url(//img.sdij.com/sd2019/app/common/ico_close_w.png) 50% 0 no-repeat; background-size:100% 100%; font-size:0; text-indent:-9999em; }
+.modal-container .modal-content{ background-color:#fff; }
+
+/* modal-M */
+.modal-M{ width:16.66666667rem; max-width:90%; max-height:90%; padding-bottom:0; border-radius:1rem; overflow-x:hidden; overflow-y:auto; }
+.modal-M .modal-header{ font-size:0.6rem; font-weight:500; text-align:center; }
+.modal-M .modal-content{ padding:1.333333333rem 0.666666667rem 1.428571429rem; }
+
+/* modal-F */
+.modal-F{ width:100%; height:100%; max-width:1366px; top:0; left:50%; transform:translate(-50%, 0); }
+.modal-F .modal-content{ height:100%; overflow:auto; z-index:1; }
+.modal-F .modal-btn{ display:flex; position:absolute; left:0; right:0; bottom:0; z-index:3; }
+.modal-F .modal-btn .btn{ height:2rem; line-height:1.933333333rem; border-radius:0; font-size:0.6rem; font-weight:700; }
+
+/* 약관 modal */
+[class*='modal-terms'] .modal-content .textarea{ min-height:100%; padding:1.066666667rem; }
+
+/* 배송지 */
+.modal-delv .form-small > ul > li{ padding:0.166666667rem 0; }
+.modal-delv .form-small > ul > li.tit-dep4{ margin:0.666666667rem auto 0; }
+.modal-delv .form-small > ul > li.agree-area > *{ margin-top:0.333333333rem; }
+.modal-delv .form-small > ul > li.agree-area .textarea textarea{ height:5rem; }
+.modal-delv .box-gray{ margin-top:0.333333333rem; word-break:keep-all; }
+
+/* 현장수령 */
+.modal-delv-info{ width:23.33333333rem; word-break:keep-all; }
+.modal-delv-info .tit-dep4{ margin-bottom:0.333333333rem; }
+.modal-delv-info .table-type1{ margin:0.333333333rem auto 0.666666667rem; }
+.modal-delv-info .table-type1 table tr th{ padding:0.333333333rem 0; text-align:center; }
+.modal-delv-info .table-type1 table tr th, .modal-delv-info .table-type1 table tr td{ word-break:break-all; }
+
+/* 과목선택 */
+.modal-select .table-type1{ font-size:0.466666667rem }
+.modal-select .table-type1 tr td{ text-align:center; }
+.modal-select .form-radio > .input-radio{ margin-left:0.333333333rem; }
+.modal-select .form-radio > .input-radio:first-child{ margin-left:0; }
+.modal-select .form-radio > .input-radio .ico-radio{ top:0; }
+.modal-select .form-select .select select{ margin:0.166666667rem auto; border:1px solid #ebe7e7; }
+
+/* 인증하기 */
+.modal-confirm .form-small > ul > li.agree-area > *{ margin-top:0.333333333rem; }

@@ -1,0 +1,1 @@
+<% response.redirect "/totalMobileSite/orsaysdij/main/default.asp" %>

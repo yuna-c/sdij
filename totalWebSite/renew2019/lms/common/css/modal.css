@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* modal */
+.modal-wrap{ width:100%; height:100%; display:none; position:fixed; top:0; bottom:0; left:0; right:0; z-index:9999; }
+.modal-wrap .modal-bg{ position:absolute; top:0; bottom:0; left:0; right:0; background-color:#000; opacity:.5; filter:alpha(opacity=50); z-index:-1; }
+
+.modal-container{ display:none; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); }
+.modal-M{ width:16.66666667rem; }
+.modal-F{ width:100%; height:100%; top:0; left:0; transform:translate(0, 0); }
+
+/* default modal */
+.modal-container .modal-header{ height:2.333333333rem; line-height:2.266666667rem; position:relative; background-color:#000; border-top-left-radius:1rem; border-top-right-radius:1rem; font-size:0.6rem; font-weight:700; color:#fff; text-align:center; }
+.modal-container .modal-header .btn-close{ width:0.6rem; height:0.6rem; margin-top:-0.3rem; position:absolute; top:50%; right:1rem; background:url(http://img.sdij.com/sd2019/app/common/ico_close_w.png) 50% 0 no-repeat; background-size:100% 100%; font-size:0; text-indent:-9999em; }
+.modal-container .modal-content{ padding:1rem; background-color:#fff; border-bottom-left-radius:1rem; border-bottom-right-radius:1rem; }
+
+/* full modal */
+.modal-F .modal-header{ height:auto; line-height:1.266666667rem; padding:1.333333333rem 0 1rem; position:absolute; top:0; left:0; right:0; background-color:#fff; border-radius:0; font-size:0.866666667rem; color:#000; z-index:2; }
+.modal-F .modal-header .btn-close{ background-image:url(http://img.sdij.com/sd2019/app/common/ico_close_g.png); }
+.modal-F .modal-content{ height:100%; padding:3.933333333rem 0 3.333333333rem; border-radius:0; overflow:auto; z-index:1; }
+.modal-F .modal-btn{ display:flex; position:absolute; left:0; right:0; bottom:0; z-index:3; }
+.modal-F .modal-btn .btn{ height:2.666666667rem; line-height:2.6rem; border:none; border-radius:0; font-size:0.666666667rem; font-weight:700; }
+
+.modal-content .img-box{ margin-top:0.666666667rem; text-align:center; }
+.modal-content .img-box > img{ max-width:100%; }
+.modal-content .img-btn{ margin-top:1rem; font-size:0; text-align:center; }
+.modal-content .img-btn .btn{ width:3.333333333rem; margin-left:0.333333333rem; }
+.modal-content .img-btn .btn:first-child{ margin-left:0; }
+
+/* ~6/29 신규 modal */
+/* modal-owlview */
+.modal-owlview .modal-content > .iframe-area{ width:100%; height:100%; }
+/* .modal-owlview .modal-content > .iframe-area > iframe{ width:1px; min-width:100%; height:100%; } */
+
+/* modal-request */
+.modal-request .box-gray{ padding:1.066666667rem; background-color:#eee; border-radius:1rem; }
+.modal-request .form-type2 table tr th, .modal-request .form-type2 table tr td{ vertical-align:middle; }
+.modal-request .form-type2 table tr.border-none > th, .modal-request .form-type2 table tr.border-none > td{ border-top:none; }
+.modal-request .form-type2 table tr th .color-red{ display:inline-block; font-size:0.466666667rem; }
+.modal-request .form-type2 table tr td .flex-area{ align-items:center; }
+
+/* <!-- S : TA 3차 : 시간표 > 컨텐츠 배부 팝업 --> */
+/* modal-detail */
+.modal-detail{ width:90%; }
+.modal-detail .tit-area{ line-height:1.2rem; }
+.modal-detail .tit-dep4{ margin-top:0.333333333rem; }
+.modal-detail .table-type2 table tr th, .modal-detail .table-type2 table tr td{ font-size:0.466666667rem; text-align:center; }
+.modal-detail .table-type2 table tr td > span{ display:block; }
+.modal-detail .table-type2 table tr td .tit{ font-size:0.533333333rem; font-weight:700; }
+.modal-detail .table-type2 table tr td .txt{ margin-top:0.166666667rem; }
+.modal-detail .table-type2 table tr td .btn{ width:auto; margin-top:0.666666667rem; padding:0 0.333333333rem; font-size:0.466666667rem; }
+/* <!--// E : TA 3차 : 시간표 > 컨텐츠 배부 팝업 --> */
+
+/* <!-- S : TA 3차 : 멘토 일정 추가--> */
+.modal-schedule .table-type2 table tr td{ padding:0.666666667rem 0; font-size:0.466666667rem; text-align:center; }
+/* <!--// E : TA 3차 : 멘토 일정 추가--> */
+
+/* <!-- S : TA 3차 : 시간표 > 컨텐츠 일정표 --> */
+.modal-overall .tab-dep2{ margin-bottom:1.333333333rem; }
+.modal-overall .color-gray{ font-size:0.4rem; }
+.modal-overall .img-box{ margin-top:0.333333333rem; }
+/* <!--// E : TA 3차 : 시간표 > 컨텐츠 일정표 --> */
